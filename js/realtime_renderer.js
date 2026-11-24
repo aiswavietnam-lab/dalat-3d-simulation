@@ -72,48 +72,89 @@
     },
   };
 
-  // Bảng màu khí quyển cao nguyên chi tiết (trong không gian sRGB hiển thị trực quan)
+  const SKY_BASE_URL = './assets/sky';
+  const SKY_TEXTURE_FILES = {
+    morning: 'sky_morning.jpg',
+    day: 'sky_day.jpg',
+    sunset: 'sky_sunset.jpg',
+    dusk: 'sky_dusk.jpg',
+    night: 'sky_night.jpg',
+  };
+
+  // Bảng màu khí quyển cao nguyên chi tiết (đồng bộ ảnh bầu trời 360° Poly Haven CC0 + FogExp2)
   const CLIMATE_SKY_PALETTES = {
     early_mist: {
-      zenith: '#749EC4',
-      horizon: '#DCE6EE',
+      skyId: 'morning',
+      zenith: '#628FBD',
+      horizon: '#DCE7F0',
       ground: '#3D5443',
       sunGlow: '#FFE6BE',
+      skyTint: '#FFF6EB',
+      skyExposure: 1.07,
+      cloudColor: '#FFF4E6',
+      cloudOpacity: 0.22,
+      horizonHazeFactor: 0.72,
       starIntensity: 0.0,
       exposure: 1.06,
-      bloomThreshold: 0.76,
+      bloomThreshold: 0.78,
       sunShaftStrength: 0.2,
     },
     highland_noon: {
-      zenith: '#2B6CB0',
+      skyId: 'day',
+      zenith: '#2567AF',
       horizon: '#B9D8F0',
       ground: '#3B5A3A',
       sunGlow: '#FFFDF4',
+      skyTint: '#F5FAFF',
+      skyExposure: 1.05,
+      cloudColor: '#FFFFFF',
+      cloudOpacity: 0.16,
+      horizonHazeFactor: 0.44,
       starIntensity: 0.0,
       exposure: 1.04,
-      bloomThreshold: 0.82,
+      bloomThreshold: 0.84,
       sunShaftStrength: 0.12,
     },
     sunset_lake: {
-      zenith: '#353B6C',
+      skyId: 'sunset',
+      zenith: '#333B6E',
       horizon: '#E39B7E',
       ground: '#3E2E37',
       sunGlow: '#FFA057',
-      starIntensity: 0.18,
+      skyTint: '#FFE3CC',
+      skyExposure: 1.04,
+      cloudColor: '#FFC694',
+      cloudOpacity: 0.24,
+      horizonHazeFactor: 0.58,
+      starIntensity: 0.14,
       exposure: 1.08,
-      bloomThreshold: 0.68,
+      bloomThreshold: 0.7,
       sunShaftStrength: 0.3,
     },
     mountain_night: {
+      skyId: 'night',
       zenith: '#050B18',
       horizon: '#101E38',
       ground: '#091220',
-      sunGlow: '#7FA4D8',
-      starIntensity: 1.0,
+      sunGlow: '#8FB2E4',
+      skyTint: '#9AB8E6',
+      skyExposure: 0.68,
+      cloudColor: '#374D75',
+      cloudOpacity: 0.08,
+      horizonHazeFactor: 0.68,
+      starIntensity: 0.95,
       exposure: 1.12,
-      bloomThreshold: 0.52,
+      bloomThreshold: 0.54,
       sunShaftStrength: 0.08,
     },
+  };
+
+  const SKY_OVERRIDE_TUNING = {
+    morning: { skyTint: '#FFF6EB', skyExposure: 1.07, cloudColor: '#FFF4E6', cloudOpacity: 0.22, starIntensity: 0.0 },
+    day: { skyTint: '#F5FAFF', skyExposure: 1.05, cloudColor: '#FFFFFF', cloudOpacity: 0.16, starIntensity: 0.0 },
+    sunset: { skyTint: '#FFE3CC', skyExposure: 1.04, cloudColor: '#FFC694', cloudOpacity: 0.24, starIntensity: 0.12 },
+    dusk: { skyTint: '#F0D8EE', skyExposure: 1.04, cloudColor: '#E5B2D4', cloudOpacity: 0.22, starIntensity: 0.26 },
+    night: { skyTint: '#9AB8E6', skyExposure: 0.68, cloudColor: '#374D75', cloudOpacity: 0.08, starIntensity: 0.95 },
   };
 
   const SKY_VERTEX_SHADER = [
@@ -125,19 +166,34 @@
     '}',
   ].join('\n');
 
-  // Shader bầu trời xuất trực tiếp không gian sRGB đồng bộ 100% với FogExp2 của Three.js r128
-  // Mọi hàm pow() đều được bảo vệ max(..., 0.0001) để chống NaN trên ANGLE/D3D/SwiftShader
+  // Shader bầu trời 360° kết hợp ảnh Pure Sky Poly Haven CC0 + mây trôi cao nguyên + sương mù chân trời
+  // Xuất trực tiếp không gian sRGB đồng bộ 100% với FogExp2 của Three.js r128, chống NaN tuyệt đối
   const SKY_FRAGMENT_SHADER = [
+    'uniform sampler2D uSkyTexA;',
+    'uniform sampler2D uSkyTexB;',
+    'uniform float uSkyReadyA;',
+    'uniform float uSkyReadyB;',
+    'uniform float uSkyBlend;',
+    'uniform float uSunAzimuth;',
+    'uniform float uSkyDrift;',
+    'uniform vec3 uSkyTint;',
+    'uniform float uSkyExposure;',
     'uniform vec3 uZenithColor;',
     'uniform vec3 uHorizonColor;',
     'uniform vec3 uGroundColor;',
     'uniform vec3 uFogColor;',
     'uniform vec3 uSunDir;',
     'uniform vec3 uSunGlowColor;',
+    'uniform vec3 uCloudColor;',
+    'uniform float uCloudOpacity;',
     'uniform float uFogBlend;',
+    'uniform float uHorizonHazeFactor;',
     'uniform float uStarIntensity;',
     'uniform float uTime;',
     'varying vec3 vWorldDir;',
+    '',
+    'const float PI = 3.14159265359;',
+    'const float TWO_PI = 6.28318530718;',
     '',
     'float hash31(vec3 p) {',
     '  p = fract(p * 0.1031);',
@@ -145,42 +201,111 @@
     '  return fract((p.x + p.y) * p.z);',
     '}',
     '',
+    'float hash21(vec2 p) {',
+    '  p = fract(p * vec2(123.34, 456.21));',
+    '  p += dot(p, p + 45.32);',
+    '  return fract(p.x * p.y);',
+    '}',
+    '',
+    'float vnoise(vec2 p) {',
+    '  vec2 i = floor(p);',
+    '  vec2 f = fract(p);',
+    '  vec2 u = f * f * (3.0 - 2.0 * f);',
+    '  float a = hash21(i);',
+    '  float b = hash21(i + vec2(1.0, 0.0));',
+    '  float c = hash21(i + vec2(0.0, 1.0));',
+    '  float d = hash21(i + vec2(1.0, 1.0));',
+    '  return mix(mix(a, b, u.x), mix(c, d, u.x), u.y);',
+    '}',
+    '',
+    'float cloudFbm(vec2 p) {',
+    '  float v = 0.0;',
+    '  float a = 0.52;',
+    '  mat2 rot = mat2(0.80, -0.60, 0.60, 0.80);',
+    '  for (int i = 0; i < 3; i++) {',
+    '    v += a * vnoise(p);',
+    '    p = rot * p * 2.07 + vec2(13.1, 7.7);',
+    '    a *= 0.48;',
+    '  }',
+    '  return v;',
+    '}',
+    '',
     'void main() {',
     '  vec3 dir = normalize(vWorldDir);',
     '  float y = dir.y;',
     '',
+    '  // 1. Nền bầu trời khí quyển dự phòng (hiển thị tức thì trước khi ảnh 360° tải xong)',
     '  float upperT = pow(max(y, 0.0001), 0.55);',
-    '  vec3 skyCol = mix(uHorizonColor, uZenithColor, clamp(upperT, 0.0, 1.0));',
-    '',
+    '  vec3 procSky = mix(uHorizonColor, uZenithColor, clamp(upperT, 0.0, 1.0));',
     '  if (y < 0.0) {',
     '    float downT = pow(clamp(-y * 3.0, 0.0001, 1.0), 0.65);',
-    '    skyCol = mix(uHorizonColor, uGroundColor, downT);',
+    '    procSky = mix(uHorizonColor, uGroundColor, downT);',
     '  }',
     '',
-    '  // Tán xạ khí quyển Mie & đĩa Mặt trời / Mặt trăng',
+    '  // 2. Lấy mẫu bầu trời ảnh thực tế 360° (căn chỉnh góc phương vị mặt trời khớp hướng nắng 3D)',
+    '  float az = atan(dir.x, -dir.z);',
+    '  float relAz = az - uSunAzimuth + uSkyDrift;',
+    '  float eqU = fract(relAz / TWO_PI + 0.5);',
+    '  float elev = asin(clamp(y, -1.0, 1.0));',
+    '  float eqV = clamp(elev / PI + 0.504, 0.002, 0.998);',
+    '  vec2 eqUv = vec2(eqU, eqV);',
+    '',
+    '  vec3 texColA = mix(procSky, texture2D(uSkyTexA, eqUv).rgb * uSkyTint * uSkyExposure, clamp(uSkyReadyA, 0.0, 1.0));',
+    '  vec3 texColB = mix(procSky, texture2D(uSkyTexB, eqUv).rgb * uSkyTint * uSkyExposure, clamp(uSkyReadyB, 0.0, 1.0));',
+    '  float hasPhoto = max(uSkyReadyA * (1.0 - uSkyBlend), uSkyReadyB * uSkyBlend);',
+    '  vec3 skyCol = mix(texColA, texColB, clamp(uSkyBlend, 0.0, 1.0));',
+    '',
+    '  if (y < 0.0) {',
+    '    float downBlend = smoothstep(0.0, -0.14, y);',
+    '    skyCol = mix(skyCol, mix(uFogColor, uGroundColor, 0.45), downBlend);',
+    '  }',
+    '',
+    '  // 3. Lớp mây cao nguyên trôi nhẹ theo thời gian thực để đại cảnh luôn sống động',
     '  vec3 sunDir = normalize(uSunDir);',
     '  float cosTheta = max(dot(dir, sunDir), 0.0001);',
-    '  float mieHalo = pow(cosTheta, 7.0) * 0.22 + pow(cosTheta, 48.0) * 0.34;',
-    '  float sunDisc = smoothstep(0.99935, 0.99982, cosTheta) * 0.95;',
-    '  float aboveHorizon = smoothstep(-0.08, 0.06, y);',
+    '  if (uCloudOpacity > 0.01 && y > 0.012) {',
+    '    vec2 cloudPlane = dir.xz / (y + 0.24);',
+    '    vec2 drift1 = vec2(uTime * 0.0075, uTime * 0.0032);',
+    '    vec2 drift2 = vec2(-uTime * 0.0042, uTime * 0.0055);',
+    '    float n1 = cloudFbm(cloudPlane * 0.48 + drift1);',
+    '    float n2 = cloudFbm(cloudPlane * 0.92 + drift2);',
+    '    float wispy = smoothstep(0.50, 0.82, n1 * 0.68 + n2 * 0.32);',
+    '    float elevMask = smoothstep(0.012, 0.16, y) * (1.0 - smoothstep(0.75, 0.98, y) * 0.35);',
+    '    float sunRim = 0.78 + 0.36 * pow(cosTheta, 3.5);',
+    '    vec3 litCloud = min(vec3(1.0), uCloudColor * sunRim);',
+    '    skyCol = mix(skyCol, litCloud, clamp(wispy * elevMask * uCloudOpacity, 0.0, 0.42));',
+    '  }',
+    '',
+    '  // 4. Tán xạ khí quyển Mie & đĩa Mặt trời / Mặt trăng (hài hòa với ảnh bầu trời 360°)',
+    '  float haloScale = mix(1.0, 0.46, clamp(hasPhoto, 0.0, 1.0));',
+    '  float mieHalo = (pow(cosTheta, 6.0) * 0.18 + pow(cosTheta, 42.0) * 0.30) * haloScale;',
+    '  float sunDisc = smoothstep(0.99935, 0.99985, cosTheta) * mix(0.95, 0.65, clamp(hasPhoto, 0.0, 1.0));',
+    '  float aboveHorizon = smoothstep(-0.04, 0.05, y);',
     '  skyCol = min(vec3(1.0), skyCol + uSunGlowColor * (mieHalo + sunDisc) * aboveHorizon);',
     '',
-    '  // Sao đêm lấp lánh nhẹ trên bầu trời phố núi Đà Lạt',
+    '  // 5. Sao đêm lấp lánh dạng điểm tròn sắc nét trên bầu trời phố núi Đà Lạt',
     '  if (uStarIntensity > 0.01 && y > 0.04) {',
-    '    vec3 starCell = floor(dir * 250.0);',
+    '    vec3 starGrid = dir * 210.0;',
+    '    vec3 starCell = floor(starGrid);',
+    '    vec3 starLocal = fract(starGrid) - 0.5;',
     '    float rnd = hash31(starCell);',
-    '    if (rnd > 0.9945) {',
-    '      float twinkle = 0.65 + 0.35 * sin(uTime * 2.2 + rnd * 95.0);',
-    '      float starFade = smoothstep(0.04, 0.35, y) * (1.0 - clamp(uFogBlend * 0.85, 0.0, 0.9));',
-    '      skyCol = min(vec3(1.0), skyCol + vec3(0.85, 0.92, 1.0) * ((rnd - 0.9945) * 150.0) * twinkle * uStarIntensity * starFade);',
+    '    if (rnd > 0.991) {',
+    '      float core = smoothstep(0.22, 0.03, length(starLocal));',
+    '      float twinkle = 0.60 + 0.40 * sin(uTime * 2.4 + rnd * 95.0);',
+    '      float starFade = smoothstep(0.04, 0.30, y) * (1.0 - clamp(uFogBlend * 0.65, 0.0, 0.8));',
+    '      skyCol = min(vec3(1.0), skyCol + vec3(0.88, 0.94, 1.0) * core * ((rnd - 0.991) * 95.0) * twinkle * uStarIntensity * starFade);',
     '    }',
     '  }',
     '',
-    '  // Hòa dải sương mù chân trời liền mạch tuyệt đối với FogExp2',
-    '  float horizonBand = exp(-abs(y) * mix(9.5, 3.0, clamp(uFogBlend, 0.0, 1.0)));',
-    '  skyCol = mix(skyCol, uFogColor, clamp(horizonBand * uFogBlend * 0.98, 0.0, 0.98));',
+    '  // 6. Dải sương mù chân trời tinh tế — liền mạch tuyệt đối với FogExp2 nhưng không che khuất mây trời',
+    '  float fb = clamp(uFogBlend, 0.0, 1.0);',
+    '  float horizonMist = exp(-max(y, 0.0) * mix(30.0, 13.5, fb)) * fb * uHorizonHazeFactor;',
+    '  if (y < 0.0) {',
+    '    horizonMist = max(horizonMist, smoothstep(0.0, -0.05, y) * 0.92);',
+    '  }',
+    '  skyCol = mix(skyCol, uFogColor, clamp(horizonMist, 0.0, 0.95));',
     '',
-    '  gl_FragColor = vec4(skyCol, 1.0);',
+    '  gl_FragColor = vec4(clamp(skyCol, 0.0, 1.0), 1.0);',
     '}',
   ].join('\n');
 
@@ -301,7 +426,24 @@
       this._pmremGenerator = null;
       this._envCache = new Map();
       this._activeClimateId = 'early_mist';
+      this._activeClimatePreset = null;
+      this._skyOverride = 'auto';
+      this._currentSkyId = 'morning';
+      this._prevSkyId = 'morning';
+      this._skyBlend = 1.0;
+      this._lastFrameTime = 0;
       this._currentSunShaftStrength = 0.2;
+
+      this._skyTexLoader = new THREE.TextureLoader();
+      this._skyTextures = new Map();
+      this._skyLoaded = new Set();
+      this._skyPlaceholderTex = new THREE.DataTexture(
+        new Uint8Array([136, 174, 212, 255]),
+        1,
+        1,
+        THREE.RGBAFormat
+      );
+      this._skyPlaceholderTex.needsUpdate = true;
 
       this._sceneRT = null;
       this._bloomRTA = null;
@@ -314,23 +456,36 @@
       this._initPostMaterials();
       this._initPmrem();
       this._allocateRenderTargets();
+      this._preloadSkyTextures();
       this.applyQualityPreset('balanced');
     }
 
     _initSkyDome() {
       this.skyUniforms = {
-        uZenithColor: { value: new THREE.Color('#749EC4') },
-        uHorizonColor: { value: new THREE.Color('#DCE6EE') },
+        uSkyTexA: { value: this._skyPlaceholderTex },
+        uSkyTexB: { value: this._skyPlaceholderTex },
+        uSkyReadyA: { value: 0.0 },
+        uSkyReadyB: { value: 0.0 },
+        uSkyBlend: { value: 1.0 },
+        uSunAzimuth: { value: 1.43 },
+        uSkyDrift: { value: 0.0 },
+        uSkyTint: { value: new THREE.Color('#FFF6EB') },
+        uSkyExposure: { value: 1.07 },
+        uZenithColor: { value: new THREE.Color('#628FBD') },
+        uHorizonColor: { value: new THREE.Color('#DCE7F0') },
         uGroundColor: { value: new THREE.Color('#3D5443') },
         uFogColor: { value: new THREE.Color('#DCE6EE') },
         uSunDir: { value: new THREE.Vector3(0.5, 0.35, -0.4).normalize() },
         uSunGlowColor: { value: new THREE.Color('#FFE6BE') },
+        uCloudColor: { value: new THREE.Color('#FFF4E6') },
+        uCloudOpacity: { value: 0.22 },
         uFogBlend: { value: 0.65 },
+        uHorizonHazeFactor: { value: 0.72 },
         uStarIntensity: { value: 0.0 },
         uTime: { value: 0.0 },
       };
 
-      const skyGeo = new THREE.SphereGeometry(36000, 32, 20);
+      const skyGeo = new THREE.SphereGeometry(36000, 40, 24);
       const skyMat = new THREE.ShaderMaterial({
         uniforms: this.skyUniforms,
         vertexShader: SKY_VERTEX_SHADER,
@@ -345,6 +500,90 @@
       this.skyDome.frustumCulled = false;
       this.skyDome.renderOrder = -1000;
       this.scene.add(this.skyDome);
+    }
+
+    _preloadSkyTextures() {
+      const order = ['morning', 'day', 'sunset', 'dusk', 'night'];
+      order.forEach((skyId) => this._ensureSkyTexture(skyId));
+    }
+
+    _ensureSkyTexture(skyId) {
+      const id = SKY_TEXTURE_FILES[skyId] ? skyId : 'morning';
+      if (this._skyTextures.has(id)) return this._skyTextures.get(id);
+
+      const url = `${SKY_BASE_URL}/${SKY_TEXTURE_FILES[id]}`;
+      const tex = this._skyTexLoader.load(
+        url,
+        (loadedTex) => {
+          this._skyLoaded.add(id);
+          loadedTex.needsUpdate = true;
+          this._syncSkyTextureBindings();
+          if (this._currentSkyId === id) {
+            this._refreshEnvironmentBinding();
+          }
+        },
+        undefined,
+        (err) => {
+          console.warn(`[RealtimeRenderer] Không nạp được ảnh bầu trời ${url}:`, err);
+        }
+      );
+      // Tắt mipmap để tránh đường ghép dọc tại kinh độ atan2(0 <-> 2PI), luôn mượt 360°
+      tex.generateMipmaps = false;
+      tex.minFilter = THREE.LinearFilter;
+      tex.magFilter = THREE.LinearFilter;
+      tex.wrapS = THREE.RepeatWrapping;
+      tex.wrapT = THREE.ClampToEdgeWrapping;
+      tex.encoding = THREE.sRGBEncoding;
+
+      this._skyTextures.set(id, tex);
+      return tex;
+    }
+
+    _syncSkyTextureBindings() {
+      const texA = this._skyTextures.get(this._prevSkyId) || this._skyPlaceholderTex;
+      const texB = this._skyTextures.get(this._currentSkyId) || this._skyPlaceholderTex;
+      const readyA = this._skyLoaded.has(this._prevSkyId) ? 1.0 : 0.0;
+      const readyB = this._skyLoaded.has(this._currentSkyId) ? 1.0 : 0.0;
+
+      this.skyUniforms.uSkyTexA.value = readyA ? texA : this._skyPlaceholderTex;
+      this.skyUniforms.uSkyTexB.value = readyB ? texB : this._skyPlaceholderTex;
+      this.skyUniforms.uSkyReadyA.value = readyA;
+      this.skyUniforms.uSkyReadyB.value = readyB;
+    }
+
+    _activateSkyId(targetSkyId, immediate) {
+      const nextId = SKY_TEXTURE_FILES[targetSkyId] ? targetSkyId : 'morning';
+      this._ensureSkyTexture(nextId);
+
+      if (immediate || nextId === this._currentSkyId) {
+        this._prevSkyId = nextId;
+        this._currentSkyId = nextId;
+        this._skyBlend = 1.0;
+      } else {
+        this._prevSkyId = this._currentSkyId;
+        this._currentSkyId = nextId;
+        this._skyBlend = 0.0;
+      }
+      this.skyUniforms.uSkyBlend.value = this._skyBlend;
+      this._syncSkyTextureBindings();
+    }
+
+    setSkyOverride(skyMode) {
+      const mode = skyMode && (skyMode === 'auto' || SKY_TEXTURE_FILES[skyMode]) ? skyMode : 'auto';
+      this._skyOverride = mode;
+      const pal = CLIMATE_SKY_PALETTES[this._activeClimateId] || CLIMATE_SKY_PALETTES.early_mist;
+      const targetSkyId = mode === 'auto' ? pal.skyId || 'morning' : mode;
+      this._activateSkyId(targetSkyId, false);
+
+      const tune = mode === 'auto' ? pal : SKY_OVERRIDE_TUNING[mode] || pal;
+      this.skyUniforms.uSkyTint.value.set(tune.skyTint || '#FFFFFF');
+      this.skyUniforms.uSkyExposure.value = tune.skyExposure != null ? tune.skyExposure : 1.05;
+      this.skyUniforms.uCloudColor.value.set(tune.cloudColor || '#FFFFFF');
+      this.skyUniforms.uCloudOpacity.value = tune.cloudOpacity != null ? tune.cloudOpacity : 0.18;
+      this.skyUniforms.uStarIntensity.value =
+        tune.starIntensity != null ? tune.starIntensity : pal.starIntensity;
+
+      this._refreshEnvironmentBinding();
     }
 
     _initPmrem() {
@@ -519,77 +758,129 @@
     }
 
     /**
-     * Dựng PBR IBL Cubemap chuẩn RGBM16 của Three.js r128 bằng MeshBasicMaterial vertexColors (100% không NaN)
+     * Dựng PBR IBL Cubemap chuẩn RGBM16 của Three.js r128 từ bầu trời ảnh thực tế 360° (hoặc dự phòng vertexColors)
      */
-    _getOrBuildClimateEnvMap(climateId, zenithHex, horizonHex, groundHex, sunDir, sunHex) {
+    _getOrBuildClimateEnvMap(climateId, skyId, zenithHex, horizonHex, groundHex, sunDir, sunHex, tintHex) {
       if (!this._pmremGenerator) return null;
-      if (this._envCache.has(climateId)) {
-        return this._envCache.get(climateId).texture;
+      const hasPhoto = Boolean(skyId && this._skyLoaded.has(skyId) && this._skyTextures.has(skyId));
+      const cacheKey = hasPhoto ? `photo:${climateId}:${skyId}` : `proc:${climateId}`;
+      if (this._envCache.has(cacheKey)) {
+        return this._envCache.get(cacheKey).texture;
       }
 
       const envScene = new THREE.Scene();
-      const sphereGeo = new THREE.SphereGeometry(40, 24, 16);
-      const posAttr = sphereGeo.attributes.position;
-      const colors = new Float32Array(posAttr.count * 3);
-
-      const cZenith = new THREE.Color(zenithHex).convertSRGBToLinear();
-      const cHorizon = new THREE.Color(horizonHex).convertSRGBToLinear();
-      const cGround = new THREE.Color(groundHex).convertSRGBToLinear();
-      const cSun = new THREE.Color(sunHex).convertSRGBToLinear();
       const sDir = sunDir.clone().normalize();
-      const tmpDir = new THREE.Vector3();
-      const tmpCol = new THREE.Color();
+      let sphereGeo;
+      let envMat;
+      let sunMesh = null;
 
-      for (let i = 0; i < posAttr.count; i++) {
-        tmpDir.set(posAttr.getX(i), posAttr.getY(i), posAttr.getZ(i)).normalize();
-        const y = tmpDir.y;
-        if (y >= 0) {
-          tmpCol.copy(cHorizon).lerp(cZenith, Math.pow(y, 0.58));
-        } else {
-          tmpCol.copy(cHorizon).lerp(cGround, Math.min(1.0, Math.pow(-y * 2.2, 0.7)));
+      if (hasPhoto) {
+        const skyTex = this._skyTextures.get(skyId);
+        sphereGeo = new THREE.SphereGeometry(40, 32, 20);
+        const tintColor = new THREE.Color(tintHex || '#FFFFFF').convertSRGBToLinear();
+        envMat = new THREE.MeshBasicMaterial({
+          map: skyTex,
+          color: tintColor,
+          side: THREE.BackSide,
+          depthWrite: false,
+        });
+        const envMesh = new THREE.Mesh(sphereGeo, envMat);
+        const sunAz = Math.atan2(sDir.x, -sDir.z);
+        envMesh.rotation.y = -sunAz + Math.PI * 0.5;
+        envScene.add(envMesh);
+
+        // Điểm nắng phản chiếu nhẹ giúp mặt hồ Xuân Hương và mái kính lấp lánh đồng bộ hướng nắng
+        const sunGeo = new THREE.SphereGeometry(2.4, 10, 8);
+        const sunMat = new THREE.MeshBasicMaterial({
+          color: new THREE.Color(sunHex || '#FFE6BE').convertSRGBToLinear().multiplyScalar(1.6),
+        });
+        sunMesh = new THREE.Mesh(sunGeo, sunMat);
+        sunMesh.position.copy(sDir).multiplyScalar(32);
+        envScene.add(sunMesh);
+      } else {
+        sphereGeo = new THREE.SphereGeometry(40, 24, 16);
+        const posAttr = sphereGeo.attributes.position;
+        const colors = new Float32Array(posAttr.count * 3);
+
+        const cZenith = new THREE.Color(zenithHex).convertSRGBToLinear();
+        const cHorizon = new THREE.Color(horizonHex).convertSRGBToLinear();
+        const cGround = new THREE.Color(groundHex).convertSRGBToLinear();
+        const cSun = new THREE.Color(sunHex).convertSRGBToLinear();
+        const tmpDir = new THREE.Vector3();
+        const tmpCol = new THREE.Color();
+
+        for (let i = 0; i < posAttr.count; i++) {
+          tmpDir.set(posAttr.getX(i), posAttr.getY(i), posAttr.getZ(i)).normalize();
+          const y = tmpDir.y;
+          if (y >= 0) {
+            tmpCol.copy(cHorizon).lerp(cZenith, Math.pow(y, 0.58));
+          } else {
+            tmpCol.copy(cHorizon).lerp(cGround, Math.min(1.0, Math.pow(-y * 2.2, 0.7)));
+          }
+          const sunDot = Math.max(0, tmpDir.dot(sDir));
+          if (sunDot > 0.2 && y > -0.1) {
+            const halo = Math.pow(sunDot, 8.0) * 0.45;
+            tmpCol.r += cSun.r * halo;
+            tmpCol.g += cSun.g * halo;
+            tmpCol.b += cSun.b * halo;
+          }
+          colors[i * 3] = tmpCol.r;
+          colors[i * 3 + 1] = tmpCol.g;
+          colors[i * 3 + 2] = tmpCol.b;
         }
-        const sunDot = Math.max(0, tmpDir.dot(sDir));
-        if (sunDot > 0.2 && y > -0.1) {
-          const halo = Math.pow(sunDot, 8.0) * 0.45;
-          tmpCol.r += cSun.r * halo;
-          tmpCol.g += cSun.g * halo;
-          tmpCol.b += cSun.b * halo;
-        }
-        colors[i * 3] = tmpCol.r;
-        colors[i * 3 + 1] = tmpCol.g;
-        colors[i * 3 + 2] = tmpCol.b;
+
+        sphereGeo.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+        envMat = new THREE.MeshBasicMaterial({
+          vertexColors: true,
+          side: THREE.BackSide,
+          depthWrite: false,
+        });
+        envScene.add(new THREE.Mesh(sphereGeo, envMat));
       }
-
-      sphereGeo.setAttribute('color', new THREE.BufferAttribute(colors, 3));
-      const envMat = new THREE.MeshBasicMaterial({
-        vertexColors: true,
-        side: THREE.BackSide,
-        depthWrite: false,
-      });
-      const envMesh = new THREE.Mesh(sphereGeo, envMat);
-      envScene.add(envMesh);
 
       const pmremRT = this._pmremGenerator.fromScene(envScene, 0.04, 0.1, 100);
       sphereGeo.dispose();
       envMat.dispose();
+      if (sunMesh) {
+        sunMesh.geometry.dispose();
+        sunMesh.material.dispose();
+      }
 
-      this._envCache.set(climateId, pmremRT);
+      this._envCache.set(cacheKey, pmremRT);
       return pmremRT.texture;
     }
 
     syncClimate(preset, sunLightPos) {
       if (!preset) return;
+      const isInitial = !this._activeClimatePreset;
       this._activeClimateId = preset.id || 'early_mist';
+      this._activeClimatePreset = preset;
       const pal = CLIMATE_SKY_PALETTES[this._activeClimateId] || CLIMATE_SKY_PALETTES.early_mist;
 
       const sunDir = sunLightPos.clone().normalize();
+      const sunAz = Math.atan2(sunDir.x, -sunDir.z);
+
+      const targetSkyId = this._skyOverride === 'auto' ? pal.skyId || 'morning' : this._skyOverride;
+      const tune =
+        this._skyOverride === 'auto' ? pal : SKY_OVERRIDE_TUNING[this._skyOverride] || pal;
+
+      this._activateSkyId(targetSkyId, isInitial);
+
+      this.skyUniforms.uSunAzimuth.value = sunAz;
       this.skyUniforms.uZenithColor.value.set(pal.zenith);
       this.skyUniforms.uHorizonColor.value.set(pal.horizon);
       this.skyUniforms.uGroundColor.value.set(pal.ground);
       this.skyUniforms.uFogColor.value.set(preset.fog_hex || pal.horizon);
       this.skyUniforms.uSunDir.value.copy(sunDir);
       this.skyUniforms.uSunGlowColor.value.set(pal.sunGlow);
-      this.skyUniforms.uStarIntensity.value = pal.starIntensity;
+      this.skyUniforms.uSkyTint.value.set(tune.skyTint || '#FFFFFF');
+      this.skyUniforms.uSkyExposure.value = tune.skyExposure != null ? tune.skyExposure : 1.05;
+      this.skyUniforms.uCloudColor.value.set(tune.cloudColor || '#FFFFFF');
+      this.skyUniforms.uCloudOpacity.value = tune.cloudOpacity != null ? tune.cloudOpacity : 0.18;
+      this.skyUniforms.uHorizonHazeFactor.value =
+        pal.horizonHazeFactor != null ? pal.horizonHazeFactor : 0.62;
+      this.skyUniforms.uStarIntensity.value =
+        tune.starIntensity != null ? tune.starIntensity : pal.starIntensity;
 
       this.waterSharedUniforms.uWaterSunDir.value.copy(sunDir);
       this.waterSharedUniforms.uWaterSunColor.value.set(preset.sun_hex || pal.sunGlow);
@@ -613,13 +904,18 @@
       const pal = palOverride || CLIMATE_SKY_PALETTES[this._activeClimateId] || CLIMATE_SKY_PALETTES.early_mist;
       const sunDir = sunDirOverride || this.skyUniforms.uSunDir.value;
       const sunHex = sunHexOverride || pal.sunGlow;
+      const activeSkyId = this._currentSkyId || pal.skyId || 'morning';
+      const tune =
+        this._skyOverride === 'auto' ? pal : SKY_OVERRIDE_TUNING[this._skyOverride] || pal;
       this.scene.environment = this._getOrBuildClimateEnvMap(
         this._activeClimateId,
+        activeSkyId,
         pal.zenith,
         pal.horizon,
         pal.ground,
         sunDir,
-        sunHex
+        sunHex,
+        tune.skyTint || '#FFFFFF'
       );
     }
 
@@ -822,8 +1118,17 @@
     }
 
     renderFrame(elapsed, sunOffsetVec) {
+      const dt = Math.min(0.1, Math.max(0.0, elapsed - (this._lastFrameTime || 0)));
+      this._lastFrameTime = elapsed;
+
+      if (this._skyBlend < 1.0) {
+        this._skyBlend = Math.min(1.0, this._skyBlend + dt * 1.85);
+        this.skyUniforms.uSkyBlend.value = this._skyBlend;
+      }
+
       this.skyDome.position.copy(this.camera.position);
       this.skyUniforms.uTime.value = elapsed;
+      this.skyUniforms.uSkyDrift.value = elapsed * 0.0012;
       this.waterSharedUniforms.uWaterTime.value = elapsed;
 
       if (sunOffsetVec) {

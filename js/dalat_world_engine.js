@@ -23,7 +23,7 @@
       name_vi: 'Sương sớm (06:15)',
       sky_hex: '#C8D9E6',
       fog_hex: '#DCE6EE',
-      fog_density: 0.00055,
+      fog_density: 0.00036,
       sun_hex: '#FFE2B0',
       sun_intensity: 1.35,
       sun_elevation_deg: 14,
@@ -102,7 +102,7 @@
     constructor(container) {
       this.container = container;
       this.scene = new THREE.Scene();
-      this.scene.fog = new THREE.FogExp2(0xdce6ee, 0.00055);
+      this.scene.fog = new THREE.FogExp2(0xdce6ee, 0.00036);
 
       this.camera = new THREE.PerspectiveCamera(
         48,
@@ -147,10 +147,10 @@
       this.fogEnabled = true;
       this.fogDensityPct = 100;
       this._lastNonZeroFogPct = 100;
-      this._baseClimateFogDensity = 0.00055;
+      this._baseClimateFogDensity = 0.00036;
       this._baseClimateFogHex = '#DCE6EE';
-      this._currentFogDensity = 0.00055;
-      this._targetFogDensity = 0.00055;
+      this._currentFogDensity = 0.00036;
+      this._targetFogDensity = 0.00036;
 
       this.pbrLibrary =
         typeof window.DalatPbrMaterialLibrary === 'function'
@@ -159,8 +159,8 @@
 
       this.streamer = new window.DalatTileStreamer(this.scene, this.pbrLibrary);
 
-      this.target = new THREE.Vector3(0, 8, -40);
-      this.camera.position.set(-680, 420, 860);
+      this.target = new THREE.Vector3(0, 22, -40);
+      this.camera.position.set(-680, 265, 895);
       this.camera.lookAt(this.target);
 
       // Khởi tạo bộ xử lý đồ họa Realtime & kết nối mặt nước GPU / cache bóng đổ
@@ -330,7 +330,9 @@
       this.scene.background = skyColor;
 
       this._baseClimateFogHex = preset.fog_hex;
-      this._baseClimateFogDensity = Number(preset.fog_density || 0.0004);
+      const rawFogDensity = Number(preset.fog_density || 0.00036);
+      this._baseClimateFogDensity =
+        preset.id === 'early_mist' ? Math.min(rawFogDensity, 0.00036) : rawFogDensity;
 
       if (!this.scene.fog) {
         this.scene.fog = new THREE.FogExp2(fogColor.getHex(), 0.0);
@@ -1093,6 +1095,28 @@
       document.querySelectorAll('#climate-grid .preset-btn').forEach((btn) => {
         btn.addEventListener('click', () => {
           this.applyClimate(btn.dataset.climate);
+        });
+      });
+
+      const SKY_MODE_LABELS = {
+        auto: 'Tự động',
+        morning: 'Bình minh',
+        day: 'Mây xanh',
+        sunset: 'Hoàng hôn',
+        dusk: 'Chạng vạng',
+        night: 'Đêm sao',
+      };
+      document.querySelectorAll('#sky-grid .sky-chip').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const mode = btn.dataset.sky || 'auto';
+          if (this.realtime && typeof this.realtime.setSkyOverride === 'function') {
+            this.realtime.setSkyOverride(mode);
+          }
+          document.querySelectorAll('#sky-grid .sky-chip').forEach((b) => {
+            b.classList.toggle('active', b.dataset.sky === mode);
+          });
+          const tag = document.getElementById('sky-mode-tag');
+          if (tag) tag.textContent = SKY_MODE_LABELS[mode] || mode;
         });
       });
 
