@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Đà Lạt 3D Simulation — Trình Xem Realtime Web 3D &amp; LOD Tile Streamer</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'%3E%3Crect width='28' height='28' rx='6' fill='%2308111e'/%3E%3Cpath d='M14 4L22 18H6L14 4Z' fill='%2310b981'/%3E%3Cpath d='M6 21C9 19 19 23 22 21' stroke='%2338bdf8' stroke-width='2' fill='none'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <div id="viewport-container" aria-label="Khung cảnh 3D Đà Lạt"></div>
+
+  <!-- Thanh tiêu đề & trạng thái trên bên trái -->
+  <header class="hud-brand glass-panel">
+    <div class="brand-row">
+      <div class="brand-dot" aria-hidden="true"></div>
+      <div>
+        <h1>ĐÀ LẠT 3D SIMULATION</h1>
+        <p class="brand-sub">EPSG:32649 • Gốc Hồ Xuân Hương (1478m MSL) • Three.js r128</p>
+      </div>
+    </div>
+    <div class="status-chips">
+      <span id="mode-badge" class="chip chip-amber">Đang khởi tạo...</span>
+      <span id="fps-badge" class="chip chip-neutral">-- FPS</span>
+      <span id="tile-count-badge" class="chip chip-emerald">RING_0 (T_E00_N00)</span>
+    </div>
+  </header>
+
+  <!-- Banner trạng thái Tour Bay Tự Động Quanh Đà Lạt -->
+  <div id="tour-status-banner" class="tour-banner glass-panel hidden" role="status">
+    <div class="tour-banner-top">
+      <span class="tour-live-dot"></span>
+      <strong id="tour-step-title">Chặng 1/8: Toàn cảnh Hồ Xuân Hương</strong>
+      <button id="next-tour-step-btn" class="tour-mini-btn" type="button" title="Chuyển nhanh sang chặng kế tiếp">Chặng kế ⏭</button>
+    </div>
+    <p id="tour-step-caption" class="tour-caption">Đang bay tự động quanh thung lũng Đà Lạt...</p>
+    <div class="tour-progress-track">
+      <div id="tour-progress-fill" class="tour-progress-fill"></div>
+    </div>
+  </div>
+
+  <!-- Nút thu gọn / mở rộng bảng điều khiển -->
+  <button id="toggle-panel-btn" class="glass-btn toggle-panel-btn" type="button" title="Ẩn/hiện bảng điều khiển">
+    ☰ Bảng điều khiển
+  </button>
+
+  <!-- Bảng điều khiển Glassmorphism Tiếng Việt bên phải -->
+  <aside id="control-panel" class="control-panel glass-panel" aria-label="Bảng điều khiển Đà Lạt 3D">
+    <section class="panel-section">
+      <h2 class="section-title">Tour Tham Quan &amp; Trải Nghiệm</h2>
+      <div class="tour-controls-row">
+        <button id="start-tour-btn" class="tour-btn" type="button">▶ Tour Bay Tự Động Quanh Đà Lạt</button>
+        <button id="stop-tour-btn" class="tour-stop-btn hidden" type="button" title="Dừng Tour">■</button>
+      </div>
+    </section>
+
+    <section class="panel-section">
+      <h2 class="section-title">Khí Hậu &amp; Thời Gian Đà Lạt</h2>
+      <div id="climate-grid" class="preset-grid">
+        <button class="preset-btn active" data-climate="early_mist" type="button">Sương sớm (06:15)</button>
+        <button class="preset-btn" data-climate="highland_noon" type="button">Trưa cao nguyên (11:30)</button>
+        <button class="preset-btn" data-climate="sunset_lake" type="button">Hoàng hôn (17:30)</button>
+        <button class="preset-btn" data-climate="mountain_night" type="button">Đêm phố núi (20:00)</button>
+      </div>
+    </section>
+
+    <section class="panel-section">
+      <h2 class="section-title">Các Lớp Dữ Liệu 3D</h2>
+      <div class="layer-list">
+        <label class="layer-item">
+          <input type="checkbox" data-layer="terrain" checked />
+          <span class="layer-swatch swatch-terrain"></span>
+          <span class="layer-label">Địa hình</span>
+          <span class="layer-count" id="count-terrain">Fallback</span>
+        </label>
+        <label class="layer-item">
+          <input type="checkbox" data-layer="water" checked />
+          <span class="layer-swatch swatch-water"></span>
+          <span class="layer-label">Hồ nước</span>
+          <span class="layer-count" id="count-water">Fallback</span>
+        </label>
+        <label class="layer-item">
+          <input type="checkbox" data-layer="vegetation" checked />
+          <span class="layer-swatch swatch-vegetation"></span>
+          <span class="layer-label">Rừng thông &amp; Mai Anh Đào</span>
+          <span class="layer-count" id="count-vegetation">Instanced</span>
+        </label>
+        <label class="layer-item">
+          <input type="checkbox" data-layer="landmarks" checked />
+          <span class="layer-swatch swatch-landmarks"></span>
+          <span class="layer-label">Công trình nổi bật</span>
+          <span class="layer-count" id="count-landmarks">6 lõi</span>
+        </label>
+        <label class="layer-item">
+          <input type="checkbox" data-layer="roads" checked />
+          <span class="layer-swatch swatch-roads"></span>
+          <span class="layer-label">Đường phố</span>
+          <span class="layer-count" id="count-roads">Ven hồ</span>
+        </label>
+        <label class="layer-item">
+          <input type="checkbox" data-layer="buildings" checked />
+          <span class="layer-swatch swatch-buildings"></span>
+          <span class="layer-label">Nhà dân &amp; Nhà kính</span>
+          <span class="layer-count" id="count-buildings">0</span>
+        </label>
+        <label class="layer-item">
+          <input type="checkbox" data-layer="grid" checked />
+          <span class="layer-swatch swatch-grid"></span>
+          <span class="layer-label">Lưới mở rộng RING_0..3</span>
+          <span class="layer-count" id="count-grid">2km/ô</span>
+        </label>
+      </div>
+    </section>
+
+    <section class="panel-section">
+      <div class="section-header-row">
+        <h2 class="section-title">Bay Camera Tới Địa Danh</h2>
+      </div>
+      <div id="camera-preset-list" class="camera-list"></div>
+    </section>
+
+    <section class="panel-section panel-footer-actions">
+      <button id="refresh-index-btn" class="action-btn" type="button">↻ Tải lại dữ liệu 3D</button>
+      <button id="reset-view-btn" class="action-btn action-btn-secondary" type="button">⌖ Về tâm Hồ Xuân Hương</button>
+    </section>
+  </aside>
+
+  <!-- Bản đồ Radar Minimap LOD & Lưới Tile (Góc dưới bên trái) -->
+  <section id="minimap-panel" class="minimap-panel glass-panel" aria-label="Bản đồ Radar Minimap Đà Lạt">
+    <div class="minimap-header">
+      <span class="minimap-title">RADAR TILE STREAMER</span>
+      <div class="minimap-ring-tabs">
+        <button type="button" class="ring-tab active" data-minimap-ring="0" title="Vùng lõi RING_0 (6×6km)">R0</button>
+        <button type="button" class="ring-tab" data-minimap-ring="1" title="Nội đô mở rộng RING_1 (14×14km)">R1</button>
+        <button type="button" class="ring-tab" data-minimap-ring="2" title="Vành đai RING_2 (30×30km)">R2</button>
+      </div>
+    </div>
+    <canvas id="minimap-canvas" width="212" height="212" title="Click vào ô Tile bất kỳ trên Radar để bay tới"></canvas>
+    <div class="minimap-legend">
+      <span class="legend-item"><i class="dot-built"></i>Đã có 3D</span>
+      <span class="legend-item"><i class="dot-lod"></i>LOD Active</span>
+      <span class="legend-item"><i class="dot-cam"></i>Camera</span>
+    </div>
+    <div id="minimap-lod-stat" class="minimap-stat">T_E00_N00 • Active LOD: 9 ô</div>
+  </section>
+
+  <!-- Popup Thông Tin Kiến Trúc khi click vào công trình nổi bật -->
+  <article id="landmark-info-popup" class="landmark-popup glass-panel hidden" aria-live="polite">
+    <div class="popup-header">
+      <div>
+        <span id="popup-lm-status" class="chip chip-emerald">LOD3/4 GLB Thực Tế</span>
+        <h3 id="popup-lm-title">Quảng trường Lâm Viên</h3>
+        <p id="popup-lm-en" class="popup-sub">Lam Vien Square</p>
+      </div>
+      <button id="landmark-popup-close" class="popup-close-btn" type="button" title="Đóng">✕</button>
+    </div>
+    <div class="popup-meta-grid">
+      <div class="meta-box">
+        <span class="meta-label">Mã Tile &amp; Cao độ</span>
+        <span class="meta-val"><strong id="popup-lm-tile">T_E00_N00</strong> • <span id="popup-lm-elev">1480.0 m</span></span>
+      </div>
+      <div class="meta-box">
+        <span class="meta-label">Tọa độ WGS84</span>
+        <span id="popup-lm-coords" class="meta-val">11.93875°N, 108.44453°E</span>
+      </div>
+      <div class="meta-box">
+        <span class="meta-label">Phong cách kiến trúc</span>
+        <span id="popup-lm-style" class="meta-val">Contemporary Parametric Glass</span>
+      </div>
+      <div class="meta-box">
+        <span class="meta-label">Kiến trúc sư / Năm</span>
+        <span class="meta-val"><span id="popup-lm-arch">KTS Trần Văn Dũng</span> (<span id="popup-lm-year">2015</span>)</span>
+      </div>
+    </div>
+    <p id="popup-lm-desc" class="popup-desc">
+      Thông tin chi tiết về kiến trúc và lịch sử công trình biểu tượng Đà Lạt.
+    </p>
+    <div class="popup-actions">
+      <button id="landmark-popup-focus" class="action-btn" type="button">⌖ Cận cảnh công trình</button>
+    </div>
+  </article>
+
+  <!-- Thanh tọa độ GPS thời gian thực & Hướng dẫn thao tác chuẩn SketchUp -->
+  <footer class="hud-bottom glass-panel">
+    <div class="gps-readout">
+      <div class="gps-cell">
+        <span class="gps-key">Vĩ độ (Lat)</span>
+        <span id="gps-lat" class="gps-val">11.940419°</span>
+      </div>
+      <div class="gps-cell">
+        <span class="gps-key">Kinh độ (Lon)</span>
+        <span id="gps-lon" class="gps-val">108.445259°</span>
+      </div>
+      <div class="gps-cell">
+        <span class="gps-key">Cao độ (MSL)</span>
+        <span id="gps-elev" class="gps-val">1478.0 m</span>
+      </div>
+      <div class="gps-cell">
+        <span class="gps-key">Cục bộ (X, Y)</span>
+        <span id="gps-local" class="gps-val">0.0, 0.0 m</span>
+      </div>
+      <div class="gps-cell">
+        <span class="gps-key">Mã Tile</span>
+        <span id="gps-tile" class="gps-val gps-tile-highlight">T_E00_N00 (RING_0)</span>
+      </div>
+    </div>
+    <div class="controls-hint">
+      <span><strong>Click công trình:</strong> Xem kiến trúc</span>
+      <span><strong>Xoay:</strong> Chuột trái / giữa</span>
+      <span><strong>Pan:</strong> Shift + Giữa / Phải</span>
+      <span><strong>Zoom:</strong> Cuộn chuột</span>
+      <span><strong>Flycam:</strong> W A S D + Q E</span>
+    </div>
+  </footer>
+
+  <!-- Thông báo lỗi nếu thiếu WebGL / CDN -->
+  <div id="error-overlay" class="error-overlay hidden" role="alert"></div>
+
+  <!-- Three.js r128 + GLTFLoader (local zero-CDN bundle) + LOD Tile Streamer + Minimap Radar & Tour -->
+  <script src="./js/vendor/three.min.js"></script>
+  <script src="./js/vendor/GLTFLoader.js"></script>
+  <script src="./js/tile_streamer.js"></script>
+  <script src="./js/minimap_hud.js"></script>
+  <script src="./js/dalat_world_engine.js"></script>
+</body>
+</html>

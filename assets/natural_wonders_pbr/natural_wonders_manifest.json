@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0.0",
+  "project": "DALAT_3D_SIMULATION",
+  "slot": 16,
+  "display_slot_name": "ĐÀ LẠT - 15",
+  "lane": "ROCK_CLIFFS_WATERFALLS_PBR_MATERIALS",
+  "updated_at_utc": "2026-11-23T17:28:58.863776+00:00",
+  "completed_waves": [
+    1
+  ],
+  "khr_materials_transmission_used": false,
+  "models": [
+    {
+      "id": "cliff_thac_datanla_alpine_coaster",
+      "name_vi": "Ghềnh Đá Bazan 7 Tầng Thác Datanla & Hệ Thống Máng Trượt Alpine Coaster",
+      "path": "02_ASSETS_3D/natural_wonders_pbr/cliff_thac_datanla_alpine_coaster.glb",
+      "tile_ids": [
+        "T_E00_S02"
+      ],
+      "ring": 1,
+      "coordinate_space": "world_gltf_y_up",
+      "water_alignment_ref": "02_ASSETS_3D/water_bodies/water_thac_datanla.glb",
+      "upstream_elev_msl_m": 1345.0,
+      "main_plunge_pool_elev_msl_m": 1315.0,
+      "main_plunge_pool_y_gltf_m": -162.85,
+      "downstream_elev_msl_m": 1288.0,
+      "alpine_coaster_station_elev_msl_m": 1358.5,
+      "alpine_coaster_track_length_m": 1182.7,
+      "alpine_coaster_sleds_count": 8,
+      "centroid_local_m": [
+        509.031,
+        -4178.72
+      ],
+      "centroid_wgs84": {
+        "lat": 11.9028809,
+        "lon": 108.4499328
+      },
+      "bbox_gltf_m": {
+        "min": [
+          259.624,
+          -196.35,
+          3920.989
+        ],
+        "max": [
+          734.656,
+          -107.869,
+          4399.632
+        ]
+      },
+      "size_bytes": 1287864,
+      "sha256": "982d1d64ed8fd55030b953af88b510a70899921fc0cbeb6632ad6ddfd07418eb",
+      "nodes": 10,
+      "materials": 10,
+      "embedded_textures": 7,
+      "triangles": 20405,
+      "has_forbidden_transmission": false
+    },
+    {
+      "id": "cliff_thac_prenn_curtain_grotto",
+      "name_vi": "Vách Đá Bazan Vòng Cung Hàm Ếch Thác Prenn, Hành Lang Sau Màn Thác & Cầu Gỗ Vòm",
+      "path": "02_ASSETS_3D/natural_wonders_pbr/cliff_thac_prenn_curtain_grotto.glb",
+      "tile_ids": [
+        "T_E01_S03",
+        "T_E01_S04"
+      ],
+      "ring": 2,
+      "coordinate_space": "world_gltf_y_up",
+      "water_alignment_ref": "02_ASSETS_3D/water_bodies/water_thac_prenn.glb",
+      "upstream_elev_msl_m": 1265.0,
+      "main_plunge_pool_elev_msl_m": 1235.0,
+      "main_plunge_pool_y_gltf_m": -242.85,
+      "behind_waterfall_grotto_walk_y_gltf_m": -235.65,
+      "downstream_elev_msl_m": 1222.0,
+      "horseshoe_cliff_span_m": 98.0,
+      "centroid_local_m": [
+        1306.298,
+        -6904.842
+      ],
+      "centroid_wgs84": {
+        "lat": 11.8783917,
+        "lon": 108.4572532
+      },
+      "bbox_gltf_m": {
+        "min": [
+          1112.825,
+          -260.85,
+          6639.902
+        ],
+        "max": [
+          1489.608,
+          -198.268,
+          7160.636
+        ]
+      },
+      "size_bytes": 752460,
+      "sha256": "5f34994d6397fceaf91fd7d17be0ce9d973ad219742ba4e70b4a81488f40f6fd",
+      "nodes": 9,
+      "materials": 9,
+      "embedded_textures": 7,
+      "triangles": 8214,
+      "has_forbidden_transmission": false
+    }
+  ]
+}

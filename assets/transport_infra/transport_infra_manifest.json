@@ -1,0 +1,496 @@
+{
+  "schema_version": "1.4.0",
+  "project": "DALAT_3D_SIMULATION",
+  "slot": 9,
+  "task_name": "ĐÀ LẠT - 08 (PASSES_BRIDGES_RAILWAY_INFRA)",
+  "wave_completed": 6,
+  "latest_wave": "Wave 6 (T9_AUTO_R2_R3_B01_DRAN_KHANH_LE_SUOI_VANG)",
+  "updated_at_utc": "2026-11-24T03:39:51Z",
+  "world_crs": {
+    "origin_lat": 11.940419,
+    "origin_lon": 108.445259,
+    "origin_elevation_msl_m": 1478.0,
+    "epsg": "EPSG:32649",
+    "gltf_convention": "Three.js Y-Up World-Space (X=East, Y=Up=z_local+0.22m, Z=-North)"
+  },
+  "completed_waves": [
+    "T9_W1_RAILWAY_DALAT_TRAIMAT_7KM",
+    "T9_W2_DEO_PRENN_VA_DEO_MIMOSA",
+    "T9_W3_CAU_ONG_DAO_VONG_XOAY_BAC_THANG",
+    "T9_W4_DEO_TA_NUNG_QL20_CAU_DAT",
+    "T9_W5_TALUY_DA_CHE_KE_HO_LOI_DAO_BO",
+    "T9_AUTO_R2_R3_B01_DRAN_KHANH_LE_SUOI_VANG"
+  ],
+  "total_assets": 12,
+  "total_triangles": 1325482,
+  "wave6_triangles": 254848,
+  "assets": [
+    {
+      "id": "railway_dalat_traimat_7km",
+      "name_vi": "Tuyến Đường sắt răng cưa Ga Đà Lạt – Trại Mát (7km) + Cầu cạn + Hầm chui + Ga Trại Mát",
+      "wave": 1,
+      "category": "railway_corridor_world",
+      "glb_path": "02_ASSETS_3D/transport_infra/railway_dalat_traimat_7km.glb",
+      "world_space_yup": true,
+      "gltf_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_y_rad": 0.0,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tiles_covered": [
+        "T_E01_N00",
+        "T_E02_N00",
+        "T_E03_N00"
+      ],
+      "length_km": 7.002,
+      "triangles": 95282,
+      "nodes": 17,
+      "size_bytes": 3936804,
+      "sha256": "0e4c7244c29f9d1583a75a6d57fec669d52c8227df648d6b0e72e53b42c1599e",
+      "camera_preset": {
+        "name_vi": "Cầu cạn đường sắt Tự Phước – Trại Mát",
+        "eye_gltf": [
+          5345.0,
+          68.0,
+          -165.0
+        ],
+        "target_gltf": [
+          5385.0,
+          49.5,
+          -245.0
+        ],
+        "fov_deg": 45.0
+      }
+    },
+    {
+      "id": "train_dalat_steam_3coaches",
+      "name_vi": "Đoàn Tàu Hơi Nước Cổ Đà Lạt + 3 Toa Gỗ Đông Dương",
+      "wave": 1,
+      "category": "heritage_rolling_stock_world",
+      "glb_path": "02_ASSETS_3D/transport_infra/train_dalat_steam_3coaches.glb",
+      "world_space_yup": true,
+      "gltf_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_y_rad": 0.0,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tile_id": "T_E03_N00",
+      "triangles": 2800,
+      "nodes": 16,
+      "size_bytes": 160648,
+      "sha256": "34b0bd657d526a9f2dbf8d34da02122835739446047ac070fd13632daece5e45",
+      "locomotive_world_center": {
+        "s_m": 5395.0,
+        "x_m": 5221.81,
+        "y_m": 530.31,
+        "rail_top_y_gltf_m": 49.26
+      },
+      "coaches_world_centers": [
+        {
+          "id": "Coach_01_Langbiang_Teak_Salon",
+          "s_m": 5380.2,
+          "x_m": 5214.06,
+          "y_m": 542.92,
+          "rail_top_y_gltf_m": 49.44
+        },
+        {
+          "id": "Coach_02_Indochine_VIP_Dining",
+          "s_m": 5365.2,
+          "x_m": 5205.96,
+          "y_m": 555.54,
+          "rail_top_y_gltf_m": 49.52
+        },
+        {
+          "id": "Coach_03_Plateau_Belvedere_Tail",
+          "s_m": 5350.2,
+          "x_m": 5197.56,
+          "y_m": 567.97,
+          "rail_top_y_gltf_m": 49.48
+        }
+      ],
+      "camera_preset": {
+        "name_vi": "Cận cảnh Đoàn tàu hơi nước cổ & 3 toa gỗ Đông Dương",
+        "eye_gltf": [
+          5199.81,
+          58.76,
+          -496.31
+        ],
+        "target_gltf": [
+          5209.81,
+          51.66,
+          -528.31
+        ],
+        "fov_deg": 42.0
+      }
+    },
+    {
+      "id": "deo_prenn_4lanes_viaducts",
+      "name_vi": "Đèo Prenn Mở Rộng 4 Làn + 4 Cầu Cạn Vượt Vực + Hộ Lan Thép + Taluy Đá + Đèn Đèo Vàng Ấm 35m",
+      "wave": 2,
+      "category": "mountain_pass_corridor_world",
+      "glb_path": "02_ASSETS_3D/transport_infra/deo_prenn_4lanes_viaducts.glb",
+      "world_space_yup": true,
+      "gltf_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_y_rad": 0.0,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tiles_covered": [
+        "T_E00_S01",
+        "T_E00_S02",
+        "T_E00_S03"
+      ],
+      "length_km": 5.138,
+      "width_m": 14.5,
+      "lanes": 4,
+      "viaduct_count": 4,
+      "streetlamps_35m": 294,
+      "triangles": 153694,
+      "nodes": 13,
+      "size_bytes": 5513068,
+      "sha256": "4fa090ee1df98461cfabcf47afe2a98ce8c85eca27ca8cadc05b3750375f97e3",
+      "camera_preset": {
+        "name_vi": "Cầu cạn Cải tuyến số 1 Đèo Prenn (Km224+850)",
+        "eye_gltf": [
+          156.9,
+          16.5,
+          3163.1
+        ],
+        "target_gltf": [
+          98.9,
+          1.5,
+          3121.1
+        ],
+        "fov_deg": 46.0
+      }
+    },
+    {
+      "id": "deo_mimosa_mountain_pass",
+      "name_vi": "Đèo Mimosa (Khe Sanh – Prenn) + 2 Cầu Cạn + Taluy Đá Hộc + Gương Cầu Lồi & Đèn Đèo 35m",
+      "wave": 2,
+      "category": "mountain_pass_corridor_world",
+      "glb_path": "02_ASSETS_3D/transport_infra/deo_mimosa_mountain_pass.glb",
+      "world_space_yup": true,
+      "gltf_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_y_rad": 0.0,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tiles_covered": [
+        "T_E00_S03",
+        "T_E01_S01",
+        "T_E01_S02",
+        "T_E01_S03",
+        "T_E02_S02"
+      ],
+      "length_km": 5.809,
+      "width_m": 11.5,
+      "lanes": 2,
+      "viaduct_count": 2,
+      "streetlamps_35m": 166,
+      "triangles": 154516,
+      "nodes": 13,
+      "size_bytes": 5549740,
+      "sha256": "5a85b697556348e9341d341e045cc890b7b4d2254da0dd71b5721e031571fa85",
+      "camera_preset": {
+        "name_vi": "Cầu cạn & Cua tay áo Đèo Mimosa",
+        "eye_gltf": [
+          2670.54,
+          27.25,
+          3181.73
+        ],
+        "target_gltf": [
+          2616.54,
+          13.25,
+          3143.73
+        ],
+        "fov_deg": 46.0
+      }
+    },
+    {
+      "id": "cau_ong_dao_dap_tran_ho_xuan_huong",
+      "name_vi": "Cầu Ông Đạo 4 làn, Lan can đá cổ điển & Đập tràn 5 khoang Hồ Xuân Hương – Suối Cam Ly",
+      "wave": 3,
+      "task_id": "T9_W3_CAU_ONG_DAO_VONG_XOAY_BAC_THANG",
+      "category": "urban_bridge_and_spillway_dam_world",
+      "glb_path": "02_ASSETS_3D/transport_infra/cau_ong_dao_dap_tran_ho_xuan_huong.glb",
+      "world_space_yup": true,
+      "tiles_covered": [
+        "T_E00_N00"
+      ],
+      "triangles": 57194,
+      "size_bytes": 1895472,
+      "sha256": "6fd8ad481e03ac8d767fe84b0c59f3eb2b50e8a3b96438efd5206ae32e84f5fe"
+    },
+    {
+      "id": "vong_xoay_dai_phun_nuoc_va_cau_chu_y_hoa_binh",
+      "name_vi": "Vòng xoay Đài phun nước Chợ Đà Lạt, Cầu thang chữ Y (Góc Hong Kong) & 120 Bậc thang đá Khu Hòa Bình",
+      "wave": 3,
+      "task_id": "T9_W3_CAU_ONG_DAO_VONG_XOAY_BAC_THANG",
+      "category": "urban_roundabout_overpass_and_stairs_world",
+      "glb_path": "02_ASSETS_3D/transport_infra/vong_xoay_dai_phun_nuoc_va_cau_chu_y_hoa_binh.glb",
+      "world_space_yup": true,
+      "tiles_covered": [
+        "T_E00_N00"
+      ],
+      "triangles": 33060,
+      "size_bytes": 1333424,
+      "sha256": "5bbdcee0b7105c73d31d99f1848dc5e313ef8e8fc7489221e6af791d68d99d8f"
+    },
+    {
+      "id": "deo_ta_nung_dt725_mountain_pass",
+      "wave": 4,
+      "task_id": "T9_W4_DEO_TA_NUNG_QL20_CAU_DAT",
+      "name_vi": "Cung đường Đèo Tà Nung (ĐT725) — Cầu cạn khúc cua, Vách núi đá, Gương cầu lồi & Đài vọng cảnh Mê Linh",
+      "glb_path": "02_ASSETS_3D/transport_infra/deo_ta_nung_dt725_mountain_pass.glb",
+      "category": "mountain_pass_corridor_world",
+      "world_space_yup": true,
+      "gltf_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_y_rad": 0.0,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "z_offset_applied_m": 0.22,
+      "triangles": 121784,
+      "size_bytes": 6537492,
+      "sha256": "a08ed14e9d18944cacdb0b16d04268337ddf1ee5e5bbf5370148a140f243d70a",
+      "length_m": 11479.84,
+      "width_m": 12.0,
+      "viaduct_count": 2,
+      "convex_mirrors": 23,
+      "streetlamps_35m": 329,
+      "cloud_hunting_decks": 2,
+      "tiles_covered": [
+        "T_W01_N00",
+        "T_W02_N00",
+        "T_W02_S01",
+        "T_W03_N00",
+        "T_W03_S01"
+      ],
+      "khr_materials_transmission": false
+    },
+    {
+      "id": "deo_ql20_trai_mat_cau_dat_cloud_deck",
+      "wave": 4,
+      "task_id": "T9_W4_DEO_TA_NUNG_QL20_CAU_DAT",
+      "name_vi": "Đèo Trại Mát – Xuân Thọ – Xuân Trường – Cầu Đất (QL20) & Tổ hợp 03 Trạm Dừng Săn Mây Gỗ Cầu Đất",
+      "glb_path": "02_ASSETS_3D/transport_infra/deo_ql20_trai_mat_cau_dat_cloud_deck.glb",
+      "category": "mountain_pass_and_cloud_hunting_deck_world",
+      "world_space_yup": true,
+      "gltf_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_y_rad": 0.0,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "z_offset_applied_m": 0.22,
+      "triangles": 129024,
+      "size_bytes": 6920012,
+      "sha256": "dde1b107b25df58a68cb86943df2163f407581dd7347dce644762dfb55d744d4",
+      "length_m": 14458.84,
+      "width_m": 13.5,
+      "viaduct_count": 2,
+      "convex_mirrors": 24,
+      "streetlamps_35m": 414,
+      "cloud_hunting_decks": 3,
+      "tiles_covered": [
+        "T_E01_N00",
+        "T_E02_N00",
+        "T_E02_S01",
+        "T_E03_N00",
+        "T_E03_S01",
+        "T_E03_S02"
+      ],
+      "khr_materials_transmission": false
+    },
+    {
+      "id": "taluy_da_che_xanh_chan_doi_noi_do",
+      "wave": 5,
+      "task_id": "T9_W5_TALUY_DA_CHE_KE_HO_LOI_DAO_BO",
+      "name_vi": "Hệ thống 10 Tuyến Taluy Đá Chẻ Xanh Đà Lạt Chắn Sườn Đồi Nội Đô, Bậc Thang Dốc Nhà Bò & 03 Cầu Phụ Suối Cam Ly",
+      "glb_path": "02_ASSETS_3D/transport_infra/taluy_da_che_xanh_chan_doi_noi_do.glb",
+      "category": "hillside_split_stone_retaining_walls_and_bridges_world",
+      "world_space_yup": true,
+      "gltf_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_y_rad": 0.0,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "z_offset_applied_m": 0.22,
+      "triangles": 155660,
+      "size_bytes": 6352032,
+      "sha256": "78a588bbb1fb50387407924b7eb7a406bb533d088341d383ab524a361f667e73",
+      "total_length_m": 18689.61,
+      "corridor_count": 10,
+      "secondary_bridge_count": 3,
+      "buttress_pilasters": 1005,
+      "balustrade_modules": 123,
+      "vintage_lamps": 94,
+      "tiles_covered": [
+        "T_E00_N00",
+        "T_E00_S01",
+        "T_E01_N00",
+        "T_W01_N00",
+        "T_W02_N00"
+      ],
+      "khr_materials_transmission": false
+    },
+    {
+      "id": "ke_ho_lan_can_da_va_loi_dao_bo_ho_xuan_huong",
+      "wave": 5,
+      "task_id": "T9_W5_TALUY_DA_CHE_KE_HO_LOI_DAO_BO",
+      "name_vi": "Kè Đá Chẻ Xanh Chắn Sóng, Lan Can Đá Cổ Điển, 08 Bến Vọng Cảnh & Vỉa Hè Dạo Bộ Quanh Hồ Xuân Hương (5,42 km)",
+      "glb_path": "02_ASSETS_3D/transport_infra/ke_ho_lan_can_da_va_loi_dao_bo_ho_xuan_huong.glb",
+      "category": "lakeside_stone_embankment_and_promenade_world",
+      "world_space_yup": true,
+      "gltf_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_y_rad": 0.0,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "z_offset_applied_m": 0.22,
+      "triangles": 167620,
+      "size_bytes": 5746416,
+      "sha256": "ddb7439abbd2598284ef24cb4226bb83fd869e69b74d3b930c407166a71cdc88",
+      "perimeter_length_m": 4486.1,
+      "promenade_width_m": 4.2,
+      "balustrade_modules": 208,
+      "vintage_lamps": 155,
+      "viewing_balconies": 8,
+      "tiles_covered": [
+        "T_E00_N00"
+      ],
+      "khr_materials_transmission": false
+    },
+    {
+      "id": "deo_dran_ngoan_muc_va_deo_khanh_le_lac_duong",
+      "wave": 6,
+      "task_id": "T9_AUTO_R2_R3_B01_DRAN_KHANH_LE_SUOI_VANG",
+      "name_vi": "Cung đường Đèo D'ran – Cửa ngõ Ngoạn Mục Đơn Dương (QL20) & Đèo Khánh Lê – Lạc Dương – Đa Sar (QL27C/ĐT723)",
+      "glb_path": "02_ASSETS_3D/transport_infra/deo_dran_ngoan_muc_va_deo_khanh_le_lac_duong.glb",
+      "category": "outer_ring_mountain_passes_and_cloud_decks_world",
+      "world_space_yup": true,
+      "gltf_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_y_rad": 0.0,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "z_offset_applied_m": 0.22,
+      "triangles": 126796,
+      "size_bytes": 6753360,
+      "sha256": "92e453ad52cf1ea40f3fc97cf9e389ed606c4f7e4828380dfb4db9c3f491bbfe",
+      "total_length_m": 23071.27,
+      "viaduct_count": 4,
+      "convex_mirrors": 45,
+      "streetlamps_35m": 661,
+      "cloud_hunting_decks": 4,
+      "tiles_covered": [
+        "T_E00_N02",
+        "T_E00_N03",
+        "T_E01_N03",
+        "T_E02_N02",
+        "T_E02_N03",
+        "T_E03_N00",
+        "T_E03_N01",
+        "T_E03_N02",
+        "T_E03_N03",
+        "T_E03_S01",
+        "T_E04_N00",
+        "T_E04_S01"
+      ],
+      "khr_materials_transmission": false
+    },
+    {
+      "id": "cau_treo_suoi_vang_dap_dankia_dt722",
+      "wave": 6,
+      "task_id": "T9_AUTO_R2_R3_B01_DRAN_KHANH_LE_SUOI_VANG",
+      "name_vi": "Cầu Treo Dây Văng Suối Vàng (163m), Đập Tràn 06 Khoang Hồ Dankia – Ankroet & Cung Đường Đèo Suối Vàng (ĐT722)",
+      "glb_path": "02_ASSETS_3D/transport_infra/cau_treo_suoi_vang_dap_dankia_dt722.glb",
+      "category": "suspension_bridge_spillway_dam_and_pass_world",
+      "world_space_yup": true,
+      "gltf_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_y_rad": 0.0,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "z_offset_applied_m": 0.22,
+      "triangles": 128052,
+      "size_bytes": 6545392,
+      "sha256": "e45d23356d90d92cfeb7e40fd1926629d1a9118ad80f0078b1005de8286163a4",
+      "total_length_m": 13986.01,
+      "suspension_bridge_span_m": 163.22,
+      "dankia_dam_length_m": 169.19,
+      "streetlamps_35m": 400,
+      "tiles_covered": [
+        "T_W01_N03",
+        "T_W02_N02",
+        "T_W02_N03",
+        "T_W02_N04",
+        "T_W03_N02",
+        "T_W03_N03",
+        "T_W03_N04",
+        "T_W04_N03"
+      ],
+      "khr_materials_transmission": false
+    }
+  ]
+}

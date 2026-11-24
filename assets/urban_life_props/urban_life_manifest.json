@@ -1,0 +1,1060 @@
+{
+  "schema_version": "1.0.0",
+  "project_name": "DALAT_3D_SIMULATION",
+  "slot": 10,
+  "display_slot_name": "ĐÀ LẠT - 09",
+  "lane": "URBAN_STREETSCAPE_VEHICLES_NIGHTMARKET",
+  "latest_wave": 6,
+  "latest_task_id": "T10_AUTO_R2_R3_B01_CAUDAT_LANGBIANG_SUOIVANG",
+  "updated_at_utc": "2026-11-24T03:34:24Z",
+  "coordinate_system": {
+    "origin": "Tam_Ho_Xuan_Huong_Da_Lat",
+    "lat0": 11.940419,
+    "lon0": 108.445259,
+    "z0_msl_m": 1478.0,
+    "epsg_utm": "EPSG:32649",
+    "axes_gltf": "+X=East (x_m), +Y=Up (z_local), +Z=South (-y_m)",
+    "export_mode": "world_gltf_yup",
+    "lake_y_gltf_refs": {
+      "ho_xuan_huong": 0.08,
+      "ho_tuyen_lam": -102.9
+    },
+    "forbid_khr_materials_transmission": true
+  },
+  "summary_metrics": {
+    "total_glb_files": 18,
+    "total_triangles": 817156,
+    "total_size_bytes": 43259720,
+    "welcome_gates": 2,
+    "canopy_stalls": 122,
+    "soymilk_carts": 26,
+    "banh_trang_grill_stalls": 26,
+    "retro_signboards": 56,
+    "stylized_pedestrians": 153,
+    "lm05_collisions": 0,
+    "dalat_buses": 14,
+    "bus_stop_shelters": 4,
+    "vintage_french_photo_cars": 16,
+    "hill_climbing_motorbikes": 68,
+    "ornate_horse_carriages": 18,
+    "hxh_swan_pedal_boats": 36,
+    "hxh_boarding_piers": 3,
+    "tuyen_lam_wooden_boats": 22,
+    "tuyen_lam_boarding_piers": 2,
+    "yersin_memorial_plaza": 1,
+    "anh_sang_fountain_plaza": 1,
+    "floral_pergola_arches": 22,
+    "lakeside_stone_balustrades": 24,
+    "tiered_stone_flower_planters": 72,
+    "wooden_flower_carts": 16,
+    "french_5globe_chandelier_lamps": 64,
+    "cast_iron_teak_park_benches": 56,
+    "hillside_cloud_hunting_cafe_complexes": 3,
+    "wooden_cloud_hunting_decks": 12,
+    "warm_string_light_bulbs_cafes": 414,
+    "cafe_bistro_tables": 60,
+    "cafe_cloud_hunting_guests": 86,
+    "grand_festival_welcome_gates": 3,
+    "carnaval_floral_parade_floats": 5,
+    "floating_floral_islands_hxh": 8,
+    "musical_floral_sculptures": 6,
+    "overhead_art_lighting_arches": 28,
+    "floral_rimmed_traffic_signals": 8,
+    "cau_dat_container_cafe_360": 1,
+    "langbiang_radar_mountain_jeeps": 18,
+    "langbiang_paragliders": 6,
+    "suoi_vang_wooden_boats_and_kayaks": 24,
+    "da_phu_suoi_vang_glamping_tents": 14
+  },
+  "items": [
+    {
+      "id": "ul_w1_01_cho_dem_gates_and_canopy_stalls",
+      "name_vi": "Cổng chào Chợ Đêm Đà Lạt & Dãy dù bạt sạp hàng đa sắc Nguyễn Thị Minh Khai",
+      "wave": 1,
+      "task_id": "T10_W1_CHO_DEM_AM_THUC_HOA_BINH",
+      "tile_id": "T_E00_N00",
+      "spanned_tiles": [
+        "T_E00_N00",
+        "T_W01_N00"
+      ],
+      "coordinate_space": "world_gltf_yup",
+      "world_anchor": {
+        "lat": 11.941479,
+        "lon": 108.43802,
+        "x_m": -793.361,
+        "y_m": 119.268,
+        "elev_msl_m": 1478.0,
+        "gltf_xyz": [
+          -793.361,
+          0.16,
+          -119.268
+        ]
+      },
+      "path": "02_ASSETS_3D/urban_life_props/ul_w1_01_cho_dem_gates_and_canopy_stalls.glb",
+      "size_bytes": 954972,
+      "sha256": "5edfac0d27cce53ce54298b456be8857f32ee979d9cebce26a8d4b919b2882d6",
+      "nodes": 38,
+      "materials": 19,
+      "triangles": 16984,
+      "bounds_gltf": {
+        "min": [
+          -1122.24,
+          -10.558,
+          -151.799
+        ],
+        "max": [
+          -741.889,
+          9.93,
+          1.962
+        ]
+      },
+      "khr_materials_transmission": false,
+      "counts": {
+        "welcome_gates": 2,
+        "canopy_stalls": 122
+      },
+      "source_url": "https://merperle.vn/vi/properties/merperle-dalat-hotel/articles/cho-dem-da-lat"
+    },
+    {
+      "id": "ul_w1_02_am_thuc_sua_dau_nanh_streetfood",
+      "name_vi": "Không gian Ẩm thực đêm Đà Lạt: Quầy Sữa đậu nành nóng, Ghế nhựa thấp & Bếp than Bánh tráng nướng",
+      "wave": 1,
+      "task_id": "T10_W1_CHO_DEM_AM_THUC_HOA_BINH",
+      "tile_id": "T_E00_N00",
+      "spanned_tiles": [
+        "T_E00_N00",
+        "T_W01_N00"
+      ],
+      "coordinate_space": "world_gltf_yup",
+      "world_anchor": {
+        "lat": 11.9415868,
+        "lon": 108.4373167,
+        "x_m": -864.998,
+        "y_m": 130.0,
+        "elev_msl_m": 1476.421,
+        "gltf_xyz": [
+          -864.998,
+          -1.419,
+          -130.0
+        ]
+      },
+      "path": "02_ASSETS_3D/urban_life_props/ul_w1_02_am_thuc_sua_dau_nanh_streetfood.glb",
+      "size_bytes": 794608,
+      "sha256": "ef94f1679338743315942ed3ef3a1ddcfe79d5c9effad086c71ac6cbec496ef4",
+      "nodes": 26,
+      "materials": 16,
+      "triangles": 13520,
+      "bounds_gltf": {
+        "min": [
+          -1115.606,
+          -10.206,
+          -149.172
+        ],
+        "max": [
+          -749.433,
+          30.254,
+          338.726
+        ]
+      },
+      "khr_materials_transmission": false,
+      "counts": {
+        "soymilk_carts": 26,
+        "banh_trang_grill_stalls": 26,
+        "plastic_stools": 208
+      },
+      "source_url": "https://travel.com.vn/tin-tuc-du-lich/cho-dem-da-lat-v18326.aspx"
+    },
+    {
+      "id": "ul_w1_03_hoa_binh_retro_signs_and_crowd",
+      "name_vi": "Phố đi bộ Khu Hòa Bình, Hệ biển hiệu hộp đèn Retro Phố Núi & Dòng người dạo chợ đêm",
+      "wave": 1,
+      "task_id": "T10_W1_CHO_DEM_AM_THUC_HOA_BINH",
+      "tile_id": "T_E00_N00",
+      "spanned_tiles": [
+        "T_E00_N00",
+        "T_W01_N00"
+      ],
+      "coordinate_space": "world_gltf_yup",
+      "world_anchor": {
+        "lat": 11.9395786,
+        "lon": 108.4379823,
+        "x_m": -792.495,
+        "y_m": -93.555,
+        "elev_msl_m": 1489.931,
+        "gltf_xyz": [
+          -792.495,
+          12.091,
+          93.555
+        ]
+      },
+      "path": "02_ASSETS_3D/urban_life_props/ul_w1_03_hoa_binh_retro_signs_and_crowd.glb",
+      "size_bytes": 1258876,
+      "sha256": "cbc132e0871e6e2576e255f8cf1761f01e3e4574df903c3130a73d2db26c7d96",
+      "nodes": 35,
+      "materials": 24,
+      "triangles": 22162,
+      "bounds_gltf": {
+        "min": [
+          -1121.015,
+          -10.163,
+          -148.07
+        ],
+        "max": [
+          -729.002,
+          33.782,
+          350.329
+        ]
+      },
+      "khr_materials_transmission": false,
+      "counts": {
+        "retro_signboards": 56,
+        "stylized_pedestrians": 153
+      },
+      "source_url": "https://travel.com.vn/tin-tuc-du-lich/cho-da-lat-v18536.aspx"
+    },
+    {
+      "id": "ul_w2_01_dalat_buses_vintage_cars_motorbikes",
+      "name_vi": "Đội xe buýt Đà Lạt, ô tô cổ Pháp chụp ảnh & dòng xe máy leo dốc phố núi",
+      "wave": 2,
+      "task_id": "T10_W2_VEHICLES_CARRIAGES_SWAN_BOATS",
+      "tile_id": "T_W01_N00",
+      "spanned_tiles": [
+        "T_E00_N00",
+        "T_W01_N00",
+        "T_E01_N00",
+        "T_E00_S01"
+      ],
+      "coordinate_space": "world_gltf_yup",
+      "world_anchor": {
+        "lat": 11.938128,
+        "lon": 108.443239,
+        "x_m": -220.12,
+        "y_m": -253.36,
+        "elev_msl_m": 1489.28,
+        "gltf_xyz": [
+          -220.12,
+          11.28,
+          253.36
+        ]
+      },
+      "path": "02_ASSETS_3D/urban_life_props/ul_w2_01_dalat_buses_vintage_cars_motorbikes.glb",
+      "size_bytes": 1892304,
+      "sha256": "78bd1b2d5b38c53a46832325da7a4869e8de6109405b6ca1b80146a004d01977",
+      "nodes": 18,
+      "materials": 18,
+      "vertices": 70432,
+      "triangles": 30968,
+      "bounds_gltf": {
+        "min": [
+          -2018.12,
+          -17.513,
+          -1854.872
+        ],
+        "max": [
+          2430.437,
+          58.197,
+          2185.651
+        ]
+      },
+      "khr_materials_transmission": false,
+      "counts": {
+        "dalat_buses": 14,
+        "bus_stop_shelters": 4,
+        "vintage_french_photo_cars": 16,
+        "hill_climbing_motorbikes": 68
+      },
+      "source_url": "https://travel.com.vn/tin-tuc-du-lich/ho-xuan-huong-dia-diem-du-lich-da-lat-2025-v15912.aspx"
+    },
+    {
+      "id": "ul_w2_02_tran_quoc_toan_horse_carriages",
+      "name_vi": "Đoàn xe ngựa du lịch cổ điển đường Trần Quốc Toản quanh Hồ Xuân Hương",
+      "wave": 2,
+      "task_id": "T10_W2_VEHICLES_CARRIAGES_SWAN_BOATS",
+      "tile_id": "T_E00_N00",
+      "spanned_tiles": [
+        "T_E00_N00",
+        "T_W01_N00"
+      ],
+      "coordinate_space": "world_gltf_yup",
+      "world_anchor": {
+        "lat": 11.94128,
+        "lon": 108.43975,
+        "x_m": -600.1,
+        "y_m": 95.2,
+        "elev_msl_m": 1478.95,
+        "gltf_xyz": [
+          -600.1,
+          0.95,
+          -95.2
+        ]
+      },
+      "path": "02_ASSETS_3D/urban_life_props/ul_w2_02_tran_quoc_toan_horse_carriages.glb",
+      "size_bytes": 1436456,
+      "sha256": "c20f29c5bc9939ec86398899490f9e5618c041e57441fe716d05ea36489e28eb",
+      "nodes": 14,
+      "materials": 14,
+      "vertices": 53312,
+      "triangles": 24064,
+      "bounds_gltf": {
+        "min": [
+          -704.292,
+          0.565,
+          -752.461
+        ],
+        "max": [
+          579.438,
+          40.27,
+          166.371
+        ]
+      },
+      "khr_materials_transmission": false,
+      "counts": {
+        "ornate_horse_carriages": 18,
+        "lakeside_waiting_stations": 2
+      },
+      "source_url": "https://thanhnien.vn/xe-ngua-da-lat-san-pham-du-lich-dac-thu-can-khoi-phuc-va-phat-trien-18525121116262943.htm"
+    },
+    {
+      "id": "ul_w2_03_hxh_swan_boats_and_tuyen_lam_wooden_fleet",
+      "name_vi": "Đội thuyền thiên nga đạp vịt Hồ Xuân Hương (Y=0.08m) & thuyền gỗ Hồ Tuyền Lâm (Y=-102.9m)",
+      "wave": 2,
+      "task_id": "T10_W2_VEHICLES_CARRIAGES_SWAN_BOATS",
+      "tile_id": "T_E00_N00",
+      "spanned_tiles": [
+        "T_E00_N00",
+        "T_W01_N00",
+        "T_W01_S02"
+      ],
+      "coordinate_space": "world_gltf_yup",
+      "world_anchor": {
+        "lat": 11.940419,
+        "lon": 108.445259,
+        "x_m": 0.0,
+        "y_m": 0.0,
+        "elev_msl_m": 1478.08,
+        "gltf_xyz": [
+          0.0,
+          0.08,
+          0.0
+        ],
+        "tuyen_lam_y_gltf_m": -102.9
+      },
+      "path": "02_ASSETS_3D/urban_life_props/ul_w2_03_hxh_swan_boats_and_tuyen_lam_wooden_fleet.glb",
+      "size_bytes": 1856484,
+      "sha256": "3e70b63e489da1af9cf75ce736898775789c2ca70962db6116e974b4ad22942e",
+      "nodes": 24,
+      "materials": 24,
+      "vertices": 66740,
+      "triangles": 38936,
+      "bounds_gltf": {
+        "min": [
+          -2436.383,
+          -103.95,
+          -557.726
+        ],
+        "max": [
+          454.856,
+          3.055,
+          4954.455
+        ]
+      },
+      "khr_materials_transmission": false,
+      "sourced_props_used": [
+        "prop_01_hxh_pedal_duck_boat.glb",
+        "prop_02_tuyen_lam_wooden_boat.glb",
+        "prop_03_lakeside_wooden_pier.glb"
+      ],
+      "counts": {
+        "hxh_swan_pedal_boats": 36,
+        "hxh_boarding_piers": 3,
+        "tuyen_lam_wooden_boats": 22,
+        "tuyen_lam_boarding_piers": 2
+      },
+      "source_url": "https://mia.vn/cam-nang-du-lich/ben-thuyen-ho-tuyen-lam-17116"
+    },
+    {
+      "id": "ul_w3_01_cong_vien_yersin_and_anh_sang_landscapes",
+      "name_vi": "Cảnh quan Công viên Yersin (Tượng đài Bác sĩ Yersin, lan can đá bờ hồ, vòm hoa) & Công viên Ánh Sáng",
+      "wave": 3,
+      "task_id": "T10_W3_PARKS_FLOWER_ARCHES_STREET_FURNITURE",
+      "tile_id": "T_E00_N00",
+      "spanned_tiles": [
+        "T_E00_N00",
+        "T_W01_N00"
+      ],
+      "coordinate_space": "world_gltf_yup",
+      "world_anchor": {
+        "lat": 11.93956,
+        "lon": 108.4465,
+        "x_m": 135.0,
+        "y_m": -95.0,
+        "elev_msl_m": 1479.85,
+        "gltf_xyz": [
+          135.0,
+          1.85,
+          95.0
+        ]
+      },
+      "path": "02_ASSETS_3D/urban_life_props/ul_w3_01_cong_vien_yersin_and_anh_sang_landscapes.glb",
+      "size_bytes": 880688,
+      "sha256": "9636d2cc3ab42218c20db88d9d9d94e9920b6d36f7c8f3da4c9b10b395af95f2",
+      "nodes": 19,
+      "materials": 19,
+      "vertices": 30432,
+      "triangles": 22276,
+      "bounds_gltf": {
+        "min": [
+          -915.337,
+          0.22,
+          -46.125
+        ],
+        "max": [
+          527.289,
+          39.264,
+          189.684
+        ]
+      },
+      "khr_materials_transmission": false,
+      "sourced_props_used": [
+        "prop_05_lakeside_stone_balustrade.glb",
+        "prop_07_dalat_flower_pergola_arch.glb",
+        "prop_12_dalat_wooden_bus_stop_and_wayfinding_kiosk.glb"
+      ],
+      "counts": {
+        "yersin_memorial_plaza_and_bust": 1,
+        "anh_sang_illuminated_fountain_plaza": 1,
+        "floral_pergola_arches": 22,
+        "lakeside_stone_balustrades": 24,
+        "wayfinding_kiosks": 4
+      },
+      "source_url": "https://travel.com.vn/tin-tuc-du-lich/ho-xuan-huong-dia-diem-du-lich-da-lat-2025-v15912.aspx"
+    },
+    {
+      "id": "ul_w3_02_hxh_hydrangea_marigold_planters_and_carts",
+      "name_vi": "Hệ thống bồn hoa cẩm tú cầu, cúc vạn thọ, xác pháo & xe hoa gỗ cổ điển quanh Hồ Xuân Hương",
+      "wave": 3,
+      "task_id": "T10_W3_PARKS_FLOWER_ARCHES_STREET_FURNITURE",
+      "tile_id": "T_E00_N00",
+      "spanned_tiles": [
+        "T_E00_N00",
+        "T_W01_N00"
+      ],
+      "coordinate_space": "world_gltf_yup",
+      "world_anchor": {
+        "lat": 11.94128,
+        "lon": 108.43975,
+        "x_m": -600.1,
+        "y_m": 95.2,
+        "elev_msl_m": 1479.0,
+        "gltf_xyz": [
+          -600.1,
+          1.0,
+          -95.2
+        ]
+      },
+      "path": "02_ASSETS_3D/urban_life_props/ul_w3_02_hxh_hydrangea_marigold_planters_and_carts.glb",
+      "size_bytes": 2626012,
+      "sha256": "3b4af87c1f18dc224e8d08676d21d82eec288dd3d55ba0624505c3aaa1d97f3e",
+      "nodes": 11,
+      "materials": 11,
+      "vertices": 96992,
+      "triangles": 48048,
+      "bounds_gltf": {
+        "min": [
+          -897.175,
+          0.3,
+          -802.679
+        ],
+        "max": [
+          624.883,
+          41.054,
+          179.112
+        ]
+      },
+      "khr_materials_transmission": false,
+      "counts": {
+        "tiered_stone_flower_planters": 72,
+        "wooden_flower_carts": 16
+      },
+      "source_url": "https://caonguyentourist.com/kham-pha-ho-xuan-huong-trai-tim-xanh-muot-giua-da-lat-mong-mo"
+    },
+    {
+      "id": "ul_w3_03_french_5globe_lamps_and_cast_iron_benches",
+      "name_vi": "Dãy đèn chùm cổ 5 bóng Pháp & ghế gang gỗ ven Hồ Xuân Hương - Công viên Yersin",
+      "wave": 3,
+      "task_id": "T10_W3_PARKS_FLOWER_ARCHES_STREET_FURNITURE",
+      "tile_id": "T_E00_N00",
+      "spanned_tiles": [
+        "T_E00_N00",
+        "T_W01_N00"
+      ],
+      "coordinate_space": "world_gltf_yup",
+      "world_anchor": {
+        "lat": 11.940419,
+        "lon": 108.445259,
+        "x_m": 0.0,
+        "y_m": 0.0,
+        "elev_msl_m": 1479.1,
+        "gltf_xyz": [
+          0.0,
+          1.1,
+          0.0
+        ]
+      },
+      "path": "02_ASSETS_3D/urban_life_props/ul_w3_03_french_5globe_lamps_and_cast_iron_benches.glb",
+      "size_bytes": 4259056,
+      "sha256": "0a6db77963a0ccc74df7168b108e52da5aea85d5ac74f0cb82231c84275e76b3",
+      "nodes": 12,
+      "materials": 12,
+      "vertices": 154752,
+      "triangles": 89024,
+      "bounds_gltf": {
+        "min": [
+          -813.493,
+          0.22,
+          -794.563
+        ],
+        "max": [
+          622.263,
+          44.3,
+          183.421
+        ]
+      },
+      "khr_materials_transmission": false,
+      "sourced_props_used": [
+        "prop_04_dalat_vintage_street_lamp.glb",
+        "prop_06_dalat_wooden_park_bench.glb"
+      ],
+      "counts": {
+        "french_5globe_chandelier_lamps": 64,
+        "cast_iron_teak_park_benches": 56,
+        "park_visitors": 28
+      },
+      "source_url": "https://thanhnien.vn/da-lat-xay-dung-cho-dem-moi-o-cong-vien-anh-sang-1851446421.htm"
+    },
+    {
+      "id": "ul_w4_01_tui_mo_to_garden_cafe_sao_nam",
+      "name_vi": "Tổ hợp Tiệm Cà Phê Túi Mơ To (Hẻm 31 Sào Nam): Nhà gỗ Reply 1994, nhà lồng kính, vườn cúc họa mi, giàn cẩm tú cầu & dây đèn vàng ấm",
+      "wave": 4,
+      "task_id": "T10_W4_HILLSIDE_CLOUD_HUNTING_CAFES",
+      "tile_id": "T_E02_N00",
+      "spanned_tiles": [
+        "T_E02_N00"
+      ],
+      "coordinate_space": "world_gltf_yup",
+      "world_anchor": {
+        "lat": 11.9436,
+        "lon": 108.4812,
+        "x_m": 3914.4,
+        "y_m": 354.1,
+        "elev_msl_m": 1504.91,
+        "gltf_xyz": [
+          3914.4,
+          26.91,
+          -354.1
+        ]
+      },
+      "path": "02_ASSETS_3D/urban_life_props/ul_w4_01_tui_mo_to_garden_cafe_sao_nam.glb",
+      "size_bytes": 2361968,
+      "sha256": "348b72f7e39203950673d45f9a7a168a75716ccb59f4798bb052d92880b10916",
+      "nodes": 29,
+      "materials": 29,
+      "vertices": 86386,
+      "triangles": 43786,
+      "bounds_gltf": {
+        "min": [
+          3880.774,
+          26.774,
+          -376.873
+        ],
+        "max": [
+          3965.748,
+          34.734,
+          -312.432
+        ]
+      },
+      "khr_materials_transmission": false,
+      "sourced_props_used": [
+        "prop_10_cau_dat_wooden_cloud_hunting_deck.glb",
+        "prop_09_dalat_agri_greenhouse_cluster.glb",
+        "prop_07_dalat_flower_pergola_arch.glb"
+      ],
+      "counts": {
+        "wooden_cloud_decks": 3,
+        "vintage_glasshouse_bistros": 2,
+        "daisy_hydrangea_terraces": 18,
+        "floral_pergola_arches": 6,
+        "warm_string_light_spans": 16,
+        "string_light_bulbs": 144,
+        "outdoor_bistro_tables": 22,
+        "cafe_guests": 32
+      },
+      "source_url": "https://travel.com.vn/tin-tuc-du-lich/tiem-ca-phe-tui-mo-v18538.aspx"
+    },
+    {
+      "id": "ul_w4_02_horizon_coffee_pine_valley_ba_thang_tu",
+      "name_vi": "Tổ hợp Horizon Coffee Đà Lạt (31/6 Đường 3/4): Sàn gỗ săn mây thung lũng thông, cầu gỗ lơ lửng, 4 tháp vòm ánh sáng & ghế mây tổ chim",
+      "wave": 4,
+      "task_id": "T10_W4_HILLSIDE_CLOUD_HUNTING_CAFES",
+      "tile_id": "T_E00_S01",
+      "spanned_tiles": [
+        "T_E00_S01"
+      ],
+      "coordinate_space": "world_gltf_yup",
+      "world_anchor": {
+        "lat": 11.9238,
+        "lon": 108.4485,
+        "x_m": 353.0,
+        "y_m": -1850.0,
+        "elev_msl_m": 1517.53,
+        "gltf_xyz": [
+          353.0,
+          39.53,
+          1850.0
+        ]
+      },
+      "path": "02_ASSETS_3D/urban_life_props/ul_w4_02_horizon_coffee_pine_valley_ba_thang_tu.glb",
+      "size_bytes": 1808184,
+      "sha256": "95578cb9ed09367fb525325e465cd3605bcae4bd516aef7725537165ebaee48d",
+      "nodes": 23,
+      "materials": 23,
+      "vertices": 66124,
+      "triangles": 33456,
+      "bounds_gltf": {
+        "min": [
+          321.862,
+          34.435,
+          1838.213
+        ],
+        "max": [
+          385.691,
+          49.14,
+          1886.4
+        ]
+      },
+      "khr_materials_transmission": false,
+      "sourced_props_used": [
+        "prop_10_cau_dat_wooden_cloud_hunting_deck.glb",
+        "prop_07_dalat_flower_pergola_arch.glb"
+      ],
+      "counts": {
+        "wooden_cloud_decks": 4,
+        "elevated_skywalk_segments": 16,
+        "illuminated_supertree_portal_towers": 4,
+        "bird_nest_swings": 6,
+        "hydrangea_trellis_planters": 12,
+        "warm_string_light_spans": 14,
+        "string_light_bulbs": 126,
+        "outdoor_bistro_tables": 18,
+        "cafe_guests": 26
+      },
+      "source_url": "https://caonguyentourist.com/review-horizon-coffee-da-lat-duong-di-khong-gian-song-ao-dep-me"
+    },
+    {
+      "id": "ul_w4_03_me_linh_coffee_garden_ta_nung_terrace",
+      "name_vi": "Tổ hợp Mê Linh Coffee Garden (Đồi Cà Phê Tà Nung): Nhà sàn gỗ 360°, Con đường Cầu Vồng, Cổng Trời săn mây & sườn đồi hoa cẩm tú cầu",
+      "wave": 4,
+      "task_id": "T10_W4_HILLSIDE_CLOUD_HUNTING_CAFES",
+      "tile_id": "T_W03_S02",
+      "spanned_tiles": [
+        "T_W03_S02"
+      ],
+      "coordinate_space": "world_gltf_yup",
+      "world_anchor": {
+        "lat": 11.9092,
+        "lon": 108.3845,
+        "x_m": -6617.0,
+        "y_m": -3475.0,
+        "elev_msl_m": 1486.99,
+        "gltf_xyz": [
+          -6617.0,
+          8.99,
+          3475.0
+        ]
+      },
+      "path": "02_ASSETS_3D/urban_life_props/ul_w4_03_me_linh_coffee_garden_ta_nung_terrace.glb",
+      "size_bytes": 2215116,
+      "sha256": "6f64c2ca3100b2851c0a07d31d015881bdf9687370e009ad97ce62b3d029ae5b",
+      "nodes": 26,
+      "materials": 26,
+      "vertices": 81044,
+      "triangles": 41144,
+      "bounds_gltf": {
+        "min": [
+          -6654.111,
+          8.279,
+          3446.531
+        ],
+        "max": [
+          -6580.98,
+          17.692,
+          3511.131
+        ]
+      },
+      "khr_materials_transmission": false,
+      "sourced_props_used": [
+        "prop_10_cau_dat_wooden_cloud_hunting_deck.glb",
+        "prop_07_dalat_flower_pergola_arch.glb"
+      ],
+      "counts": {
+        "wooden_cloud_decks": 5,
+        "rainbow_wooden_skywalk_segments": 28,
+        "heavens_gate_arch": 1,
+        "coffee_and_hydrangea_terrace_rows": 16,
+        "floral_pergola_arches": 4,
+        "warm_string_light_spans": 16,
+        "string_light_bulbs": 144,
+        "outdoor_bistro_tables": 20,
+        "cafe_guests": 28
+      },
+      "source_url": "https://www.traveloka.com/vi-vn/explore/destination/me-linh-coffee-garden-acc/215002"
+    },
+    {
+      "id": "ul_w5_01_le_dai_hanh_cau_ong_dao_flower_gates_and_parade",
+      "name_vi": "Cổng Hoa Chính Đường Hoa Lê Đại Hành – Cầu Ông Đạo, Bồn Hoa Thác Đổ Thành Cầu & Đoàn 5 Xe Hoa Carnaval",
+      "wave": 5,
+      "task_id": "T10_W5_FESTIVAL_HOA_DECOR_LIGHTING",
+      "tile_id": "T_W01_N00",
+      "spanned_tiles": [
+        "T_E00_N00",
+        "T_W01_N00"
+      ],
+      "coordinate_space": "world_gltf_yup",
+      "world_anchor": {
+        "lat": 11.94088,
+        "lon": 108.43824,
+        "x_m": -765.0,
+        "y_m": 52.0,
+        "elev_msl_m": 1478.18,
+        "gltf_xyz": [
+          -765.0,
+          0.18,
+          -52.0
+        ]
+      },
+      "path": "02_ASSETS_3D/urban_life_props/ul_w5_01_le_dai_hanh_cau_ong_dao_flower_gates_and_parade.glb",
+      "size_bytes": 6107924,
+      "sha256": "2b30a9a72d097076b3f7de316587415eb79045a2cf4ba5b5ab0b7eea885b6f79",
+      "nodes": 28,
+      "materials": 28,
+      "vertices": 222646,
+      "triangles": 123214,
+      "bounds_gltf": {
+        "min": [
+          -883.658,
+          0.26,
+          -119.48
+        ],
+        "max": [
+          -717.676,
+          39.623,
+          355.979
+        ]
+      },
+      "khr_materials_transmission": false,
+      "sourced_props_used": [
+        "prop_07_dalat_flower_pergola_arch.glb",
+        "prop_04_dalat_vintage_street_lamp.glb",
+        "prop_05_lakeside_stone_balustrade.glb"
+      ],
+      "counts": {
+        "grand_festival_welcome_gates": 3,
+        "floral_pergola_tunnel_arches": 16,
+        "bridge_cascading_flower_troughs": 32,
+        "carnaval_floral_parade_floats": 5,
+        "festival_banner_lamp_posts": 18,
+        "festival_visitors_and_performers": 42
+      },
+      "source_url": "https://thanhnien.vn/nhung-khong-gian-hoa-ke-chuyen-van-hoa-da-lat-truoc-mua-le-hoi-185261103215746909.htm"
+    },
+    {
+      "id": "ul_w5_02_ho_xuan_huong_floating_floral_islands_and_musical_sculptures",
+      "name_vi": "Tiểu Cảnh 8 Đảo Hoa Nổi Mặt Nước Hồ Xuân Hương (Y_gltf=0.08m), 36 Đèn Hoa Sen & 6 Cụm Biểu Tượng Hoa – Âm Nhạc",
+      "wave": 5,
+      "task_id": "T10_W5_FESTIVAL_HOA_DECOR_LIGHTING",
+      "tile_id": "T_E00_N00",
+      "spanned_tiles": [
+        "T_E00_N00",
+        "T_W01_N00"
+      ],
+      "coordinate_space": "world_gltf_yup",
+      "world_anchor": {
+        "lat": 11.94158,
+        "lon": 108.44042,
+        "x_m": -525.0,
+        "y_m": 130.0,
+        "elev_msl_m": 1478.08,
+        "gltf_xyz": [
+          -525.0,
+          0.08,
+          -130.0
+        ]
+      },
+      "path": "02_ASSETS_3D/urban_life_props/ul_w5_02_ho_xuan_huong_floating_floral_islands_and_musical_sculptures.glb",
+      "size_bytes": 4265048,
+      "sha256": "4254052fc425951a8bbf8d1cc68f9b7e45afb5add9ad079b770c005f40de0142",
+      "nodes": 15,
+      "materials": 15,
+      "vertices": 157716,
+      "triangles": 77708,
+      "bounds_gltf": {
+        "min": [
+          -764.513,
+          -0.06,
+          -259.727
+        ],
+        "max": [
+          517.192,
+          40.413,
+          185.375
+        ]
+      },
+      "khr_materials_transmission": false,
+      "sourced_props_used": [],
+      "counts": {
+        "floating_floral_islands_hxh": 8,
+        "musical_floral_sculptures": 6,
+        "stepped_floral_pyramids": 14,
+        "illuminated_lotus_water_lanterns": 36,
+        "lakeside_festival_spectators": 28
+      },
+      "source_url": "https://nhandan.vn/cac-khong-gian-hoa-duong-pho-tai-festival-hoa-da-lat-chinh-thuc-khai-truong-post848685.html"
+    },
+    {
+      "id": "ul_w5_03_tran_phu_ba_thang_tu_art_lighting_arches_and_floral_signals",
+      "name_vi": "Dải 28 Vòm Đèn Trang Trí Nghệ Thuật Lê Đại Hành – Trần Phú – Ba Tháng Tư, Đảo Hoa Đồng Hồ Kim Cúc & 8 Đèn Giao Thông Viền Hoa",
+      "wave": 5,
+      "task_id": "T10_W5_FESTIVAL_HOA_DECOR_LIGHTING",
+      "tile_id": "T_E00_S01",
+      "spanned_tiles": [
+        "T_E00_N00",
+        "T_W01_N00",
+        "T_E00_S01"
+      ],
+      "coordinate_space": "world_gltf_yup",
+      "world_anchor": {
+        "lat": 11.93818,
+        "lon": 108.44338,
+        "x_m": -205.0,
+        "y_m": -250.0,
+        "elev_msl_m": 1488.32,
+        "gltf_xyz": [
+          -205.0,
+          10.32,
+          250.0
+        ]
+      },
+      "path": "02_ASSETS_3D/urban_life_props/ul_w5_03_tran_phu_ba_thang_tu_art_lighting_arches_and_floral_signals.glb",
+      "size_bytes": 5649168,
+      "sha256": "814c2280de451b6473fd04771266b6e5196eff085c0d12cb5c8972b057e424e6",
+      "nodes": 13,
+      "materials": 13,
+      "vertices": 201576,
+      "triangles": 99908,
+      "bounds_gltf": {
+        "min": [
+          -2011.327,
+          2.18,
+          40.425
+        ],
+        "max": [
+          206.185,
+          42.66,
+          1674.471
+        ]
+      },
+      "khr_materials_transmission": false,
+      "sourced_props_used": [],
+      "counts": {
+        "overhead_art_lighting_gantry_arches": 28,
+        "kim_cuc_roundabout_floral_clock_island": 1,
+        "floral_rimmed_traffic_signal_poles": 8,
+        "boulevard_median_flower_ribbons": 24,
+        "suspended_led_flower_motifs": 84
+      },
+      "source_url": "https://vietnamnet.vn/gioi-tre-xon-xao-ve-chiec-den-giao-thong-vien-hoa-dau-tien-cua-da-lat-780613.html"
+    },
+    {
+      "path": "02_ASSETS_3D/urban_life_props/ul_w6_01_cau_dat_container_cafe_cloud_decks_and_tour_vans.glb",
+      "size_bytes": 1593880,
+      "sha256": "2ec14457a60e8bbe5bb55aa3a158c20b0ee9dd9364436d3a8fc17a12a4fdff53",
+      "nodes": 17,
+      "materials": 25,
+      "vertices": 58280,
+      "triangles": 29728,
+      "bounds_gltf": {
+        "min": [
+          13221.75,
+          -3.914,
+          7850.765
+        ],
+        "max": [
+          13331.939,
+          6.151,
+          7937.775
+        ]
+      },
+      "khr_materials_transmission": false,
+      "id": "ul_w6_01_cau_dat_container_cafe_cloud_decks_and_tour_vans",
+      "name_vi": "Tổ Hợp Quán Cafe Container Cầu Đất 360°, Gió Cầu Đất Bistro, 6 Sàn Gỗ Săn Mây & Đoàn Xe Du Lịch QL20 Xuân Trường",
+      "wave": 6,
+      "task_id": "T10_AUTO_R2_R3_B01_CAUDAT_LANGBIANG_SUOIVANG",
+      "tile_id": "T_E07_S04",
+      "spanned_tiles": [
+        "T_E07_S04",
+        "T_E06_S04"
+      ],
+      "coordinate_space": "world_gltf_yup",
+      "world_anchor": {
+        "lat": 11.869587,
+        "lon": 108.567148,
+        "x_m": 13275.0,
+        "y_m": -7885.0,
+        "elev_msl_m": 1475.29,
+        "gltf_xyz": [
+          13275.0,
+          -2.714,
+          7885.0
+        ]
+      },
+      "sourced_props_used": [
+        "prop_10_cau_dat_wooden_cloud_hunting_deck.glb",
+        "prop_07_dalat_flower_pergola_arch.glb",
+        "prop_12_dalat_wooden_bus_stop_and_wayfinding_kiosk.glb"
+      ],
+      "counts": {
+        "container_cafe_360_complex": 1,
+        "gio_cau_dat_wooden_bistro": 1,
+        "cloud_hunting_wooden_decks_prop10": 6,
+        "flower_pergola_arches_prop07": 4,
+        "limousine_tour_vans": 6,
+        "touring_motorbikes": 14,
+        "string_light_bulbs": 144,
+        "cloud_hunting_tourists": 36
+      },
+      "source_url": "https://mia.vn/cam-nang-du-lich/doi-che-cau-dat-coffee-nong-trai-tu-nhung-nam-1927-1463"
+    },
+    {
+      "path": "02_ASSETS_3D/urban_life_props/ul_w6_02_langbiang_radar_jeep_convoy_and_summit_cafe.glb",
+      "size_bytes": 1816952,
+      "sha256": "42450086b9ee780ecd038edea4f4c0c53a3672d0e63fd575955fc7df4474443b",
+      "nodes": 19,
+      "materials": 25,
+      "vertices": 66694,
+      "triangles": 33002,
+      "bounds_gltf": {
+        "min": [
+          -956.188,
+          312.281,
+          -11939.743
+        ],
+        "max": [
+          -696.487,
+          521.12,
+          -11011.587
+        ]
+      },
+      "khr_materials_transmission": false,
+      "id": "ul_w6_02_langbiang_radar_jeep_convoy_and_summit_cafe",
+      "name_vi": "Đoàn 18 Xe Jeep Địa Hình Chinh Phục Đỉnh Radar Langbiang (1.929m), Quán Cafe Đài Quan Sát Ống Nhòm & 6 Dù Lượn",
+      "wave": 6,
+      "task_id": "T10_AUTO_R2_R3_B01_CAUDAT_LANGBIANG_SUOIVANG",
+      "tile_id": "T_E00_N06",
+      "spanned_tiles": [
+        "T_E00_N06",
+        "T_E00_N05"
+      ],
+      "coordinate_space": "world_gltf_yup",
+      "world_anchor": {
+        "lat": 12.046699,
+        "lon": 108.438299,
+        "x_m": -758.0,
+        "y_m": 11831.0,
+        "elev_msl_m": 1929.0,
+        "gltf_xyz": [
+          -758.0,
+          451.0,
+          -11831.0
+        ]
+      },
+      "sourced_props_used": [
+        "prop_10_cau_dat_wooden_cloud_hunting_deck.glb",
+        "prop_12_dalat_wooden_bus_stop_and_wayfinding_kiosk.glb"
+      ],
+      "counts": {
+        "uaz_willys_mountain_jeeps": 18,
+        "radar_summit_cafe_rotunda": 1,
+        "panoramic_binoculars": 6,
+        "cloud_hunting_wooden_decks_prop10": 4,
+        "wayfinding_wooden_kiosks_prop12": 2,
+        "paragliders_in_flight": 6,
+        "summit_tourists": 38
+      },
+      "source_url": "https://vinpearl.com/vi/dinh-langbiang-da-lat"
+    },
+    {
+      "path": "02_ASSETS_3D/urban_life_props/ul_w6_03_suoi_vang_lonely_pine_boats_and_da_phu_glamping_cafe.glb",
+      "size_bytes": 1482024,
+      "sha256": "bfd30412ea50a44608ab52963f2304fa86040a82b13219d8e975def9d11a4572",
+      "nodes": 20,
+      "materials": 25,
+      "vertices": 53656,
+      "triangles": 29228,
+      "bounds_gltf": {
+        "min": [
+          -8465.632,
+          -52.86,
+          -8211.947
+        ],
+        "max": [
+          -1816.563,
+          34.57,
+          -4290.071
+        ]
+      },
+      "khr_materials_transmission": false,
+      "id": "ul_w6_03_suoi_vang_lonely_pine_boats_and_da_phu_glamping_cafe",
+      "name_vi": "Đội Thuyền Gỗ & Cầu Tàu Hồ Suối Vàng – Cây Thông Cô Đơn – Đồi Cỏ Hồng & Khu Cafe Glamping Săn Mây Đồi Đa Phú",
+      "wave": 6,
+      "task_id": "T10_AUTO_R2_R3_B01_CAUDAT_LANGBIANG_SUOIVANG",
+      "tile_id": "T_W04_N04",
+      "spanned_tiles": [
+        "T_W04_N04",
+        "T_W03_N04",
+        "T_W01_N02"
+      ],
+      "coordinate_space": "world_gltf_yup",
+      "world_anchor": {
+        "lat": 12.013946,
+        "lon": 108.37589,
+        "x_m": -7555.0,
+        "y_m": 8185.0,
+        "elev_msl_m": 1425.15,
+        "gltf_xyz": [
+          -7555.0,
+          -52.85,
+          -8185.0
+        ]
+      },
+      "sourced_props_used": [
+        "prop_02_tuyen_lam_wooden_boat.glb",
+        "prop_03_lakeside_wooden_pier.glb",
+        "prop_10_cau_dat_wooden_cloud_hunting_deck.glb",
+        "prop_07_dalat_flower_pergola_arch.glb"
+      ],
+      "counts": {
+        "lakeside_wooden_piers_prop03": 3,
+        "suoi_vang_wooden_boats_prop02": 16,
+        "suoi_vang_kayaks_and_sups": 8,
+        "aframe_glamping_cloud_tents": 14,
+        "cloud_hunting_wooden_decks_prop10": 4,
+        "flower_pergola_arches_prop07": 2,
+        "glowing_campfires": 6,
+        "offroad_vehicles_and_motorbikes": 8,
+        "string_light_bulbs": 120,
+        "campers_and_tourists": 34
+      },
+      "source_url": "https://nestahotel.com.vn/blog/san-may-da-lat/"
+    }
+  ]
+}

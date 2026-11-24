@@ -1,0 +1,3088 @@
+{
+  "schema_version": "2.1.0",
+  "project_name": "DALAT_3D_SIMULATION",
+  "generated_at_utc": "2026-11-24T02:55:19.697515+00:00",
+  "origin": {
+    "lat": 11.940419,
+    "lon": 108.445259,
+    "elev_msl_m": 1478.0
+  },
+  "master_scene": {
+    "status": "merged",
+    "path": "02_ASSETS_3D/scene/dalat_master_scene.glb",
+    "size_bytes": 42734724,
+    "merged_files": 84,
+    "total_triangles": 1168374,
+    "groups": {
+      "Group_Terrain": 25,
+      "Group_Water": 14,
+      "Group_Landmarks": 10,
+      "Group_Landmarks_Sourced": 8,
+      "Group_LakesideProps": 7,
+      "Group_Infrastructure": 2,
+      "Group_Buildings": 18
+    }
+  },
+  "layers": {
+    "terrain_tiles": [
+      {
+        "id": "terrain_T_E00_N00",
+        "path": "02_ASSETS_3D/terrain_tiles/terrain_T_E00_N00.glb",
+        "meshes": 1,
+        "materials": 1,
+        "triangles": 32768,
+        "size_bytes": 743876,
+        "has_forbidden_transmission": false,
+        "tile_id": "T_E00_N00"
+      },
+      {
+        "id": "terrain_T_E00_N01",
+        "path": "02_ASSETS_3D/terrain_tiles/terrain_T_E00_N01.glb",
+        "meshes": 1,
+        "materials": 1,
+        "triangles": 32768,
+        "size_bytes": 735580,
+        "has_forbidden_transmission": false,
+        "tile_id": "T_E00_N01"
+      },
+      {
+        "id": "terrain_T_E00_N02",
+        "path": "02_ASSETS_3D/terrain_tiles/terrain_T_E00_N02.glb",
+        "meshes": 1,
+        "materials": 1,
+        "triangles": 18432,
+        "size_bytes": 427272,
+        "has_forbidden_transmission": false,
+        "tile_id": "T_E00_N02"
+      },
+      {
+        "id": "terrain_T_E00_S01",
+        "path": "02_ASSETS_3D/terrain_tiles/terrain_T_E00_S01.glb",
+        "meshes": 1,
+        "materials": 1,
+        "triangles": 32768,
+        "size_bytes": 739944,
+        "has_forbidden_transmission": false,
+        "tile_id": "T_E00_S01"
+      },
+      {
+        "id": "terrain_T_E00_S02",
+        "path": "02_ASSETS_3D/terrain_tiles/terrain_T_E00_S02.glb",
+        "meshes": 1,
+        "materials": 1,
+        "triangles": 18432,
+        "size_bytes": 422048,
+        "has_forbidden_transmission": false,
+        "tile_id": "T_E00_S02"
+      },
+      {
+        "id": "terrain_T_E00_S03",
+        "path": "02_ASSETS_3D/terrain_tiles/terrain_T_E00_S03.glb",
+        "meshes": 1,
+        "materials": 1,
+        "triangles": 18432,
+        "size_bytes": 420740,
+        "has_forbidden_transmission": false,
+        "tile_id": "T_E00_S03"
+      },
+      {
+        "id": "terrain_T_E01_N00",
+        "path": "02_ASSETS_3D/terrain_tiles/terrain_T_E01_N00.glb",
+        "meshes": 1,
+        "materials": 1,
+        "triangles": 32768,
+        "size_bytes": 735744,
+        "has_forbidden_transmission": false,
+        "tile_id": "T_E01_N00"
+      },
+      {
+        "id": "terrain_T_E01_N01",
+        "path": "02_ASSETS_3D/terrain_tiles/terrain_T_E01_N01.glb",
+        "meshes": 1,
+        "materials": 1,
+        "triangles": 32768,
+        "size_bytes": 736352,
+        "has_forbidden_transmission": false,
+        "tile_id": "T_E01_N01"
+      },
+      {
+        "id": "terrain_T_E01_N02",
+        "path": "02_ASSETS_3D/terrain_tiles/terrain_T_E01_N02.glb",
+        "meshes": 1,
+        "materials": 1,
+        "triangles": 18432,
+        "size_bytes": 420888,
+        "has_forbidden_transmission": false,
+        "tile_id": "T_E01_N02"
+      },
+      {
+        "id": "terrain_T_E01_S01",
+        "path": "02_ASSETS_3D/terrain_tiles/terrain_T_E01_S01.glb",
+        "meshes": 1,
+        "materials": 1,
+        "triangles": 32768,
+        "size_bytes": 737396,
+        "has_forbidden_transmission": false,
+        "tile_id": "T_E01_S01"
+      },
+      {
+        "id": "terrain_T_E01_S02",
+        "path": "02_ASSETS_3D/terrain_tiles/terrain_T_E01_S02.glb",
+        "meshes": 1,
+        "materials": 1,
+        "triangles": 18432,
+        "size_bytes": 420512,
+        "has_forbidden_transmission": false,
+        "tile_id": "T_E01_S02"
+      },
+      {
+        "id": "terrain_T_E02_N00",
+        "path": "02_ASSETS_3D/terrain_tiles/terrain_T_E02_N00.glb",
+        "meshes": 1,
+        "materials": 1,
+        "triangles": 18432,
+        "size_bytes": 419556,
+        "has_forbidden_transmission": false,
+        "tile_id": "T_E02_N00"
+      },
+      {
+        "id": "terrain_T_E02_N01",
+        "path": "02_ASSETS_3D/terrain_tiles/terrain_T_E02_N01.glb",
+        "meshes": 1,
+        "materials": 1,
+        "triangles": 18432,
+        "size_bytes": 427884,
+        "has_forbidden_transmission": false,
+        "tile_id": "T_E02_N01"
+      },
+      {
+        "id": "terrain_T_E02_S01",
+        "path": "02_ASSETS_3D/terrain_tiles/terrain_T_E02_S01.glb",
+        "meshes": 1,
+        "materials": 1,
+        "triangles": 18432,
+        "size_bytes": 419428,
+        "has_forbidden_transmission": false,
+        "tile_id": "T_E02_S01"
+      },
+      {
+        "id": "terrain_T_E03_N00",
+        "path": "02_ASSETS_3D/terrain_tiles/terrain_T_E03_N00.glb",
+        "meshes": 1,
+        "materials": 1,
+        "triangles": 18432,
+        "size_bytes": 419364,
+        "has_forbidden_transmission": false,
+        "tile_id": "T_E03_N00"
+      },
+      {
+        "id": "terrain_T_W01_N00",
+        "path": "02_ASSETS_3D/terrain_tiles/terrain_T_W01_N00.glb",
+        "meshes": 1,
+        "materials": 1,
+        "triangles": 32768,
+        "size_bytes": 738836,
+        "has_forbidden_transmission": false,
+        "tile_id": "T_W01_N00"
+      },
+      {
+        "id": "terrain_T_W01_N01",
+        "path": "02_ASSETS_3D/terrain_tiles/terrain_T_W01_N01.glb",
+        "meshes": 1,
+        "materials": 1,
+        "triangles": 32768,
+        "size_bytes": 738284,
+        "has_forbidden_transmission": false,
+        "tile_id": "T_W01_N01"
+      },
+      {
+        "id": "terrain_T_W01_N02",
+        "path": "02_ASSETS_3D/terrain_tiles/terrain_T_W01_N02.glb",
+        "meshes": 1,
+        "materials": 1,
+        "triangles": 18432,
+        "size_bytes": 419672,
+        "has_forbidden_transmission": false,
+        "tile_id": "T_W01_N02"
+      },
+      {
+        "id": "terrain_T_W01_S01",
+        "path": "02_ASSETS_3D/terrain_tiles/terrain_T_W01_S01.glb",
+        "meshes": 1,
+        "materials": 1,
+        "triangles": 32768,
+        "size_bytes": 737800,
+        "has_forbidden_transmission": false,
+        "tile_id": "T_W01_S01"
+      },
+      {
+        "id": "terrain_T_W01_S02",
+        "path": "02_ASSETS_3D/terrain_tiles/terrain_T_W01_S02.glb",
+        "meshes": 1,
+        "materials": 1,
+        "triangles": 18432,
+        "size_bytes": 425336,
+        "has_forbidden_transmission": false,
+        "tile_id": "T_W01_S02"
+      },
+      {
+        "id": "terrain_T_W01_S03",
+        "path": "02_ASSETS_3D/terrain_tiles/terrain_T_W01_S03.glb",
+        "meshes": 1,
+        "materials": 1,
+        "triangles": 18432,
+        "size_bytes": 424292,
+        "has_forbidden_transmission": false,
+        "tile_id": "T_W01_S03"
+      },
+      {
+        "id": "terrain_T_W02_N00",
+        "path": "02_ASSETS_3D/terrain_tiles/terrain_T_W02_N00.glb",
+        "meshes": 1,
+        "materials": 1,
+        "triangles": 18432,
+        "size_bytes": 424760,
+        "has_forbidden_transmission": false,
+        "tile_id": "T_W02_N00"
+      },
+      {
+        "id": "terrain_T_W02_N01",
+        "path": "02_ASSETS_3D/terrain_tiles/terrain_T_W02_N01.glb",
+        "meshes": 1,
+        "materials": 1,
+        "triangles": 18432,
+        "size_bytes": 422916,
+        "has_forbidden_transmission": false,
+        "tile_id": "T_W02_N01"
+      },
+      {
+        "id": "terrain_T_W02_S01",
+        "path": "02_ASSETS_3D/terrain_tiles/terrain_T_W02_S01.glb",
+        "meshes": 1,
+        "materials": 1,
+        "triangles": 18432,
+        "size_bytes": 421704,
+        "has_forbidden_transmission": false,
+        "tile_id": "T_W02_S01"
+      },
+      {
+        "id": "terrain_T_W02_S02",
+        "path": "02_ASSETS_3D/terrain_tiles/terrain_T_W02_S02.glb",
+        "meshes": 1,
+        "materials": 1,
+        "triangles": 18432,
+        "size_bytes": 421604,
+        "has_forbidden_transmission": false,
+        "tile_id": "T_W02_S02"
+      }
+    ],
+    "heightmaps": [
+      {
+        "tile_id": "T_E00_N00",
+        "path": "02_ASSETS_3D/terrain_tiles/heightmap_T_E00_N00.json"
+      },
+      {
+        "tile_id": "T_E00_N01",
+        "path": "02_ASSETS_3D/terrain_tiles/heightmap_T_E00_N01.json"
+      },
+      {
+        "tile_id": "T_E00_N02",
+        "path": "02_ASSETS_3D/terrain_tiles/heightmap_T_E00_N02.json"
+      },
+      {
+        "tile_id": "T_E00_S01",
+        "path": "02_ASSETS_3D/terrain_tiles/heightmap_T_E00_S01.json"
+      },
+      {
+        "tile_id": "T_E00_S02",
+        "path": "02_ASSETS_3D/terrain_tiles/heightmap_T_E00_S02.json"
+      },
+      {
+        "tile_id": "T_E00_S03",
+        "path": "02_ASSETS_3D/terrain_tiles/heightmap_T_E00_S03.json"
+      },
+      {
+        "tile_id": "T_E01_N00",
+        "path": "02_ASSETS_3D/terrain_tiles/heightmap_T_E01_N00.json"
+      },
+      {
+        "tile_id": "T_E01_N01",
+        "path": "02_ASSETS_3D/terrain_tiles/heightmap_T_E01_N01.json"
+      },
+      {
+        "tile_id": "T_E01_N02",
+        "path": "02_ASSETS_3D/terrain_tiles/heightmap_T_E01_N02.json"
+      },
+      {
+        "tile_id": "T_E01_S01",
+        "path": "02_ASSETS_3D/terrain_tiles/heightmap_T_E01_S01.json"
+      },
+      {
+        "tile_id": "T_E01_S02",
+        "path": "02_ASSETS_3D/terrain_tiles/heightmap_T_E01_S02.json"
+      },
+      {
+        "tile_id": "T_E02_N00",
+        "path": "02_ASSETS_3D/terrain_tiles/heightmap_T_E02_N00.json"
+      },
+      {
+        "tile_id": "T_E02_N01",
+        "path": "02_ASSETS_3D/terrain_tiles/heightmap_T_E02_N01.json"
+      },
+      {
+        "tile_id": "T_E02_S01",
+        "path": "02_ASSETS_3D/terrain_tiles/heightmap_T_E02_S01.json"
+      },
+      {
+        "tile_id": "T_E03_N00",
+        "path": "02_ASSETS_3D/terrain_tiles/heightmap_T_E03_N00.json"
+      },
+      {
+        "tile_id": "T_W01_N00",
+        "path": "02_ASSETS_3D/terrain_tiles/heightmap_T_W01_N00.json"
+      },
+      {
+        "tile_id": "T_W01_N01",
+        "path": "02_ASSETS_3D/terrain_tiles/heightmap_T_W01_N01.json"
+      },
+      {
+        "tile_id": "T_W01_N02",
+        "path": "02_ASSETS_3D/terrain_tiles/heightmap_T_W01_N02.json"
+      },
+      {
+        "tile_id": "T_W01_S01",
+        "path": "02_ASSETS_3D/terrain_tiles/heightmap_T_W01_S01.json"
+      },
+      {
+        "tile_id": "T_W01_S02",
+        "path": "02_ASSETS_3D/terrain_tiles/heightmap_T_W01_S02.json"
+      },
+      {
+        "tile_id": "T_W01_S03",
+        "path": "02_ASSETS_3D/terrain_tiles/heightmap_T_W01_S03.json"
+      },
+      {
+        "tile_id": "T_W02_N00",
+        "path": "02_ASSETS_3D/terrain_tiles/heightmap_T_W02_N00.json"
+      },
+      {
+        "tile_id": "T_W02_N01",
+        "path": "02_ASSETS_3D/terrain_tiles/heightmap_T_W02_N01.json"
+      },
+      {
+        "tile_id": "T_W02_S01",
+        "path": "02_ASSETS_3D/terrain_tiles/heightmap_T_W02_S01.json"
+      },
+      {
+        "tile_id": "T_W02_S02",
+        "path": "02_ASSETS_3D/terrain_tiles/heightmap_T_W02_S02.json"
+      }
+    ],
+    "water_bodies": [
+      {
+        "id": "water_dap_da_nhim_don_duong",
+        "path": "02_ASSETS_3D/water_bodies/water_dap_da_nhim_don_duong.glb",
+        "meshes": 18,
+        "materials": 6,
+        "triangles": 11497,
+        "size_bytes": 299156,
+        "has_forbidden_transmission": false
+      },
+      {
+        "id": "water_ho_chien_thang",
+        "path": "02_ASSETS_3D/water_bodies/water_ho_chien_thang.glb",
+        "meshes": 7,
+        "materials": 5,
+        "triangles": 3448,
+        "size_bytes": 91460,
+        "has_forbidden_transmission": false
+      },
+      {
+        "id": "water_ho_da_thien",
+        "path": "02_ASSETS_3D/water_bodies/water_ho_da_thien.glb",
+        "meshes": 11,
+        "materials": 6,
+        "triangles": 4553,
+        "size_bytes": 123340,
+        "has_forbidden_transmission": false
+      },
+      {
+        "id": "water_ho_dankia_mo_rong",
+        "path": "02_ASSETS_3D/water_bodies/water_ho_dankia_mo_rong.glb",
+        "meshes": 9,
+        "materials": 6,
+        "triangles": 13798,
+        "size_bytes": 328396,
+        "has_forbidden_transmission": false
+      },
+      {
+        "id": "water_ho_me_linh",
+        "path": "02_ASSETS_3D/water_bodies/water_ho_me_linh.glb",
+        "meshes": 6,
+        "materials": 5,
+        "triangles": 1862,
+        "size_bytes": 53132,
+        "has_forbidden_transmission": false
+      },
+      {
+        "id": "water_ho_suoi_vang",
+        "path": "02_ASSETS_3D/water_bodies/water_ho_suoi_vang.glb",
+        "meshes": 19,
+        "materials": 6,
+        "triangles": 9703,
+        "size_bytes": 260716,
+        "has_forbidden_transmission": false
+      },
+      {
+        "id": "water_ho_than_tho",
+        "path": "02_ASSETS_3D/water_bodies/water_ho_than_tho.glb",
+        "meshes": 10,
+        "materials": 6,
+        "triangles": 2829,
+        "size_bytes": 80688,
+        "has_forbidden_transmission": false
+      },
+      {
+        "id": "water_ho_tuyen_lam",
+        "path": "02_ASSETS_3D/water_bodies/water_ho_tuyen_lam.glb",
+        "meshes": 19,
+        "materials": 6,
+        "triangles": 10010,
+        "size_bytes": 272596,
+        "has_forbidden_transmission": false
+      },
+      {
+        "id": "water_ho_xuan_huong",
+        "path": "02_ASSETS_3D/water_bodies/water_ho_xuan_huong.glb",
+        "meshes": 9,
+        "materials": 5,
+        "triangles": 15733,
+        "size_bytes": 377572,
+        "has_forbidden_transmission": false
+      },
+      {
+        "id": "water_suoi_cam_ly",
+        "path": "02_ASSETS_3D/water_bodies/water_suoi_cam_ly.glb",
+        "meshes": 6,
+        "materials": 4,
+        "triangles": 2136,
+        "size_bytes": 63296,
+        "has_forbidden_transmission": false
+      },
+      {
+        "id": "water_thac_datanla",
+        "path": "02_ASSETS_3D/water_bodies/water_thac_datanla.glb",
+        "meshes": 8,
+        "materials": 5,
+        "triangles": 2416,
+        "size_bytes": 68512,
+        "has_forbidden_transmission": false
+      },
+      {
+        "id": "water_thac_pongour_duc_trong",
+        "path": "02_ASSETS_3D/water_bodies/water_thac_pongour_duc_trong.glb",
+        "meshes": 9,
+        "materials": 5,
+        "triangles": 2428,
+        "size_bytes": 70056,
+        "has_forbidden_transmission": false
+      },
+      {
+        "id": "water_thac_prenn",
+        "path": "02_ASSETS_3D/water_bodies/water_thac_prenn.glb",
+        "meshes": 8,
+        "materials": 5,
+        "triangles": 2120,
+        "size_bytes": 61100,
+        "has_forbidden_transmission": false
+      },
+      {
+        "id": "water_thac_voi_lam_ha",
+        "path": "02_ASSETS_3D/water_bodies/water_thac_voi_lam_ha.glb",
+        "meshes": 10,
+        "materials": 5,
+        "triangles": 2144,
+        "size_bytes": 63780,
+        "has_forbidden_transmission": false
+      }
+    ],
+    "vegetation_species": [
+      {
+        "id": "da_quy_bush",
+        "path": "02_ASSETS_3D/vegetation/da_quy_bush.glb",
+        "meshes": 9,
+        "materials": 5,
+        "triangles": 120,
+        "size_bytes": 9560,
+        "has_forbidden_transmission": false
+      },
+      {
+        "id": "mai_anh_dao",
+        "path": "02_ASSETS_3D/vegetation/mai_anh_dao.glb",
+        "meshes": 9,
+        "materials": 4,
+        "triangles": 134,
+        "size_bytes": 9688,
+        "has_forbidden_transmission": false
+      },
+      {
+        "id": "pine_dalat_medium",
+        "path": "02_ASSETS_3D/vegetation/pine_dalat_medium.glb",
+        "meshes": 7,
+        "materials": 4,
+        "triangles": 130,
+        "size_bytes": 8232,
+        "has_forbidden_transmission": false
+      },
+      {
+        "id": "pine_dalat_tall",
+        "path": "02_ASSETS_3D/vegetation/pine_dalat_tall.glb",
+        "meshes": 9,
+        "materials": 4,
+        "triangles": 152,
+        "size_bytes": 10092,
+        "has_forbidden_transmission": false
+      },
+      {
+        "id": "pine_dalat_young",
+        "path": "02_ASSETS_3D/vegetation/pine_dalat_young.glb",
+        "meshes": 5,
+        "materials": 3,
+        "triangles": 106,
+        "size_bytes": 6168,
+        "has_forbidden_transmission": false
+      },
+      {
+        "id": "tea_bush_row_lod",
+        "path": "02_ASSETS_3D/vegetation/tea_bush_row_lod.glb",
+        "meshes": 6,
+        "materials": 4,
+        "triangles": 132,
+        "size_bytes": 7860,
+        "has_forbidden_transmission": false
+      }
+    ],
+    "vegetation_instances": [
+      {
+        "tile_id": "T_E00_N00",
+        "path": "02_ASSETS_3D/vegetation/instances_T_E00_N00.json",
+        "tree_count": 5495,
+        "water_intrusions": 0
+      },
+      {
+        "tile_id": "T_E00_N01",
+        "path": "02_ASSETS_3D/vegetation/instances_T_E00_N01.json",
+        "tree_count": 3393,
+        "water_intrusions": 0
+      },
+      {
+        "tile_id": "T_E00_N02",
+        "path": "02_ASSETS_3D/vegetation/instances_T_E00_N02.json",
+        "tree_count": 9682,
+        "water_intrusions": 0
+      },
+      {
+        "tile_id": "T_E00_N06",
+        "path": "02_ASSETS_3D/vegetation/instances_T_E00_N06.json",
+        "tree_count": 8632,
+        "water_intrusions": 0
+      },
+      {
+        "tile_id": "T_E00_S01",
+        "path": "02_ASSETS_3D/vegetation/instances_T_E00_S01.json",
+        "tree_count": 9551,
+        "water_intrusions": 0
+      },
+      {
+        "tile_id": "T_E00_S02",
+        "path": "02_ASSETS_3D/vegetation/instances_T_E00_S02.json",
+        "tree_count": 8699,
+        "water_intrusions": 0
+      },
+      {
+        "tile_id": "T_E00_S03",
+        "path": "02_ASSETS_3D/vegetation/instances_T_E00_S03.json",
+        "tree_count": 13458,
+        "water_intrusions": 0
+      },
+      {
+        "tile_id": "T_E01_N00",
+        "path": "02_ASSETS_3D/vegetation/instances_T_E01_N00.json",
+        "tree_count": 7295,
+        "water_intrusions": 0
+      },
+      {
+        "tile_id": "T_E01_N01",
+        "path": "02_ASSETS_3D/vegetation/instances_T_E01_N01.json",
+        "tree_count": 2084,
+        "water_intrusions": 0
+      },
+      {
+        "tile_id": "T_E01_N02",
+        "path": "02_ASSETS_3D/vegetation/instances_T_E01_N02.json",
+        "tree_count": 12469,
+        "water_intrusions": 0
+      },
+      {
+        "tile_id": "T_E01_S01",
+        "path": "02_ASSETS_3D/vegetation/instances_T_E01_S01.json",
+        "tree_count": 6167,
+        "water_intrusions": 0
+      },
+      {
+        "tile_id": "T_E01_S02",
+        "path": "02_ASSETS_3D/vegetation/instances_T_E01_S02.json",
+        "tree_count": 13461,
+        "water_intrusions": 0
+      },
+      {
+        "tile_id": "T_E02_N00",
+        "path": "02_ASSETS_3D/vegetation/instances_T_E02_N00.json",
+        "tree_count": 14524,
+        "water_intrusions": 0
+      },
+      {
+        "tile_id": "T_E02_N01",
+        "path": "02_ASSETS_3D/vegetation/instances_T_E02_N01.json",
+        "tree_count": 1911,
+        "water_intrusions": 0
+      },
+      {
+        "tile_id": "T_E03_N00",
+        "path": "02_ASSETS_3D/vegetation/instances_T_E03_N00.json",
+        "tree_count": 14500,
+        "water_intrusions": 0
+      },
+      {
+        "tile_id": "T_E07_S04",
+        "path": "02_ASSETS_3D/vegetation/instances_T_E07_S04.json",
+        "tree_count": 21185,
+        "water_intrusions": 0
+      },
+      {
+        "tile_id": "T_W01_N00",
+        "path": "02_ASSETS_3D/vegetation/instances_T_W01_N00.json",
+        "tree_count": 2813,
+        "water_intrusions": 0
+      },
+      {
+        "tile_id": "T_W01_N01",
+        "path": "02_ASSETS_3D/vegetation/instances_T_W01_N01.json",
+        "tree_count": 1738,
+        "water_intrusions": 0
+      },
+      {
+        "tile_id": "T_W01_N02",
+        "path": "02_ASSETS_3D/vegetation/instances_T_W01_N02.json",
+        "tree_count": 14498,
+        "water_intrusions": 0
+      },
+      {
+        "tile_id": "T_W01_S01",
+        "path": "02_ASSETS_3D/vegetation/instances_T_W01_S01.json",
+        "tree_count": 7320,
+        "water_intrusions": 0
+      },
+      {
+        "tile_id": "T_W01_S02",
+        "path": "02_ASSETS_3D/vegetation/instances_T_W01_S02.json",
+        "tree_count": 4478,
+        "water_intrusions": 0
+      },
+      {
+        "tile_id": "T_W01_S03",
+        "path": "02_ASSETS_3D/vegetation/instances_T_W01_S03.json",
+        "tree_count": 13432,
+        "water_intrusions": 0
+      },
+      {
+        "tile_id": "T_W02_N00",
+        "path": "02_ASSETS_3D/vegetation/instances_T_W02_N00.json",
+        "tree_count": 12067,
+        "water_intrusions": 0
+      },
+      {
+        "tile_id": "T_W04_N04",
+        "path": "02_ASSETS_3D/vegetation/instances_T_W04_N04.json",
+        "tree_count": 5276,
+        "water_intrusions": 0
+      }
+    ],
+    "landmarks": [
+      {
+        "id": "lm_01_quang_truong_lam_vien",
+        "path": "02_ASSETS_3D/landmarks/lm_01_quang_truong_lam_vien.glb",
+        "meshes": 31,
+        "materials": 19,
+        "triangles": 14699,
+        "size_bytes": 856796,
+        "has_forbidden_transmission": false,
+        "placement": {
+          "x_m": -79.614,
+          "y_m": -185.792,
+          "elev_msl_m": 1484.919,
+          "gltf_translation": [
+            -79.614,
+            6.919,
+            185.792
+          ],
+          "heading_deg": 335.0
+        },
+        "name_vi": "Quảng trường Lâm Viên (Hoa Dã Quỳ & Nụ Atiso)",
+        "tile_id": "T_E00_N00",
+        "source_tier": "slot4_detailed"
+      },
+      {
+        "id": "lm_02_ga_da_lat",
+        "path": "02_ASSETS_3D/landmarks/lm_02_ga_da_lat.glb",
+        "meshes": 28,
+        "materials": 23,
+        "triangles": 5312,
+        "size_bytes": 317216,
+        "has_forbidden_transmission": false,
+        "placement": {
+          "x_m": 1060.901,
+          "y_m": 175.996,
+          "elev_msl_m": 1519.709,
+          "gltf_translation": [
+            1060.901,
+            41.709,
+            -175.996
+          ],
+          "heading_deg": 205.0
+        },
+        "name_vi": "Nhà Ga Đà Lạt (Art Deco 3 Mái Langbiang)",
+        "tile_id": "T_E01_N00",
+        "source_tier": "slot4_detailed"
+      },
+      {
+        "id": "lm_03_nha_tho_con_ga",
+        "path": "02_ASSETS_3D/landmarks/lm_03_nha_tho_con_ga.glb",
+        "meshes": 19,
+        "materials": 16,
+        "triangles": 5344,
+        "size_bytes": 314008,
+        "has_forbidden_transmission": false,
+        "placement": {
+          "x_m": -841.772,
+          "y_m": -405.092,
+          "elev_msl_m": 1508.051,
+          "gltf_translation": [
+            -841.772,
+            30.051,
+            405.092
+          ],
+          "heading_deg": 35.0
+        },
+        "name_vi": "Nhà thờ Chính tòa Đà Lạt (Nhà thờ Con Gà)",
+        "tile_id": "T_E00_N00",
+        "source_tier": "slot4_detailed"
+      },
+      {
+        "id": "lm_04_truong_cdsp_dalat",
+        "path": "02_ASSETS_3D/landmarks/lm_04_truong_cdsp_dalat.glb",
+        "meshes": 22,
+        "materials": 15,
+        "triangles": 9274,
+        "size_bytes": 535564,
+        "has_forbidden_transmission": false,
+        "placement": {
+          "x_m": 835.564,
+          "y_m": 659.011,
+          "elev_msl_m": 1526.802,
+          "gltf_translation": [
+            835.564,
+            48.802,
+            -659.011
+          ],
+          "heading_deg": 240.0
+        },
+        "name_vi": "Trường Cao đẳng Sư phạm Đà Lạt (Lycée Yersin)",
+        "tile_id": "T_E00_N00",
+        "source_tier": "slot4_detailed"
+      },
+      {
+        "id": "lm_05_cho_da_lat_hoa_binh",
+        "path": "02_ASSETS_3D/landmarks/lm_05_cho_da_lat_hoa_binh.glb",
+        "meshes": 35,
+        "materials": 17,
+        "triangles": 5612,
+        "size_bytes": 342296,
+        "has_forbidden_transmission": false,
+        "placement": {
+          "x_m": -876.188,
+          "y_m": 125.902,
+          "elev_msl_m": 1476.066,
+          "gltf_translation": [
+            -876.188,
+            -1.934,
+            -125.902
+          ],
+          "heading_deg": 145.0
+        },
+        "name_vi": "Chợ Đà Lạt & Cầu Thang Chữ Y Khu Hòa Bình",
+        "tile_id": "T_E00_N00",
+        "source_tier": "slot4_detailed"
+      },
+      {
+        "id": "lm_06_thuy_ta_cau_ong_dao",
+        "path": "02_ASSETS_3D/landmarks/lm_06_thuy_ta_cau_ong_dao.glb",
+        "meshes": 25,
+        "materials": 15,
+        "triangles": 9582,
+        "size_bytes": 555984,
+        "has_forbidden_transmission": false,
+        "placement": {
+          "x_m": -599.99,
+          "y_m": 95.846,
+          "elev_msl_m": 1478.0,
+          "gltf_translation": [
+            -599.99,
+            0.0,
+            -95.846
+          ],
+          "heading_deg": 110.0
+        },
+        "name_vi": "Nhà hàng Thủy Tạ & Cầu Ông Đạo",
+        "tile_id": "T_E00_N00",
+        "source_tier": "slot4_detailed"
+      },
+      {
+        "id": "lm_07_dinh_3",
+        "path": "02_ASSETS_3D/landmarks/lm_07_dinh_3.glb",
+        "meshes": 17,
+        "materials": 11,
+        "triangles": 3502,
+        "size_bytes": 209180,
+        "has_forbidden_transmission": false,
+        "placement": {
+          "x_m": -1689.099,
+          "y_m": -1117.536,
+          "elev_msl_m": 1526.812,
+          "gltf_translation": [
+            -1689.099,
+            48.812,
+            1117.536
+          ],
+          "heading_deg": 65.0
+        },
+        "name_vi": "Dinh Bảo Đại III",
+        "tile_id": "T_W01_S01",
+        "source_tier": "slot4_detailed"
+      },
+      {
+        "id": "lm_08_dinh_2",
+        "path": "02_ASSETS_3D/landmarks/lm_08_dinh_2.glb",
+        "meshes": 17,
+        "materials": 11,
+        "triangles": 3804,
+        "size_bytes": 223700,
+        "has_forbidden_transmission": false,
+        "placement": {
+          "x_m": 723.277,
+          "y_m": -547.581,
+          "elev_msl_m": 1531.177,
+          "gltf_translation": [
+            723.277,
+            53.177,
+            547.581
+          ],
+          "heading_deg": 310.0
+        },
+        "name_vi": "Dinh Bảo Đại II",
+        "tile_id": "T_E00_N00",
+        "source_tier": "slot4_detailed"
+      },
+      {
+        "id": "lm_09_dinh_1",
+        "path": "02_ASSETS_3D/landmarks/lm_09_dinh_1.glb",
+        "meshes": 17,
+        "materials": 13,
+        "triangles": 4136,
+        "size_bytes": 243772,
+        "has_forbidden_transmission": false,
+        "placement": {
+          "x_m": 2313.376,
+          "y_m": -881.539,
+          "elev_msl_m": 1572.185,
+          "gltf_translation": [
+            2313.376,
+            94.185,
+            881.539
+          ],
+          "heading_deg": 280.0
+        },
+        "name_vi": "Dinh Bảo Đại I",
+        "tile_id": "T_E01_N00",
+        "source_tier": "slot4_detailed"
+      },
+      {
+        "id": "lm_12_dalat_palace",
+        "path": "02_ASSETS_3D/landmarks/lm_12_dalat_palace.glb",
+        "meshes": 18,
+        "materials": 12,
+        "triangles": 13872,
+        "size_bytes": 621960,
+        "has_forbidden_transmission": false,
+        "placement": {
+          "x_m": -420.287,
+          "y_m": -96.737,
+          "elev_msl_m": 1488.19,
+          "gltf_translation": [
+            -420.287,
+            10.19,
+            96.737
+          ],
+          "heading_deg": 15.0
+        },
+        "name_vi": "Khách sạn Dalat Palace Heritage",
+        "tile_id": "T_E00_N00",
+        "source_tier": "slot4_detailed"
+      },
+      {
+        "id": "lm_10_domaine_de_marie",
+        "name_vi": "Nhà thờ Domaine de Marie",
+        "tile_id": "T_W01_N00",
+        "source_tier": "slot6_sourced_base",
+        "path": "02_ASSETS_3D/sourced_library/landmarks/lm_10_domaine_de_marie_base.glb",
+        "meshes": 41,
+        "materials": 5,
+        "triangles": 192,
+        "size_bytes": 34932,
+        "has_forbidden_transmission": false,
+        "placement": {
+          "x_m": -1576.921,
+          "y_m": 938.535,
+          "elev_msl_m": 1509.517,
+          "gltf_translation": [
+            -1576.921,
+            31.167,
+            -938.535
+          ],
+          "heading_deg": 120.0
+        }
+      },
+      {
+        "id": "lm_11_crazy_house",
+        "name_vi": "Biệt thự Hằng Nga (Crazy House)",
+        "tile_id": "T_W01_N00",
+        "source_tier": "slot6_sourced_base",
+        "path": "02_ASSETS_3D/sourced_library/landmarks/lm_11_crazy_house_organic_base.glb",
+        "meshes": 50,
+        "materials": 5,
+        "triangles": 1080,
+        "size_bytes": 63832,
+        "has_forbidden_transmission": false,
+        "placement": {
+          "x_m": -1592.277,
+          "y_m": -634.187,
+          "elev_msl_m": 1498.252,
+          "gltf_translation": [
+            -1592.277,
+            19.902,
+            634.187
+          ],
+          "heading_deg": 90.0
+        }
+      },
+      {
+        "id": "lm_14_vuon_hoa_tp",
+        "name_vi": "Vườn Hoa Thành Phố Đà Lạt",
+        "tile_id": "T_E00_N00",
+        "source_tier": "slot6_sourced_base",
+        "path": "02_ASSETS_3D/sourced_library/landmarks/lm_14_vuon_hoa_tp_gate_base.glb",
+        "meshes": 29,
+        "materials": 5,
+        "triangles": 306,
+        "size_bytes": 35516,
+        "has_forbidden_transmission": false,
+        "placement": {
+          "x_m": 423.772,
+          "y_m": 871.743,
+          "elev_msl_m": 1523.382,
+          "gltf_translation": [
+            423.772,
+            45.032,
+            -871.743
+          ],
+          "heading_deg": 200.0
+        }
+      },
+      {
+        "id": "lm_15_thien_vien_truc_lam",
+        "name_vi": "Thiền viện Trúc Lâm & Cáp treo Đồi Robin",
+        "tile_id": "T_E00_S02",
+        "source_tier": "slot6_sourced_base",
+        "path": "02_ASSETS_3D/sourced_library/landmarks/lm_15_thien_vien_truc_lam_base.glb",
+        "meshes": 102,
+        "materials": 5,
+        "triangles": 1134,
+        "size_bytes": 105584,
+        "has_forbidden_transmission": false,
+        "placement": {
+          "x_m": -512.208,
+          "y_m": -4715.828,
+          "elev_msl_m": 1420.377,
+          "gltf_translation": [
+            -512.208,
+            -57.973,
+            4715.828
+          ],
+          "heading_deg": 215.0
+        }
+      },
+      {
+        "id": "lm_16_chua_linh_phuoc",
+        "name_vi": "Chùa Linh Phước (Chùa Ve Chai Trại Mát)",
+        "tile_id": "T_E03_N00",
+        "source_tier": "slot6_sourced_base",
+        "path": "02_ASSETS_3D/sourced_library/landmarks/lm_16_chua_linh_phuoc_base.glb",
+        "meshes": 39,
+        "materials": 5,
+        "triangles": 748,
+        "size_bytes": 44396,
+        "has_forbidden_transmission": false,
+        "placement": {
+          "x_m": 6054.466,
+          "y_m": 459.861,
+          "elev_msl_m": 1531.366,
+          "gltf_translation": [
+            6054.466,
+            53.016,
+            -459.861
+          ],
+          "heading_deg": 180.0
+        }
+      },
+      {
+        "id": "lm_17_thung_lung_tinh_yeu",
+        "name_vi": "Khu Du lịch Thung Lũng Tình Yêu",
+        "tile_id": "T_E00_N02",
+        "source_tier": "slot6_sourced_base",
+        "path": "02_ASSETS_3D/sourced_library/landmarks/lm_17_thung_lung_tinh_yeu_pavilion.glb",
+        "meshes": 5,
+        "materials": 5,
+        "triangles": 296,
+        "size_bytes": 15280,
+        "has_forbidden_transmission": false,
+        "placement": {
+          "x_m": 461.891,
+          "y_m": 4016.519,
+          "elev_msl_m": 1488.0,
+          "gltf_translation": [
+            461.891,
+            9.65,
+            -4016.519
+          ],
+          "heading_deg": 190.0
+        }
+      },
+      {
+        "id": "lm_20_dinh_langbiang",
+        "name_vi": "Đỉnh Radar & Núi Langbiang",
+        "tile_id": "T_E00_N06",
+        "source_tier": "slot6_sourced_base",
+        "path": "02_ASSETS_3D/sourced_library/landmarks/lm_20_langbiang_radar_station.glb",
+        "meshes": 5,
+        "materials": 5,
+        "triangles": 556,
+        "size_bytes": 19984,
+        "has_forbidden_transmission": false,
+        "placement": {
+          "x_m": -757.911,
+          "y_m": 11831.147,
+          "elev_msl_m": 2135.413,
+          "gltf_translation": [
+            -757.911,
+            657.063,
+            -11831.147
+          ],
+          "heading_deg": 180.0
+        }
+      },
+      {
+        "id": "lm_22_dien_gio_cau_dat",
+        "name_vi": "Đồi Chè & Tuabin Điện Gió Cầu Đất",
+        "tile_id": "T_E07_S04",
+        "source_tier": "slot6_sourced_base",
+        "path": "02_ASSETS_3D/sourced_library/landmarks/lm_22_cau_dat_wind_turbine.glb",
+        "meshes": 4,
+        "materials": 4,
+        "triangles": 432,
+        "size_bytes": 22068,
+        "has_forbidden_transmission": false,
+        "placement": {
+          "x_m": 13258.922,
+          "y_m": -7894.667,
+          "elev_msl_m": 1475.26,
+          "gltf_translation": [
+            13258.922,
+            -3.09,
+            7894.667
+          ],
+          "heading_deg": 90.0
+        }
+      }
+    ],
+    "infrastructure": [
+      {
+        "id": "roads_ring0",
+        "path": "02_ASSETS_3D/infrastructure_buildings/roads_ring0.glb",
+        "meshes": 18,
+        "materials": 5,
+        "triangles": 25380,
+        "size_bytes": 708388,
+        "has_forbidden_transmission": false
+      },
+      {
+        "id": "roads_ring1",
+        "path": "02_ASSETS_3D/infrastructure_buildings/roads_ring1.glb",
+        "meshes": 12,
+        "materials": 5,
+        "triangles": 25600,
+        "size_bytes": 706964,
+        "has_forbidden_transmission": false
+      }
+    ],
+    "building_tiles": [
+      {
+        "id": "buildings_T_E00_N00",
+        "path": "02_ASSETS_3D/building_tiles/buildings_T_E00_N00.glb",
+        "meshes": 12,
+        "materials": 12,
+        "triangles": 38886,
+        "size_bytes": 2187972,
+        "has_forbidden_transmission": false,
+        "tile_id": "T_E00_N00"
+      },
+      {
+        "id": "buildings_T_E00_N01",
+        "path": "02_ASSETS_3D/building_tiles/buildings_T_E00_N01.glb",
+        "meshes": 11,
+        "materials": 12,
+        "triangles": 22168,
+        "size_bytes": 1283028,
+        "has_forbidden_transmission": false,
+        "tile_id": "T_E00_N01"
+      },
+      {
+        "id": "buildings_T_E00_N02",
+        "path": "02_ASSETS_3D/building_tiles/buildings_T_E00_N02.glb",
+        "meshes": 11,
+        "materials": 12,
+        "triangles": 16810,
+        "size_bytes": 972188,
+        "has_forbidden_transmission": false,
+        "tile_id": "T_E00_N02"
+      },
+      {
+        "id": "buildings_T_E00_S01",
+        "path": "02_ASSETS_3D/building_tiles/buildings_T_E00_S01.glb",
+        "meshes": 9,
+        "materials": 12,
+        "triangles": 12576,
+        "size_bytes": 712772,
+        "has_forbidden_transmission": false,
+        "tile_id": "T_E00_S01"
+      },
+      {
+        "id": "buildings_T_E00_S02",
+        "path": "02_ASSETS_3D/building_tiles/buildings_T_E00_S02.glb",
+        "meshes": 8,
+        "materials": 12,
+        "triangles": 8856,
+        "size_bytes": 503780,
+        "has_forbidden_transmission": false,
+        "tile_id": "T_E00_S02"
+      },
+      {
+        "id": "buildings_T_E01_N00",
+        "path": "02_ASSETS_3D/building_tiles/buildings_T_E01_N00.glb",
+        "meshes": 9,
+        "materials": 12,
+        "triangles": 16778,
+        "size_bytes": 962096,
+        "has_forbidden_transmission": false,
+        "tile_id": "T_E01_N00"
+      },
+      {
+        "id": "buildings_T_E01_N01",
+        "path": "02_ASSETS_3D/building_tiles/buildings_T_E01_N01.glb",
+        "meshes": 10,
+        "materials": 12,
+        "triangles": 19402,
+        "size_bytes": 1125604,
+        "has_forbidden_transmission": false,
+        "tile_id": "T_E01_N01"
+      },
+      {
+        "id": "buildings_T_E01_S01",
+        "path": "02_ASSETS_3D/building_tiles/buildings_T_E01_S01.glb",
+        "meshes": 9,
+        "materials": 12,
+        "triangles": 14664,
+        "size_bytes": 844580,
+        "has_forbidden_transmission": false,
+        "tile_id": "T_E01_S01"
+      },
+      {
+        "id": "buildings_T_E01_S02",
+        "path": "02_ASSETS_3D/building_tiles/buildings_T_E01_S02.glb",
+        "meshes": 9,
+        "materials": 12,
+        "triangles": 15290,
+        "size_bytes": 881760,
+        "has_forbidden_transmission": false,
+        "tile_id": "T_E01_S02"
+      },
+      {
+        "id": "buildings_T_E02_N00",
+        "path": "02_ASSETS_3D/building_tiles/buildings_T_E02_N00.glb",
+        "meshes": 10,
+        "materials": 12,
+        "triangles": 22578,
+        "size_bytes": 1335668,
+        "has_forbidden_transmission": false,
+        "tile_id": "T_E02_N00"
+      },
+      {
+        "id": "buildings_T_E02_N01",
+        "path": "02_ASSETS_3D/building_tiles/buildings_T_E02_N01.glb",
+        "meshes": 10,
+        "materials": 12,
+        "triangles": 24196,
+        "size_bytes": 1447212,
+        "has_forbidden_transmission": false,
+        "tile_id": "T_E02_N01"
+      },
+      {
+        "id": "buildings_T_E03_N00",
+        "path": "02_ASSETS_3D/building_tiles/buildings_T_E03_N00.glb",
+        "meshes": 10,
+        "materials": 12,
+        "triangles": 26150,
+        "size_bytes": 1562684,
+        "has_forbidden_transmission": false,
+        "tile_id": "T_E03_N00"
+      },
+      {
+        "id": "buildings_T_W01_N00",
+        "path": "02_ASSETS_3D/building_tiles/buildings_T_W01_N00.glb",
+        "meshes": 12,
+        "materials": 12,
+        "triangles": 18254,
+        "size_bytes": 1034852,
+        "has_forbidden_transmission": false,
+        "tile_id": "T_W01_N00"
+      },
+      {
+        "id": "buildings_T_W01_N01",
+        "path": "02_ASSETS_3D/building_tiles/buildings_T_W01_N01.glb",
+        "meshes": 11,
+        "materials": 12,
+        "triangles": 17212,
+        "size_bytes": 977316,
+        "has_forbidden_transmission": false,
+        "tile_id": "T_W01_N01"
+      },
+      {
+        "id": "buildings_T_W01_S01",
+        "path": "02_ASSETS_3D/building_tiles/buildings_T_W01_S01.glb",
+        "meshes": 10,
+        "materials": 12,
+        "triangles": 14322,
+        "size_bytes": 821296,
+        "has_forbidden_transmission": false,
+        "tile_id": "T_W01_S01"
+      },
+      {
+        "id": "buildings_T_W02_N00",
+        "path": "02_ASSETS_3D/building_tiles/buildings_T_W02_N00.glb",
+        "meshes": 10,
+        "materials": 12,
+        "triangles": 26190,
+        "size_bytes": 1565448,
+        "has_forbidden_transmission": false,
+        "tile_id": "T_W02_N00"
+      },
+      {
+        "id": "buildings_T_W02_N01",
+        "path": "02_ASSETS_3D/building_tiles/buildings_T_W02_N01.glb",
+        "meshes": 11,
+        "materials": 12,
+        "triangles": 23520,
+        "size_bytes": 1388024,
+        "has_forbidden_transmission": false,
+        "tile_id": "T_W02_N01"
+      },
+      {
+        "id": "buildings_T_W02_S01",
+        "path": "02_ASSETS_3D/building_tiles/buildings_T_W02_S01.glb",
+        "meshes": 10,
+        "materials": 12,
+        "triangles": 22540,
+        "size_bytes": 1333688,
+        "has_forbidden_transmission": false,
+        "tile_id": "T_W02_S01"
+      }
+    ]
+  },
+  "sourced_library_assets": [
+    {
+      "asset_id": "prop_01_hxh_pedal_duck_boat",
+      "category": "water_prop",
+      "target_slot": 2,
+      "usage_mode": "use_directly",
+      "license": "CC0",
+      "source_url": "https://poly.pizza/m/c1fo7hQgC6J",
+      "glb_path": "02_ASSETS_3D/sourced_library/urban_props/prop_01_hxh_pedal_duck_boat.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging_w3/02_ASSETS_3D/sourced_library/urban_props/prop_01_hxh_pedal_duck_boat.glb",
+        "size_bytes": 22544,
+        "sha256": "fbead2081a97774457fd640f6bce0f2097a67f684ebba4a70d37275629682f13",
+        "meshes": 17,
+        "materials": 7,
+        "triangles": 276,
+        "bbox_size_m": {
+          "width_x": 1.58,
+          "height_y": 2.18,
+          "depth_z": 2.845
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "Thuyền đạp vịt / thiên nga trắng Hồ Xuân Hương (dài 2.8m, rộng 1.65m, cao 2.25m, mái che vàng). Task 2 thả trực tiếp bằng InstancedMesh quanh bến Thủy Tạ và bến Bích Câu tại cao độ mặt nước Z_local=0.0m (hạ y=-0.12m để phao ngập nhẹ dưới nước).",
+      "registered_at_utc": "2026-11-23T12:01:43.026805+00:00"
+    },
+    {
+      "asset_id": "prop_02_tuyen_lam_wooden_boat",
+      "category": "water_prop",
+      "target_slot": 2,
+      "usage_mode": "use_directly",
+      "license": "CC0",
+      "source_url": "https://poly.pizza/m/5UEl54KsuC",
+      "glb_path": "02_ASSETS_3D/sourced_library/urban_props/prop_02_tuyen_lam_wooden_boat.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging_w3/02_ASSETS_3D/sourced_library/urban_props/prop_02_tuyen_lam_wooden_boat.glb",
+        "size_bytes": 15416,
+        "sha256": "317f53f5202ca28c10418dd2a94b4e348f0d99928b0b60162c46506a664586a4",
+        "meshes": 12,
+        "materials": 3,
+        "triangles": 168,
+        "bbox_size_m": {
+          "width_x": 2.59,
+          "height_y": 0.655,
+          "depth_z": 4.427
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "Thuyền gỗ mộc kèm mái chèo cho Hồ Tuyền Lâm, Hồ Than Thở & Hồ Suối Vàng (dài 3.9m, rộng 1.7m, cao 0.65m). Task 2 đặt neo cạnh cầu tàu gỗ ở cao độ Z_local=-103.0m (Hồ Tuyền Lâm).",
+      "registered_at_utc": "2026-11-23T12:01:43.067156+00:00"
+    },
+    {
+      "asset_id": "prop_03_lakeside_wooden_pier",
+      "category": "water_prop",
+      "target_slot": 2,
+      "usage_mode": "use_directly",
+      "license": "CC0",
+      "source_url": "https://polyhaven.com/a/modular_wooden_pier",
+      "glb_path": "02_ASSETS_3D/sourced_library/urban_props/prop_03_lakeside_wooden_pier.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging_w3/02_ASSETS_3D/sourced_library/urban_props/prop_03_lakeside_wooden_pier.glb",
+        "size_bytes": 57380,
+        "sha256": "0fad9680a7d32d339bf981d3a27150f1b1c4d12f7f0205d27de35b107890a342",
+        "meshes": 45,
+        "materials": 4,
+        "triangles": 964,
+        "bbox_size_m": {
+          "width_x": 3.1,
+          "height_y": 2.56,
+          "depth_z": 9.52
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "Cầu tàu gỗ bến thuyền (rộng 3.1m, dài 9.4m, cao 2.56m, cọc gỗ & 2 đèn lồng emissive vàng ấm ở mũi bến). Task 2 đặt tại bờ Bắc Hồ Xuân Hương và các vịnh Hồ Tuyền Lâm (mặt sàn gỗ ở y=+1.22m, chân cọc ở y=0.0m).",
+      "registered_at_utc": "2026-11-23T12:01:43.114791+00:00"
+    },
+    {
+      "asset_id": "prop_05_lakeside_stone_balustrade",
+      "category": "urban_prop",
+      "target_slot": 2,
+      "usage_mode": "kitbash_component",
+      "license": "CC0",
+      "source_url": "https://poly.pizza/m/UXmKfG81fG",
+      "glb_path": "02_ASSETS_3D/sourced_library/urban_props/prop_05_lakeside_stone_balustrade.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging_w3/02_ASSETS_3D/sourced_library/urban_props/prop_05_lakeside_stone_balustrade.glb",
+        "size_bytes": 23748,
+        "sha256": "458eee60930d89b4ca81f98898f21ab70be8f7bfa5f8a8d302153941e152fd5b",
+        "meshes": 20,
+        "materials": 2,
+        "triangles": 408,
+        "bbox_size_m": {
+          "width_x": 4.12,
+          "height_y": 1.12,
+          "depth_z": 0.52
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "Module lan can đá chẻ & 7 con tiện cổ điển ven Hồ Xuân Hương / Cầu Ông Đạo (dài chuẩn 4.0m dọc trục X, cao 1.12m). Task 2 và Task 5 lặp theo spline bờ hồ hoặc thành cầu với bước nhảy 4.0m.",
+      "registered_at_utc": "2026-11-23T12:01:43.197712+00:00"
+    },
+    {
+      "asset_id": "dalat_da_quy_flower_bush",
+      "category": "vegetation",
+      "target_slot": 3,
+      "usage_mode": "use_directly",
+      "license": "CC0",
+      "source_url": "https://polyhaven.com/a/flower_ursinia",
+      "glb_path": "02_ASSETS_3D/sourced_library/vegetation/dalat_da_quy_flower_bush.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging/02_ASSETS_3D/sourced_library/vegetation/dalat_da_quy_flower_bush.glb",
+        "size_bytes": 8664,
+        "sha256": "dc10553ea7e26e6ad589e62749108e4020af1be77a30d52f73905846700148e7",
+        "meshes": 8,
+        "materials": 4,
+        "triangles": 122,
+        "bbox_size_m": {
+          "width_x": 2.311,
+          "height_y": 1.452,
+          "depth_z": 1.706
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "Bụi Hoa Dã Quỳ (Tithonia diversifolia, cao ~1.65m) sẵn sàng thả ven đường đèo Prenn, Đồi Cù và rìa rừng thông.",
+      "registered_at_utc": "2026-11-23T09:38:46.426466+00:00"
+    },
+    {
+      "asset_id": "dalat_hill_grass_tuft",
+      "category": "vegetation",
+      "target_slot": 3,
+      "usage_mode": "use_directly",
+      "license": "CC0",
+      "source_url": "https://poly.pizza/m/GyDYqHAByU",
+      "glb_path": "02_ASSETS_3D/sourced_library/vegetation/dalat_hill_grass_tuft.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging/02_ASSETS_3D/sourced_library/vegetation/dalat_hill_grass_tuft.glb",
+        "size_bytes": 9900,
+        "sha256": "feebe8a287d2acd244cee58324a234ca65323135d36c933e7aebfd8b4edf6348",
+        "meshes": 12,
+        "materials": 2,
+        "triangles": 36,
+        "bbox_size_m": {
+          "width_x": 0.903,
+          "height_y": 0.548,
+          "depth_z": 0.946
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "Cụm cỏ đồi & dương xỉ thấp (doubleSided=True, <100 tris) sẵn sàng rải mật độ cao trên đồi cỏ Đồi Cù & ven Hồ Xuân Hương.",
+      "registered_at_utc": "2026-11-23T09:38:46.501254+00:00"
+    },
+    {
+      "asset_id": "flora_08_pink_grass_meadow_patch",
+      "category": "vegetation",
+      "target_slot": 3,
+      "usage_mode": "use_directly",
+      "license": "CC0-1.0 (Poly Pizza Quaternius Grass O9vL3stB6n & Bush Snow H4IEAwYl1z)",
+      "source_url": "https://poly.pizza/m/O9vL3stB6n",
+      "glb_path": "02_ASSETS_3D/sourced_library/vegetation/flora_08_pink_grass_meadow_patch.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging_w6/02_ASSETS_3D/sourced_library/vegetation/flora_08_pink_grass_meadow_patch.glb",
+        "size_bytes": 13812,
+        "sha256": "cc88ead64fac8a8119fe11691479b3e60c307edee6c3f9b229bbf42fa1f38e77",
+        "meshes": 3,
+        "materials": 3,
+        "triangles": 322,
+        "bbox_size_m": {
+          "width_x": 4.8,
+          "height_y": 0.811,
+          "depth_z": 4.8
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "Low-poly (<500 tris) Da Lat Pink Muhly Grass & Snow Grass cluster for RING_2 Dankia-Suoi Vàng & Langbiang InstancedMesh scattering.",
+      "registered_at_utc": "2026-11-23T15:26:11.997972+00:00"
+    },
+    {
+      "asset_id": "flora_09_jacaranda_purple_blossom_tree",
+      "category": "vegetation",
+      "target_slot": 3,
+      "usage_mode": "use_directly",
+      "license": "CC0-1.0 (Poly Pizza Quaternius Trees etFGNvsiFv & Flower Petal eVE0j49ux9)",
+      "source_url": "https://poly.pizza/m/etFGNvsiFv",
+      "glb_path": "02_ASSETS_3D/sourced_library/vegetation/flora_09_jacaranda_purple_blossom_tree.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging_w7/02_ASSETS_3D/sourced_library/vegetation/flora_09_jacaranda_purple_blossom_tree.glb",
+        "size_bytes": 7980,
+        "sha256": "2ed748f8a94996eb35f977b0025165e62d3bf5b2dbb5828f17bdcf39269d0194",
+        "meshes": 3,
+        "materials": 3,
+        "triangles": 154,
+        "bbox_size_m": {
+          "width_x": 6.8,
+          "height_y": 8.6,
+          "depth_z": 6.8
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "Low-poly (<500 tris) Da Lat Purple Jacaranda (Phuong Tim, 8.6m tall) for lakeside & boulevard InstancedMesh scattering.",
+      "registered_at_utc": "2026-11-23T16:15:57.645573+00:00"
+    },
+    {
+      "asset_id": "flora_10_highland_tree_fern_cyathea",
+      "category": "vegetation",
+      "target_slot": 3,
+      "usage_mode": "use_directly",
+      "license": "CC0-1.0 (Poly Pizza Quaternius Tree 2paAm1ja4w & Tree qZtx0AHhcy)",
+      "source_url": "https://poly.pizza/m/2paAm1ja4w",
+      "glb_path": "02_ASSETS_3D/sourced_library/vegetation/flora_10_highland_tree_fern_cyathea.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging_w7/02_ASSETS_3D/sourced_library/vegetation/flora_10_highland_tree_fern_cyathea.glb",
+        "size_bytes": 18632,
+        "sha256": "02062a60764a5327c113be9f7c4ca34b0c9575aa79e06bbeb9e6af5f3e16a87a",
+        "meshes": 3,
+        "materials": 3,
+        "triangles": 312,
+        "bbox_size_m": {
+          "width_x": 4.82,
+          "height_y": 5.2,
+          "depth_z": 4.82
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "Low-poly (<500 tris) Highland Tree Fern (Duong Xi Co Thu Cyathea, 5.2m tall) for Langbiang & Datanla/Prenn canyon understories.",
+      "registered_at_utc": "2026-11-23T16:15:57.691476+00:00"
+    },
+    {
+      "asset_id": "mai_anh_dao_blossom_lod0",
+      "category": "vegetation",
+      "target_slot": 3,
+      "usage_mode": "base_mesh_for_detailing",
+      "license": "CC0",
+      "source_url": "https://sketchfab.com/3d-models/free-low-poly-sakura-tree-02c5ca153e8e4e86920690b07146352b",
+      "glb_path": "02_ASSETS_3D/sourced_library/vegetation/mai_anh_dao_blossom_lod0.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging/02_ASSETS_3D/sourced_library/vegetation/mai_anh_dao_blossom_lod0.glb",
+        "size_bytes": 10404,
+        "sha256": "243a6caf4fd1d618b992ccd21790876370551d1ab18a0ab84d58be2455ae8ee4",
+        "meshes": 9,
+        "materials": 4,
+        "triangles": 164,
+        "bbox_size_m": {
+          "width_x": 6.828,
+          "height_y": 7.225,
+          "depth_z": 5.451
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "Base mesh Mai Anh Đào (Prunus cerasoides, cao ~7.2m) đã đạt chuẩn Y-Up/Pivot đáy. Task 3 có thể dùng trực tiếp hoặc thêm variant không hoa (mùa xanh) và hạt cánh hoa rơi quanh Hồ Xuân Hương & đường Trần Hưng Đạo.",
+      "registered_at_utc": "2026-11-23T09:38:46.287940+00:00"
+    },
+    {
+      "asset_id": "pbr_pack_03_pine_bark_and_forest_floor",
+      "category": "vegetation",
+      "target_slot": 3,
+      "usage_mode": "kitbash_component",
+      "license": "CC0-1.0 (Poly Haven fever_tree_bark & Pine Needle Litter CC0)",
+      "source_url": "https://polyhaven.com/a/fever_tree_bark",
+      "glb_path": "02_ASSETS_3D/sourced_library/vegetation/pbr_pack_03_pine_bark_and_forest_floor.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging_w5/02_ASSETS_3D/sourced_library/vegetation/pbr_pack_03_pine_bark_and_forest_floor.glb",
+        "size_bytes": 112216,
+        "sha256": "ae13e49ba24694421fa7b517704c1e5bc7ddf6d3203b580cf73af19e43bf0198",
+        "meshes": 2,
+        "materials": 2,
+        "triangles": 88,
+        "bbox_size_m": {
+          "width_x": 8.0,
+          "height_y": 5.0,
+          "depth_z": 6.0
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "Embedded 512x512 seamless JPEG PBR materials: Pinus_Kesiya_3Leaf_Bark_PBR & Dry_Pine_Needles_Forest_Floor_PBR.",
+      "registered_at_utc": "2026-11-23T14:23:35.985434+00:00"
+    },
+    {
+      "asset_id": "pine_dalat_3leaf_mature_lod0",
+      "category": "vegetation",
+      "target_slot": 3,
+      "usage_mode": "use_directly",
+      "license": "CC0",
+      "source_url": "https://quaternius.com/packs/ultimatestylizednature.html",
+      "glb_path": "02_ASSETS_3D/sourced_library/vegetation/pine_dalat_3leaf_mature_lod0.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging/02_ASSETS_3D/sourced_library/vegetation/pine_dalat_3leaf_mature_lod0.glb",
+        "size_bytes": 11520,
+        "sha256": "e2609107545b2ce82d9890f607750d40edcb44dae2adca09ee57c92b0fbc7592",
+        "meshes": 10,
+        "materials": 4,
+        "triangles": 190,
+        "bbox_size_m": {
+          "width_x": 8.333,
+          "height_y": 18.727,
+          "depth_z": 6.932
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "Đạt chuẩn InstancedMesh cho Thông 3 lá Đà Lạt già (Pinus kesiya, cao ~19m, thân lộ 60%, tán ô rộng). Nạp trực tiếp cho Đồi Cù, Đồi Dinh I-III; hạ -0.40m khi đặt trên sườn dốc >15°.",
+      "registered_at_utc": "2026-11-23T09:38:45.781263+00:00"
+    },
+    {
+      "asset_id": "pine_dalat_3leaf_medium_lod0",
+      "category": "vegetation",
+      "target_slot": 3,
+      "usage_mode": "use_directly",
+      "license": "CC0",
+      "source_url": "https://poly.pizza/m/oYtDty0fR6",
+      "glb_path": "02_ASSETS_3D/sourced_library/vegetation/pine_dalat_3leaf_medium_lod0.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging/02_ASSETS_3D/sourced_library/vegetation/pine_dalat_3leaf_medium_lod0.glb",
+        "size_bytes": 8384,
+        "sha256": "5018b9917237506bea46ab2a53226f64ebf4b5dd5b90706d5012428ad51d1509",
+        "meshes": 7,
+        "materials": 4,
+        "triangles": 140,
+        "bbox_size_m": {
+          "width_x": 6.094,
+          "height_y": 13.531,
+          "depth_z": 4.234
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "Đạt chuẩn InstancedMesh cho Thông 3 lá trưởng thành (cao ~13.6m). Kết hợp random scale 0.85-1.15 và yaw 0-360° để tạo rừng thông tự nhiên quanh Hồ Xuân Hương & Đồi Robin.",
+      "registered_at_utc": "2026-11-23T09:38:45.890247+00:00"
+    },
+    {
+      "asset_id": "pine_dalat_3leaf_young_lod0",
+      "category": "vegetation",
+      "target_slot": 3,
+      "usage_mode": "use_directly",
+      "license": "CC0",
+      "source_url": "https://poly.pizza/m/699sFuLCN2",
+      "glb_path": "02_ASSETS_3D/sourced_library/vegetation/pine_dalat_3leaf_young_lod0.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging/02_ASSETS_3D/sourced_library/vegetation/pine_dalat_3leaf_young_lod0.glb",
+        "size_bytes": 4948,
+        "sha256": "a12f66e1b5f9777d7fdf147d50afa962aae6895e116842c309eade9207c39b74",
+        "meshes": 4,
+        "materials": 3,
+        "triangles": 86,
+        "bbox_size_m": {
+          "width_x": 3.3,
+          "height_y": 7.6,
+          "depth_z": 2.858
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "Đạt chuẩn InstancedMesh cho Thông non tái sinh (cao ~7.6m) ở bìa rừng và công viên ven hồ.",
+      "registered_at_utc": "2026-11-23T09:38:45.995484+00:00"
+    },
+    {
+      "asset_id": "pine_dalat_lod_far",
+      "category": "vegetation",
+      "target_slot": 3,
+      "usage_mode": "use_directly",
+      "license": "CC0",
+      "source_url": "https://eclair-assets.itch.io/nature-kit-glb-pack-329-free-cc0-3d-models",
+      "glb_path": "02_ASSETS_3D/sourced_library/vegetation/pine_dalat_lod_far.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging/02_ASSETS_3D/sourced_library/vegetation/pine_dalat_lod_far.glb",
+        "size_bytes": 3896,
+        "sha256": "fa48bcaa966a75605cb2de552e085a64d933bfcd381102888e9922843ff6d685",
+        "meshes": 3,
+        "materials": 3,
+        "triangles": 63,
+        "bbox_size_m": {
+          "width_x": 5.6,
+          "height_y": 15.8,
+          "depth_z": 4.85
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "LOD xa siêu nhẹ (<100 tris) chuyên cho đồi thông RING_1/RING_2 (>600m từ camera) giúp giữ 60fps trên WebGL.",
+      "registered_at_utc": "2026-11-23T09:38:46.138125+00:00"
+    },
+    {
+      "asset_id": "kit_dalat_steam_locomotive",
+      "category": "landmark",
+      "target_slot": 4,
+      "usage_mode": "kitbash_component",
+      "license": "CC0",
+      "source_url": "https://quaternius.com/packs/modulartrain.html",
+      "glb_path": "02_ASSETS_3D/sourced_library/landmarks/kit_dalat_steam_locomotive.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging_w2/02_ASSETS_3D/sourced_library/landmarks/kit_dalat_steam_locomotive.glb",
+        "size_bytes": 39148,
+        "sha256": "8753c51565cf1ec6d9492cdde82776a61ee89ca5df01b422739d05396b67f18e",
+        "meshes": 30,
+        "materials": 5,
+        "triangles": 436,
+        "bbox_size_m": {
+          "width_x": 12.0,
+          "height_y": 4.15,
+          "depth_z": 2.6
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "Mô hình đầu máy hơi nước cổ răng cưa đặt trên bệ ray (dài 12m, cao 4.15m, chuẩn Y-Up, min_y=0.0). Task 4 lắp trực tiếp vào sân ga phía sau Nhà Ga Đà Lạt (lm_02_ga_da_lat).",
+      "registered_at_utc": "2026-11-23T11:09:15.413792+00:00"
+    },
+    {
+      "asset_id": "kit_french_colonial_arch_roof",
+      "category": "landmark",
+      "target_slot": 4,
+      "usage_mode": "kitbash_component",
+      "license": "CC0",
+      "source_url": "https://poly.pizza/m/erbvRcGd7YA",
+      "glb_path": "02_ASSETS_3D/sourced_library/landmarks/kit_french_colonial_arch_roof.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging_w2/02_ASSETS_3D/sourced_library/landmarks/kit_french_colonial_arch_roof.glb",
+        "size_bytes": 28584,
+        "sha256": "1b342fd39c5577bb66eac13fb82a9abab7d4292199312414ed671df1dfd40256",
+        "meshes": 25,
+        "materials": 5,
+        "triangles": 288,
+        "bbox_size_m": {
+          "width_x": 17.0,
+          "height_y": 6.025,
+          "depth_z": 4.8
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "Bộ kit 3 module kiến trúc Pháp Đà Lạt: (1) Vòm cuốn Romanesque gạch đỏ/đá chẻ cho CĐSP & Nhà thờ Con Gà, (2) Mái ngói đá đen có cửa sổ dormer Pháp, (3) Bệ đồng hồ Art Deco cho Ga Đà Lạt & tháp chuông CĐSP.",
+      "registered_at_utc": "2026-11-23T11:09:15.373641+00:00"
+    },
+    {
+      "asset_id": "kit_vietnamese_pagoda_roof_stupa",
+      "category": "landmark",
+      "target_slot": 4,
+      "usage_mode": "kitbash_component",
+      "license": "CC0",
+      "source_url": "https://sketchfab.com/3d-models/one-pillar-pagoda-chua-mot-cot-9b2562f8884141c0b1777e1a1c05887c",
+      "glb_path": "02_ASSETS_3D/sourced_library/landmarks/kit_vietnamese_pagoda_roof_stupa.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging_w4/02_ASSETS_3D/sourced_library/landmarks/kit_vietnamese_pagoda_roof_stupa.glb",
+        "size_bytes": 36684,
+        "sha256": "7cac2951f91d96a4722398a2121999ef0cff95585e4dba129f5f4bfb01fc4eca",
+        "meshes": 33,
+        "materials": 4,
+        "triangles": 616,
+        "bbox_size_m": {
+          "width_x": 20.638,
+          "height_y": 8.3,
+          "depth_z": 7.018
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "Bộ kit 3 module kiến trúc chùa Việt Nam: (1) Mái đao cong ngói đỏ 2 tầng có bờ nóc vàng, (2) Cổng Tam Quan gỗ lim 4 trụ, (3) Đỉnh Bảo Tháp 3 tầng thu nhỏ. Task 4 dùng lắp ghép chi tiết cho Thiền viện Trúc Lâm, Chùa Linh Phước và các chùa vùng mở rộng.",
+      "registered_at_utc": "2026-11-23T13:23:39.047888+00:00"
+    },
+    {
+      "asset_id": "lm_01_lam_vien_square_base",
+      "category": "landmark",
+      "target_slot": 4,
+      "usage_mode": "base_mesh_for_detailing",
+      "license": "CC0",
+      "source_url": "https://3dwarehouse.sketchup.com/model/92b9d886-0dc4-4976-8e25-5c126e676d9f/%C4%90%C3%A0-L%E1%BA%A1t-L%C3%A2m-%C4%90%E1%BB%93ng-3D-City-Projects-2024",
+      "glb_path": "02_ASSETS_3D/sourced_library/landmarks/lm_01_lam_vien_square_base.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging_w2/02_ASSETS_3D/sourced_library/landmarks/lm_01_lam_vien_square_base.glb",
+        "size_bytes": 100372,
+        "sha256": "3a11fe3435338e01bf3050e56260bc6538c097fc9f6cc1fbac39aaa2943c2e1d",
+        "meshes": 75,
+        "materials": 7,
+        "triangles": 1364,
+        "bbox_size_m": {
+          "width_x": 96.0,
+          "height_y": 18.4,
+          "depth_z": 59.0
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "Khối nền Quảng trường Lâm Viên (Nụ Atiso cao 17m & Hoa Dã Quỳ cao 18.4m trên bậc thềm 96x56m, alphaMode BLEND không dùng transmission). Task 4 cần thêm Foundation Skirt âm -3.0m dưới đáy quảng trường, chia lưới khung thép xoắn KTS Trần Văn Dũng và thêm đèn LED emissive xanh lục/vàng cam ban đêm.",
+      "registered_at_utc": "2026-11-23T11:09:15.106247+00:00"
+    },
+    {
+      "asset_id": "lm_02_ga_da_lat_base",
+      "category": "landmark",
+      "target_slot": 4,
+      "usage_mode": "base_mesh_for_detailing",
+      "license": "CC0",
+      "source_url": "https://3dwarehouse.sketchup.com/model/92b9d886-0dc4-4976-8e25-5c126e676d9f/%C4%90%C3%A0-L%E1%BA%A1t-L%C3%A2m-%C4%90%E1%BB%93ng-3D-City-Projects-2024",
+      "glb_path": "02_ASSETS_3D/sourced_library/landmarks/lm_02_ga_da_lat_base.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging_w2/02_ASSETS_3D/sourced_library/landmarks/lm_02_ga_da_lat_base.glb",
+        "size_bytes": 36408,
+        "sha256": "346d8f71cacce702ff3c48314dc455d380b47661073ce26fe25b174c14a007cd",
+        "meshes": 37,
+        "materials": 6,
+        "triangles": 270,
+        "bbox_size_m": {
+          "width_x": 72.4,
+          "height_y": 14.5,
+          "depth_z": 27.75
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "Khối nền Nhà Ga Đà Lạt (dài 66.5m, cao 14.5m, 3 mái nhọn Langbiang Art Deco, đồng hồ mặt trước, hiên sảnh và mái che sân ga). Task 4 cần thêm Foundation Skirt -3.0m, ốp đá chẻ chân tường, ghép kit_dalat_steam_locomotive ở đường ray phía sau và bật emissive ấm cho ô kính màu.",
+      "registered_at_utc": "2026-11-23T11:09:15.148191+00:00"
+    },
+    {
+      "asset_id": "lm_03_nha_tho_con_ga_base",
+      "category": "landmark",
+      "target_slot": 4,
+      "usage_mode": "base_mesh_for_detailing",
+      "license": "CC0",
+      "source_url": "https://3dwarehouse.sketchup.com/model/d550df05-beba-4734-80fb-9fb16a958c70/%C4%90%C3%A0-L%E1%BA%A1t-L%C3%A2m-%C4%90%E1%BB%93ng-3D-Projects-TEST",
+      "glb_path": "02_ASSETS_3D/sourced_library/landmarks/lm_03_nha_tho_con_ga_base.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging_w2/02_ASSETS_3D/sourced_library/landmarks/lm_03_nha_tho_con_ga_base.glb",
+        "size_bytes": 38144,
+        "sha256": "17910a9497f5ffa9710690a5b9c778e9162e816f08eda9da0e1fe63f072a41f2",
+        "meshes": 33,
+        "materials": 5,
+        "triangles": 372,
+        "bbox_size_m": {
+          "width_x": 20.0,
+          "height_y": 47.025,
+          "depth_z": 66.777
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "Khối nền Nhà thờ Chính tòa Đà Lạt (dài 65m, rộng 20m, tháp chuông 47m có tượng Gà trống trên đỉnh thánh giá, mặt bằng chữ thập Romanesque). Task 4 cần thêm Foundation Skirt -3.0m, dùng kit_french_colonial_arch_roof để đục dãy 70 cửa sổ vòm kính màu và tinh chỉnh tượng Gà trống hợp kim.",
+      "registered_at_utc": "2026-11-23T11:09:15.189020+00:00"
+    },
+    {
+      "asset_id": "lm_04_truong_cdsp_dalat_base",
+      "category": "landmark",
+      "target_slot": 4,
+      "usage_mode": "base_mesh_for_detailing",
+      "license": "CC0",
+      "source_url": "https://3dwarehouse.sketchup.com/model/8deaad83-a581-44a6-a393-94e464c18e5d/Da-lat-Villa-2?hl=ja",
+      "glb_path": "02_ASSETS_3D/sourced_library/landmarks/lm_04_truong_cdsp_dalat_base.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging_w2/02_ASSETS_3D/sourced_library/landmarks/lm_04_truong_cdsp_dalat_base.glb",
+        "size_bytes": 63432,
+        "sha256": "342cc10870da2eb62221a3a7d84aeeed5c923ddaa3ab9d17a86f343cfa192308",
+        "meshes": 62,
+        "materials": 5,
+        "triangles": 412,
+        "bbox_size_m": {
+          "width_x": 79.282,
+          "height_y": 54.0,
+          "depth_z": 22.934
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "Khối nền Trường Cao đẳng Sư phạm Đà Lạt (Lycée Yersin): dãy giảng đường cong vòng cung 8 nhịp gạch trần đỏ + tháp chuông 54m. Task 4 cần thêm Foundation Skirt -3.0m, ghép chuỗi vòm cuốn tầng trệt từ kit_french_colonial_arch_roof và cửa sổ mái dormer.",
+      "registered_at_utc": "2026-11-23T11:09:15.243313+00:00"
+    },
+    {
+      "asset_id": "lm_05_cho_da_lat_hoa_binh_base",
+      "category": "landmark",
+      "target_slot": 4,
+      "usage_mode": "base_mesh_for_detailing",
+      "license": "CC0",
+      "source_url": "https://3dwarehouse.sketchup.com/model/92b9d886-0dc4-4976-8e25-5c126e676d9f/%C4%90%C3%A0-L%E1%BA%A1t-L%C3%A2m-%C4%90%E1%BB%93ng-3D-City-Projects-2024",
+      "glb_path": "02_ASSETS_3D/sourced_library/landmarks/lm_05_cho_da_lat_hoa_binh_base.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging_w2/02_ASSETS_3D/sourced_library/landmarks/lm_05_cho_da_lat_hoa_binh_base.glb",
+        "size_bytes": 46480,
+        "sha256": "d9f0cc392d7f561ba99c3a7b37f458520f357e768944328ff49f1b1217a7febf",
+        "meshes": 36,
+        "materials": 4,
+        "triangles": 452,
+        "bbox_size_m": {
+          "width_x": 74.0,
+          "height_y": 22.0,
+          "depth_z": 56.608
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "Khối nền Chợ Đà Lạt kết nối cầu bộ hành trên cao và Cầu thang chữ Y lên khu Hòa Bình. Task 4 cần thêm Foundation Skirt -3.0m để ăn khớp độ chênh cao độ thung lũng chợ với đồi khu Hòa Bình, thêm lam đứng mặt tiền và biển hiệu đèn đêm.",
+      "registered_at_utc": "2026-11-23T11:09:15.287901+00:00"
+    },
+    {
+      "asset_id": "lm_06_thuy_ta_cau_ong_dao_base",
+      "category": "landmark",
+      "target_slot": 4,
+      "usage_mode": "base_mesh_for_detailing",
+      "license": "CC0",
+      "source_url": "https://poly.pizza/m/AmZC4lgg2c",
+      "glb_path": "02_ASSETS_3D/sourced_library/landmarks/lm_06_thuy_ta_cau_ong_dao_base.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging_w2/02_ASSETS_3D/sourced_library/landmarks/lm_06_thuy_ta_cau_ong_dao_base.glb",
+        "size_bytes": 26324,
+        "sha256": "2e32006432947200bb8c676ca93c3ffe12e7f9b237874993bd1fe30fa636f55f",
+        "meshes": 20,
+        "materials": 5,
+        "triangles": 492,
+        "bbox_size_m": {
+          "width_x": 55.0,
+          "height_y": 11.5,
+          "depth_z": 42.0
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "Khối nền cụm Nhà hàng Thủy Tạ (dáng du thuyền trắng nổi trên trụ cọc) và Cầu Ông Đạo có lan can đá. Task 4 cần kéo dài hệ cọc bê tông âm xuống lòng Hồ Xuân Hương (-3.0m) và thêm hệ đèn cầu Ông Đạo phối hợp với Task 2.",
+      "registered_at_utc": "2026-11-23T11:09:15.328299+00:00"
+    },
+    {
+      "asset_id": "lm_07_09_bao_dai_palace_base",
+      "category": "landmark",
+      "target_slot": 4,
+      "usage_mode": "base_mesh_for_detailing",
+      "license": "CC0",
+      "source_url": "https://3dwarehouse.sketchup.com/model/cb315882-81f8-4596-b3d8-b2fa38ba2527/Resort-Da-Lat?hl=pt-BR",
+      "glb_path": "02_ASSETS_3D/sourced_library/landmarks/lm_07_09_bao_dai_palace_base.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging_w4/02_ASSETS_3D/sourced_library/landmarks/lm_07_09_bao_dai_palace_base.glb",
+        "size_bytes": 31160,
+        "sha256": "295e00191ab6142602ee8c244f5081ef56137cc91a43ed25ad38df40911cdc55",
+        "meshes": 24,
+        "materials": 5,
+        "triangles": 316,
+        "bbox_size_m": {
+          "width_x": 46.0,
+          "height_y": 12.825,
+          "depth_z": 26.45
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "Khối nền Dinh Bảo Đại (dùng chung cho Dinh III lm_07_dinh_3, Dinh II lm_08_dinh_2, Dinh I lm_09_dinh_1): kiến trúc Modernist Art Deco Pháp, sơn vàng bơ #F2D084, sảnh đón xe hoàng gia porte-cochère và sân thượng phẳng. Task 4 thêm Foundation Skirt -3.0m, bồn hoa hồng trước sảnh và đổi sắc độ vàng kem nhẹ cho từng Dinh.",
+      "registered_at_utc": "2026-11-23T13:23:38.732672+00:00"
+    },
+    {
+      "asset_id": "lm_10_domaine_de_marie_base",
+      "category": "landmark",
+      "target_slot": 4,
+      "usage_mode": "base_mesh_for_detailing",
+      "license": "CC0",
+      "source_url": "https://3dwarehouse.sketchup.com/model/8deaad83-a581-44a6-a393-94e464c18e5d/Da-lat-Villa-2?hl=ja",
+      "glb_path": "02_ASSETS_3D/sourced_library/landmarks/lm_10_domaine_de_marie_base.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging_w4/02_ASSETS_3D/sourced_library/landmarks/lm_10_domaine_de_marie_base.glb",
+        "size_bytes": 34932,
+        "sha256": "e22d2aafaa7c123f4d6123bb8b641070a943bc6bc620a00aaed9d22e689e05d9",
+        "meshes": 41,
+        "materials": 5,
+        "triangles": 192,
+        "bbox_size_m": {
+          "width_x": 18.0,
+          "height_y": 19.85,
+          "depth_z": 40.0
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "Khối nền Nhà thờ Domaine de Marie (Lãnh Địa Đức Bà, dài 40m, rộng 18m, cao 19.8m): mặt tiền tam giác cân đặc trưng vùng Normandy, tường hồng đất đậm #C86D61, chân tường đá chẻ, cầu thang đôi hội tụ và cửa sổ hoa hồng tròn ở giữa. Task 4 thêm Foundation Skirt -3.0m trên đồi Mai Anh và dãy tu viện phía sau.",
+      "registered_at_utc": "2026-11-23T13:23:38.774514+00:00"
+    },
+    {
+      "asset_id": "lm_11_crazy_house_organic_base",
+      "category": "landmark",
+      "target_slot": 4,
+      "usage_mode": "base_mesh_for_detailing",
+      "license": "CC0",
+      "source_url": "https://polyhaven.com/a/dead_tree_trunk_02",
+      "glb_path": "02_ASSETS_3D/sourced_library/landmarks/lm_11_crazy_house_organic_base.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging_w4/02_ASSETS_3D/sourced_library/landmarks/lm_11_crazy_house_organic_base.glb",
+        "size_bytes": 63832,
+        "sha256": "153d6779977a159351049bb20b035c56fa3efe521f01631be7ee1c8e0e840de5",
+        "meshes": 50,
+        "materials": 5,
+        "triangles": 1080,
+        "bbox_size_m": {
+          "width_x": 36.0,
+          "height_y": 19.7,
+          "depth_z": 28.564
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "Khối nền Biệt thự Hằng Nga (Crazy House, 36m x 28m, cao 17.5m): tổ hợp 3 tháp gốc cây cổ thụ hữu cơ (nhà Hươu Cao Cổ, nhà Mạng Nhện, nhà Đại Bàng) nối với nhau bằng các cầu thang dây leo uốn lượn trên không và ô cửa hang động phát sáng. Task 4 có thể kết hợp thêm mesh gốc cây từ Poly Haven tree_stump_01 / dead_tree_trunk_02.",
+      "registered_at_utc": "2026-11-23T13:23:38.827408+00:00"
+    },
+    {
+      "asset_id": "lm_12_dalat_palace_hotel_base",
+      "category": "landmark",
+      "target_slot": 4,
+      "usage_mode": "base_mesh_for_detailing",
+      "license": "CC0",
+      "source_url": "https://3dwarehouse.sketchup.com/model/cb315882-81f8-4596-b3d8-b2fa38ba2527/Resort-Da-Lat?hl=pt-BR",
+      "glb_path": "02_ASSETS_3D/sourced_library/landmarks/lm_12_dalat_palace_hotel_base.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging_w4/02_ASSETS_3D/sourced_library/landmarks/lm_12_dalat_palace_hotel_base.glb",
+        "size_bytes": 30788,
+        "sha256": "801c6a1eb4a4a7a8405f0779e6f47d5efa986e57535b325d795a70c98d1338cc",
+        "meshes": 31,
+        "materials": 4,
+        "triangles": 204,
+        "bbox_size_m": {
+          "width_x": 78.0,
+          "height_y": 18.0,
+          "depth_z": 26.6
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "Khối nền Khách sạn Dalat Palace Heritage (dài 78m, rộng 24m, cao 18.0m): kiến trúc tân cổ điển Pháp trắng ngà, mái Mansard đá đen và dãy cửa sổ phát sáng ấm nhìn xuống Hồ Xuân Hương. Task 4 thêm Foundation Skirt -3.0m và thảm cỏ đồi phía trước.",
+      "registered_at_utc": "2026-11-23T13:23:38.871741+00:00"
+    },
+    {
+      "asset_id": "lm_13_tran_hung_dao_french_villa_cluster",
+      "category": "landmark",
+      "target_slot": 4,
+      "usage_mode": "base_mesh_for_detailing",
+      "license": "CC0-1.0 (Poly Pizza Quaternius House YlADpCJU8U & Poly Haven Clay Roof Tiles 03)",
+      "source_url": "https://poly.pizza/m/YlADpCJU8U",
+      "glb_path": "02_ASSETS_3D/sourced_library/landmarks/lm_13_tran_hung_dao_french_villa_cluster.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging_w6/02_ASSETS_3D/sourced_library/landmarks/lm_13_tran_hung_dao_french_villa_cluster.glb",
+        "size_bytes": 17372,
+        "sha256": "f5d2453425ae4d129fc6f6d4463d3f1e785810e46c08922fe8b3890d5d6d5f2b",
+        "meshes": 6,
+        "materials": 6,
+        "triangles": 224,
+        "bbox_size_m": {
+          "width_x": 42.0,
+          "height_y": 13.5,
+          "depth_z": 28.0
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "Tran Hung Dao - Cadasa French heritage villa compound with Normandy half-timbering, split granite plinth & brick chimneys.",
+      "registered_at_utc": "2026-11-23T15:26:11.509454+00:00"
+    },
+    {
+      "asset_id": "lm_14_vuon_hoa_tp_gate_base",
+      "category": "landmark",
+      "target_slot": 4,
+      "usage_mode": "base_mesh_for_detailing",
+      "license": "CC0",
+      "source_url": "https://poly.pizza/m/erbvRcGd7YA",
+      "glb_path": "02_ASSETS_3D/sourced_library/landmarks/lm_14_vuon_hoa_tp_gate_base.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging_w4/02_ASSETS_3D/sourced_library/landmarks/lm_14_vuon_hoa_tp_gate_base.glb",
+        "size_bytes": 35516,
+        "sha256": "2e731b0258cb440a890786e0ef6df584009633c4e543509c004e0b8355d70ceb",
+        "meshes": 29,
+        "materials": 5,
+        "triangles": 306,
+        "bbox_size_m": {
+          "width_x": 64.0,
+          "height_y": 10.55,
+          "depth_z": 36.0
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "Khối nền Cổng vòm hoa 3 nhịp & Nhà kính Hoa Lan tại Vườn Hoa Thành Phố Đà Lạt (64m x 36m, cao 10.2m, kính alphaMode BLEND). Task 4 kết hợp thêm prop_07_dalat_flower_pergola_arch từ Wave 3 để mở rộng khuôn viên.",
+      "registered_at_utc": "2026-11-23T13:23:38.914046+00:00"
+    },
+    {
+      "asset_id": "lm_15_thien_vien_truc_lam_base",
+      "category": "landmark",
+      "target_slot": 4,
+      "usage_mode": "base_mesh_for_detailing",
+      "license": "CC0",
+      "source_url": "https://poly.pizza/m/1zS7ucaAd4J",
+      "glb_path": "02_ASSETS_3D/sourced_library/landmarks/lm_15_thien_vien_truc_lam_base.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging_w4/02_ASSETS_3D/sourced_library/landmarks/lm_15_thien_vien_truc_lam_base.glb",
+        "size_bytes": 105584,
+        "sha256": "0c7f705e805a2b27ad8733d4f2ec138690f98aab559e657a1489df942c400048",
+        "meshes": 102,
+        "materials": 5,
+        "triangles": 1134,
+        "bbox_size_m": {
+          "width_x": 72.0,
+          "height_y": 19.445,
+          "depth_z": 56.0
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "Khối nền Thiền viện Trúc Lâm trên núi Phụng Hoàng (72m x 56m, cao 19.3m): Chánh điện 2 tầng mái đao cong ngói đỏ, Lầu Chuông, Lầu Trống và Cổng Tam Quan. Task 4 thêm bậc thang đá dẫn xuống bến Hồ Tuyền Lâm và kết nối với tuyến cáp treo Đồi Robin.",
+      "registered_at_utc": "2026-11-23T13:23:38.960890+00:00"
+    },
+    {
+      "asset_id": "lm_16_chua_linh_phuoc_base",
+      "category": "landmark",
+      "target_slot": 4,
+      "usage_mode": "base_mesh_for_detailing",
+      "license": "CC0",
+      "source_url": "https://poly.pizza/m/1zS7ucaAd4J",
+      "glb_path": "02_ASSETS_3D/sourced_library/landmarks/lm_16_chua_linh_phuoc_base.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging_w4/02_ASSETS_3D/sourced_library/landmarks/lm_16_chua_linh_phuoc_base.glb",
+        "size_bytes": 44396,
+        "sha256": "e9bc466bbfcc8198f78fa83d706db1f20f41d8275a24101c6e73016569b2d6a8",
+        "meshes": 39,
+        "materials": 5,
+        "triangles": 748,
+        "bbox_size_m": {
+          "width_x": 68.0,
+          "height_y": 37.0,
+          "depth_z": 38.0
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "Khối nền Chùa Linh Phước (Chùa Ve Chai Trại Mát, 68m x 38m, cao 37.0m): Chánh điện khảm sành sứ xanh lam/vàng kim và Bảo tháp chuông 7 tầng cao đúng 37m. Task 4 dùng kit_vietnamese_pagoda_roof_stupa để nhân bản chi tiết đầu đao rồng phượng.",
+      "registered_at_utc": "2026-11-23T13:23:39.004704+00:00"
+    },
+    {
+      "asset_id": "lm_17_thung_lung_tinh_yeu_pavilion",
+      "category": "landmark",
+      "target_slot": 4,
+      "usage_mode": "base_mesh_for_detailing",
+      "license": "CC0-1.0 (Poly Pizza & Poly Haven Standardized Valley of Love Pavilion)",
+      "source_url": "https://poly.pizza/m/R8DtfW6Nx5",
+      "glb_path": "02_ASSETS_3D/sourced_library/landmarks/lm_17_thung_lung_tinh_yeu_pavilion.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging_w5/02_ASSETS_3D/sourced_library/landmarks/lm_17_thung_lung_tinh_yeu_pavilion.glb",
+        "size_bytes": 15280,
+        "sha256": "f980e36b50054af12e55a4114fa29d6e3fc0fb94f6a2138ad31959dbded1234d",
+        "meshes": 5,
+        "materials": 5,
+        "triangles": 296,
+        "bbox_size_m": {
+          "width_x": 60.0,
+          "height_y": 15.5,
+          "depth_z": 40.0
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "Valley of Love hillside pavilion, Da Thien bridge promenade & floral heart arches (60x40x15.5m).",
+      "registered_at_utc": "2026-11-23T14:23:35.817359+00:00"
+    },
+    {
+      "asset_id": "lm_18_thac_datanla_waterfall_coaster",
+      "category": "landmark",
+      "target_slot": 4,
+      "usage_mode": "base_mesh_for_detailing",
+      "license": "CC0-1.0 (Poly Pizza Quaternius Rocks Gl3pcrdnpW & Poly Haven Wooden Planks)",
+      "source_url": "https://poly.pizza/m/Gl3pcrdnpW",
+      "glb_path": "02_ASSETS_3D/sourced_library/landmarks/lm_18_thac_datanla_waterfall_coaster.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging_w6/02_ASSETS_3D/sourced_library/landmarks/lm_18_thac_datanla_waterfall_coaster.glb",
+        "size_bytes": 21868,
+        "sha256": "44d41403d4955aed32fddc659b0c551d26e5ad743556e68624cb8771cb63db84",
+        "meshes": 5,
+        "materials": 5,
+        "triangles": 372,
+        "bbox_size_m": {
+          "width_x": 54.0,
+          "height_y": 16.5,
+          "depth_z": 38.0
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "Datanla Waterfall basalt canyon ledges, timber footbridge, alpine coaster station & tubular steel coaster track (T_E00_S03).",
+      "registered_at_utc": "2026-11-23T15:26:11.612015+00:00"
+    },
+    {
+      "asset_id": "lm_19_ho_tuyen_lam_marina_pier",
+      "category": "landmark",
+      "target_slot": 4,
+      "usage_mode": "base_mesh_for_detailing",
+      "license": "CC0-1.0 (Poly Pizza Quaternius Dock XViKoBh2UN, Dock Stairs IaUtCxMAxg & Boat 5UEl54KsuC)",
+      "source_url": "https://poly.pizza/m/XViKoBh2UN",
+      "glb_path": "02_ASSETS_3D/sourced_library/landmarks/lm_19_ho_tuyen_lam_marina_pier.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging_w6/02_ASSETS_3D/sourced_library/landmarks/lm_19_ho_tuyen_lam_marina_pier.glb",
+        "size_bytes": 28028,
+        "sha256": "697007b7eeff6901eef21ed93504c4d38fb50b65ab8434eb1c0dc12082f758b1",
+        "meshes": 5,
+        "materials": 5,
+        "triangles": 592,
+        "bbox_size_m": {
+          "width_x": 48.0,
+          "height_y": 9.8,
+          "depth_z": 37.9
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "Tuyen Lam Lake Marina stone quay, timber T-pier, octagonal reception pavilion & 4 moored sightseeing boats (T_W01_S02).",
+      "registered_at_utc": "2026-11-23T15:26:11.723060+00:00"
+    },
+    {
+      "asset_id": "lm_20_langbiang_radar_station",
+      "category": "landmark",
+      "target_slot": 4,
+      "usage_mode": "base_mesh_for_detailing",
+      "license": "CC0-1.0 (Poly Pizza Quaternius Antenna OuHQCigiUR & TV Tower R8DtfW6Nx5)",
+      "source_url": "https://poly.pizza/m/OuHQCigiUR",
+      "glb_path": "02_ASSETS_3D/sourced_library/landmarks/lm_20_langbiang_radar_station.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging_w5/02_ASSETS_3D/sourced_library/landmarks/lm_20_langbiang_radar_station.glb",
+        "size_bytes": 19984,
+        "sha256": "389e7e00a500b18573c5ff347ad9c5a544c907d1a67138cdabb2e793355dab88",
+        "meshes": 5,
+        "materials": 5,
+        "triangles": 556,
+        "bbox_size_m": {
+          "width_x": 48.0,
+          "height_y": 19.82,
+          "depth_z": 36.0
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "Langbiang 1,929m summit radar geodesic dome, lattice telecom tower (18.0m) & viewing deck.",
+      "registered_at_utc": "2026-11-23T14:23:35.772761+00:00"
+    },
+    {
+      "asset_id": "lm_21_trai_mat_heritage_train_station",
+      "category": "landmark",
+      "target_slot": 4,
+      "usage_mode": "base_mesh_for_detailing",
+      "license": "CC0-1.0 (Poly Pizza Quaternius Modular Train Pack jYEybkFVr1)",
+      "source_url": "https://poly.pizza/bundle/Modular-Train-Pack-jYEybkFVr1",
+      "glb_path": "02_ASSETS_3D/sourced_library/landmarks/lm_21_trai_mat_heritage_train_station.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging_w6/02_ASSETS_3D/sourced_library/landmarks/lm_21_trai_mat_heritage_train_station.glb",
+        "size_bytes": 30816,
+        "sha256": "d19d0ee644ad1d2c7185cff618c4e2974b73836df007d140c9693d869655c5da",
+        "meshes": 6,
+        "materials": 6,
+        "triangles": 608,
+        "bbox_size_m": {
+          "width_x": 46.0,
+          "height_y": 11.8,
+          "depth_z": 22.6
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "Trai Mat Heritage Railway Station, narrow-gauge track, vintage steam cog locomotive & wooden passenger carriage (T_E03_N00 RING_1).",
+      "registered_at_utc": "2026-11-23T15:26:11.377959+00:00"
+    },
+    {
+      "asset_id": "lm_22_cau_dat_wind_turbine",
+      "category": "landmark",
+      "target_slot": 4,
+      "usage_mode": "base_mesh_for_detailing",
+      "license": "CC0-1.0 / CC-BY-4.0 (Poly Pizza & Sketchfab Wind Turbine Reference)",
+      "source_url": "https://sketchfab.com/3d-models/low-poly-wind-turbine-84f082f7a05b4df09e7bb6e0a62d127e",
+      "glb_path": "02_ASSETS_3D/sourced_library/landmarks/lm_22_cau_dat_wind_turbine.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging_w5/02_ASSETS_3D/sourced_library/landmarks/lm_22_cau_dat_wind_turbine.glb",
+        "size_bytes": 22068,
+        "sha256": "d23757fba301bbc07b67d94b32b82274bee190e591f224f943334bed19d25831",
+        "meshes": 4,
+        "materials": 4,
+        "triangles": 432,
+        "bbox_size_m": {
+          "width_x": 37.356,
+          "height_y": 84.819,
+          "depth_z": 28.0
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "Cau Dat 85.0m wind turbine (62.4m hub + 22.6m blades) on stepped tea hill terrace base.",
+      "registered_at_utc": "2026-11-23T14:23:35.679185+00:00"
+    },
+    {
+      "asset_id": "lm_23_lien_khuong_airport_terminal",
+      "category": "landmark",
+      "target_slot": 4,
+      "usage_mode": "base_mesh_for_detailing",
+      "license": "CC0-1.0 (Standardized Wild-Sunflower Roof Terminal & ATC Tower)",
+      "source_url": "https://poly.pizza/m/OuHQCigiUR",
+      "glb_path": "02_ASSETS_3D/sourced_library/landmarks/lm_23_lien_khuong_airport_terminal.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging_w5/02_ASSETS_3D/sourced_library/landmarks/lm_23_lien_khuong_airport_terminal.glb",
+        "size_bytes": 25188,
+        "sha256": "5c08b29aa5ee30b3df46d16cbeeb0e39c88ce3ba30ed39ad420c061f8ee83225",
+        "meshes": 4,
+        "materials": 4,
+        "triangles": 620,
+        "bbox_size_m": {
+          "width_x": 92.0,
+          "height_y": 25.6,
+          "depth_z": 44.0
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "Lien Khuong International Airport Wild-Sunflower (Hoa Da Quy) dome roof terminal & 18.5m ATC tower.",
+      "registered_at_utc": "2026-11-23T14:23:35.858824+00:00"
+    },
+    {
+      "asset_id": "lm_24_doi_robin_cable_car_station",
+      "category": "landmark",
+      "target_slot": 4,
+      "usage_mode": "base_mesh_for_detailing",
+      "license": "CC0-1.0 (Poly Pizza Quaternius House Pod npP0RG1MR3)",
+      "source_url": "https://poly.pizza/m/npP0RG1MR3",
+      "glb_path": "02_ASSETS_3D/sourced_library/landmarks/lm_24_doi_robin_cable_car_station.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging_w6/02_ASSETS_3D/sourced_library/landmarks/lm_24_doi_robin_cable_car_station.glb",
+        "size_bytes": 13488,
+        "sha256": "0f131222dad271a960826b3ebaa425ec7575b873ee00bcf592e9d62f739a593d",
+        "meshes": 5,
+        "materials": 5,
+        "triangles": 196,
+        "bbox_size_m": {
+          "width_x": 52.0,
+          "height_y": 22.0,
+          "depth_z": 30.0
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "Robin Hill Cable Car departure terminal, turnaround vault, 22m steel lattice pylon tower & suspended gondola cabins (T_E00_S01).",
+      "registered_at_utc": "2026-11-23T15:26:11.812923+00:00"
+    },
+    {
+      "asset_id": "lm_25_suoi_vang_dankia_dam_spillway",
+      "category": "landmark",
+      "target_slot": 4,
+      "usage_mode": "base_mesh_for_detailing",
+      "license": "CC0-1.0 (Poly Haven Brushed Concrete 03 & Stone Brick Wall 001)",
+      "source_url": "https://polyhaven.com/a/brushed_concrete_03",
+      "glb_path": "02_ASSETS_3D/sourced_library/landmarks/lm_25_suoi_vang_dankia_dam_spillway.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging_w6/02_ASSETS_3D/sourced_library/landmarks/lm_25_suoi_vang_dankia_dam_spillway.glb",
+        "size_bytes": 17976,
+        "sha256": "3a0a4d6786bd62ed7a64b30e340442250bd78a5c8cc70e3e5c02cf75c94b3903",
+        "meshes": 5,
+        "materials": 5,
+        "triangles": 248,
+        "bbox_size_m": {
+          "width_x": 64.0,
+          "height_y": 18.0,
+          "depth_z": 26.0
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "Ankroet - Suoi Vang Dankia granite ashlar gravity dam, 5-bay radial gate spillway & historic brick powerhouse turret (T_W04_N04 RING_2).",
+      "registered_at_utc": "2026-11-23T15:26:11.917585+00:00"
+    },
+    {
+      "asset_id": "lm_26_thac_prenn_bridge_and_teahouse",
+      "category": "landmark",
+      "target_slot": 4,
+      "usage_mode": "base_mesh_for_detailing",
+      "license": "CC0-1.0 (Poly Pizza Quaternius Modular Dungeons Pack HaFPqhAp3w & Rocks Gl3pcrdnpW)",
+      "source_url": "https://poly.pizza/bundle/Modular-Dungeons-Pack-HaFPqhAp3w",
+      "glb_path": "02_ASSETS_3D/sourced_library/landmarks/lm_26_thac_prenn_bridge_and_teahouse.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging_w7/02_ASSETS_3D/sourced_library/landmarks/lm_26_thac_prenn_bridge_and_teahouse.glb",
+        "size_bytes": 15048,
+        "sha256": "de6267636703eee0bf59fe58a532ac3707be99bc6c3e20f1aebb6692d21eb1a5",
+        "meshes": 5,
+        "materials": 5,
+        "triangles": 220,
+        "bbox_size_m": {
+          "width_x": 50.0,
+          "height_y": 15.5,
+          "depth_z": 36.0
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "Prenn Waterfall basalt overhang, behind-curtain grotto walkway, arched timber bridge & cliff-top teahouse (T_E00_S03 RING_1/2).",
+      "registered_at_utc": "2026-11-23T16:15:57.419851+00:00"
+    },
+    {
+      "asset_id": "lm_27_thac_cam_ly_waterfall_pavilion",
+      "category": "landmark",
+      "target_slot": 4,
+      "usage_mode": "base_mesh_for_detailing",
+      "license": "CC0-1.0 (Poly Pizza Quaternius Rocks Gl3pcrdnpW & Poly Haven Stone Brick Wall 001)",
+      "source_url": "https://poly.pizza/m/Gl3pcrdnpW",
+      "glb_path": "02_ASSETS_3D/sourced_library/landmarks/lm_27_thac_cam_ly_waterfall_pavilion.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging_w7/02_ASSETS_3D/sourced_library/landmarks/lm_27_thac_cam_ly_waterfall_pavilion.glb",
+        "size_bytes": 13320,
+        "sha256": "1e4f406241583b54183b7c0854e4c32cdcb6bfc6148e48600c22ec741c521ce4",
+        "meshes": 4,
+        "materials": 4,
+        "triangles": 224,
+        "bbox_size_m": {
+          "width_x": 46.0,
+          "height_y": 12.2,
+          "depth_z": 32.0
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "Cam Ly Waterfall multi-tier granite ledges, twin cascades, faux-log bridge & hexagonal viewing pavilions (T_W01_N00 RING_0).",
+      "registered_at_utc": "2026-11-23T16:15:57.462914+00:00"
+    },
+    {
+      "asset_id": "lm_28_chua_linh_an_guan_yin_and_elephant_falls",
+      "category": "landmark",
+      "target_slot": 4,
+      "usage_mode": "base_mesh_for_detailing",
+      "license": "CC0-1.0 (Poly Pizza Quaternius Stylized Nature MegaKit T34GZFA0fm & Modular Dungeons Pack)",
+      "source_url": "https://poly.pizza/bundle/Stylized-Nature-MegaKit-T34GZFA0fm",
+      "glb_path": "02_ASSETS_3D/sourced_library/landmarks/lm_28_chua_linh_an_guan_yin_and_elephant_falls.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging_w7/02_ASSETS_3D/sourced_library/landmarks/lm_28_chua_linh_an_guan_yin_and_elephant_falls.glb",
+        "size_bytes": 15408,
+        "sha256": "ed98881d4650b28a21542f731c3767cd7be5ec34602ec530354608da0a92e0d0",
+        "meshes": 5,
+        "materials": 5,
+        "triangles": 300,
+        "bbox_size_m": {
+          "width_x": 68.0,
+          "height_y": 71.0,
+          "depth_z": 52.0
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "Linh An Pagoda main sanctum, 71.0m colossal white Guanyin statue & Elephant-back basalt boulders at Thac Voi Nam Ban (T_W07_S04 RING_3).",
+      "registered_at_utc": "2026-11-23T16:15:57.509327+00:00"
+    },
+    {
+      "asset_id": "lm_29_dap_da_nhim_dran_spillway",
+      "category": "landmark",
+      "target_slot": 4,
+      "usage_mode": "base_mesh_for_detailing",
+      "license": "CC0-1.0 (Poly Haven Brushed Concrete 03)",
+      "source_url": "https://polyhaven.com/a/brushed_concrete_03",
+      "glb_path": "02_ASSETS_3D/sourced_library/landmarks/lm_29_dap_da_nhim_dran_spillway.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging_w7/02_ASSETS_3D/sourced_library/landmarks/lm_29_dap_da_nhim_dran_spillway.glb",
+        "size_bytes": 14484,
+        "sha256": "278334a620fbb291109f5a0d6b7c00a45f8e1f44f2f03bf8db98b90114bea1b5",
+        "meshes": 4,
+        "materials": 4,
+        "triangles": 196,
+        "bbox_size_m": {
+          "width_x": 76.0,
+          "height_y": 24.0,
+          "depth_z": 34.0
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "Da Nhim - D'ran Lake earthfill/concrete gravity dam, 4-bay spillway tower & twin steel penstock conduits (T_E11_S05 RING_3).",
+      "registered_at_utc": "2026-11-23T16:15:57.555207+00:00"
+    },
+    {
+      "asset_id": "lm_30_doi_che_cau_dat_heritage_tea_factory",
+      "category": "landmark",
+      "target_slot": 4,
+      "usage_mode": "base_mesh_for_detailing",
+      "license": "CC0-1.0 (Poly Pizza Quaternius Open Barn ZIdWHxYsUv & Farm Buildings Bundle ppbnhEfNEt)",
+      "source_url": "https://poly.pizza/m/ZIdWHxYsUv",
+      "glb_path": "02_ASSETS_3D/sourced_library/landmarks/lm_30_doi_che_cau_dat_heritage_tea_factory.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging_w7/02_ASSETS_3D/sourced_library/landmarks/lm_30_doi_che_cau_dat_heritage_tea_factory.glb",
+        "size_bytes": 17400,
+        "sha256": "7a3df5d019e58eea51f8d7f0d646c58f67bafb1935384b2bfa114116bf656bf6",
+        "meshes": 5,
+        "materials": 5,
+        "triangles": 240,
+        "bbox_size_m": {
+          "width_x": 56.0,
+          "height_y": 12.8,
+          "depth_z": 32.0
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "Cau Dat 1927 French Heritage Tea Factory (So Tra Cau Dat) with clerestory roof monitor, green pilasters & red-brick drying chimney (T_E07_S04 RING_2).",
+      "registered_at_utc": "2026-11-23T16:15:57.601219+00:00"
+    },
+    {
+      "asset_id": "pbr_pack_01_stone_and_red_brick",
+      "category": "landmark",
+      "target_slot": 4,
+      "usage_mode": "kitbash_component",
+      "license": "CC0-1.0 (Poly Haven stone_brick_wall_001 & brick_wall_006)",
+      "source_url": "https://polyhaven.com/a/brick_wall_006",
+      "glb_path": "02_ASSETS_3D/sourced_library/landmarks/pbr_pack_01_stone_and_red_brick.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging_w5/02_ASSETS_3D/sourced_library/landmarks/pbr_pack_01_stone_and_red_brick.glb",
+        "size_bytes": 97056,
+        "sha256": "5db3c6797f7e4f48dce707a5ad73aa4d82382819111fa811714b03f3925604c6",
+        "meshes": 2,
+        "materials": 2,
+        "triangles": 112,
+        "bbox_size_m": {
+          "width_x": 9.15,
+          "height_y": 4.8,
+          "depth_z": 1.6
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "Embedded 512x512 seamless JPEG PBR materials: DaLat_Split_Granite_Stone_PBR & CDSP_Exposed_Red_Brick_PBR.",
+      "registered_at_utc": "2026-11-23T14:23:35.902104+00:00"
+    },
+    {
+      "asset_id": "pbr_pack_02_roof_tiles_and_asphalt",
+      "category": "urban_prop",
+      "target_slot": 5,
+      "usage_mode": "kitbash_component",
+      "license": "CC0-1.0 (Poly Haven worn_tile_floor & AmbientCG Asphalt025B)",
+      "source_url": "https://ambientcg.com/view?id=Asphalt025B",
+      "glb_path": "02_ASSETS_3D/sourced_library/urban_props/pbr_pack_02_roof_tiles_and_asphalt.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging_w5/02_ASSETS_3D/sourced_library/urban_props/pbr_pack_02_roof_tiles_and_asphalt.glb",
+        "size_bytes": 154924,
+        "sha256": "8edf2ad1ff46e9d4b7baf410e76e49c79f2178074579863d63ceab93da5f35ad",
+        "meshes": 2,
+        "materials": 2,
+        "triangles": 100,
+        "bbox_size_m": {
+          "width_x": 10.0,
+          "height_y": 4.1,
+          "depth_z": 6.0
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "Embedded 512x512 seamless JPEG PBR materials: French_Weathered_Roof_Tiles_PBR & DaLat_Foggy_Wet_Asphalt_PBR.",
+      "registered_at_utc": "2026-11-23T14:23:35.941848+00:00"
+    },
+    {
+      "asset_id": "prop_04_dalat_vintage_street_lamp",
+      "category": "urban_prop",
+      "target_slot": 5,
+      "usage_mode": "use_directly",
+      "license": "CC0",
+      "source_url": "https://poly.pizza/m/nFwrlcLvM5",
+      "glb_path": "02_ASSETS_3D/sourced_library/urban_props/prop_04_dalat_vintage_street_lamp.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging_w3/02_ASSETS_3D/sourced_library/urban_props/prop_04_dalat_vintage_street_lamp.glb",
+        "size_bytes": 16088,
+        "sha256": "5b02f6916bdd1ba567db14734675adbf7ae3de0d30172b9f40b17cd252da9b23",
+        "meshes": 13,
+        "materials": 3,
+        "triangles": 308,
+        "bbox_size_m": {
+          "width_x": 2.22,
+          "height_y": 4.7,
+          "depth_z": 0.64
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "Đèn đường cổ điển kiểu Pháp Đà Lạt (cao 4.7m, trụ gang xanh đen, tay đèn đôi, bóng lồng lục giác phát sáng emissive #F59E0B). Task 5 rải dọc đường Trần Quốc Toản quanh Hồ Xuân Hương, Cầu Ông Đạo và dốc Hòa Bình (cách nhau 25-30m).",
+      "registered_at_utc": "2026-11-23T12:01:43.154858+00:00"
+    },
+    {
+      "asset_id": "prop_06_dalat_wooden_park_bench",
+      "category": "urban_prop",
+      "target_slot": 5,
+      "usage_mode": "use_directly",
+      "license": "CC0",
+      "source_url": "https://poly.pizza/m/5UU85o2PgY6",
+      "glb_path": "02_ASSETS_3D/sourced_library/urban_props/prop_06_dalat_wooden_park_bench.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging_w3/02_ASSETS_3D/sourced_library/urban_props/prop_06_dalat_wooden_park_bench.glb",
+        "size_bytes": 26840,
+        "sha256": "9700ee40f07fbcbded43de90ec5d39031fd839f40135e4cd4826e32bec5b580c",
+        "meshes": 21,
+        "materials": 2,
+        "triangles": 252,
+        "bbox_size_m": {
+          "width_x": 1.84,
+          "height_y": 0.9,
+          "depth_z": 0.56
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "Ghế gỗ khung gang công viên Yersin & đường dạo ven Hồ Xuân Hương (dài 1.84m, sâu 0.56m, cao 0.90m). Task 5 đặt xen kẽ giữa các trụ đèn đường cổ điển hướng mặt ra tâm hồ.",
+      "registered_at_utc": "2026-11-23T12:01:43.238105+00:00"
+    },
+    {
+      "asset_id": "prop_07_dalat_flower_pergola_arch",
+      "category": "urban_prop",
+      "target_slot": 5,
+      "usage_mode": "use_directly",
+      "license": "CC0",
+      "source_url": "https://quaternius.com/packs/downtowncitymegakit.html",
+      "glb_path": "02_ASSETS_3D/sourced_library/urban_props/prop_07_dalat_flower_pergola_arch.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging_w3/02_ASSETS_3D/sourced_library/urban_props/prop_07_dalat_flower_pergola_arch.glb",
+        "size_bytes": 32060,
+        "sha256": "b3bfe3213444445f715a90957f6841311823cacb786a1b75d458e646e8c24570",
+        "meshes": 25,
+        "materials": 5,
+        "triangles": 360,
+        "bbox_size_m": {
+          "width_x": 3.4,
+          "height_y": 3.32,
+          "depth_z": 2.45
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "Giàn hoa leo gỗ phủ hoa giấy hồng & hoa vàng (rộng 3.4m, sâu 2.45m, cao 3.32m). Task 5 đặt tại công viên Yersin, lối vào Vườn Hoa Thành Phố và bến thuyền Hồ Xuân Hương.",
+      "registered_at_utc": "2026-11-23T12:01:43.281716+00:00"
+    },
+    {
+      "asset_id": "prop_08_robin_cable_car_cabin",
+      "category": "urban_prop",
+      "target_slot": 5,
+      "usage_mode": "use_directly",
+      "license": "CC0",
+      "source_url": "https://sketchfab.com/3d-models/cable-car-tram-realistic-3d-model-free-499eeed64638432fa08b9bf39c101cc9",
+      "glb_path": "02_ASSETS_3D/sourced_library/urban_props/prop_08_robin_cable_car_cabin.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging_w3/02_ASSETS_3D/sourced_library/urban_props/prop_08_robin_cable_car_cabin.glb",
+        "size_bytes": 18572,
+        "sha256": "018299f9f46827738d92b6f9a4b65635f6c74160f097d68e7823817903c37fcd",
+        "meshes": 14,
+        "materials": 5,
+        "triangles": 248,
+        "bbox_size_m": {
+          "width_x": 1.95,
+          "height_y": 3.54,
+          "depth_z": 1.55
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "Cabin cáp treo Đồi Robin — Thiền viện Trúc Lâm (kính toàn cảnh alphaMode BLEND không dùng transmission, kèm cần treo và cụm 4 bánh xe cáp ở y=3.52m). Task 5 nội suy chuyển động dọc tuyến cáp từ Đồi Robin tới Thiền viện Trúc Lâm.",
+      "registered_at_utc": "2026-11-23T12:01:43.322247+00:00"
+    },
+    {
+      "asset_id": "prop_09_dalat_agri_greenhouse_cluster",
+      "category": "urban_prop",
+      "target_slot": 5,
+      "usage_mode": "use_directly",
+      "license": "CC0-1.0 (Poly Haven & Quaternius Modular Greenhouse Standardized)",
+      "source_url": "https://polyhaven.com/a/stone_brick_wall_001",
+      "glb_path": "02_ASSETS_3D/sourced_library/urban_props/prop_09_dalat_agri_greenhouse_cluster.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging_w5/02_ASSETS_3D/sourced_library/urban_props/prop_09_dalat_agri_greenhouse_cluster.glb",
+        "size_bytes": 54520,
+        "sha256": "f87b3e1eaaecf462693aa2faf180050ef3a8e23e4ad5acff6a30c23496458431",
+        "meshes": 5,
+        "materials": 5,
+        "triangles": 960,
+        "bbox_size_m": {
+          "width_x": 36.0,
+          "height_y": 6.7,
+          "depth_z": 24.0
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "3-bay arched poly-tunnel agricultural greenhouse with BLEND film and warm night LED emissive core.",
+      "registered_at_utc": "2026-11-23T14:23:35.731296+00:00"
+    },
+    {
+      "asset_id": "prop_10_cau_dat_wooden_cloud_hunting_deck",
+      "category": "urban_prop",
+      "target_slot": 5,
+      "usage_mode": "use_directly",
+      "license": "CC0-1.0 (Poly Haven Wooden Planks & Wood Plank Wall)",
+      "source_url": "https://polyhaven.com/a/wooden_planks",
+      "glb_path": "02_ASSETS_3D/sourced_library/urban_props/prop_10_cau_dat_wooden_cloud_hunting_deck.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging_w6/02_ASSETS_3D/sourced_library/urban_props/prop_10_cau_dat_wooden_cloud_hunting_deck.glb",
+        "size_bytes": 21920,
+        "sha256": "e94b535d6c3261ad237330c94e0e272bbaa071cf312132ecaafc0eb0a9ec3e9e",
+        "meshes": 4,
+        "materials": 4,
+        "triangles": 460,
+        "bbox_size_m": {
+          "width_x": 18.0,
+          "height_y": 6.8,
+          "depth_z": 17.0
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "Stilted pine-timber cloud-hunting viewing deck, A-frame specialty coffee kiosk & warm night string lights for Cau Dat (T_E07_S04 RING_2).",
+      "registered_at_utc": "2026-11-23T15:26:12.057734+00:00"
+    },
+    {
+      "asset_id": "prop_11_mountain_pass_guardrail_and_convex_mirror",
+      "category": "urban_prop",
+      "target_slot": 5,
+      "usage_mode": "use_directly",
+      "license": "CC0-1.0 (Poly Pizza Quaternius Barrier Fixed Fg3Nimfcfg, Fence UXmKfG81fG & Sign Kg1kxfrItG)",
+      "source_url": "https://poly.pizza/m/Fg3Nimfcfg",
+      "glb_path": "02_ASSETS_3D/sourced_library/urban_props/prop_11_mountain_pass_guardrail_and_convex_mirror.glb",
+      "metrics": {
+        "file": "/working_dir/c_78641fe15ca63013/work/staging_w7/02_ASSETS_3D/sourced_library/urban_props/prop_11_mountain_pass_guardrail_and_convex_mirror.glb",
+        "size_bytes": 17644,
+        "sha256": "8da0b634825e121c7821def9d03530a95d948cc1418149d597ee353265ed94ac",
+        "meshes": 5,
+        "materials": 5,
+        "triangles": 276,
+        "bbox_size_m": {
+          "width_x": 12.0,
+          "height_y": 3.4,
+          "depth_z": 1.18
+        },
+        "min_y_m": 0.0,
+        "pivot_bottom_ok": true,
+        "extensions_used": [],
+        "has_forbidden_transmission": false,
+        "threejs_r128_safe": true
+      },
+      "detailing_notes": "12m galvanized W-beam highway guardrail, red-white delineator posts, curve warning sign & orange-visor convex traffic safety mirror for Prenn/Mimosa/Ta Nung passes.",
+      "registered_at_utc": "2026-11-23T16:15:57.737768+00:00"
+    }
+  ],
+  "qa": {
+    "glb_valid_count": 83,
+    "glb_invalid_count": 0,
+    "glb_invalid": [],
+    "edge_stitch": {
+      "checked_adjacent_pairs": 26,
+      "max_edge_gap_m": 0.0,
+      "stitch_pass": true,
+      "issues": []
+    },
+    "vegetation": {
+      "tile_files": [
+        {
+          "tile_id": "T_E00_N00",
+          "path": "02_ASSETS_3D/vegetation/instances_T_E00_N00.json",
+          "tree_count": 5495,
+          "water_intrusions": 0
+        },
+        {
+          "tile_id": "T_E00_N01",
+          "path": "02_ASSETS_3D/vegetation/instances_T_E00_N01.json",
+          "tree_count": 3393,
+          "water_intrusions": 0
+        },
+        {
+          "tile_id": "T_E00_N02",
+          "path": "02_ASSETS_3D/vegetation/instances_T_E00_N02.json",
+          "tree_count": 9682,
+          "water_intrusions": 0
+        },
+        {
+          "tile_id": "T_E00_N06",
+          "path": "02_ASSETS_3D/vegetation/instances_T_E00_N06.json",
+          "tree_count": 8632,
+          "water_intrusions": 0
+        },
+        {
+          "tile_id": "T_E00_S01",
+          "path": "02_ASSETS_3D/vegetation/instances_T_E00_S01.json",
+          "tree_count": 9551,
+          "water_intrusions": 0
+        },
+        {
+          "tile_id": "T_E00_S02",
+          "path": "02_ASSETS_3D/vegetation/instances_T_E00_S02.json",
+          "tree_count": 8699,
+          "water_intrusions": 0
+        },
+        {
+          "tile_id": "T_E00_S03",
+          "path": "02_ASSETS_3D/vegetation/instances_T_E00_S03.json",
+          "tree_count": 13458,
+          "water_intrusions": 0
+        },
+        {
+          "tile_id": "T_E01_N00",
+          "path": "02_ASSETS_3D/vegetation/instances_T_E01_N00.json",
+          "tree_count": 7295,
+          "water_intrusions": 0
+        },
+        {
+          "tile_id": "T_E01_N01",
+          "path": "02_ASSETS_3D/vegetation/instances_T_E01_N01.json",
+          "tree_count": 2084,
+          "water_intrusions": 0
+        },
+        {
+          "tile_id": "T_E01_N02",
+          "path": "02_ASSETS_3D/vegetation/instances_T_E01_N02.json",
+          "tree_count": 12469,
+          "water_intrusions": 0
+        },
+        {
+          "tile_id": "T_E01_S01",
+          "path": "02_ASSETS_3D/vegetation/instances_T_E01_S01.json",
+          "tree_count": 6167,
+          "water_intrusions": 0
+        },
+        {
+          "tile_id": "T_E01_S02",
+          "path": "02_ASSETS_3D/vegetation/instances_T_E01_S02.json",
+          "tree_count": 13461,
+          "water_intrusions": 0
+        },
+        {
+          "tile_id": "T_E02_N00",
+          "path": "02_ASSETS_3D/vegetation/instances_T_E02_N00.json",
+          "tree_count": 14524,
+          "water_intrusions": 0
+        },
+        {
+          "tile_id": "T_E02_N01",
+          "path": "02_ASSETS_3D/vegetation/instances_T_E02_N01.json",
+          "tree_count": 1911,
+          "water_intrusions": 0
+        },
+        {
+          "tile_id": "T_E03_N00",
+          "path": "02_ASSETS_3D/vegetation/instances_T_E03_N00.json",
+          "tree_count": 14500,
+          "water_intrusions": 0
+        },
+        {
+          "tile_id": "T_E07_S04",
+          "path": "02_ASSETS_3D/vegetation/instances_T_E07_S04.json",
+          "tree_count": 21185,
+          "water_intrusions": 0
+        },
+        {
+          "tile_id": "T_W01_N00",
+          "path": "02_ASSETS_3D/vegetation/instances_T_W01_N00.json",
+          "tree_count": 2813,
+          "water_intrusions": 0
+        },
+        {
+          "tile_id": "T_W01_N01",
+          "path": "02_ASSETS_3D/vegetation/instances_T_W01_N01.json",
+          "tree_count": 1738,
+          "water_intrusions": 0
+        },
+        {
+          "tile_id": "T_W01_N02",
+          "path": "02_ASSETS_3D/vegetation/instances_T_W01_N02.json",
+          "tree_count": 14498,
+          "water_intrusions": 0
+        },
+        {
+          "tile_id": "T_W01_S01",
+          "path": "02_ASSETS_3D/vegetation/instances_T_W01_S01.json",
+          "tree_count": 7320,
+          "water_intrusions": 0
+        },
+        {
+          "tile_id": "T_W01_S02",
+          "path": "02_ASSETS_3D/vegetation/instances_T_W01_S02.json",
+          "tree_count": 4478,
+          "water_intrusions": 0
+        },
+        {
+          "tile_id": "T_W01_S03",
+          "path": "02_ASSETS_3D/vegetation/instances_T_W01_S03.json",
+          "tree_count": 13432,
+          "water_intrusions": 0
+        },
+        {
+          "tile_id": "T_W02_N00",
+          "path": "02_ASSETS_3D/vegetation/instances_T_W02_N00.json",
+          "tree_count": 12067,
+          "water_intrusions": 0
+        },
+        {
+          "tile_id": "T_W04_N04",
+          "path": "02_ASSETS_3D/vegetation/instances_T_W04_N04.json",
+          "tree_count": 5276,
+          "water_intrusions": 0
+        }
+      ],
+      "total_trees": 214128,
+      "water_intrusions": 0
+    }
+  }
+}

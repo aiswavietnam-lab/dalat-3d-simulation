@@ -1,0 +1,230 @@
+{
+  "schema_version": "1.0.0",
+  "project_name": "DALAT_3D_SIMULATION",
+  "slot": 11,
+  "display_slot_name": "ĐÀ LẠT - 10",
+  "lane": "AGRI_GREENHOUSES_TEA_COFFEE_TERRACES",
+  "updated_at_utc": "2026-11-23T17:29:53.083097+00:00",
+  "completed_waves": [
+    1
+  ],
+  "summary_metrics": {
+    "total_glb_files": 4,
+    "total_greenhouse_complexes": 312,
+    "total_vaulted_bays": 939,
+    "total_lit_2700k_complexes": 295,
+    "total_greenhouse_footprint_ha": 30.95,
+    "total_triangles": 332024,
+    "forbid_khr_materials_transmission_verified": true
+  },
+  "items": [
+    {
+      "id": "agri_w1_thai_phien_north_T_E02_N01",
+      "name_vi": "Thung lũng Nhà kính Đèn đêm 2700K Làng Hoa Thái Phiên Bắc (Đông Bắc Hồ Than Thở)",
+      "wave": 1,
+      "tile_id": "T_E02_N01",
+      "ring": 1,
+      "coordinate_mode": "world_space_threejs_yup",
+      "glb_path": "02_ASSETS_3D/agri_landscapes/agri_w1_thai_phien_north_T_E02_N01.glb",
+      "centroid_wgs84": {
+        "lat": 11.9608,
+        "lon": 108.4854
+      },
+      "greenhouse_complexes": 80,
+      "vaulted_bays": 238,
+      "emissive_2700k_hex": "#FFD166",
+      "emissiveIntensity": 0.85,
+      "camera_preset": {
+        "name": "Thung lũng Đèn Thái Phiên Bắc (P.12)",
+        "position_gltf": [
+          5040.0,
+          207.0,
+          -1180.0
+        ],
+        "target_gltf": [
+          4380.0,
+          14.0,
+          -2060.0
+        ]
+      },
+      "metrics": {
+        "valid_gltf2": true,
+        "verify_msg": "Valid glTF 2.0 GLB (5139684 bytes, meshes=9)",
+        "size_bytes": 5139684,
+        "sha256": "ce5c467df517a5920823004f58039b252e475b836fbacb4a3bfccd9db745b46a",
+        "meshes": 9,
+        "materials": 10,
+        "embedded_textures": 2,
+        "triangles": 84220,
+        "nan_inf_count": 0,
+        "has_forbidden_transmission": false,
+        "bbox_gltf_min": [
+          3819.086,
+          3.973,
+          -2739.918
+        ],
+        "bbox_gltf_max": [
+          4891.15,
+          26.73,
+          -1817.944
+        ]
+      }
+    },
+    {
+      "id": "agri_w1_thai_phien_central_T_E02_N01",
+      "name_vi": "Thung lũng Nhà kính Đèn đêm 2700K Làng Hoa Thái Phiên Trung Tâm (Đông Nam P.12)",
+      "wave": 1,
+      "tile_id": "T_E02_N01",
+      "ring": 1,
+      "coordinate_mode": "world_space_threejs_yup",
+      "glb_path": "02_ASSETS_3D/agri_landscapes/agri_w1_thai_phien_central_T_E02_N01.glb",
+      "centroid_wgs84": {
+        "lat": 11.9535,
+        "lon": 108.4858
+      },
+      "greenhouse_complexes": 52,
+      "vaulted_bays": 160,
+      "emissive_2700k_hex": "#FFD166",
+      "emissiveIntensity": 0.85,
+      "camera_preset": {
+        "name": "Thung lũng Đèn Thái Phiên Trung Tâm",
+        "position_gltf": [
+          5080.0,
+          185.0,
+          -1020.0
+        ],
+        "target_gltf": [
+          4420.0,
+          18.0,
+          -1460.0
+        ]
+      },
+      "metrics": {
+        "valid_gltf2": true,
+        "verify_msg": "Valid glTF 2.0 GLB (3427432 bytes, meshes=9)",
+        "size_bytes": 3427432,
+        "sha256": "1d1f6884486998afc5c669b99c4f1f95324e6f194552a90d308058ed7f360354",
+        "meshes": 9,
+        "materials": 10,
+        "embedded_textures": 2,
+        "triangles": 55856,
+        "nan_inf_count": 0,
+        "has_forbidden_transmission": false,
+        "bbox_gltf_min": [
+          3892.211,
+          1.91,
+          -1790.327
+        ],
+        "bbox_gltf_max": [
+          4952.596,
+          40.66,
+          -1093.41
+        ]
+      }
+    },
+    {
+      "id": "agri_w1_thai_phien_south_view_T_E02_N00",
+      "name_vi": "Thung lũng Đèn Nam Thái Phiên – Chi Lăng & Đài Ngắm Đêm Xóm Lèo",
+      "wave": 1,
+      "tile_id": "T_E02_N00",
+      "ring": 1,
+      "coordinate_mode": "world_space_threejs_yup",
+      "glb_path": "02_ASSETS_3D/agri_landscapes/agri_w1_thai_phien_south_view_T_E02_N00.glb",
+      "centroid_wgs84": {
+        "lat": 11.9461,
+        "lon": 108.4864
+      },
+      "greenhouse_complexes": 65,
+      "vaulted_bays": 192,
+      "emissive_2700k_hex": "#FFD166",
+      "emissiveIntensity": 0.85,
+      "camera_preset": {
+        "name": "Đài Ngắm Thung Lũng Đèn Xóm Lèo - Thái Phiên",
+        "position_gltf": [
+          5205.0,
+          74.0,
+          -725.0
+        ],
+        "target_gltf": [
+          4450.0,
+          22.0,
+          -680.0
+        ]
+      },
+      "metrics": {
+        "valid_gltf2": true,
+        "verify_msg": "Valid glTF 2.0 GLB (4230264 bytes, meshes=10)",
+        "size_bytes": 4230264,
+        "sha256": "09fa9887eda5052cb502d5658e3c25c74f24e4f5de7688ad46ca5d13c206cdca",
+        "meshes": 10,
+        "materials": 10,
+        "embedded_textures": 2,
+        "triangles": 69230,
+        "nan_inf_count": 0,
+        "has_forbidden_transmission": false,
+        "bbox_gltf_min": [
+          3849.425,
+          18.364,
+          -979.841
+        ],
+        "bbox_gltf_max": [
+          5214.069,
+          49.013,
+          -208.486
+        ]
+      }
+    },
+    {
+      "id": "agri_w1_da_thien_valley_T_E01_N02",
+      "name_vi": "Thung lũng Nhà kính Bậc thang Đa Thiện – Mai Anh Đào (Phường 8)",
+      "wave": 1,
+      "tile_id": "T_E01_N02",
+      "ring": 1,
+      "coordinate_mode": "world_space_threejs_yup",
+      "glb_path": "02_ASSETS_3D/agri_landscapes/agri_w1_da_thien_valley_T_E01_N02.glb",
+      "centroid_wgs84": {
+        "lat": 11.9731,
+        "lon": 108.4594
+      },
+      "greenhouse_complexes": 115,
+      "vaulted_bays": 349,
+      "emissive_2700k_hex": "#FFD166",
+      "emissiveIntensity": 0.85,
+      "camera_preset": {
+        "name": "Thung lũng Nhà kính Đa Thiện (P.8)",
+        "position_gltf": [
+          2320.0,
+          70.0,
+          -2980.0
+        ],
+        "target_gltf": [
+          1360.0,
+          6.0,
+          -3680.0
+        ]
+      },
+      "metrics": {
+        "valid_gltf2": true,
+        "verify_msg": "Valid glTF 2.0 GLB (7465076 bytes, meshes=9)",
+        "size_bytes": 7465076,
+        "sha256": "f632fae6176e45115475db5d61a9967489cb8006cb19f836c81f1f072fd85a18",
+        "meshes": 9,
+        "materials": 10,
+        "embedded_textures": 2,
+        "triangles": 122718,
+        "nan_inf_count": 0,
+        "has_forbidden_transmission": false,
+        "bbox_gltf_min": [
+          792.626,
+          -13.888,
+          -4362.949
+        ],
+        "bbox_gltf_max": [
+          2310.958,
+          12.114,
+          -3012.754
+        ]
+      }
+    }
+  ]
+}

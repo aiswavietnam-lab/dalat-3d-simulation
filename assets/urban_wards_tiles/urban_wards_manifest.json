@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.0.0",
+  "project": "DALAT_3D_SIMULATION",
+  "slot": 15,
+  "display_slot_name": "ĐÀ LẠT - 14",
+  "lane": "URBAN_WARDS_SATELLITE_TOWNS",
+  "updated_at_utc": "2026-11-23T17:19:49Z",
+  "waves_completed": [
+    1
+  ],
+  "forbid_khr_materials_transmission": true,
+  "summary_metrics": {
+    "glb_files_count": 3,
+    "total_triangles": 21354,
+    "doi_cu_golf_holes": 18,
+    "doi_cu_bunkers": 50,
+    "dalat_university_buildings": 35,
+    "dalat_stadium_capacity": 20000
+  },
+  "wave_assets": [
+    {
+      "asset_id": "doi_cu_golf_18holes_T_E00_N00",
+      "path": "/working_dir/c_6d3e4c5a9d286c99/project_sync/02_ASSETS_3D/urban_wards_tiles/doi_cu_golf_18holes_T_E00_N00.glb",
+      "tile_id": "T_E00_N00",
+      "ring": 0,
+      "coord_space": "world_gltf_yup",
+      "holes_count": 18,
+      "par_total": 72,
+      "total_yards": 7009,
+      "bunkers_count": 50,
+      "water_hazards_count": 2,
+      "fairway_surface_offset_m": 0.12,
+      "green_surface_offset_m": 0.16,
+      "clubhouse_foundation_skirt_m": -3.0,
+      "clubhouse_lit_windows": 66,
+      "size_bytes": 536472,
+      "nodes": 19,
+      "triangles": 8560,
+      "sha256": "88dba4c932da6d1b06eea318286982c46b76ff8198ed427994a5cf1543a6ab81"
+    },
+    {
+      "asset_id": "dalat_university_35halls_T_E00_N01",
+      "path": "/working_dir/c_6d3e4c5a9d286c99/project_sync/02_ASSETS_3D/urban_wards_tiles/dalat_university_35halls_T_E00_N01.glb",
+      "tile_id": "T_E00_N01",
+      "ring": 0,
+      "coord_space": "world_gltf_yup",
+      "buildings_count": 35,
+      "campus_streetlamps": 24,
+      "lit_windows_count": 1999,
+      "foundation_skirt_m": -3.0,
+      "size_bytes": 623356,
+      "nodes": 13,
+      "triangles": 10682,
+      "sha256": "f7d6b1fa6ab3ac053beb547a1f8c2d2c09945dfcdcc4268e4dcd911df487b5c3"
+    },
+    {
+      "asset_id": "dalat_stadium_thanh_mau_T_W01_N02",
+      "path": "/working_dir/c_6d3e4c5a9d286c99/project_sync/02_ASSETS_3D/urban_wards_tiles/dalat_stadium_thanh_mau_T_W01_N02.glb",
+      "tile_id": "T_W01_N02",
+      "ring": 1,
+      "coord_space": "world_gltf_yup",
+      "center_xy_m": [
+        -1320.0,
+        3280.0
+      ],
+      "wgs84": {
+        "lat": 11.9698837,
+        "lon": 108.433139
+      },
+      "capacity_seats": 20000,
+      "pitch_size_m": [
+        105.0,
+        68.0
+      ],
+      "running_track_lanes": 8,
+      "floodlight_masts_count": 4,
+      "foundation_skirt_m": -4.0,
+      "pitch_elev_msl_m": 1497.638,
+      "size_bytes": 173036,
+      "nodes": 13,
+      "triangles": 2112,
+      "sha256": "e55b3c434c54617ca74d2d6c3011cc3fb9c680e77bed087e353f9def97cdda1d"
+    }
+  ],
+  "qa_contact_sheets": [
+    {
+      "path": "04_QA_BUILDS/contact_sheets/slot15/qa_T15_W1_university_golf_stadium.jpg",
+      "width_px": 1920,
+      "height_px": 1200,
+      "format": "JPEG_Q95",
+      "size_bytes": 465320,
+      "sha256": "2300439a3dae6a9f0e72413f6c58f2f364ec6399c517fbeab5a01e51b7744f6c"
+    }
+  ]
+}

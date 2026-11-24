@@ -1,0 +1,762 @@
+{
+  "schema_version": "2.0.0",
+  "updated_at_utc": "2026-11-23T09:04:03.569716+00:00",
+  "origin": {
+    "lat": 11.940419,
+    "lon": 108.445259,
+    "elev_msl_m": 1478.0
+  },
+  "priority_order": [
+    "1_TERRAIN_DEM_TILES",
+    "2_WATER_LAKES_HYDROLOGY",
+    "3_PINE_FORESTS_FLORA",
+    "4_ICONIC_LANDMARKS_3D",
+    "5_WEB3D_VIEWER_ROADS_AND_RESIDENTIAL_EXPANSION"
+  ],
+  "water_bodies": [
+    {
+      "id": "water_ho_xuan_huong",
+      "name_vi": "Hồ Xuân Hương",
+      "priority_wave": 1,
+      "lat": 11.940419,
+      "lon": 108.445259,
+      "elev_msl_m": 1478.0,
+      "area_ha": 38.0,
+      "perimeter_km": 5.1,
+      "water_hex": "#2B6E78",
+      "notes": "Hồ trung tâm hình trăng khuyết, cao độ mặt nước chuẩn 1478.0m (Z_local = 0.0m), kèm đập tràn Cầu Ông Đạo & bán đảo Thủy Tạ.",
+      "x_m": 0.0,
+      "y_m": 0.0,
+      "z_local_m": 0.0,
+      "tile_id": "T_E00_N00",
+      "ring": 0
+    },
+    {
+      "id": "water_ho_chien_thang",
+      "name_vi": "Hồ Chiến Thắng",
+      "priority_wave": 2,
+      "lat": 11.9648,
+      "lon": 108.4582,
+      "elev_msl_m": 1492.0,
+      "area_ha": 6.5,
+      "water_hex": "#2C6B72",
+      "notes": "Hồ cảnh quan phía Đông Bắc lõi trung tâm, gần khu Đa Thiện.",
+      "x_m": 1409.416,
+      "y_m": 2714.081,
+      "z_local_m": 14.0,
+      "tile_id": "T_E01_N01",
+      "ring": 0
+    },
+    {
+      "id": "water_ho_me_linh",
+      "name_vi": "Hồ Mê Linh",
+      "priority_wave": 2,
+      "lat": 11.9478,
+      "lon": 108.4562,
+      "elev_msl_m": 1482.0,
+      "area_ha": 2.4,
+      "water_hex": "#2F727A",
+      "notes": "Hồ nhỏ gần khu Yersin - CĐSP Đà Lạt.",
+      "x_m": 1191.594,
+      "y_m": 821.649,
+      "z_local_m": 4.0,
+      "tile_id": "T_E01_N00",
+      "ring": 0
+    },
+    {
+      "id": "water_suoi_cam_ly",
+      "name_vi": "Suối & Thác Cam Ly",
+      "priority_wave": 2,
+      "lat": 11.941,
+      "lon": 108.4195,
+      "elev_msl_m": 1445.0,
+      "area_ha": 4.0,
+      "water_hex": "#336B70",
+      "notes": "Dòng thoát nước chính từ đập tràn Hồ Xuân Hương chảy về phía Tây qua Thác Cam Ly.",
+      "x_m": -2805.436,
+      "y_m": 64.677,
+      "z_local_m": -33.0,
+      "tile_id": "T_W01_N00",
+      "ring": 0
+    },
+    {
+      "id": "water_ho_tuyen_lam",
+      "name_vi": "Hồ Tuyền Lâm",
+      "priority_wave": 3,
+      "lat": 11.9035,
+      "lon": 108.431,
+      "elev_msl_m": 1375.0,
+      "area_ha": 320.0,
+      "water_hex": "#1F5E6B",
+      "notes": "Hồ nước ngọt lớn nhất Đà Lạt với nhiều vịnh nhánh & ốc đảo rừng thông bao quanh.",
+      "x_m": -1552.961,
+      "y_m": -4109.804,
+      "z_local_m": -103.0,
+      "tile_id": "T_W01_S02",
+      "ring": 1
+    },
+    {
+      "id": "water_ho_than_tho",
+      "name_vi": "Hồ Than Thở",
+      "priority_wave": 4,
+      "lat": 11.9545,
+      "lon": 108.4775,
+      "elev_msl_m": 1495.0,
+      "area_ha": 8.5,
+      "water_hex": "#27646D",
+      "notes": "Hồ tự nhiên bao quanh bởi đồi thông yên tĩnh hướng Đông Bắc (đường Hồ Xuân Hương).",
+      "x_m": 3511.396,
+      "y_m": 1567.49,
+      "z_local_m": 17.0,
+      "tile_id": "T_E02_N01",
+      "ring": 1
+    },
+    {
+      "id": "water_ho_da_thien",
+      "name_vi": "Hồ Đa Thiện (Thung lũng Tình Yêu)",
+      "priority_wave": 4,
+      "lat": 11.9765,
+      "lon": 108.4495,
+      "elev_msl_m": 1488.0,
+      "area_ha": 13.0,
+      "water_hex": "#286974",
+      "notes": "Hồ đập Đa Thiện nằm sâu dưới thung lũng rừng thông phía Bắc.",
+      "x_m": 461.891,
+      "y_m": 4016.519,
+      "z_local_m": 10.0,
+      "tile_id": "T_E00_N02",
+      "ring": 1
+    },
+    {
+      "id": "water_ho_suoi_vang",
+      "name_vi": "Hồ Suối Vàng – Dankia",
+      "priority_wave": 5,
+      "lat": 12.008,
+      "lon": 108.374,
+      "elev_msl_m": 1425.0,
+      "area_ha": 280.0,
+      "water_hex": "#245F6C",
+      "notes": "Hồ chứa nước ngọt lớn phía Tây Bắc (huyện Lạc Dương), nổi tiếng với đồi cỏ hồng & rừng thông.",
+      "x_m": -7760.882,
+      "y_m": 7523.083,
+      "z_local_m": -53.0,
+      "tile_id": "T_W04_N04",
+      "ring": 2
+    }
+  ],
+  "pine_forest_zones": [
+    {
+      "id": "pine_doi_cu",
+      "name_vi": "Đồi Cù & Ven Bắc Hồ Xuân Hương",
+      "lat": 11.9462,
+      "lon": 108.446,
+      "elev_msl_m": 1508.0,
+      "radius_m": 620,
+      "density_per_ha": 85,
+      "species": [
+        "pine_dalat_3leaf",
+        "mai_anh_dao"
+      ],
+      "x_m": 80.703,
+      "y_m": 643.538,
+      "z_local_m": 30.0,
+      "tile_id": "T_E00_N00",
+      "ring": 0
+    },
+    {
+      "id": "pine_ven_ho_xuan_huong",
+      "name_vi": "Hàng thông & Mai Anh Đào ven Hồ Xuân Hương",
+      "lat": 11.9404,
+      "lon": 108.4452,
+      "elev_msl_m": 1480.0,
+      "radius_m": 850,
+      "density_per_ha": 45,
+      "species": [
+        "mai_anh_dao",
+        "pine_dalat_3leaf"
+      ],
+      "x_m": -6.426,
+      "y_m": -2.115,
+      "z_local_m": 2.0,
+      "tile_id": "T_E00_N00",
+      "ring": 0
+    },
+    {
+      "id": "pine_doi_dinh2",
+      "name_vi": "Đồi Thông Dinh II & Trần Hưng Đạo",
+      "lat": 11.9355,
+      "lon": 108.4519,
+      "elev_msl_m": 1525.0,
+      "radius_m": 550,
+      "density_per_ha": 140,
+      "species": [
+        "pine_dalat_3leaf",
+        "mai_anh_dao"
+      ],
+      "x_m": 723.277,
+      "y_m": -547.581,
+      "z_local_m": 47.0,
+      "tile_id": "T_E00_N00",
+      "ring": 0
+    },
+    {
+      "id": "pine_doi_dinh3",
+      "name_vi": "Rừng Thông Ái Ân (Đồi Dinh III)",
+      "lat": 11.9304,
+      "lon": 108.4298,
+      "elev_msl_m": 1538.0,
+      "radius_m": 650,
+      "density_per_ha": 180,
+      "species": [
+        "pine_dalat_3leaf"
+      ],
+      "x_m": -1683.654,
+      "y_m": -1115.31,
+      "z_local_m": 60.0,
+      "tile_id": "T_W01_S01",
+      "ring": 0
+    },
+    {
+      "id": "pine_doi_dinh1",
+      "name_vi": "Rừng Thông Dinh I & Khe Sanh",
+      "lat": 11.9325,
+      "lon": 108.4665,
+      "elev_msl_m": 1550.0,
+      "radius_m": 750,
+      "density_per_ha": 190,
+      "species": [
+        "pine_dalat_3leaf"
+      ],
+      "x_m": 2313.376,
+      "y_m": -881.539,
+      "z_local_m": 72.0,
+      "tile_id": "T_E01_N00",
+      "ring": 0
+    },
+    {
+      "id": "pine_doi_robin_prenn",
+      "name_vi": "Rừng Thông Đồi Robin & Đèo Prenn",
+      "lat": 11.9195,
+      "lon": 108.4468,
+      "elev_msl_m": 1545.0,
+      "radius_m": 1200,
+      "density_per_ha": 240,
+      "species": [
+        "pine_dalat_3leaf"
+      ],
+      "x_m": 167.832,
+      "y_m": -2328.692,
+      "z_local_m": 67.0,
+      "tile_id": "T_E00_S01",
+      "ring": 0
+    },
+    {
+      "id": "pine_tuyen_lam",
+      "name_vi": "Rừng Thông Vành Đai Hồ Tuyền Lâm",
+      "lat": 11.9035,
+      "lon": 108.431,
+      "elev_msl_m": 1420.0,
+      "radius_m": 2200,
+      "density_per_ha": 260,
+      "species": [
+        "pine_dalat_3leaf"
+      ],
+      "x_m": -1552.961,
+      "y_m": -4109.804,
+      "z_local_m": -58.0,
+      "tile_id": "T_W01_S02",
+      "ring": 1
+    },
+    {
+      "id": "pine_thung_lung_tinh_yeu",
+      "name_vi": "Rừng Thông Thung Lũng Tình Yêu & Đồi Mộng Mơ",
+      "lat": 11.9765,
+      "lon": 108.4495,
+      "elev_msl_m": 1520.0,
+      "radius_m": 1400,
+      "density_per_ha": 210,
+      "species": [
+        "pine_dalat_3leaf",
+        "mai_anh_dao"
+      ],
+      "x_m": 461.891,
+      "y_m": 4016.519,
+      "z_local_m": 42.0,
+      "tile_id": "T_E00_N02",
+      "ring": 1
+    },
+    {
+      "id": "pine_langbiang",
+      "name_vi": "Rừng Thông Nguyên Sinh Langbiang",
+      "lat": 12.0467,
+      "lon": 108.4383,
+      "elev_msl_m": 1929.0,
+      "radius_m": 3200,
+      "density_per_ha": 280,
+      "species": [
+        "pine_dalat_3leaf"
+      ],
+      "x_m": -757.911,
+      "y_m": 11831.147,
+      "z_local_m": 451.0,
+      "tile_id": "T_E00_N06",
+      "ring": 2
+    },
+    {
+      "id": "pine_cau_dat_tea",
+      "name_vi": "Đồi Chè & Rừng Thông Cầu Đất",
+      "lat": 11.8695,
+      "lon": 108.567,
+      "elev_msl_m": 1650.0,
+      "radius_m": 2500,
+      "density_per_ha": 160,
+      "species": [
+        "pine_dalat_3leaf",
+        "tea_terrace"
+      ],
+      "x_m": 13258.922,
+      "y_m": -7894.667,
+      "z_local_m": 172.0,
+      "tile_id": "T_E07_S04",
+      "ring": 2
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "lm_01_quang_truong_lam_vien",
+      "name_vi": "Quảng trường Lâm Viên (Hoa Dã Quỳ & Nụ Atiso)",
+      "tier": 1,
+      "wave": 1,
+      "lat": 11.93875,
+      "lon": 108.444528,
+      "elev_msl_m": 1480.0,
+      "heading_deg": 335,
+      "footprint_m": {
+        "length": 130,
+        "width": 85,
+        "max_height": 18.5
+      },
+      "coord_source": "verified_wikipedia",
+      "x_m": -79.614,
+      "y_m": -185.792,
+      "z_local_m": 2.0,
+      "tile_id": "T_E00_N00",
+      "ring": 0
+    },
+    {
+      "id": "lm_06_thuy_ta_cau_ong_dao",
+      "name_vi": "Nhà hàng Thủy Tạ & Cầu Ông Đạo",
+      "tier": 1,
+      "wave": 1,
+      "lat": 11.94128,
+      "lon": 108.43975,
+      "elev_msl_m": 1478.2,
+      "heading_deg": 110,
+      "footprint_m": {
+        "length": 95,
+        "width": 45,
+        "max_height": 9.5
+      },
+      "coord_source": "seed_verified_shoreline",
+      "x_m": -599.99,
+      "y_m": 95.846,
+      "z_local_m": 0.2,
+      "tile_id": "T_E00_N00",
+      "ring": 0
+    },
+    {
+      "id": "lm_02_ga_da_lat",
+      "name_vi": "Nhà Ga Đà Lạt (Art Deco 3 Mái Langbiang)",
+      "tier": 1,
+      "wave": 2,
+      "lat": 11.942,
+      "lon": 108.455,
+      "elev_msl_m": 1500.0,
+      "heading_deg": 205,
+      "footprint_m": {
+        "length": 66.5,
+        "width": 24.0,
+        "max_height": 14.5
+      },
+      "coord_source": "verified_wikidata_Q3096348",
+      "x_m": 1060.901,
+      "y_m": 175.996,
+      "z_local_m": 22.0,
+      "tile_id": "T_E01_N00",
+      "ring": 0
+    },
+    {
+      "id": "lm_04_truong_cdsp_dalat",
+      "name_vi": "Trường Cao đẳng Sư phạm Đà Lạt (Lycée Yersin)",
+      "tier": 1,
+      "wave": 2,
+      "lat": 11.946339,
+      "lon": 108.452931,
+      "elev_msl_m": 1505.0,
+      "heading_deg": 240,
+      "footprint_m": {
+        "length": 95.0,
+        "width": 65.0,
+        "max_height": 54.0
+      },
+      "coord_source": "verified_wikidata_Q10828808",
+      "x_m": 835.564,
+      "y_m": 659.011,
+      "z_local_m": 27.0,
+      "tile_id": "T_E00_N00",
+      "ring": 0
+    },
+    {
+      "id": "lm_03_nha_tho_con_ga",
+      "name_vi": "Nhà thờ Chính tòa Đà Lạt (Nhà thờ Con Gà)",
+      "tier": 1,
+      "wave": 3,
+      "lat": 11.93678,
+      "lon": 108.43753,
+      "elev_msl_m": 1510.0,
+      "heading_deg": 35,
+      "footprint_m": {
+        "length": 65.0,
+        "width": 20.0,
+        "max_height": 47.0
+      },
+      "coord_source": "seed_verified_tranphu",
+      "x_m": -841.772,
+      "y_m": -405.092,
+      "z_local_m": 32.0,
+      "tile_id": "T_E00_N00",
+      "ring": 0
+    },
+    {
+      "id": "lm_05_cho_da_lat_hoa_binh",
+      "name_vi": "Chợ Đà Lạt & Cầu Thang Chữ Y Khu Hòa Bình",
+      "tier": 1,
+      "wave": 3,
+      "lat": 11.94155,
+      "lon": 108.437214,
+      "elev_msl_m": 1484.0,
+      "heading_deg": 145,
+      "footprint_m": {
+        "length": 90.0,
+        "width": 65.0,
+        "max_height": 22.0
+      },
+      "coord_source": "verified_wikipedia",
+      "x_m": -876.188,
+      "y_m": 125.902,
+      "z_local_m": 6.0,
+      "tile_id": "T_E00_N00",
+      "ring": 0
+    },
+    {
+      "id": "lm_07_dinh_3",
+      "name_vi": "Dinh Bảo Đại III",
+      "tier": 2,
+      "wave": 4,
+      "lat": 11.93038,
+      "lon": 108.42975,
+      "elev_msl_m": 1539.0,
+      "heading_deg": 65,
+      "footprint_m": {
+        "length": 44.0,
+        "width": 24.0,
+        "max_height": 12.0
+      },
+      "coord_source": "seed_approx",
+      "x_m": -1689.099,
+      "y_m": -1117.536,
+      "z_local_m": 61.0,
+      "tile_id": "T_W01_S01",
+      "ring": 0
+    },
+    {
+      "id": "lm_08_dinh_2",
+      "name_vi": "Dinh Bảo Đại II",
+      "tier": 2,
+      "wave": 4,
+      "lat": 11.9355,
+      "lon": 108.4519,
+      "elev_msl_m": 1528.0,
+      "heading_deg": 310,
+      "footprint_m": {
+        "length": 46.0,
+        "width": 22.0,
+        "max_height": 13.0
+      },
+      "coord_source": "seed_approx",
+      "x_m": 723.277,
+      "y_m": -547.581,
+      "z_local_m": 50.0,
+      "tile_id": "T_E00_N00",
+      "ring": 0
+    },
+    {
+      "id": "lm_09_dinh_1",
+      "name_vi": "Dinh Bảo Đại I",
+      "tier": 2,
+      "wave": 4,
+      "lat": 11.9325,
+      "lon": 108.4665,
+      "elev_msl_m": 1555.0,
+      "heading_deg": 280,
+      "footprint_m": {
+        "length": 48.0,
+        "width": 24.0,
+        "max_height": 14.0
+      },
+      "coord_source": "seed_approx",
+      "x_m": 2313.376,
+      "y_m": -881.539,
+      "z_local_m": 77.0,
+      "tile_id": "T_E01_N00",
+      "ring": 0
+    },
+    {
+      "id": "lm_12_dalat_palace",
+      "name_vi": "Khách sạn Dalat Palace Heritage",
+      "tier": 2,
+      "wave": 4,
+      "lat": 11.93955,
+      "lon": 108.4414,
+      "elev_msl_m": 1492.0,
+      "heading_deg": 15,
+      "footprint_m": {
+        "length": 78.0,
+        "width": 26.0,
+        "max_height": 18.0
+      },
+      "coord_source": "seed_approx",
+      "x_m": -420.287,
+      "y_m": -96.737,
+      "z_local_m": 14.0,
+      "tile_id": "T_E00_N00",
+      "ring": 0
+    },
+    {
+      "id": "lm_10_domaine_de_marie",
+      "name_vi": "Nhà thờ Domaine de Marie",
+      "tier": 2,
+      "wave": 5,
+      "lat": 11.94885,
+      "lon": 108.43078,
+      "elev_msl_m": 1515.0,
+      "heading_deg": 120,
+      "footprint_m": {
+        "length": 40.0,
+        "width": 18.0,
+        "max_height": 19.0
+      },
+      "coord_source": "seed_approx",
+      "x_m": -1576.921,
+      "y_m": 938.535,
+      "z_local_m": 37.0,
+      "tile_id": "T_W01_N00",
+      "ring": 0
+    },
+    {
+      "id": "lm_11_crazy_house",
+      "name_vi": "Biệt thự Hằng Nga (Crazy House)",
+      "tier": 2,
+      "wave": 5,
+      "lat": 11.934722,
+      "lon": 108.430639,
+      "elev_msl_m": 1518.0,
+      "heading_deg": 90,
+      "footprint_m": {
+        "length": 42.0,
+        "width": 35.0,
+        "max_height": 18.0
+      },
+      "coord_source": "verified_wikidata_Q1171693",
+      "x_m": -1592.277,
+      "y_m": -634.187,
+      "z_local_m": 40.0,
+      "tile_id": "T_W01_N00",
+      "ring": 0
+    },
+    {
+      "id": "lm_14_vuon_hoa_tp",
+      "name_vi": "Vườn Hoa Thành Phố Đà Lạt",
+      "tier": 2,
+      "wave": 5,
+      "lat": 11.94825,
+      "lon": 108.44915,
+      "elev_msl_m": 1482.0,
+      "heading_deg": 200,
+      "footprint_m": {
+        "length": 160.0,
+        "width": 120.0,
+        "max_height": 10.0
+      },
+      "coord_source": "seed_approx",
+      "x_m": 423.772,
+      "y_m": 871.743,
+      "z_local_m": 4.0,
+      "tile_id": "T_E00_N00",
+      "ring": 0
+    },
+    {
+      "id": "lm_15_thien_vien_truc_lam",
+      "name_vi": "Thiền viện Trúc Lâm & Cáp treo Đồi Robin",
+      "tier": 2,
+      "wave": 5,
+      "lat": 11.898056,
+      "lon": 108.440556,
+      "elev_msl_m": 1490.0,
+      "heading_deg": 215,
+      "footprint_m": {
+        "length": 110.0,
+        "width": 85.0,
+        "max_height": 20.0
+      },
+      "coord_source": "verified_wikidata_Q7847137",
+      "x_m": -512.208,
+      "y_m": -4715.828,
+      "z_local_m": 12.0,
+      "tile_id": "T_E00_S02",
+      "ring": 1
+    },
+    {
+      "id": "lm_16_chua_linh_phuoc",
+      "name_vi": "Chùa Linh Phước (Chùa Ve Chai Trại Mát)",
+      "tier": 2,
+      "wave": 5,
+      "lat": 11.94455,
+      "lon": 108.50085,
+      "elev_msl_m": 1540.0,
+      "heading_deg": 180,
+      "footprint_m": {
+        "length": 85.0,
+        "width": 45.0,
+        "max_height": 37.0
+      },
+      "coord_source": "seed_approx",
+      "x_m": 6054.466,
+      "y_m": 459.861,
+      "z_local_m": 62.0,
+      "tile_id": "T_E03_N00",
+      "ring": 1
+    },
+    {
+      "id": "lm_17_thung_lung_tinh_yeu",
+      "name_vi": "Khu Du lịch Thung Lũng Tình Yêu",
+      "tier": 3,
+      "wave": 6,
+      "lat": 11.9765,
+      "lon": 108.4495,
+      "elev_msl_m": 1505.0,
+      "heading_deg": 190,
+      "footprint_m": {
+        "length": 140.0,
+        "width": 90.0,
+        "max_height": 16.0
+      },
+      "coord_source": "seed_approx",
+      "x_m": 461.891,
+      "y_m": 4016.519,
+      "z_local_m": 27.0,
+      "tile_id": "T_E00_N02",
+      "ring": 1
+    },
+    {
+      "id": "lm_20_dinh_langbiang",
+      "name_vi": "Đỉnh Radar & Núi Langbiang",
+      "tier": 3,
+      "wave": 6,
+      "lat": 12.0467,
+      "lon": 108.4383,
+      "elev_msl_m": 1929.0,
+      "heading_deg": 180,
+      "footprint_m": {
+        "length": 60.0,
+        "width": 45.0,
+        "max_height": 18.0
+      },
+      "coord_source": "seed_approx",
+      "x_m": -757.911,
+      "y_m": 11831.147,
+      "z_local_m": 451.0,
+      "tile_id": "T_E00_N06",
+      "ring": 2
+    },
+    {
+      "id": "lm_22_dien_gio_cau_dat",
+      "name_vi": "Đồi Chè & Tuabin Điện Gió Cầu Đất",
+      "tier": 3,
+      "wave": 6,
+      "lat": 11.8695,
+      "lon": 108.567,
+      "elev_msl_m": 1650.0,
+      "heading_deg": 90,
+      "footprint_m": {
+        "length": 300.0,
+        "width": 200.0,
+        "max_height": 85.0
+      },
+      "coord_source": "seed_approx",
+      "x_m": 13258.922,
+      "y_m": -7894.667,
+      "z_local_m": 172.0,
+      "tile_id": "T_E07_S04",
+      "ring": 2
+    }
+  ],
+  "climate_presets": [
+    {
+      "id": "early_mist",
+      "name_vi": "Sương sớm Đà Lạt (06:15)",
+      "sky_hex": "#C8D9E6",
+      "fog_hex": "#DCE6EE",
+      "fog_density": 0.00055,
+      "sun_hex": "#FFE2B0",
+      "sun_intensity": 1.35,
+      "sun_elevation_deg": 14,
+      "sun_azimuth_deg": 82,
+      "ambient_hex": "#92A9BD",
+      "ambient_intensity": 0.65,
+      "emissive_scale": 0.2
+    },
+    {
+      "id": "highland_noon",
+      "name_vi": "Trưa cao nguyên (11:30)",
+      "sky_hex": "#7BB5E8",
+      "fog_hex": "#BFD9EE",
+      "fog_density": 0.00016,
+      "sun_hex": "#FFF9EB",
+      "sun_intensity": 2.1,
+      "sun_elevation_deg": 66,
+      "sun_azimuth_deg": 155,
+      "ambient_hex": "#B4D0E8",
+      "ambient_intensity": 0.75,
+      "emissive_scale": 0.0
+    },
+    {
+      "id": "sunset_lake",
+      "name_vi": "Hoàng hôn Hồ Xuân Hương (17:30)",
+      "sky_hex": "#D97F62",
+      "fog_hex": "#E39B7E",
+      "fog_density": 0.00038,
+      "sun_hex": "#FF8C42",
+      "sun_intensity": 1.8,
+      "sun_elevation_deg": 10,
+      "sun_azimuth_deg": 265,
+      "ambient_hex": "#8C6378",
+      "ambient_intensity": 0.55,
+      "emissive_scale": 0.55
+    },
+    {
+      "id": "mountain_night",
+      "name_vi": "Đêm phố núi (20:00)",
+      "sky_hex": "#0B162C",
+      "fog_hex": "#101E38",
+      "fog_density": 0.00042,
+      "sun_hex": "#6E8FBF",
+      "sun_intensity": 0.35,
+      "sun_elevation_deg": 38,
+      "sun_azimuth_deg": 220,
+      "ambient_hex": "#1B2E4F",
+      "ambient_intensity": 0.35,
+      "emissive_scale": 1.35
+    }
+  ]
+}

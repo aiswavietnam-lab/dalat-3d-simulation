@@ -1,0 +1,940 @@
+{
+  "schema_version": "1.0.0",
+  "project_name": "DALAT_3D_SIMULATION",
+  "slot": 8,
+  "display_slot_name": "ĐÀ LẠT - 07",
+  "lane": "SPIRITUAL_TOURISM_COMPLEXES",
+  "wave_completed": 6,
+  "updated_at_utc": "2026-11-24T03:26:21.518925+00:00",
+  "coordinate_origin": {
+    "name": "Tam_Ho_Xuan_Huong_Da_Lat",
+    "lat0": 11.940419,
+    "lon0": 108.445259,
+    "elev_msl_m": 1478.0,
+    "epsg_utm": "EPSG:32649",
+    "axes_gltf_threejs": "+X=East, +Y=Up (z_local), +Z=South (-y_m)"
+  },
+  "no_khr_materials_transmission": true,
+  "built_complexes_count": 6,
+  "total_planned_waves": 5,
+  "complexes": [
+    {
+      "id": "tc_01_thien_vien_truc_lam_complex",
+      "name_vi": "Quần thể Thiền viện Trúc Lâm Đà Lạt & Bến Hồ Tuyền Lâm (LOD0)",
+      "name_en": "Truc Lam Zen Monastery Complex & Tuyen Lam Lakeside Steps (LOD0)",
+      "task_id": "T8_W1_THIEN_VIEN_TRUC_LAM_COMPLEX",
+      "wave": 1,
+      "slot": 8,
+      "ring": 1,
+      "status": "built",
+      "built": true,
+      "lat": 11.9063279,
+      "lon": 108.4362149,
+      "elev_msl_m": 1390.991,
+      "x_m": -985.0,
+      "y_m": -3795.0,
+      "z_local_m": -87.009,
+      "gltf_position": [
+        -985.0,
+        -87.009,
+        3795.0
+      ],
+      "tile_id": "T_E00_S02",
+      "spanned_tiles": [
+        "T_E00_S02",
+        "T_W01_S02"
+      ],
+      "heading_deg": 215.0,
+      "rotation_y_rad": -3.752458,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "pivot_local_gltf": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "foundation_skirt_m": -4.2,
+      "bbox_min_m": [
+        -44.5,
+        -20.011,
+        -152.675
+      ],
+      "bbox_max_m": [
+        31.241,
+        17.49,
+        67.464
+      ],
+      "footprint_m": {
+        "width_x": 75.74,
+        "length_z": 220.14,
+        "height_span_y": 37.5
+      },
+      "exclusion_polygon_wgs84": [
+        [
+          108.4368904,
+          11.9066767
+        ],
+        [
+          108.4363639,
+          11.9070373
+        ],
+        [
+          108.4351737,
+          11.9053743
+        ],
+        [
+          108.4357604,
+          11.9049724
+        ],
+        [
+          108.4368904,
+          11.9066767
+        ]
+      ],
+      "glb_file": "tc_01_thien_vien_truc_lam_complex.glb",
+      "glb_path": "02_ASSETS_3D/tourism_complexes/tc_01_thien_vien_truc_lam_complex.glb",
+      "sha256": "613224ae33796b501e543199c93811a9c7665de874df05b9dbca2152a2c4d80d",
+      "size_bytes": 1366180,
+      "triangles": 18411,
+      "nodes": 17,
+      "materials": 16,
+      "embedded_textures": 2,
+      "no_khr_transmission": true,
+      "sourced_kits_reused": [
+        "02_ASSETS_3D/sourced_library/landmarks/kit_vietnamese_pagoda_roof_stupa.glb",
+        "02_ASSETS_3D/sourced_library/landmarks/lm_15_thien_vien_truc_lam_base.glb",
+        "02_ASSETS_3D/sourced_library/landmarks/lm_19_ho_tuyen_lam_marina_pier.glb"
+      ],
+      "camera_preset": {
+        "eye_gltf": [
+          -1080.0,
+          -45.009,
+          3910.0
+        ],
+        "target_gltf": [
+          -985.0,
+          -81.009,
+          3795.0
+        ],
+        "fov_deg": 45.0
+      },
+      "architectural_style": "Vietnamese Truc Lam Zen Buddhist Architecture (2-Tier Curved Pagoda Roofs)",
+      "architect": "HT. Thích Thanh Từ (quy hoạch), KTS Vũ Xuân Hùng, Trần Đức Lộc & Ngô Viết Thụ",
+      "year_completed": "1994",
+      "source_url": "https://vi.wikipedia.org/wiki/Thi%E1%BB%81n_vi%E1%BB%87n_Tr%C3%BAc_L%C3%A2m_%C4%90%C3%A0_L%E1%BA%A1t",
+      "description_vi": "Quần thể Thiền viện Trúc Lâm Đà Lạt cấp LOD0 trên đỉnh núi Phượng Hoàng (khởi dựng 1993-1994): Chánh điện 192m2 mái đao cong 2 tầng có cổ lầu, Lầu Chuông Đại Hồng Chung 1,1 tấn, Gác Trống, Tổ Đường, Nội viện Tăng - Ni, Vườn hoa giàn Móng Cọp, Hồ Tĩnh Tâm và 140 bậc thang đá qua 3 Cổng Tam Quan dẫn thẳng xuống bến thuyền Hồ Tuyền Lâm (1375.0m MSL)."
+    },
+    {
+      "id": "tc_02_cap_treo_doi_robin_truc_lam",
+      "name_vi": "Tuyến Cáp treo Đồi Robin – Trúc Lâm 2,26km (2 Nhà ga, 12 Trụ thép & 24 Cabin)",
+      "name_en": "Robin Hill – Truc Lam 2.26km Doppelmayr Cable Car (2 Terminals, 12 Lattice Pylons & 24 Cabins)",
+      "task_id": "T8_W2_CAP_TREO_DOI_ROBIN_TRUC_LAM",
+      "wave": 2,
+      "slot": 8,
+      "ring": 1,
+      "status": "built",
+      "built": true,
+      "coordinate_space": "world_gltf_y_up",
+      "lat": 11.9258,
+      "lon": 108.4422,
+      "elev_msl_m": 1487.104,
+      "x_m": -333.158,
+      "y_m": -1627.38,
+      "z_local_m": 9.104,
+      "gltf_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "robin_terminal_gltf": [
+        -333.158,
+        9.104,
+        1627.38
+      ],
+      "endpoints_wgs84": {
+        "doi_robin_departure": {
+          "lat": 11.9258,
+          "lon": 108.4422,
+          "x_m": -333.16,
+          "y_m": -1627.38,
+          "elev_msl_m": 1487.654,
+          "tile_id": "T_E00_S01"
+        },
+        "doi_phuong_hoang_arrival": {
+          "lat": 11.9062,
+          "lon": 108.4351,
+          "x_m": -1106.43,
+          "y_m": -3809.24,
+          "elev_msl_m": 1385.839,
+          "tile_id": "T_W01_S02"
+        }
+      },
+      "tile_id": "T_E00_S01",
+      "spanned_tiles": [
+        "T_E00_S01",
+        "T_E00_S02",
+        "T_W01_S02"
+      ],
+      "heading_deg": 199.51,
+      "rotation_y_rad": 0.0,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "foundation_skirt_m": -4.5,
+      "pylon_skirt_m": -4.0,
+      "cable_length_3d_m": 2348.35,
+      "pylons_count": 12,
+      "cabins_count": 24,
+      "bbox_min_m": [
+        -1155.59,
+        -96.661,
+        1590.478
+      ],
+      "bbox_max_m": [
+        -301.124,
+        43.647,
+        3839.624
+      ],
+      "footprint_m": {
+        "width_x": 854.47,
+        "length_z": 2249.15,
+        "height_span_y": 140.31
+      },
+      "exclusion_polygon_wgs84": [
+        [
+          108.4424423,
+          11.925716
+        ],
+        [
+          108.4353077,
+          11.906128
+        ],
+        [
+          108.4348923,
+          11.906272
+        ],
+        [
+          108.4419577,
+          11.925884
+        ],
+        [
+          108.4424423,
+          11.925716
+        ]
+      ],
+      "glb_file": "tc_02_cap_treo_doi_robin_truc_lam.glb",
+      "glb_path": "02_ASSETS_3D/tourism_complexes/tc_02_cap_treo_doi_robin_truc_lam.glb",
+      "sha256": "ccf71dc4b4668bf43d6ce5626f86863d8ede06ff1daf9d8e426df730b000fba9",
+      "size_bytes": 1243320,
+      "triangles": 14196,
+      "nodes": 19,
+      "materials": 18,
+      "embedded_textures": 2,
+      "no_khr_transmission": true,
+      "sourced_kits_reused": [
+        "02_ASSETS_3D/sourced_library/landmarks/lm_24_doi_robin_cable_car_station.glb",
+        "02_ASSETS_3D/sourced_library/urban_props/prop_08_robin_cable_car_cabin.glb",
+        "02_ASSETS_3D/sourced_library/landmarks/kit_vietnamese_pagoda_roof_stupa.glb"
+      ],
+      "camera_preset": {
+        "eye_gltf": [
+          -408.158,
+          43.104,
+          1562.38
+        ],
+        "target_gltf": [
+          -348.158,
+          19.104,
+          1712.38
+        ],
+        "fov_deg": 45.0
+      },
+      "architectural_style": "Doppelmayr Austrian Alpine Ropeway & Da Lat Panorama Terminals",
+      "architect": "Doppelmayr Seilbahnen GmbH (Áo) & Dalattourist",
+      "year_completed": "2003",
+      "source_url": "https://vi.wikipedia.org/wiki/C%C3%A1p_treo_%C4%90%C3%A0_L%E1%BA%A1t",
+      "description_vi": "Tuyến Cáp treo Đà Lạt (Đồi Robin – Thiền viện Trúc Lâm) dài 2.267m công nghệ Doppelmayr (Áo) khánh thành năm 2003: gồm Nhà ga Đồi Robin (1517m) kèm đài ngắm cảnh Panorama, Nhà ga Trúc Lâm trên núi Phượng Hoàng, 12 trụ tháp thép lattice xuyên rừng thông (đỉnh cao nhất tại trụ T04-T05), hệ dây cáp đôi võng catenary và 24 cabin đa sắc tỏa sáng ấm vào ban đêm."
+    },
+    {
+      "id": "tc_03_chua_linh_phuoc_ve_chai_complex",
+      "name_vi": "Quần thể Chùa Linh Phước – Chùa Ve Chai Trại Mát (Tháp 37m, Rồng 49m, Điện Quan Thế Âm)",
+      "name_en": "Linh Phuoc Ceramic Mosaic Pagoda Complex (37m 7-Tier Bell Tower, 49m Dragon & Guanyin Hall)",
+      "task_id": "T8_W3_CHUA_LINH_PHUOC_VE_CHAI_LOD0",
+      "wave": 3,
+      "slot": 8,
+      "ring": 1,
+      "status": "built",
+      "built": true,
+      "lat": 11.94455,
+      "lon": 108.50085,
+      "elev_msl_m": 1531.366,
+      "x_m": 6054.466,
+      "y_m": 459.861,
+      "z_local_m": 53.366,
+      "gltf_position": [
+        6054.466,
+        53.366,
+        -459.861
+      ],
+      "tile_id": "T_E03_N00",
+      "spanned_tiles": [
+        "T_E03_N00"
+      ],
+      "heading_deg": 180.0,
+      "rotation_y_rad": -3.141593,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "pivot_local_gltf": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "foundation_skirt_m": -4.2,
+      "stupa_7tier_height_m": 37.0,
+      "dragon_49m_length_m": 49.2,
+      "immortal_flower_statue_height_m": 18.0,
+      "bbox_min_m": [
+        -39.0,
+        -4.2,
+        -30.922
+      ],
+      "bbox_max_m": [
+        39.0,
+        37.0,
+        34.0
+      ],
+      "footprint_m": {
+        "width_x": 78.0,
+        "length_z": 64.92,
+        "height_span_y": 41.2
+      },
+      "exclusion_polygon_wgs84": [
+        [
+          108.5012173,
+          11.9442625
+        ],
+        [
+          108.5004827,
+          11.9442625
+        ],
+        [
+          108.5004827,
+          11.9448734
+        ],
+        [
+          108.5012173,
+          11.9448734
+        ],
+        [
+          108.5012173,
+          11.9442625
+        ]
+      ],
+      "glb_file": "tc_03_chua_linh_phuoc_ve_chai_complex.glb",
+      "glb_path": "02_ASSETS_3D/tourism_complexes/tc_03_chua_linh_phuoc_ve_chai_complex.glb",
+      "sha256": "a55a11cd3038b6b41ef5e9b9a79b53d0cba6176377cbbf27e22d7166ae28ca3f",
+      "size_bytes": 894768,
+      "triangles": 11540,
+      "nodes": 15,
+      "materials": 14,
+      "embedded_textures": 2,
+      "no_khr_transmission": true,
+      "sourced_kits_reused": [
+        "02_ASSETS_3D/sourced_library/landmarks/lm_16_chua_linh_phuoc_base.glb",
+        "02_ASSETS_3D/sourced_library/landmarks/kit_vietnamese_pagoda_roof_stupa.glb"
+      ],
+      "camera_preset": {
+        "eye_gltf": [
+          6108.466,
+          89.366,
+          -391.861
+        ],
+        "target_gltf": [
+          6054.466,
+          65.366,
+          -459.861
+        ],
+        "fov_deg": 45.0
+      },
+      "architectural_style": "Vietnamese Ceramic-Mosaic (Ve Chai) Buddhist Pagoda & 7-Tier Bell Stupa",
+      "architect": "Thượng tọa Thích Tâm Vị & nghệ nhân khảm sành Huế - Đà Lạt",
+      "year_completed": "1950 (trùng tu khảm sành 1990 - 2010)",
+      "source_url": "https://vi.wikipedia.org/wiki/Ch%C3%B9a_Linh_Ph%C6%B0%E1%BB%9Bc",
+      "description_vi": "Quần thể Chùa Linh Phước (Chùa Ve Chai — 120 Tự Phước, Trại Mát) cấp LOD0: gồm Bảo tháp chuông Linh Tháp 7 tầng lục giác cao đúng 37.0m treo Đại Hồng Chung 8,5 tấn, Long Hoa Viên với tượng rồng uốn lượn dài 49.0m kết từ 12.000 vỏ chai bia quanh tượng Phật Di Lặc, Chánh điện 33m x 12m có 2 hàng cột rồng khảm sành, Điện Quan Thế Âm 3 tầng và Bảo đài tượng Quan Thế Âm kết từ 600.000 hoa bất tử cao 18.0m."
+    },
+    {
+      "id": "tc_04_domaine_de_marie_and_cam_ly_churches",
+      "name_vi": "Quần thể Nhà thờ Domaine de Marie (Mai Anh) hồng đất & Nhà thờ Cam Ly mái nhà Rông (LOD0)",
+      "name_en": "Domaine de Marie Terracotta-Pink Convent & Cam Ly Central Highlands Rong-Roof Church (LOD0)",
+      "task_id": "T8_W4_DOMAINE_DE_MARIE_CAM_LY_CHURCH",
+      "wave": 4,
+      "slot": 8,
+      "ring": 0,
+      "status": "built",
+      "built": true,
+      "coordinate_space": "world_gltf_y_up",
+      "lat": 11.94885,
+      "lon": 108.43078,
+      "elev_msl_m": 1509.517,
+      "x_m": -1576.921,
+      "y_m": 938.535,
+      "z_local_m": 31.517,
+      "gltf_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "sub_complexes": {
+        "domaine_de_marie": {
+          "lat": 11.94885,
+          "lon": 108.43078,
+          "x_m": -1576.921,
+          "y_m": 938.535,
+          "elev_msl_m": 1509.517,
+          "gltf_anchor": [
+            -1576.921,
+            31.517,
+            -938.535
+          ],
+          "heading_deg": 120.0,
+          "chapel_dimensions_m": [
+            33.0,
+            11.0,
+            20.2
+          ],
+          "convent_wings_3story": 3,
+          "exclusion_polygon_wgs84": [
+            [
+              108.4308557,
+              11.9492247
+            ],
+            [
+              108.4311496,
+              11.9487268
+            ],
+            [
+              108.430577,
+              11.9484034
+            ],
+            [
+              108.4302832,
+              11.9489013
+            ],
+            [
+              108.4308557,
+              11.9492247
+            ]
+          ]
+        },
+        "nha_tho_cam_ly": {
+          "lat": 11.9442,
+          "lon": 108.4258,
+          "x_m": -2119.297,
+          "y_m": 420.899,
+          "elev_msl_m": 1456.392,
+          "gltf_anchor": [
+            -2119.297,
+            -21.608,
+            -420.899
+          ],
+          "heading_deg": 145.0,
+          "chapel_dimensions_m": [
+            27.0,
+            12.0,
+            17.2
+          ],
+          "flat_roof_tiles_equiv": 80000,
+          "exclusion_polygon_wgs84": [
+            [
+              108.4257459,
+              11.9445003
+            ],
+            [
+              108.4261069,
+              11.9442529
+            ],
+            [
+              108.4258436,
+              11.943885
+            ],
+            [
+              108.4254826,
+              11.9441323
+            ],
+            [
+              108.4257459,
+              11.9445003
+            ]
+          ]
+        }
+      },
+      "tile_id": "T_W01_N00",
+      "spanned_tiles": [
+        "T_W01_N00"
+      ],
+      "heading_deg": 120.0,
+      "rotation_y_rad": 0.0,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "foundation_skirt_m": -4.2,
+      "bbox_min_m": [
+        -2153.87,
+        -25.808,
+        -980.248
+      ],
+      "bbox_max_m": [
+        -1536.672,
+        54.092,
+        -385.835
+      ],
+      "footprint_m": {
+        "width_x": 617.2,
+        "length_z": 594.41,
+        "height_span_y": 79.9
+      },
+      "exclusion_polygon_wgs84": [
+        [
+          108.4308557,
+          11.9492247
+        ],
+        [
+          108.4311496,
+          11.9487268
+        ],
+        [
+          108.430577,
+          11.9484034
+        ],
+        [
+          108.4302832,
+          11.9489013
+        ],
+        [
+          108.4308557,
+          11.9492247
+        ]
+      ],
+      "glb_file": "tc_04_domaine_de_marie_and_cam_ly_churches.glb",
+      "glb_path": "02_ASSETS_3D/tourism_complexes/tc_04_domaine_de_marie_and_cam_ly_churches.glb",
+      "sha256": "f41516b07b2395a6561ec88a1b05ad126965bbd5ccb427b725f2c9bcfab813ab",
+      "size_bytes": 737224,
+      "triangles": 9205,
+      "nodes": 14,
+      "materials": 13,
+      "embedded_textures": 3,
+      "no_khr_transmission": true,
+      "sourced_kits_reused": [
+        "02_ASSETS_3D/sourced_library/landmarks/lm_10_domaine_de_marie_base.glb",
+        "02_ASSETS_3D/sourced_library/landmarks/lm_32_domaine_de_marie_convent_courtyard_kit.glb",
+        "02_ASSETS_3D/sourced_library/landmarks/lm_38_nha_tho_cam_ly_nha_rong_roof.glb"
+      ],
+      "camera_preset": {
+        "eye_gltf": [
+          -1523.3518,
+          50.517,
+          -941.7504
+        ],
+        "target_gltf": [
+          -1575.1889,
+          40.017,
+          -939.535
+        ],
+        "fov_deg": 44.0
+      },
+      "architectural_style": "Normandy French & Central Highlands K'Ho Rong-Roof Vernacular Fusion",
+      "architect": "Dòng Nữ tử Bác Ái Vinh Sơn / KTS Jonchère (Domaine de Marie) & Linh mục Boutary / KTS Kermarrec / Đỗ Kiều (Nhà thờ Cam Ly)",
+      "year_completed": "1943 (Domaine de Marie) & 1968 (Nhà thờ Cam Ly)",
+      "source_url": "https://vi.wikipedia.org/wiki/Nh%C3%A0_th%E1%BB%9D_Domaine_de_Marie",
+      "description_vi": "Tổ hợp 2 quần thể kiến trúc Công giáo giao thoa bản địa Tây Nguyên đặc sắc nhất Đà Lạt tại ô T_W01_N00: (1) Nhà thờ Domaine de Marie (1940–1943, Số 1 Ngô Quyền) mặt bằng chữ thập 33m x 11m, tường đá chẻ Normandie quét vôi hồng đất, tiền đình tam giác cân có cửa sổ hoa hồng & bậc thang đôi hội tụ, mái dốc dáng nhà Rông gắn 10 cửa sổ mái kính màu Pháp, tháp chuông sau, 3 dãy tu viện 3 tầng vàng kem bao quanh vườn hoa hải đường và phần mộ Phu nhân Toàn quyền Decoux (1944); (2) Nhà thờ Cam Ly / Nhà thờ Sơn Cước (1960–1968, Số 11 Nguyễn Khuyến) mặt bằng 324m2 (27m x 12m), 16 cột bê tông trần 3m đỡ giàn kèo gỗ ghép 12m, mái nhà Rông cao 17m hình mũi tên / lưỡi búa lợp 80.000 viên ngói phẳng, kính màu hoa văn dân tộc K'Ho, tiền sảnh Cọp – Phượng Hoàng, bàn thờ gỗ thông già 3,9m và 3 sừng trâu."
+    },
+    {
+      "id": "tc_05_vuon_hoa_tp_and_thung_lung_tinh_yeu",
+      "name_vi": "Quần thể Vườn Hoa Thành Phố Đà Lạt & Khu Du lịch Thung lũng Tình Yêu - Cầu Kính Ngàn Thông 7D (LOD0)",
+      "name_en": "Da Lat City Flower Park & Valley of Love – 325m Ngan Thong 7D Glass Suspension Bridge (LOD0)",
+      "task_id": "T8_W5_VUON_HOA_TP_THUNG_LUNG_TINH_YEU",
+      "wave": 5,
+      "slot": 8,
+      "ring": 1,
+      "status": "built",
+      "built": true,
+      "coordinate_space": "world_gltf_y_up",
+      "lat": 11.94825,
+      "lon": 108.44915,
+      "elev_msl_m": 1523.382,
+      "x_m": 423.772,
+      "y_m": 871.743,
+      "z_local_m": 45.382,
+      "gltf_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "sub_complexes": {
+        "vuon_hoa_thanh_pho": {
+          "lat": 11.94825,
+          "lon": 108.44915,
+          "x_m": 423.772,
+          "y_m": 871.743,
+          "elev_msl_m": 1523.382,
+          "gltf_anchor": [
+            423.772,
+            45.382,
+            -871.743
+          ],
+          "heading_deg": 200.0,
+          "tile_id": "T_E00_N00",
+          "floral_arch_span_m": 64.0,
+          "fountain_diameter_m": 24.0,
+          "orchid_conservatories": 2,
+          "cactus_glass_dome_diameter_m": 28.8,
+          "exclusion_polygon_wgs84": [
+            [
+              108.4485177,
+              11.9484263
+            ],
+            [
+              108.4495185,
+              11.9487827
+            ],
+            [
+              108.4498263,
+              11.9479555
+            ],
+            [
+              108.4488254,
+              11.9475991
+            ],
+            [
+              108.4485177,
+              11.9484263
+            ]
+          ]
+        },
+        "thung_lung_tinh_yeu_cau_kinh_ngan_thong": {
+          "lat": 11.9765,
+          "lon": 108.4495,
+          "x_m": 461.891,
+          "y_m": 4016.519,
+          "elev_msl_m": 1488.0,
+          "gltf_anchor": [
+            461.891,
+            10.0,
+            -4016.519
+          ],
+          "heading_deg": 190.0,
+          "tile_id": "T_E00_N02",
+          "cau_kinh_length_m": 325.0,
+          "cau_kinh_width_m": 3.0,
+          "cau_kinh_valley_clearance_m": 90.0,
+          "heart_labyrinth_ficus_trees": 24000,
+          "exclusion_polygon_wgs84": [
+            [
+              108.4489261,
+              11.9768388
+            ],
+            [
+              108.4499208,
+              11.9770104
+            ],
+            [
+              108.4500802,
+              11.9761258
+            ],
+            [
+              108.4490856,
+              11.9759542
+            ],
+            [
+              108.4489261,
+              11.9768388
+            ]
+          ]
+        }
+      },
+      "tile_id": "T_E00_N00",
+      "spanned_tiles": [
+        "T_E00_N00",
+        "T_E00_N02"
+      ],
+      "heading_deg": 200.0,
+      "rotation_y_rad": 0.0,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "foundation_skirt_m": -4.2,
+      "bbox_min_m": [
+        354.905,
+        -16.115,
+        -4069.461
+      ],
+      "bbox_max_m": [
+        808.117,
+        59.182,
+        -799.283
+      ],
+      "footprint_m": {
+        "width_x": 453.21,
+        "length_z": 3270.18,
+        "height_span_y": 75.3
+      },
+      "exclusion_polygon_wgs84": [
+        [
+          108.4485177,
+          11.9484263
+        ],
+        [
+          108.4495185,
+          11.9487827
+        ],
+        [
+          108.4498263,
+          11.9479555
+        ],
+        [
+          108.4488254,
+          11.9475991
+        ],
+        [
+          108.4485177,
+          11.9484263
+        ]
+      ],
+      "glb_file": "tc_05_vuon_hoa_tp_and_thung_lung_tinh_yeu.glb",
+      "glb_path": "02_ASSETS_3D/tourism_complexes/tc_05_vuon_hoa_tp_and_thung_lung_tinh_yeu.glb",
+      "sha256": "f607d33b56a66245359aa16fcfd7e54765da4028f73b6a194f68c85739ee9400",
+      "size_bytes": 974044,
+      "triangles": 10889,
+      "nodes": 15,
+      "materials": 12,
+      "embedded_textures": 3,
+      "no_khr_transmission": true,
+      "sourced_kits_reused": [
+        "02_ASSETS_3D/sourced_library/landmarks/lm_14_vuon_hoa_tp_gate_base.glb",
+        "02_ASSETS_3D/sourced_library/landmarks/lm_59_vuon_hoa_tp_orchid_conservatory_and_cactus_glass_dome_kit.glb",
+        "02_ASSETS_3D/sourced_library/landmarks/lm_17_thung_lung_tinh_yeu_pavilion.glb",
+        "02_ASSETS_3D/sourced_library/landmarks/lm_58_doi_mong_mo_central_highlands_gong_stage_and_brocade_village.glb"
+      ],
+      "camera_preset": {
+        "eye_gltf": [
+          427.1646,
+          71.3823,
+          -955.9837
+        ],
+        "target_gltf": [
+          420.3518,
+          51.3823,
+          -881.1399
+        ],
+        "fov_deg": 46.0
+      },
+      "architectural_style": "Botanical Floral Archway Conservatory & 325m 7D Glass Suspension Skybridge",
+      "architect": "Công ty Công trình Đô thị Đà Lạt (Vườn Hoa TP) & Tập đoàn TTC (Thung lũng Tình Yêu - Cầu Kính Ngàn Thông 7D)",
+      "year_completed": "1966 / 1985 (Vườn Hoa TP) & 1972 / 2023 (Thung lũng Tình Yêu - Cầu Kính Ngàn Thông)",
+      "source_url": "https://nhandan.vn/cau-kinh-cong-nghe-7d-dai-325m-tai-da-lat-chinh-thuc-phuc-vu-du-khach-post768199.html",
+      "description_vi": "Tổ hợp 2 danh thắng du lịch sinh thái – cảnh quan biểu tượng phía Bắc Đà Lạt cấp LOD0: (1) Vườn Hoa Thành Phố Đà Lạt (Số 2 Trần Nhân Tông, ô T_E00_N00) rộng 7ha với Cổng vòm hoa 3 nhịp rộng 64m kết từ hàng ngàn chậu hoa, Đài phun nước trung tâm đường kính 24m, thảm hoa 300+ loài, 2 Nhà kính Hoa Lan cấy mô và Nhà vòm kính Xương rồng Châu Phi đường kính 28.8m; (2) Khu Du lịch Thung lũng Tình Yêu & Cầu Kính Ngàn Thông 7D (Số 3-5-7 Mai Anh Đào, ô T_E00_N02) với Cầu treo dây võng đáy kính 5 lớp dày 4cm dài đúng 325.0m, khổ cầu 3.0m, cao 90.0m nối Đồi Mộng Mơ và Đồi Vọng Cảnh, Mê Cung Tình Yêu hình trái tim 24.000 cây si, Nhà Vọng Cảnh và Sân khấu Cồng Chiêng."
+    },
+    {
+      "id": "tc_06_chua_linh_an_71m_and_samten_hills",
+      "name_vi": "Quần thể Chùa Linh Ẩn Nam Ban (Đại Tượng Quan Thế Âm 71m, 500 Tượng Quan Âm) & Khu Tâm linh Samten Hills Dalat (Đại Bảo Tháp Kinh Luân 37,22m) (LOD0)",
+      "name_en": "Linh An Pagoda Complex (71m Colossal Guanyin, 500 Guanyin Garden) & Samten Hills Dalat Vajrayana Sanctuary (37.22m 200-Ton 24K Gold Prayer Wheel) (LOD0)",
+      "task_id": "T8_AUTO_W6_LINH_AN_71M_GUANYIN_AND_SAMTEN_HILLS",
+      "wave": 6,
+      "slot": 8,
+      "ring": 3,
+      "status": "built",
+      "built": true,
+      "coordinate_space": "world_gltf_y_up",
+      "lat": 11.82528,
+      "lon": 108.33472,
+      "elev_msl_m": 1492.234,
+      "x_m": -12038.902,
+      "y_m": -12817.215,
+      "z_local_m": 14.234,
+      "gltf_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "sub_complexes": {
+        "chua_linh_an_nam_ban": {
+          "lat": 11.82528,
+          "lon": 108.33472,
+          "x_m": -12038.902,
+          "y_m": -12817.215,
+          "elev_msl_m": 1492.234,
+          "gltf_anchor": [
+            -12038.902,
+            14.234,
+            12817.215
+          ],
+          "heading_deg": 215.0,
+          "tile_id": "T_W06_S06",
+          "colossal_guanyin_height_m": 71.0,
+          "colossal_guanyin_internal_steps": 250,
+          "main_sanctum_area_m2": 1440.0,
+          "laughing_buddha_height_m": 12.5,
+          "vuon_tinh_thanh_guanyin_statues": 500,
+          "exclusion_polygon_wgs84": [
+            [
+              108.3339994,
+              11.8253785
+            ],
+            [
+              108.3348718,
+              11.8259762
+            ],
+            [
+              108.3354617,
+              11.825152
+            ],
+            [
+              108.3345892,
+              11.8245544
+            ],
+            [
+              108.3339994,
+              11.8253785
+            ]
+          ]
+        },
+        "samten_hills_dalat_tu_tra": {
+          "lat": 11.7335,
+          "lon": 108.4682,
+          "x_m": 2498.525,
+          "y_m": -23034.118,
+          "elev_msl_m": 1489.866,
+          "gltf_anchor": [
+            2498.525,
+            11.866,
+            23034.118
+          ],
+          "heading_deg": 175.0,
+          "tile_id": "T_E01_S12",
+          "prayer_wheel_height_m": 37.22,
+          "prayer_wheel_diameter_m": 16.53,
+          "prayer_wheel_weight_tons": 200.0,
+          "amitayus_statue_height_m": 10.5,
+          "maitreya_statue_height_m": 10.5,
+          "exclusion_polygon_wgs84": [
+            [
+              108.4677075,
+              11.7340742
+            ],
+            [
+              108.4687869,
+              11.7339818
+            ],
+            [
+              108.4686925,
+              11.7329258
+            ],
+            [
+              108.4676131,
+              11.7330182
+            ],
+            [
+              108.4677075,
+              11.7340742
+            ]
+          ]
+        }
+      },
+      "tile_id": "T_W06_S06",
+      "spanned_tiles": [
+        "T_W06_S06",
+        "T_E01_S12"
+      ],
+      "heading_deg": 215.0,
+      "rotation_y_rad": 0.0,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "foundation_skirt_m": -4.5,
+      "bbox_min_m": [
+        -12117.386,
+        7.516,
+        12739.713
+      ],
+      "bbox_max_m": [
+        2562.443,
+        88.434,
+        23098.036
+      ],
+      "footprint_m": {
+        "width_x": 14679.83,
+        "length_z": 10358.32,
+        "height_span_y": 80.92
+      },
+      "exclusion_polygon_wgs84": [
+        [
+          108.3339994,
+          11.8253785
+        ],
+        [
+          108.3348718,
+          11.8259762
+        ],
+        [
+          108.3354617,
+          11.825152
+        ],
+        [
+          108.3345892,
+          11.8245544
+        ],
+        [
+          108.3339994,
+          11.8253785
+        ]
+      ],
+      "glb_file": "tc_06_chua_linh_an_71m_and_samten_hills.glb",
+      "glb_path": "02_ASSETS_3D/tourism_complexes/tc_06_chua_linh_an_71m_and_samten_hills.glb",
+      "sha256": "bb9c8683940f7f08c69c14e4a3746eecd720095948f420d667232270b08862cc",
+      "size_bytes": 890860,
+      "triangles": 10860,
+      "nodes": 12,
+      "materials": 12,
+      "embedded_textures": 3,
+      "no_khr_transmission": true,
+      "sourced_kits_reused": [
+        "02_ASSETS_3D/sourced_library/landmarks/lm_53_chua_linh_an_nam_ban_71m_guanyin_statue_and_sanctuary.glb",
+        "02_ASSETS_3D/sourced_library/landmarks/lm_28_chua_linh_an_guan_yin_and_elephant_falls.glb",
+        "02_ASSETS_3D/sourced_library/landmarks/kit_vietnamese_pagoda_roof_stupa.glb"
+      ],
+      "camera_preset": {
+        "eye_gltf": [
+          -12131.9726,
+          58.2337,
+          12774.9556
+        ],
+        "target_gltf": [
+          -12031.0368,
+          36.2337,
+          12821.4739
+        ],
+        "fov_deg": 48.0
+      },
+      "architectural_style": "Vietnamese Mahayana Hillside Sanctuary (71m Colossal Guanyin) & Himalayan Vajrayana Golden Prayer Wheel (37.22m Guinness Record)",
+      "architect": "Thượng tọa Thích Tâm Vị (Chùa Linh Ẩn) & Đại lão Hòa thượng Drubwang Sonam Jorfel Rinpoche - Kim Phát (Samten Hills Dalat)",
+      "year_completed": "1993 / 1999 / 2017 (Chùa Linh Ẩn) & 2022 / 2023 (Samten Hills Dalat)",
+      "source_url": "https://travel.com.vn/tin-tuc-du-lich/chua-linh-an-da-lat-v18543.aspx",
+      "description_vi": "Tổ hợp 2 quần thể du lịch văn hóa – tâm linh quy mô kỷ lục vùng vành đai RING_3 ngoại vi Đà Lạt cấp LOD0: (1) Quần thể Chùa Linh Ẩn (Đường Ba Đình, Thị trấn Nam Ban, Huyện Lâm Hà, sát Thác Voi — ô T_W06_S06) rộng 4ha với Đại tượng Bồ Tát Quan Thế Âm lộ thiên cao đúng 71.0m (cao nhất Lâm Đồng / Việt Nam, có 250 bậc thang trong lòng tượng), Chánh điện rộng 1.400m² mái ngói đỏ đao cong 2 tầng kèm cặp rồng xi măng dài 22m, Tượng Phật Di Lặc trắng cao 12.5m (rộng 6.5m, ngang 9.0m) và Vườn Tịnh Thánh quy tụ gần 500 pho tượng Quan Thế Âm xếp hàng trang nghiêm; (2) Quần thể Không gian Văn hóa Tâm linh Phật giáo Kim Cương Thừa Samten Hills Dalat (Thôn Kambute, Xã Tu Tra, Huyện Đơn Dương — ô T_E01_S12) với Đại Bảo Tháp Kinh Luân Drigung Kagyu Rinchen Khorchen Khorwe Go Gek bằng đồng tinh khiết dát vàng 24K cao đúng 37.22m, đường kính 16.53m, nặng 200 tấn (Kỷ lục Guinness Thế giới), Nhà trưng bày Di sản Phật giáo Himalaya, Tượng Phật Vô Lượng Thọ 10.5m, Tượng Phật Di Lặc thếp vàng 10.5m và Nhà Dâng Đèn Bơ."
+    }
+  ],
+  "total_triangles_built": 75101
+}

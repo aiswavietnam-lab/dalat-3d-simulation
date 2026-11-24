@@ -1,0 +1,842 @@
+{
+  "schema_version": "1.0.0",
+  "project": "DALAT_3D_SIMULATION",
+  "wave": "T5_AUTO_R2_OUTER_CORRIDORS_AND_ROADS_109TILES",
+  "coordinate_origin": {
+    "name": "Tam_Ho_Xuan_Huong_Da_Lat",
+    "lat": 11.940419,
+    "lon": 108.445259,
+    "elev_msl_m": 1478.0,
+    "epsg_utm": "EPSG:32649",
+    "tile_size_m": 2000.0,
+    "axes_gltf": "+X=East, +Y=Up (elev_msl - 1478.0), +Z=South (-Y_north)"
+  },
+  "default_preset_id": "overview_xuan_huong",
+  "default_climate_id": "early_mist",
+  "camera_presets": [
+    {
+      "id": "overview_xuan_huong",
+      "name_vi": "Toàn cảnh Hồ Xuân Hương",
+      "category": "overview",
+      "tile_id": "T_E00_N00",
+      "position_gltf": [
+        -680.0,
+        420.0,
+        860.0
+      ],
+      "target_gltf": [
+        0.0,
+        8.0,
+        -40.0
+      ],
+      "fov": 48,
+      "duration_ms": 1400,
+      "description": "Góc nhìn toàn cảnh thung lũng trung tâm Hồ Xuân Hương, Quảng trường Lâm Viên và Đồi Cù."
+    },
+    {
+      "id": "quang_truong_lam_vien",
+      "name_vi": "Quảng trường Lâm Viên",
+      "category": "landmark",
+      "landmark_id": "lm_01_quang_truong_lam_vien",
+      "tile_id": "T_E00_N00",
+      "position_gltf": [
+        -260.0,
+        95.0,
+        390.0
+      ],
+      "target_gltf": [
+        -79.6,
+        12.0,
+        185.8
+      ],
+      "fov": 45,
+      "duration_ms": 1300,
+      "description": "Cận cảnh công trình Hoa Dã Quỳ vàng và Nụ Atiso kính xanh ven bờ Nam Hồ Xuân Hương."
+    },
+    {
+      "id": "thuy_ta_cau_ong_dao",
+      "name_vi": "Thủy Tạ & Cầu Ông Đạo",
+      "category": "landmark",
+      "landmark_id": "lm_06_thuy_ta_cau_ong_dao",
+      "tile_id": "T_E00_N00",
+      "position_gltf": [
+        -410.0,
+        72.0,
+        90.0
+      ],
+      "target_gltf": [
+        -600.0,
+        6.0,
+        -95.8
+      ],
+      "fov": 45,
+      "duration_ms": 1300,
+      "description": "Bán đảo Nhà hàng Thủy Tạ trắng trên mặt hồ và đập tràn Cầu Ông Đạo."
+    },
+    {
+      "id": "ga_da_lat",
+      "name_vi": "Nhà Ga Đà Lạt",
+      "category": "landmark",
+      "landmark_id": "lm_02_ga_da_lat",
+      "tile_id": "T_E01_N00",
+      "position_gltf": [
+        860.0,
+        110.0,
+        60.0
+      ],
+      "target_gltf": [
+        1060.9,
+        28.0,
+        -176.0
+      ],
+      "fov": 45,
+      "duration_ms": 1400,
+      "description": "Kiến trúc Art Deco 3 mái chóp mô phỏng đỉnh núi Langbiang trên đường Quang Trung."
+    },
+    {
+      "id": "truong_cdsp_dalat",
+      "name_vi": "Trường CĐSP Đà Lạt",
+      "category": "landmark",
+      "landmark_id": "lm_04_truong_cdsp_dalat",
+      "tile_id": "T_E00_N00",
+      "position_gltf": [
+        610.0,
+        118.0,
+        -420.0
+      ],
+      "target_gltf": [
+        835.6,
+        36.0,
+        -659.0
+      ],
+      "fov": 45,
+      "duration_ms": 1400,
+      "description": "Dãy lớp học gạch trần uốn cong hình vòng cung cùng tháp chuông cổ Lycée Yersin."
+    },
+    {
+      "id": "nha_tho_con_ga",
+      "name_vi": "Nhà thờ Con Gà",
+      "category": "landmark",
+      "landmark_id": "lm_03_nha_tho_con_ga",
+      "tile_id": "T_E00_N00",
+      "position_gltf": [
+        -640.0,
+        125.0,
+        610.0
+      ],
+      "target_gltf": [
+        -841.8,
+        46.0,
+        405.1
+      ],
+      "fov": 45,
+      "duration_ms": 1350,
+      "description": "Nhà thờ Chính tòa Đà Lạt trên trục Trần Phú với tháp chuông cao 47m."
+    },
+    {
+      "id": "cho_da_lat_hoa_binh",
+      "name_vi": "Chợ Đà Lạt & Khu Hòa Bình",
+      "category": "landmark",
+      "landmark_id": "lm_05_cho_da_lat_hoa_binh",
+      "tile_id": "T_E00_N00",
+      "position_gltf": [
+        -680.0,
+        108.0,
+        75.0
+      ],
+      "target_gltf": [
+        -876.2,
+        18.0,
+        -125.9
+      ],
+      "fov": 46,
+      "duration_ms": 1350,
+      "description": "Trung tâm thương mại Chợ Đà Lạt và cầu thang chữ Y nối lên Khu Hòa Bình."
+    },
+    {
+      "id": "doi_cu_vuon_hoa",
+      "name_vi": "Đồi Cù & Vườn Hoa TP",
+      "category": "nature",
+      "tile_id": "T_E00_N00",
+      "position_gltf": [
+        -120.0,
+        165.0,
+        -320.0
+      ],
+      "target_gltf": [
+        220.0,
+        26.0,
+        -760.0
+      ],
+      "fov": 50,
+      "duration_ms": 1400,
+      "description": "Sân golf Đồi Cù xanh mướt ven bờ Bắc hồ và Vườn Hoa Thành Phố Đà Lạt."
+    },
+    {
+      "id": "dinh_bao_dai_2",
+      "name_vi": "Đồi Thông Dinh II",
+      "category": "landmark",
+      "landmark_id": "lm_08_dinh_2",
+      "tile_id": "T_E00_N00",
+      "position_gltf": [
+        420.0,
+        165.0,
+        820.0
+      ],
+      "target_gltf": [
+        723.3,
+        52.0,
+        547.6
+      ],
+      "fov": 48,
+      "duration_ms": 1400,
+      "description": "Quần thể đồi thông rậm rạp Dinh Bảo Đại II nhìn xuống thung lũng Hồ Xuân Hương."
+    },
+    {
+      "id": "ring0_aerial",
+      "name_vi": "Toàn cảnh Lưới RING_0 (6×6km)",
+      "category": "overview",
+      "tile_id": "T_E00_N00",
+      "position_gltf": [
+        0.0,
+        2450.0,
+        2650.0
+      ],
+      "target_gltf": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "fov": 50,
+      "duration_ms": 1600,
+      "description": "Góc nhìn trên cao quan sát toàn bộ 9 ô Tile RING_0 và cấu trúc mở rộng RING_1..3."
+    },
+    {
+      "id": "thai_phien_greenhouse_valley",
+      "name_vi": "Làng hoa Thái Phiên & Hồ Than Thở (T_E02_N01)",
+      "tile_id": "T_E02_N01",
+      "camera_pos_gltf": [
+        3650.0,
+        295.0,
+        -2450.0
+      ],
+      "look_at_gltf": [
+        4050.0,
+        42.0,
+        -2050.0
+      ],
+      "fov_deg": 48.0,
+      "recommended_lighting": "night_greenhouse",
+      "description_vi": "Thung lũng 670 nhà kính nông nghiệp trồng cúc và ly Thái Phiên rực sáng ánh đèn vàng ấm 2700K về đêm.",
+      "position_gltf": [
+        3650.0,
+        295.0,
+        -2450.0
+      ],
+      "target_gltf": [
+        4050.0,
+        42.0,
+        -2050.0
+      ],
+      "fov": 48.0,
+      "duration_ms": 1450,
+      "description": "Thung lũng 670 nhà kính nông nghiệp trồng cúc và ly Thái Phiên rực sáng ánh đèn vàng ấm 2700K về đêm."
+    },
+    {
+      "id": "van_thanh_flower_village",
+      "name_vi": "Làng hoa Vạn Thành (T_W02_N00)",
+      "tile_id": "T_W02_N00",
+      "camera_pos_gltf": [
+        -3550.0,
+        280.0,
+        420.0
+      ],
+      "look_at_gltf": [
+        -4000.0,
+        18.0,
+        -50.0
+      ],
+      "fov_deg": 48.0,
+      "recommended_lighting": "golden_hour",
+      "description_vi": "Thung lũng 723 nhà kính hoa hồng và đồng tiền Vạn Thành trải dài theo sườn đồi phía Tây Đà Lạt.",
+      "position_gltf": [
+        -3550.0,
+        280.0,
+        420.0
+      ],
+      "target_gltf": [
+        -4000.0,
+        18.0,
+        -50.0
+      ],
+      "fov": 48.0,
+      "duration_ms": 1450,
+      "description": "Thung lũng 723 nhà kính hoa hồng và đồng tiền Vạn Thành trải dài theo sườn đồi phía Tây Đà Lạt."
+    },
+    {
+      "id": "trai_mat_agric_terraces",
+      "name_vi": "Thung lũng Nông nghiệp Trại Mát & Chùa Linh Phước (T_E03_N00)",
+      "tile_id": "T_E03_N00",
+      "camera_pos_gltf": [
+        5550.0,
+        310.0,
+        480.0
+      ],
+      "look_at_gltf": [
+        6000.0,
+        52.0,
+        -60.0
+      ],
+      "fov_deg": 48.0,
+      "recommended_lighting": "night_greenhouse",
+      "description_vi": "Quần thể 719 nhà kính nông nghiệp bậc thang Trại Mát kết nối với ga Trại Mát và Chùa Linh Phước.",
+      "position_gltf": [
+        5550.0,
+        310.0,
+        480.0
+      ],
+      "target_gltf": [
+        6000.0,
+        52.0,
+        -60.0
+      ],
+      "fov": 48.0,
+      "duration_ms": 1450,
+      "description": "Quần thể 719 nhà kính nông nghiệp bậc thang Trại Mát kết nối với ga Trại Mát và Chùa Linh Phước."
+    },
+    {
+      "id": "tuyen_lam_truc_lam_peninsula",
+      "name_vi": "[RING_1] Hồ Tuyền Lâm & Thiền Viện Trúc Lâm (T_W01_S02)",
+      "category": "nature_resort",
+      "tile_id": "T_W01_S02",
+      "position_gltf": [
+        -1250.0,
+        220.0,
+        3550.0
+      ],
+      "target_gltf": [
+        -1650.0,
+        -95.0,
+        4150.0
+      ],
+      "fov": 48,
+      "duration_ms": 1500,
+      "description": "Quần thể biệt thự nghỉ dưỡng ven bán đảo Hồ Tuyền Lâm (1375m MSL) và đồi thông Phượng Hoàng."
+    },
+    {
+      "id": "lac_duong_langbiang_foot",
+      "name_vi": "[RING_2] Thị trấn Lạc Dương – Chân Langbiang (T_E00_N03)",
+      "category": "satellite_town",
+      "tile_id": "T_E00_N03",
+      "position_gltf": [
+        -380.0,
+        410.0,
+        -5450.0
+      ],
+      "target_gltf": [
+        120.0,
+        58.0,
+        -6100.0
+      ],
+      "fov": 48,
+      "duration_ms": 1550,
+      "description": "Đô thị vệ tinh Thị trấn Lạc Dương (761 công trình) dọc trục ĐT726 và chân đỉnh Radar Langbiang."
+    },
+    {
+      "id": "suoi_vang_dankia_ankroet",
+      "name_vi": "[RING_2] Hồ Suối Vàng – Dankia & Đồi Cỏ Hồng (T_W02_N03)",
+      "category": "nature_resort",
+      "tile_id": "T_W02_N03",
+      "position_gltf": [
+        -3350.0,
+        340.0,
+        -5450.0
+      ],
+      "target_gltf": [
+        -3850.0,
+        -25.0,
+        -6050.0
+      ],
+      "fov": 48,
+      "duration_ms": 1550,
+      "description": "Quần thể biệt thự sinh thái Đồi Cỏ Hồng và làng thủy điện Ankroet bên bờ Đông Hồ Suối Vàng – Dankia."
+    },
+    {
+      "id": "xuan_tho_persimmon_valley",
+      "name_vi": "[RING_2] Xã Xuân Thọ – Nông trại Hồng Gió (T_E04_N00)",
+      "category": "agri_valley",
+      "tile_id": "T_E04_N00",
+      "position_gltf": [
+        7450.0,
+        320.0,
+        450.0
+      ],
+      "target_gltf": [
+        8000.0,
+        45.0,
+        0.0
+      ],
+      "fov": 48,
+      "duration_ms": 1550,
+      "description": "Thung lũng nông nghiệp công nghệ cao và nhà lồng phơi hồng gió Xuân Thọ (724 công trình, 456 nhà kính)."
+    },
+    {
+      "id": "cau_dat_tea_wind_farm",
+      "name_vi": "[RING_2] Đồi Chè Cầu Đất – Xã Trạm Hành (T_E05_S01)",
+      "category": "agri_valley",
+      "tile_id": "T_E05_S01",
+      "position_gltf": [
+        9350.0,
+        385.0,
+        1650.0
+      ],
+      "target_gltf": [
+        10000.0,
+        82.0,
+        2000.0
+      ],
+      "fov": 48,
+      "duration_ms": 1600,
+      "description": "Khu dân cư Nhà máy Chè Cầu Đất 1927, quán cafe săn mây và nhà kính cao nguyên Trạm Hành (815 công trình)."
+    },
+    {
+      "id": "ta_nung_me_linh_coffee_valley",
+      "name_vi": "[RING_2] Thung lũng Cà phê Tà Nung – Mê Linh (T_W03_S02)",
+      "category": "agri_valley",
+      "tile_id": "T_W03_S02",
+      "position_gltf": [
+        -5450.0,
+        320.0,
+        3450.0
+      ],
+      "target_gltf": [
+        -6000.0,
+        -95.0,
+        4000.0
+      ],
+      "fov": 48,
+      "duration_ms": 1600,
+      "description": "Hành lang Đèo Tà Nung (ĐT725), tổ hợp cafe săn mây Mê Linh và đồn điền cà phê Arabica (1.537 công trình trên 2 ô T_W03_S01..S02)."
+    },
+    {
+      "id": "caudat_1927_tea_factory",
+      "name_vi": "[RING_2] Nhà Máy Chè Cổ Cầu Đất 1927 & Bảo Tàng Trà (T_E06_S03)",
+      "category": "heritage_highland",
+      "tile_id": "T_E06_S03",
+      "position_gltf": [
+        11280.0,
+        225.0,
+        5620.0
+      ],
+      "target_gltf": [
+        11750.0,
+        145.0,
+        5680.0
+      ],
+      "fov": 48,
+      "duration_ms": 1650,
+      "recommended_lighting": "early_mist",
+      "description": "Góc nhìn toàn cảnh Sở Trà Cầu Đất 1927 (Nhà máy chè cổ nhất Đông Dương) cùng khu nhà kính nông nghệ cao Cầu Đất Farm dọc Quốc lộ 20."
+    },
+    {
+      "id": "caudat_wind_turbines_ridge",
+      "name_vi": "[RING_2] Sống Núi 15 Tuabin Điện Gió & Cầu Gỗ Săn Mây Cầu Đất (T_E07_S04)",
+      "category": "highland_wind_farm",
+      "tile_id": "T_E07_S04",
+      "position_gltf": [
+        13350.0,
+        290.0,
+        7750.0
+      ],
+      "target_gltf": [
+        14120.0,
+        175.0,
+        8250.0
+      ],
+      "fov": 50,
+      "duration_ms": 1700,
+      "recommended_lighting": "sunset_lake",
+      "description": "Đỉnh đồi chè Cầu Đất ở cao độ 1.650m MSL với 15 trụ tuabin điện gió khổng lồ quay trong biển mây hoàng hôn Đông Nam Đà Lạt."
+    },
+    {
+      "id": "dankia_lonely_pine_pink_grass",
+      "name_vi": "[RING_2] Cây Thông Cô Đơn & Đồi Cỏ Hồng Bờ Tây Hồ Dankia (T_W04_N04)",
+      "category": "nature_resort",
+      "tile_id": "T_W04_N04",
+      "position_gltf": [
+        -8350.0,
+        165.0,
+        -7350.0
+      ],
+      "target_gltf": [
+        -7650.0,
+        45.0,
+        -7680.0
+      ],
+      "fov": 46,
+      "duration_ms": 1650,
+      "recommended_lighting": "early_mist",
+      "description": "Bờ Tây và Bắc lòng hồ Dankia – Suối Vàng với thảo nguyên Đồi Cỏ Hồng, khu cắm trại Cây Thông Cô Đơn và trang trại nhà kính Lạc Dương Tây."
+    },
+    {
+      "id": "langbiang_ba_peak_2167m",
+      "name_vi": "[RING_2] Đỉnh Núi Bà Langbiang (2167m) & Đỉnh Radar (1929m) (T_E00_N05)",
+      "category": "mountain_peak",
+      "tile_id": "T_E00_N05",
+      "position_gltf": [
+        -650.0,
+        760.0,
+        -8850.0
+      ],
+      "target_gltf": [
+        150.0,
+        620.0,
+        -9850.0
+      ],
+      "fov": 52,
+      "duration_ms": 1700,
+      "recommended_lighting": "highland_noon",
+      "description": "Nóc nhà cao nguyên Lâm Viên với cụm đỉnh đôi Núi Bà (2.167m) – Núi Ông (2.124m) và Đỉnh Radar (1.929m) nhìn xuống toàn cảnh Thị trấn Lạc Dương."
+    },
+    {
+      "id": "ta_nung_nam_ban_gateway",
+      "name_vi": "[RING_2] Chân Đèo Tà Nung Tây – Cửa Ngõ Thị Trấn Nam Ban (T_W04_S01)",
+      "category": "agri_valley",
+      "tile_id": "T_W04_S01",
+      "position_gltf": [
+        -7450.0,
+        140.0,
+        1550.0
+      ],
+      "target_gltf": [
+        -8150.0,
+        35.0,
+        2150.0
+      ],
+      "fov": 48,
+      "duration_ms": 1650,
+      "recommended_lighting": "sunset_lake",
+      "description": "Thung lũng chân đèo Tà Nung (ĐT725) mở ra đồn điền cà phê Mê Linh, xưởng ươm tơ dệt lụa truyền thống và cửa ngõ đi Thác Voi – Chùa Linh Ẩn."
+    },
+    {
+      "id": "thac_voi_chua_linh_an_nam_ban",
+      "name_vi": "[RING_2] Thác Voi (Liêng Rơwoa) & Chùa Linh Ẩn – Thị Trấn Nam Ban (T_W06_S02)",
+      "category": "waterfall_spiritual",
+      "tile_id": "T_W06_S02",
+      "position_gltf": [
+        -11350.0,
+        110.0,
+        3750.0
+      ],
+      "target_gltf": [
+        -12100.0,
+        -55.0,
+        4250.0
+      ],
+      "fov": 48,
+      "duration_ms": 1700,
+      "recommended_lighting": "highland_noon",
+      "description": "Quần thể danh thắng Thác Voi (Liêng Rơwoa), Chùa Linh Ẩn với tượng Quan Âm 71m và đô thị vệ tinh Thị trấn Nam Ban dọc trục ĐT725."
+    },
+    {
+      "id": "ct14_lien_khuong_prenn_expressway",
+      "name_vi": "[RING_2] Cao Tốc Liên Khương – Prenn & Cửa Ngõ Hiệp An Nam (T_E00_S05 / T_E01_S05)",
+      "category": "Southern_gateway",
+      "tile_id": "T_E00_S05",
+      "position_gltf": [
+        -450.0,
+        185.0,
+        8850.0
+      ],
+      "target_gltf": [
+        350.0,
+        -35.0,
+        10150.0
+      ],
+      "fov": 48,
+      "duration_ms": 1650,
+      "recommended_lighting": "sunset_lake",
+      "description": "Cửa ngõ phía Nam Đà Lạt nơi giao nhau giữa Chân Đèo Prenn, Đèo Mimosa và đại lộ Cao tốc Liên Khương – Prenn đi qua cánh đồng hoa lay-ơn Hiệp An."
+    },
+    {
+      "id": "caudat_south_deo_dran_summit",
+      "name_vi": "[RING_2] Nam Cánh Đồng Điện Gió Cầu Đất – Đỉnh Đèo Dran Bắc (T_E07_S05)",
+      "category": "highland_wind_farm",
+      "tile_id": "T_E07_S05",
+      "position_gltf": [
+        13850.0,
+        260.0,
+        9150.0
+      ],
+      "target_gltf": [
+        14450.0,
+        125.0,
+        10050.0
+      ],
+      "fov": 50,
+      "duration_ms": 1700,
+      "recommended_lighting": "early_mist",
+      "description": "Điểm cực Đông Nam vành đai RING_2 nơi đồi chè và cánh đồng tuabin điện gió Cầu Đất chuyển tiếp xuống đỉnh Đèo Dran trên Quốc lộ 20."
+    },
+    {
+      "id": "deo_dran_east_tram_hanh_pass",
+      "name_vi": "[RING_2] Đèo Dran Đông & Đồi Chè Trạm Hành Đông (T_E08_S05)",
+      "category": "mountain_pass",
+      "tile_id": "T_E08_S05",
+      "position_gltf": [
+        15450.0,
+        240.0,
+        9650.0
+      ],
+      "target_gltf": [
+        16250.0,
+        95.0,
+        10150.0
+      ],
+      "fov": 48,
+      "duration_ms": 1700,
+      "recommended_lighting": "early_mist",
+      "description": "Cung đường cua tay áo Đèo Dran phía Đông Cầu Đất trên Quốc lộ 20, bao quanh bởi đồi chè bậc thang và nhà lồng phơi hồng treo gió Trạm Hành."
+    },
+    {
+      "id": "ql27c_lac_duong_east_da_sar_gateway",
+      "name_vi": "[RING_2] Đông Thị Trấn Lạc Dương – Quốc Lộ 27C Đi Đạ Sar (T_E02_N04 / T_E02_N05)",
+      "category": "highland_corridor",
+      "tile_id": "T_E02_N04",
+      "position_gltf": [
+        3450.0,
+        265.0,
+        -7850.0
+      ],
+      "target_gltf": [
+        4150.0,
+        145.0,
+        -8950.0
+      ],
+      "fov": 48,
+      "duration_ms": 1650,
+      "recommended_lighting": "highland_noon",
+      "description": "Hành lang Quốc lộ 27C nối Thị trấn Lạc Dương về phía Đông qua thung lũng nhà kính hoa hồng Đạ Nghịt Đông và sườn Đông Bắc núi Bà Langbiang đi Đạ Sar."
+    },
+    {
+      "id": "hiep_thanh_ct14_southern_expressway",
+      "name_vi": "[RING_2] Hiệp Thạnh Bắc – Đại Lộ Cao Tốc Liên Khương – Prenn Nam (T_E00_S06)",
+      "category": "Southern_gateway",
+      "tile_id": "T_E00_S06",
+      "position_gltf": [
+        -350.0,
+        175.0,
+        11250.0
+      ],
+      "target_gltf": [
+        50.0,
+        -45.0,
+        12150.0
+      ],
+      "fov": 48,
+      "duration_ms": 1650,
+      "recommended_lighting": "sunset_lake",
+      "description": "Hành lang đại lộ Cao tốc Liên Khương – Prenn qua xã Hiệp Thạnh (Đức Trọng) với vùng chuyên canh nhà kính hoa lay-ơn và rau xuất khẩu quy mô lớn."
+    },
+    {
+      "id": "da_sar_west_ql27c_nha_trang_gateway",
+      "name_vi": "[RING_2] Cửa Ngõ Xã Đạ Sar Tây – Hành Lang Quốc Lộ 27C Đi Nha Trang (T_E03_N04)",
+      "category": "highland_corridor",
+      "tile_id": "T_E03_N04",
+      "position_gltf": [
+        5350.0,
+        260.0,
+        -7750.0
+      ],
+      "target_gltf": [
+        6250.0,
+        140.0,
+        -8350.0
+      ],
+      "fov": 48,
+      "duration_ms": 1700,
+      "recommended_lighting": "highland_noon",
+      "description": "Cửa ngõ phía Đông Bắc cao nguyên Lâm Viên trên Quốc lộ 27C nối Lạc Dương qua thung lũng nhà kính công nghệ cao xã Đạ Sar đi đèo Khánh Lê – Nha Trang."
+    },
+    {
+      "id": "ankroet_west_hydro_suoi_vang_forest",
+      "name_vi": "[RING_2] Tây Hồ Dankia – Thủy Điện Ankroet Tây & Rừng Thông Suối Vàng (T_W06_N04)",
+      "category": "lake_panorama",
+      "tile_id": "T_W06_N04",
+      "position_gltf": [
+        -11250.0,
+        210.0,
+        -7350.0
+      ],
+      "target_gltf": [
+        -12150.0,
+        65.0,
+        -8250.0
+      ],
+      "fov": 48,
+      "duration_ms": 1700,
+      "recommended_lighting": "early_mist",
+      "description": "Vùng thượng nguồn phía Tây Hồ Dankia – Suối Vàng và quần thể đập/nhà máy Thủy điện Ankroet cổ dưới tán rừng thông nguyên sinh."
+    },
+    {
+      "id": "caudat_east_wind_farm_tram_hanh_north",
+      "name_vi": "[RING_2] Đông Cánh Đồng Điện Gió Cầu Đất – Đồi Chè Trạm Hành Bắc (T_E08_S04 / T_E06_S02)",
+      "category": "highland_wind_farm",
+      "tile_id": "T_E08_S04",
+      "position_gltf": [
+        15150.0,
+        285.0,
+        7450.0
+      ],
+      "target_gltf": [
+        16150.0,
+        145.0,
+        8150.0
+      ],
+      "fov": 50,
+      "duration_ms": 1700,
+      "recommended_lighting": "sunset_lake",
+      "description": "Sườn Đông cao nguyên Cầu Đất – Trạm Hành Bắc nhìn bao quát đồi chè Oolong bậc thang, rừng thông Xuân Trường và dãy tuabin điện gió."
+    },
+    {
+      "id": "deo_dran_foot_dran_town_gateway",
+      "name_vi": "[RING_2] Chân Đèo Dran Đông – Cửa Ngõ Thị Trấn D'Ran Đơn Dương (T_E09_S05)",
+      "category": "mountain_pass",
+      "tile_id": "T_E09_S05",
+      "position_gltf": [
+        17150.0,
+        210.0,
+        9650.0
+      ],
+      "target_gltf": [
+        18250.0,
+        65.0,
+        10250.0
+      ],
+      "fov": 48,
+      "duration_ms": 1700,
+      "recommended_lighting": "early_mist",
+      "description": "Điểm cực Đông Nam Quốc lộ 20 nơi Đèo Dran hạ độ cao xuống thung lũng Thị trấn D'Ran (Đơn Dương) với vườn hồng giòn và nhà kính nông nghiệp."
+    },
+    {
+      "id": "da_sar_center_ql27c_rose_valley",
+      "name_vi": "[RING_2] Trung Tâm Xã Đạ Sar – Thung Lũng Nhà Kính Quốc Lộ 27C (T_E03_N05)",
+      "category": "highland_corridor",
+      "tile_id": "T_E03_N05",
+      "position_gltf": [
+        5250.0,
+        275.0,
+        -9450.0
+      ],
+      "target_gltf": [
+        6150.0,
+        145.0,
+        -10250.0
+      ],
+      "fov": 48,
+      "duration_ms": 1650,
+      "recommended_lighting": "highland_noon",
+      "description": "Trung tâm xã Đạ Sar (Lạc Dương) dọc hành lang Quốc lộ 27C với quần thể nhà kính hoa hồng, dâu tây công nghệ cao và biệt thự đồi thông."
+    },
+    {
+      "id": "gia_lam_west_dt725_dinh_van_corridor",
+      "name_vi": "[RING_2] Gia Lâm Tây – Hành Lang ĐT725 Đi Thị Trấn Đinh Văn Lâm Hà (T_W07_S03)",
+      "category": "highland_corridor",
+      "tile_id": "T_W07_S03",
+      "position_gltf": [
+        -13150.0,
+        145.0,
+        5250.0
+      ],
+      "target_gltf": [
+        -14150.0,
+        -35.0,
+        6150.0
+      ],
+      "fov": 48,
+      "duration_ms": 1700,
+      "recommended_lighting": "sunset_lake",
+      "description": "Hành lang Tỉnh lộ ĐT725 phía Tây Nam Thác Voi đi qua vùng đồi dâu tằm, cà phê Moka xã Gia Lâm hướng về Thị trấn Đinh Văn (Lâm Hà)."
+    }
+  ],
+  "climate_presets": [
+    {
+      "id": "early_mist",
+      "name_vi": "Sương sớm (06:15)",
+      "sky_hex": "#C8D9E6",
+      "fog_hex": "#DCE6EE",
+      "fog_density": 0.00055,
+      "sun_hex": "#FFE2B0",
+      "sun_intensity": 1.35,
+      "sun_elevation_deg": 14,
+      "sun_azimuth_deg": 82,
+      "ambient_hex": "#92A9BD",
+      "ambient_intensity": 0.65,
+      "emissive_scale": 0.2
+    },
+    {
+      "id": "highland_noon",
+      "name_vi": "Trưa cao nguyên (11:30)",
+      "sky_hex": "#7BB5E8",
+      "fog_hex": "#BFD9EE",
+      "fog_density": 0.00016,
+      "sun_hex": "#FFF9EB",
+      "sun_intensity": 2.1,
+      "sun_elevation_deg": 66,
+      "sun_azimuth_deg": 155,
+      "ambient_hex": "#B4D0E8",
+      "ambient_intensity": 0.75,
+      "emissive_scale": 0.0
+    },
+    {
+      "id": "sunset_lake",
+      "name_vi": "Hoàng hôn Hồ Xuân Hương (17:30)",
+      "sky_hex": "#D97F62",
+      "fog_hex": "#E39B7E",
+      "fog_density": 0.00038,
+      "sun_hex": "#FF8C42",
+      "sun_intensity": 1.8,
+      "sun_elevation_deg": 10,
+      "sun_azimuth_deg": 265,
+      "ambient_hex": "#8C6378",
+      "ambient_intensity": 0.55,
+      "emissive_scale": 0.55
+    },
+    {
+      "id": "mountain_night",
+      "name_vi": "Đêm phố núi (20:00)",
+      "sky_hex": "#0B162C",
+      "fog_hex": "#101E38",
+      "fog_density": 0.00042,
+      "sun_hex": "#6E8FBF",
+      "sun_intensity": 0.35,
+      "sun_elevation_deg": 38,
+      "sun_azimuth_deg": 220,
+      "ambient_hex": "#1B2E4F",
+      "ambient_intensity": 0.35,
+      "emissive_scale": 1.35
+    }
+  ],
+  "version": "2.5.0-wave17-109tiles-36presets",
+  "flythrough_tour": [
+    {
+      "stop_index": 1,
+      "preset_id": "preset_23_langbiang_ba_peak_2167m",
+      "title_vi": "Chặng 13: Đỉnh Núi Bà Langbiang 2167m & Đỉnh Radar 1929m",
+      "duration_sec": 7.5
+    },
+    {
+      "stop_index": 2,
+      "preset_id": "preset_22_dankia_lonely_pine_pink_grass",
+      "title_vi": "Chặng 14: Cây Thông Cô Đơn & Đồi Cỏ Hồng Bờ Tây Hồ Dankia",
+      "duration_sec": 7.5
+    },
+    {
+      "stop_index": 3,
+      "preset_id": "preset_21_caudat_wind_turbines_ridge",
+      "title_vi": "Chặng 15: Nhà Máy Chè Cổ 1927 & 15 Tuabin Điện Gió Cầu Đất",
+      "duration_sec": 8.0
+    }
+  ],
+  "updated_at_utc": "2026-11-24T03:09:19Z"
+}

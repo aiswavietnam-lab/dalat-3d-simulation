@@ -1,0 +1,247 @@
+{
+  "schema_version": "1.0.0",
+  "project_name": "DALAT_3D_SIMULATION",
+  "slot": 13,
+  "display_slot_name": "ĐÀ LẠT - 12",
+  "lane": "TERRAIN_EXPANSION_RING2_CORRIDORS",
+  "last_task_id": "T13_W1_LANGBIANG_PEAKS_5TILES",
+  "completed_waves": [
+    1
+  ],
+  "updated_at_utc": "2026-11-23T17:23:49Z",
+  "origin": {
+    "lat0": 11.940419,
+    "lon0": 108.445259,
+    "z0_msl_m": 1478.0,
+    "epsg_utm": "EPSG:32649",
+    "tile_size_m": 2000.0
+  },
+  "ring1_boundary_stitch_audit": {
+    "internal_shared_edges_checked": 5,
+    "internal_pairs": [
+      {
+        "pair": "T_W01_N05[East] <-> T_E00_N05[West]",
+        "shared_line_m": "X = -1000.0",
+        "max_err_mm": 0.0
+      },
+      {
+        "pair": "T_W01_N06[East] <-> T_E00_N06[West]",
+        "shared_line_m": "X = -1000.0",
+        "max_err_mm": 0.0
+      },
+      {
+        "pair": "T_W01_N06[South] <-> T_W01_N05[North]",
+        "shared_line_m": "Y = 11000.0",
+        "max_err_mm": 0.0
+      },
+      {
+        "pair": "T_E00_N06[East] <-> T_E01_N06[West]",
+        "shared_line_m": "X = 1000.0",
+        "max_err_mm": 0.0
+      },
+      {
+        "pair": "T_E00_N06[South] <-> T_E00_N05[North]",
+        "shared_line_m": "Y = 11000.0",
+        "max_err_mm": 0.0
+      }
+    ],
+    "max_internal_seam_err_mm": 0.0,
+    "ring1_outer_perimeter_vertices_checked": 1796,
+    "max_ring1_outer_perimeter_err_mm": 0.0
+  },
+  "total_tiles": 5,
+  "total_triangles": 40960,
+  "total_vertices": 21125,
+  "tiles": [
+    {
+      "tile_id": "T_W01_N05",
+      "ix": -1,
+      "iy": 5,
+      "ring": 2,
+      "grid_res": 64,
+      "vertices": 4225,
+      "triangles": 8192,
+      "bounds_local_m": {
+        "ix": -1,
+        "iy": 5,
+        "x_min_m": -3000.0,
+        "x_max_m": -1000.0,
+        "y_min_m": 9000.0,
+        "y_max_m": 11000.0
+      },
+      "bounds_wgs84": {
+        "lat_min": 12.0212674,
+        "lon_min": 108.4177135,
+        "lat_max": 12.0392337,
+        "lon_max": 108.4360772
+      },
+      "elev_msl_min_m": 1511.69,
+      "elev_msl_max_m": 1775.505,
+      "elev_msl_mean_m": 1570.215,
+      "y_gltf_min_m": 33.69,
+      "y_gltf_max_m": 297.505,
+      "lake_flattened_vertices": 0,
+      "ring1_adjacent_edges": [],
+      "ring1_boundary_max_err_mm": 0.0,
+      "heightmap_file": "heightmap_T_W01_N05.json",
+      "heightmap_size_bytes": 38654,
+      "heightmap_sha256": "51a19c4aa1328cb05f7b0d678a202864d9cefebcc15cc974ad98ea09e05fbc8e",
+      "glb_file": "terrain_T_W01_N05.glb",
+      "glb_size_bytes": 193264,
+      "glb_sha256": "438f098e38ab34b86c96ce9599359c44aeeb01aaabb848696b3e34138578a175",
+      "glb_verify": "Valid glTF 2.0 GLB (193264 bytes, meshes=1)"
+    },
+    {
+      "tile_id": "T_E00_N05",
+      "ix": 0,
+      "iy": 5,
+      "ring": 2,
+      "grid_res": 64,
+      "vertices": 4225,
+      "triangles": 8192,
+      "bounds_local_m": {
+        "ix": 0,
+        "iy": 5,
+        "x_min_m": -1000.0,
+        "x_max_m": 1000.0,
+        "y_min_m": 9000.0,
+        "y_max_m": 11000.0
+      },
+      "bounds_wgs84": {
+        "lat_min": 12.0212674,
+        "lon_min": 108.4360772,
+        "lat_max": 12.0392337,
+        "lon_max": 108.4544408
+      },
+      "elev_msl_min_m": 1511.657,
+      "elev_msl_max_m": 1788.914,
+      "elev_msl_mean_m": 1575.701,
+      "y_gltf_min_m": 33.657,
+      "y_gltf_max_m": 310.914,
+      "lake_flattened_vertices": 0,
+      "ring1_adjacent_edges": [],
+      "ring1_boundary_max_err_mm": 0.0,
+      "heightmap_file": "heightmap_T_E00_N05.json",
+      "heightmap_size_bytes": 38666,
+      "heightmap_sha256": "5d01ed8e9b577009c52d5c0b5978206dc801648eaf11e38046ac05bcce41ac53",
+      "glb_file": "terrain_T_E00_N05.glb",
+      "glb_size_bytes": 193352,
+      "glb_sha256": "3c417bbc95905f4d44ddd02b9fb7e3863787637197271578e42644be5476c4e4",
+      "glb_verify": "Valid glTF 2.0 GLB (193352 bytes, meshes=1)"
+    },
+    {
+      "tile_id": "T_W01_N06",
+      "ix": -1,
+      "iy": 6,
+      "ring": 2,
+      "grid_res": 64,
+      "vertices": 4225,
+      "triangles": 8192,
+      "bounds_local_m": {
+        "ix": -1,
+        "iy": 6,
+        "x_min_m": -3000.0,
+        "x_max_m": -1000.0,
+        "y_min_m": 11000.0,
+        "y_max_m": 13000.0
+      },
+      "bounds_wgs84": {
+        "lat_min": 12.0392337,
+        "lon_min": 108.4177135,
+        "lat_max": 12.0572,
+        "lon_max": 108.4360772
+      },
+      "elev_msl_min_m": 1577.589,
+      "elev_msl_max_m": 2124.0,
+      "elev_msl_mean_m": 1806.383,
+      "y_gltf_min_m": 99.589,
+      "y_gltf_max_m": 646.0,
+      "lake_flattened_vertices": 0,
+      "ring1_adjacent_edges": [],
+      "ring1_boundary_max_err_mm": 0.0,
+      "heightmap_file": "heightmap_T_W01_N06.json",
+      "heightmap_size_bytes": 38644,
+      "heightmap_sha256": "cf24b287e59bd4b9ff655e7eab62c27c72837f786647b95c8a5af6d9a72aaad9",
+      "glb_file": "terrain_T_W01_N06.glb",
+      "glb_size_bytes": 198228,
+      "glb_sha256": "6325f23d178208d8187b6b059565daf36c6a2a8fdbfb148047c95661cb412258",
+      "glb_verify": "Valid glTF 2.0 GLB (198228 bytes, meshes=1)"
+    },
+    {
+      "tile_id": "T_E00_N06",
+      "ix": 0,
+      "iy": 6,
+      "ring": 2,
+      "grid_res": 64,
+      "vertices": 4225,
+      "triangles": 8192,
+      "bounds_local_m": {
+        "ix": 0,
+        "iy": 6,
+        "x_min_m": -1000.0,
+        "x_max_m": 1000.0,
+        "y_min_m": 11000.0,
+        "y_max_m": 13000.0
+      },
+      "bounds_wgs84": {
+        "lat_min": 12.0392337,
+        "lon_min": 108.4360772,
+        "lat_max": 12.0572,
+        "lon_max": 108.4544408
+      },
+      "elev_msl_min_m": 1673.239,
+      "elev_msl_max_m": 2167.0,
+      "elev_msl_mean_m": 1875.407,
+      "y_gltf_min_m": 195.239,
+      "y_gltf_max_m": 689.0,
+      "lake_flattened_vertices": 0,
+      "ring1_adjacent_edges": [],
+      "ring1_boundary_max_err_mm": 0.0,
+      "heightmap_file": "heightmap_T_E00_N06.json",
+      "heightmap_size_bytes": 38612,
+      "heightmap_sha256": "27061256a8c30282a4b6f094432f39d3161f6257374de172f20998ed159b5553",
+      "glb_file": "terrain_T_E00_N06.glb",
+      "glb_size_bytes": 196736,
+      "glb_sha256": "e3783e0c44aa5125a2d09381c82f4934b5273bbf190b0227873b92d5854bbbab",
+      "glb_verify": "Valid glTF 2.0 GLB (196736 bytes, meshes=1)"
+    },
+    {
+      "tile_id": "T_E01_N06",
+      "ix": 1,
+      "iy": 6,
+      "ring": 2,
+      "grid_res": 64,
+      "vertices": 4225,
+      "triangles": 8192,
+      "bounds_local_m": {
+        "ix": 1,
+        "iy": 6,
+        "x_min_m": 1000.0,
+        "x_max_m": 3000.0,
+        "y_min_m": 11000.0,
+        "y_max_m": 13000.0
+      },
+      "bounds_wgs84": {
+        "lat_min": 12.0392337,
+        "lon_min": 108.4544408,
+        "lat_max": 12.0572,
+        "lon_max": 108.4728045
+      },
+      "elev_msl_min_m": 1579.312,
+      "elev_msl_max_m": 2131.629,
+      "elev_msl_mean_m": 1816.827,
+      "y_gltf_min_m": 101.312,
+      "y_gltf_max_m": 653.629,
+      "lake_flattened_vertices": 0,
+      "ring1_adjacent_edges": [],
+      "ring1_boundary_max_err_mm": 0.0,
+      "heightmap_file": "heightmap_T_E01_N06.json",
+      "heightmap_size_bytes": 38697,
+      "heightmap_sha256": "ad060f717a60614331bb3f85dbe427bc30797bf3d94e6bd6129d8bc5024251a4",
+      "glb_file": "terrain_T_E01_N06.glb",
+      "glb_size_bytes": 196660,
+      "glb_sha256": "26fa667063261754d4f6c592d047a8a0f1dfb167f4951225cf214b33e5f8c4d2",
+      "glb_verify": "Valid glTF 2.0 GLB (196660 bytes, meshes=1)"
+    }
+  ]
+}

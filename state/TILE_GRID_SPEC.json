@@ -1,0 +1,435 @@
+{
+  "schema_version": "2.0.0",
+  "updated_at_utc": "2026-11-23T09:04:03.569716+00:00",
+  "origin": {
+    "name": "Tam_Ho_Xuan_Huong_Da_Lat",
+    "lat": 11.940419,
+    "lon": 108.445259,
+    "elev_msl_m": 1478.0,
+    "epsg_utm": "EPSG:32649",
+    "tile_size_m": 2000.0,
+    "earth_radius_m": 6378137.0,
+    "axes_blender_sketchup": "+X=East, +Y=North, +Z=Up (Z_local = elev_msl_m - 1478.0)",
+    "axes_gltf_threejs": "+X=East, +Y=Up (Z_local), +Z=South (-Y_north)",
+    "pivot_rule_assets_gltf": "(0.0, min_y=0.0, 0.0)"
+  },
+  "tile_naming_convention": {
+    "pattern": "T_{E|W}{xx}_{N|S}{yy}",
+    "center_tile": "T_E00_N00 (ix=0, iy=0, X in [-1000,+1000]m, Y in [-1000,+1000]m)",
+    "edge_stitch_rule": "Mọi lưới địa hình (N+1)x(N+1) đỉnh bắt buộc lấy mẫu DEM từ cùng 1 hàm nội suy toàn cục tại chính xác biên x_min/x_max/y_min/y_max (bước lưới 2000/N) để ghép mọi Tile kề nhau 0.00mm khe hở. Hàng 0 của heightmap là cạnh Bắc (y_max), hàng N là cạnh Nam (y_min) — CẤM lật Bắc-Nam!"
+  },
+  "expansion_rings": [
+    {
+      "ring": 0,
+      "name": "RING_0_CORE_DALAT",
+      "ix_range": [
+        -1,
+        1
+      ],
+      "iy_range": [
+        -1,
+        1
+      ],
+      "tile_count": 9,
+      "span_km": "6km x 6km",
+      "terrain_grid_res": 128,
+      "sat_zoom": 18,
+      "coverage": "Lõi trung tâm: Hồ Xuân Hương, Quảng trường Lâm Viên, Thủy Tạ, Cầu Ông Đạo, Ga Đà Lạt, CĐSP, Nhà thờ Con Gà, Chợ Đà Lạt, Đồi Cù, Vườn hoa TP, Dinh I/II/III, Domaine, Crazy House, Đồi Robin."
+    },
+    {
+      "ring": 1,
+      "name": "RING_1_URBAN_DALAT",
+      "ix_range": [
+        -3,
+        3
+      ],
+      "iy_range": [
+        -3,
+        3
+      ],
+      "tile_count_delta": 40,
+      "span_km": "14km x 14km",
+      "terrain_grid_res": 96,
+      "sat_zoom": 17,
+      "coverage": "Nội đô mở rộng: Hồ Tuyền Lâm, Thiền viện Trúc Lâm, Thung lũng Tình Yêu, Hồ Than Thở, Trại Mát, Chùa Linh Phước, Làng hoa Vạn Thành, Thái Phiên, Đèo Prenn."
+    },
+    {
+      "ring": 2,
+      "name": "RING_2_GREATER_DALAT",
+      "ix_range": [
+        -7,
+        7
+      ],
+      "iy_range": [
+        -7,
+        7
+      ],
+      "tile_count_delta": 176,
+      "span_km": "30km x 30km",
+      "terrain_grid_res": 64,
+      "sat_zoom": 16,
+      "coverage": "Vành đai thiên nhiên: Đỉnh Langbiang (2167m), Hồ Suối Vàng - Dankia, Đồi chè & Điện gió Cầu Đất, Xuân Trường, Xuân Thọ, Tà Nung."
+    },
+    {
+      "ring": 3,
+      "name": "RING_3_SURROUNDING_DISTRICTS",
+      "ix_range": [
+        -15,
+        15
+      ],
+      "iy_range": [
+        -15,
+        15
+      ],
+      "tile_count_delta": "Mở rộng chọn lọc theo cụm hành lang tuyến đường",
+      "span_km": "62km x 62km+",
+      "terrain_grid_res": 32,
+      "sat_zoom": 15,
+      "coverage": "Các huyện lân cận Lâm Đồng: Lạc Dương (Bắc), Đơn Dương - Đ'ran (Đông Nam), Đức Trọng - Sân bay Liên Khương (Nam), Lâm Hà - Nam Ban (Tây)."
+    }
+  ],
+  "ring0_tiles": [
+    {
+      "tile_id": "T_E00_N00",
+      "ix": 0,
+      "iy": 0,
+      "ring": 0,
+      "x_min_m": -1000.0,
+      "x_max_m": 1000.0,
+      "y_min_m": -1000.0,
+      "y_max_m": 1000.0,
+      "wgs84_bbox": {
+        "lat_min": 11.9314358,
+        "lon_min": 108.4360772,
+        "lat_max": 11.9494022,
+        "lon_max": 108.4544408
+      },
+      "terrain_grid_res": 128,
+      "sat_zoom": 18,
+      "label": "Tam_Loi_HoXuanHuong_QuangTruongLamVien_NhaThoConGa_ThuyTa",
+      "priority": 1
+    },
+    {
+      "tile_id": "T_E00_N01",
+      "ix": 0,
+      "iy": 1,
+      "ring": 0,
+      "x_min_m": -1000.0,
+      "x_max_m": 1000.0,
+      "y_min_m": 1000.0,
+      "y_max_m": 3000.0,
+      "wgs84_bbox": {
+        "lat_min": 11.9494022,
+        "lon_min": 108.4360772,
+        "lat_max": 11.9673685,
+        "lon_max": 108.4544408
+      },
+      "terrain_grid_res": 128,
+      "sat_zoom": 18,
+      "label": "Bac_Loi_DoiCu_VuonHoaTP",
+      "priority": 2
+    },
+    {
+      "tile_id": "T_W01_N00",
+      "ix": -1,
+      "iy": 0,
+      "ring": 0,
+      "x_min_m": -3000.0,
+      "x_max_m": -1000.0,
+      "y_min_m": -1000.0,
+      "y_max_m": 1000.0,
+      "wgs84_bbox": {
+        "lat_min": 11.9314358,
+        "lon_min": 108.4177135,
+        "lat_max": 11.9494022,
+        "lon_max": 108.4360772
+      },
+      "terrain_grid_res": 128,
+      "sat_zoom": 18,
+      "label": "Tay_Loi_ChoDaLat_CrazyHouse_CamLy",
+      "priority": 2
+    },
+    {
+      "tile_id": "T_E01_N00",
+      "ix": 1,
+      "iy": 0,
+      "ring": 0,
+      "x_min_m": 1000.0,
+      "x_max_m": 3000.0,
+      "y_min_m": -1000.0,
+      "y_max_m": 1000.0,
+      "wgs84_bbox": {
+        "lat_min": 11.9314358,
+        "lon_min": 108.4544408,
+        "lat_max": 11.9494022,
+        "lon_max": 108.4728045
+      },
+      "terrain_grid_res": 128,
+      "sat_zoom": 18,
+      "label": "Dong_Loi_GaDaLat_TruongCDSP_Dinh2_HoMeLinh",
+      "priority": 2
+    },
+    {
+      "tile_id": "T_W01_N01",
+      "ix": -1,
+      "iy": 1,
+      "ring": 0,
+      "x_min_m": -3000.0,
+      "x_max_m": -1000.0,
+      "y_min_m": 1000.0,
+      "y_max_m": 3000.0,
+      "wgs84_bbox": {
+        "lat_min": 11.9494022,
+        "lon_min": 108.4177135,
+        "lat_max": 11.9673685,
+        "lon_max": 108.4360772
+      },
+      "terrain_grid_res": 128,
+      "sat_zoom": 18,
+      "label": "Tay_Bac_Loi_DomaineDeMarie_PhanDinhPhung",
+      "priority": 2
+    },
+    {
+      "tile_id": "T_E01_N01",
+      "ix": 1,
+      "iy": 1,
+      "ring": 0,
+      "x_min_m": 1000.0,
+      "x_max_m": 3000.0,
+      "y_min_m": 1000.0,
+      "y_max_m": 3000.0,
+      "wgs84_bbox": {
+        "lat_min": 11.9494022,
+        "lon_min": 108.4544408,
+        "lat_max": 11.9673685,
+        "lon_max": 108.4728045
+      },
+      "terrain_grid_res": 128,
+      "sat_zoom": 18,
+      "label": "Dong_Bac_Loi_HoChienThang_DaThienNam",
+      "priority": 2
+    },
+    {
+      "tile_id": "T_E00_S01",
+      "ix": 0,
+      "iy": -1,
+      "ring": 0,
+      "x_min_m": -1000.0,
+      "x_max_m": 1000.0,
+      "y_min_m": -3000.0,
+      "y_max_m": -1000.0,
+      "wgs84_bbox": {
+        "lat_min": 11.9134695,
+        "lon_min": 108.4360772,
+        "lat_max": 11.9314358,
+        "lon_max": 108.4544408
+      },
+      "terrain_grid_res": 128,
+      "sat_zoom": 18,
+      "label": "Nam_Loi_DoiRobin_CapTreo_DeoPrennBac",
+      "priority": 2
+    },
+    {
+      "tile_id": "T_W01_S01",
+      "ix": -1,
+      "iy": -1,
+      "ring": 0,
+      "x_min_m": -3000.0,
+      "x_max_m": -1000.0,
+      "y_min_m": -3000.0,
+      "y_max_m": -1000.0,
+      "wgs84_bbox": {
+        "lat_min": 11.9134695,
+        "lon_min": 108.4177135,
+        "lat_max": 11.9314358,
+        "lon_max": 108.4360772
+      },
+      "terrain_grid_res": 128,
+      "sat_zoom": 18,
+      "label": "Tay_Nam_Loi_Dinh3_AnSon",
+      "priority": 2
+    },
+    {
+      "tile_id": "T_E01_S01",
+      "ix": 1,
+      "iy": -1,
+      "ring": 0,
+      "x_min_m": 1000.0,
+      "x_max_m": 3000.0,
+      "y_min_m": -3000.0,
+      "y_max_m": -1000.0,
+      "wgs84_bbox": {
+        "lat_min": 11.9134695,
+        "lon_min": 108.4544408,
+        "lat_max": 11.9314358,
+        "lon_max": 108.4728045
+      },
+      "terrain_grid_res": 128,
+      "sat_zoom": 18,
+      "label": "Dong_Nam_Loi_Dinh1_KheSanh",
+      "priority": 2
+    }
+  ],
+  "ring1_priority_tiles": [
+    {
+      "tile_id": "T_W01_S02",
+      "ix": -1,
+      "iy": -2,
+      "ring": 1,
+      "x_min_m": -3000.0,
+      "x_max_m": -1000.0,
+      "y_min_m": -5000.0,
+      "y_max_m": -3000.0,
+      "wgs84_bbox": {
+        "lat_min": 11.8955032,
+        "lon_min": 108.4177135,
+        "lat_max": 11.9134695,
+        "lon_max": 108.4360772
+      },
+      "terrain_grid_res": 96,
+      "sat_zoom": 17,
+      "label": "Ring1_Nam_HoTuyenLam_Tay",
+      "priority": 3
+    },
+    {
+      "tile_id": "T_E00_S02",
+      "ix": 0,
+      "iy": -2,
+      "ring": 1,
+      "x_min_m": -1000.0,
+      "x_max_m": 1000.0,
+      "y_min_m": -5000.0,
+      "y_max_m": -3000.0,
+      "wgs84_bbox": {
+        "lat_min": 11.8955032,
+        "lon_min": 108.4360772,
+        "lat_max": 11.9134695,
+        "lon_max": 108.4544408
+      },
+      "terrain_grid_res": 96,
+      "sat_zoom": 17,
+      "label": "Ring1_Nam_HoTuyenLam_ThienVienTrucLam",
+      "priority": 3
+    },
+    {
+      "tile_id": "T_W01_S03",
+      "ix": -1,
+      "iy": -3,
+      "ring": 1,
+      "x_min_m": -3000.0,
+      "x_max_m": -1000.0,
+      "y_min_m": -7000.0,
+      "y_max_m": -5000.0,
+      "wgs84_bbox": {
+        "lat_min": 11.8775369,
+        "lon_min": 108.4177135,
+        "lat_max": 11.8955032,
+        "lon_max": 108.4360772
+      },
+      "terrain_grid_res": 96,
+      "sat_zoom": 17,
+      "label": "Ring1_Nam_HoTuyenLam_NamTay",
+      "priority": 3
+    },
+    {
+      "tile_id": "T_E00_S03",
+      "ix": 0,
+      "iy": -3,
+      "ring": 1,
+      "x_min_m": -1000.0,
+      "x_max_m": 1000.0,
+      "y_min_m": -7000.0,
+      "y_max_m": -5000.0,
+      "wgs84_bbox": {
+        "lat_min": 11.8775369,
+        "lon_min": 108.4360772,
+        "lat_max": 11.8955032,
+        "lon_max": 108.4544408
+      },
+      "terrain_grid_res": 96,
+      "sat_zoom": 17,
+      "label": "Ring1_Nam_HoTuyenLam_DeoPrenn",
+      "priority": 3
+    },
+    {
+      "tile_id": "T_E00_N02",
+      "ix": 0,
+      "iy": 2,
+      "ring": 1,
+      "x_min_m": -1000.0,
+      "x_max_m": 1000.0,
+      "y_min_m": 3000.0,
+      "y_max_m": 5000.0,
+      "wgs84_bbox": {
+        "lat_min": 11.9673685,
+        "lon_min": 108.4360772,
+        "lat_max": 11.9853348,
+        "lon_max": 108.4544408
+      },
+      "terrain_grid_res": 96,
+      "sat_zoom": 17,
+      "label": "Ring1_Bac_ThungLungTinhYeu_HoDaThien",
+      "priority": 3
+    },
+    {
+      "tile_id": "T_E02_N01",
+      "ix": 2,
+      "iy": 1,
+      "ring": 1,
+      "x_min_m": 3000.0,
+      "x_max_m": 5000.0,
+      "y_min_m": 1000.0,
+      "y_max_m": 3000.0,
+      "wgs84_bbox": {
+        "lat_min": 11.9494022,
+        "lon_min": 108.4728045,
+        "lat_max": 11.9673685,
+        "lon_max": 108.4911681
+      },
+      "terrain_grid_res": 96,
+      "sat_zoom": 17,
+      "label": "Ring1_DongBac_HoThanTho_ThaiPhien",
+      "priority": 3
+    },
+    {
+      "tile_id": "T_E03_N00",
+      "ix": 3,
+      "iy": 0,
+      "ring": 1,
+      "x_min_m": 5000.0,
+      "x_max_m": 7000.0,
+      "y_min_m": -1000.0,
+      "y_max_m": 1000.0,
+      "wgs84_bbox": {
+        "lat_min": 11.9314358,
+        "lon_min": 108.4911681,
+        "lat_max": 11.9494022,
+        "lon_max": 108.5095317
+      },
+      "terrain_grid_res": 96,
+      "sat_zoom": 17,
+      "label": "Ring1_Dong_TraiMat_ChuaLinhPhuoc",
+      "priority": 3
+    },
+    {
+      "tile_id": "T_W02_N00",
+      "ix": -2,
+      "iy": 0,
+      "ring": 1,
+      "x_min_m": -5000.0,
+      "x_max_m": -3000.0,
+      "y_min_m": -1000.0,
+      "y_max_m": 1000.0,
+      "wgs84_bbox": {
+        "lat_min": 11.9314358,
+        "lon_min": 108.3993499,
+        "lat_max": 11.9494022,
+        "lon_max": 108.4177135
+      },
+      "terrain_grid_res": 96,
+      "sat_zoom": 17,
+      "label": "Ring1_Tay_LangHoaVanThanh",
+      "priority": 3
+    }
+  ]
+}
