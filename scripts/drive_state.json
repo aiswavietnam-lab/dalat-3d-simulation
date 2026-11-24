@@ -25,9 +25,9 @@
     "size": "4230264"
   },
   "assets/building_tiles/building_tiles_manifest.json": {
-    "id": "1oRRHwzhVEqtmvU5IIg54T2orX3TZI10q",
-    "modifiedTime": "2026-11-24T04:03:23.589Z",
-    "size": "183693"
+    "id": "1LnidcPv3O7kYpI3uaTINwZGfHWjH1W8V",
+    "modifiedTime": "2026-11-24T04:47:46.884Z",
+    "size": "196350"
   },
   "assets/building_tiles/buildings_T_E00_N00.glb": {
     "id": "11QCtSXIJDF-PwK0k7cWRM6ZCxiMLI6eb",
@@ -94,6 +94,11 @@
     "modifiedTime": "2026-11-24T00:44:04.553Z",
     "size": "1017140"
   },
+  "assets/building_tiles/buildings_T_E00_S07.glb": {
+    "id": "12VdcoT5VpTO7CfOheyaKc4hADX1z_OOH",
+    "modifiedTime": "2026-11-24T04:47:39.499Z",
+    "size": "964036"
+  },
   "assets/building_tiles/buildings_T_E01_N00.glb": {
     "id": "1FCEtg9owTlVP7hrDwLIPI0lR23kPSr5L",
     "modifiedTime": "2026-11-23T14:56:16.098Z",
@@ -158,6 +163,11 @@
     "id": "1lYudKlNfDt5xg3rkXHTp3II7c2l9BlzE",
     "modifiedTime": "2026-11-24T01:49:39.548Z",
     "size": "1006356"
+  },
+  "assets/building_tiles/buildings_T_E01_S07.glb": {
+    "id": "19w9c4lxiS6m-P27nmFGbdTzeAmLbUlh7",
+    "modifiedTime": "2026-11-24T04:47:40.751Z",
+    "size": "1015192"
   },
   "assets/building_tiles/buildings_T_E02_N00.glb": {
     "id": "1-_Gy4hU6aFtsAnfdg7oyoFsIcYm_l_yM",
@@ -279,6 +289,11 @@
     "modifiedTime": "2026-11-24T04:03:24.177Z",
     "size": "1173592"
   },
+  "assets/building_tiles/buildings_T_E04_N05.glb": {
+    "id": "1-nEpbljiNwm28Yh0v3bDe0hIFk0481Pd",
+    "modifiedTime": "2026-11-24T04:47:44.027Z",
+    "size": "1200488"
+  },
   "assets/building_tiles/buildings_T_E04_S01.glb": {
     "id": "1nhPtVQJhqJNZKOvuFJUfvi6C_YfWhIOX",
     "modifiedTime": "2026-11-23T19:11:55.239Z",
@@ -344,6 +359,11 @@
     "modifiedTime": "2026-11-23T23:50:48.756Z",
     "size": "1158176"
   },
+  "assets/building_tiles/buildings_T_E08_S03.glb": {
+    "id": "17VQ6eeAtInOuxIoLq1HyE745lgiOR8NX",
+    "modifiedTime": "2026-11-24T04:47:46.119Z",
+    "size": "1220016"
+  },
   "assets/building_tiles/buildings_T_E08_S04.glb": {
     "id": "1eVggwxOAO_v8-pS9tm7k-1qz7ERQ7v8R",
     "modifiedTime": "2026-11-24T01:49:43.580Z",
@@ -363,6 +383,11 @@
     "id": "1Dl2bhuXFnRNicYwAbj-PdJrcNUecXSKS",
     "modifiedTime": "2026-11-24T03:09:54.643Z",
     "size": "1183012"
+  },
+  "assets/building_tiles/buildings_T_E10_S05.glb": {
+    "id": "1NnCbaHMaC4cf0VzfcRvprZyDTmSIvEyr",
+    "modifiedTime": "2026-11-24T04:47:42.356Z",
+    "size": "1090104"
   },
   "assets/building_tiles/buildings_T_W01_N00.glb": {
     "id": "1s2afpJtwFU-N5tBMgf0yCiEwlXRpB0Oz",
@@ -564,6 +589,11 @@
     "modifiedTime": "2026-11-24T00:44:02.142Z",
     "size": "1234272"
   },
+  "assets/building_tiles/buildings_T_W05_N06.glb": {
+    "id": "14j-jy4-Csgtt5Y71A7Ccr6lE8Mk29iTZ",
+    "modifiedTime": "2026-11-24T04:47:43.349Z",
+    "size": "1188180"
+  },
   "assets/building_tiles/buildings_T_W05_S01.glb": {
     "id": "1pw2JCzeZ2PGVG9Xkkx7qnGVulfQ5Yob2",
     "modifiedTime": "2026-11-23T23:11:46.355Z",
@@ -599,6 +629,11 @@
     "modifiedTime": "2026-11-24T04:03:22.833Z",
     "size": "1132432"
   },
+  "assets/building_tiles/buildings_T_W07_N05.glb": {
+    "id": "1fTf7o6AlHCzLCOlG7EVsWwbGk0ATNpR0",
+    "modifiedTime": "2026-11-24T04:47:44.977Z",
+    "size": "1138020"
+  },
   "assets/building_tiles/buildings_T_W07_S02.glb": {
     "id": "1H1k55q2hy6H7gfStK3w2LxC0uSUmYEqv",
     "modifiedTime": "2026-11-24T01:49:41.826Z",
@@ -608,6 +643,11 @@
     "id": "1yyG91UGCsHpUYqxS0zO0HkS4XpTTKnvG",
     "modifiedTime": "2026-11-24T03:09:53.527Z",
     "size": "1120512"
+  },
+  "assets/building_tiles/buildings_T_W08_S02.glb": {
+    "id": "1IR9M1VIY53zMb9YAHozOQIJN5sOgMbQR",
+    "modifiedTime": "2026-11-24T04:47:41.301Z",
+    "size": "1158116"
   },
   "assets/building_tiles/buildings_T_W08_S03.glb": {
     "id": "1bSCG6KHTm3MFw4JH74wSLSA5EPHTg_Sh",
@@ -964,6 +1004,11 @@
     "modifiedTime": "2026-11-24T03:09:50.500Z",
     "size": "1057076"
   },
+  "assets/infrastructure_buildings/roads_ring2_c500.glb": {
+    "id": "1X2pDxLLiff9ldhVPOIZMKnwXF0EYMjCL",
+    "modifiedTime": "2026-11-24T04:47:38.482Z",
+    "size": "1059704"
+  },
   "assets/infrastructure_buildings/roads_ring2_ext.glb": {
     "id": "1r_RgSQ8NB6-5RLojqcJ2WKd8knne1nVU",
     "modifiedTime": "2026-11-23T19:11:47.173Z",
@@ -1199,6 +1244,31 @@
     "modifiedTime": "2026-11-23T17:30:04.645Z",
     "size": "3039"
   },
+  "assets/osm_true_buildings/osm_buildings_T_E00_N00.glb": {
+    "id": "1T7c3VQk0t2YNblj43Roi-EfoVkbslRlB",
+    "modifiedTime": "2026-11-24T04:33:57.690Z",
+    "size": "5472008"
+  },
+  "assets/osm_true_roads_hydro/ho_xuan_huong_true_shoreline_and_embankment_w1.glb": {
+    "id": "1IlFaIsWxzYDmGBCZVLwu3vT5doLEEbtv",
+    "modifiedTime": "2026-11-24T04:24:37.102Z",
+    "size": "1075776"
+  },
+  "assets/osm_true_roads_hydro/ring0_hillside_slopes_and_connectors_w2.glb": {
+    "id": "1YRiewvfTIRWL-72Qor1TpfjDpVkNmLYJ",
+    "modifiedTime": "2026-11-24T04:37:16.227Z",
+    "size": "2178744"
+  },
+  "assets/osm_true_roads_hydro/ring0_true_osm_arterial_and_6_roundabouts_w2.glb": {
+    "id": "1ZLFdN8xv7e_a4oTP0dyO6ix_DtxsziCa",
+    "modifiedTime": "2026-11-24T04:37:17.558Z",
+    "size": "5557016"
+  },
+  "assets/osm_true_roads_hydro/tran_quoc_toan_thuy_ta_cho_dalat_true_roads_w1.glb": {
+    "id": "1PA3GB4SwGmok3IgUqu4X3rU70MB5fMPH",
+    "modifiedTime": "2026-11-24T04:24:41.190Z",
+    "size": "2338380"
+  },
   "assets/ring3_districts_ultra/ring3_districts_manifest.json": {
     "id": "1ZtKaHl0ApOhTTpxR5M2REAJ7wrV-hYXF",
     "modifiedTime": "2026-11-24T04:07:52.860Z",
@@ -1213,6 +1283,21 @@
     "id": "1GhCdKGMfavzIIxev1CE8REuhJe0-WBoZ",
     "modifiedTime": "2026-11-24T04:07:54.445Z",
     "size": "672404"
+  },
+  "assets/satellite_dem_tiles/heightmap_real_T_E00_N00.json": {
+    "id": "1olIMhRvnrBu_UER18lgmPMQzkx9dKhva",
+    "modifiedTime": "2026-11-24T04:25:21.757Z",
+    "size": "146732"
+  },
+  "assets/satellite_dem_tiles/satellite_dem_tiles_manifest.json": {
+    "id": "1MPZVuxkM-tBHWvmXsogJ_3hFiNB6SxAL",
+    "modifiedTime": "2026-11-24T04:25:21.409Z",
+    "size": "1051"
+  },
+  "assets/satellite_dem_tiles/terrain_real_T_E00_N00.glb": {
+    "id": "166Birgk6OhpSOrh55XxfbS6-aVZhlrkN",
+    "modifiedTime": "2026-11-24T04:25:24.924Z",
+    "size": "1356696"
   },
   "assets/scene/world_index.json": {
     "id": "1odxtF144aNkdpPcyWbjo2qyrDFwgJj9i",
@@ -2964,6 +3049,21 @@
     "modifiedTime": "2026-11-23T21:35:31.513Z",
     "size": "387493"
   },
+  "assets/vegetation/instances_T_E01_S09.json": {
+    "id": "1oUdBS3j08JJrCGvTZnNVcr4MngXI8fm5",
+    "modifiedTime": "2026-11-24T04:38:09.599Z",
+    "size": "372520"
+  },
+  "assets/vegetation/instances_T_E01_S10.json": {
+    "id": "1unoFdYy0BvoBLi9vkIfZWY46WX9lqC1z",
+    "modifiedTime": "2026-11-24T04:38:13.575Z",
+    "size": "387662"
+  },
+  "assets/vegetation/instances_T_E01_S11.json": {
+    "id": "17rGaBei26MOOctwhfHOFptP2sojoi731",
+    "modifiedTime": "2026-11-24T04:38:42.333Z",
+    "size": "387497"
+  },
   "assets/vegetation/instances_T_E02_N00.json": {
     "id": "1-sfxjcshv5nU228kpBYYgXseruTK2Xn5",
     "modifiedTime": "2026-11-23T15:43:00.947Z",
@@ -3015,9 +3115,14 @@
     "size": "234634"
   },
   "assets/vegetation/instances_T_E02_S09.json": {
-    "id": "1jMmfO1hjuiaq1b2qu-k7HV__Tl49j0wy",
-    "modifiedTime": "2026-11-23T23:48:01.195Z",
-    "size": "360967"
+    "id": "1OK2xVV9XfdXKaSn3rrF_nExBXBNhz34y",
+    "modifiedTime": "2026-11-24T04:38:05.393Z",
+    "size": "202399"
+  },
+  "assets/vegetation/instances_T_E02_S10.json": {
+    "id": "1I3K63j80qJH4a2fkLcqynMWWoh7K-NGx",
+    "modifiedTime": "2026-11-24T04:38:17.005Z",
+    "size": "353304"
   },
   "assets/vegetation/instances_T_E03_N00.json": {
     "id": "16TQ5q_KL29PhM4pZ8JSRhYWx3srRmIrA",
@@ -3095,9 +3200,9 @@
     "size": "314110"
   },
   "assets/vegetation/instances_T_E04_S02.json": {
-    "id": "156EkLcaQUNzdC-BQiMGqtzuqkloH81R1",
-    "modifiedTime": "2026-11-23T21:02:51.508Z",
-    "size": "421215"
+    "id": "1UpYlomvGUNKYI2MCSGAmN6OxvnBbzU-J",
+    "modifiedTime": "2026-11-24T04:37:52.082Z",
+    "size": "307639"
   },
   "assets/vegetation/instances_T_E04_S11.json": {
     "id": "1jEjd4j2divJBGXs1wMpYf-VnBcsNaMjR",
@@ -3135,9 +3240,9 @@
     "size": "311225"
   },
   "assets/vegetation/instances_T_E05_S03.json": {
-    "id": "1Ej8_24Xwm-30VtSd89BD-s0jq_XU1cQW",
-    "modifiedTime": "2026-11-23T21:03:11.200Z",
-    "size": "760290"
+    "id": "1vgrwIhSCzi9fCfwbympxv3NvM3hF51U7",
+    "modifiedTime": "2026-11-24T04:37:55.581Z",
+    "size": "782174"
   },
   "assets/vegetation/instances_T_E05_S09.json": {
     "id": "1uv-bKAbs88elkQmvEWKSNqMNuosyNczk",
@@ -3154,15 +3259,20 @@
     "modifiedTime": "2026-11-24T02:58:27.618Z",
     "size": "402307"
   },
+  "assets/vegetation/instances_T_E06_S02.json": {
+    "id": "13bE1Bo6lZZ7DF5UYb6x-v9FzsHIbnJU7",
+    "modifiedTime": "2026-11-24T04:38:23.861Z",
+    "size": "618085"
+  },
   "assets/vegetation/instances_T_E06_S03.json": {
-    "id": "1i9mmF13yjGHq_iD5dD81Swy5UiPmSYqc",
-    "modifiedTime": "2026-11-23T21:03:11.561Z",
-    "size": "804433"
+    "id": "1GoHNSD-Y2WoBQqiqThtAXy70h9lV134B",
+    "modifiedTime": "2026-11-24T04:37:58.890Z",
+    "size": "705242"
   },
   "assets/vegetation/instances_T_E06_S04.json": {
-    "id": "1X2oMMKxFq0-0JcU979Kf15HjajPEIcNV",
-    "modifiedTime": "2026-11-23T21:03:13.089Z",
-    "size": "906727"
+    "id": "1g2_opcoEW8cjIV689rmwoNlRA-zXUUSX",
+    "modifiedTime": "2026-11-24T04:38:02.241Z",
+    "size": "906900"
   },
   "assets/vegetation/instances_T_E07_N01.json": {
     "id": "1NaIr5V57gIaNQan7EMZW2KaAoRvb0l5H",
@@ -3173,6 +3283,11 @@
     "id": "1XPKJIvdIrUrJMSu-9wVROa7VHKWv7hwX",
     "modifiedTime": "2026-11-24T02:58:00.376Z",
     "size": "387994"
+  },
+  "assets/vegetation/instances_T_E07_S02.json": {
+    "id": "1ujjiolQxer5Mgh90lY8Df5eQTvDTVnuX",
+    "modifiedTime": "2026-11-24T04:38:27.703Z",
+    "size": "629074"
   },
   "assets/vegetation/instances_T_E07_S03.json": {
     "id": "1pbsCvIBEptj0ZNT0hN1FAlR97xSAzuqh",
@@ -3394,6 +3509,16 @@
     "modifiedTime": "2026-11-23T22:31:21.782Z",
     "size": "418822"
   },
+  "assets/vegetation/instances_T_W03_S10.json": {
+    "id": "1QhGIdw5wfRQmQn5O-vNZut_d1IlkGnjs",
+    "modifiedTime": "2026-11-24T04:38:31.564Z",
+    "size": "390075"
+  },
+  "assets/vegetation/instances_T_W03_S11.json": {
+    "id": "1tOJ512cRvyTjgByGuQJomecXjn1jDmfO",
+    "modifiedTime": "2026-11-24T04:38:35.316Z",
+    "size": "397736"
+  },
   "assets/vegetation/instances_T_W04_N00.json": {
     "id": "1RGkl54GbUZEtXgtQX50WUOmoHcIjxqJS",
     "modifiedTime": "2026-11-23T21:35:32.190Z",
@@ -3423,6 +3548,11 @@
     "id": "1R4D6RZ1Aa92tlbtfPo6vp3bx3P8x6vOl",
     "modifiedTime": "2026-11-24T01:43:53.377Z",
     "size": "397986"
+  },
+  "assets/vegetation/instances_T_W04_S11.json": {
+    "id": "1JB6DFQHtPCFYZTTi6KKyrL0PUwh-SGDR",
+    "modifiedTime": "2026-11-24T04:38:20.520Z",
+    "size": "386439"
   },
   "assets/vegetation/instances_T_W05_N03.json": {
     "id": "113Xd8huOczTLVHLBV8WqDKuGdKn8faMQ",
@@ -3458,6 +3588,11 @@
     "id": "1hdWs2uWlmEazCZGeUaQAc9MxjGvGX85x",
     "modifiedTime": "2026-11-24T01:43:45.277Z",
     "size": "385279"
+  },
+  "assets/vegetation/instances_T_W05_S11.json": {
+    "id": "1yW0HQfJFid68quGCRL7eoU138n1CBM0W",
+    "modifiedTime": "2026-11-24T04:38:38.723Z",
+    "size": "404943"
   },
   "assets/vegetation/instances_T_W05_S12.json": {
     "id": "13JlwJp2vQ-5o80So0pE_FuqGLS8EzfjP",
@@ -3954,6 +4089,11 @@
     "modifiedTime": "2026-11-23T21:39:17.002Z",
     "size": "286140"
   },
+  "assets/water_bodies/water_ho_rlom_don_duong.glb": {
+    "id": "1J1ATAw4WSt2B-GauwbW3xEsGe2uq51DY",
+    "modifiedTime": "2026-11-24T04:27:36.692Z",
+    "size": "293640"
+  },
   "assets/water_bodies/water_ho_suoi_vang.glb": {
     "id": "1VcmKHljR3KAKDMBn9qCiYWATi7TVHROg",
     "modifiedTime": "2026-11-23T13:18:26.799Z",
@@ -3990,8 +4130,13 @@
     "size": "377572"
   },
   "assets/water_bodies/water_manifest.json": {
+    "id": "1BtA7CXrP2rx8T5LUyFvD6wtrpZq4ecZZ",
+    "modifiedTime": "2026-11-24T04:27:38.847Z",
+    "size": "409769"
+  },
+  "assets/water_bodies/water_manifest_w19_archive.json": {
     "id": "1I2rlYXkZTQNWSqBVPTLaYV_MS6QpNYmi",
-    "modifiedTime": "2026-11-24T03:27:12.827Z",
+    "modifiedTime": "2026-11-24T04:27:31.879Z",
     "size": "388367"
   },
   "assets/water_bodies/water_manifest_w1_archive.json": {
@@ -4099,6 +4244,11 @@
     "modifiedTime": "2026-11-23T22:16:32.690Z",
     "size": "71308"
   },
+  "assets/water_bodies/water_thac_lien_khuong_duc_trong.glb": {
+    "id": "1bR-jWXzOeq0hPqfeU5zHAf1G78JjtDae",
+    "modifiedTime": "2026-11-24T04:27:37.520Z",
+    "size": "71400"
+  },
   "assets/water_bodies/water_thac_lieng_ai_da_sar.glb": {
     "id": "1fjcxhLn8uB4ef93hAEhILnwWZYfq5FBa",
     "modifiedTime": "2026-11-23T23:25:18.263Z",
@@ -4125,9 +4275,9 @@
     "size": "19200"
   },
   "data/world_ui_specs/camera_presets_dalat.json": {
-    "id": "1m7mlEhjjbjr8HU6yEpoWIuxjjj2HxIhi",
-    "modifiedTime": "2026-11-24T04:03:25.066Z",
-    "size": "27731"
+    "id": "1TdkJPSfHNLYZ0hvU3M5X8M5QFrV3LVaV",
+    "modifiedTime": "2026-11-24T04:47:47.437Z",
+    "size": "29905"
   },
   "state/TILE_GRID_SPEC.json": {
     "id": "11iqtkIo9tpCDxY2QlLvz-Bvc4xjyMBp3",

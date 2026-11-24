@@ -3,7 +3,7 @@
   "project": "DALAT_3D_SIMULATION",
   "static_build": true,
   "has_real_assets": true,
-  "total_glb_count": 392,
+  "total_glb_count": 407,
   "discovered_tile_ids": [
     "T_E00_N00",
     "T_E00_N01",
@@ -19,6 +19,7 @@
     "T_E00_S04",
     "T_E00_S05",
     "T_E00_S06",
+    "T_E00_S07",
     "T_E00_S10",
     "T_E00_S11",
     "T_E01_N00",
@@ -35,6 +36,10 @@
     "T_E01_S04",
     "T_E01_S05",
     "T_E01_S06",
+    "T_E01_S07",
+    "T_E01_S09",
+    "T_E01_S10",
+    "T_E01_S11",
     "T_E02_N00",
     "T_E02_N01",
     "T_E02_N02",
@@ -50,6 +55,7 @@
     "T_E02_S06",
     "T_E02_S08",
     "T_E02_S09",
+    "T_E02_S10",
     "T_E03_N00",
     "T_E03_N01",
     "T_E03_N02",
@@ -97,6 +103,7 @@
     "T_E06_S05",
     "T_E07_N01",
     "T_E07_N02",
+    "T_E07_S02",
     "T_E07_S03",
     "T_E07_S04",
     "T_E07_S05",
@@ -109,6 +116,7 @@
     "T_E09_S04",
     "T_E09_S05",
     "T_E09_S06",
+    "T_E10_S05",
     "T_W01_N00",
     "T_W01_N01",
     "T_W01_N02",
@@ -149,6 +157,8 @@
     "T_W03_S03",
     "T_W03_S04",
     "T_W03_S05",
+    "T_W03_S10",
+    "T_W03_S11",
     "T_W04_N00",
     "T_W04_N01",
     "T_W04_N02",
@@ -161,17 +171,20 @@
     "T_W04_S03",
     "T_W04_S04",
     "T_W04_S10",
+    "T_W04_S11",
     "T_W05_N00",
     "T_W05_N02",
     "T_W05_N03",
     "T_W05_N04",
     "T_W05_N05",
+    "T_W05_N06",
     "T_W05_S01",
     "T_W05_S02",
     "T_W05_S03",
     "T_W05_S04",
     "T_W05_S05",
     "T_W05_S06",
+    "T_W05_S11",
     "T_W05_S12",
     "T_W05_S13",
     "T_W06_N04",
@@ -182,9 +195,11 @@
     "T_W06_S06",
     "T_W06_S07",
     "T_W07_N04",
+    "T_W07_N05",
     "T_W07_S02",
     "T_W07_S03",
     "T_W07_S11",
+    "T_W08_S02",
     "T_W08_S03",
     "T_W08_S08",
     "T_W08_S09",
@@ -204,23 +219,23 @@
   "counts": {
     "terrain_tiles": 73,
     "heightmaps": 73,
-    "water_bodies": 38,
+    "water_bodies": 40,
     "vegetation_models": 11,
-    "vegetation_instances": 179,
+    "vegetation_instances": 188,
     "landmarks": 112,
     "lakeside_props": 7,
-    "roads_infrastructure": 41,
-    "building_tiles": 117
+    "roads_infrastructure": 46,
+    "building_tiles": 125
   },
   "layers": {
     "terrain": [
       {
-        "id": "terrain_T_E00_N00",
-        "filename": "terrain_T_E00_N00.glb",
+        "id": "terrain_real_T_E00_N00",
+        "filename": "terrain_real_T_E00_N00.glb",
         "ext": ".glb",
         "tile_id": "T_E00_N00",
-        "url": "./assets/terrain_tiles/terrain_T_E00_N00.glb",
-        "size_bytes": 743876
+        "url": "./assets/satellite_dem_tiles/terrain_real_T_E00_N00.glb",
+        "size_bytes": 1356696
       },
       {
         "id": "terrain_T_E00_N01",
@@ -801,12 +816,12 @@
     ],
     "heightmaps": [
       {
-        "id": "heightmap_T_E00_N00",
-        "filename": "heightmap_T_E00_N00.json",
+        "id": "heightmap_real_T_E00_N00",
+        "filename": "heightmap_real_T_E00_N00.json",
         "ext": ".json",
         "tile_id": "T_E00_N00",
-        "url": "./assets/terrain_tiles/heightmap_T_E00_N00.json",
-        "size_bytes": 145304
+        "url": "./assets/satellite_dem_tiles/heightmap_real_T_E00_N00.json",
+        "size_bytes": 146732
       },
       {
         "id": "heightmap_T_E00_N01",
@@ -1491,6 +1506,14 @@
         "size_bytes": 286140
       },
       {
+        "id": "water_ho_rlom_don_duong",
+        "filename": "water_ho_rlom_don_duong.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/water_bodies/water_ho_rlom_don_duong.glb",
+        "size_bytes": 293640
+      },
+      {
         "id": "water_ho_suoi_vang",
         "filename": "water_ho_suoi_vang.glb",
         "ext": ".glb",
@@ -1641,6 +1664,14 @@
         "tile_id": null,
         "url": "./assets/water_bodies/water_thac_jraibian_langbiang.glb",
         "size_bytes": 71308
+      },
+      {
+        "id": "water_thac_lien_khuong_duc_trong",
+        "filename": "water_thac_lien_khuong_duc_trong.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/water_bodies/water_thac_lien_khuong_duc_trong.glb",
+        "size_bytes": 71400
       },
       {
         "id": "water_thac_lieng_ai_da_sar",
@@ -2292,7 +2323,7 @@
         "ext": ".json",
         "tile_id": "T_E04_S02",
         "url": "./assets/vegetation/instances_T_E04_S02.json",
-        "size_bytes": 421215
+        "size_bytes": 307639
       },
       {
         "id": "instances_T_W02_N04",
@@ -2580,7 +2611,7 @@
         "ext": ".json",
         "tile_id": "T_E05_S03",
         "url": "./assets/vegetation/instances_T_E05_S03.json",
-        "size_bytes": 760290
+        "size_bytes": 782174
       },
       {
         "id": "instances_T_W03_N05",
@@ -2687,6 +2718,14 @@
         "size_bytes": 526770
       },
       {
+        "id": "instances_T_E06_S02",
+        "filename": "instances_T_E06_S02.json",
+        "ext": ".json",
+        "tile_id": "T_E06_S02",
+        "url": "./assets/vegetation/instances_T_E06_S02.json",
+        "size_bytes": 618085
+      },
+      {
         "id": "instances_T_W06_S02",
         "filename": "instances_T_W06_S02.json",
         "ext": ".json",
@@ -2701,14 +2740,6 @@
         "tile_id": "T_E02_N06",
         "url": "./assets/vegetation_expanded/instances_T_E02_N06.json",
         "size_bytes": 517947
-      },
-      {
-        "id": "instances_T_E06_S02",
-        "filename": "instances_T_E06_S02.json",
-        "ext": ".json",
-        "tile_id": "T_E06_S02",
-        "url": "./assets/vegetation_expanded/instances_T_E06_S02.json",
-        "size_bytes": 523238
       },
       {
         "id": "instances_T_W02_N06",
@@ -2772,7 +2803,7 @@
         "ext": ".json",
         "tile_id": "T_E06_S03",
         "url": "./assets/vegetation/instances_T_E06_S03.json",
-        "size_bytes": 804433
+        "size_bytes": 705242
       },
       {
         "id": "instances_T_W03_N06",
@@ -2860,7 +2891,7 @@
         "ext": ".json",
         "tile_id": "T_E06_S04",
         "url": "./assets/vegetation/instances_T_E06_S04.json",
-        "size_bytes": 906727
+        "size_bytes": 906900
       },
       {
         "id": "instances_T_E04_N06",
@@ -2885,6 +2916,14 @@
         "tile_id": "T_E07_N02",
         "url": "./assets/vegetation/instances_T_E07_N02.json",
         "size_bytes": 387994
+      },
+      {
+        "id": "instances_T_E07_S02",
+        "filename": "instances_T_E07_S02.json",
+        "ext": ".json",
+        "tile_id": "T_E07_S02",
+        "url": "./assets/vegetation/instances_T_E07_S02.json",
+        "size_bytes": 629074
       },
       {
         "id": "instances_T_E07_S03",
@@ -2983,12 +3022,20 @@
         "size_bytes": 906390
       },
       {
+        "id": "instances_T_E01_S09",
+        "filename": "instances_T_E01_S09.json",
+        "ext": ".json",
+        "tile_id": "T_E01_S09",
+        "url": "./assets/vegetation/instances_T_E01_S09.json",
+        "size_bytes": 372520
+      },
+      {
         "id": "instances_T_E02_S09",
         "filename": "instances_T_E02_S09.json",
         "ext": ".json",
         "tile_id": "T_E02_S09",
         "url": "./assets/vegetation/instances_T_E02_S09.json",
-        "size_bytes": 360967
+        "size_bytes": 202399
       },
       {
         "id": "instances_T_E07_S06",
@@ -3031,12 +3078,28 @@
         "size_bytes": 91841
       },
       {
+        "id": "instances_T_E01_S10",
+        "filename": "instances_T_E01_S10.json",
+        "ext": ".json",
+        "tile_id": "T_E01_S10",
+        "url": "./assets/vegetation/instances_T_E01_S10.json",
+        "size_bytes": 387662
+      },
+      {
         "id": "instances_T_W01_S10",
         "filename": "instances_T_W01_S10.json",
         "ext": ".json",
         "tile_id": "T_W01_S10",
         "url": "./assets/vegetation/instances_T_W01_S10.json",
         "size_bytes": 380591
+      },
+      {
+        "id": "instances_T_E02_S10",
+        "filename": "instances_T_E02_S10.json",
+        "ext": ".json",
+        "tile_id": "T_E02_S10",
+        "url": "./assets/vegetation/instances_T_E02_S10.json",
+        "size_bytes": 353304
       },
       {
         "id": "instances_T_E05_S09",
@@ -3053,6 +3116,14 @@
         "tile_id": "T_E09_S05",
         "url": "./assets/vegetation/instances_T_E09_S05.json",
         "size_bytes": 792089
+      },
+      {
+        "id": "instances_T_W03_S10",
+        "filename": "instances_T_W03_S10.json",
+        "ext": ".json",
+        "tile_id": "T_W03_S10",
+        "url": "./assets/vegetation/instances_T_W03_S10.json",
+        "size_bytes": 390075
       },
       {
         "id": "instances_T_W04_S10",
@@ -3077,6 +3148,14 @@
         "tile_id": "T_E00_S11",
         "url": "./assets/vegetation/instances_T_E00_S11.json",
         "size_bytes": 306072
+      },
+      {
+        "id": "instances_T_E01_S11",
+        "filename": "instances_T_E01_S11.json",
+        "ext": ".json",
+        "tile_id": "T_E01_S11",
+        "url": "./assets/vegetation/instances_T_E01_S11.json",
+        "size_bytes": 387497
       },
       {
         "id": "instances_T_W01_S11",
@@ -3111,12 +3190,28 @@
         "size_bytes": 370534
       },
       {
+        "id": "instances_T_W03_S11",
+        "filename": "instances_T_W03_S11.json",
+        "ext": ".json",
+        "tile_id": "T_W03_S11",
+        "url": "./assets/vegetation/instances_T_W03_S11.json",
+        "size_bytes": 397736
+      },
+      {
         "id": "instances_T_E04_S11",
         "filename": "instances_T_E04_S11.json",
         "ext": ".json",
         "tile_id": "T_E04_S11",
         "url": "./assets/vegetation/instances_T_E04_S11.json",
         "size_bytes": 330360
+      },
+      {
+        "id": "instances_T_W04_S11",
+        "filename": "instances_T_W04_S11.json",
+        "ext": ".json",
+        "tile_id": "T_W04_S11",
+        "url": "./assets/vegetation/instances_T_W04_S11.json",
+        "size_bytes": 386439
       },
       {
         "id": "instances_T_W08_S09",
@@ -3133,6 +3228,14 @@
         "tile_id": "T_W09_S08",
         "url": "./assets/vegetation/instances_T_W09_S08.json",
         "size_bytes": 336441
+      },
+      {
+        "id": "instances_T_W05_S11",
+        "filename": "instances_T_W05_S11.json",
+        "ext": ".json",
+        "tile_id": "T_W05_S11",
+        "url": "./assets/vegetation/instances_T_W05_S11.json",
+        "size_bytes": 404943
       },
       {
         "id": "instances_T_E03_S12",
@@ -4421,6 +4524,38 @@
     ],
     "roads": [
       {
+        "id": "ho_xuan_huong_true_shoreline_and_embankment_w1",
+        "filename": "ho_xuan_huong_true_shoreline_and_embankment_w1.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/osm_true_roads_hydro/ho_xuan_huong_true_shoreline_and_embankment_w1.glb",
+        "size_bytes": 1075776
+      },
+      {
+        "id": "ring0_hillside_slopes_and_connectors_w2",
+        "filename": "ring0_hillside_slopes_and_connectors_w2.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/osm_true_roads_hydro/ring0_hillside_slopes_and_connectors_w2.glb",
+        "size_bytes": 2178744
+      },
+      {
+        "id": "ring0_true_osm_arterial_and_6_roundabouts_w2",
+        "filename": "ring0_true_osm_arterial_and_6_roundabouts_w2.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/osm_true_roads_hydro/ring0_true_osm_arterial_and_6_roundabouts_w2.glb",
+        "size_bytes": 5557016
+      },
+      {
+        "id": "tran_quoc_toan_thuy_ta_cho_dalat_true_roads_w1",
+        "filename": "tran_quoc_toan_thuy_ta_cho_dalat_true_roads_w1.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/osm_true_roads_hydro/tran_quoc_toan_thuy_ta_cho_dalat_true_roads_w1.glb",
+        "size_bytes": 2338380
+      },
+      {
         "id": "roads_ring0",
         "filename": "roads_ring0.glb",
         "ext": ".glb",
@@ -4451,6 +4586,14 @@
         "tile_id": null,
         "url": "./assets/infrastructure_buildings/roads_ring2_c109.glb",
         "size_bytes": 1057076
+      },
+      {
+        "id": "roads_ring2_c500",
+        "filename": "roads_ring2_c500.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/infrastructure_buildings/roads_ring2_c500.glb",
+        "size_bytes": 1059704
       },
       {
         "id": "roads_ring2_ext",
@@ -4751,12 +4894,12 @@
     ],
     "buildings": [
       {
-        "id": "buildings_T_E00_N00",
-        "filename": "buildings_T_E00_N00.glb",
+        "id": "osm_buildings_T_E00_N00",
+        "filename": "osm_buildings_T_E00_N00.glb",
         "ext": ".glb",
         "tile_id": "T_E00_N00",
-        "url": "./assets/building_tiles/buildings_T_E00_N00.glb",
-        "size_bytes": 2187972
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E00_N00.glb",
+        "size_bytes": 5472008
       },
       {
         "id": "buildings_T_E00_N01",
@@ -5503,6 +5646,14 @@
         "size_bytes": 1286808
       },
       {
+        "id": "buildings_T_E04_N05",
+        "filename": "buildings_T_E04_N05.glb",
+        "ext": ".glb",
+        "tile_id": "T_E04_N05",
+        "url": "./assets/building_tiles/buildings_T_E04_N05.glb",
+        "size_bytes": 1200488
+      },
+      {
         "id": "buildings_T_E05_S04",
         "filename": "buildings_T_E05_S04.glb",
         "ext": ".glb",
@@ -5557,6 +5708,22 @@
         "tile_id": "T_W06_S03",
         "url": "./assets/building_tiles/buildings_T_W06_S03.glb",
         "size_bytes": 989748
+      },
+      {
+        "id": "buildings_T_E00_S07",
+        "filename": "buildings_T_E00_S07.glb",
+        "ext": ".glb",
+        "tile_id": "T_E00_S07",
+        "url": "./assets/building_tiles/buildings_T_E00_S07.glb",
+        "size_bytes": 964036
+      },
+      {
+        "id": "buildings_T_E01_S07",
+        "filename": "buildings_T_E01_S07.glb",
+        "ext": ".glb",
+        "tile_id": "T_E01_S07",
+        "url": "./assets/building_tiles/buildings_T_E01_S07.glb",
+        "size_bytes": 1015192
       },
       {
         "id": "buildings_T_W05_N05",
@@ -5615,6 +5782,14 @@
         "size_bytes": 1120512
       },
       {
+        "id": "buildings_T_W05_N06",
+        "filename": "buildings_T_W05_N06.glb",
+        "ext": ".glb",
+        "tile_id": "T_W05_N06",
+        "url": "./assets/building_tiles/buildings_T_W05_N06.glb",
+        "size_bytes": 1188180
+      },
+      {
         "id": "buildings_T_W06_N05",
         "filename": "buildings_T_W06_N05.glb",
         "ext": ".glb",
@@ -5639,6 +5814,22 @@
         "size_bytes": 1132432
       },
       {
+        "id": "buildings_T_W08_S02",
+        "filename": "buildings_T_W08_S02.glb",
+        "ext": ".glb",
+        "tile_id": "T_W08_S02",
+        "url": "./assets/building_tiles/buildings_T_W08_S02.glb",
+        "size_bytes": 1158116
+      },
+      {
+        "id": "buildings_T_E08_S03",
+        "filename": "buildings_T_E08_S03.glb",
+        "ext": ".glb",
+        "tile_id": "T_E08_S03",
+        "url": "./assets/building_tiles/buildings_T_E08_S03.glb",
+        "size_bytes": 1220016
+      },
+      {
         "id": "buildings_T_W08_S03",
         "filename": "buildings_T_W08_S03.glb",
         "ext": ".glb",
@@ -5653,6 +5844,14 @@
         "tile_id": "T_E07_S05",
         "url": "./assets/building_tiles/buildings_T_E07_S05.glb",
         "size_bytes": 1158176
+      },
+      {
+        "id": "buildings_T_W07_N05",
+        "filename": "buildings_T_W07_N05.glb",
+        "ext": ".glb",
+        "tile_id": "T_W07_N05",
+        "url": "./assets/building_tiles/buildings_T_W07_N05.glb",
+        "size_bytes": 1138020
       },
       {
         "id": "buildings_T_E08_S04",
@@ -5685,6 +5884,14 @@
         "tile_id": "T_E09_S05",
         "url": "./assets/building_tiles/buildings_T_E09_S05.glb",
         "size_bytes": 1183012
+      },
+      {
+        "id": "buildings_T_E10_S05",
+        "filename": "buildings_T_E10_S05.glb",
+        "ext": ".glb",
+        "tile_id": "T_E10_S05",
+        "url": "./assets/building_tiles/buildings_T_E10_S05.glb",
+        "size_bytes": 1090104
       }
     ]
   }

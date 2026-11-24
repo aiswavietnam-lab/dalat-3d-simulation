@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "project": "DALAT_3D_SIMULATION",
-  "wave": "T5_AUTO_R2_117TILES_80K_BUILDINGS_AND_300KM_ROADS",
+  "wave": "T5_AUTO_R2_125TILES_500KM2_AND_20K_STREETLAMP_SYNC",
   "coordinate_origin": {
     "name": "Tam_Ho_Xuan_Huong_Da_Lat",
     "lat": 11.940419,
@@ -817,6 +817,66 @@
       "duration_ms": 1650,
       "recommended_lighting": "sunset_lake",
       "description": "Đồi chè Oolong bậc thang Trạm Hành Đông Bắc và những dãy nhà lồng phơi hồng gió trải dài trên sườn Đông Bắc Đèo Dran."
+    },
+    {
+      "id": "dran_town_da_nhim_hydro_dam_north",
+      "name_vi": "[RING_2] Thị Trấn D'Ran Bắc – Hồ & Đập Thủy Điện Đa Nhim Tây Bắc (T_E10_S05)",
+      "category": "lake_panorama",
+      "tile_id": "T_E10_S05",
+      "position_gltf": [
+        19150.0,
+        215.0,
+        9650.0
+      ],
+      "target_gltf": [
+        20150.0,
+        45.0,
+        10250.0
+      ],
+      "fov": 48,
+      "duration_ms": 1700,
+      "recommended_lighting": "early_mist",
+      "description": "Cửa ngõ phía Bắc Thị trấn D'Ran và bờ Tây Bắc Hồ Thủy điện Đa Nhim dưới chân Đèo Dran, nổi tiếng với vườn hồng giòn và rừng thông cổ thụ."
+    },
+    {
+      "id": "dt722_dankia_northwest_lang_cu_lan_gateway",
+      "name_vi": "[RING_2] Tây Bắc Hồ Dankia – Hành Lang ĐT722 Đi Làng Cù Lần (T_W05_N06 / T_W07_N05)",
+      "category": "highland_corridor",
+      "tile_id": "T_W05_N06",
+      "position_gltf": [
+        -9450.0,
+        235.0,
+        -11350.0
+      ],
+      "target_gltf": [
+        -10350.0,
+        85.0,
+        -12150.0
+      ],
+      "fov": 48,
+      "duration_ms": 1700,
+      "recommended_lighting": "highland_noon",
+      "description": "Tuyến đường Tỉnh lộ ĐT722 đi qua rừng thông nguyên sinh Tây Bắc Hồ Dankia – Suối Vàng hướng về thung lũng Suối Cạn và Khu du lịch Làng Cù Lần."
+    },
+    {
+      "id": "hiep_thanh_south_lien_nghia_expressway_gate",
+      "name_vi": "[RING_2] Hiệp Thạnh Nam – Cửa Ngõ Bắc Liên Nghĩa & Cao Tốc Liên Khương (T_E00_S07 / T_E01_S07)",
+      "category": "Southern_gateway",
+      "tile_id": "T_E00_S07",
+      "position_gltf": [
+        -250.0,
+        165.0,
+        13150.0
+      ],
+      "target_gltf": [
+        450.0,
+        -55.0,
+        14150.0
+      ],
+      "fov": 48,
+      "duration_ms": 1650,
+      "recommended_lighting": "sunset_lake",
+      "description": "Điểm cực Nam hành lang Cao tốc Liên Khương – Prenn và Quốc lộ 20 tại xã Hiệp Thạnh Nam trước khi tiến vào nút giao Cảng Hàng không Quốc tế Liên Khương."
     }
   ],
   "climate_presets": [
@@ -877,7 +937,7 @@
       "emissive_scale": 1.35
     }
   ],
-  "version": "2.6.0-wave18-117tiles-39presets",
+  "version": "2.7.0-wave19-125tiles-500km2-42presets",
   "flythrough_tour": [
     {
       "stop_index": 1,
@@ -898,5 +958,5 @@
       "duration_sec": 8.0
     }
   ],
-  "updated_at_utc": "2026-11-24T04:02:42Z"
+  "updated_at_utc": "2026-11-24T04:46:06Z"
 }

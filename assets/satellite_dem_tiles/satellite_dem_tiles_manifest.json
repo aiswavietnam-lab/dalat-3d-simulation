@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "project_name": "DALAT_3D_SIMULATION",
+  "slot": 20,
+  "display_slot_name": "ĐÀ LẠT - 19",
+  "lane": "SATELLITE_REAL_DEM_TERRAIN_REFINEMENT",
+  "updated_at_utc": "2026-11-24T04:13:32Z",
+  "total_upgraded_tiles": 1,
+  "tiles": [
+    {
+      "tile_id": "T_E00_N00",
+      "wave": 1,
+      "task_id": "T20_W1_CORE_T_E00_N00_REAL_DEM_AND_SATELLITE_TEX",
+      "ring": 0,
+      "grid_shape": [
+        129,
+        129
+      ],
+      "vertices": 16641,
+      "triangles": 32768,
+      "elev_msl_min_m": 1469.014,
+      "elev_msl_max_m": 1540.082,
+      "elev_msl_mean_m": 1501.566,
+      "lake_flattened_vertices": 1640,
+      "max_seam_gap_mm": 0.0,
+      "glb_file": "terrain_real_T_E00_N00.glb",
+      "glb_size_bytes": 1356696,
+      "glb_sha256": "fdb8131437e38808d7ca483ba1695f114ad6b06e553ca3a96e6e8fbcad357b4b",
+      "heightmap_file": "heightmap_real_T_E00_N00.json",
+      "heightmap_size_bytes": 146732,
+      "heightmap_sha256": "785cd2428fc56b57b1b3c1fd3d8051b23b66c5c28a9ee1c9477f2eba61432f2c"
+    }
+  ]
+}
