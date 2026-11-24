@@ -1,0 +1,4107 @@
+{
+  "assets/agri_landscapes/agri_landscapes_manifest.json": {
+    "id": "1B-ridepvRVZpAJ0drkX1H13rFMSMRmzP",
+    "modifiedTime": "2026-11-23T17:44:16.902Z",
+    "size": "6507"
+  },
+  "assets/agri_landscapes/agri_w1_da_thien_valley_T_E01_N02.glb": {
+    "id": "1TyZlIEslEyu4X-cj7_65Jb7fi-sG14Br",
+    "modifiedTime": "2026-11-23T17:28:08.213Z",
+    "size": "7465076"
+  },
+  "assets/agri_landscapes/agri_w1_thai_phien_central_T_E02_N01.glb": {
+    "id": "16zlgzyWgv20-uZcIXmY7h8hYVCSTbxRq",
+    "modifiedTime": "2026-11-23T17:31:44.801Z",
+    "size": "3427432"
+  },
+  "assets/agri_landscapes/agri_w1_thai_phien_north_T_E02_N01.glb": {
+    "id": "1AJdFo_Fh1ymlgyZh0SxpUoH9bPHHoTfP",
+    "modifiedTime": "2026-11-23T17:31:43.473Z",
+    "size": "5139684"
+  },
+  "assets/agri_landscapes/agri_w1_thai_phien_south_view_T_E02_N00.glb": {
+    "id": "1jKR7twUJKhgmCv30YlgQmK_DAowEZs4z",
+    "modifiedTime": "2026-11-23T17:28:10.982Z",
+    "size": "4230264"
+  },
+  "assets/building_tiles/building_tiles_manifest.json": {
+    "id": "1oRRHwzhVEqtmvU5IIg54T2orX3TZI10q",
+    "modifiedTime": "2026-11-24T04:03:23.589Z",
+    "size": "183693"
+  },
+  "assets/building_tiles/buildings_T_E00_N00.glb": {
+    "id": "11QCtSXIJDF-PwK0k7cWRM6ZCxiMLI6eb",
+    "modifiedTime": "2026-11-23T13:09:45.923Z",
+    "size": "2187972"
+  },
+  "assets/building_tiles/buildings_T_E00_N01.glb": {
+    "id": "14TpxnhVv5vX1Jbh77nloRHb9H1b31fiv",
+    "modifiedTime": "2026-11-23T14:56:19.003Z",
+    "size": "1283028"
+  },
+  "assets/building_tiles/buildings_T_E00_N02.glb": {
+    "id": "1g_4x3zBT7S__eCqPHYxl1SG6KrZqWyn0",
+    "modifiedTime": "2026-11-23T16:08:45.211Z",
+    "size": "972188"
+  },
+  "assets/building_tiles/buildings_T_E00_N03.glb": {
+    "id": "1DoboazsYlH0QIZRi7mcRYODn7SQXd2Sl",
+    "modifiedTime": "2026-11-23T17:04:51.119Z",
+    "size": "1165356"
+  },
+  "assets/building_tiles/buildings_T_E00_N04.glb": {
+    "id": "1K_p7TI4N-lq6mBoECiKApvJA9rAeaG6a",
+    "modifiedTime": "2026-11-23T21:14:24.920Z",
+    "size": "1112848"
+  },
+  "assets/building_tiles/buildings_T_E00_N05.glb": {
+    "id": "1yRtSuwJZQCErWotZzy0R2QVotQRLM4eL",
+    "modifiedTime": "2026-11-23T21:45:35.485Z",
+    "size": "769536"
+  },
+  "assets/building_tiles/buildings_T_E00_N06.glb": {
+    "id": "10rVbgT1pIS7BTI_mLrlj1AGPv-42Zc_l",
+    "modifiedTime": "2026-11-23T21:45:36.753Z",
+    "size": "744556"
+  },
+  "assets/building_tiles/buildings_T_E00_S01.glb": {
+    "id": "1dmJnLZB_KtslXGSv7zbvc0nIbGJzqRGV",
+    "modifiedTime": "2026-11-23T14:56:18.150Z",
+    "size": "712772"
+  },
+  "assets/building_tiles/buildings_T_E00_S02.glb": {
+    "id": "1JMYWbcBkoqKqf4rzolDSCpJWaknDXSN3",
+    "modifiedTime": "2026-11-23T16:08:44.514Z",
+    "size": "503780"
+  },
+  "assets/building_tiles/buildings_T_E00_S03.glb": {
+    "id": "1nqK47RHYeKiVUbR1Inx6eCj7qQxzJerX",
+    "modifiedTime": "2026-11-23T17:04:51.282Z",
+    "size": "860056"
+  },
+  "assets/building_tiles/buildings_T_E00_S04.glb": {
+    "id": "1nSZ_G6vDxKZLkgCL2riIhFLM6lORkQ_R",
+    "modifiedTime": "2026-11-23T18:15:27.646Z",
+    "size": "865324"
+  },
+  "assets/building_tiles/buildings_T_E00_S05.glb": {
+    "id": "1Yh6l5GN2B6JIMfwf2QpBV2mwegkUtjXN",
+    "modifiedTime": "2026-11-23T23:50:49.516Z",
+    "size": "1027708"
+  },
+  "assets/building_tiles/buildings_T_E00_S06.glb": {
+    "id": "1EpB_440w9KMwpXGHwdRHpNPpWsdmTpib",
+    "modifiedTime": "2026-11-24T00:44:04.553Z",
+    "size": "1017140"
+  },
+  "assets/building_tiles/buildings_T_E01_N00.glb": {
+    "id": "1FCEtg9owTlVP7hrDwLIPI0lR23kPSr5L",
+    "modifiedTime": "2026-11-23T14:56:16.098Z",
+    "size": "962096"
+  },
+  "assets/building_tiles/buildings_T_E01_N01.glb": {
+    "id": "1AHu_mS71RXoNpFyJs5H89RPuWWnFEiTh",
+    "modifiedTime": "2026-11-23T14:56:19.242Z",
+    "size": "1125604"
+  },
+  "assets/building_tiles/buildings_T_E01_N02.glb": {
+    "id": "1qiwKYw90UeWXloqqXY3yl15ZUfCiZV2H",
+    "modifiedTime": "2026-11-23T17:04:52.856Z",
+    "size": "1231972"
+  },
+  "assets/building_tiles/buildings_T_E01_N03.glb": {
+    "id": "1LHi6djnyEOYmO5GiLNSk_OIuKARc9ehi",
+    "modifiedTime": "2026-11-23T18:13:30.216Z",
+    "size": "1151468"
+  },
+  "assets/building_tiles/buildings_T_E01_N04.glb": {
+    "id": "1rTcW3onAaJb380s0NpLjVtiReMDlzJ1O",
+    "modifiedTime": "2026-11-23T23:50:53.708Z",
+    "size": "1196624"
+  },
+  "assets/building_tiles/buildings_T_E01_N05.glb": {
+    "id": "19Pq7UIR1OeI7CJ0FIMbhSZclXbcOPMJ_",
+    "modifiedTime": "2026-11-23T23:50:54.565Z",
+    "size": "1186476"
+  },
+  "assets/building_tiles/buildings_T_E01_N06.glb": {
+    "id": "1PGBkTCH0-eJu_LR0XrdcaZ5iPH1rIYeo",
+    "modifiedTime": "2026-11-23T23:11:33.638Z",
+    "size": "908828"
+  },
+  "assets/building_tiles/buildings_T_E01_S01.glb": {
+    "id": "15GbDNV3UTft_t4E3mfvYxccgY5qOVgm2",
+    "modifiedTime": "2026-11-23T14:56:15.845Z",
+    "size": "844580"
+  },
+  "assets/building_tiles/buildings_T_E01_S02.glb": {
+    "id": "1l894Bqp1er8lw8hayb8nitxr0I_fyNEJ",
+    "modifiedTime": "2026-11-23T16:08:46.736Z",
+    "size": "881760"
+  },
+  "assets/building_tiles/buildings_T_E01_S03.glb": {
+    "id": "1-9QlCw_gQUoibSFKPRe-oUyv5nuYh3Ab",
+    "modifiedTime": "2026-11-23T19:11:54.661Z",
+    "size": "853864"
+  },
+  "assets/building_tiles/buildings_T_E01_S04.glb": {
+    "id": "1sVkl3-CL-dbWV5ZrZKdAnLWPi95nR2J5",
+    "modifiedTime": "2026-11-23T21:45:42.343Z",
+    "size": "1484072"
+  },
+  "assets/building_tiles/buildings_T_E01_S05.glb": {
+    "id": "1HNst_YKYGrWwjPfJVX9FXobiqRjT484D",
+    "modifiedTime": "2026-11-23T23:50:50.913Z",
+    "size": "1002300"
+  },
+  "assets/building_tiles/buildings_T_E01_S06.glb": {
+    "id": "1lYudKlNfDt5xg3rkXHTp3II7c2l9BlzE",
+    "modifiedTime": "2026-11-24T01:49:39.548Z",
+    "size": "1006356"
+  },
+  "assets/building_tiles/buildings_T_E02_N00.glb": {
+    "id": "1-_Gy4hU6aFtsAnfdg7oyoFsIcYm_l_yM",
+    "modifiedTime": "2026-11-23T16:08:46.675Z",
+    "size": "1335668"
+  },
+  "assets/building_tiles/buildings_T_E02_N01.glb": {
+    "id": "1Ew2mikMZ8jFEpscXzdQ_g-ds7MBiaNcF",
+    "modifiedTime": "2026-11-23T14:56:16.836Z",
+    "size": "1447212"
+  },
+  "assets/building_tiles/buildings_T_E02_N02.glb": {
+    "id": "1fv9VNeOhJuk3U6rAah2tkc-SR8NefcVB",
+    "modifiedTime": "2026-11-23T19:11:49.090Z",
+    "size": "1291536"
+  },
+  "assets/building_tiles/buildings_T_E02_N03.glb": {
+    "id": "1p6pPffDg_CRfXLSIOwTJQCbbN6eAaqS_",
+    "modifiedTime": "2026-11-23T19:49:15.353Z",
+    "size": "1101444"
+  },
+  "assets/building_tiles/buildings_T_E02_N04.glb": {
+    "id": "13GtZULUnIcFxQdQujer0dxv6RKQ8Kklx",
+    "modifiedTime": "2026-11-24T00:43:59.863Z",
+    "size": "1174444"
+  },
+  "assets/building_tiles/buildings_T_E02_N05.glb": {
+    "id": "1ONOd07tS5VVu5KfN52Y3gSqZFW3EAlPO",
+    "modifiedTime": "2026-11-24T00:44:00.102Z",
+    "size": "1188468"
+  },
+  "assets/building_tiles/buildings_T_E02_S01.glb": {
+    "id": "1UDGTeKOVE19yiBQwmj0LdgXDC7V1btBF",
+    "modifiedTime": "2026-11-23T17:04:55.356Z",
+    "size": "772204"
+  },
+  "assets/building_tiles/buildings_T_E02_S02.glb": {
+    "id": "1URQozdX5epSMrOLyqy4mMT1C0YDBZDm9",
+    "modifiedTime": "2026-11-23T19:49:15.176Z",
+    "size": "1279248"
+  },
+  "assets/building_tiles/buildings_T_E02_S03.glb": {
+    "id": "1oESLGL67JGwIgDQlWjN-kWHTnr3VsAAL",
+    "modifiedTime": "2026-11-23T19:49:18.357Z",
+    "size": "1271128"
+  },
+  "assets/building_tiles/buildings_T_E02_S05.glb": {
+    "id": "18PH4K95D9ITTRTpWoWPpjjzReXxLEzTc",
+    "modifiedTime": "2026-11-24T00:43:59.179Z",
+    "size": "970568"
+  },
+  "assets/building_tiles/buildings_T_E02_S06.glb": {
+    "id": "1RiK_z0pKCbI348HEE7VvWsbWz7_ttiRo",
+    "modifiedTime": "2026-11-24T03:09:50.842Z",
+    "size": "972160"
+  },
+  "assets/building_tiles/buildings_T_E03_N00.glb": {
+    "id": "1c1CTLabmfOsRk2d2hHvH8B-Ry2h0ZqOG",
+    "modifiedTime": "2026-11-23T14:56:18.235Z",
+    "size": "1562684"
+  },
+  "assets/building_tiles/buildings_T_E03_N01.glb": {
+    "id": "1fUN-qM88NSZYNcq4AhaiVxkpxf93y-ct",
+    "modifiedTime": "2026-11-23T18:15:15.439Z",
+    "size": "1250872"
+  },
+  "assets/building_tiles/buildings_T_E03_N02.glb": {
+    "id": "1gjUwXedBvymPwWLchnkQCuXEDg0c4Jtl",
+    "modifiedTime": "2026-11-23T19:49:14.594Z",
+    "size": "1100776"
+  },
+  "assets/building_tiles/buildings_T_E03_N03.glb": {
+    "id": "1m_eoviAKp8xQice9TDzN0UiNxcbMabaT",
+    "modifiedTime": "2026-11-23T19:49:14.787Z",
+    "size": "1100788"
+  },
+  "assets/building_tiles/buildings_T_E03_N04.glb": {
+    "id": "16sVDs76DC8R7oSLBaq7mLMecDsIuy30x",
+    "modifiedTime": "2026-11-24T01:49:45.093Z",
+    "size": "1149468"
+  },
+  "assets/building_tiles/buildings_T_E03_N05.glb": {
+    "id": "1meQFs9J6nkmiHl0Dp8ca3Fj9ZbWVN1g2",
+    "modifiedTime": "2026-11-24T03:09:56.970Z",
+    "size": "1131720"
+  },
+  "assets/building_tiles/buildings_T_E03_S01.glb": {
+    "id": "1Sw4_6sGBm-OlcfmnbRp3uEiJ4UkemZ7j",
+    "modifiedTime": "2026-11-23T19:11:54.939Z",
+    "size": "1294944"
+  },
+  "assets/building_tiles/buildings_T_E03_S02.glb": {
+    "id": "1ONvsQaFOlIdbXTTISW66taATiwhiAUm3",
+    "modifiedTime": "2026-11-23T19:49:15.547Z",
+    "size": "1271132"
+  },
+  "assets/building_tiles/buildings_T_E03_S03.glb": {
+    "id": "1ioB-PjzmDvdY3hBWOrxRjifiloSOtWEL",
+    "modifiedTime": "2026-11-23T19:49:21.114Z",
+    "size": "1289380"
+  },
+  "assets/building_tiles/buildings_T_E03_S06.glb": {
+    "id": "1zL49tpmXzbepnZih6wyF9diUMpGgx2gb",
+    "modifiedTime": "2026-11-24T04:03:14.972Z",
+    "size": "978000"
+  },
+  "assets/building_tiles/buildings_T_E04_N00.glb": {
+    "id": "10TpmbwucmGcoBQDUuHpyVLrxoVrvEHDn",
+    "modifiedTime": "2026-11-23T17:04:53.703Z",
+    "size": "1294136"
+  },
+  "assets/building_tiles/buildings_T_E04_N01.glb": {
+    "id": "1RdgVDVa1CdDo4Ce0ad3DN1zwbxVrv2Zr",
+    "modifiedTime": "2026-11-23T21:45:38.123Z",
+    "size": "1167728"
+  },
+  "assets/building_tiles/buildings_T_E04_N04.glb": {
+    "id": "19thUnao1pcoT6ITidKOpN-ughK2-_T85",
+    "modifiedTime": "2026-11-24T04:03:24.177Z",
+    "size": "1173592"
+  },
+  "assets/building_tiles/buildings_T_E04_S01.glb": {
+    "id": "1nhPtVQJhqJNZKOvuFJUfvi6C_YfWhIOX",
+    "modifiedTime": "2026-11-23T19:11:55.239Z",
+    "size": "1260460"
+  },
+  "assets/building_tiles/buildings_T_E04_S02.glb": {
+    "id": "1TruzqVnQ0cXD1g4CEKD44KSjtKLUUO0F",
+    "modifiedTime": "2026-11-23T21:45:39.814Z",
+    "size": "1244168"
+  },
+  "assets/building_tiles/buildings_T_E04_S03.glb": {
+    "id": "1n0P1gZXiGer0sqwfqmPaNfdriirsjR2I",
+    "modifiedTime": "2026-11-23T21:45:39.974Z",
+    "size": "1155540"
+  },
+  "assets/building_tiles/buildings_T_E05_S01.glb": {
+    "id": "1pLyZ4DVkpqO6eG2q87hiuy8i1wXZ7hl7",
+    "modifiedTime": "2026-11-23T18:15:19.263Z",
+    "size": "1312492"
+  },
+  "assets/building_tiles/buildings_T_E05_S02.glb": {
+    "id": "1-khK3Vs5ICKxsknBQVSi5sYptzgrqI7-",
+    "modifiedTime": "2026-11-23T21:14:27.851Z",
+    "size": "1305096"
+  },
+  "assets/building_tiles/buildings_T_E05_S03.glb": {
+    "id": "1Clble7Sb5pQ2TKM_EZo0W2NeQiYr0CEY",
+    "modifiedTime": "2026-11-23T23:11:44.114Z",
+    "size": "1235348"
+  },
+  "assets/building_tiles/buildings_T_E05_S04.glb": {
+    "id": "1vPyTFHLkBOWJIuY93laAytyitKNf_Yp_",
+    "modifiedTime": "2026-11-24T04:03:22.832Z",
+    "size": "1187780"
+  },
+  "assets/building_tiles/buildings_T_E06_S02.glb": {
+    "id": "1G6W9Vln6ZsymOKd3XG8-Uqs1g5cBHdCl",
+    "modifiedTime": "2026-11-24T01:49:47.795Z",
+    "size": "1160860"
+  },
+  "assets/building_tiles/buildings_T_E06_S03.glb": {
+    "id": "1MGOidN8mRoCMjSgJztZvNByiMxZOmVi7",
+    "modifiedTime": "2026-11-23T21:14:29.542Z",
+    "size": "1295604"
+  },
+  "assets/building_tiles/buildings_T_E06_S04.glb": {
+    "id": "1lPhTF32uPgi5G96Rec_637d3fPkE9L3i",
+    "modifiedTime": "2026-11-23T23:11:44.945Z",
+    "size": "1235400"
+  },
+  "assets/building_tiles/buildings_T_E07_S03.glb": {
+    "id": "1fAheWoFhzrQC8svafJzfXZlPj-3ZjWZO",
+    "modifiedTime": "2026-11-24T03:09:57.640Z",
+    "size": "1220440"
+  },
+  "assets/building_tiles/buildings_T_E07_S04.glb": {
+    "id": "1EdD5V9Bg8XSiJTT0k2trMq850lEcNqOt",
+    "modifiedTime": "2026-11-23T21:14:30.157Z",
+    "size": "1259984"
+  },
+  "assets/building_tiles/buildings_T_E07_S05.glb": {
+    "id": "17NaRqxyt6eI6_ij1MEx_3i3MqgbeYazS",
+    "modifiedTime": "2026-11-23T23:50:48.756Z",
+    "size": "1158176"
+  },
+  "assets/building_tiles/buildings_T_E08_S04.glb": {
+    "id": "1eVggwxOAO_v8-pS9tm7k-1qz7ERQ7v8R",
+    "modifiedTime": "2026-11-24T01:49:43.580Z",
+    "size": "1173064"
+  },
+  "assets/building_tiles/buildings_T_E08_S05.glb": {
+    "id": "1CkzNWuULUx9MaXXdgVuEKbboQvtYN_98",
+    "modifiedTime": "2026-11-24T00:43:58.419Z",
+    "size": "1159916"
+  },
+  "assets/building_tiles/buildings_T_E09_S04.glb": {
+    "id": "11CBDfXewiWgPIOhqY6U93UJ6MMo5H-V6",
+    "modifiedTime": "2026-11-24T04:03:18.289Z",
+    "size": "1174392"
+  },
+  "assets/building_tiles/buildings_T_E09_S05.glb": {
+    "id": "1Dl2bhuXFnRNicYwAbj-PdJrcNUecXSKS",
+    "modifiedTime": "2026-11-24T03:09:54.643Z",
+    "size": "1183012"
+  },
+  "assets/building_tiles/buildings_T_W01_N00.glb": {
+    "id": "1s2afpJtwFU-N5tBMgf0yCiEwlXRpB0Oz",
+    "modifiedTime": "2026-11-23T14:56:15.708Z",
+    "size": "1034852"
+  },
+  "assets/building_tiles/buildings_T_W01_N01.glb": {
+    "id": "1j6un4ea0jjIHxDs_QnwWM9IAC8YSh-ZV",
+    "modifiedTime": "2026-11-23T14:56:17.368Z",
+    "size": "977316"
+  },
+  "assets/building_tiles/buildings_T_W01_N02.glb": {
+    "id": "1l-wTEbMfmE_ATKfHascOYInDBfboNzL7",
+    "modifiedTime": "2026-11-23T17:04:50.750Z",
+    "size": "1312300"
+  },
+  "assets/building_tiles/buildings_T_W01_N03.glb": {
+    "id": "1K99nc98ttpK_30U-kkQ3isdT1D2D-OyU",
+    "modifiedTime": "2026-11-23T18:13:28.861Z",
+    "size": "1161652"
+  },
+  "assets/building_tiles/buildings_T_W01_N04.glb": {
+    "id": "1Y2SSjT_j0-VRlKKyi1MA0JyJ-jlnNK4V",
+    "modifiedTime": "2026-11-23T21:14:24.959Z",
+    "size": "1051696"
+  },
+  "assets/building_tiles/buildings_T_W01_N05.glb": {
+    "id": "1Tc79vQb1U8RIKuHjoUwp-_GIJansq9Ze",
+    "modifiedTime": "2026-11-23T21:45:34.347Z",
+    "size": "759424"
+  },
+  "assets/building_tiles/buildings_T_W01_N06.glb": {
+    "id": "10aNPUr0fUly6qamgw9bzOdOc2pKpCD7i",
+    "modifiedTime": "2026-11-23T23:11:33.005Z",
+    "size": "894716"
+  },
+  "assets/building_tiles/buildings_T_W01_S01.glb": {
+    "id": "1YMjZf0ZHykUqkOXTZ2hxJdc30OGXQTW7",
+    "modifiedTime": "2026-11-23T14:56:16.099Z",
+    "size": "821296"
+  },
+  "assets/building_tiles/buildings_T_W01_S02.glb": {
+    "id": "1vewELX3UPmbgalHCmg5lrueDe9ETWpug",
+    "modifiedTime": "2026-11-23T17:04:50.298Z",
+    "size": "70972"
+  },
+  "assets/building_tiles/buildings_T_W01_S03.glb": {
+    "id": "1NkHm72EXIPUzOZYVNlrdoMcmoDYD27CZ",
+    "modifiedTime": "2026-11-23T17:04:52.092Z",
+    "size": "518592"
+  },
+  "assets/building_tiles/buildings_T_W01_S04.glb": {
+    "id": "1knRQPCd_v9JLjSVojrBAIlwLUBuadNUz",
+    "modifiedTime": "2026-11-23T21:45:41.554Z",
+    "size": "1486120"
+  },
+  "assets/building_tiles/buildings_T_W01_S05.glb": {
+    "id": "16JC9ps9mQNpljasUbkGwU01uGkVv2CHl",
+    "modifiedTime": "2026-11-24T01:49:41.029Z",
+    "size": "1009632"
+  },
+  "assets/building_tiles/buildings_T_W01_S06.glb": {
+    "id": "1CTN7NtHMEgaF8ooHMSRYIZFPzxY_wcoO",
+    "modifiedTime": "2026-11-24T03:09:51.286Z",
+    "size": "1043348"
+  },
+  "assets/building_tiles/buildings_T_W02_N00.glb": {
+    "id": "1Go4ZOh-lH4Zm-yod3nLsW9X7JQNye-ni",
+    "modifiedTime": "2026-11-23T14:56:17.903Z",
+    "size": "1565448"
+  },
+  "assets/building_tiles/buildings_T_W02_N01.glb": {
+    "id": "1s1VtA_mjKJYKB28sL69mgCS2AuDwXGlU",
+    "modifiedTime": "2026-11-23T16:08:45.585Z",
+    "size": "1388024"
+  },
+  "assets/building_tiles/buildings_T_W02_N02.glb": {
+    "id": "1aKUYtXNpMqoAvXS9rexe2b0osMq54Ynn",
+    "modifiedTime": "2026-11-23T19:11:47.974Z",
+    "size": "1354768"
+  },
+  "assets/building_tiles/buildings_T_W02_N03.glb": {
+    "id": "1BY5sKHODQu7t_Np5gkQHbFaT7ZFcfWAg",
+    "modifiedTime": "2026-11-23T18:13:34.056Z",
+    "size": "519504"
+  },
+  "assets/building_tiles/buildings_T_W02_N04.glb": {
+    "id": "10uUmlAk3Ioe62SFEEj-Q93PfAPtuLMVk",
+    "modifiedTime": "2026-11-23T23:50:54.461Z",
+    "size": "1103532"
+  },
+  "assets/building_tiles/buildings_T_W02_N05.glb": {
+    "id": "1WK3LsMtgqrH2foRfpd6Zsjk9M0hQm22r",
+    "modifiedTime": "2026-11-24T01:49:44.502Z",
+    "size": "1104544"
+  },
+  "assets/building_tiles/buildings_T_W02_S01.glb": {
+    "id": "1x-SqBFEYNdf4QwDihUp_Nid3IM4E4a6N",
+    "modifiedTime": "2026-11-23T16:08:46.087Z",
+    "size": "1333688"
+  },
+  "assets/building_tiles/buildings_T_W02_S02.glb": {
+    "id": "14SLww1DhD5lR7vP-qNrQv3paW2wAEinY",
+    "modifiedTime": "2026-11-23T17:04:52.666Z",
+    "size": "505144"
+  },
+  "assets/building_tiles/buildings_T_W02_S03.glb": {
+    "id": "1TBGC8WaGtXvz1m788d6XZuFWSwzoQxI0",
+    "modifiedTime": "2026-11-23T19:49:15.628Z",
+    "size": "695808"
+  },
+  "assets/building_tiles/buildings_T_W02_S05.glb": {
+    "id": "1ozhbdFBvOxPeUIwDP-TEdXiWP8A7IV6X",
+    "modifiedTime": "2026-11-24T04:03:16.323Z",
+    "size": "1029204"
+  },
+  "assets/building_tiles/buildings_T_W03_N00.glb": {
+    "id": "1H1jhsqsDI32fBeCoTIwBhFVhLzZbKghd",
+    "modifiedTime": "2026-11-23T19:11:51.161Z",
+    "size": "1274900"
+  },
+  "assets/building_tiles/buildings_T_W03_N01.glb": {
+    "id": "1E4FXsaJspIKmAmNJqFwi7T4CFYARzOLU",
+    "modifiedTime": "2026-11-23T19:11:51.589Z",
+    "size": "1329184"
+  },
+  "assets/building_tiles/buildings_T_W03_N02.glb": {
+    "id": "1V73gOPeD45nXdHP907d-cY77sfdCY9_i",
+    "modifiedTime": "2026-11-23T19:49:14.183Z",
+    "size": "659208"
+  },
+  "assets/building_tiles/buildings_T_W03_N03.glb": {
+    "id": "1fIEHNNh1CsttLYQ7ZqnE6Jpa5Sb1xNmr",
+    "modifiedTime": "2026-11-23T19:49:12.881Z",
+    "size": "293864"
+  },
+  "assets/building_tiles/buildings_T_W03_N04.glb": {
+    "id": "1iKnTDcAelE3-4kUYRyBLACp_9d-uIBh7",
+    "modifiedTime": "2026-11-23T23:11:34.219Z",
+    "size": "1060384"
+  },
+  "assets/building_tiles/buildings_T_W03_N05.glb": {
+    "id": "1KSD7MOrSd9P5fnU_I6hHa5dZFfJ5vHUP",
+    "modifiedTime": "2026-11-24T00:43:59.105Z",
+    "size": "1146772"
+  },
+  "assets/building_tiles/buildings_T_W03_N06.glb": {
+    "id": "1h0OP2mm3eyEe7xf9_LV_NEGGin95TGWZ",
+    "modifiedTime": "2026-11-24T03:09:55.438Z",
+    "size": "1111712"
+  },
+  "assets/building_tiles/buildings_T_W03_S01.glb": {
+    "id": "1n0BZNG9IIBFEEPvluGjNU6a4Y4pNnI_p",
+    "modifiedTime": "2026-11-23T17:04:55.528Z",
+    "size": "1290816"
+  },
+  "assets/building_tiles/buildings_T_W03_S02.glb": {
+    "id": "1XhWSpVgzqAgKwrxTTSBaaY-H7DCJMQMg",
+    "modifiedTime": "2026-11-23T18:15:19.409Z",
+    "size": "1362416"
+  },
+  "assets/building_tiles/buildings_T_W03_S03.glb": {
+    "id": "1_komEb2W1gNWUeuhjnYKF2UH5A8wOp1G",
+    "modifiedTime": "2026-11-23T19:49:15.784Z",
+    "size": "690428"
+  },
+  "assets/building_tiles/buildings_T_W04_N03.glb": {
+    "id": "1k_O-vFL-BDLQApdlf7SV0zTXTWLpeDW-",
+    "modifiedTime": "2026-11-23T21:14:25.907Z",
+    "size": "967576"
+  },
+  "assets/building_tiles/buildings_T_W04_N04.glb": {
+    "id": "1Rj818whM7yx5cI5mxGPcdM0X84bs_9rp",
+    "modifiedTime": "2026-11-23T21:14:26.678Z",
+    "size": "1021836"
+  },
+  "assets/building_tiles/buildings_T_W04_N05.glb": {
+    "id": "1YgYSlykBZDbfT7-B0QgjAzWVZ-gHRNYW",
+    "modifiedTime": "2026-11-23T23:11:34.918Z",
+    "size": "1196608"
+  },
+  "assets/building_tiles/buildings_T_W04_N06.glb": {
+    "id": "153wkTYEXtnzKbTEAwAA29zvqKOy7HHDl",
+    "modifiedTime": "2026-11-24T04:03:19.836Z",
+    "size": "1206448"
+  },
+  "assets/building_tiles/buildings_T_W04_S01.glb": {
+    "id": "1CSB_9GLANv1NIy0n3d-eNYht-4vtFHnv",
+    "modifiedTime": "2026-11-23T21:14:34.482Z",
+    "size": "1254756"
+  },
+  "assets/building_tiles/buildings_T_W05_N04.glb": {
+    "id": "1fKZgbUIwB1cn7Arq_YcR7RdipBO4W1Wc",
+    "modifiedTime": "2026-11-23T23:11:43.010Z",
+    "size": "1168160"
+  },
+  "assets/building_tiles/buildings_T_W05_N05.glb": {
+    "id": "1Rmi3yk0sJX8oyELCENfLu-8ohBX38CsR",
+    "modifiedTime": "2026-11-24T00:44:02.142Z",
+    "size": "1234272"
+  },
+  "assets/building_tiles/buildings_T_W05_S01.glb": {
+    "id": "1pw2JCzeZ2PGVG9Xkkx7qnGVulfQ5Yob2",
+    "modifiedTime": "2026-11-23T23:11:46.355Z",
+    "size": "985396"
+  },
+  "assets/building_tiles/buildings_T_W05_S02.glb": {
+    "id": "1_KVN_i5mBP-k5j_i0miw-CVBTYPPffNW",
+    "modifiedTime": "2026-11-23T23:50:51.504Z",
+    "size": "1431728"
+  },
+  "assets/building_tiles/buildings_T_W06_N04.glb": {
+    "id": "1ght4Cd5Y1gy9X0lAzlaCC7otHqVxCl3x",
+    "modifiedTime": "2026-11-24T01:49:46.847Z",
+    "size": "1138576"
+  },
+  "assets/building_tiles/buildings_T_W06_N05.glb": {
+    "id": "1DdAHn1Xp0iL0-3J2KLX9PCt_wv5vPOcS",
+    "modifiedTime": "2026-11-24T03:09:55.978Z",
+    "size": "1231408"
+  },
+  "assets/building_tiles/buildings_T_W06_S02.glb": {
+    "id": "1ApzV9f-0sRh44wzEzRmpTXYptcIfQZEd",
+    "modifiedTime": "2026-11-23T23:50:51.922Z",
+    "size": "1286808"
+  },
+  "assets/building_tiles/buildings_T_W06_S03.glb": {
+    "id": "1HeMSJa3yqSR2QrYRbk7jXllCtzpfaRcy",
+    "modifiedTime": "2026-11-24T00:43:57.819Z",
+    "size": "989748"
+  },
+  "assets/building_tiles/buildings_T_W07_N04.glb": {
+    "id": "1N0xCPQsnhy5gH9x-hw_mJh1mTF9FEDCW",
+    "modifiedTime": "2026-11-24T04:03:22.833Z",
+    "size": "1132432"
+  },
+  "assets/building_tiles/buildings_T_W07_S02.glb": {
+    "id": "1H1k55q2hy6H7gfStK3w2LxC0uSUmYEqv",
+    "modifiedTime": "2026-11-24T01:49:41.826Z",
+    "size": "1045856"
+  },
+  "assets/building_tiles/buildings_T_W07_S03.glb": {
+    "id": "1yyG91UGCsHpUYqxS0zO0HkS4XpTTKnvG",
+    "modifiedTime": "2026-11-24T03:09:53.527Z",
+    "size": "1120512"
+  },
+  "assets/building_tiles/buildings_T_W08_S03.glb": {
+    "id": "1bSCG6KHTm3MFw4JH74wSLSA5EPHTg_Sh",
+    "modifiedTime": "2026-11-24T04:03:17.695Z",
+    "size": "1120488"
+  },
+  "assets/french_villas/french_villas_manifest.json": {
+    "id": "1CVBT8rKvkVAzmveegpt2PPzCIKk6wWCf",
+    "modifiedTime": "2026-11-24T03:12:48.684Z",
+    "size": "187739"
+  },
+  "assets/french_villas/fv_bt_05_dinh_nguyen_huu_hao_nam_phuong_palace.glb": {
+    "id": "1cfA75D4MJTSjr3bYljvdQc5cwv8j3apo",
+    "modifiedTime": "2026-11-23T21:38:42.843Z",
+    "size": "919152"
+  },
+  "assets/french_villas/fv_bt_06_bao_tang_lam_dong_main_exhibition_hall.glb": {
+    "id": "1cli4fmmhE-Rys9u_aYkW9YsXvLjZZj08",
+    "modifiedTime": "2026-11-23T21:38:44.622Z",
+    "size": "969320"
+  },
+  "assets/french_villas/fv_bt_07_bao_tang_lam_dong_archaeology_wing.glb": {
+    "id": "100aRkx27OCgfbII3Mt53FgMftFAp2cOs",
+    "modifiedTime": "2026-11-23T21:38:45.472Z",
+    "size": "881572"
+  },
+  "assets/french_villas/fv_bt_08_bao_tang_lam_dong_ethnology_pavilion.glb": {
+    "id": "1Ch30juO57hGlumqRvDbK3bPD_7XRkN0i",
+    "modifiedTime": "2026-11-23T21:38:47.146Z",
+    "size": "870056"
+  },
+  "assets/french_villas/fv_cb_04_cuc_ban_do_dalat_mansard_main_hq.glb": {
+    "id": "1O42F9pAkoLfzuHX0RxAcILvMLIWcw5gj",
+    "modifiedTime": "2026-11-23T23:30:49.308Z",
+    "size": "919284"
+  },
+  "assets/french_villas/fv_cb_05_cuc_ban_do_cartography_printing_wing.glb": {
+    "id": "13yEbzCPy1xXr4nfIA14_fxMDDf4hcaiy",
+    "modifiedTime": "2026-11-23T23:30:51.123Z",
+    "size": "903264"
+  },
+  "assets/french_villas/fv_cb_06_so_dia_du_french_director_villa.glb": {
+    "id": "1ZslafpxUK8yzT6X5pg2hBx9QyFaqrdHP",
+    "modifiedTime": "2026-11-23T23:30:52.870Z",
+    "size": "880488"
+  },
+  "assets/french_villas/fv_cd_07_nha_khach_cong_doan_son_cuoc_1_manor.glb": {
+    "id": "1YhoRYxwamGv3zHLHJnkQe7ms6Hrmsm67",
+    "modifiedTime": "2026-11-23T23:30:53.409Z",
+    "size": "957996"
+  },
+  "assets/french_villas/fv_cd_08_nha_khach_cong_doan_phuong_tim_villa.glb": {
+    "id": "1uz8bw8uG_LOPlCV-f2--oeIEMsFaNPEo",
+    "modifiedTime": "2026-11-23T23:30:54.570Z",
+    "size": "867272"
+  },
+  "assets/french_villas/fv_cd_09_nha_khach_cong_doan_tuong_vi_villa.glb": {
+    "id": "1mu_UYJeC04iOG0hTn6Yz-z8yOf4p9BuC",
+    "modifiedTime": "2026-11-23T23:30:58.890Z",
+    "size": "867364"
+  },
+  "assets/french_villas/fv_ch_01_crazy_house_banyan_giraffe_organic_lod0.glb": {
+    "id": "1ZUUwy8Q4au1NzFNlsFeh3v3fHlmAmgKd",
+    "modifiedTime": "2026-11-23T21:38:37.514Z",
+    "size": "1146000"
+  },
+  "assets/french_villas/fv_ch_02_crazy_house_original_french_villa_1930.glb": {
+    "id": "1u6ojfhi44s7DoWiVDvEhsJKQSGXB2vSj",
+    "modifiedTime": "2026-11-23T21:38:38.901Z",
+    "size": "898896"
+  },
+  "assets/french_villas/fv_ch_03_crazy_house_spider_web_aquarium_pavilion.glb": {
+    "id": "17oNeAuyVq9cnKLrNOqs2nE4klPTisSgR",
+    "modifiedTime": "2026-11-23T21:38:40.400Z",
+    "size": "898396"
+  },
+  "assets/french_villas/fv_ch_04_huynh_thuc_khang_rose_street_villa.glb": {
+    "id": "1QRFcoNz9Rq2uX0a4DW7YoWxcOhGeq-5r",
+    "modifiedTime": "2026-11-23T21:38:42.645Z",
+    "size": "857328"
+  },
+  "assets/french_villas/fv_hb_01_khu_hoa_binh_central_arcade_shophouses.glb": {
+    "id": "1RdBaz8XOE2XPPBld2zLl_1ZA5AHSsaR6",
+    "modifiedTime": "2026-11-24T01:29:20.470Z",
+    "size": "1038196"
+  },
+  "assets/french_villas/fv_hb_02_doc_le_dai_hanh_stepped_mansard_row.glb": {
+    "id": "1czy95tYDd-0bojklcEqrfLdeCukZtn8V",
+    "modifiedTime": "2026-11-24T01:29:20.810Z",
+    "size": "1046748"
+  },
+  "assets/french_villas/fv_hb_03_nguyet_vong_lau_corner_shophouse.glb": {
+    "id": "1yERiYndwQOmLDaA6lbj2M6IlH4eIcYBO",
+    "modifiedTime": "2026-11-24T01:29:21.244Z",
+    "size": "879296"
+  },
+  "assets/french_villas/fv_hb_04_truong_cong_dinh_upper_stepped_shophouses.glb": {
+    "id": "1Qls_I4_K9kwNx4Oj9u6vjfDQUDLcXYmX",
+    "modifiedTime": "2026-11-24T01:29:22.528Z",
+    "size": "951488"
+  },
+  "assets/french_villas/fv_hb_05_truong_cong_dinh_lower_normandy_row.glb": {
+    "id": "1jCSBgcFo5l5Dd575GxdyFPoJC71S-0IT",
+    "modifiedTime": "2026-11-24T01:29:23.375Z",
+    "size": "949488"
+  },
+  "assets/french_villas/fv_hb_06_tang_bat_ho_french_arcade_shophouses.glb": {
+    "id": "1wBq23ZTaj0MKCK7juwDFrpsnoI6beuTR",
+    "modifiedTime": "2026-11-24T01:29:24.866Z",
+    "size": "1007932"
+  },
+  "assets/french_villas/fv_hb_07_tang_bat_ho_doc_song_lo_stepped_villas.glb": {
+    "id": "1BaN2t4mDOBhsn0Ou-sU_BVgEaTt4UbDw",
+    "modifiedTime": "2026-11-24T01:29:25.574Z",
+    "size": "1036800"
+  },
+  "assets/french_villas/fv_hv_08_vien_pasteur_dalat_main.glb": {
+    "id": "1eWR7pgQ01zW1hvkr48MHrZHP0hw3QWi8",
+    "modifiedTime": "2026-11-23T19:21:37.643Z",
+    "size": "966380"
+  },
+  "assets/french_villas/fv_hv_09_pasteur_director_residence.glb": {
+    "id": "1uUV2cTDoXLwR-iHxwwJNcC2stidDyCPB",
+    "modifiedTime": "2026-11-23T19:21:37.510Z",
+    "size": "815600"
+  },
+  "assets/french_villas/fv_hv_10_hung_vuong_phi_anh_manor.glb": {
+    "id": "14QAtQTc3cr1O2F9cr1v3UMkfwCS0wN-I",
+    "modifiedTime": "2026-11-23T19:21:38.656Z",
+    "size": "885096"
+  },
+  "assets/french_villas/fv_hv_11_hung_vuong_governor_chalet.glb": {
+    "id": "1uAztkfWFAabOFHdtxUD8vDztJ2rZjeyT",
+    "modifiedTime": "2026-11-23T19:21:39.401Z",
+    "size": "869908"
+  },
+  "assets/french_villas/fv_hv_12_hung_vuong_pine_ridge_manor.glb": {
+    "id": "1-enyltCqEA8FxkE9hM6U5_Bo3xkqiV5x",
+    "modifiedTime": "2026-11-23T19:21:40.281Z",
+    "size": "869744"
+  },
+  "assets/french_villas/fv_ll_01_ana_mandara_le_petit_manor.glb": {
+    "id": "1CkUS7kqUpynxBnAQ8uG7CMLTElwJ6wZc",
+    "modifiedTime": "2026-11-23T19:21:28.313Z",
+    "size": "969972"
+  },
+  "assets/french_villas/fv_ll_02_ana_mandara_villa_03_normandy.glb": {
+    "id": "1Wopm49EnTs7ajPllKTBM9wz8R5ByDbep",
+    "modifiedTime": "2026-11-23T19:21:31.254Z",
+    "size": "867332"
+  },
+  "assets/french_villas/fv_ll_03_ana_mandara_villa_07_brittany_pool.glb": {
+    "id": "1AOOeF5uoCscPaaaNcd2eX69ynoIyc-bA",
+    "modifiedTime": "2026-11-23T19:21:30.619Z",
+    "size": "861036"
+  },
+  "assets/french_villas/fv_ll_04_ana_mandara_villa_11_provence.glb": {
+    "id": "11LoBTQ-vl9g9FpQAxV9SZw_Qcxt0bbT-",
+    "modifiedTime": "2026-11-23T19:21:31.523Z",
+    "size": "879984"
+  },
+  "assets/french_villas/fv_ll_05_ana_mandara_villa_14_cochinchine_spa.glb": {
+    "id": "1D3DZySrhxwGRlVVCbmOkRECLG_H2z9C7",
+    "modifiedTime": "2026-11-23T19:21:32.845Z",
+    "size": "883980"
+  },
+  "assets/french_villas/fv_ll_06_ana_mandara_villa_17_basque.glb": {
+    "id": "1lVsoHtqG2MT1fqJs5WAH6CZY_vcR4R6j",
+    "modifiedTime": "2026-11-23T19:21:34.537Z",
+    "size": "795924"
+  },
+  "assets/french_villas/fv_ll_07_ana_mandara_villa_22_savoy_chalet.glb": {
+    "id": "1iBIEcyCfcyJ_dAZ4m6O80zL8S_qMa6Mp",
+    "modifiedTime": "2026-11-23T19:21:35.466Z",
+    "size": "797736"
+  },
+  "assets/french_villas/fv_nb_08_doc_nha_bo_dao_duy_tu_lower_stair_shophouses.glb": {
+    "id": "1NVPn5W4oapP08BX8rZ6R30fXEquYel9q",
+    "modifiedTime": "2026-11-24T01:29:26.643Z",
+    "size": "1036564"
+  },
+  "assets/french_villas/fv_nb_09_doc_nha_bo_mid_slope_retaining_villas.glb": {
+    "id": "1KmoPn_WEZR71ZPKK9L7T2MBOnUVV2jQs",
+    "modifiedTime": "2026-11-24T01:29:27.929Z",
+    "size": "1038708"
+  },
+  "assets/french_villas/fv_nb_10_doc_nha_bo_upper_crest_french_manor.glb": {
+    "id": "1H6ObZ2YdRSx6IxxYxvDsBhjAjOUuL0ul",
+    "modifiedTime": "2026-11-24T01:29:28.722Z",
+    "size": "875400"
+  },
+  "assets/french_villas/fv_nd_04_mercure_nguyen_du_main_chateau_03.glb": {
+    "id": "1H68An-c9Y2Yi9ih1fyHUyv_w6Es9MJEl",
+    "modifiedTime": "2026-11-24T03:12:35.026Z",
+    "size": "910956"
+  },
+  "assets/french_villas/fv_nd_05_mercure_nguyen_du_normandy_pool_villa.glb": {
+    "id": "1dqb0xUbf8vGMQFdU00roMmvT-ANR6opM",
+    "modifiedTime": "2026-11-24T03:12:36.924Z",
+    "size": "875844"
+  },
+  "assets/french_villas/fv_nd_06_nguyen_du_villa_09_brittany_slate.glb": {
+    "id": "1rTq9qW2TxIQ6KeTwd2-1Wnwe906f0GRi",
+    "modifiedTime": "2026-11-24T03:12:38.197Z",
+    "size": "884136"
+  },
+  "assets/french_villas/fv_nd_07_nguyen_du_villa_25_provence_rose_manor.glb": {
+    "id": "1M6jTAQFEREDQlLySyMrqBmpJMDUXDeyw",
+    "modifiedTime": "2026-11-24T03:12:39.587Z",
+    "size": "872852"
+  },
+  "assets/french_villas/fv_pv_01_phan_vien_sinh_hoc_stone_monastery_main.glb": {
+    "id": "1H9Q8QNBQ4Pm5qbFMFFm4ykw5F0k3tEXU",
+    "modifiedTime": "2026-11-23T23:30:46.878Z",
+    "size": "986988"
+  },
+  "assets/french_villas/fv_pv_02_phan_vien_sinh_hoc_botanical_chocolate_wing.glb": {
+    "id": "1S3l4iqvMBeHqr6Jll5tMIZa3YLQ1wv8J",
+    "modifiedTime": "2026-11-23T23:30:47.041Z",
+    "size": "883472"
+  },
+  "assets/french_villas/fv_pv_03_phan_vien_sinh_hoc_gene_conservation_villa.glb": {
+    "id": "1Hel9VtpbajoFVLkp2Ps9Z-kkWGtwkMxX",
+    "modifiedTime": "2026-11-23T23:30:47.842Z",
+    "size": "872724"
+  },
+  "assets/french_villas/fv_qt_08_quang_trung_basque_spanish_villa_03.glb": {
+    "id": "1mmOWRQpn_2puWbh8n1L8YiJhkhGwVdwp",
+    "modifiedTime": "2026-11-24T03:12:41.423Z",
+    "size": "884504"
+  },
+  "assets/french_villas/fv_qt_09_quang_trung_railway_quarter_manor_07.glb": {
+    "id": "13Im4fZKYnp91-CVV1moFnmpzaCBYZiNc",
+    "modifiedTime": "2026-11-24T03:12:42.246Z",
+    "size": "882864"
+  },
+  "assets/french_villas/fv_qt_10_quang_trung_yersin_junction_mansard_15.glb": {
+    "id": "1dtaMm3slham-m_9ZMPP_lBnNuC4lGf3r",
+    "modifiedTime": "2026-11-24T03:12:43.669Z",
+    "size": "898136"
+  },
+  "assets/french_villas/fv_thd_01_villa_14_normandy.glb": {
+    "id": "1erXscL4hrioMNhirdhztWatiakoEGTe4",
+    "modifiedTime": "2026-11-23T17:21:56.475Z",
+    "size": "867244"
+  },
+  "assets/french_villas/fv_thd_02_villa_15_brittany.glb": {
+    "id": "1btekf3tKpdUPsdIhdOOSwr7kLvVMgNyY",
+    "modifiedTime": "2026-11-23T17:21:56.126Z",
+    "size": "785928"
+  },
+  "assets/french_villas/fv_thd_03_villa_16_cadasa_grand.glb": {
+    "id": "1H4ztXiR3otNX3mhqLOq8lfA2ukB40ZwJ",
+    "modifiedTime": "2026-11-23T17:21:56.934Z",
+    "size": "969808"
+  },
+  "assets/french_villas/fv_thd_04_villa_16b_violet.glb": {
+    "id": "1zWHX-dYh3yXcE81kbzycaWrFegyOQAXG",
+    "modifiedTime": "2026-11-23T17:21:57.563Z",
+    "size": "858076"
+  },
+  "assets/french_villas/fv_thd_05_villa_18_basque.glb": {
+    "id": "1ZkxXuHnE2Ag7KQ_dkAnJVw6r6iL5Smn0",
+    "modifiedTime": "2026-11-23T17:21:56.221Z",
+    "size": "851016"
+  },
+  "assets/french_villas/fv_thd_06_villa_17_savoy.glb": {
+    "id": "16NW0GVyZ6Eat8lADgGngI3JERsDgiDmK",
+    "modifiedTime": "2026-11-23T17:21:56.029Z",
+    "size": "868920"
+  },
+  "assets/french_villas/fv_thd_07_villa_20_normandy_turret.glb": {
+    "id": "1bvdEaAP98gTnPAIh__CgbIXqlgJCwxkU",
+    "modifiedTime": "2026-11-23T17:21:56.634Z",
+    "size": "871532"
+  },
+  "assets/french_villas/fv_thd_08_villa_19_brittany_manor.glb": {
+    "id": "16K2M9lsIZ6dx21Rcnh0C2kcNdvRGcvOs",
+    "modifiedTime": "2026-11-23T17:21:57.381Z",
+    "size": "869668"
+  },
+  "assets/french_villas/fv_thd_09_villa_22_provence.glb": {
+    "id": "1PYzmOiWX5fr5fTER4zQmd5p50qgq62IP",
+    "modifiedTime": "2026-11-23T17:21:57.030Z",
+    "size": "889364"
+  },
+  "assets/french_villas/fv_thd_10_villa_24_mansard.glb": {
+    "id": "1r-Oz8Mw8nl9fcHa9YFvBOlz3saAak1zW",
+    "modifiedTime": "2026-11-23T17:21:57.654Z",
+    "size": "826580"
+  },
+  "assets/french_villas/fv_thd_11_villa_26_basque_veranda.glb": {
+    "id": "1-I5tgi5SP8fkgir2MpAJSl0GSol1KKUT",
+    "modifiedTime": "2026-11-23T17:21:59.110Z",
+    "size": "870596"
+  },
+  "assets/french_villas/fv_thd_12_villa_28_art_deco_normandy.glb": {
+    "id": "1vOfPWvDSt5Jni25y8zLDqZrl5vv79dHo",
+    "modifiedTime": "2026-11-23T17:21:58.684Z",
+    "size": "869032"
+  },
+  "assets/french_villas/fv_thd_13_villa_30_east_gate.glb": {
+    "id": "1MwySxuyu-HtWx_7z3OjDK64ZKjshp_lr",
+    "modifiedTime": "2026-11-23T17:21:58.015Z",
+    "size": "868144"
+  },
+  "assets/french_villas/fv_tp_01_hotel_du_parc_heritage_annex_1932.glb": {
+    "id": "1MpIC9H8s2UfSUjuVwuZpd7Z0T9KFWFJP",
+    "modifiedTime": "2026-11-24T03:12:32.620Z",
+    "size": "910952"
+  },
+  "assets/french_villas/fv_tp_02_sammy_tran_phu_normandy_grand_manor.glb": {
+    "id": "1upisFbiH9J9qc9gFBPaKikAHiE0pPrxK",
+    "modifiedTime": "2026-11-24T03:12:32.556Z",
+    "size": "958056"
+  },
+  "assets/french_villas/fv_tp_03_toa_giam_muc_domaine_bishopric_manor.glb": {
+    "id": "18KG7WgOvnw0i4b59v3pzBh6KzeRzkVO4",
+    "modifiedTime": "2026-11-24T03:12:34.141Z",
+    "size": "946536"
+  },
+  "assets/infrastructure_buildings/roads_ring0.glb": {
+    "id": "1DQT1NRASKTnnHKc2MetHyTpAF29hPT4S",
+    "modifiedTime": "2026-11-23T10:59:42.169Z",
+    "size": "708388"
+  },
+  "assets/infrastructure_buildings/roads_ring1.glb": {
+    "id": "1qlK5L2SBHDMr7K5wQqGFgVcNupXXmDbp",
+    "modifiedTime": "2026-11-23T16:08:46.084Z",
+    "size": "706964"
+  },
+  "assets/infrastructure_buildings/roads_ring2.glb": {
+    "id": "1QW8Cl7Esdl91Q7JsNEbw9sLUTypKODqM",
+    "modifiedTime": "2026-11-23T17:04:52.758Z",
+    "size": "504220"
+  },
+  "assets/infrastructure_buildings/roads_ring2_c109.glb": {
+    "id": "1n-keBEIltdjHjuRz3Y3gOd5hBYaGnFJz",
+    "modifiedTime": "2026-11-24T03:09:50.500Z",
+    "size": "1057076"
+  },
+  "assets/infrastructure_buildings/roads_ring2_ext.glb": {
+    "id": "1r_RgSQ8NB6-5RLojqcJ2WKd8knne1nVU",
+    "modifiedTime": "2026-11-23T19:11:47.173Z",
+    "size": "872892"
+  },
+  "assets/infrastructure_buildings/roads_ring2_gateways.glb": {
+    "id": "1YKl9_ESUXAZfhJTgjptwJAIrE6gvwdjr",
+    "modifiedTime": "2026-11-23T23:50:47.658Z",
+    "size": "956768"
+  },
+  "assets/infrastructure_buildings/roads_ring2_highlands.glb": {
+    "id": "1h2MdyZNFBht6fGe40Pt64k1QQ6gieXA9",
+    "modifiedTime": "2026-11-23T21:14:22.990Z",
+    "size": "1105876"
+  },
+  "assets/infrastructure_buildings/roads_ring2_m101.glb": {
+    "id": "1WQh43Wktb_9waccwqZNgfKaZgWaumDdk",
+    "modifiedTime": "2026-11-24T01:49:38.447Z",
+    "size": "974148"
+  },
+  "assets/infrastructure_buildings/roads_ring2_m300.glb": {
+    "id": "14Q3k9TKKEaOEb6uCgbF86A4fbTTaJImu",
+    "modifiedTime": "2026-11-24T04:03:14.551Z",
+    "size": "1203976"
+  },
+  "assets/infrastructure_buildings/roads_ring2_outer.glb": {
+    "id": "15kGLCmUC3SAIlEvQLeRB-goTYcTgunBr",
+    "modifiedTime": "2026-11-23T23:11:32.509Z",
+    "size": "1152776"
+  },
+  "assets/infrastructure_buildings/roads_ring2_peripheral.glb": {
+    "id": "1i_zs2kdkj0oGqurWAcpdAAR-rxlEzt63",
+    "modifiedTime": "2026-11-24T00:43:56.687Z",
+    "size": "906732"
+  },
+  "assets/landmarks/landmarks_manifest.json": {
+    "id": "1T0L0zGKsx5vriltKPURKtocyytwr_gC0",
+    "modifiedTime": "2026-11-24T03:44:38.832Z",
+    "size": "102846"
+  },
+  "assets/landmarks/lm_01_quang_truong_lam_vien.glb": {
+    "id": "1Rm9QoUXOkvEuhIP2ApZjJB70BESvw3-R",
+    "modifiedTime": "2026-11-23T11:50:11.019Z",
+    "size": "856796"
+  },
+  "assets/landmarks/lm_02_ga_da_lat.glb": {
+    "id": "1UnA75TmlUE-C9E2MaXnCkxlR9BdAk9Xx",
+    "modifiedTime": "2026-11-23T11:56:32.370Z",
+    "size": "317216"
+  },
+  "assets/landmarks/lm_03_nha_tho_con_ga.glb": {
+    "id": "1QnP9ibdi6oO_pJR47Br_NKrx1AZkGpmW",
+    "modifiedTime": "2026-11-23T13:46:39.888Z",
+    "size": "314008"
+  },
+  "assets/landmarks/lm_04_truong_cdsp_dalat.glb": {
+    "id": "1Z2dA6yO2c-eiWpWkAzHfXrBZRS92eTlo",
+    "modifiedTime": "2026-11-23T11:56:32.307Z",
+    "size": "535564"
+  },
+  "assets/landmarks/lm_05_cho_da_lat_hoa_binh.glb": {
+    "id": "1T8CaFxklIOFfXu5GG9f9PQeJHoBGP3oS",
+    "modifiedTime": "2026-11-23T13:46:40.195Z",
+    "size": "342296"
+  },
+  "assets/landmarks/lm_06_thuy_ta_cau_ong_dao.glb": {
+    "id": "10ql7nygO6Z6LQIhIOC5aqXd3-zHq6uW-",
+    "modifiedTime": "2026-11-23T11:50:11.395Z",
+    "size": "555984"
+  },
+  "assets/landmarks/lm_07_dinh_3.glb": {
+    "id": "1s9JeZcXg5ZUcocFXZIcZFTzEaDCCqvXY",
+    "modifiedTime": "2026-11-23T16:09:25.183Z",
+    "size": "209180"
+  },
+  "assets/landmarks/lm_08_dinh_2.glb": {
+    "id": "1MfUdmA3o0S_Fntl3G1H_CCVYs7KEKIIf",
+    "modifiedTime": "2026-11-23T16:09:25.116Z",
+    "size": "223700"
+  },
+  "assets/landmarks/lm_09_dinh_1.glb": {
+    "id": "1PfqMOvLFGc7qm35aQMkWvw7j_h0XKAdE",
+    "modifiedTime": "2026-11-23T16:09:25.865Z",
+    "size": "243772"
+  },
+  "assets/landmarks/lm_10_domaine_de_marie.glb": {
+    "id": "17IOMfM5DEhRrSV9TZ5KMoAlLaaRVdYOh",
+    "modifiedTime": "2026-11-23T17:52:31.322Z",
+    "size": "355864"
+  },
+  "assets/landmarks/lm_11_crazy_house.glb": {
+    "id": "1KrdTfGC8PxW9sLJOqJ4Bhorq8AdJ9bRB",
+    "modifiedTime": "2026-11-23T17:52:32.979Z",
+    "size": "375184"
+  },
+  "assets/landmarks/lm_12_dalat_palace.glb": {
+    "id": "1nNtluwW5CHwS0UTlyeVBA-hm-BPhO5ua",
+    "modifiedTime": "2026-11-23T16:09:25.688Z",
+    "size": "621960"
+  },
+  "assets/landmarks/lm_13_bao_tang_lam_dong.glb": {
+    "id": "1bzBuwXCe6HXtaqz4gQB3dsrgb6vSOsRS",
+    "modifiedTime": "2026-11-23T21:47:35.077Z",
+    "size": "458420"
+  },
+  "assets/landmarks/lm_14_vuon_hoa_tp.glb": {
+    "id": "1B2dCs60NvltZ6XCbFJYiIVBAvoI5N-Vb",
+    "modifiedTime": "2026-11-23T19:53:06.724Z",
+    "size": "286704"
+  },
+  "assets/landmarks/lm_15_thien_vien_truc_lam.glb": {
+    "id": "1gxDQeFLgTPXqB-FcV-u6pVBdXQLUuvcY",
+    "modifiedTime": "2026-11-23T17:52:34.365Z",
+    "size": "446168"
+  },
+  "assets/landmarks/lm_16_chua_linh_phuoc.glb": {
+    "id": "1BqQlHS2aaxy6GtIprA3Wd-_xkyJ1g90O",
+    "modifiedTime": "2026-11-23T17:52:36.177Z",
+    "size": "404348"
+  },
+  "assets/landmarks/lm_17_thung_lung_tinh_yeu.glb": {
+    "id": "1spKs_qth3EqL9P2MkY_lyRPw3fQElc0a",
+    "modifiedTime": "2026-11-23T19:52:11.203Z",
+    "size": "388236"
+  },
+  "assets/landmarks/lm_18_phan_vien_sinh_hoc.glb": {
+    "id": "1Qggc5mxOaReCQZFI_tkuOmTttx2R4y19",
+    "modifiedTime": "2026-11-23T19:52:11.889Z",
+    "size": "457276"
+  },
+  "assets/landmarks/lm_19_thuy_dien_ankroet.glb": {
+    "id": "1b6uZSv37WAGgx6-yiyUvJ7FU7Hltb0NO",
+    "modifiedTime": "2026-11-23T21:47:36.121Z",
+    "size": "398508"
+  },
+  "assets/landmarks/lm_20_dinh_langbiang.glb": {
+    "id": "17bYi4NMC1lBzn0sCQjjgm01KABJ-FCia",
+    "modifiedTime": "2026-11-23T19:52:14.937Z",
+    "size": "178924"
+  },
+  "assets/landmarks/lm_21_lang_cu_lan.glb": {
+    "id": "1G_ANRTWSThj-_SRCuMAQoH62ROeTME0r",
+    "modifiedTime": "2026-11-23T21:47:37.585Z",
+    "size": "356264"
+  },
+  "assets/landmarks/lm_22_dien_gio_cau_dat.glb": {
+    "id": "1_0gFLh3T6elVlAfzINxP2IqnB4JiU91S",
+    "modifiedTime": "2026-11-23T19:52:14.646Z",
+    "size": "352424"
+  },
+  "assets/landmarks/lm_23_san_bay_lien_khuong.glb": {
+    "id": "1q3leyM_RUt_yXA3YSBq-RUjDY7ZdtJSx",
+    "modifiedTime": "2026-11-23T19:52:16.508Z",
+    "size": "295324"
+  },
+  "assets/landmarks/lm_24_chua_linh_an_thac_voi.glb": {
+    "id": "1uZEy3w2LYqQrxK1XEKPz0Si5ry5rHg6q",
+    "modifiedTime": "2026-11-23T21:47:39.652Z",
+    "size": "466140"
+  },
+  "assets/landmarks/lm_25_dai_hoc_da_lat.glb": {
+    "id": "1t0-kTw-k42YV0lmMlVwh4ZCbOmhgtIJl",
+    "modifiedTime": "2026-11-23T23:55:48.874Z",
+    "size": "397868"
+  },
+  "assets/landmarks/lm_26_nha_tho_cam_ly.glb": {
+    "id": "158txHVXI6nV3bO5piP1OxbnAxlqLhbI6",
+    "modifiedTime": "2026-11-23T23:55:50.123Z",
+    "size": "298468"
+  },
+  "assets/landmarks/lm_27_vien_pasteur_da_lat.glb": {
+    "id": "1WCaEXWC_sOnK5JuPGSmBg6ozqC397DON",
+    "modifiedTime": "2026-11-23T23:55:50.905Z",
+    "size": "380508"
+  },
+  "assets/landmarks/lm_28_chua_linh_quy_phap_an.glb": {
+    "id": "1TqWa0PRoM-oOgvgC2Fnz4qvpUWUdSCcR",
+    "modifiedTime": "2026-11-23T23:55:53.560Z",
+    "size": "364300"
+  },
+  "assets/landmarks/lm_29_cuc_ban_do_dalat.glb": {
+    "id": "1xV2m-Og7D-yhQfU4VZL-AOLk9FhY-A20",
+    "modifiedTime": "2026-11-24T02:03:53.008Z",
+    "size": "457100"
+  },
+  "assets/landmarks/lm_30_thien_vien_van_hanh.glb": {
+    "id": "1jQb2Rzp5E-_OvxZ9-Y9zjRRrCu8wpiGE",
+    "modifiedTime": "2026-11-24T02:03:51.800Z",
+    "size": "340924"
+  },
+  "assets/landmarks/lm_31_nha_tho_du_sinh.glb": {
+    "id": "10lYxM5Kvfiubf1r0Dr3qW47oR8TOei0a",
+    "modifiedTime": "2026-11-24T02:03:51.511Z",
+    "size": "341716"
+  },
+  "assets/landmarks/lm_32_duong_ham_dieu_khac.glb": {
+    "id": "110aO1W1Cn_mXMJ7jVBbLW9s7xYZUSjAV",
+    "modifiedTime": "2026-11-24T02:03:52.984Z",
+    "size": "340500"
+  },
+  "assets/landmarks/lm_33_couvent_des_oiseaux.glb": {
+    "id": "1T-tDUwsww5WVptzlSyiiY6sUud0UnwqE",
+    "modifiedTime": "2026-11-24T03:44:32.608Z",
+    "size": "409748"
+  },
+  "assets/landmarks/lm_34_chua_linh_son.glb": {
+    "id": "1XBxTF7O63kaVQm18G6x1oWLOBpjIzSdk",
+    "modifiedTime": "2026-11-24T03:44:34.665Z",
+    "size": "317468"
+  },
+  "assets/landmarks/lm_35_dinh_tinh_truong.glb": {
+    "id": "1-J1N_nk8xn9kSP7SiwEZHDXiCOEoh6zW",
+    "modifiedTime": "2026-11-24T03:44:36.438Z",
+    "size": "313192"
+  },
+  "assets/landmarks/lm_36_nha_may_che_cau_dat_1927.glb": {
+    "id": "1xy6mY59AoR3yADmg1jcM6u6DVSxc8Yfv",
+    "modifiedTime": "2026-11-24T03:44:37.998Z",
+    "size": "404748"
+  },
+  "assets/natural_wonders_pbr/cliff_thac_datanla_alpine_coaster.glb": {
+    "id": "1CZQ6nHSi465YZOmCqpI0xVMAFKykhmUc",
+    "modifiedTime": "2026-11-23T17:30:06.016Z",
+    "size": "1287864"
+  },
+  "assets/natural_wonders_pbr/cliff_thac_prenn_curtain_grotto.glb": {
+    "id": "1KeoCyRdTPY65BPKojgoya2DPn5b7Sg9x",
+    "modifiedTime": "2026-11-23T17:30:06.701Z",
+    "size": "752460"
+  },
+  "assets/natural_wonders_pbr/natural_wonders_manifest.json": {
+    "id": "1YnOsAtGBlfz7FduHvVpXn0iWABXkTRQz",
+    "modifiedTime": "2026-11-23T17:30:04.645Z",
+    "size": "3039"
+  },
+  "assets/scene/world_index.json": {
+    "id": "1odxtF144aNkdpPcyWbjo2qyrDFwgJj9i",
+    "modifiedTime": "2026-11-24T02:55:39.364Z",
+    "size": "116933"
+  },
+  "assets/sourced_library/landmarks/kit_dalat_steam_locomotive.glb": {
+    "id": "1GjD6-DnBUZoMoCkcnPOyLF0ubSgWLNw9",
+    "modifiedTime": "2026-11-23T11:08:57.968Z",
+    "size": "39148"
+  },
+  "assets/sourced_library/landmarks/kit_french_colonial_arch_roof.glb": {
+    "id": "1xKldnRVdWjifSi5L-24NA8D0dgUDmRFt",
+    "modifiedTime": "2026-11-23T11:08:57.382Z",
+    "size": "28584"
+  },
+  "assets/sourced_library/landmarks/kit_vietnamese_pagoda_roof_stupa.glb": {
+    "id": "1CeNT4QgWwuYkbMvSkVPGV4TNIRkocdm2",
+    "modifiedTime": "2026-11-23T13:24:29.402Z",
+    "size": "36684"
+  },
+  "assets/sourced_library/landmarks/lm_01_lam_vien_square_base.glb": {
+    "id": "1xgRESqBvxmGtaQW4P8BS1lG5NLXDad0o",
+    "modifiedTime": "2026-11-23T11:08:57.212Z",
+    "size": "100372"
+  },
+  "assets/sourced_library/landmarks/lm_02_ga_da_lat_base.glb": {
+    "id": "1D7cR6_7gncEj8i4r18bfub8OAKtz2Djl",
+    "modifiedTime": "2026-11-23T11:08:58.221Z",
+    "size": "36408"
+  },
+  "assets/sourced_library/landmarks/lm_03_nha_tho_con_ga_base.glb": {
+    "id": "1ljL4S1PdzjmNsbEN0oSMmrZvQms2EiiS",
+    "modifiedTime": "2026-11-23T11:08:57.593Z",
+    "size": "38144"
+  },
+  "assets/sourced_library/landmarks/lm_04_truong_cdsp_dalat_base.glb": {
+    "id": "1aafa7xdPUaYzU_I7j29SZYdwiCNNo-wb",
+    "modifiedTime": "2026-11-23T11:08:57.437Z",
+    "size": "63432"
+  },
+  "assets/sourced_library/landmarks/lm_05_cho_da_lat_hoa_binh_base.glb": {
+    "id": "1FUV94t2RcRjq7vCMc_yLm7HcEe5aNpiV",
+    "modifiedTime": "2026-11-23T11:08:57.248Z",
+    "size": "46480"
+  },
+  "assets/sourced_library/landmarks/lm_06_thuy_ta_cau_ong_dao_base.glb": {
+    "id": "1U-Wg-tGcJrRRYUt-h2ad7dw5nEkJXIHM",
+    "modifiedTime": "2026-11-23T11:08:57.156Z",
+    "size": "26324"
+  },
+  "assets/sourced_library/landmarks/lm_07_09_bao_dai_palace_base.glb": {
+    "id": "1P0UIL73zvGogf0kQaFHOFx81mn2jls9-",
+    "modifiedTime": "2026-11-23T13:24:29.131Z",
+    "size": "31160"
+  },
+  "assets/sourced_library/landmarks/lm_10_domaine_de_marie_base.glb": {
+    "id": "1Ypb6eM5e1IRdcLCgavhSMlcxY1cO0k26",
+    "modifiedTime": "2026-11-23T13:24:30.725Z",
+    "size": "34932"
+  },
+  "assets/sourced_library/landmarks/lm_11_crazy_house_organic_base.glb": {
+    "id": "1WoFDeT2kw5n5LZrj7c4_zhPmFkhWxt-K",
+    "modifiedTime": "2026-11-23T13:24:29.401Z",
+    "size": "63832"
+  },
+  "assets/sourced_library/landmarks/lm_12_dalat_palace_hotel_base.glb": {
+    "id": "1WsmPDUpEzxYt94C6_2fGTojESCH0IbMe",
+    "modifiedTime": "2026-11-23T13:24:28.949Z",
+    "size": "30788"
+  },
+  "assets/sourced_library/landmarks/lm_13_tran_hung_dao_french_villa_cluster.glb": {
+    "id": "1T1UbxVHRwZOBmMjoujd_QtTRPdF9efw5",
+    "modifiedTime": "2026-11-23T15:27:22.602Z",
+    "size": "17372"
+  },
+  "assets/sourced_library/landmarks/lm_14_vuon_hoa_tp_gate_base.glb": {
+    "id": "1drc1IEJ-ZHT0e7gA2yyIDsyWY4KDafv4",
+    "modifiedTime": "2026-11-23T13:24:29.160Z",
+    "size": "35516"
+  },
+  "assets/sourced_library/landmarks/lm_15_thien_vien_truc_lam_base.glb": {
+    "id": "1Lw06Azbr--wP_ab_D4cDbTIKpu0yDCDX",
+    "modifiedTime": "2026-11-23T13:24:28.583Z",
+    "size": "105584"
+  },
+  "assets/sourced_library/landmarks/lm_16_chua_linh_phuoc_base.glb": {
+    "id": "1NSdVce3wo0-qjwqMQStGzxuRFkMNZCXf",
+    "modifiedTime": "2026-11-23T13:24:32.737Z",
+    "size": "44396"
+  },
+  "assets/sourced_library/landmarks/lm_17_thung_lung_tinh_yeu_pavilion.glb": {
+    "id": "1UDxp3buY44C7ycfnwWkfki0m8gP4odGN",
+    "modifiedTime": "2026-11-23T14:24:44.079Z",
+    "size": "15280"
+  },
+  "assets/sourced_library/landmarks/lm_18_thac_datanla_waterfall_coaster.glb": {
+    "id": "1HYOPaVvH9X2on5C4N8LK-tMMhySaxo2O",
+    "modifiedTime": "2026-11-23T15:27:23.200Z",
+    "size": "21868"
+  },
+  "assets/sourced_library/landmarks/lm_19_ho_tuyen_lam_marina_pier.glb": {
+    "id": "1UxsjRTgjZS-Hg227LSGsjoIy_ZjozmoT",
+    "modifiedTime": "2026-11-23T15:27:24.528Z",
+    "size": "28028"
+  },
+  "assets/sourced_library/landmarks/lm_20_langbiang_radar_station.glb": {
+    "id": "12WJlUTeefa1-V8QCOjHs4tRbYK0VwCdu",
+    "modifiedTime": "2026-11-23T14:24:43.279Z",
+    "size": "19984"
+  },
+  "assets/sourced_library/landmarks/lm_21_trai_mat_heritage_train_station.glb": {
+    "id": "1o80w0ba1gysp13iLR8bDiUEZrxxGwXSs",
+    "modifiedTime": "2026-11-23T15:27:23.266Z",
+    "size": "30816"
+  },
+  "assets/sourced_library/landmarks/lm_22_cau_dat_wind_turbine.glb": {
+    "id": "1jNqYlNdwGQmXuGzxyCe9N6cf4TfQRiwU",
+    "modifiedTime": "2026-11-23T14:24:41.641Z",
+    "size": "22068"
+  },
+  "assets/sourced_library/landmarks/lm_23_lien_khuong_airport_terminal.glb": {
+    "id": "1tancKhG0EVUrY4uKTadSX0t_SdeyEuVE",
+    "modifiedTime": "2026-11-23T14:24:43.012Z",
+    "size": "25188"
+  },
+  "assets/sourced_library/landmarks/lm_24_doi_robin_cable_car_station.glb": {
+    "id": "1s2UMg2YYgNQt_c3PKl4LR_mX6-QpYgIT",
+    "modifiedTime": "2026-11-23T15:27:25.161Z",
+    "size": "13488"
+  },
+  "assets/sourced_library/landmarks/lm_25_suoi_vang_dankia_dam_spillway.glb": {
+    "id": "1m6kZDf11RKAC3kmyR2vgPktebgszkOEP",
+    "modifiedTime": "2026-11-23T15:27:22.362Z",
+    "size": "17976"
+  },
+  "assets/sourced_library/landmarks/lm_26_thac_prenn_bridge_and_teahouse.glb": {
+    "id": "1hQlJ6aEFugo8algvwwWSsSC-yZTkrzRt",
+    "modifiedTime": "2026-11-23T16:17:14.866Z",
+    "size": "15048"
+  },
+  "assets/sourced_library/landmarks/lm_27_thac_cam_ly_waterfall_pavilion.glb": {
+    "id": "1uSCLBxMLwc_-_bIqv3ZVZUHuAfuXq4pw",
+    "modifiedTime": "2026-11-23T16:17:14.685Z",
+    "size": "13320"
+  },
+  "assets/sourced_library/landmarks/lm_28_chua_linh_an_guan_yin_and_elephant_falls.glb": {
+    "id": "1fAgf45NKUvfoKyw7iLJAeLFwz6IbqE8x",
+    "modifiedTime": "2026-11-23T16:17:15.453Z",
+    "size": "15408"
+  },
+  "assets/sourced_library/landmarks/lm_29_dap_da_nhim_dran_spillway.glb": {
+    "id": "1uNg39t7AV47g8KrFcFKIHBEkhZ3bOKxw",
+    "modifiedTime": "2026-11-23T16:17:15.148Z",
+    "size": "14484"
+  },
+  "assets/sourced_library/landmarks/lm_30_doi_che_cau_dat_heritage_tea_factory.glb": {
+    "id": "1d797oVDlUyHublUf3InEYI4Q-mhJRqoJ",
+    "modifiedTime": "2026-11-23T16:17:15.162Z",
+    "size": "17400"
+  },
+  "assets/sourced_library/landmarks/lm_31_lang_cu_lan_stilt_village_cluster.glb": {
+    "id": "17qQZJfo0T7_w9XxAxziomGXlB6UrtdfP",
+    "modifiedTime": "2026-11-23T17:14:08.634Z",
+    "size": "33824"
+  },
+  "assets/sourced_library/landmarks/lm_32_domaine_de_marie_convent_courtyard_kit.glb": {
+    "id": "1JviibAc2J1PQGxlIMfY_ryb5so60Ozfu",
+    "modifiedTime": "2026-11-23T17:14:09.773Z",
+    "size": "23544"
+  },
+  "assets/sourced_library/landmarks/lm_33_langbiang_radar_peak_observatory.glb": {
+    "id": "1yqfsaXZeNifdLtgDoPfW6f3cfqFO7Dg8",
+    "modifiedTime": "2026-11-23T17:14:09.527Z",
+    "size": "21524"
+  },
+  "assets/sourced_library/landmarks/lm_34_cong_troi_bali_green_hills_gate.glb": {
+    "id": "1MZiM0GeguhLuKLDYUXnv5ji3UPxf8crz",
+    "modifiedTime": "2026-11-23T17:14:09.698Z",
+    "size": "19360"
+  },
+  "assets/sourced_library/landmarks/lm_35_ho_tren_may_ta_nung_sky_mirror.glb": {
+    "id": "1u5dc_0ZsdidKo4tPNfCDiLjsOwQRfSUM",
+    "modifiedTime": "2026-11-23T17:14:09.936Z",
+    "size": "28200"
+  },
+  "assets/sourced_library/landmarks/lm_36_duong_ham_dieu_khac_dat_set_ho_vo_cuc.glb": {
+    "id": "1nOgQxY-RWI8U6okBIofF7IJsE1R8UC88",
+    "modifiedTime": "2026-11-23T18:21:20.397Z",
+    "size": "41828"
+  },
+  "assets/sourced_library/landmarks/lm_37_nha_may_thuy_dien_co_ankroet_1945.glb": {
+    "id": "1D7oRhlSunwvqdNf0-P2LQn2losbG3Sox",
+    "modifiedTime": "2026-11-23T18:21:21.313Z",
+    "size": "17924"
+  },
+  "assets/sourced_library/landmarks/lm_38_nha_tho_cam_ly_nha_rong_roof.glb": {
+    "id": "1qitLFm8-KriHgRB2R42s5lsVqsFwX_Lr",
+    "modifiedTime": "2026-11-23T18:21:22.421Z",
+    "size": "25548"
+  },
+  "assets/sourced_library/landmarks/lm_39_thac_pongour_7_tier_basalt_cascade.glb": {
+    "id": "16WDsPAgp0UA4ABH0PXlkuI7Ji8adHihP",
+    "modifiedTime": "2026-11-23T18:21:24.014Z",
+    "size": "28308"
+  },
+  "assets/sourced_library/landmarks/lm_40_bao_tang_lam_dong_dinh_nguyen_huu_hao.glb": {
+    "id": "1vkZnzKny8DqfvSqtWhEdH_Zo1Nb_G9gC",
+    "modifiedTime": "2026-11-23T18:21:24.891Z",
+    "size": "19652"
+  },
+  "assets/sourced_library/landmarks/lm_41_mongo_land_ta_nung_yurt_and_windmill_park.glb": {
+    "id": "18DlPjGCLq5EsrpoQKfDg8XU0Sv3DAXx7",
+    "modifiedTime": "2026-11-23T20:17:58.393Z",
+    "size": "65988"
+  },
+  "assets/sourced_library/landmarks/lm_42_puppy_farm_cam_ly_glasshouse_and_flower_hill.glb": {
+    "id": "1H8JJkDAt2aQj5tg0aOYrbb_EN5fWjzq4",
+    "modifiedTime": "2026-11-23T20:17:59.709Z",
+    "size": "31184"
+  },
+  "assets/sourced_library/landmarks/lm_43_thac_voi_elephant_waterfall_and_hang_gio_nam_ban.glb": {
+    "id": "1_nTYpiRS_KY6wOgUuRzCaUX9QF3O2xl9",
+    "modifiedTime": "2026-11-23T20:18:02.221Z",
+    "size": "28968"
+  },
+  "assets/sourced_library/landmarks/lm_44_dinh_1_king_bao_dai_palace_1_complex.glb": {
+    "id": "1yVcLm51OOXSpDlr9n2r8YYqQAQNUlkl1",
+    "modifiedTime": "2026-11-23T20:18:02.757Z",
+    "size": "27564"
+  },
+  "assets/sourced_library/landmarks/lm_45_nha_tho_du_sinh_chua_van_hanh_hilltop_kit.glb": {
+    "id": "1TRydHQjuye228UthK7j8NYuIsBsNCZpM",
+    "modifiedTime": "2026-11-23T20:18:04.877Z",
+    "size": "23744"
+  },
+  "assets/sourced_library/landmarks/lm_46_tui_mo_to_cloud_hunting_glass_cafe_complex.glb": {
+    "id": "1zAUnCl5Tz2vTtiSOcGs0kzpML7qQTjMy",
+    "modifiedTime": "2026-11-23T21:01:39.881Z",
+    "size": "198748"
+  },
+  "assets/sourced_library/landmarks/lm_47_horizon_coffee_and_me_linh_panorama_deck_kit.glb": {
+    "id": "1ecUwmBp0ntf7KZApotbPXvvByYxwAgke",
+    "modifiedTime": "2026-11-23T21:01:40.565Z",
+    "size": "75720"
+  },
+  "assets/sourced_library/landmarks/lm_48_dalat_edensee_and_terracotta_tuyen_lam_resort_kit.glb": {
+    "id": "1RqgS3vSEShrj2CTqGD5tzwWfmDkEEta0",
+    "modifiedTime": "2026-11-23T21:01:42.379Z",
+    "size": "63336"
+  },
+  "assets/sourced_library/landmarks/lm_49_phan_vien_sinh_hoc_tay_nguyen_stone_castle.glb": {
+    "id": "1lvysRNqd9hxdUT3vyxmuTJWDacHWpKZK",
+    "modifiedTime": "2026-11-23T21:01:43.698Z",
+    "size": "87088"
+  },
+  "assets/sourced_library/landmarks/lm_50_trai_mat_xuan_tho_persimmon_drying_house_and_orchard.glb": {
+    "id": "1yEpe0Pxf3NYNxhRBM7yimN6JyS4lkG45",
+    "modifiedTime": "2026-11-23T21:01:45.505Z",
+    "size": "217856"
+  },
+  "assets/sourced_library/landmarks/lm_51_suoi_vang_dankia_lonely_pine_and_glamping_camp_kit.glb": {
+    "id": "1EuPMHhxhIn-Z5qaRt3vmdp338Kb4tfh9",
+    "modifiedTime": "2026-11-23T21:57:14.198Z",
+    "size": "66104"
+  },
+  "assets/sourced_library/landmarks/lm_52_lang_cu_lan_suoi_can_watermill_and_suspension_bridge_kit.glb": {
+    "id": "1NCjrTATQNXzIGXX8LIzNeZNQO_BXmtwL",
+    "modifiedTime": "2026-11-23T21:57:17.968Z",
+    "size": "86112"
+  },
+  "assets/sourced_library/landmarks/lm_53_chua_linh_an_nam_ban_71m_guanyin_statue_and_sanctuary.glb": {
+    "id": "1O5mcilohzwpKb7XI7d-0A7oCAHj1wvL_",
+    "modifiedTime": "2026-11-23T21:57:21.541Z",
+    "size": "57900"
+  },
+  "assets/sourced_library/landmarks/lm_54_thung_lung_vang_pine_bonsai_zen_garden_and_pavilion_kit.glb": {
+    "id": "1m8hOs464v1v8nNz9SgAF-5wW-Vu-lB0K",
+    "modifiedTime": "2026-11-23T21:57:25.140Z",
+    "size": "73904"
+  },
+  "assets/sourced_library/landmarks/lm_55_van_thanh_flower_village_rose_and_gerbera_glasshouse_kit.glb": {
+    "id": "17ZCbNejaBlkolbNNU_J7SJa9Lq0Jg4a8",
+    "modifiedTime": "2026-11-23T21:57:28.611Z",
+    "size": "56928"
+  },
+  "assets/sourced_library/landmarks/lm_56_nha_may_che_co_cau_dat_1927_heritage_factory_complex.glb": {
+    "id": "1uoaJQ1UkHjPkltb3IfgR5iYIthgj9piI",
+    "modifiedTime": "2026-11-23T23:09:15.292Z",
+    "size": "249936"
+  },
+  "assets/sourced_library/landmarks/lm_57_khu_du_lich_la_phong_dalat_maple_garden_and_koi_house.glb": {
+    "id": "1w8oLuhLm1MKCqjSdPjzRLZKZAOgTnThy",
+    "modifiedTime": "2026-11-23T23:09:13.403Z",
+    "size": "337636"
+  },
+  "assets/sourced_library/landmarks/lm_58_doi_mong_mo_central_highlands_gong_stage_and_brocade_village.glb": {
+    "id": "1bBNpqRJwMOHuQklIsdZIaBIguoD6aJPQ",
+    "modifiedTime": "2026-11-23T23:09:15.254Z",
+    "size": "121720"
+  },
+  "assets/sourced_library/landmarks/lm_59_vuon_hoa_tp_orchid_conservatory_and_cactus_glass_dome_kit.glb": {
+    "id": "13CCCqxZybZADUT_jzefoX9d1Kbipqb8z",
+    "modifiedTime": "2026-11-23T23:09:16.682Z",
+    "size": "242272"
+  },
+  "assets/sourced_library/landmarks/lm_60_deo_prenn_mimosa_scenic_overlook_and_pine_rest_stop_kit.glb": {
+    "id": "1PfT0devUp6Ozj5Dq0JNUcmsd4wKphH-B",
+    "modifiedTime": "2026-11-23T23:09:17.144Z",
+    "size": "137976"
+  },
+  "assets/sourced_library/landmarks/lm_61_khu_du_lich_chuon_chuon_me_linh_observation_tower_and_lake_bistro.glb": {
+    "id": "1zUfkTlp8Znzsxyr_T0KlVXCMi3hgEW2S",
+    "modifiedTime": "2026-11-24T00:28:07.066Z",
+    "size": "246576"
+  },
+  "assets/sourced_library/landmarks/lm_62_dap_thuy_dien_ankroet_1942_indochina_heritage_stone_hydro_plant.glb": {
+    "id": "1qiE_oZ2wifskJBPKNEWHjPUv8ayCtc2B",
+    "modifiedTime": "2026-11-24T00:28:08.505Z",
+    "size": "444928"
+  },
+  "assets/sourced_library/landmarks/lm_63_lang_hoa_ha_dong_heritage_rose_and_chrysanthemum_greenhouse_gate.glb": {
+    "id": "18g5BEhj_8dCaM_PJXx-k2s3-LNege2-A",
+    "modifiedTime": "2026-11-24T00:28:10.507Z",
+    "size": "260780"
+  },
+  "assets/sourced_library/landmarks/lm_64_nha_tho_cam_ly_son_cuoc_central_highlands_rong_roof_church.glb": {
+    "id": "1eGBf96Jl8RsIUH7R7TCAD5WUb8QPi7HE",
+    "modifiedTime": "2026-11-24T00:28:12.166Z",
+    "size": "183096"
+  },
+  "assets/sourced_library/landmarks/lm_65_khu_du_lich_rung_thong_nui_voi_pine_sanctuary_and_stone_pavilion.glb": {
+    "id": "1H0WimrjJAUCAPfssPZUvM3LnxPwO5CBw",
+    "modifiedTime": "2026-11-24T00:28:13.935Z",
+    "size": "252392"
+  },
+  "assets/sourced_library/landmarks/lm_66_phan_vien_sinh_hoc_tay_nguyen_1950.glb": {
+    "id": "128CSVQvNrbSwxChsg9df4HHKA5iYtDGl",
+    "modifiedTime": "2026-11-24T01:11:32.547Z",
+    "size": "180364"
+  },
+  "assets/sourced_library/landmarks/lm_67_cuc_ban_do_da_lat_1939.glb": {
+    "id": "1G6UkP_96sl7owbRadMyWEyzIAB0mWT9q",
+    "modifiedTime": "2026-11-24T01:11:32.790Z",
+    "size": "152960"
+  },
+  "assets/sourced_library/landmarks/lm_68_thac_prenn_den_au_lac_bridge.glb": {
+    "id": "1EZTLdWDie5T2YP-Hqcv8SKfCokZA753K",
+    "modifiedTime": "2026-11-24T01:11:34.363Z",
+    "size": "101496"
+  },
+  "assets/sourced_library/landmarks/lm_69_nha_may_nuoc_dankia_suoi_vang.glb": {
+    "id": "1PTmGBZxbc77ManxpPkxCZYoqs0OmEb7M",
+    "modifiedTime": "2026-11-24T01:11:36.242Z",
+    "size": "100416"
+  },
+  "assets/sourced_library/landmarks/lm_70_nha_khach_cong_doan_villas_1936.glb": {
+    "id": "1Gcx1qchAAeed0wtioUQ939eI17GZCHGq",
+    "modifiedTime": "2026-11-24T01:11:36.880Z",
+    "size": "99084"
+  },
+  "assets/sourced_library/landmarks/lm_71_chua_linh_quang_co_tu_1931.glb": {
+    "id": "1urlMzADNluItBU460k1F9X17zrrcLkEc",
+    "modifiedTime": "2026-11-24T02:18:15.879Z",
+    "size": "229144"
+  },
+  "assets/sourced_library/landmarks/lm_72_chua_linh_son_1938_doi_nguyen_van_troi.glb": {
+    "id": "12SZ2j24rxxI3yxsgZiq4aukXlSi4u7G1",
+    "modifiedTime": "2026-11-24T02:18:16.529Z",
+    "size": "287696"
+  },
+  "assets/sourced_library/landmarks/lm_73_ana_mandara_le_lai_french_villa_resort.glb": {
+    "id": "1EriqeTCkxPHL_Y_TBwCLPak8Jo6Rlnbn",
+    "modifiedTime": "2026-11-24T02:18:18.272Z",
+    "size": "222852"
+  },
+  "assets/sourced_library/landmarks/lm_74_fresh_garden_dalat_windmill_flower_gate.glb": {
+    "id": "1-MktpPmXDibWR6hb_gbeEQSNsdj51KRB",
+    "modifiedTime": "2026-11-24T02:18:19.485Z",
+    "size": "263952"
+  },
+  "assets/sourced_library/landmarks/lm_75_trang_trai_bo_sua_highland_dairy_barn_silo.glb": {
+    "id": "10IsphGTXasptYNSjA2c2rsnTGgiQgVEu",
+    "modifiedTime": "2026-11-24T02:18:21.277Z",
+    "size": "220276"
+  },
+  "assets/sourced_library/landmarks/lm_76_me_linh_coffee_garden_ta_nung_viewing_deck.glb": {
+    "id": "10E8NaR_0Rs-14y0wiquRPognpOgIsA--",
+    "modifiedTime": "2026-11-24T03:05:41.190Z",
+    "size": "220168"
+  },
+  "assets/sourced_library/landmarks/lm_77_xuong_uom_to_det_lua_cuong_hoan_ta_nung.glb": {
+    "id": "1Lbv5BWyQaMELwZFMEOwWGmJK20ethwl1",
+    "modifiedTime": "2026-11-24T03:05:42.396Z",
+    "size": "223484"
+  },
+  "assets/sourced_library/landmarks/lm_78_terracotta_hotel_resort_tuyen_lam_pine_peninsula.glb": {
+    "id": "1LqB8F1_d1IR8cM0C9Eg-WkuOi4xFFRIC",
+    "modifiedTime": "2026-11-24T03:05:44.745Z",
+    "size": "204084"
+  },
+  "assets/sourced_library/landmarks/lm_79_chua_linh_phong_su_nu_1940_doi_hoang_hoa_tham.glb": {
+    "id": "1TQULj2eRJK5OQV3E-uHrjuGczivG--to",
+    "modifiedTime": "2026-11-24T03:05:45.901Z",
+    "size": "232812"
+  },
+  "assets/sourced_library/landmarks/lm_80_tram_kiem_lam_watchtower_vqg_bidoup_nui_ba.glb": {
+    "id": "1glSH4ksV-NzkJn7xExk3m4QWqWhe_4pI",
+    "modifiedTime": "2026-11-24T03:05:47.978Z",
+    "size": "201256"
+  },
+  "assets/sourced_library/landmarks/lm_81_nha_long_phoi_hong_treo_gio_xuan_tho_trai_mat.glb": {
+    "id": "16Bs9qHZJT9yl5p2iUomYuu30tLi8FYs-",
+    "modifiedTime": "2026-11-24T04:03:17.029Z",
+    "size": "193884"
+  },
+  "assets/sourced_library/landmarks/lm_82_dalat_edensee_lake_resort_spa_tuyen_lam.glb": {
+    "id": "1CQ94MlPlpPvyBbn45juSK_dRvylyXJL-",
+    "modifiedTime": "2026-11-24T04:03:17.736Z",
+    "size": "245380"
+  },
+  "assets/sourced_library/landmarks/lm_83_nha_may_thuy_dien_da_nhim_dran_penstock_station.glb": {
+    "id": "1fuklUfXScLU5XKQxfHnaKNE7z6TBZ7Xi",
+    "modifiedTime": "2026-11-24T04:03:19.896Z",
+    "size": "361372"
+  },
+  "assets/sourced_library/landmarks/lm_84_thac_gougah_duc_trong_suspension_bridge_pavilion.glb": {
+    "id": "1uifFEXDDcLeabeebZ_2kRRBe9CvUy8CV",
+    "modifiedTime": "2026-11-24T04:03:21.603Z",
+    "size": "320592"
+  },
+  "assets/sourced_library/landmarks/lm_85_cho_nong_san_trai_mat_and_cog_railway_depot.glb": {
+    "id": "1nx3A_78v99ZZPI1vB7NeqccIZBG5d95l",
+    "modifiedTime": "2026-11-24T04:03:22.778Z",
+    "size": "203248"
+  },
+  "assets/sourced_library/landmarks/pbr_pack_01_stone_and_red_brick.glb": {
+    "id": "1PtTKmzTHIZV85s_-9r8vysVrBp34kkRW",
+    "modifiedTime": "2026-11-23T14:24:43.761Z",
+    "size": "97056"
+  },
+  "assets/sourced_library/urban_props/pbr_pack_02_roof_tiles_and_asphalt.glb": {
+    "id": "1YQWjMhyAlvXcsIaBGYDdJGr4sA7KtG-C",
+    "modifiedTime": "2026-11-23T14:24:45.289Z",
+    "size": "154924"
+  },
+  "assets/sourced_library/urban_props/prop_01_hxh_pedal_duck_boat.glb": {
+    "id": "1buzwTWiA0fCIc2Blvjs7RX3kaWHIp5tv",
+    "modifiedTime": "2026-11-23T12:02:06.983Z",
+    "size": "22544"
+  },
+  "assets/sourced_library/urban_props/prop_02_tuyen_lam_wooden_boat.glb": {
+    "id": "1zR9_ItEVOTNGvxDEIvnkn2tDRVvWNc4B",
+    "modifiedTime": "2026-11-23T12:02:07.353Z",
+    "size": "15416"
+  },
+  "assets/sourced_library/urban_props/prop_03_lakeside_wooden_pier.glb": {
+    "id": "1bh6-fgZRhQ7X5-E9O9uPklIZ-iOwau2e",
+    "modifiedTime": "2026-11-23T12:02:07.053Z",
+    "size": "57380"
+  },
+  "assets/sourced_library/urban_props/prop_04_dalat_vintage_street_lamp.glb": {
+    "id": "1T21TXXnBvuk2nUUnwmnz435fM5RweUWT",
+    "modifiedTime": "2026-11-23T12:02:07.118Z",
+    "size": "16088"
+  },
+  "assets/sourced_library/urban_props/prop_05_lakeside_stone_balustrade.glb": {
+    "id": "10ToO2uwfKyrBDNemteV-RqsHxMDG0Mq3",
+    "modifiedTime": "2026-11-23T12:02:07.636Z",
+    "size": "23748"
+  },
+  "assets/sourced_library/urban_props/prop_06_dalat_wooden_park_bench.glb": {
+    "id": "1lbhjXCiMpuSRBbEQQkO5GYfnCSRGKTje",
+    "modifiedTime": "2026-11-23T12:02:07.519Z",
+    "size": "26840"
+  },
+  "assets/sourced_library/urban_props/prop_07_dalat_flower_pergola_arch.glb": {
+    "id": "1ViDc95xZJAecvKzZRGP-Cdx9T4KqKShd",
+    "modifiedTime": "2026-11-23T12:02:07.034Z",
+    "size": "32060"
+  },
+  "assets/sourced_library/urban_props/prop_08_robin_cable_car_cabin.glb": {
+    "id": "12ewXrxaFK0_JQUuNh9XAMNl3czsb5Bn8",
+    "modifiedTime": "2026-11-23T12:02:08.673Z",
+    "size": "18572"
+  },
+  "assets/sourced_library/urban_props/prop_09_dalat_agri_greenhouse_cluster.glb": {
+    "id": "1uFE2CLUK_ILHZgfHKt309yfOd8Qz0C0Z",
+    "modifiedTime": "2026-11-23T14:24:47.598Z",
+    "size": "54520"
+  },
+  "assets/sourced_library/urban_props/prop_10_cau_dat_wooden_cloud_hunting_deck.glb": {
+    "id": "1_KoeQRc8dH7jN0MthyLWZcBYLaFXAJ69",
+    "modifiedTime": "2026-11-23T15:27:22.869Z",
+    "size": "21920"
+  },
+  "assets/sourced_library/urban_props/prop_11_mountain_pass_guardrail_and_convex_mirror.glb": {
+    "id": "1HeHaViJfylGn53oIC8YbC3ZpbrhZsfWP",
+    "modifiedTime": "2026-11-23T16:17:14.294Z",
+    "size": "17644"
+  },
+  "assets/sourced_library/urban_props/prop_12_dalat_wooden_bus_stop_and_wayfinding_kiosk.glb": {
+    "id": "1oZOlr5kSObvrq2j8izT98Aco6GebHy_S",
+    "modifiedTime": "2026-11-23T17:14:10.320Z",
+    "size": "18208"
+  },
+  "assets/sourced_library/urban_props/prop_13_dalat_horse_carriage_and_vintage_car.glb": {
+    "id": "16qfD9tZIafFVIwTgNo1b8-BM0_BjSfAz",
+    "modifiedTime": "2026-11-23T18:21:29.134Z",
+    "size": "27348"
+  },
+  "assets/sourced_library/urban_props/prop_14_dalat_strawberry_hydroponic_a_frame_and_sign.glb": {
+    "id": "1nTAueq15r5pZcDix_kf6nJOHnlR9UVb8",
+    "modifiedTime": "2026-11-23T20:18:09.555Z",
+    "size": "51592"
+  },
+  "assets/sourced_library/urban_props/prop_15_dalat_night_market_soy_milk_stall_and_umbrella_set.glb": {
+    "id": "1V7ypGfaG7Fq523kWyYGUjA3vkhJTwhSs",
+    "modifiedTime": "2026-11-23T21:01:49.693Z",
+    "size": "44968"
+  },
+  "assets/sourced_library/urban_props/prop_16_dalat_pine_homestay_wooden_signpost_and_campfire_set.glb": {
+    "id": "1rdZYAclESHoM7C5f1CgVgTvtXOA0uLC_",
+    "modifiedTime": "2026-11-23T21:57:40.576Z",
+    "size": "35464"
+  },
+  "assets/sourced_library/urban_props/prop_17_dalat_mountain_pass_convex_mirror_km_marker_and_guardrail_kit.glb": {
+    "id": "1XPDKOzgv5-o52tREnrUq-9o1skieSD7l",
+    "modifiedTime": "2026-11-23T23:09:19.967Z",
+    "size": "52308"
+  },
+  "assets/sourced_library/urban_props/prop_18_dalat_eco_park_cobblestone_lantern_log_arch_and_trail_sign_kit.glb": {
+    "id": "1rZOVpggynhwZ69ZdJSNxJ-d-qfUpwMCM",
+    "modifiedTime": "2026-11-24T00:28:18.640Z",
+    "size": "49440"
+  },
+  "assets/sourced_library/urban_props/prop_19_french_villa_fence_granito_bench_hydrant.glb": {
+    "id": "17DFGm-_k8LCy3bP5FusbGklsKUmj7G5h",
+    "modifiedTime": "2026-11-24T01:11:40.668Z",
+    "size": "45372"
+  },
+  "assets/sourced_library/urban_props/prop_20_dalat_flower_festival_arch_and_wooden_signpost.glb": {
+    "id": "14nZsqhWMpEIrbx_FMwejaDvAzj5ixutU",
+    "modifiedTime": "2026-11-24T02:18:24.750Z",
+    "size": "71376"
+  },
+  "assets/sourced_library/urban_props/prop_21_me_linh_bird_nest_bali_swing_and_coffee_roaster_kit.glb": {
+    "id": "1ig-ElAQr6Zm3GCwNBqH5cwh64hleKlR5",
+    "modifiedTime": "2026-11-24T03:05:52.681Z",
+    "size": "50692"
+  },
+  "assets/sourced_library/urban_props/prop_22_dalat_persimmon_hanging_drying_rack_and_harvest_crates.glb": {
+    "id": "1U7K2fFYvmw6c7jKqIvs3N3N_WpG_0jqk",
+    "modifiedTime": "2026-11-24T04:03:27.071Z",
+    "size": "115244"
+  },
+  "assets/terrain_tiles/heightmap_T_E00_N00.json": {
+    "id": "1c7sAhKlSoxOFE1LRt3HVRGj7J7w1SrMn",
+    "modifiedTime": "2026-11-23T11:12:01.622Z",
+    "size": "145304"
+  },
+  "assets/terrain_tiles/heightmap_T_E00_N01.json": {
+    "id": "1s7RMfw4zeV7CJgnKDsQJmVkKmGOcDldc",
+    "modifiedTime": "2026-11-23T11:14:07.950Z",
+    "size": "149137"
+  },
+  "assets/terrain_tiles/heightmap_T_E00_N02.json": {
+    "id": "1-CB-KcFWROWHWiNzPBTrm_rlkv2LcEhD",
+    "modifiedTime": "2026-11-23T14:05:23.227Z",
+    "size": "83435"
+  },
+  "assets/terrain_tiles/heightmap_T_E00_N03.json": {
+    "id": "13XAjLnNQ-nlK-xfgXKEHLWTGPRl6y4G2",
+    "modifiedTime": "2026-11-23T17:06:58.634Z",
+    "size": "84741"
+  },
+  "assets/terrain_tiles/heightmap_T_E00_N04.json": {
+    "id": "1LMfO_rUFTsJukOJl6Ri_NuN5y6wHqSi3",
+    "modifiedTime": "2026-11-23T23:10:49.572Z",
+    "size": "38586"
+  },
+  "assets/terrain_tiles/heightmap_T_E00_N05.json": {
+    "id": "1rmpIv-V2RZknrDHsYafNwQPBsCdrRgcs",
+    "modifiedTime": "2026-11-23T23:10:54.505Z",
+    "size": "38618"
+  },
+  "assets/terrain_tiles/heightmap_T_E00_N06.json": {
+    "id": "1QX-4d9pU4BCsc251QS-XP74zL4vnq0YU",
+    "modifiedTime": "2026-11-23T23:10:59.789Z",
+    "size": "38610"
+  },
+  "assets/terrain_tiles/heightmap_T_E00_S01.json": {
+    "id": "1O3E93xF_d2EFkqmxiusrir7IPOx0wcrz",
+    "modifiedTime": "2026-11-23T12:12:23.969Z",
+    "size": "149055"
+  },
+  "assets/terrain_tiles/heightmap_T_E00_S02.json": {
+    "id": "11_xiY423ASPaLYxfh0K2JXRvbA5X51TG",
+    "modifiedTime": "2026-11-23T13:20:50.549Z",
+    "size": "83671"
+  },
+  "assets/terrain_tiles/heightmap_T_E00_S03.json": {
+    "id": "1e9-aEZp7Nf0f-Ft73L7iXe-vHIGG3sC-",
+    "modifiedTime": "2026-11-23T13:20:50.649Z",
+    "size": "84799"
+  },
+  "assets/terrain_tiles/heightmap_T_E01_N00.json": {
+    "id": "16hlfC4Fqj8KtlVmlCkAwzYVA546q9dsT",
+    "modifiedTime": "2026-11-23T12:12:24.005Z",
+    "size": "149147"
+  },
+  "assets/terrain_tiles/heightmap_T_E01_N01.json": {
+    "id": "1QOmgycgtlxZ_p7Ry-KRwGpm_vJVfc3B1",
+    "modifiedTime": "2026-11-23T11:14:04.433Z",
+    "size": "149159"
+  },
+  "assets/terrain_tiles/heightmap_T_E01_N02.json": {
+    "id": "1XvPASZp9qTEl-sm51PnOVL2cTgPLQf-T",
+    "modifiedTime": "2026-11-23T15:11:17.056Z",
+    "size": "84805"
+  },
+  "assets/terrain_tiles/heightmap_T_E01_N03.json": {
+    "id": "1pRDGLpq0ZMyvbp_iNNUekw5ZLacp40d_",
+    "modifiedTime": "2026-11-23T17:59:22.950Z",
+    "size": "84717"
+  },
+  "assets/terrain_tiles/heightmap_T_E01_N04.json": {
+    "id": "1ZEBntFZEKn7y1aU6kaAvMmaEUWizbhrL",
+    "modifiedTime": "2026-11-24T00:21:09.547Z",
+    "size": "38609"
+  },
+  "assets/terrain_tiles/heightmap_T_E01_N05.json": {
+    "id": "1J_E3EJ7ubWLuBOVRjIVvyHQ4zgaoRs6F",
+    "modifiedTime": "2026-11-24T00:21:10.364Z",
+    "size": "38595"
+  },
+  "assets/terrain_tiles/heightmap_T_E01_N06.json": {
+    "id": "1sFQmwz8EbZ5ckMPbuf_wuV9me38MN6sa",
+    "modifiedTime": "2026-11-24T01:17:20.521Z",
+    "size": "38610"
+  },
+  "assets/terrain_tiles/heightmap_T_E01_S01.json": {
+    "id": "1LkclPPg9mMHwH7nf5a_EtE7EJncsCrIr",
+    "modifiedTime": "2026-11-23T12:12:24.783Z",
+    "size": "149175"
+  },
+  "assets/terrain_tiles/heightmap_T_E01_S02.json": {
+    "id": "1GWsj2wJGokU8YVTzPrwHidOdbm7D9TYn",
+    "modifiedTime": "2026-11-23T15:11:17.302Z",
+    "size": "84757"
+  },
+  "assets/terrain_tiles/heightmap_T_E01_S03.json": {
+    "id": "1jtWmwNFL19AXfaWy5SR3dY6GcqK5nG4D",
+    "modifiedTime": "2026-11-23T19:04:53.118Z",
+    "size": "84789"
+  },
+  "assets/terrain_tiles/heightmap_T_E02_N00.json": {
+    "id": "18BXfPozDI3fn7WH8zPjp8XJYEPFfCm6L",
+    "modifiedTime": "2026-11-23T15:11:16.348Z",
+    "size": "84817"
+  },
+  "assets/terrain_tiles/heightmap_T_E02_N01.json": {
+    "id": "1rxs5-m7AJCQWQZ3GpAImRPOPxh3gUIIX",
+    "modifiedTime": "2026-11-23T14:05:20.577Z",
+    "size": "84160"
+  },
+  "assets/terrain_tiles/heightmap_T_E02_N02.json": {
+    "id": "1NkLqr5AIa2hDMS5qTJ0qedko5RnQiC24",
+    "modifiedTime": "2026-11-23T17:06:57.417Z",
+    "size": "84769"
+  },
+  "assets/terrain_tiles/heightmap_T_E02_N03.json": {
+    "id": "1TKaQkfhyMv9Yx60ziQRRGVn17ll5BzVm",
+    "modifiedTime": "2026-11-23T20:12:06.286Z",
+    "size": "84804"
+  },
+  "assets/terrain_tiles/heightmap_T_E02_S01.json": {
+    "id": "1jqnYsBKyB2c7HKaagcL6Zbwr6otIV9fF",
+    "modifiedTime": "2026-11-23T15:57:30.641Z",
+    "size": "84820"
+  },
+  "assets/terrain_tiles/heightmap_T_E02_S02.json": {
+    "id": "1ZRH2nMA4tUe1fhT4ExD01Vz2dRR0br1O",
+    "modifiedTime": "2026-11-23T17:06:57.025Z",
+    "size": "84826"
+  },
+  "assets/terrain_tiles/heightmap_T_E02_S03.json": {
+    "id": "182buTPssqa7xA42Ylv_wlXnNKWNL9SSm",
+    "modifiedTime": "2026-11-23T21:20:16.925Z",
+    "size": "84714"
+  },
+  "assets/terrain_tiles/heightmap_T_E03_N00.json": {
+    "id": "1QFtvndKTURc1PpiRjLj_44pQWw8k9D0B",
+    "modifiedTime": "2026-11-23T14:05:19.729Z",
+    "size": "84776"
+  },
+  "assets/terrain_tiles/heightmap_T_E03_N01.json": {
+    "id": "1FlLbto9_a7j-plxy4bS0_YigrrrmYGnw",
+    "modifiedTime": "2026-11-23T17:59:24.253Z",
+    "size": "84759"
+  },
+  "assets/terrain_tiles/heightmap_T_E03_N02.json": {
+    "id": "1uWtglruAUfv0z4BZEKw2cyPm7E6-61sj",
+    "modifiedTime": "2026-11-23T20:12:07.151Z",
+    "size": "84786"
+  },
+  "assets/terrain_tiles/heightmap_T_E03_N03.json": {
+    "id": "1WCl1M0NR9szSnFyIDjCjXtIuywA_6nXz",
+    "modifiedTime": "2026-11-23T21:54:33.391Z",
+    "size": "84726"
+  },
+  "assets/terrain_tiles/heightmap_T_E03_S01.json": {
+    "id": "1WeLADFHlTfx1SPF4UBR24SIYFhhi0-PU",
+    "modifiedTime": "2026-11-23T17:59:28.168Z",
+    "size": "84763"
+  },
+  "assets/terrain_tiles/heightmap_T_E03_S02.json": {
+    "id": "1rVCLb0_HIdIU8Rzpjxf0C8l-bGGr8g4X",
+    "modifiedTime": "2026-11-23T20:12:07.369Z",
+    "size": "84779"
+  },
+  "assets/terrain_tiles/heightmap_T_E03_S03.json": {
+    "id": "1lYmAO-2ItVlCLkJwJraFQ47bZMUmiHTj",
+    "modifiedTime": "2026-11-23T21:54:34.217Z",
+    "size": "84837"
+  },
+  "assets/terrain_tiles/heightmap_T_E04_N00.json": {
+    "id": "1Bb5w1k-N4XhAGWL7oq1Y1nZ3jCoC0iBQ",
+    "modifiedTime": "2026-11-24T02:54:05.550Z",
+    "size": "38602"
+  },
+  "assets/terrain_tiles/heightmap_T_E04_S01.json": {
+    "id": "182lVMVH-5vDQ9dfPUBS7Z2BPp4BDw-Ob",
+    "modifiedTime": "2026-11-24T02:54:09.605Z",
+    "size": "38601"
+  },
+  "assets/terrain_tiles/heightmap_T_E04_S02.json": {
+    "id": "1aN0pQRtwJRGn9Mmjr1BpnMNhSejfKDWu",
+    "modifiedTime": "2026-11-24T04:10:25.042Z",
+    "size": "38657"
+  },
+  "assets/terrain_tiles/heightmap_T_E05_S01.json": {
+    "id": "1g3hFEQxdiXbfGDRPEcly3rNcD9RjyNXd",
+    "modifiedTime": "2026-11-24T02:54:14.889Z",
+    "size": "38594"
+  },
+  "assets/terrain_tiles/heightmap_T_E05_S02.json": {
+    "id": "1au0WNsuO9dj7Qpp-pLTJwdH6lkKK8sBH",
+    "modifiedTime": "2026-11-24T02:54:16.126Z",
+    "size": "38632"
+  },
+  "assets/terrain_tiles/heightmap_T_E05_S03.json": {
+    "id": "1BXmHOEJUt3HpNFuT518NWOOusiuYEZL6",
+    "modifiedTime": "2026-11-24T04:10:26.211Z",
+    "size": "38594"
+  },
+  "assets/terrain_tiles/heightmap_T_E06_S03.json": {
+    "id": "17aLDREQ_B6vPGvSMpuFlsEEdDV8v7AtO",
+    "modifiedTime": "2026-11-24T04:10:27.809Z",
+    "size": "38627"
+  },
+  "assets/terrain_tiles/heightmap_T_E06_S04.json": {
+    "id": "1Bf1wIYLIlLaTVB2yrGXU8_-76WIu-YOr",
+    "modifiedTime": "2026-11-24T04:10:29.200Z",
+    "size": "38595"
+  },
+  "assets/terrain_tiles/heightmap_T_W01_N00.json": {
+    "id": "1PI-kfYg3OPlhnBRpXdI0-AxOh-66eL-4",
+    "modifiedTime": "2026-11-23T11:14:03.755Z",
+    "size": "149134"
+  },
+  "assets/terrain_tiles/heightmap_T_W01_N01.json": {
+    "id": "1SBOjZxeL5w5xfqu0DanRN2vOKAXlnFR6",
+    "modifiedTime": "2026-11-23T11:14:04.185Z",
+    "size": "149117"
+  },
+  "assets/terrain_tiles/heightmap_T_W01_N02.json": {
+    "id": "1qP86tY7s1hquzf59YI9Sq9AqCGilmgTu",
+    "modifiedTime": "2026-11-23T15:11:17.383Z",
+    "size": "84777"
+  },
+  "assets/terrain_tiles/heightmap_T_W01_N03.json": {
+    "id": "1PRp2ksGzPtyOo_4J6lV1jczlfIzqrsbH",
+    "modifiedTime": "2026-11-23T17:59:22.500Z",
+    "size": "84728"
+  },
+  "assets/terrain_tiles/heightmap_T_W01_N04.json": {
+    "id": "1thRnVLvjRtxJcmf3_fa6QWSxqzC-wRzJ",
+    "modifiedTime": "2026-11-23T23:10:45.619Z",
+    "size": "38613"
+  },
+  "assets/terrain_tiles/heightmap_T_W01_N05.json": {
+    "id": "1NmUHn-WUytsTy6mxL2_G9Of4utS4aXBp",
+    "modifiedTime": "2026-11-24T00:21:05.077Z",
+    "size": "38581"
+  },
+  "assets/terrain_tiles/heightmap_T_W01_N06.json": {
+    "id": "12yLHLqdsMlH0RDxiL8hi4jAvN8i-UE81",
+    "modifiedTime": "2026-11-24T00:21:09.424Z",
+    "size": "38677"
+  },
+  "assets/terrain_tiles/heightmap_T_W01_S01.json": {
+    "id": "1qNNzCQfSC-UIe2X1XK4nS082ecIkwLgh",
+    "modifiedTime": "2026-11-23T12:12:24.562Z",
+    "size": "149146"
+  },
+  "assets/terrain_tiles/heightmap_T_W01_S02.json": {
+    "id": "1Ppn4lS-n7Iw6q6nWv7zA0CzDFoK5OYh_",
+    "modifiedTime": "2026-11-23T13:20:50.217Z",
+    "size": "77929"
+  },
+  "assets/terrain_tiles/heightmap_T_W01_S03.json": {
+    "id": "1U-Welssoaa7moQAeavBlUUIotDM5ts1v",
+    "modifiedTime": "2026-11-23T13:20:50.838Z",
+    "size": "84295"
+  },
+  "assets/terrain_tiles/heightmap_T_W02_N00.json": {
+    "id": "1SH5NiHMJ5asGjJk94jaz8qocxjPvnJSK",
+    "modifiedTime": "2026-11-23T14:05:19.871Z",
+    "size": "84798"
+  },
+  "assets/terrain_tiles/heightmap_T_W02_N01.json": {
+    "id": "1g0UYaepS7FMAHRmIde6IwFrzMWkcqxxY",
+    "modifiedTime": "2026-11-23T15:57:30.925Z",
+    "size": "84745"
+  },
+  "assets/terrain_tiles/heightmap_T_W02_N02.json": {
+    "id": "1FyUoDq_soDt0yDAua3RN4SQjekrqaV1s",
+    "modifiedTime": "2026-11-23T17:06:58.832Z",
+    "size": "84785"
+  },
+  "assets/terrain_tiles/heightmap_T_W02_N03.json": {
+    "id": "1Q11rm4kAwHPBMvB97sWgnJmaNQ9q-eb5",
+    "modifiedTime": "2026-11-23T20:12:03.244Z",
+    "size": "84775"
+  },
+  "assets/terrain_tiles/heightmap_T_W02_N04.json": {
+    "id": "1O3pDvmiQrsgmyr4T80L7RoQa7UYax28u",
+    "modifiedTime": "2026-11-24T01:17:22.701Z",
+    "size": "38610"
+  },
+  "assets/terrain_tiles/heightmap_T_W02_S01.json": {
+    "id": "1AxtBRAxFMjzy0XsurSA9sA2ZybjBaOG6",
+    "modifiedTime": "2026-11-23T15:57:28.880Z",
+    "size": "84729"
+  },
+  "assets/terrain_tiles/heightmap_T_W02_S02.json": {
+    "id": "1hIjNn_01d_fe_RoIO_e1mogrdqiqcQUh",
+    "modifiedTime": "2026-11-23T15:57:31.844Z",
+    "size": "84783"
+  },
+  "assets/terrain_tiles/heightmap_T_W02_S03.json": {
+    "id": "1682p9sMmgnd7jpGWUv5BVCGmwLOINo7i",
+    "modifiedTime": "2026-11-23T19:04:54.496Z",
+    "size": "84781"
+  },
+  "assets/terrain_tiles/heightmap_T_W03_N00.json": {
+    "id": "152ExxOi1pbtu9GX_GosK15aje8PkrhRa",
+    "modifiedTime": "2026-11-23T19:04:54.405Z",
+    "size": "84757"
+  },
+  "assets/terrain_tiles/heightmap_T_W03_N01.json": {
+    "id": "1dIwlFgDdgGjM1LDKMLmvTalZLggQhUpQ",
+    "modifiedTime": "2026-11-23T21:20:12.576Z",
+    "size": "84773"
+  },
+  "assets/terrain_tiles/heightmap_T_W03_N02.json": {
+    "id": "1c8G44v_eiEGj5AnLvqyWbcLwUzxbNb3-",
+    "modifiedTime": "2026-11-23T21:20:15.092Z",
+    "size": "84777"
+  },
+  "assets/terrain_tiles/heightmap_T_W03_N03.json": {
+    "id": "1ff-3C4OJxn6lP4ApUw1lamxY6yVj4Bn5",
+    "modifiedTime": "2026-11-23T21:54:31.081Z",
+    "size": "84782"
+  },
+  "assets/terrain_tiles/heightmap_T_W03_N04.json": {
+    "id": "1msFHrw7EcYgEoC-fMNtDJBj2YTUA50zo",
+    "modifiedTime": "2026-11-24T01:17:21.999Z",
+    "size": "38571"
+  },
+  "assets/terrain_tiles/heightmap_T_W03_N05.json": {
+    "id": "1-7vMQm3TWgqtqw_vts9p3qUK9W7QxJTi",
+    "modifiedTime": "2026-11-24T02:06:17.182Z",
+    "size": "38615"
+  },
+  "assets/terrain_tiles/heightmap_T_W03_S01.json": {
+    "id": "1TkajnPnd3xvgwxViXnIeJlTZqUp33YFv",
+    "modifiedTime": "2026-11-23T19:04:55.155Z",
+    "size": "84740"
+  },
+  "assets/terrain_tiles/heightmap_T_W03_S02.json": {
+    "id": "16lAIWgiig5O-jDkzoA5tfCbwJL3Nuoft",
+    "modifiedTime": "2026-11-23T21:20:14.223Z",
+    "size": "84786"
+  },
+  "assets/terrain_tiles/heightmap_T_W03_S03.json": {
+    "id": "1n6EJcEqeBzOma-Uc2w9RChTBTVFuZ6LV",
+    "modifiedTime": "2026-11-23T21:54:33.937Z",
+    "size": "84774"
+  },
+  "assets/terrain_tiles/heightmap_T_W04_N03.json": {
+    "id": "12BIYEwmx6EbXSWNv2sUKd4f4O1yU2jw7",
+    "modifiedTime": "2026-11-24T02:06:15.559Z",
+    "size": "37923"
+  },
+  "assets/terrain_tiles/heightmap_T_W04_N04.json": {
+    "id": "1kLchyPXwwYmpEnbaSBQ0NOMH6PdxoSN5",
+    "modifiedTime": "2026-11-24T01:17:23.405Z",
+    "size": "36052"
+  },
+  "assets/terrain_tiles/heightmap_T_W04_N05.json": {
+    "id": "148IrCH37ZvXnMPugEnIGn_Zyrb78ICjU",
+    "modifiedTime": "2026-11-24T02:06:16.140Z",
+    "size": "38615"
+  },
+  "assets/terrain_tiles/heightmap_T_W05_N04.json": {
+    "id": "1nXWdk7phRrhS68UCR8xQjTHlfq2NtVND",
+    "modifiedTime": "2026-11-24T02:06:15.675Z",
+    "size": "38646"
+  },
+  "assets/terrain_tiles/terrain_T_E00_N00.glb": {
+    "id": "1GSUZXMS-andfNw_kC7F_HzV82C0TDK0y",
+    "modifiedTime": "2026-11-23T11:12:02.503Z",
+    "size": "743876"
+  },
+  "assets/terrain_tiles/terrain_T_E00_N01.glb": {
+    "id": "18AemZ_KdV90eW_xW7CEh05NDHEE7sGDo",
+    "modifiedTime": "2026-11-23T11:14:13.762Z",
+    "size": "735580"
+  },
+  "assets/terrain_tiles/terrain_T_E00_N02.glb": {
+    "id": "17ZynAxjOCCj4jvV9RHB22d5veM_ltX6g",
+    "modifiedTime": "2026-11-23T14:05:19.618Z",
+    "size": "427272"
+  },
+  "assets/terrain_tiles/terrain_T_E00_N03.glb": {
+    "id": "127B-Ivt38xbddeaTmp4eJ9NF2XPZF9_I",
+    "modifiedTime": "2026-11-23T17:06:55.160Z",
+    "size": "423328"
+  },
+  "assets/terrain_tiles/terrain_T_E00_N04.glb": {
+    "id": "14SF75N1HVrGSE4xCHF--VPoKOln6sUIr",
+    "modifiedTime": "2026-11-23T23:10:27.566Z",
+    "size": "189396"
+  },
+  "assets/terrain_tiles/terrain_T_E00_N05.glb": {
+    "id": "1UAIutm6dDJTTbDOzfAIXGNI02z5J6z-X",
+    "modifiedTime": "2026-11-23T23:10:32.342Z",
+    "size": "188988"
+  },
+  "assets/terrain_tiles/terrain_T_E00_N06.glb": {
+    "id": "1VyIp9Nv4bfIWWWkZCfTzhmB0A5hAx_-F",
+    "modifiedTime": "2026-11-23T23:10:39.459Z",
+    "size": "193268"
+  },
+  "assets/terrain_tiles/terrain_T_E00_S01.glb": {
+    "id": "1I_guk0xwM50lJ2PV40mRqesTDCMAgmkY",
+    "modifiedTime": "2026-11-23T12:12:24.263Z",
+    "size": "739944"
+  },
+  "assets/terrain_tiles/terrain_T_E00_S02.glb": {
+    "id": "1nvuqBvGr3VMoXEeo0PIc0JuyeMy4fLBc",
+    "modifiedTime": "2026-11-23T13:20:50.954Z",
+    "size": "422048"
+  },
+  "assets/terrain_tiles/terrain_T_E00_S03.glb": {
+    "id": "1-bjWFlRjCY6awmhgoWFVy_50JTVZMytn",
+    "modifiedTime": "2026-11-23T13:20:50.506Z",
+    "size": "420740"
+  },
+  "assets/terrain_tiles/terrain_T_E01_N00.glb": {
+    "id": "1ota-qQyt1_p1kL0r_jAisea27t7PIKtK",
+    "modifiedTime": "2026-11-23T12:12:24.258Z",
+    "size": "735744"
+  },
+  "assets/terrain_tiles/terrain_T_E01_N01.glb": {
+    "id": "1_FblIq--2ZKCRpl1pdXMmQyxMs81Z29T",
+    "modifiedTime": "2026-11-23T11:14:11.974Z",
+    "size": "736352"
+  },
+  "assets/terrain_tiles/terrain_T_E01_N02.glb": {
+    "id": "1m082OF81GVNB5MtfEgFER74Ba6FKbjTG",
+    "modifiedTime": "2026-11-23T15:11:16.743Z",
+    "size": "420888"
+  },
+  "assets/terrain_tiles/terrain_T_E01_N03.glb": {
+    "id": "1RM6vSLD_aBOby4jW67RSrmml96Om-VJj",
+    "modifiedTime": "2026-11-23T17:59:19.265Z",
+    "size": "425300"
+  },
+  "assets/terrain_tiles/terrain_T_E01_N04.glb": {
+    "id": "1DhIDgafbuprp6EE7wQz9gB--4uPa_g9B",
+    "modifiedTime": "2026-11-24T00:21:04.262Z",
+    "size": "191728"
+  },
+  "assets/terrain_tiles/terrain_T_E01_N05.glb": {
+    "id": "1ESVRfZehAbeah1nBBdcxGNXsB7daZ3FS",
+    "modifiedTime": "2026-11-24T00:21:04.550Z",
+    "size": "188544"
+  },
+  "assets/terrain_tiles/terrain_T_E01_N06.glb": {
+    "id": "1AQfsTJ7PJUwMegGWkD2pkzLVycGmWqW8",
+    "modifiedTime": "2026-11-24T01:17:16.569Z",
+    "size": "188956"
+  },
+  "assets/terrain_tiles/terrain_T_E01_S01.glb": {
+    "id": "1-4mmMncvG4KZrVWxINqbl5J5kzWkgzsw",
+    "modifiedTime": "2026-11-23T12:12:24.117Z",
+    "size": "737396"
+  },
+  "assets/terrain_tiles/terrain_T_E01_S02.glb": {
+    "id": "1lTQolVi-kR6SsXZNNhd12mVa3iycA91o",
+    "modifiedTime": "2026-11-23T15:11:16.601Z",
+    "size": "420512"
+  },
+  "assets/terrain_tiles/terrain_T_E01_S03.glb": {
+    "id": "1XR5MtwEBlnv0t9p93svcVSfLEHs25-PB",
+    "modifiedTime": "2026-11-23T19:04:48.410Z",
+    "size": "422328"
+  },
+  "assets/terrain_tiles/terrain_T_E02_N00.glb": {
+    "id": "13MjQf_nROCZpind8-Hwcv5eioW81j85z",
+    "modifiedTime": "2026-11-23T15:11:17.255Z",
+    "size": "419556"
+  },
+  "assets/terrain_tiles/terrain_T_E02_N01.glb": {
+    "id": "18iup-LUyGADHnkYwsmz-m5ouIQOua1Yw",
+    "modifiedTime": "2026-11-23T14:05:19.996Z",
+    "size": "427884"
+  },
+  "assets/terrain_tiles/terrain_T_E02_N02.glb": {
+    "id": "1AbyArdm_frQvPrYVZ61Ipwv5tIcyMsTF",
+    "modifiedTime": "2026-11-23T17:06:56.147Z",
+    "size": "424748"
+  },
+  "assets/terrain_tiles/terrain_T_E02_N03.glb": {
+    "id": "1jDVtVbJbXU0KtBckqXrFIMKfvP1MdqG2",
+    "modifiedTime": "2026-11-23T20:12:00.990Z",
+    "size": "421768"
+  },
+  "assets/terrain_tiles/terrain_T_E02_S01.glb": {
+    "id": "1_oshzXxAnarkkaW6yN0bID98JasuhbRv",
+    "modifiedTime": "2026-11-23T15:57:32.981Z",
+    "size": "419428"
+  },
+  "assets/terrain_tiles/terrain_T_E02_S02.glb": {
+    "id": "1nkcQHcmeO3qZtl6a0nVFDEjPl5xUpHfy",
+    "modifiedTime": "2026-11-23T17:07:17.063Z",
+    "size": "425344"
+  },
+  "assets/terrain_tiles/terrain_T_E02_S03.glb": {
+    "id": "1tUBGOJ3ioeYVuIrBP5o7Ny9C9o5C_brD",
+    "modifiedTime": "2026-11-23T21:20:10.731Z",
+    "size": "420092"
+  },
+  "assets/terrain_tiles/terrain_T_E03_N00.glb": {
+    "id": "1xfg7FFu6FwG4lkxTnfiGM3iFQnZKPUS2",
+    "modifiedTime": "2026-11-23T14:05:20.319Z",
+    "size": "419364"
+  },
+  "assets/terrain_tiles/terrain_T_E03_N01.glb": {
+    "id": "1GqAbGBuFGagEvDys6cOxvpak98mp2GNl",
+    "modifiedTime": "2026-11-23T17:59:20.006Z",
+    "size": "419960"
+  },
+  "assets/terrain_tiles/terrain_T_E03_N02.glb": {
+    "id": "1hqIASiMh8zNIZpSQlzA96XMLjdskBO0u",
+    "modifiedTime": "2026-11-23T20:12:01.619Z",
+    "size": "424276"
+  },
+  "assets/terrain_tiles/terrain_T_E03_N03.glb": {
+    "id": "1WV4LqIlb0LwpOJ2DM6R4ak-D7Yxfy0WZ",
+    "modifiedTime": "2026-11-23T21:54:27.524Z",
+    "size": "425692"
+  },
+  "assets/terrain_tiles/terrain_T_E03_S01.glb": {
+    "id": "1L0DnEvKJ6XvpZf7iJfmn02qKgub8kIaQ",
+    "modifiedTime": "2026-11-23T17:59:21.188Z",
+    "size": "426752"
+  },
+  "assets/terrain_tiles/terrain_T_E03_S02.glb": {
+    "id": "1C8Hsjb2LiKPqM_CKnBByiv7Wg1L0ae6p",
+    "modifiedTime": "2026-11-23T20:12:03.261Z",
+    "size": "423784"
+  },
+  "assets/terrain_tiles/terrain_T_E03_S03.glb": {
+    "id": "1fmDqvRwohnQwIvk6sSdYYIyRR42BB4yr",
+    "modifiedTime": "2026-11-23T21:54:30.043Z",
+    "size": "425336"
+  },
+  "assets/terrain_tiles/terrain_T_E04_N00.glb": {
+    "id": "1mEMr5Vw52KQNyZQ1GYkRzYckk5opJDu6",
+    "modifiedTime": "2026-11-24T02:53:58.056Z",
+    "size": "193184"
+  },
+  "assets/terrain_tiles/terrain_T_E04_S01.glb": {
+    "id": "1porEj2pTHRO424iBdDwlK-k8oLo97iZF",
+    "modifiedTime": "2026-11-24T02:53:59.329Z",
+    "size": "193116"
+  },
+  "assets/terrain_tiles/terrain_T_E04_S02.glb": {
+    "id": "1dPKqWsg6BTSIaMD9xshoXhLneLLlA8TM",
+    "modifiedTime": "2026-11-24T04:10:20.286Z",
+    "size": "194400"
+  },
+  "assets/terrain_tiles/terrain_T_E05_S01.glb": {
+    "id": "1oKoZkz9HlrFUqz53A0NkU7rlqtUeJeer",
+    "modifiedTime": "2026-11-24T02:54:02.232Z",
+    "size": "189752"
+  },
+  "assets/terrain_tiles/terrain_T_E05_S02.glb": {
+    "id": "15kmHq6jSThlIEX7okYEMpLyh0AHXNyhH",
+    "modifiedTime": "2026-11-24T02:54:04.385Z",
+    "size": "191292"
+  },
+  "assets/terrain_tiles/terrain_T_E05_S03.glb": {
+    "id": "1iSAodD99-Bwf9yEkyLD3jOkbbrbdZoAu",
+    "modifiedTime": "2026-11-24T04:10:22.026Z",
+    "size": "187628"
+  },
+  "assets/terrain_tiles/terrain_T_E06_S03.glb": {
+    "id": "1-XhAQUhMhA3GOAn-r5nd86BY97yww4aZ",
+    "modifiedTime": "2026-11-24T04:10:22.215Z",
+    "size": "187628"
+  },
+  "assets/terrain_tiles/terrain_T_E06_S04.glb": {
+    "id": "1iS4QtqV1Yrqs8pUlWZSAA3OQ-AM82zvV",
+    "modifiedTime": "2026-11-24T04:10:23.669Z",
+    "size": "187620"
+  },
+  "assets/terrain_tiles/terrain_T_W01_N00.glb": {
+    "id": "166n3EXIL0bkqODckWMZ2vniPiu8QkaYI",
+    "modifiedTime": "2026-11-23T11:14:07.094Z",
+    "size": "738836"
+  },
+  "assets/terrain_tiles/terrain_T_W01_N01.glb": {
+    "id": "1qmMHv7_k_tHgHy44_aPWANYcqbYEjMKY",
+    "modifiedTime": "2026-11-23T11:14:11.817Z",
+    "size": "738284"
+  },
+  "assets/terrain_tiles/terrain_T_W01_N02.glb": {
+    "id": "1PFX_V9qxdZUR2bXULNzM8OTFeC6RqExU",
+    "modifiedTime": "2026-11-23T15:11:16.926Z",
+    "size": "419672"
+  },
+  "assets/terrain_tiles/terrain_T_W01_N03.glb": {
+    "id": "15ZOTBL3VmDLrgfFAi7ZZSp39Ay8VRl5i",
+    "modifiedTime": "2026-11-23T17:59:17.148Z",
+    "size": "420028"
+  },
+  "assets/terrain_tiles/terrain_T_W01_N04.glb": {
+    "id": "13yqxt7r_G_04CkidcSOZY5BqgF-3xSW1",
+    "modifiedTime": "2026-11-23T23:10:22.764Z",
+    "size": "189688"
+  },
+  "assets/terrain_tiles/terrain_T_W01_N05.glb": {
+    "id": "1CTii7hx177pDSGCnvEpZrksWOQye_spr",
+    "modifiedTime": "2026-11-24T00:21:01.206Z",
+    "size": "188840"
+  },
+  "assets/terrain_tiles/terrain_T_W01_N06.glb": {
+    "id": "14ASWxahFUv_rY4Oqt4KcjrFhjyGfx6UM",
+    "modifiedTime": "2026-11-24T00:21:03.694Z",
+    "size": "189860"
+  },
+  "assets/terrain_tiles/terrain_T_W01_S01.glb": {
+    "id": "1yBXWe2jiym_EG-q1uiTcZB5g2hnwqq60",
+    "modifiedTime": "2026-11-23T12:12:23.863Z",
+    "size": "737800"
+  },
+  "assets/terrain_tiles/terrain_T_W01_S02.glb": {
+    "id": "15hUY9Fer0PkmPVizISv-psF4kRTnmh-D",
+    "modifiedTime": "2026-11-23T13:20:50.477Z",
+    "size": "425336"
+  },
+  "assets/terrain_tiles/terrain_T_W01_S03.glb": {
+    "id": "1k--P4jKDZNuQeVWRdF45-_wN2UtRgtf6",
+    "modifiedTime": "2026-11-23T13:20:50.874Z",
+    "size": "424292"
+  },
+  "assets/terrain_tiles/terrain_T_W02_N00.glb": {
+    "id": "14iCKGtO1-iZPe_NEEKpsHTjYVtH50XJW",
+    "modifiedTime": "2026-11-23T14:05:19.367Z",
+    "size": "424760"
+  },
+  "assets/terrain_tiles/terrain_T_W02_N01.glb": {
+    "id": "1J0e-CTQ5URlP7R2tURoUHtebtMjMqUq3",
+    "modifiedTime": "2026-11-23T15:57:31.949Z",
+    "size": "422916"
+  },
+  "assets/terrain_tiles/terrain_T_W02_N02.glb": {
+    "id": "1BjjfR7rZ6RmFMTGvq08XzJVw60lpsHxT",
+    "modifiedTime": "2026-11-23T17:06:57.295Z",
+    "size": "425020"
+  },
+  "assets/terrain_tiles/terrain_T_W02_N03.glb": {
+    "id": "14_qilsnl6P7XLWz2c7BS8MpdWAOtMmWL",
+    "modifiedTime": "2026-11-23T20:11:59.907Z",
+    "size": "417356"
+  },
+  "assets/terrain_tiles/terrain_T_W02_N04.glb": {
+    "id": "1XDKljMdg3e_pdVlx0nCHt9Wg7OZ_Mv26",
+    "modifiedTime": "2026-11-24T01:17:17.538Z",
+    "size": "190716"
+  },
+  "assets/terrain_tiles/terrain_T_W02_S01.glb": {
+    "id": "1m4H_Pih7OajvOHiwJv_mQQa55dicgd4E",
+    "modifiedTime": "2026-11-23T15:57:32.161Z",
+    "size": "421704"
+  },
+  "assets/terrain_tiles/terrain_T_W02_S02.glb": {
+    "id": "11J089JTKqRZ2tlQ9gsR94lPf-fOpIiOp",
+    "modifiedTime": "2026-11-23T15:57:30.624Z",
+    "size": "421604"
+  },
+  "assets/terrain_tiles/terrain_T_W02_S03.glb": {
+    "id": "174C_rf0KRgLliYDhMSUuGL0taboq4Sdo",
+    "modifiedTime": "2026-11-23T19:04:49.782Z",
+    "size": "425448"
+  },
+  "assets/terrain_tiles/terrain_T_W03_N00.glb": {
+    "id": "19VbWMAQmp_-3CUV_BtSocsHO6AnhjEEO",
+    "modifiedTime": "2026-11-23T19:04:51.200Z",
+    "size": "423008"
+  },
+  "assets/terrain_tiles/terrain_T_W03_N01.glb": {
+    "id": "1O0AP7cq_8JANUU7gZ5x3oqC7pR9lnT8u",
+    "modifiedTime": "2026-11-23T21:20:06.848Z",
+    "size": "423660"
+  },
+  "assets/terrain_tiles/terrain_T_W03_N02.glb": {
+    "id": "1WjtJukKtxkZUpFLvnIRChT_uBe8Ga9ur",
+    "modifiedTime": "2026-11-23T21:20:08.189Z",
+    "size": "423588"
+  },
+  "assets/terrain_tiles/terrain_T_W03_N03.glb": {
+    "id": "1kVnNBMh4jLIsHJZEPVD_TaEdXGJIMg90",
+    "modifiedTime": "2026-11-23T21:54:26.406Z",
+    "size": "425936"
+  },
+  "assets/terrain_tiles/terrain_T_W03_N04.glb": {
+    "id": "1wRngR_ezuVd6joGaUsb4t1yqRmlMLOyt",
+    "modifiedTime": "2026-11-24T01:17:19.676Z",
+    "size": "193276"
+  },
+  "assets/terrain_tiles/terrain_T_W03_N05.glb": {
+    "id": "1C-4vGBkq494ccPQ11Xnke75x0TbyryGz",
+    "modifiedTime": "2026-11-24T02:06:14.774Z",
+    "size": "191264"
+  },
+  "assets/terrain_tiles/terrain_T_W03_S01.glb": {
+    "id": "1TeNNbZPVK5P5iiszBxq4jcndyeucGSFv",
+    "modifiedTime": "2026-11-23T19:04:54.745Z",
+    "size": "422336"
+  },
+  "assets/terrain_tiles/terrain_T_W03_S02.glb": {
+    "id": "1hp9W7Z39FAI8beyKwimIsXnT1RVsDltX",
+    "modifiedTime": "2026-11-23T21:20:10.057Z",
+    "size": "424884"
+  },
+  "assets/terrain_tiles/terrain_T_W03_S03.glb": {
+    "id": "1sLCL5yYnOBzXB7DNJA3CPai5zetn7Azg",
+    "modifiedTime": "2026-11-23T21:54:28.514Z",
+    "size": "425132"
+  },
+  "assets/terrain_tiles/terrain_T_W04_N03.glb": {
+    "id": "1lnHQoRC9E6risoEOdaKiDZRk86t2bud-",
+    "modifiedTime": "2026-11-24T02:06:10.161Z",
+    "size": "194756"
+  },
+  "assets/terrain_tiles/terrain_T_W04_N04.glb": {
+    "id": "1XjovRPTlf5haLup2u5GvJ_D-FJiqz0Bx",
+    "modifiedTime": "2026-11-24T01:17:19.906Z",
+    "size": "196164"
+  },
+  "assets/terrain_tiles/terrain_T_W04_N05.glb": {
+    "id": "1wXR5HXKm_iXOhp-VMUfOaVMHoIrhi001",
+    "modifiedTime": "2026-11-24T02:06:11.742Z",
+    "size": "193220"
+  },
+  "assets/terrain_tiles/terrain_T_W05_N04.glb": {
+    "id": "14n-_xgMhR60ywNp1bzSanYupZncsQS2u",
+    "modifiedTime": "2026-11-24T02:06:10.837Z",
+    "size": "194056"
+  },
+  "assets/terrain_tiles/terrain_tiles_manifest.json": {
+    "id": "1OwjhnxC6D5sLz7urI1ZD-CF9SQwqdodl",
+    "modifiedTime": "2026-11-24T04:11:02.324Z",
+    "size": "94081"
+  },
+  "assets/terrain_tiles_ring1_ext/heightmap_T_W01_N03.json": {
+    "id": "1pEqL9OGXy5g0nGO4TK5boUefP8i0IBth",
+    "modifiedTime": "2026-11-23T17:19:04.966Z",
+    "size": "84827"
+  },
+  "assets/terrain_tiles_ring1_ext/heightmap_T_W02_N02.json": {
+    "id": "1MfxYAXbPqYkeglcw1_ciCd--elBFLguI",
+    "modifiedTime": "2026-11-23T17:19:05.560Z",
+    "size": "84881"
+  },
+  "assets/terrain_tiles_ring1_ext/heightmap_T_W02_N03.json": {
+    "id": "1m-ctdtlFfAyPXlX-xVAokWvQIHW5hQ9n",
+    "modifiedTime": "2026-11-23T17:19:05.414Z",
+    "size": "84875"
+  },
+  "assets/terrain_tiles_ring1_ext/heightmap_T_W03_N02.json": {
+    "id": "1iLzatNIZ2R10b3KGPPMa5aVik1jHFS2o",
+    "modifiedTime": "2026-11-23T17:19:05.265Z",
+    "size": "84878"
+  },
+  "assets/terrain_tiles_ring1_ext/heightmap_T_W03_N03.json": {
+    "id": "1PTq1e69t7vPxGOWHs85J9eUK-GpQw3gF",
+    "modifiedTime": "2026-11-23T17:19:03.811Z",
+    "size": "84884"
+  },
+  "assets/terrain_tiles_ring1_ext/terrain_T_W01_N03.glb": {
+    "id": "1jwhCTRrTnj9aFXsFGjIi-0sH9CM2B17N",
+    "modifiedTime": "2026-11-23T17:19:05.315Z",
+    "size": "420028"
+  },
+  "assets/terrain_tiles_ring1_ext/terrain_T_W02_N02.glb": {
+    "id": "18Vt8CvKXP2KjlcmidzXj-lFtDmEmTzlb",
+    "modifiedTime": "2026-11-23T17:19:05.875Z",
+    "size": "425020"
+  },
+  "assets/terrain_tiles_ring1_ext/terrain_T_W02_N03.glb": {
+    "id": "1kL7s4k46WhZG-eIaZ8RHBFnl8RMVWw86",
+    "modifiedTime": "2026-11-23T17:19:05.463Z",
+    "size": "417356"
+  },
+  "assets/terrain_tiles_ring1_ext/terrain_T_W03_N02.glb": {
+    "id": "1MqRk3yNYoBn5SlPro46haL4XviNjnbH0",
+    "modifiedTime": "2026-11-23T17:19:05.164Z",
+    "size": "423588"
+  },
+  "assets/terrain_tiles_ring1_ext/terrain_T_W03_N03.glb": {
+    "id": "14rAoSjd6fmDCqv9jj0RxacstUvkB98jt",
+    "modifiedTime": "2026-11-23T17:19:05.262Z",
+    "size": "425936"
+  },
+  "assets/terrain_tiles_ring1_ext/terrain_ring1_ext_manifest.json": {
+    "id": "1kowGseDiih3M2LWs9ptvsM1KH4A_DW3t",
+    "modifiedTime": "2026-11-23T17:19:04.851Z",
+    "size": "11575"
+  },
+  "assets/terrain_tiles_ring2/heightmap_T_E00_N05.json": {
+    "id": "1QhoVDAfeVZpb8ohX1zv_X_pe-tG3BSpP",
+    "modifiedTime": "2026-11-23T17:25:31.676Z",
+    "size": "38666"
+  },
+  "assets/terrain_tiles_ring2/heightmap_T_E00_N06.json": {
+    "id": "1E-BQbnQyonUVmPH7ufNdcZotcMlLUHD7",
+    "modifiedTime": "2026-11-23T17:25:31.165Z",
+    "size": "38612"
+  },
+  "assets/terrain_tiles_ring2/heightmap_T_E01_N06.json": {
+    "id": "16AL7YJu7k579-Z5_ySm62mQPCWWFG0G-",
+    "modifiedTime": "2026-11-23T17:25:32.195Z",
+    "size": "38697"
+  },
+  "assets/terrain_tiles_ring2/heightmap_T_W01_N05.json": {
+    "id": "1JvXMRBUJxsGInmvTEnVP5WqotsTUk16m",
+    "modifiedTime": "2026-11-23T17:25:32.275Z",
+    "size": "38654"
+  },
+  "assets/terrain_tiles_ring2/heightmap_T_W01_N06.json": {
+    "id": "1eo6NUZIzEoelPdcyC-hfQkMVDSug9RuR",
+    "modifiedTime": "2026-11-23T17:25:32.343Z",
+    "size": "38644"
+  },
+  "assets/terrain_tiles_ring2/terrain_T_E00_N05.glb": {
+    "id": "1eSp0wiUIR5K-t34op1lyOmxzqd7KTpdB",
+    "modifiedTime": "2026-11-23T17:25:32.563Z",
+    "size": "193352"
+  },
+  "assets/terrain_tiles_ring2/terrain_T_E00_N06.glb": {
+    "id": "152o712SlCoThFMGT2a5T9hwks9TeLjo1",
+    "modifiedTime": "2026-11-23T17:25:32.350Z",
+    "size": "196736"
+  },
+  "assets/terrain_tiles_ring2/terrain_T_E01_N06.glb": {
+    "id": "1grcOTC02scgOXdQdwgellrlJXX2LjZSp",
+    "modifiedTime": "2026-11-23T17:25:31.551Z",
+    "size": "196660"
+  },
+  "assets/terrain_tiles_ring2/terrain_T_W01_N05.glb": {
+    "id": "17UeluJXmi_U6B_YUjv7-kM8GjB4VUb9D",
+    "modifiedTime": "2026-11-23T17:25:32.424Z",
+    "size": "193264"
+  },
+  "assets/terrain_tiles_ring2/terrain_T_W01_N06.glb": {
+    "id": "1YM1PrBM5kApApXZY8RGDzRaxuqwuhqQt",
+    "modifiedTime": "2026-11-23T17:25:31.007Z",
+    "size": "198228"
+  },
+  "assets/terrain_tiles_ring2/terrain_ring2_manifest.json": {
+    "id": "1JU8NAdwVgL3X-qTawht_c2JEOmta_uHo",
+    "modifiedTime": "2026-11-23T17:25:32.340Z",
+    "size": "7384"
+  },
+  "assets/tourism_complexes/tc_01_thien_vien_truc_lam_complex.glb": {
+    "id": "1GquiAj8Lj6RID7w-s0-VedPo_WhhOzfC",
+    "modifiedTime": "2026-11-23T17:30:54.109Z",
+    "size": "1366180"
+  },
+  "assets/tourism_complexes/tc_02_cap_treo_doi_robin_truc_lam.glb": {
+    "id": "1Ec-oOEu3NWzTu3FAY5kXQoJeWoqvgpH0",
+    "modifiedTime": "2026-11-23T19:37:10.970Z",
+    "size": "1243320"
+  },
+  "assets/tourism_complexes/tc_03_chua_linh_phuoc_ve_chai_complex.glb": {
+    "id": "1umWEGtz9Gos1xjqX87vj2Z6-jX4o0A4U",
+    "modifiedTime": "2026-11-23T21:31:21.523Z",
+    "size": "894768"
+  },
+  "assets/tourism_complexes/tc_04_domaine_de_marie_and_cam_ly_churches.glb": {
+    "id": "11zE_rJKzh5WRJdX2IqkiMEHKM-pIV7BZ",
+    "modifiedTime": "2026-11-23T23:29:13.792Z",
+    "size": "737224"
+  },
+  "assets/tourism_complexes/tc_05_vuon_hoa_tp_and_thung_lung_tinh_yeu.glb": {
+    "id": "1f-Qek6iMIAbbow9rlr-ARtgi1PjjBlk7",
+    "modifiedTime": "2026-11-24T01:22:26.380Z",
+    "size": "974044"
+  },
+  "assets/tourism_complexes/tc_06_chua_linh_an_71m_and_samten_hills.glb": {
+    "id": "1KiZQNqfOZ43Vvtf6OrE-EkIn2-i3ShpP",
+    "modifiedTime": "2026-11-24T03:26:38.668Z",
+    "size": "890860"
+  },
+  "assets/tourism_complexes/tourism_complexes_manifest.json": {
+    "id": "1Fb1WmmrUj5D_h7uvrRHrHOntvFUPGeE0",
+    "modifiedTime": "2026-11-24T03:26:39.648Z",
+    "size": "30320"
+  },
+  "assets/transport_infra/cau_ong_dao_dap_tran_ho_xuan_huong.glb": {
+    "id": "1gqx3Ye23dy-bJUx4dq7Na_EwjH7boDjY",
+    "modifiedTime": "2026-11-23T21:46:54.615Z",
+    "size": "1895472"
+  },
+  "assets/transport_infra/cau_treo_suoi_vang_dap_dankia_dt722.glb": {
+    "id": "1jwjieluz1aba9gxCn_GZkN9b_d1l_h-k",
+    "modifiedTime": "2026-11-24T03:40:22.919Z",
+    "size": "6545392"
+  },
+  "assets/transport_infra/deo_dran_ngoan_muc_va_deo_khanh_le_lac_duong.glb": {
+    "id": "1rEJOWA21CfCyaFb_wI6ZDqq3C3xZkhdg",
+    "modifiedTime": "2026-11-24T03:40:22.164Z",
+    "size": "6753360"
+  },
+  "assets/transport_infra/deo_mimosa_mountain_pass.glb": {
+    "id": "1LNTpaPJBq7hTAyzISFzHo9GP4K1Jtz_-",
+    "modifiedTime": "2026-11-23T19:24:31.604Z",
+    "size": "5549740"
+  },
+  "assets/transport_infra/deo_prenn_4lanes_viaducts.glb": {
+    "id": "1n0joHMBgqRG3LgsM87tYnyFS7adLfucL",
+    "modifiedTime": "2026-11-23T19:24:30.578Z",
+    "size": "5513068"
+  },
+  "assets/transport_infra/deo_ql20_trai_mat_cau_dat_cloud_deck.glb": {
+    "id": "1MUcm3qlgG4MHImsuaZFjNhyq-yideMp4",
+    "modifiedTime": "2026-11-23T23:44:59.195Z",
+    "size": "6920012"
+  },
+  "assets/transport_infra/deo_ta_nung_dt725_mountain_pass.glb": {
+    "id": "1AahKQIunCtSRj2NovtQv-3g1InQJhKKc",
+    "modifiedTime": "2026-11-23T23:44:59.405Z",
+    "size": "6537492"
+  },
+  "assets/transport_infra/ke_ho_lan_can_da_va_loi_dao_bo_ho_xuan_huong.glb": {
+    "id": "11nqKnhmUypR9Ms4_N-bAVcgOYbA3kF_t",
+    "modifiedTime": "2026-11-24T01:37:21.044Z",
+    "size": "5746416"
+  },
+  "assets/transport_infra/railway_dalat_traimat_7km.glb": {
+    "id": "1QkYDnfzTFeYBHT_3s1FxbK_QRWzMIQzp",
+    "modifiedTime": "2026-11-23T17:20:29.243Z",
+    "size": "3936804"
+  },
+  "assets/transport_infra/taluy_da_che_xanh_chan_doi_noi_do.glb": {
+    "id": "1AJ-HxrDt-PKxguu36CHJECgvdHEbUxa-",
+    "modifiedTime": "2026-11-24T01:37:19.766Z",
+    "size": "6352032"
+  },
+  "assets/transport_infra/train_dalat_steam_3coaches.glb": {
+    "id": "1rxL1YESYqngMK1Eh-FK6IZy1cqzCLs_W",
+    "modifiedTime": "2026-11-23T17:20:22.595Z",
+    "size": "160648"
+  },
+  "assets/transport_infra/transport_infra_manifest.json": {
+    "id": "1EWd4xSvS-D3FQQswuwYg30gfKwQx8Wxz",
+    "modifiedTime": "2026-11-24T03:40:23.018Z",
+    "size": "14692"
+  },
+  "assets/transport_infra/vong_xoay_dai_phun_nuoc_va_cau_chu_y_hoa_binh.glb": {
+    "id": "1lCok10FBovEIuiwC75TZCC5SUxCKgN-v",
+    "modifiedTime": "2026-11-23T21:46:55.967Z",
+    "size": "1333424"
+  },
+  "assets/urban_life_props/ul_w1_01_cho_dem_gates_and_canopy_stalls.glb": {
+    "id": "1Uli8dwiPV6p6h4wWrvDRRVq-mFtvplXi",
+    "modifiedTime": "2026-11-23T17:23:18.766Z",
+    "size": "954972"
+  },
+  "assets/urban_life_props/ul_w1_02_am_thuc_sua_dau_nanh_streetfood.glb": {
+    "id": "1T5h2JBxcdwwpq3wud-7FwbieeecUNH4H",
+    "modifiedTime": "2026-11-23T17:23:20.391Z",
+    "size": "794608"
+  },
+  "assets/urban_life_props/ul_w1_03_hoa_binh_retro_signs_and_crowd.glb": {
+    "id": "1Qx2pYWU7cnRnnpk4YX4RPSUluP0fDGQ-",
+    "modifiedTime": "2026-11-23T17:23:20.236Z",
+    "size": "1258876"
+  },
+  "assets/urban_life_props/ul_w2_01_dalat_buses_vintage_cars_motorbikes.glb": {
+    "id": "1hyr2ZggsqmFKepouIuzbKZYPq-OSqFHa",
+    "modifiedTime": "2026-11-23T20:21:23.961Z",
+    "size": "1892304"
+  },
+  "assets/urban_life_props/ul_w2_02_tran_quoc_toan_horse_carriages.glb": {
+    "id": "17tQPK583iTcKzp3WwraAXN0mv1NrLL8w",
+    "modifiedTime": "2026-11-23T20:20:33.467Z",
+    "size": "1436456"
+  },
+  "assets/urban_life_props/ul_w2_03_hxh_swan_boats_and_tuyen_lam_wooden_fleet.glb": {
+    "id": "1oZNgjKEjSj4xRoZG6HTHgo9VaCMVrZ-O",
+    "modifiedTime": "2026-11-23T20:20:32.765Z",
+    "size": "1856484"
+  },
+  "assets/urban_life_props/ul_w3_01_cong_vien_yersin_and_anh_sang_landscapes.glb": {
+    "id": "1lJyPhrzHLa95jJHOfwmu1KCPZUe0qhpM",
+    "modifiedTime": "2026-11-23T21:35:55.194Z",
+    "size": "880688"
+  },
+  "assets/urban_life_props/ul_w3_02_hxh_hydrangea_marigold_planters_and_carts.glb": {
+    "id": "13WEri7iBNmPP8zU9oIwOVYc5q7phwCxR",
+    "modifiedTime": "2026-11-23T21:35:56.156Z",
+    "size": "2626012"
+  },
+  "assets/urban_life_props/ul_w3_03_french_5globe_lamps_and_cast_iron_benches.glb": {
+    "id": "1kxs2NFqeX2JNl7jJpfEKzYIS4T9t_auT",
+    "modifiedTime": "2026-11-23T21:35:57.781Z",
+    "size": "4259056"
+  },
+  "assets/urban_life_props/ul_w4_01_tui_mo_to_garden_cafe_sao_nam.glb": {
+    "id": "1oGnrPeozv6RLn-GufwVhzpm41yAKc20X",
+    "modifiedTime": "2026-11-23T23:46:08.816Z",
+    "size": "2361968"
+  },
+  "assets/urban_life_props/ul_w4_02_horizon_coffee_pine_valley_ba_thang_tu.glb": {
+    "id": "1USWZV4r4lpffcNH0bUlmEdE_4rxtbwgF",
+    "modifiedTime": "2026-11-23T23:46:08.445Z",
+    "size": "1808184"
+  },
+  "assets/urban_life_props/ul_w4_03_me_linh_coffee_garden_ta_nung_terrace.glb": {
+    "id": "1nhM2Vdxh7Vk33PM8PS796GI8yI8o2RWF",
+    "modifiedTime": "2026-11-23T23:46:08.292Z",
+    "size": "2215116"
+  },
+  "assets/urban_life_props/ul_w5_01_le_dai_hanh_cau_ong_dao_flower_gates_and_parade.glb": {
+    "id": "1b40XfLH1jq7NXqdqWtx_agVnFXEZ_XXg",
+    "modifiedTime": "2026-11-24T01:33:06.981Z",
+    "size": "6107924"
+  },
+  "assets/urban_life_props/ul_w5_02_ho_xuan_huong_floating_floral_islands_and_musical_sculptures.glb": {
+    "id": "1wTRHEQ8Y7P-3vCc00-x4nZmLOO3IGVg1",
+    "modifiedTime": "2026-11-24T01:33:09.760Z",
+    "size": "4265048"
+  },
+  "assets/urban_life_props/ul_w5_03_tran_phu_ba_thang_tu_art_lighting_arches_and_floral_signals.glb": {
+    "id": "1F2zdE7BfPqaP16Hq1-36TFP8JY64sil8",
+    "modifiedTime": "2026-11-24T01:33:53.326Z",
+    "size": "5649168"
+  },
+  "assets/urban_life_props/ul_w6_01_cau_dat_container_cafe_cloud_decks_and_tour_vans.glb": {
+    "id": "1B2QGnrYeQddDQR--IGfbvg6ZI-1Z1eaV",
+    "modifiedTime": "2026-11-24T03:34:37.943Z",
+    "size": "1593880"
+  },
+  "assets/urban_life_props/ul_w6_02_langbiang_radar_jeep_convoy_and_summit_cafe.glb": {
+    "id": "18-Ziskm6-E4kIQ23VbvnmjSjbO0ECtrR",
+    "modifiedTime": "2026-11-24T03:34:41.318Z",
+    "size": "1816952"
+  },
+  "assets/urban_life_props/ul_w6_03_suoi_vang_lonely_pine_boats_and_da_phu_glamping_cafe.glb": {
+    "id": "1i1NA87tZROjJ4yaQVIC_IX8qVOIud-dU",
+    "modifiedTime": "2026-11-24T03:34:45.349Z",
+    "size": "1482024"
+  },
+  "assets/urban_life_props/urban_life_manifest.json": {
+    "id": "14FXn9I77cjZbY0Ca8t2sTXoMMSA8XAcc",
+    "modifiedTime": "2026-11-24T03:34:49.106Z",
+    "size": "32630"
+  },
+  "assets/urban_wards_tiles/dalat_stadium_thanh_mau_T_W01_N02.glb": {
+    "id": "1mb_8-nEcE3HTpbKqIagUVm8LuCTuVHvB",
+    "modifiedTime": "2026-11-23T17:20:42.574Z",
+    "size": "173036"
+  },
+  "assets/urban_wards_tiles/dalat_university_35halls_T_E00_N01.glb": {
+    "id": "1EQ93J2CpviCBT3hC_Vxz0Y98Cm9EHKGn",
+    "modifiedTime": "2026-11-23T17:20:44.066Z",
+    "size": "623356"
+  },
+  "assets/urban_wards_tiles/doi_cu_golf_18holes_T_E00_N00.glb": {
+    "id": "15qIl8tiDjhrPa9bcq8CaGVx2HVJDosFB",
+    "modifiedTime": "2026-11-23T17:20:43.989Z",
+    "size": "536472"
+  },
+  "assets/urban_wards_tiles/urban_wards_manifest.json": {
+    "id": "189Lb_ZSDuWYDimH41FfPttFJe4TVJ_gO",
+    "modifiedTime": "2026-11-23T17:20:42.926Z",
+    "size": "2949"
+  },
+  "assets/vegetation/da_quy_bush.glb": {
+    "id": "1xg_twiAQr-dQ8qoDZtfAFg2zWgjFL8H1",
+    "modifiedTime": "2026-11-23T10:45:23.558Z",
+    "size": "9560"
+  },
+  "assets/vegetation/instances_T_E00_N00.json": {
+    "id": "1URqGCD0YVra9bRF42ZAIEsBYsD8Vb8fk",
+    "modifiedTime": "2026-11-23T23:47:17.855Z",
+    "size": "232635"
+  },
+  "assets/vegetation/instances_T_E00_N01.json": {
+    "id": "1jhsDibDAqYNKs5GThZB8d69uRWlDLaa6",
+    "modifiedTime": "2026-11-23T11:27:35.826Z",
+    "size": "125543"
+  },
+  "assets/vegetation/instances_T_E00_N02.json": {
+    "id": "1BPgfOuT6NDegMPU67fGXsFCIMJq-Ufy6",
+    "modifiedTime": "2026-11-23T23:47:46.834Z",
+    "size": "393408"
+  },
+  "assets/vegetation/instances_T_E00_N03.json": {
+    "id": "10Ufko0QMY3YxLxHF4PpgHhLYlBm_Xdwg",
+    "modifiedTime": "2026-11-23T17:48:54.463Z",
+    "size": "516648"
+  },
+  "assets/vegetation/instances_T_E00_N04.json": {
+    "id": "15PPwDTIi7tlkUaktyb2qLHGRMMV9YNiY",
+    "modifiedTime": "2026-11-24T00:51:33.774Z",
+    "size": "502231"
+  },
+  "assets/vegetation/instances_T_E00_N05.json": {
+    "id": "1SCubjXlP6y_LsAB3h5pLFk-8je187gTd",
+    "modifiedTime": "2026-11-24T00:51:42.476Z",
+    "size": "508361"
+  },
+  "assets/vegetation/instances_T_E00_N06.json": {
+    "id": "1LlfY-3S8gRJTNz48gD4IciHrO9pQ1YVK",
+    "modifiedTime": "2026-11-23T21:04:17.685Z",
+    "size": "511234"
+  },
+  "assets/vegetation/instances_T_E00_S01.json": {
+    "id": "1OGa7mU7Ycalp57yFBp_CCVcJcZqKmCxE",
+    "modifiedTime": "2026-11-23T23:47:26.614Z",
+    "size": "434646"
+  },
+  "assets/vegetation/instances_T_E00_S02.json": {
+    "id": "1Bqp1eG8Segm1fKQDPzodLmlkaAlfrlyh",
+    "modifiedTime": "2026-11-23T23:47:42.279Z",
+    "size": "327583"
+  },
+  "assets/vegetation/instances_T_E00_S03.json": {
+    "id": "1aXp6Fs8gfXbLs0fZHNGL_8J5rInByIOE",
+    "modifiedTime": "2026-11-23T14:32:57.479Z",
+    "size": "504255"
+  },
+  "assets/vegetation/instances_T_E00_S04.json": {
+    "id": "1lJ0occU8MAbSzX5f5mxcs7oUaty-6kBP",
+    "modifiedTime": "2026-11-23T21:35:26.630Z",
+    "size": "404729"
+  },
+  "assets/vegetation/instances_T_E00_S05.json": {
+    "id": "1bmMIFhcXML-FZRqLgKYgZRLCmy6AMeKt",
+    "modifiedTime": "2026-11-23T21:35:30.048Z",
+    "size": "386909"
+  },
+  "assets/vegetation/instances_T_E00_S10.json": {
+    "id": "1BEjZuIvpwclufNTIZQk_OrPXLGVFgHAe",
+    "modifiedTime": "2026-11-24T03:31:26.748Z",
+    "size": "368310"
+  },
+  "assets/vegetation/instances_T_E00_S11.json": {
+    "id": "1OohndoC-8g0eczHoSrM_nEhxYxGNmJFI",
+    "modifiedTime": "2026-11-24T03:31:29.833Z",
+    "size": "306072"
+  },
+  "assets/vegetation/instances_T_E01_N00.json": {
+    "id": "1BtTi8IfI2aLsg2W7u5kscr2vmnAPMKd0",
+    "modifiedTime": "2026-11-23T23:47:22.773Z",
+    "size": "395026"
+  },
+  "assets/vegetation/instances_T_E01_N01.json": {
+    "id": "1fNsccxrZUQSHIX0jxqtwa8hbjz8hHBSn",
+    "modifiedTime": "2026-11-23T11:27:35.718Z",
+    "size": "78091"
+  },
+  "assets/vegetation/instances_T_E01_N02.json": {
+    "id": "1LrUqxLNlDhT5I5P6oYugbLbgs-qTzrSX",
+    "modifiedTime": "2026-11-23T15:43:01.040Z",
+    "size": "458381"
+  },
+  "assets/vegetation/instances_T_E01_N03.json": {
+    "id": "1P4RwgTJzfLkiRFvfQg8eov-BOts-rfpj",
+    "modifiedTime": "2026-11-23T18:22:50.916Z",
+    "size": "500658"
+  },
+  "assets/vegetation/instances_T_E01_N04.json": {
+    "id": "1-cMdVgWvwsBYsQHl3ZusTQ026r1F71BN",
+    "modifiedTime": "2026-11-24T00:51:36.702Z",
+    "size": "495900"
+  },
+  "assets/vegetation/instances_T_E01_N05.json": {
+    "id": "1WdlHqW-56uz5ccYWKxwVc9TqhVdIN1U4",
+    "modifiedTime": "2026-11-24T00:51:45.265Z",
+    "size": "521618"
+  },
+  "assets/vegetation/instances_T_E01_N06.json": {
+    "id": "1UMSvdteBVScXRcbNTxZlNhdostILT-_q",
+    "modifiedTime": "2026-11-24T01:43:32.643Z",
+    "size": "528417"
+  },
+  "assets/vegetation/instances_T_E01_S01.json": {
+    "id": "1a3aPRC2knqKxYibN-c-bk86fRTVqJTAc",
+    "modifiedTime": "2026-11-23T23:47:33.411Z",
+    "size": "413978"
+  },
+  "assets/vegetation/instances_T_E01_S02.json": {
+    "id": "1g9BvV8iyYRA4rqP7snWLBMCf6bDw-F64",
+    "modifiedTime": "2026-11-23T15:43:01.979Z",
+    "size": "518183"
+  },
+  "assets/vegetation/instances_T_E01_S03.json": {
+    "id": "1oiGikMW76Xb4snT8EoJcHyrFnqZuYwlv",
+    "modifiedTime": "2026-11-23T19:42:23.921Z",
+    "size": "490132"
+  },
+  "assets/vegetation/instances_T_E01_S04.json": {
+    "id": "1CGB9ttrXNP2xNmNowCqsG2Yb7B8lBrHe",
+    "modifiedTime": "2026-11-23T21:35:27.731Z",
+    "size": "405425"
+  },
+  "assets/vegetation/instances_T_E01_S05.json": {
+    "id": "1IhgqvjE5OnAIf3J7HOPWjIJJmUTqb7fu",
+    "modifiedTime": "2026-11-23T21:35:31.513Z",
+    "size": "387493"
+  },
+  "assets/vegetation/instances_T_E02_N00.json": {
+    "id": "1-sfxjcshv5nU228kpBYYgXseruTK2Xn5",
+    "modifiedTime": "2026-11-23T15:43:00.947Z",
+    "size": "536228"
+  },
+  "assets/vegetation/instances_T_E02_N01.json": {
+    "id": "1MzRP25WnfahI_gJte6Zsc-vhrzvqxHEc",
+    "modifiedTime": "2026-11-23T23:47:51.156Z",
+    "size": "315363"
+  },
+  "assets/vegetation/instances_T_E02_N02.json": {
+    "id": "1ZdilJNfvebreR3XzMuJEzfQZtnixM5ho",
+    "modifiedTime": "2026-11-23T18:22:49.469Z",
+    "size": "460464"
+  },
+  "assets/vegetation/instances_T_E02_N03.json": {
+    "id": "1rhEfAsOkBurMJttdkUmPAqqzCt4s2rw4",
+    "modifiedTime": "2026-11-23T21:03:13.971Z",
+    "size": "314327"
+  },
+  "assets/vegetation/instances_T_E02_N04.json": {
+    "id": "1rTW9iJS8KthfhdtoOx1ybvbobj7kruSA",
+    "modifiedTime": "2026-11-23T22:30:47.620Z",
+    "size": "441692"
+  },
+  "assets/vegetation/instances_T_E02_S01.json": {
+    "id": "1c-YTBoVxETCLYMYSBqq5rKqetY2QVdVy",
+    "modifiedTime": "2026-11-23T16:35:43.383Z",
+    "size": "576439"
+  },
+  "assets/vegetation/instances_T_E02_S02.json": {
+    "id": "1OMdzIt4jJXthZTzIiIZ775B2GBj22QKL",
+    "modifiedTime": "2026-11-23T18:22:50.410Z",
+    "size": "483896"
+  },
+  "assets/vegetation/instances_T_E02_S03.json": {
+    "id": "1VyrWx0Qcl_0eD0wRCH_nSa8FV6wMprjS",
+    "modifiedTime": "2026-11-23T21:35:59.362Z",
+    "size": "344163"
+  },
+  "assets/vegetation/instances_T_E02_S04.json": {
+    "id": "1egUNbUv1TMzbGFzu9RFh0whEma7CDWix",
+    "modifiedTime": "2026-11-23T21:35:29.326Z",
+    "size": "390692"
+  },
+  "assets/vegetation/instances_T_E02_S08.json": {
+    "id": "1KUHYN11Qlq-dxtQxz7c6v-0ph2g5QE9H",
+    "modifiedTime": "2026-11-23T22:31:17.186Z",
+    "size": "234634"
+  },
+  "assets/vegetation/instances_T_E02_S09.json": {
+    "id": "1jMmfO1hjuiaq1b2qu-k7HV__Tl49j0wy",
+    "modifiedTime": "2026-11-23T23:48:01.195Z",
+    "size": "360967"
+  },
+  "assets/vegetation/instances_T_E03_N00.json": {
+    "id": "16TQ5q_KL29PhM4pZ8JSRhYWx3srRmIrA",
+    "modifiedTime": "2026-11-23T14:32:58.645Z",
+    "size": "533867"
+  },
+  "assets/vegetation/instances_T_E03_N01.json": {
+    "id": "1f6n_ELOKvkJBzXuYm5tWFC5Mu-NcXBg1",
+    "modifiedTime": "2026-11-23T18:22:53.542Z",
+    "size": "540067"
+  },
+  "assets/vegetation/instances_T_E03_N02.json": {
+    "id": "1ZsBLPS85rlzFonaHHV5MpSWwUb-a9y1g",
+    "modifiedTime": "2026-11-23T21:03:15.366Z",
+    "size": "374311"
+  },
+  "assets/vegetation/instances_T_E03_N03.json": {
+    "id": "1dnyA5kT0cOg1LRtTu5DPau6D_V3Tt0Uo",
+    "modifiedTime": "2026-11-23T22:31:18.960Z",
+    "size": "361764"
+  },
+  "assets/vegetation/instances_T_E03_N04.json": {
+    "id": "12HAn5jV8XbTBeqT3kErYcweQ_yjiMOmK",
+    "modifiedTime": "2026-11-23T22:30:48.692Z",
+    "size": "420041"
+  },
+  "assets/vegetation/instances_T_E03_S01.json": {
+    "id": "1gxk7c8T9mFDFGQjJtxRGgSUsQJ8XwFk3",
+    "modifiedTime": "2026-11-23T18:22:54.053Z",
+    "size": "490340"
+  },
+  "assets/vegetation/instances_T_E03_S02.json": {
+    "id": "1RE7_lZ-8Z2PT-QPLUFuQ0rWczqsCbSs7",
+    "modifiedTime": "2026-11-23T21:03:16.533Z",
+    "size": "403241"
+  },
+  "assets/vegetation/instances_T_E03_S03.json": {
+    "id": "1UgEGmLMiNbTiCe8CXstctMnGuN1ViPwI",
+    "modifiedTime": "2026-11-23T22:31:20.979Z",
+    "size": "389587"
+  },
+  "assets/vegetation/instances_T_E03_S08.json": {
+    "id": "17FwjFgIhU_A4IWN-peb8yv7x-jeufGHv",
+    "modifiedTime": "2026-11-23T22:31:18.054Z",
+    "size": "401471"
+  },
+  "assets/vegetation/instances_T_E03_S11.json": {
+    "id": "1lsc9Z8NP6L2-jKnHZRjI_4-vPN7eFz-6",
+    "modifiedTime": "2026-11-24T00:52:05.932Z",
+    "size": "370534"
+  },
+  "assets/vegetation/instances_T_E03_S12.json": {
+    "id": "1Qk35iU5X7pZqKE4UfBMbplPs7wJ6orFH",
+    "modifiedTime": "2026-11-24T01:44:01.700Z",
+    "size": "375003"
+  },
+  "assets/vegetation/instances_T_E04_N00.json": {
+    "id": "1jgVynsHLEVDnhbSJ-49XLUg_ZMSmqop5",
+    "modifiedTime": "2026-11-24T03:31:22.783Z",
+    "size": "373248"
+  },
+  "assets/vegetation/instances_T_E04_N01.json": {
+    "id": "1NR8I4hqsxo2KkMc1qlKQrRpEZV4r2KCw",
+    "modifiedTime": "2026-11-24T03:31:40.332Z",
+    "size": "377912"
+  },
+  "assets/vegetation/instances_T_E04_N04.json": {
+    "id": "12ymBqhA5YBEul7YD7gbXsmJjDX60Lhq3",
+    "modifiedTime": "2026-11-24T00:51:54.212Z",
+    "size": "431567"
+  },
+  "assets/vegetation/instances_T_E04_S01.json": {
+    "id": "1p8rLyXJTIWK-GHtnUYmQpzYHhlTPNtHi",
+    "modifiedTime": "2026-11-24T03:31:06.382Z",
+    "size": "314110"
+  },
+  "assets/vegetation/instances_T_E04_S02.json": {
+    "id": "156EkLcaQUNzdC-BQiMGqtzuqkloH81R1",
+    "modifiedTime": "2026-11-23T21:02:51.508Z",
+    "size": "421215"
+  },
+  "assets/vegetation/instances_T_E04_S11.json": {
+    "id": "1jEjd4j2divJBGXs1wMpYf-VnBcsNaMjR",
+    "modifiedTime": "2026-11-24T00:52:08.944Z",
+    "size": "330360"
+  },
+  "assets/vegetation/instances_T_E04_S12.json": {
+    "id": "1EBZ-veI1YhgVI-cna21qPJD1a0dIHEcz",
+    "modifiedTime": "2026-11-24T01:44:06.512Z",
+    "size": "321968"
+  },
+  "assets/vegetation/instances_T_E05_N00.json": {
+    "id": "1zLVr1rXPOkp14IdwSy0-vdWfjMC3kNv8",
+    "modifiedTime": "2026-11-24T03:31:43.495Z",
+    "size": "374509"
+  },
+  "assets/vegetation/instances_T_E05_N01.json": {
+    "id": "1qUlDjjEB-9vSvqj1PsgOy7YiwvZiTPoC",
+    "modifiedTime": "2026-11-24T03:31:47.818Z",
+    "size": "388855"
+  },
+  "assets/vegetation/instances_T_E05_N04.json": {
+    "id": "1buoZ5XvTMuGxN8TbQMaiHz0Nk4TqUl9i",
+    "modifiedTime": "2026-11-24T00:51:57.127Z",
+    "size": "401422"
+  },
+  "assets/vegetation/instances_T_E05_S01.json": {
+    "id": "1ng-i32e5gVGFuz6mLIb5xE4oLiNzPOqc",
+    "modifiedTime": "2026-11-24T03:31:09.451Z",
+    "size": "311507"
+  },
+  "assets/vegetation/instances_T_E05_S02.json": {
+    "id": "196y3yT1ssYuVA2B2X7S2QzSAjAzjPWiy",
+    "modifiedTime": "2026-11-24T03:31:12.959Z",
+    "size": "311225"
+  },
+  "assets/vegetation/instances_T_E05_S03.json": {
+    "id": "1Ej8_24Xwm-30VtSd89BD-s0jq_XU1cQW",
+    "modifiedTime": "2026-11-23T21:03:11.200Z",
+    "size": "760290"
+  },
+  "assets/vegetation/instances_T_E05_S09.json": {
+    "id": "1uv-bKAbs88elkQmvEWKSNqMNuosyNczk",
+    "modifiedTime": "2026-11-24T00:52:00.299Z",
+    "size": "280310"
+  },
+  "assets/vegetation/instances_T_E05_S10.json": {
+    "id": "1OgzF0Nlopyj9x5jRAUtpHifJZRJmB3G3",
+    "modifiedTime": "2026-11-24T00:52:02.987Z",
+    "size": "336715"
+  },
+  "assets/vegetation/instances_T_E06_N01.json": {
+    "id": "1wZPxwmx3AHg79mneZFhCNH_lpzqffK8n",
+    "modifiedTime": "2026-11-24T02:58:27.618Z",
+    "size": "402307"
+  },
+  "assets/vegetation/instances_T_E06_S03.json": {
+    "id": "1i9mmF13yjGHq_iD5dD81Swy5UiPmSYqc",
+    "modifiedTime": "2026-11-23T21:03:11.561Z",
+    "size": "804433"
+  },
+  "assets/vegetation/instances_T_E06_S04.json": {
+    "id": "1X2oMMKxFq0-0JcU979Kf15HjajPEIcNV",
+    "modifiedTime": "2026-11-23T21:03:13.089Z",
+    "size": "906727"
+  },
+  "assets/vegetation/instances_T_E07_N01.json": {
+    "id": "1NaIr5V57gIaNQan7EMZW2KaAoRvb0l5H",
+    "modifiedTime": "2026-11-24T02:58:32.181Z",
+    "size": "397620"
+  },
+  "assets/vegetation/instances_T_E07_N02.json": {
+    "id": "1XPKJIvdIrUrJMSu-9wVROa7VHKWv7hwX",
+    "modifiedTime": "2026-11-24T02:58:00.376Z",
+    "size": "387994"
+  },
+  "assets/vegetation/instances_T_E07_S03.json": {
+    "id": "1pbsCvIBEptj0ZNT0hN1FAlR97xSAzuqh",
+    "modifiedTime": "2026-11-24T03:31:51.470Z",
+    "size": "866154"
+  },
+  "assets/vegetation/instances_T_E07_S04.json": {
+    "id": "1uYSndtzwmFq6di1HftWyPZwtW4anQsQB",
+    "modifiedTime": "2026-11-23T13:40:18.225Z",
+    "size": "854061"
+  },
+  "assets/vegetation/instances_T_E07_S05.json": {
+    "id": "1LUXhdO8FmjuHrV_3g0KcEly3Fwr4pDry",
+    "modifiedTime": "2026-11-23T21:35:56.787Z",
+    "size": "800500"
+  },
+  "assets/vegetation/instances_T_E07_S06.json": {
+    "id": "1fuBb1L9l1PlfWZOZ2HuwePm-6ukgfRL4",
+    "modifiedTime": "2026-11-23T22:30:54.307Z",
+    "size": "391785"
+  },
+  "assets/vegetation/instances_T_E08_N02.json": {
+    "id": "19pgwi5dfn5FyMSbK4BJBdfN5woVHnDXh",
+    "modifiedTime": "2026-11-24T02:58:04.376Z",
+    "size": "371456"
+  },
+  "assets/vegetation/instances_T_E08_S03.json": {
+    "id": "1l68nZOuVMTseh3YzWjVL2jzBQ9UT0ups",
+    "modifiedTime": "2026-11-24T03:31:55.270Z",
+    "size": "856887"
+  },
+  "assets/vegetation/instances_T_E08_S04.json": {
+    "id": "1HLWfruT6pz77-tEalLPL7n3x_8S556Gw",
+    "modifiedTime": "2026-11-24T02:58:36.624Z",
+    "size": "906390"
+  },
+  "assets/vegetation/instances_T_E08_S05.json": {
+    "id": "1UyLB7E5wNxI2iCRmh1z_i3-wd0si21kU",
+    "modifiedTime": "2026-11-23T22:31:15.677Z",
+    "size": "329678"
+  },
+  "assets/vegetation/instances_T_E08_S06.json": {
+    "id": "17doSknzZhsG9cm9Fu1ig6gOriAr8_9VA",
+    "modifiedTime": "2026-11-23T22:31:15.789Z",
+    "size": "91841"
+  },
+  "assets/vegetation/instances_T_E09_S05.json": {
+    "id": "17dICd2Iw7irQUMaGUO-9c8cKqLRr8J0k",
+    "modifiedTime": "2026-11-23T23:47:54.643Z",
+    "size": "792089"
+  },
+  "assets/vegetation/instances_T_E09_S06.json": {
+    "id": "1CIXnUquxCKaOTV9rHSOEzCOhMVzneYZv",
+    "modifiedTime": "2026-11-23T23:47:58.032Z",
+    "size": "380138"
+  },
+  "assets/vegetation/instances_T_W01_N00.json": {
+    "id": "1_qLRiK0D7brmonILCTE4pSeWuszArwpB",
+    "modifiedTime": "2026-11-23T11:27:35.958Z",
+    "size": "108202"
+  },
+  "assets/vegetation/instances_T_W01_N01.json": {
+    "id": "1CGLfn_kEqFBDpBidYGBuOr2kUOakXxXu",
+    "modifiedTime": "2026-11-23T11:27:35.539Z",
+    "size": "67142"
+  },
+  "assets/vegetation/instances_T_W01_N02.json": {
+    "id": "1UChNc0XAxuYvkwWUHuZkISs0ezd04K3g",
+    "modifiedTime": "2026-11-23T15:42:59.992Z",
+    "size": "558587"
+  },
+  "assets/vegetation/instances_T_W01_N03.json": {
+    "id": "1Ep5YbiRVdIbpmCV4qmNLaa_UWmwGktuB",
+    "modifiedTime": "2026-11-23T17:48:52.892Z",
+    "size": "581938"
+  },
+  "assets/vegetation/instances_T_W01_N04.json": {
+    "id": "1CGFxu1MUqRj0V6nfPtvBocZSmQD4QGHq",
+    "modifiedTime": "2026-11-24T00:51:30.658Z",
+    "size": "523836"
+  },
+  "assets/vegetation/instances_T_W01_N05.json": {
+    "id": "1kxXzyeDSr1W_-VKGOeVZWfLWQ4V95oeO",
+    "modifiedTime": "2026-11-24T00:51:39.694Z",
+    "size": "525814"
+  },
+  "assets/vegetation/instances_T_W01_N06.json": {
+    "id": "18jWi9LBARY1cHh0-KoA7vF1TKrv74gfI",
+    "modifiedTime": "2026-11-24T00:51:47.968Z",
+    "size": "541586"
+  },
+  "assets/vegetation/instances_T_W01_S01.json": {
+    "id": "1It-t-iQEL8qgEAUDABh7Yp0QCcWwfrjZ",
+    "modifiedTime": "2026-11-23T23:47:29.878Z",
+    "size": "315472"
+  },
+  "assets/vegetation/instances_T_W01_S02.json": {
+    "id": "1Cjhqajy42fX4S0rsNmQGN5Z6mGca5ovn",
+    "modifiedTime": "2026-11-23T23:47:37.208Z",
+    "size": "87793"
+  },
+  "assets/vegetation/instances_T_W01_S03.json": {
+    "id": "1-SxRbVbb1yrpTFGLKH9f19ra2DYvDEYM",
+    "modifiedTime": "2026-11-23T14:32:57.499Z",
+    "size": "534399"
+  },
+  "assets/vegetation/instances_T_W01_S04.json": {
+    "id": "1MxEJtd2U3Hpxy_ABQosjSEaB7zJUdyWv",
+    "modifiedTime": "2026-11-23T21:35:25.749Z",
+    "size": "464871"
+  },
+  "assets/vegetation/instances_T_W01_S10.json": {
+    "id": "1RPs26d_3ImK4AsoNVqTAeDt5ghiV3BA7",
+    "modifiedTime": "2026-11-24T03:31:32.915Z",
+    "size": "380591"
+  },
+  "assets/vegetation/instances_T_W01_S11.json": {
+    "id": "1bCpcT_7S2WtdWCrPf5ag8WBFN2vwBKBx",
+    "modifiedTime": "2026-11-24T03:31:36.099Z",
+    "size": "282470"
+  },
+  "assets/vegetation/instances_T_W02_N00.json": {
+    "id": "1rPh7KrWoR6FWI0NjGgZDf6Si1HqZJ7en",
+    "modifiedTime": "2026-11-23T14:33:01.450Z",
+    "size": "453796"
+  },
+  "assets/vegetation/instances_T_W02_N01.json": {
+    "id": "1sKVrlGTlfQTDf73MR8N10hC7BbCiAQ7F",
+    "modifiedTime": "2026-11-23T16:35:40.152Z",
+    "size": "475608"
+  },
+  "assets/vegetation/instances_T_W02_N02.json": {
+    "id": "1WzoS13sm8BXNOOM9S0EWIZKvqcu6HNZZ",
+    "modifiedTime": "2026-11-23T18:22:48.316Z",
+    "size": "493219"
+  },
+  "assets/vegetation/instances_T_W02_N03.json": {
+    "id": "1qp69XH7l-JTqKIt1bh7yh3T0MfexzkFq",
+    "modifiedTime": "2026-11-23T17:48:52.162Z",
+    "size": "603405"
+  },
+  "assets/vegetation/instances_T_W02_N04.json": {
+    "id": "1-LQ_UjAVLgpy0Asi4So_CJ7SVJDzt0dU",
+    "modifiedTime": "2026-11-24T01:43:28.922Z",
+    "size": "521885"
+  },
+  "assets/vegetation/instances_T_W02_N05.json": {
+    "id": "1oSn1DPUSObt0_PaT1xebZhUSCoX3lc2a",
+    "modifiedTime": "2026-11-23T22:30:51.044Z",
+    "size": "537269"
+  },
+  "assets/vegetation/instances_T_W02_S01.json": {
+    "id": "15prtsFE3x1qmDGlP6rndrwTF6qZzFaYc",
+    "modifiedTime": "2026-11-23T16:35:43.470Z",
+    "size": "510815"
+  },
+  "assets/vegetation/instances_T_W02_S02.json": {
+    "id": "1ilUJ0dDCryYqizgviN2KuaLbxf-QGQOw",
+    "modifiedTime": "2026-11-23T16:35:41.500Z",
+    "size": "566980"
+  },
+  "assets/vegetation/instances_T_W02_S03.json": {
+    "id": "1re2uwum1PD718Q5PTfNtzLwgbZ9DBNBu",
+    "modifiedTime": "2026-11-23T19:42:08.311Z",
+    "size": "527899"
+  },
+  "assets/vegetation/instances_T_W02_S04.json": {
+    "id": "1I53uTZFYnuK0FsYstOmgsDGf0pLHzRvW",
+    "modifiedTime": "2026-11-23T21:35:24.676Z",
+    "size": "475555"
+  },
+  "assets/vegetation/instances_T_W03_N00.json": {
+    "id": "11vXhOrQlch9l2C5R3KaMX9DJ3u_xDc7a",
+    "modifiedTime": "2026-11-23T19:42:05.602Z",
+    "size": "505825"
+  },
+  "assets/vegetation/instances_T_W03_N01.json": {
+    "id": "1mA6pcL5n68LKJrsl3aEgyWgCpLqAdyKd",
+    "modifiedTime": "2026-11-23T21:36:00.796Z",
+    "size": "311996"
+  },
+  "assets/vegetation/instances_T_W03_N02.json": {
+    "id": "1YnotV20DGDeZwngGNC3tRaabDo7ektuG",
+    "modifiedTime": "2026-11-23T18:22:50.584Z",
+    "size": "467973"
+  },
+  "assets/vegetation/instances_T_W03_N03.json": {
+    "id": "13Y3vkmt0tPMX3Mh8JDELMtRJL5wq97Sw",
+    "modifiedTime": "2026-11-23T17:48:56.959Z",
+    "size": "492943"
+  },
+  "assets/vegetation/instances_T_W03_N04.json": {
+    "id": "1qwCK7nluN_Y06_ERT4BmRX7Imok1gCa_",
+    "modifiedTime": "2026-11-24T03:31:16.367Z",
+    "size": "297164"
+  },
+  "assets/vegetation/instances_T_W03_N05.json": {
+    "id": "10n6sosTub4LEUAtXAETmVEG-JlNSN3II",
+    "modifiedTime": "2026-11-24T02:57:38.016Z",
+    "size": "213760"
+  },
+  "assets/vegetation/instances_T_W03_N06.json": {
+    "id": "1NXGl9zPjPlHfePhUnYqlE_vmPs3F0XHS",
+    "modifiedTime": "2026-11-24T01:43:36.173Z",
+    "size": "528401"
+  },
+  "assets/vegetation/instances_T_W03_S01.json": {
+    "id": "1OgVigdu4K6h-RPXvPIdgeWKI7qMR70pE",
+    "modifiedTime": "2026-11-23T19:42:07.557Z",
+    "size": "330367"
+  },
+  "assets/vegetation/instances_T_W03_S02.json": {
+    "id": "1qqLzsUaSlW-bE3MHVL2giCod4gh_8bB7",
+    "modifiedTime": "2026-11-23T21:35:59.103Z",
+    "size": "292216"
+  },
+  "assets/vegetation/instances_T_W03_S03.json": {
+    "id": "1F3X3kkK85Ai8mKUcYsJwUxThQpmQoN_s",
+    "modifiedTime": "2026-11-23T22:31:21.782Z",
+    "size": "418822"
+  },
+  "assets/vegetation/instances_T_W04_N00.json": {
+    "id": "1RGkl54GbUZEtXgtQX50WUOmoHcIjxqJS",
+    "modifiedTime": "2026-11-23T21:35:32.190Z",
+    "size": "407155"
+  },
+  "assets/vegetation/instances_T_W04_N03.json": {
+    "id": "1wmq54ubmT-PZCCkoyUivYY2ouzVLURVd",
+    "modifiedTime": "2026-11-24T02:57:50.752Z",
+    "size": "264573"
+  },
+  "assets/vegetation/instances_T_W04_N04.json": {
+    "id": "1WvAz7oLs0NJKu1w0SL7h_ELjD88LhxDR",
+    "modifiedTime": "2026-11-24T03:31:19.499Z",
+    "size": "130446"
+  },
+  "assets/vegetation/instances_T_W04_N05.json": {
+    "id": "19niBoT6-jwecyLyAhrGixeu1fQ-FHoOo",
+    "modifiedTime": "2026-11-24T02:57:42.206Z",
+    "size": "276569"
+  },
+  "assets/vegetation/instances_T_W04_S01.json": {
+    "id": "1Qg4SphY_QjE3QZLw06Gq3y_pYOmv-S7L",
+    "modifiedTime": "2026-11-23T21:35:32.317Z",
+    "size": "442543"
+  },
+  "assets/vegetation/instances_T_W04_S10.json": {
+    "id": "1R4D6RZ1Aa92tlbtfPo6vp3bx3P8x6vOl",
+    "modifiedTime": "2026-11-24T01:43:53.377Z",
+    "size": "397986"
+  },
+  "assets/vegetation/instances_T_W05_N03.json": {
+    "id": "113Xd8huOczTLVHLBV8WqDKuGdKn8faMQ",
+    "modifiedTime": "2026-11-24T02:57:55.356Z",
+    "size": "361531"
+  },
+  "assets/vegetation/instances_T_W05_N04.json": {
+    "id": "1fxb4dfQ-6OWFNq7mxv8cXeMTFqenLKGD",
+    "modifiedTime": "2026-11-24T02:57:46.584Z",
+    "size": "313195"
+  },
+  "assets/vegetation/instances_T_W05_N05.json": {
+    "id": "1o18PFnvv8dy0hep669fSZTqVi_d_J3Sy",
+    "modifiedTime": "2026-11-24T00:51:50.837Z",
+    "size": "431913"
+  },
+  "assets/vegetation/instances_T_W05_S01.json": {
+    "id": "1O32VKtqLX9Ogy0RvL0yvVFIL9WfbF0SG",
+    "modifiedTime": "2026-11-23T21:35:51.464Z",
+    "size": "455077"
+  },
+  "assets/vegetation/instances_T_W05_S02.json": {
+    "id": "1YNNuOa03eULULNHvluSIyqF3iKuryszp",
+    "modifiedTime": "2026-11-23T21:35:52.128Z",
+    "size": "288030"
+  },
+  "assets/vegetation/instances_T_W05_S05.json": {
+    "id": "1WpCM3aHHIp5MeVMRYXdZpRPp9GUN73XE",
+    "modifiedTime": "2026-11-24T01:43:40.740Z",
+    "size": "422762"
+  },
+  "assets/vegetation/instances_T_W05_S06.json": {
+    "id": "1hdWs2uWlmEazCZGeUaQAc9MxjGvGX85x",
+    "modifiedTime": "2026-11-24T01:43:45.277Z",
+    "size": "385279"
+  },
+  "assets/vegetation/instances_T_W05_S12.json": {
+    "id": "13JlwJp2vQ-5o80So0pE_FuqGLS8EzfjP",
+    "modifiedTime": "2026-11-24T00:52:11.693Z",
+    "size": "403556"
+  },
+  "assets/vegetation/instances_T_W05_S13.json": {
+    "id": "1x-CHu4xLmhSA4XZIz4dBsOLWYPRlQLdg",
+    "modifiedTime": "2026-11-24T01:44:11.982Z",
+    "size": "430443"
+  },
+  "assets/vegetation/instances_T_W06_S02.json": {
+    "id": "1TXkHco04kIL52-LwTiW0FtoSUJ0oWHai",
+    "modifiedTime": "2026-11-23T22:30:52.931Z",
+    "size": "414366"
+  },
+  "assets/vegetation/instances_T_W06_S05.json": {
+    "id": "1O4Xw38t4XRH2FMrm7wBLvIgwBg6lebBy",
+    "modifiedTime": "2026-11-24T01:43:49.348Z",
+    "size": "394625"
+  },
+  "assets/vegetation/instances_T_W06_S06.json": {
+    "id": "1FEhctNBG67gmO_LM7iCZN80uLpR_MLou",
+    "modifiedTime": "2026-11-23T23:48:04.788Z",
+    "size": "413763"
+  },
+  "assets/vegetation/instances_T_W06_S07.json": {
+    "id": "1ZpV8nDxfRrFtGyRqu-KR_GGvpaa4Ws6A",
+    "modifiedTime": "2026-11-23T23:48:08.401Z",
+    "size": "432758"
+  },
+  "assets/vegetation/instances_T_W07_S11.json": {
+    "id": "1b2xN6EHViGXmf598a9baweSDHf3Vgah-",
+    "modifiedTime": "2026-11-24T01:43:57.377Z",
+    "size": "792034"
+  },
+  "assets/vegetation/instances_T_W08_S08.json": {
+    "id": "1NU3VaQjQqwksIChr19MqHP98eTTPwg2O",
+    "modifiedTime": "2026-11-23T23:48:13.701Z",
+    "size": "830635"
+  },
+  "assets/vegetation/instances_T_W08_S09.json": {
+    "id": "1S2PKh_3UsMWuGrLlo8tWAs_XcyGWFpDO",
+    "modifiedTime": "2026-11-24T02:58:08.978Z",
+    "size": "359565"
+  },
+  "assets/vegetation/instances_T_W08_S14.json": {
+    "id": "1YV6prKFM9O1hQkN-U4MuTRTXxZ__q1Di",
+    "modifiedTime": "2026-11-24T01:44:16.563Z",
+    "size": "429474"
+  },
+  "assets/vegetation/instances_T_W09_S08.json": {
+    "id": "19ZZktTPci7hQh7Wtym7VCcoaRpT4Fi6B",
+    "modifiedTime": "2026-11-24T02:58:13.311Z",
+    "size": "336441"
+  },
+  "assets/vegetation/instances_T_W09_S09.json": {
+    "id": "19xAAvgKsVQlNwqVcY1zMkRvR0zNXTlKX",
+    "modifiedTime": "2026-11-24T02:58:17.632Z",
+    "size": "230158"
+  },
+  "assets/vegetation/instances_T_W09_S14.json": {
+    "id": "1CmAetEdVo-aSi0tzoxbdNH7ZL_PuuKIP",
+    "modifiedTime": "2026-11-24T01:44:20.858Z",
+    "size": "416728"
+  },
+  "assets/vegetation/instances_T_W09_S15.json": {
+    "id": "1J0atL3MC9tMNWEEZ7-PU7RQi4la7kp2Q",
+    "modifiedTime": "2026-11-24T01:44:24.606Z",
+    "size": "408341"
+  },
+  "assets/vegetation/instances_T_W10_S14.json": {
+    "id": "1X6WpyzM_RmTvAuFWSmid5isXjUcXAqkL",
+    "modifiedTime": "2026-11-24T02:58:22.639Z",
+    "size": "379566"
+  },
+  "assets/vegetation/mai_anh_dao.glb": {
+    "id": "1kCeV0-CDCvRJIJpQXBTncZxoMkk9rP6P",
+    "modifiedTime": "2026-11-23T10:45:22.629Z",
+    "size": "9688"
+  },
+  "assets/vegetation/pine_dalat_medium.glb": {
+    "id": "1TCVLxfnXYWb9-AlgqRwF7XquwQRlTXrS",
+    "modifiedTime": "2026-11-23T10:45:22.994Z",
+    "size": "8232"
+  },
+  "assets/vegetation/pine_dalat_tall.glb": {
+    "id": "1IvQiarJ0nBwzxVC_JPWLiyl0xclyvOJo",
+    "modifiedTime": "2026-11-23T10:45:23.010Z",
+    "size": "10092"
+  },
+  "assets/vegetation/pine_dalat_young.glb": {
+    "id": "139z2ElzKacdxwRbNHQbMDg_YVSByEb_2",
+    "modifiedTime": "2026-11-23T10:45:22.913Z",
+    "size": "6168"
+  },
+  "assets/vegetation/ring2_forest_zones.json": {
+    "id": "1F0xkR3NqBQeW4lrEMywFc38kzLX3gdC8",
+    "modifiedTime": "2026-11-23T13:40:19.576Z",
+    "size": "1399810"
+  },
+  "assets/vegetation/tea_bush_row_lod.glb": {
+    "id": "1KlDPONKC5--NTO50tbF7m6QIy-ahZVfQ",
+    "modifiedTime": "2026-11-23T13:40:17.657Z",
+    "size": "7860"
+  },
+  "assets/vegetation_expanded/cypress_heritage.glb": {
+    "id": "1EQKeaTVhQF1CyYsiLlpq0D1To_5cFBKz",
+    "modifiedTime": "2026-11-23T17:20:45.705Z",
+    "size": "12536"
+  },
+  "assets/vegetation_expanded/hydrangea_bush.glb": {
+    "id": "1uALLLwqzhxGyWLfu7d0gwykvVkzXC1Yj",
+    "modifiedTime": "2026-11-23T17:20:44.881Z",
+    "size": "13716"
+  },
+  "assets/vegetation_expanded/instances_T_E00_N04.json": {
+    "id": "1JMywqEpKpD4tJFQsWydobqGfYTMyef-z",
+    "modifiedTime": "2026-11-23T19:53:05.189Z",
+    "size": "455035"
+  },
+  "assets/vegetation_expanded/instances_T_E00_N07.json": {
+    "id": "1dBtJE17eUqRiSd0eJvgaavSxTjTmMloh",
+    "modifiedTime": "2026-11-23T23:45:02.514Z",
+    "size": "520110"
+  },
+  "assets/vegetation_expanded/instances_T_E00_S06.json": {
+    "id": "12p9rDNzs1ZUK9QhKDQgxq5w20jCrlAuU",
+    "modifiedTime": "2026-11-24T04:05:47.319Z",
+    "size": "515065"
+  },
+  "assets/vegetation_expanded/instances_T_E01_N04.json": {
+    "id": "1zEm4RV1cIWPIibN7f3QQYFC5GPr_WuUi",
+    "modifiedTime": "2026-11-23T19:53:07.378Z",
+    "size": "461053"
+  },
+  "assets/vegetation_expanded/instances_T_E01_N05.json": {
+    "id": "1whDA_cy2tIFdl54ejdMJxzahmTDJwAyA",
+    "modifiedTime": "2026-11-23T19:53:13.967Z",
+    "size": "475799"
+  },
+  "assets/vegetation_expanded/instances_T_E01_N07.json": {
+    "id": "1mu8WKmgGH3AQK0F4LMLU0ITzCPULXavz",
+    "modifiedTime": "2026-11-23T23:45:04.012Z",
+    "size": "523561"
+  },
+  "assets/vegetation_expanded/instances_T_E01_S06.json": {
+    "id": "1KbFOYa0DrQEE7KRFMIMYtSvTQs10Fb0x",
+    "modifiedTime": "2026-11-24T04:05:47.863Z",
+    "size": "530454"
+  },
+  "assets/vegetation_expanded/instances_T_E02_N02.json": {
+    "id": "1H-mI7UDis-2VphLdwDm6X4qyz7WF1u6e",
+    "modifiedTime": "2026-11-23T17:20:46.982Z",
+    "size": "471253"
+  },
+  "assets/vegetation_expanded/instances_T_E02_N04.json": {
+    "id": "18r80G57m903y0PcK-JjVa2gsWZ4efXiF",
+    "modifiedTime": "2026-11-23T19:53:08.177Z",
+    "size": "452961"
+  },
+  "assets/vegetation_expanded/instances_T_E02_N05.json": {
+    "id": "1HRV40tLmtaWsigW2KYrbMUlyPWb-En_S",
+    "modifiedTime": "2026-11-23T19:53:16.535Z",
+    "size": "462258"
+  },
+  "assets/vegetation_expanded/instances_T_E02_N06.json": {
+    "id": "14FI8HMnt8_k-pgS7LouxqdavY3L92bxx",
+    "modifiedTime": "2026-11-23T23:45:04.611Z",
+    "size": "517947"
+  },
+  "assets/vegetation_expanded/instances_T_E02_S02.json": {
+    "id": "1P2D78f-mWw1ULLZ7K5AnF3gsHQGSTVud",
+    "modifiedTime": "2026-11-23T17:20:48.374Z",
+    "size": "483114"
+  },
+  "assets/vegetation_expanded/instances_T_E02_S05.json": {
+    "id": "1YsL4sZVOAXj1VYocMVUsjtzXhUzBrgIX",
+    "modifiedTime": "2026-11-24T04:05:46.558Z",
+    "size": "517638"
+  },
+  "assets/vegetation_expanded/instances_T_E03_N04.json": {
+    "id": "1xCKRTp8NHkE3SguqsH66_PFVNvPoldxn",
+    "modifiedTime": "2026-11-23T19:53:10.446Z",
+    "size": "450887"
+  },
+  "assets/vegetation_expanded/instances_T_E03_N05.json": {
+    "id": "1uDhjy3bg7B1qtwQOlqUE4u0WLhOnxXxH",
+    "modifiedTime": "2026-11-23T23:45:06.005Z",
+    "size": "508794"
+  },
+  "assets/vegetation_expanded/instances_T_E03_N06.json": {
+    "id": "1usJ50zWiO6wajLaYS1iGjThVlSgntpi1",
+    "modifiedTime": "2026-11-23T23:45:06.529Z",
+    "size": "511727"
+  },
+  "assets/vegetation_expanded/instances_T_E03_S04.json": {
+    "id": "1eBuT-knkT5RCZtJ8sEknxdvGQeg5vAyi",
+    "modifiedTime": "2026-11-23T21:55:43.164Z",
+    "size": "503737"
+  },
+  "assets/vegetation_expanded/instances_T_E03_S05.json": {
+    "id": "1CxGCrTHrDMXMHlXf08YhSqhdQ4vrBT5K",
+    "modifiedTime": "2026-11-23T21:55:45.205Z",
+    "size": "518753"
+  },
+  "assets/vegetation_expanded/instances_T_E04_N00.json": {
+    "id": "1fXgCuB4Jk75f5JVPAdSNZrtfR-Us1yk4",
+    "modifiedTime": "2026-11-23T21:55:39.146Z",
+    "size": "482266"
+  },
+  "assets/vegetation_expanded/instances_T_E04_N01.json": {
+    "id": "1dA2v9Yzy98RF0xduZdMHk1c-xQRj_Uin",
+    "modifiedTime": "2026-11-23T21:55:38.517Z",
+    "size": "486207"
+  },
+  "assets/vegetation_expanded/instances_T_E04_N02.json": {
+    "id": "11XgJZlyCdsuCM3agvte5F0CQqumD57l2",
+    "modifiedTime": "2026-11-23T21:55:36.555Z",
+    "size": "488137"
+  },
+  "assets/vegetation_expanded/instances_T_E04_N03.json": {
+    "id": "1OkHq-cfnjMwxgk27tMqXMxRXtpA4uBKq",
+    "modifiedTime": "2026-11-23T19:52:59.563Z",
+    "size": "453034"
+  },
+  "assets/vegetation_expanded/instances_T_E04_N04.json": {
+    "id": "19NWrC_jN6NGGecAzQhRfZrkOKao3fDa_",
+    "modifiedTime": "2026-11-23T19:53:10.353Z",
+    "size": "456014"
+  },
+  "assets/vegetation_expanded/instances_T_E04_N05.json": {
+    "id": "1X6RTec5cQvPBYzkMQ54goGvl8UwfXsqa",
+    "modifiedTime": "2026-11-23T23:45:06.529Z",
+    "size": "501208"
+  },
+  "assets/vegetation_expanded/instances_T_E04_N06.json": {
+    "id": "12KRAFmWaQluDhkJsifU5hHiklntKHeMP",
+    "modifiedTime": "2026-11-23T23:45:08.038Z",
+    "size": "500808"
+  },
+  "assets/vegetation_expanded/instances_T_E04_S03.json": {
+    "id": "1jlQ4RrJAUrNbnKgbPePw9ieop6mFuHz2",
+    "modifiedTime": "2026-11-23T21:55:41.707Z",
+    "size": "510072"
+  },
+  "assets/vegetation_expanded/instances_T_E04_S04.json": {
+    "id": "1VD6rgyBLug-DnuL5vKnZaNJDG2x4f0ZX",
+    "modifiedTime": "2026-11-23T21:55:41.708Z",
+    "size": "498290"
+  },
+  "assets/vegetation_expanded/instances_T_E05_S04.json": {
+    "id": "1pfh6qyrzaqEjyFVsyQbeCA_lwW_pCpFR",
+    "modifiedTime": "2026-11-24T04:05:52.675Z",
+    "size": "523860"
+  },
+  "assets/vegetation_expanded/instances_T_E05_S05.json": {
+    "id": "1aNlr-qwnvesG0uq0Jbh-2BEFlePEu2Vi",
+    "modifiedTime": "2026-11-24T04:05:52.778Z",
+    "size": "518445"
+  },
+  "assets/vegetation_expanded/instances_T_E06_S01.json": {
+    "id": "13uvob8jTECJLJJEeZ4w3X3LbO58BTXr1",
+    "modifiedTime": "2026-11-24T04:05:53.568Z",
+    "size": "526770"
+  },
+  "assets/vegetation_expanded/instances_T_E06_S02.json": {
+    "id": "1SGrCBxLNH9rpSKl3NETHJEc8IQExHS89",
+    "modifiedTime": "2026-11-24T04:05:54.399Z",
+    "size": "523238"
+  },
+  "assets/vegetation_expanded/instances_T_E06_S05.json": {
+    "id": "1smga7aWNXAcN2bnSt2P_1txtQTZEUr04",
+    "modifiedTime": "2026-11-24T04:05:53.518Z",
+    "size": "531551"
+  },
+  "assets/vegetation_expanded/instances_T_W01_N04.json": {
+    "id": "1NFuuLtRkdMwq67-_kQgje1rX16LkTLok",
+    "modifiedTime": "2026-11-23T19:53:03.575Z",
+    "size": "478984"
+  },
+  "assets/vegetation_expanded/instances_T_W01_N07.json": {
+    "id": "1WqZkiGmPColNlvNiyDOClL2Iue-RFmv8",
+    "modifiedTime": "2026-11-23T23:45:02.618Z",
+    "size": "543008"
+  },
+  "assets/vegetation_expanded/instances_T_W01_S05.json": {
+    "id": "184DJQjbchb2JWaHk7Ker-JfmThamZRgP",
+    "modifiedTime": "2026-11-24T04:05:45.411Z",
+    "size": "525960"
+  },
+  "assets/vegetation_expanded/instances_T_W02_N02.json": {
+    "id": "1--scoR25BAeIF9aFBgvzWfzXoQTQme_O",
+    "modifiedTime": "2026-11-23T17:20:45.559Z",
+    "size": "488709"
+  },
+  "assets/vegetation_expanded/instances_T_W02_N04.json": {
+    "id": "1mqB4lBSDCxmuNEVOjt_E4UZFlsqmsmwI",
+    "modifiedTime": "2026-11-23T19:53:02.522Z",
+    "size": "469926"
+  },
+  "assets/vegetation_expanded/instances_T_W02_N05.json": {
+    "id": "1czkrwLqQs2nN-G8Ce4jHm6VMzTOs1-04",
+    "modifiedTime": "2026-11-23T19:53:16.585Z",
+    "size": "487230"
+  },
+  "assets/vegetation_expanded/instances_T_W02_N06.json": {
+    "id": "1itVNYD7jNYpudgW2FriZNOqeA2ZEYoMF",
+    "modifiedTime": "2026-11-23T23:45:00.762Z",
+    "size": "538947"
+  },
+  "assets/vegetation_expanded/instances_T_W02_S05.json": {
+    "id": "1whBPrn-x6snYlzgAAM5EL5XT1ZluLPdU",
+    "modifiedTime": "2026-11-24T04:05:46.703Z",
+    "size": "525929"
+  },
+  "assets/vegetation_expanded/instances_T_W03_N04.json": {
+    "id": "1pUtdi7HoTBPQU0HzaD2uRwrSa7-m4W39",
+    "modifiedTime": "2026-11-23T19:53:01.080Z",
+    "size": "442774"
+  },
+  "assets/vegetation_expanded/instances_T_W03_N05.json": {
+    "id": "1KXTpwLNbIv3tRCPctXwjsqh-7OeCx1jY",
+    "modifiedTime": "2026-11-23T19:53:13.046Z",
+    "size": "389530"
+  },
+  "assets/vegetation_expanded/instances_T_W03_N06.json": {
+    "id": "1xgd5El5de7KK9Ct6P5h5OTM9NW8NJxzz",
+    "modifiedTime": "2026-11-23T23:44:59.501Z",
+    "size": "533031"
+  },
+  "assets/vegetation_expanded/instances_T_W03_S04.json": {
+    "id": "1Burs2d4EtWfKeq0PwxwyFySF3vxiOw0R",
+    "modifiedTime": "2026-11-23T21:55:42.888Z",
+    "size": "516668"
+  },
+  "assets/vegetation_expanded/instances_T_W03_S05.json": {
+    "id": "1_h0tgzTQFmHLKeNQHQ_1ZOUAc0hJ45Ge",
+    "modifiedTime": "2026-11-23T21:55:43.684Z",
+    "size": "525786"
+  },
+  "assets/vegetation_expanded/instances_T_W04_N01.json": {
+    "id": "1sFSqXzo1Q-VrTvghkLdHOXwSNRModvkX",
+    "modifiedTime": "2026-11-23T21:55:32.900Z",
+    "size": "507728"
+  },
+  "assets/vegetation_expanded/instances_T_W04_N02.json": {
+    "id": "1BnH6afyGCjWBG8zW3ZJZOj2M4OySCtii",
+    "modifiedTime": "2026-11-23T21:55:32.300Z",
+    "size": "506206"
+  },
+  "assets/vegetation_expanded/instances_T_W04_N03.json": {
+    "id": "1NLS0vk1NS1Vhb5P5cH3yplLWnvIJAXBC",
+    "modifiedTime": "2026-11-23T19:52:58.060Z",
+    "size": "405513"
+  },
+  "assets/vegetation_expanded/instances_T_W04_N06.json": {
+    "id": "1OkiklBKIwkcBcTZScd4ePcNhwMJtJPcI",
+    "modifiedTime": "2026-11-23T23:44:58.454Z",
+    "size": "525745"
+  },
+  "assets/vegetation_expanded/instances_T_W04_S02.json": {
+    "id": "1hW2qI_-mbzLn63s_DhD3lJP0FM8H5Umq",
+    "modifiedTime": "2026-11-23T21:55:33.542Z",
+    "size": "521904"
+  },
+  "assets/vegetation_expanded/instances_T_W04_S03.json": {
+    "id": "1savY2E6qTzLGUgw7iX2ENBg40oHIVh95",
+    "modifiedTime": "2026-11-23T21:55:35.051Z",
+    "size": "521639"
+  },
+  "assets/vegetation_expanded/instances_T_W04_S04.json": {
+    "id": "1DyL5s4DN99zjz_P2DK_HZdmp6GWqKJYj",
+    "modifiedTime": "2026-11-23T21:55:35.713Z",
+    "size": "514223"
+  },
+  "assets/vegetation_expanded/instances_T_W05_N00.json": {
+    "id": "1NhWWr9yND_Tt7QxFqUfszmfC2EEKvwza",
+    "modifiedTime": "2026-11-24T04:05:49.816Z",
+    "size": "513122"
+  },
+  "assets/vegetation_expanded/instances_T_W05_N02.json": {
+    "id": "13P16dFUkjQYUzkJYKAM-vgB2hYryf6s6",
+    "modifiedTime": "2026-11-23T23:44:56.427Z",
+    "size": "509228"
+  },
+  "assets/vegetation_expanded/instances_T_W05_N03.json": {
+    "id": "1IjBOiRAbhRlBkqNlc5X8jV1hOulnoC50",
+    "modifiedTime": "2026-11-23T23:44:56.604Z",
+    "size": "515881"
+  },
+  "assets/vegetation_expanded/instances_T_W05_N05.json": {
+    "id": "16BxitfLOZbcBGtaYZfBbsEJbw7AIHMKH",
+    "modifiedTime": "2026-11-23T23:44:57.412Z",
+    "size": "525028"
+  },
+  "assets/vegetation_expanded/instances_T_W05_S03.json": {
+    "id": "1rloBPmgHEFF7jamsYb8wZfT3Ff3v_A9O",
+    "modifiedTime": "2026-11-24T04:05:50.100Z",
+    "size": "522789"
+  },
+  "assets/vegetation_expanded/instances_T_W05_S04.json": {
+    "id": "1bZjkx84gUg_e9HWBxvSCrtix-2fRZydz",
+    "modifiedTime": "2026-11-24T04:05:51.961Z",
+    "size": "534200"
+  },
+  "assets/vegetation_expanded/instances_T_W06_S03.json": {
+    "id": "1kDOBLxXa0U7hCOzfgCnOWp1BXC3Qx7Eb",
+    "modifiedTime": "2026-11-24T04:05:50.897Z",
+    "size": "538339"
+  },
+  "assets/vegetation_expanded/jacaranda_purple.glb": {
+    "id": "1z0TDXoK_cgC8IblxRptu8-E_s2AE1WLs",
+    "modifiedTime": "2026-11-23T17:20:44.517Z",
+    "size": "12936"
+  },
+  "assets/vegetation_expanded/tree_fern.glb": {
+    "id": "1OGLQ5wL243zGP6kQ2kUHCxc_4oEX16Pq",
+    "modifiedTime": "2026-11-23T17:20:46.180Z",
+    "size": "18688"
+  },
+  "assets/vegetation_expanded/vegetation_expanded_manifest.json": {
+    "id": "1Famdpe-HwVuqFX60gG2C0RcN_kx65ZcD",
+    "modifiedTime": "2026-11-24T04:05:57.073Z",
+    "size": "45122"
+  },
+  "assets/vegetation_expanded/weeping_willow.glb": {
+    "id": "15NcuutH0UcAiIIuUPTYoNW-Bhrk-WWOd",
+    "modifiedTime": "2026-11-23T17:20:45.781Z",
+    "size": "25612"
+  },
+  "assets/water_bodies/water_dap_da_nhim_don_duong.glb": {
+    "id": "1pR1M_0q7-cQ8w-wkrdD7Ukr-ejrp_01Q",
+    "modifiedTime": "2026-11-23T15:20:40.101Z",
+    "size": "299156"
+  },
+  "assets/water_bodies/water_ho_chien_thang.glb": {
+    "id": "13q3Sof-yTAjoSVwAi2161ug0TTDokWA3",
+    "modifiedTime": "2026-11-23T10:28:45.526Z",
+    "size": "91460"
+  },
+  "assets/water_bodies/water_ho_da_ron_don_duong.glb": {
+    "id": "1U6CzHJbffb0lHVi7yJdW36mQk7aLcn5V",
+    "modifiedTime": "2026-11-23T20:39:03.999Z",
+    "size": "303412"
+  },
+  "assets/water_bodies/water_ho_da_tam_mimosa.glb": {
+    "id": "10qL7IrUG0lT0qk0LX51W-H17E4OXUz2-",
+    "modifiedTime": "2026-11-23T17:43:04.500Z",
+    "size": "202980"
+  },
+  "assets/water_bodies/water_ho_da_thien.glb": {
+    "id": "1KNAzNZlIqk8KJRjtUdEBRdj0xcLkvGJ0",
+    "modifiedTime": "2026-11-23T12:44:35.815Z",
+    "size": "123340"
+  },
+  "assets/water_bodies/water_ho_dankia_mo_rong.glb": {
+    "id": "1B4DrHo-VG5D8vM1NggbnZxndke2Vo1fP",
+    "modifiedTime": "2026-11-23T15:20:41.938Z",
+    "size": "328396"
+  },
+  "assets/water_bodies/water_ho_dap_cau_dat_xuan_truong.glb": {
+    "id": "1WtN9og8_QYQJUpTpp1CpvKRPCa8_WM1O",
+    "modifiedTime": "2026-11-23T23:25:14.382Z",
+    "size": "181152"
+  },
+  "assets/water_bodies/water_ho_dap_ta_nung_me_linh.glb": {
+    "id": "170oiACD-cVZ0lPM4w7HqR_jxwnzWeoLf",
+    "modifiedTime": "2026-11-23T19:21:02.500Z",
+    "size": "230004"
+  },
+  "assets/water_bodies/water_ho_dong_thanh_nam_ban.glb": {
+    "id": "15df2lWr3ZO6FlAcF_DasJ1ukLXsgkesY",
+    "modifiedTime": "2026-11-24T01:30:51.973Z",
+    "size": "276216"
+  },
+  "assets/water_bodies/water_ho_ka_do_don_duong.glb": {
+    "id": "1_4vayWFkiD5jujsTDcFb6A9aQWFANDvV",
+    "modifiedTime": "2026-11-24T00:19:30.442Z",
+    "size": "290856"
+  },
+  "assets/water_bodies/water_ho_me_linh.glb": {
+    "id": "11LmbV2B4tjiN_-PkqwLV8OxPMXYJI_Eu",
+    "modifiedTime": "2026-11-23T10:28:45.342Z",
+    "size": "53132"
+  },
+  "assets/water_bodies/water_ho_phuc_tho_lam_ha.glb": {
+    "id": "1hQR3ON7B3Jnji_LPf_fFA9OFdTtoD2jx",
+    "modifiedTime": "2026-11-23T18:21:47.694Z",
+    "size": "311656"
+  },
+  "assets/water_bodies/water_ho_proh_don_duong.glb": {
+    "id": "1G5SXYhjRiQQ0-PaGiPPmaBBWal8ialJg",
+    "modifiedTime": "2026-11-23T21:39:17.002Z",
+    "size": "286140"
+  },
+  "assets/water_bodies/water_ho_suoi_vang.glb": {
+    "id": "1VcmKHljR3KAKDMBn9qCiYWATi7TVHROg",
+    "modifiedTime": "2026-11-23T13:18:26.799Z",
+    "size": "260716"
+  },
+  "assets/water_bodies/water_ho_than_tho.glb": {
+    "id": "1mx2gcZDQw2cCqXP8dD54T88m1QCqMfOj",
+    "modifiedTime": "2026-11-23T12:44:35.630Z",
+    "size": "80688"
+  },
+  "assets/water_bodies/water_ho_tu_tra_bong_lai.glb": {
+    "id": "1Q3QxbFKAsds8ABR8Htdt_r9itv-Axv6X",
+    "modifiedTime": "2026-11-24T03:27:10.217Z",
+    "size": "317776"
+  },
+  "assets/water_bodies/water_ho_tuyen_lam.glb": {
+    "id": "1N9Be-DDsAFC7ua5fAszOWjJV6fa7aqMc",
+    "modifiedTime": "2026-11-23T11:31:48.928Z",
+    "size": "272596"
+  },
+  "assets/water_bodies/water_ho_tuyet_tinh_coc_ankroet.glb": {
+    "id": "1pliMEYwC1Ftjyc_6CA0LbGUmK1bzwLQ9",
+    "modifiedTime": "2026-11-24T02:21:18.508Z",
+    "size": "134972"
+  },
+  "assets/water_bodies/water_ho_van_kiep_da_phu.glb": {
+    "id": "1JbK0xQj06lWt8rF5ivedKn3aic29r4DS",
+    "modifiedTime": "2026-11-23T22:16:31.455Z",
+    "size": "156848"
+  },
+  "assets/water_bodies/water_ho_xuan_huong.glb": {
+    "id": "1soyDxQg94WF5ga760Vxi9lgqVFDnhf3D",
+    "modifiedTime": "2026-11-23T10:23:44.313Z",
+    "size": "377572"
+  },
+  "assets/water_bodies/water_manifest.json": {
+    "id": "1I2rlYXkZTQNWSqBVPTLaYV_MS6QpNYmi",
+    "modifiedTime": "2026-11-24T03:27:12.827Z",
+    "size": "388367"
+  },
+  "assets/water_bodies/water_manifest_w1_archive.json": {
+    "id": "1Ue4Np68AlwIORon570g1-vltapAITmOc",
+    "modifiedTime": "2026-11-23T11:15:33.923Z",
+    "size": "17668"
+  },
+  "assets/water_bodies/water_manifest_w2_archive.json": {
+    "id": "1VYjgpoZHSoVDu7AmW2YMDBTVWsLsdi8x",
+    "modifiedTime": "2026-11-23T11:31:52.614Z",
+    "size": "39877"
+  },
+  "assets/water_bodies/water_manifest_w3_archive.json": {
+    "id": "1Ebjh72axjuetNKQViMK22T6egEawu3RO",
+    "modifiedTime": "2026-11-23T12:44:33.060Z",
+    "size": "64378"
+  },
+  "assets/water_bodies/water_manifest_w4_archive.json": {
+    "id": "1od5w3EIRRtr-XngQGWz7NpkixryukILs",
+    "modifiedTime": "2026-11-23T13:18:24.845Z",
+    "size": "79245"
+  },
+  "assets/water_bodies/water_manifest_w5_archive.json": {
+    "id": "19qSwBpWIWPy1TTESG94rQjWx5zNLR4ZG",
+    "modifiedTime": "2026-11-23T14:22:05.933Z",
+    "size": "102877"
+  },
+  "assets/water_bodies/water_manifest_w6_archive.json": {
+    "id": "1eVe44pS8INI6eBCgX0EneMWWAN_82qBx",
+    "modifiedTime": "2026-11-23T15:20:34.768Z",
+    "size": "115746"
+  },
+  "assets/water_bodies/water_manifest_w7_archive.json": {
+    "id": "14WUPZ5pvumSEa6uDHWirBauIjXWrUcbK",
+    "modifiedTime": "2026-11-23T16:18:22.208Z",
+    "size": "144761"
+  },
+  "assets/water_bodies/water_manifest_w8_archive.json": {
+    "id": "1u4TyPm1NYJhDSU6oYBCBTirrLLWnNPYR",
+    "modifiedTime": "2026-11-23T17:43:02.651Z",
+    "size": "158063"
+  },
+  "assets/water_bodies/water_manifest_w9_archive.json": {
+    "id": "1vJzwehhv6ZWHxh6dfb0-XVlDouucMIp2",
+    "modifiedTime": "2026-11-23T18:21:39.973Z",
+    "size": "177832"
+  },
+  "assets/water_bodies/water_suoi_cam_ly.glb": {
+    "id": "1H5NyG-16QRi-gDGtokw8ZMGAD4jXIvUK",
+    "modifiedTime": "2026-11-23T10:28:44.877Z",
+    "size": "63296"
+  },
+  "assets/water_bodies/water_suoi_da_hoa_vinh_nam_tuyen_lam.glb": {
+    "id": "1_ygEqbGFG30acKkmIe07sJoH8_DzCB9d",
+    "modifiedTime": "2026-11-23T19:21:04.795Z",
+    "size": "181464"
+  },
+  "assets/water_bodies/water_suoi_klong_klanh_lac_duong.glb": {
+    "id": "1f0Adl8z_eszMi8lUQTcKE3NA5HU7lNNv",
+    "modifiedTime": "2026-11-24T01:30:53.674Z",
+    "size": "194804"
+  },
+  "assets/water_bodies/water_suoi_tia_tuyen_lam.glb": {
+    "id": "1O-KA1DHCeYSvDn2zQY5unXLflr20djhN",
+    "modifiedTime": "2026-11-23T17:42:58.944Z",
+    "size": "173784"
+  },
+  "assets/water_bodies/water_thac_ankroet_lac_duong.glb": {
+    "id": "1HKQzKFZHB9JQWaJlfXTiFuJVRzBfMOZw",
+    "modifiedTime": "2026-11-23T20:39:05.577Z",
+    "size": "72636"
+  },
+  "assets/water_bodies/water_thac_bao_dai_ta_in.glb": {
+    "id": "1A8ikIwB4t58ij5FUig6ga5lSB9u7DXul",
+    "modifiedTime": "2026-11-24T00:19:32.619Z",
+    "size": "71320"
+  },
+  "assets/water_bodies/water_thac_bnor_c_da_nghit.glb": {
+    "id": "1v0y0cgWNO2kxQPwBQez5t1AaQaf7BA0p",
+    "modifiedTime": "2026-11-24T03:27:10.091Z",
+    "size": "71256"
+  },
+  "assets/water_bodies/water_thac_da_sar_lac_duong.glb": {
+    "id": "1wBJcmCx0hIOwwZUBYuBSSNw84Js5Z8z1",
+    "modifiedTime": "2026-11-24T02:21:20.238Z",
+    "size": "71272"
+  },
+  "assets/water_bodies/water_thac_datanla.glb": {
+    "id": "1T_96FASiVyUII8CNUgwk2GAic3DUpNfC",
+    "modifiedTime": "2026-11-23T14:22:05.557Z",
+    "size": "68512"
+  },
+  "assets/water_bodies/water_thac_gougah_duc_trong.glb": {
+    "id": "1PgC9TCxkytRO6tr4HR8vLHkHfQphz3dX",
+    "modifiedTime": "2026-11-23T21:39:19.191Z",
+    "size": "71308"
+  },
+  "assets/water_bodies/water_thac_hang_cop_xuan_tho.glb": {
+    "id": "1F96Qjh3llG0Qlm953EbyKPCjVYKgNH8F",
+    "modifiedTime": "2026-11-23T18:21:47.772Z",
+    "size": "71284"
+  },
+  "assets/water_bodies/water_thac_jraibian_langbiang.glb": {
+    "id": "1STJIZRSZuE1ftNidztU2wDfYA8wwVNbE",
+    "modifiedTime": "2026-11-23T22:16:32.690Z",
+    "size": "71308"
+  },
+  "assets/water_bodies/water_thac_lieng_ai_da_sar.glb": {
+    "id": "1fjcxhLn8uB4ef93hAEhILnwWZYfq5FBa",
+    "modifiedTime": "2026-11-23T23:25:18.263Z",
+    "size": "71252"
+  },
+  "assets/water_bodies/water_thac_pongour_duc_trong.glb": {
+    "id": "1Z62Fv6PqOy9CfjW5fVC_2kwuWYi0fDdP",
+    "modifiedTime": "2026-11-23T16:18:24.669Z",
+    "size": "70056"
+  },
+  "assets/water_bodies/water_thac_prenn.glb": {
+    "id": "1qUrx_m5F768MsNEkXK91TbQDKdCRAzqq",
+    "modifiedTime": "2026-11-23T14:22:06.353Z",
+    "size": "61100"
+  },
+  "assets/water_bodies/water_thac_voi_lam_ha.glb": {
+    "id": "12kMTJa9OjhezhPjd18BMWrODhiIS2_9l",
+    "modifiedTime": "2026-11-23T16:18:24.597Z",
+    "size": "63780"
+  },
+  "data/references/dalat_core_seeds.json": {
+    "id": "1W-_9fAVcjqF55BPStMRM8Zvj10jH1opO",
+    "modifiedTime": "2026-11-23T09:07:18.566Z",
+    "size": "19200"
+  },
+  "data/world_ui_specs/camera_presets_dalat.json": {
+    "id": "1m7mlEhjjbjr8HU6yEpoWIuxjjj2HxIhi",
+    "modifiedTime": "2026-11-24T04:03:25.066Z",
+    "size": "27731"
+  },
+  "state/TILE_GRID_SPEC.json": {
+    "id": "11iqtkIo9tpCDxY2QlLvz-Bvc4xjyMBp3",
+    "modifiedTime": "2026-11-23T09:07:04.588Z",
+    "size": "11239"
+  }
+}

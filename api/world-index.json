@@ -3,7 +3,7 @@
   "project": "DALAT_3D_SIMULATION",
   "static_build": true,
   "has_real_assets": true,
-  "total_glb_count": 375,
+  "total_glb_count": 388,
   "discovered_tile_ids": [
     "T_E00_N00",
     "T_E00_N01",
@@ -62,6 +62,7 @@
     "T_E03_S03",
     "T_E03_S04",
     "T_E03_S05",
+    "T_E03_S06",
     "T_E03_S08",
     "T_E03_S11",
     "T_E03_S12",
@@ -84,12 +85,16 @@
     "T_E05_S01",
     "T_E05_S02",
     "T_E05_S03",
+    "T_E05_S04",
+    "T_E05_S05",
     "T_E05_S09",
     "T_E05_S10",
     "T_E06_N01",
+    "T_E06_S01",
     "T_E06_S02",
     "T_E06_S03",
     "T_E06_S04",
+    "T_E06_S05",
     "T_E07_N01",
     "T_E07_N02",
     "T_E07_S03",
@@ -101,6 +106,7 @@
     "T_E08_S04",
     "T_E08_S05",
     "T_E08_S06",
+    "T_E09_S04",
     "T_E09_S05",
     "T_E09_S06",
     "T_W01_N00",
@@ -130,6 +136,7 @@
     "T_W02_S02",
     "T_W02_S03",
     "T_W02_S04",
+    "T_W02_S05",
     "T_W03_N00",
     "T_W03_N01",
     "T_W03_N02",
@@ -154,12 +161,15 @@
     "T_W04_S03",
     "T_W04_S04",
     "T_W04_S10",
+    "T_W05_N00",
     "T_W05_N02",
     "T_W05_N03",
     "T_W05_N04",
     "T_W05_N05",
     "T_W05_S01",
     "T_W05_S02",
+    "T_W05_S03",
+    "T_W05_S04",
     "T_W05_S05",
     "T_W05_S06",
     "T_W05_S12",
@@ -171,9 +181,11 @@
     "T_W06_S05",
     "T_W06_S06",
     "T_W06_S07",
+    "T_W07_N04",
     "T_W07_S02",
     "T_W07_S03",
     "T_W07_S11",
+    "T_W08_S03",
     "T_W08_S08",
     "T_W08_S09",
     "T_W08_S14",
@@ -190,15 +202,15 @@
     "tile_grid_spec_url": "./state/TILE_GRID_SPEC.json"
   },
   "counts": {
-    "terrain_tiles": 69,
-    "heightmaps": 69,
+    "terrain_tiles": 73,
+    "heightmaps": 73,
     "water_bodies": 38,
     "vegetation_models": 11,
-    "vegetation_instances": 165,
+    "vegetation_instances": 179,
     "landmarks": 108,
     "lakeside_props": 7,
-    "roads_infrastructure": 40,
-    "building_tiles": 109
+    "roads_infrastructure": 41,
+    "building_tiles": 117
   },
   "layers": {
     "terrain": [
@@ -635,6 +647,14 @@
         "size_bytes": 425132
       },
       {
+        "id": "terrain_T_E04_S02",
+        "filename": "terrain_T_E04_S02.glb",
+        "ext": ".glb",
+        "tile_id": "T_E04_S02",
+        "url": "./assets/terrain_tiles/terrain_T_E04_S02.glb",
+        "size_bytes": 194400
+      },
+      {
         "id": "terrain_T_W02_N04",
         "filename": "terrain_T_W02_N04.glb",
         "ext": ".glb",
@@ -707,6 +727,14 @@
         "size_bytes": 196164
       },
       {
+        "id": "terrain_T_E05_S03",
+        "filename": "terrain_T_E05_S03.glb",
+        "ext": ".glb",
+        "tile_id": "T_E05_S03",
+        "url": "./assets/terrain_tiles/terrain_T_E05_S03.glb",
+        "size_bytes": 187628
+      },
+      {
         "id": "terrain_T_W03_N05",
         "filename": "terrain_T_W03_N05.glb",
         "ext": ".glb",
@@ -753,6 +781,22 @@
         "tile_id": "T_W05_N04",
         "url": "./assets/terrain_tiles/terrain_T_W05_N04.glb",
         "size_bytes": 194056
+      },
+      {
+        "id": "terrain_T_E06_S03",
+        "filename": "terrain_T_E06_S03.glb",
+        "ext": ".glb",
+        "tile_id": "T_E06_S03",
+        "url": "./assets/terrain_tiles/terrain_T_E06_S03.glb",
+        "size_bytes": 187628
+      },
+      {
+        "id": "terrain_T_E06_S04",
+        "filename": "terrain_T_E06_S04.glb",
+        "ext": ".glb",
+        "tile_id": "T_E06_S04",
+        "url": "./assets/terrain_tiles/terrain_T_E06_S04.glb",
+        "size_bytes": 187620
       }
     ],
     "heightmaps": [
@@ -1189,6 +1233,14 @@
         "size_bytes": 84774
       },
       {
+        "id": "heightmap_T_E04_S02",
+        "filename": "heightmap_T_E04_S02.json",
+        "ext": ".json",
+        "tile_id": "T_E04_S02",
+        "url": "./assets/terrain_tiles/heightmap_T_E04_S02.json",
+        "size_bytes": 38657
+      },
+      {
         "id": "heightmap_T_W02_N04",
         "filename": "heightmap_T_W02_N04.json",
         "ext": ".json",
@@ -1261,6 +1313,14 @@
         "size_bytes": 36052
       },
       {
+        "id": "heightmap_T_E05_S03",
+        "filename": "heightmap_T_E05_S03.json",
+        "ext": ".json",
+        "tile_id": "T_E05_S03",
+        "url": "./assets/terrain_tiles/heightmap_T_E05_S03.json",
+        "size_bytes": 38594
+      },
+      {
         "id": "heightmap_T_W03_N05",
         "filename": "heightmap_T_W03_N05.json",
         "ext": ".json",
@@ -1307,6 +1367,22 @@
         "tile_id": "T_W05_N04",
         "url": "./assets/terrain_tiles/heightmap_T_W05_N04.json",
         "size_bytes": 38646
+      },
+      {
+        "id": "heightmap_T_E06_S03",
+        "filename": "heightmap_T_E06_S03.json",
+        "ext": ".json",
+        "tile_id": "T_E06_S03",
+        "url": "./assets/terrain_tiles/heightmap_T_E06_S03.json",
+        "size_bytes": 38627
+      },
+      {
+        "id": "heightmap_T_E06_S04",
+        "filename": "heightmap_T_E06_S04.json",
+        "ext": ".json",
+        "tile_id": "T_E06_S04",
+        "url": "./assets/terrain_tiles/heightmap_T_E06_S04.json",
+        "size_bytes": 38595
       }
     ],
     "water": [
@@ -2347,6 +2423,14 @@
         "size_bytes": 521639
       },
       {
+        "id": "instances_T_W05_N00",
+        "filename": "instances_T_W05_N00.json",
+        "ext": ".json",
+        "tile_id": "T_W05_N00",
+        "url": "./assets/vegetation_expanded/instances_T_W05_N00.json",
+        "size_bytes": 513122
+      },
+      {
         "id": "instances_T_E01_N05",
         "filename": "instances_T_E01_N05.json",
         "ext": ".json",
@@ -2395,6 +2479,14 @@
         "size_bytes": 455077
       },
       {
+        "id": "instances_T_W01_S05",
+        "filename": "instances_T_W01_S05.json",
+        "ext": ".json",
+        "tile_id": "T_W01_S05",
+        "url": "./assets/vegetation_expanded/instances_T_W01_S05.json",
+        "size_bytes": 525960
+      },
+      {
         "id": "instances_T_E05_S02",
         "filename": "instances_T_E05_S02.json",
         "ext": ".json",
@@ -2425,6 +2517,22 @@
         "tile_id": "T_E02_N05",
         "url": "./assets/vegetation_expanded/instances_T_E02_N05.json",
         "size_bytes": 462258
+      },
+      {
+        "id": "instances_T_E02_S05",
+        "filename": "instances_T_E02_S05.json",
+        "ext": ".json",
+        "tile_id": "T_E02_S05",
+        "url": "./assets/vegetation_expanded/instances_T_E02_S05.json",
+        "size_bytes": 517638
+      },
+      {
+        "id": "instances_T_W02_S05",
+        "filename": "instances_T_W02_S05.json",
+        "ext": ".json",
+        "tile_id": "T_W02_S05",
+        "url": "./assets/vegetation_expanded/instances_T_W02_S05.json",
+        "size_bytes": 525929
       },
       {
         "id": "instances_T_W05_N02",
@@ -2515,12 +2623,28 @@
         "size_bytes": 525786
       },
       {
+        "id": "instances_T_W05_S03",
+        "filename": "instances_T_W05_S03.json",
+        "ext": ".json",
+        "tile_id": "T_W05_S03",
+        "url": "./assets/vegetation_expanded/instances_T_W05_S03.json",
+        "size_bytes": 522789
+      },
+      {
         "id": "instances_T_E00_N06",
         "filename": "instances_T_E00_N06.json",
         "ext": ".json",
         "tile_id": "T_E00_N06",
         "url": "./assets/vegetation/instances_T_E00_N06.json",
         "size_bytes": 511234
+      },
+      {
+        "id": "instances_T_E00_S06",
+        "filename": "instances_T_E00_S06.json",
+        "ext": ".json",
+        "tile_id": "T_E00_S06",
+        "url": "./assets/vegetation_expanded/instances_T_E00_S06.json",
+        "size_bytes": 515065
       },
       {
         "id": "instances_T_E01_N06",
@@ -2547,6 +2671,22 @@
         "size_bytes": 541586
       },
       {
+        "id": "instances_T_E01_S06",
+        "filename": "instances_T_E01_S06.json",
+        "ext": ".json",
+        "tile_id": "T_E01_S06",
+        "url": "./assets/vegetation_expanded/instances_T_E01_S06.json",
+        "size_bytes": 530454
+      },
+      {
+        "id": "instances_T_E06_S01",
+        "filename": "instances_T_E06_S01.json",
+        "ext": ".json",
+        "tile_id": "T_E06_S01",
+        "url": "./assets/vegetation_expanded/instances_T_E06_S01.json",
+        "size_bytes": 526770
+      },
+      {
         "id": "instances_T_W06_S02",
         "filename": "instances_T_W06_S02.json",
         "ext": ".json",
@@ -2561,6 +2701,14 @@
         "tile_id": "T_E02_N06",
         "url": "./assets/vegetation_expanded/instances_T_E02_N06.json",
         "size_bytes": 517947
+      },
+      {
+        "id": "instances_T_E06_S02",
+        "filename": "instances_T_E06_S02.json",
+        "ext": ".json",
+        "tile_id": "T_E06_S02",
+        "url": "./assets/vegetation_expanded/instances_T_E06_S02.json",
+        "size_bytes": 523238
       },
       {
         "id": "instances_T_W02_N06",
@@ -2603,6 +2751,22 @@
         "size_bytes": 501208
       },
       {
+        "id": "instances_T_E05_S04",
+        "filename": "instances_T_E05_S04.json",
+        "ext": ".json",
+        "tile_id": "T_E05_S04",
+        "url": "./assets/vegetation_expanded/instances_T_E05_S04.json",
+        "size_bytes": 523860
+      },
+      {
+        "id": "instances_T_W05_S04",
+        "filename": "instances_T_W05_S04.json",
+        "ext": ".json",
+        "tile_id": "T_W05_S04",
+        "url": "./assets/vegetation_expanded/instances_T_W05_S04.json",
+        "size_bytes": 534200
+      },
+      {
         "id": "instances_T_E06_S03",
         "filename": "instances_T_E06_S03.json",
         "ext": ".json",
@@ -2625,6 +2789,14 @@
         "tile_id": "T_E03_N06",
         "url": "./assets/vegetation_expanded/instances_T_E03_N06.json",
         "size_bytes": 511727
+      },
+      {
+        "id": "instances_T_W06_S03",
+        "filename": "instances_T_W06_S03.json",
+        "ext": ".json",
+        "tile_id": "T_W06_S03",
+        "url": "./assets/vegetation_expanded/instances_T_W06_S03.json",
+        "size_bytes": 538339
       },
       {
         "id": "instances_T_E00_N07",
@@ -2665,6 +2837,14 @@
         "tile_id": "T_E01_N07",
         "url": "./assets/vegetation_expanded/instances_T_E01_N07.json",
         "size_bytes": 523561
+      },
+      {
+        "id": "instances_T_E05_S05",
+        "filename": "instances_T_E05_S05.json",
+        "ext": ".json",
+        "tile_id": "T_E05_S05",
+        "url": "./assets/vegetation_expanded/instances_T_E05_S05.json",
+        "size_bytes": 518445
       },
       {
         "id": "instances_T_W01_N07",
@@ -2729,6 +2909,14 @@
         "tile_id": "T_W06_S05",
         "url": "./assets/vegetation/instances_T_W06_S05.json",
         "size_bytes": 394625
+      },
+      {
+        "id": "instances_T_E06_S05",
+        "filename": "instances_T_E06_S05.json",
+        "ext": ".json",
+        "tile_id": "T_E06_S05",
+        "url": "./assets/vegetation_expanded/instances_T_E06_S05.json",
+        "size_bytes": 531551
       },
       {
         "id": "instances_T_E07_S04",
@@ -4265,6 +4453,14 @@
         "size_bytes": 974148
       },
       {
+        "id": "roads_ring2_m300",
+        "filename": "roads_ring2_m300.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/infrastructure_buildings/roads_ring2_m300.glb",
+        "size_bytes": 1203976
+      },
+      {
         "id": "roads_ring2_outer",
         "filename": "roads_ring2_outer.glb",
         "ext": ".glb",
@@ -5147,12 +5343,28 @@
         "size_bytes": 1104544
       },
       {
+        "id": "buildings_T_W02_S05",
+        "filename": "buildings_T_W02_S05.glb",
+        "ext": ".glb",
+        "tile_id": "T_W02_S05",
+        "url": "./assets/building_tiles/buildings_T_W02_S05.glb",
+        "size_bytes": 1029204
+      },
+      {
         "id": "buildings_T_W05_S02",
         "filename": "buildings_T_W05_S02.glb",
         "ext": ".glb",
         "tile_id": "T_W05_S02",
         "url": "./assets/building_tiles/buildings_T_W05_S02.glb",
         "size_bytes": 1431728
+      },
+      {
+        "id": "buildings_T_E04_N04",
+        "filename": "buildings_T_E04_N04.glb",
+        "ext": ".glb",
+        "tile_id": "T_E04_N04",
+        "url": "./assets/building_tiles/buildings_T_E04_N04.glb",
+        "size_bytes": 1173592
       },
       {
         "id": "buildings_T_W04_N04",
@@ -5259,6 +5471,14 @@
         "size_bytes": 1286808
       },
       {
+        "id": "buildings_T_E05_S04",
+        "filename": "buildings_T_E05_S04.glb",
+        "ext": ".glb",
+        "tile_id": "T_E05_S04",
+        "url": "./assets/building_tiles/buildings_T_E05_S04.glb",
+        "size_bytes": 1187780
+      },
+      {
         "id": "buildings_T_W04_N05",
         "filename": "buildings_T_W04_N05.glb",
         "ext": ".glb",
@@ -5273,6 +5493,14 @@
         "tile_id": "T_W05_N04",
         "url": "./assets/building_tiles/buildings_T_W05_N04.glb",
         "size_bytes": 1168160
+      },
+      {
+        "id": "buildings_T_E03_S06",
+        "filename": "buildings_T_E03_S06.glb",
+        "ext": ".glb",
+        "tile_id": "T_E03_S06",
+        "url": "./assets/building_tiles/buildings_T_E03_S06.glb",
+        "size_bytes": 978000
       },
       {
         "id": "buildings_T_E06_S03",
@@ -5313,6 +5541,14 @@
         "tile_id": "T_E06_S04",
         "url": "./assets/building_tiles/buildings_T_E06_S04.glb",
         "size_bytes": 1235400
+      },
+      {
+        "id": "buildings_T_W04_N06",
+        "filename": "buildings_T_W04_N06.glb",
+        "ext": ".glb",
+        "tile_id": "T_W04_N06",
+        "url": "./assets/building_tiles/buildings_T_W04_N06.glb",
+        "size_bytes": 1206448
       },
       {
         "id": "buildings_T_W06_N04",
@@ -5363,6 +5599,22 @@
         "size_bytes": 1259984
       },
       {
+        "id": "buildings_T_W07_N04",
+        "filename": "buildings_T_W07_N04.glb",
+        "ext": ".glb",
+        "tile_id": "T_W07_N04",
+        "url": "./assets/building_tiles/buildings_T_W07_N04.glb",
+        "size_bytes": 1132432
+      },
+      {
+        "id": "buildings_T_W08_S03",
+        "filename": "buildings_T_W08_S03.glb",
+        "ext": ".glb",
+        "tile_id": "T_W08_S03",
+        "url": "./assets/building_tiles/buildings_T_W08_S03.glb",
+        "size_bytes": 1120488
+      },
+      {
         "id": "buildings_T_E07_S05",
         "filename": "buildings_T_E07_S05.glb",
         "ext": ".glb",
@@ -5385,6 +5637,14 @@
         "tile_id": "T_E08_S05",
         "url": "./assets/building_tiles/buildings_T_E08_S05.glb",
         "size_bytes": 1159916
+      },
+      {
+        "id": "buildings_T_E09_S04",
+        "filename": "buildings_T_E09_S04.glb",
+        "ext": ".glb",
+        "tile_id": "T_E09_S04",
+        "url": "./assets/building_tiles/buildings_T_E09_S04.glb",
+        "size_bytes": 1174392
       },
       {
         "id": "buildings_T_E09_S05",

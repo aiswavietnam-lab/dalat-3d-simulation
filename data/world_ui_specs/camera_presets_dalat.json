@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "project": "DALAT_3D_SIMULATION",
-  "wave": "T5_AUTO_R2_OUTER_CORRIDORS_AND_ROADS_109TILES",
+  "wave": "T5_AUTO_R2_117TILES_80K_BUILDINGS_AND_300KM_ROADS",
   "coordinate_origin": {
     "name": "Tam_Ho_Xuan_Huong_Da_Lat",
     "lat": 11.940419,
@@ -757,6 +757,66 @@
       "duration_ms": 1700,
       "recommended_lighting": "sunset_lake",
       "description": "Hành lang Tỉnh lộ ĐT725 phía Tây Nam Thác Voi đi qua vùng đồi dâu tằm, cà phê Moka xã Gia Lâm hướng về Thị trấn Đinh Văn (Lâm Hà)."
+    },
+    {
+      "id": "da_sar_east_ql27c_khanh_le_gateway",
+      "name_vi": "[RING_2] Đông Xã Đạ Sar – Hành Lang Quốc Lộ 27C Đi Đèo Khánh Lê (T_E04_N04)",
+      "category": "highland_corridor",
+      "tile_id": "T_E04_N04",
+      "position_gltf": [
+        7250.0,
+        285.0,
+        -7850.0
+      ],
+      "target_gltf": [
+        8250.0,
+        155.0,
+        -8450.0
+      ],
+      "fov": 48,
+      "duration_ms": 1700,
+      "recommended_lighting": "highland_noon",
+      "description": "Điểm cực Đông Bắc hành lang Quốc lộ 27C qua vùng nhà kính hoa hồng công nghệ cao Đông xã Đạ Sar hướng về Vườn Quốc gia Bidoup – Núi Bà và Đèo Khánh Lê."
+    },
+    {
+      "id": "nui_voi_east_summit_hiep_an_forest",
+      "name_vi": "[RING_2] Đỉnh Núi Voi Đông – Rừng Thông Nguyên Sinh Hiệp An Tây (T_W02_S05)",
+      "category": "mountain_peak",
+      "tile_id": "T_W02_S05",
+      "position_gltf": [
+        -3350.0,
+        310.0,
+        9250.0
+      ],
+      "target_gltf": [
+        -4150.0,
+        145.0,
+        10250.0
+      ],
+      "fov": 50,
+      "duration_ms": 1700,
+      "recommended_lighting": "early_mist",
+      "description": "Sườn Đông khối núi Voi (Elephant Mountain) nhìn bao quát rừng thông nguyên sinh, khu du lịch sinh thái Núi Voi và cánh đồng hoa Hiệp An phía dưới."
+    },
+    {
+      "id": "tram_hanh_northeast_tea_ridge_dran",
+      "name_vi": "[RING_2] Đồi Chè Trạm Hành Đông Bắc – Sườn Đông Bắc Đèo Dran (T_E09_S04)",
+      "category": "highland_wind_farm",
+      "tile_id": "T_E09_S04",
+      "position_gltf": [
+        17250.0,
+        265.0,
+        7450.0
+      ],
+      "target_gltf": [
+        18250.0,
+        125.0,
+        8150.0
+      ],
+      "fov": 48,
+      "duration_ms": 1650,
+      "recommended_lighting": "sunset_lake",
+      "description": "Đồi chè Oolong bậc thang Trạm Hành Đông Bắc và những dãy nhà lồng phơi hồng gió trải dài trên sườn Đông Bắc Đèo Dran."
     }
   ],
   "climate_presets": [
@@ -817,7 +877,7 @@
       "emissive_scale": 1.35
     }
   ],
-  "version": "2.5.0-wave17-109tiles-36presets",
+  "version": "2.6.0-wave18-117tiles-39presets",
   "flythrough_tour": [
     {
       "stop_index": 1,
@@ -838,5 +898,5 @@
       "duration_sec": 8.0
     }
   ],
-  "updated_at_utc": "2026-11-24T03:09:19Z"
+  "updated_at_utc": "2026-11-24T04:02:42Z"
 }
