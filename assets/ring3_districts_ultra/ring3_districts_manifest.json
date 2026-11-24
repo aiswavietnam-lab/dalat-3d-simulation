@@ -1,27 +1,23 @@
 {
-  "schema_version": "2.1.0",
-  "project_name": "DALAT_3D_SIMULATION",
-  "gemini_slot": 23,
-  "display_slot_name": "ĐÀ LẠT - 22",
-  "lane": "GREATER_LAMDONG_RING3_SATELLITE_DISTRICTS",
-  "updated_at_utc": "2026-11-24T04:05:20Z",
-  "origin_reference": {
-    "name": "Tam_Ho_Xuan_Huong_Da_Lat",
+  "project": "DALAT_3D_SIMULATION",
+  "slot": 23,
+  "slot_code": "GREATER_LAMDONG_RING3_SATELLITE_DISTRICTS",
+  "task_name": "ĐÀ LẠT - 22",
+  "latest_wave_completed": 7,
+  "latest_task_id": "T23_AUTO_B02_LAM_HA_DINH_VAN_PHUC_THO_LAKE_AND_DAI_NINH_RESERVOIR_DAM",
+  "updated_at": "2026-11-24T09:56:14.389126+00:00",
+  "crs": "EPSG:32649",
+  "origin_wgs84": {
+    "name": "Tâm Hồ Xuân Hương",
     "lat": 11.940419,
     "lon": 108.445259,
-    "elev_msl_m": 1478.0,
-    "epsg": "EPSG:32649",
-    "gltf_axes": "X_gltf = x_m (East), Y_gltf = elev_msl - 1478.0 (Up), Z_gltf = -y_m (South)"
+    "elev_msl": 1478.0
   },
-  "completed_waves": [
-    {
-      "wave": 1,
-      "task_id": "T23_W1_LIEN_KHUONG_INTERNATIONAL_AIRPORT_COMPLEX",
-      "completed_at_utc": "2026-11-24T04:05:20Z",
-      "total_triangles": 37868,
-      "total_vertices": 64074
-    }
-  ],
+  "gltf_axes": "Y-Up (X_gltf = x_east, Y_gltf = z_local, Z_gltf = -y_north)",
+  "total_districts_count": 14,
+  "total_vertices_cumulative": 785781,
+  "total_triangles_cumulative": 403669,
+  "khr_materials_transmission_count": 0,
   "districts": [
     {
       "id": "ring3_w1_lien_khuong_airport_complex",
@@ -102,6 +98,1167 @@
         "https://vi.wikipedia.org/wiki/%C4%90%C6%B0%E1%BB%9Dng_cao_t%E1%BB%91c_D%E1%BA%A7u_Gi%C3%A2y_%E2%80%93_Li%C3%AAn_Kh%C6%B0%C6%A1ng",
         "https://thuvienphapluat.vn/phap-luat-nha-dat/duong-cao-toc-bao-loc-lien-khuong-dai-bao-nhieu-km-diem-dau-diem-cuoi-o-dau-15393.html",
         "https://swproperty.vn/thong-tin-tong-quan-du-an-cao-toc-bao-loc-lien-khuong/"
+      ]
+    },
+    {
+      "id": "ring3_w2_duc_trong_lien_nghia_urban_da_nhim",
+      "wave": 2,
+      "task_id": "T23_W2_DUC_TRONG_LIEN_NGHIA_GOUGAH_FALLS",
+      "name_vi": "Đô thị Liên Nghĩa (Đức Trọng), Trung tâm Hành chính mới, Chợ Liên Nghĩa, Hồ Nam Sơn & Cầu Đa Nhim (QL20 x QL27)",
+      "ring": "RING_3",
+      "tile_id": "T_W04_S12",
+      "tiles_covered": [
+        "T_W05_S11",
+        "T_W04_S11",
+        "T_W03_S11",
+        "T_W05_S12",
+        "T_W04_S12",
+        "T_W03_S12"
+      ],
+      "lat": 11.7285,
+      "lon": 108.3745,
+      "elev_msl_m": 945.0,
+      "x_m": -7706.426,
+      "y_m": -23590.715,
+      "z_local_m": -533.0,
+      "gltf_position": [
+        -7706.426,
+        -533.0,
+        23590.715
+      ],
+      "coordinate_space": "world_space_gltf_y_up_baked",
+      "heading_deg": 0.0,
+      "glb_path": "02_ASSETS_3D/ring3_districts_ultra/ring3_w2_duc_trong_lien_nghia_urban_da_nhim.glb",
+      "triangles": 25073,
+      "vertices": 41752,
+      "size_bytes": 1213716,
+      "sha256": "577910fc30cf0ed809dd8484a42b5cf70fe842e9eff4657d014beeb28e011fe9",
+      "khr_materials_transmission": false,
+      "sources": [
+        "https://vi.wikipedia.org/wiki/%C4%90%E1%BB%A9c_Tr%E1%BB%8Dng_(huy%E1%BB%87n)",
+        "https://vi.wikipedia.org/wiki/S%C3%B4ng_%C4%90a_Nhim",
+        "https://vnexpress.net/lam-dong-quy-hoach-trung-tam-hanh-chinh-moi-o-duc-trong-5147487.html",
+        "https://baolamdong.vn/lam-dong-quy-hoach-duc-trong-thanh-do-thi-trung-tam-moi-475266.html",
+        "https://cafeland.vn/tin-tuc/cap-nhat-tien-do-du-an-khu-do-thi-gan-12000-ty-dong-tai-lam-dong-134558.html"
+      ]
+    },
+    {
+      "id": "ring3_w2_lien_khuong_and_gougah_waterfalls",
+      "wave": 2,
+      "task_id": "T23_W2_DUC_TRONG_LIEN_NGHIA_GOUGAH_FALLS",
+      "name_vi": "Danh thắng Thác Liên Khương (rộng 200m, cao 36m) & Thác Gougah / Thác Ổ Gà (chia 2 màu nước, Nhà Rông & Núi lửa R'Chai)",
+      "ring": "RING_3",
+      "tile_id": "T_W03_S11",
+      "tiles_covered": [
+        "T_W03_S11",
+        "T_W05_S14",
+        "T_W06_S14"
+      ],
+      "lat": 11.7412,
+      "lon": 108.3828,
+      "elev_msl_m": 938.0,
+      "x_m": -6802.466,
+      "y_m": -22176.958,
+      "z_local_m": -540.0,
+      "gltf_position": [
+        -6802.466,
+        -540.0,
+        22176.958
+      ],
+      "secondary_anchor_gougah": {
+        "name_vi": "Thác Gougah (Xóm Chung, Phú Hội, Đức Trọng)",
+        "tile_id": "T_W05_S14",
+        "lat": 11.6965,
+        "lon": 108.349,
+        "elev_msl_m": 895.0,
+        "x_m": -10483.654,
+        "y_m": -27152.939,
+        "z_local_m": -583.0,
+        "gltf_position": [
+          -10483.654,
+          -583.0,
+          27152.939
+        ]
+      },
+      "coordinate_space": "world_space_gltf_y_up_baked",
+      "heading_deg": 0.0,
+      "glb_path": "02_ASSETS_3D/ring3_districts_ultra/ring3_w2_lien_khuong_and_gougah_waterfalls.glb",
+      "triangles": 17015,
+      "vertices": 27955,
+      "size_bytes": 859888,
+      "sha256": "510619a8cc153404b1c5d649925cdfecdd1f4b4b2824285cf0d2d9dad483c25b",
+      "khr_materials_transmission": false,
+      "sources": [
+        "https://ziontour.com.vn/en/destinations/lien-khuong-waterfall-1192.html",
+        "https://luhanhvietnam.com.vn/du-lich/thac-lien-khuong-da-lat.html",
+        "https://lamdong.gov.vn/sites/svhttdl/hoatdongdulich/danh-lam-thang-canh/SitePages/thac-gougah-lam-dong.aspx",
+        "https://vietnamtourism.vn/index.php/tourism/items/1508/2",
+        "https://happydaytravel.com/thac-gougah-chia-2-mau-nuoc-dac-biet.html"
+      ]
+    },
+    {
+      "id": "ring3_w3_don_duong_dran_town_and_da_nhim_dam",
+      "wave": 3,
+      "task_id": "T23_W3_DON_DUONG_DRAN_DA_NHIM_NGOAN_MUC_PASS",
+      "name_vi": "Thị trấn D'Ran (Đơn Dương), Hồ & Đập Thủy điện Đa Nhim (dài 1.500m, cao 38m), Đập tràn 4 cửa & Rừng thông Đèo D'Ran (QL20)",
+      "ring": "RING_3",
+      "tile_id": "T_E07_S06",
+      "tiles_covered": [
+        "T_E06_S05",
+        "T_E06_S06",
+        "T_E07_S05",
+        "T_E07_S06",
+        "T_E08_S06"
+      ],
+      "lat": 11.8335,
+      "lon": 108.575,
+      "elev_msl_m": 1042.0,
+      "x_m": 14130.209,
+      "y_m": -11902.169,
+      "z_local_m": -436.0,
+      "gltf_position": [
+        14130.209,
+        -436.0,
+        11902.169
+      ],
+      "coordinate_space": "world_space_gltf_y_up_baked",
+      "heading_deg": 0.0,
+      "glb_path": "02_ASSETS_3D/ring3_districts_ultra/ring3_w3_don_duong_dran_town_and_da_nhim_dam.glb",
+      "triangles": 26979,
+      "vertices": 44783,
+      "size_bytes": 1312852,
+      "sha256": "43fa57b9464cf7b615f4fcc9211fa07ace3251c9a516a2633f5230295b1a77e9",
+      "khr_materials_transmission": false,
+      "sources": [
+        "https://vi.wikipedia.org/wiki/Nh%C3%A0_m%C3%A1y_th%E1%BB%A7y_%C4%91i%E1%BB%87n_%C4%90a_Nhim",
+        "https://hoadalattravel.vn/dia-diem-du-lich/ho-da-nhim/",
+        "https://thuonghieucongluan.com.vn/deo-d-ran-thong-xe-hai-chieu-sau-su-co-sat-lo-can-chu-dong-phuong-an-bao-dam-an-toan-giao-thong-va-luu-thong-hang-hoa-a333925.html",
+        "https://baolamdong.vn/can-canh-deo-d-ran-noi-vua-ap-dung-tinh-huong-khan-cap-ve-thien-tai-399704.html"
+      ]
+    },
+    {
+      "id": "ring3_w3_ngoan_muc_pass_and_da_nhim_penstocks",
+      "wave": 3,
+      "task_id": "T23_W3_DON_DUONG_DRAN_DA_NHIM_NGOAN_MUC_PASS",
+      "name_vi": "Đèo Ngoạn Mục / Đèo Sông Pha (QL27, 980m -> 240m MSL), Đôi đường ống thủy áp Thủy điện Đa Nhim dài 2.257m & Nhà máy 240MW",
+      "ring": "RING_3",
+      "tile_id": "T_E11_S06",
+      "tiles_covered": [
+        "T_E10_S06",
+        "T_E11_S06",
+        "T_E12_S06"
+      ],
+      "lat": 11.8395,
+      "lon": 108.644,
+      "elev_msl_m": 610.0,
+      "x_m": 21645.062,
+      "y_m": -11234.252,
+      "z_local_m": -868.0,
+      "gltf_position": [
+        21645.062,
+        -868.0,
+        11234.252
+      ],
+      "coordinate_space": "world_space_gltf_y_up_baked",
+      "heading_deg": 0.0,
+      "glb_path": "02_ASSETS_3D/ring3_districts_ultra/ring3_w3_ngoan_muc_pass_and_da_nhim_penstocks.glb",
+      "triangles": 24698,
+      "vertices": 41723,
+      "size_bytes": 1217972,
+      "sha256": "d3ee68af68e13b655a9229c4b0f23d91db5552f90acef342610ef284fe106c20",
+      "khr_materials_transmission": false,
+      "sources": [
+        "https://vi.wikipedia.org/wiki/%C4%90%C3%A8o_Ngo%E1%BA%A1n_M%E1%BB%A5c",
+        "https://nguoiquansat.vn/huy-dong-hon-4-000-ky-su-cong-nhan-viet-nhat-lam-viec-lien-tuc-suot-33-thang-xay-cong-trinh-thuy-dien-lau-doi-bac-nhat-viet-nam-co-duong-ham-dai-4-885m-xuyen-qua-long-nui-326371.html",
+        "https://nangluongvietnam.vn/thuy-dien-da-nhim-60-nam-tham-tinh-viet-nam-nhat-ban-32099.html",
+        "https://www.eav.gov.vn/d/vi-VN/news-o/Nha-may-la-cai-noi-cua-thuy-dien-phia-Nam-Hon-60-nam-van-hanh-ben-bi-so-huu-duong-ong-khong-lo-tao-nen-canh-hung-vi-60-38-58662"
+      ]
+    },
+    {
+      "id": "ring3_w4_lang_cu_lan_kho_village_and_suoi_can_lake",
+      "wave": 4,
+      "task_id": "T23_W4_LANG_CU_LAN_SUOI_CAN_BIDOUP_CORRIDOR",
+      "name_vi": "Khu du lịch Làng Cù Lần (Nhà Rông Cổ, 38 nhà sàn K'Ho, Chợ Chồm Hổm, Hồ Trái Tim), Hồ Suối Cạn & Tuyến xe Jeep ĐT722",
+      "ring": "RING_3",
+      "tile_id": "T_W04_N07",
+      "tiles_covered": [
+        "T_W05_N07",
+        "T_W04_N07",
+        "T_W03_N07",
+        "T_W04_N06"
+      ],
+      "lat": 12.0628,
+      "lon": 108.3742,
+      "elev_msl_m": 1445.0,
+      "x_m": -7739.1,
+      "y_m": 13623.391,
+      "z_local_m": -33.0,
+      "gltf_position": [
+        -7739.1,
+        -33.0,
+        -13623.391
+      ],
+      "coordinate_space": "world_space_gltf_y_up_baked",
+      "heading_deg": 0.0,
+      "glb_path": "02_ASSETS_3D/ring3_districts_ultra/ring3_w4_lang_cu_lan_kho_village_and_suoi_can_lake.glb",
+      "triangles": 29414,
+      "vertices": 53211,
+      "size_bytes": 1521288,
+      "sha256": "a43c96c56074d839cdce8fc9f3600977994f7a0c125f31770d203e6a8ca6baff",
+      "khr_materials_transmission": false,
+      "sources": [
+        "https://travel.com.vn/tin-tuc-du-lich/lang-cu-lan-v18494.aspx",
+        "https://www.traveloka.com/vi-vn/explore/destination/lang-cu-lan-acc/273844?utm_id=Pamlbfc2",
+        "https://giaoducthoidai.vn/co-mot-ngoi-lang-mang-ten-cu-lan-post302858.html",
+        "https://sakos.vn/bi-an-cai-ten-lang-cu-lan-va-net-dep-say-long-du-khach/",
+        "https://mia.vn/cam-nang-du-lich/lang-cu-lan-da-lat-16228"
+      ]
+    },
+    {
+      "id": "ring3_w4_bidoup_nui_ba_national_park_corridor",
+      "wave": 4,
+      "task_id": "T23_W4_LANG_CU_LAN_SUOI_CAN_BIDOUP_CORRIDOR",
+      "name_vi": "Hành lang Vườn Quốc gia Bidoup – Núi Bà (Đỉnh Bidoup 2.287m MSL, Trung tâm Du khách, Rừng Thông 2 lá dẹt & Pơ mu cổ thụ, QL27C)",
+      "ring": "RING_3",
+      "tile_id": "T_E07_N10",
+      "tiles_covered": [
+        "T_E07_N09",
+        "T_E07_N10",
+        "T_E08_N09",
+        "T_E08_N10"
+      ],
+      "lat": 12.118,
+      "lon": 108.582,
+      "elev_msl_m": 1680.0,
+      "summit_elev_msl_m": 2287.0,
+      "x_m": 14892.586,
+      "y_m": 19768.226,
+      "z_local_m": 202.0,
+      "gltf_position": [
+        14892.586,
+        202.0,
+        -19768.226
+      ],
+      "coordinate_space": "world_space_gltf_y_up_baked",
+      "heading_deg": 0.0,
+      "glb_path": "02_ASSETS_3D/ring3_districts_ultra/ring3_w4_bidoup_nui_ba_national_park_corridor.glb",
+      "triangles": 32963,
+      "vertices": 61874,
+      "size_bytes": 1751916,
+      "sha256": "c50f0bf1a591e56cf80d8742efac49fd4b89ce62ce7717cc030853277d7017d4",
+      "khr_materials_transmission": false,
+      "sources": [
+        "https://thegioidisan.vn/vi/kham-pha-vuon-quoc-gia-bidoup-nui-ba.html",
+        "https://dulichcheckin.com/vuon-quoc-gia-bidoup-nui-ba/",
+        "https://www.jica.go.jp/oda/project/201400626/news/__icsFiles/afieldfile/2024/07/24/lb-rb_five-year_management_plan_en.pdf",
+        "https://vanhoanghethuat.vn/nguon-luc-phat-trien-du-lich-mao-hiem-gan-voi-bao-ton-van-hoa-cua-cu-dan-ban-dia-khu-vuc-vuon-quoc-gia-bidoup-nui-ba-77757646.html"
+      ]
+    },
+    {
+      "id": "RING3_W5_01_LAM_HA_NAM_BAN_MULBERRY_SILK_VALLEY",
+      "task_id": "T23_W5_LAM_HA_NAM_BAN_CHUA_LINH_AN_71M_STATUE",
+      "wave": 5,
+      "name": "Thị trấn Nam Ban (Lâm Hà), Thung lũng Nương Dâu Tằm & Nhà máy Ươm Tơ Dệt Lụa (ĐT725)",
+      "district": "Huyện Lâm Hà (Thị trấn Nam Ban)",
+      "ring": "RING_3",
+      "file": "02_ASSETS_3D/ring3_districts_ultra/ring3_w5_lam_ha_nam_ban_town_and_mulberry_silk_valley.glb",
+      "glb_filename": "ring3_w5_lam_ha_nam_ban_town_and_mulberry_silk_valley.glb",
+      "wgs84_center": {
+        "lat": 11.832,
+        "lon": 108.338,
+        "elev_msl": 1060.0
+      },
+      "local_origin_m": {
+        "x": -11681.674,
+        "y": -12069.148,
+        "z_local": -418.0
+      },
+      "world_baked_vertices": true,
+      "pivot_gltf_y_up": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertices": 87122,
+      "triangles": 40928,
+      "size_bytes": 2348420,
+      "sha256": "04c446d76c0491894a03424c101cb48d7d5550e412c81182a591cd154d1f03de",
+      "features": {
+        "mulberry_terraced_plots": 72,
+        "mulberry_hedgerows": 504,
+        "silk_factory_halls": 4,
+        "shophouses_and_villas": 102,
+        "streetlamps": 48,
+        "trees": 176
+      },
+      "sources": [
+        "https://diaoclamha.com/tin-tuc/khu-du-lich-thac-voi-thi-tran-nam-ban-diem-den-khong-the-bo-qua-khi-den-huyen-lam-ha.html",
+        "https://www.lemon8-app.com/experience/holiday-itinerary-for-3-days?region=sg"
+      ]
+    },
+    {
+      "id": "RING3_W5_02_CHUA_LINH_AN_71M_AVALOKITESVARA_THAC_VOI",
+      "task_id": "T23_W5_LAM_HA_NAM_BAN_CHUA_LINH_AN_71M_STATUE",
+      "wave": 5,
+      "name": "Quần thể Chùa Linh Ẩn, Đại tượng Quan Thế Âm 71m, Vườn Tịnh Thánh & Danh thắng Quốc gia Thác Voi",
+      "district": "Huyện Lâm Hà (Thị trấn Nam Ban)",
+      "ring": "RING_3",
+      "file": "02_ASSETS_3D/ring3_districts_ultra/ring3_w5_chua_linh_an_71m_avalokitesvara_and_thac_voi.glb",
+      "glb_filename": "ring3_w5_chua_linh_an_71m_avalokitesvara_and_thac_voi.glb",
+      "wgs84_center": {
+        "lat": 11.8256,
+        "lon": 108.334,
+        "elev_msl": 1068.0
+      },
+      "local_origin_m": {
+        "x": -12117.318,
+        "y": -12781.593,
+        "z_local": -410.0
+      },
+      "world_baked_vertices": true,
+      "pivot_gltf_y_up": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertices": 72613,
+      "triangles": 33533,
+      "size_bytes": 1956092,
+      "sha256": "13d17a695be837c4dd9aa0e6bc0a1d215807f2c44815e9e2947f8f0fd234adb4",
+      "features": {
+        "avalokitesvara_statue_height_m": 71.0,
+        "chanh_dien_area_m2": 1400.0,
+        "tinh_thanh_garden_statues_3d": 143,
+        "thac_voi_width_m": 40.0,
+        "thac_voi_drop_m": 32.0,
+        "elephant_basalt_boulders": 12,
+        "trees": 185
+      },
+      "sources": [
+        "https://travel.com.vn/tin-tuc-du-lich/chua-linh-an-da-lat-v18543.aspx",
+        "https://hdvlocal.com/blogs/du-lich/chua-linh-an",
+        "https://nucuoimekong.com/chua-linh-an-da-lat",
+        "https://lamdongtours.com/dia-diem-du-lich-da-lat/cong-trinh-ton-giao/chua-linh-an-tu/",
+        "https://lifestyle.zingnews.vn/chua-o-lam-dong-co-tuong-phat-ba-cao-71-m-post1148569.html",
+        "https://vi.wikipedia.org/wiki/Th%C3%A1c_Voi_(Nam_Ban)",
+        "https://vietnamtourism.gov.vn/post/35875",
+        "https://mia.vn/cam-nang-du-lich/thac-voi-da-lat-thac-nuoc-voi-ve-dep-hoang-so-hung-vi-1285",
+        "https://www.klook.com/vi/blog/thac-voi/"
+      ]
+    },
+    {
+      "id": "RING3_AUTO_B01_01_DUC_TRONG_PONGOUR_7TIER_WATERFALL_DAI_NINH",
+      "task_id": "T23_AUTO_B01_PONGOUR_7TIER_FALLS_THANH_MY_TU_TRA_DAIRY_VALLEY",
+      "wave": 6,
+      "batch": "AUTO_B01",
+      "name": "Danh thắng Quốc gia Thác Pongour (Nam Thiên Đệ Nhất Thác 7 Tầng 115m×38m) & Làng Chùa Đại Ninh - Sông Đa Nhim",
+      "district": "Huyện Đức Trọng (Ninh Gia - Phú Hội)",
+      "ring": "RING_3",
+      "file": "02_ASSETS_3D/ring3_districts_ultra/ring3_auto_b01_duc_trong_pongour_7tier_waterfall_and_dai_ninh.glb",
+      "glb_filename": "ring3_auto_b01_duc_trong_pongour_7tier_waterfall_and_dai_ninh.glb",
+      "wgs84_center": {
+        "lat": 11.6894,
+        "lon": 108.2658,
+        "elev_msl": 845.0
+      },
+      "local_origin_m": {
+        "x": -19545.042,
+        "y": -27943.307,
+        "z_local": -633.0
+      },
+      "world_baked_vertices": true,
+      "pivot_gltf_y_up": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertices": 71199,
+      "triangles": 32943,
+      "size_bytes": 1916712,
+      "sha256": "06886383ca60ae793ace69c3dc773b7ab00dd9a838e35d366831a70675becaeb",
+      "features": {
+        "waterfall_tiers": 7,
+        "waterfall_arc_width_m": 115.0,
+        "waterfall_drop_height_m": 38.0,
+        "waterfall_foam_chutes": 18,
+        "basalt_pool_boulders": 28,
+        "monastery_and_visitor_buildings": 23,
+        "night_lights": 25,
+        "trees": 213
+      },
+      "sources": [
+        "https://travel.com.vn/en/tin-tuc-du-lich/thac-pongour-da-lat-v18541.aspx",
+        "https://vinpearl.com/vi/thac-pongour-da-lat",
+        "https://www.traveloka.com/vi-vn/explore/destination/thac-7-tang/174317?utm_id=Pamlbfc2",
+        "https://saigonstartravel.com/kham-pha-khu-du-lich-sinh-thai-thac-pongour-da-lat",
+        "https://donatourist.com/thac-pongour-nam-thien-de-nhat-thac-7-tang-hung-vi",
+        "https://vietgoing.com/destination/648-thac-pongour.html"
+      ]
+    },
+    {
+      "id": "RING3_AUTO_B01_02_DON_DUONG_THANH_MY_TU_TRA_DAIRY_VALLEY",
+      "task_id": "T23_AUTO_B01_PONGOUR_7TIER_FALLS_THANH_MY_TU_TRA_DAIRY_VALLEY",
+      "wave": 6,
+      "batch": "AUTO_B01",
+      "name": "Cụm Đô thị Thị trấn Thạnh Mỹ (QL27 - Cầu Ông Thiều) & Thảo nguyên Nông trường Bò sữa Tu Tra - Dalat Milk Farm",
+      "district": "Huyện Đơn Dương (Thị trấn Thạnh Mỹ & Xã Tu Tra)",
+      "ring": "RING_3",
+      "file": "02_ASSETS_3D/ring3_districts_ultra/ring3_auto_b01_don_duong_thanh_my_town_and_tu_tra_dairy_plateau.glb",
+      "glb_filename": "ring3_auto_b01_don_duong_thanh_my_town_and_tu_tra_dairy_plateau.glb",
+      "wgs84_center": {
+        "lat": 11.7635,
+        "lon": 108.475,
+        "elev_msl": 1012.0
+      },
+      "local_origin_m": {
+        "x": 3239.119,
+        "y": -19694.533,
+        "z_local": -466.0
+      },
+      "world_baked_vertices": true,
+      "pivot_gltf_y_up": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertices": 70183,
+      "triangles": 32781,
+      "size_bytes": 1892264,
+      "sha256": "67eab1f057bccc50d66c135275c2d876453fc9ed557ea03663eb3d27680d9a2f",
+      "features": {
+        "dutch_windmill_height_m": 28.0,
+        "dairy_cattle_barns": 6,
+        "milk_silos": 4,
+        "sunflower_and_pasture_plots": 24,
+        "hightech_greenhouses": 24,
+        "shophouses_and_buildings": 109,
+        "streetlamps": 48,
+        "trees": 183
+      },
+      "sources": [
+        "https://lamdongtours.com/dia-diem-du-lich-da-lat/check-in/dalat-milk-farm/",
+        "https://merperledalat.vn/bai-viet/da-lat-milk-farm/",
+        "https://saigonstartravel.com/dalat-milk-farm",
+        "https://latour.vn/tin-tuc/review-da-lat-milk-farm-nong-trai-sua-song-ao-cuc-pham-da-lat-1715.html",
+        "https://vi.wikipedia.org/wiki/%C4%90%C6%A1n_D%C6%B0%C6%A1ng_(huy%E1%BB%87n)",
+        "https://donduong.lamdong.gov.vn/chi-tiet-tin-tuc/?param=xa-don-duong-tinh-lam-dong-3cef9876-d91e-457e-b638-0d43b00f8183"
+      ]
+    },
+    {
+      "id": "RING3_AUTO_B02_01_LAM_HA_DINH_VAN_PHUC_THO_LAKE_COFFEE_MACADAMIA",
+      "task_id": "T23_AUTO_B02_LAM_HA_DINH_VAN_PHUC_THO_LAKE_AND_DAI_NINH_RESERVOIR_DAM",
+      "wave": 7,
+      "batch": "AUTO_B02",
+      "name": "Cụm Đô thị Thị trấn Đinh Văn (Huyện lỵ Lâm Hà, QL27 × ĐT725), Hồ Thủy lợi Phúc Thọ & Đồi Cà phê - Mắc ca",
+      "district": "Huyện Lâm Hà (Thị trấn Đinh Văn, Xã Phúc Thọ & Xã Tân Hà)",
+      "ring": "RING_3",
+      "file": "02_ASSETS_3D/ring3_districts_ultra/ring3_auto_b02_lam_ha_dinh_van_town_and_phuc_tho_coffee_macadamia_lake.glb",
+      "glb_filename": "ring3_auto_b02_lam_ha_dinh_van_town_and_phuc_tho_coffee_macadamia_lake.glb",
+      "wgs84_center": {
+        "lat": 11.785,
+        "lon": 108.242,
+        "elev_msl": 950.0
+      },
+      "local_origin_m": {
+        "x": -22137.121,
+        "y": -17301.164,
+        "z_local": -528.0
+      },
+      "world_baked_vertices": true,
+      "pivot_gltf_y_up": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertices": 84660,
+      "triangles": 39224,
+      "size_bytes": 2279116,
+      "sha256": "7a610bd1b273c0a0be3d1d5c4435705383a220ebae3c5cfc0289ed18d9ad44f1",
+      "features": {
+        "coffee_macadamia_plots": 32,
+        "hightech_greenhouses": 18,
+        "lakeside_eco_villas": 22,
+        "urban_shophouses_and_admin": 118,
+        "streetlamps": 48,
+        "trees": 248
+      },
+      "sources": [
+        "https://vietnamtourism.gov.vn/post/42901",
+        "https://vietnamtourism.gov.vn/post/37529",
+        "https://baolamdong.vn/xa-phuc-tho-lam-ha-event737.html",
+        "https://anphareal.vn/tin-tuc/ho-phuc-tho-vien-ngoc-xanh-ben-trien-doi-lam-ha",
+        "https://luatvietnam.vn/xay-dung/quyet-dinh-90-qd-ttg-2025-ke-hoach-quy-hoach-tinh-lam-dong-thoi-ky-2021-2030-385811-d1.html"
+      ]
+    },
+    {
+      "id": "RING3_AUTO_B02_02_DUC_TRONG_DAI_NINH_HYDRO_RESERVOIR_DAM_BRIDGE",
+      "task_id": "T23_AUTO_B02_LAM_HA_DINH_VAN_PHUC_THO_LAKE_AND_DAI_NINH_RESERVOIR_DAM",
+      "wave": 7,
+      "batch": "AUTO_B02",
+      "name": "Cụm Hồ chứa & Đập Thủy điện Đại Ninh (300 MW, 319,77 triệu m³, MNDBT 880m MSL) & Cầu Đại Ninh (QL20 × QL28B)",
+      "district": "Huyện Đức Trọng (Xã Ninh Gia & Xã Tà Hine)",
+      "ring": "RING_3",
+      "file": "02_ASSETS_3D/ring3_districts_ultra/ring3_auto_b02_duc_trong_dai_ninh_hydro_reservoir_dam_and_bridge.glb",
+      "glb_filename": "ring3_auto_b02_duc_trong_dai_ninh_hydro_reservoir_dam_and_bridge.glb",
+      "wgs84_center": {
+        "lat": 11.6708,
+        "lon": 108.3138,
+        "elev_msl": 880.0
+      },
+      "local_origin_m": {
+        "x": -14317.318,
+        "y": -30013.85,
+        "z_local": -598.0
+      },
+      "world_baked_vertices": true,
+      "pivot_gltf_y_up": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertices": 64632,
+      "triangles": 30250,
+      "size_bytes": 1743696,
+      "sha256": "44623771e7e0b9b820b91dc3af13dbe7724a542dd9d7acffddc98c611623870c",
+      "features": {
+        "reservoir_mndbt_msl": 880.0,
+        "reservoir_volume_million_m3": 319.77,
+        "main_dam_length_m": 626.0,
+        "main_dam_height_m": 55.0,
+        "spillway_radial_gates": 3,
+        "cau_dai_ninh_bridge_length_m": 240.0,
+        "reservoir_islands": 5,
+        "buildings_and_towers": 56,
+        "night_lights": 42,
+        "trees": 170
+      },
+      "sources": [
+        "https://vi.wikipedia.org/wiki/Th%E1%BB%A7y_%C4%91i%E1%BB%87n_%C4%90%E1%BA%A1i_Ninh",
+        "https://cra.tlu.edu.vn/cong-trinh-tieu-bieu/cong-trinh-thuy-dien-dai-ninh-12091",
+        "https://danviet.vn/tinh-lam-dong-sau-sap-nhap-se-co-duong-ong-dan-nuoc-dai-nhat-viet-nam-d1330709.html",
+        "https://www.vietnamplus.vn/lam-dong-bao-dong-tinh-trang-lan-chiem-ho-thuy-dien-dai-ninh-post754176.vnp"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "ring3_w1_lien_khuong_airport_complex",
+      "wave": 1,
+      "task_id": "T23_W1_LIEN_KHUONG_INTERNATIONAL_AIRPORT_COMPLEX",
+      "name_vi": "Cảng Hàng Không Quốc Tế Liên Khương (Nhà ga Hoa Dã Quỳ, Đường CHC 09/27 3.250m & Đài KSKL VATM)",
+      "icao": "VVDL",
+      "iata": "DLI",
+      "ring": "RING_3",
+      "tile_id": "T_W04_S11",
+      "tiles_covered": [
+        "T_W06_S11",
+        "T_W05_S11",
+        "T_W04_S11",
+        "T_W04_S10",
+        "T_W05_S10"
+      ],
+      "lat": 11.7506,
+      "lon": 108.367,
+      "elev_msl_m": 962.0,
+      "x_m": -8523.258,
+      "y_m": -21130.554,
+      "z_local_m": -516.0,
+      "gltf_position": [
+        -8523.258,
+        -516.0,
+        21130.554
+      ],
+      "coordinate_space": "world_space_gltf_y_up_baked",
+      "heading_deg": 0.0,
+      "glb_path": "02_ASSETS_3D/ring3_districts_ultra/ring3_w1_lien_khuong_airport_complex.glb",
+      "triangles": 24227,
+      "vertices": 40990,
+      "size_bytes": 1207444,
+      "sha256": "b79ce516c9dcbbd55f662b4bcbd86ccf5e6482a8fb73731e183cee57abad3cc4",
+      "khr_materials_transmission": false,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Lien_Khuong_International_Airport",
+        "https://metar-taf.com/airport/VVDL-lien-khuong-airport",
+        "https://nhandan.vn/lien-khuong-tro-thanh-cang-hang-khong-quoc-te-dau-tien-vung-tay-nguyen-post815692.html",
+        "https://caa.gov.vn/Pages/Print.aspx?NewsId=20240620144042384",
+        "https://mia.vn/cam-nang-du-lich/thong-tin-ve-san-bay-lien-khuong-15728",
+        "https://vatm.vn/dai-kiem-soat-khong-luu-lien-khuong-san-sang-cho-nhung-canh-bay-an-toan-dieu-hoa-hieu-qua.html"
+      ]
+    },
+    {
+      "id": "ring3_w1_lien_khuong_expressway_interchange",
+      "wave": 1,
+      "task_id": "T23_W1_LIEN_KHUONG_INTERNATIONAL_AIRPORT_COMPLEX",
+      "name_vi": "Nút giao Cao tốc Liên Khương – Prenn (CT.27 Km208+650) giao Quốc lộ 20 & Đại lộ Sân bay",
+      "ring": "RING_3",
+      "tile_id": "T_W03_S10",
+      "tiles_covered": [
+        "T_W04_S11",
+        "T_W03_S11",
+        "T_W03_S10"
+      ],
+      "lat": 11.7546,
+      "lon": 108.3852,
+      "elev_msl_m": 958.0,
+      "x_m": -6541.08,
+      "y_m": -20685.276,
+      "z_local_m": -520.0,
+      "gltf_position": [
+        -6541.08,
+        -520.0,
+        20685.276
+      ],
+      "coordinate_space": "world_space_gltf_y_up_baked",
+      "heading_deg": 0.0,
+      "glb_path": "02_ASSETS_3D/ring3_districts_ultra/ring3_w1_lien_khuong_expressway_interchange.glb",
+      "triangles": 13641,
+      "vertices": 23084,
+      "size_bytes": 672404,
+      "sha256": "04b5c58f518b10c11112a3cb02ad5395ff83941739bd25c6514a863ce478c7ea",
+      "khr_materials_transmission": false,
+      "sources": [
+        "https://vi.wikipedia.org/wiki/%C4%90%C6%B0%E1%BB%9Dng_cao_t%E1%BB%91c_D%E1%BA%A7u_Gi%C3%A2y_%E2%80%93_Li%C3%AAn_Kh%C6%B0%C6%A1ng",
+        "https://thuvienphapluat.vn/phap-luat-nha-dat/duong-cao-toc-bao-loc-lien-khuong-dai-bao-nhieu-km-diem-dau-diem-cuoi-o-dau-15393.html",
+        "https://swproperty.vn/thong-tin-tong-quan-du-an-cao-toc-bao-loc-lien-khuong/"
+      ]
+    },
+    {
+      "id": "ring3_w2_duc_trong_lien_nghia_urban_da_nhim",
+      "wave": 2,
+      "task_id": "T23_W2_DUC_TRONG_LIEN_NGHIA_GOUGAH_FALLS",
+      "name_vi": "Đô thị Liên Nghĩa (Đức Trọng), Trung tâm Hành chính mới, Chợ Liên Nghĩa, Hồ Nam Sơn & Cầu Đa Nhim (QL20 x QL27)",
+      "ring": "RING_3",
+      "tile_id": "T_W04_S12",
+      "tiles_covered": [
+        "T_W05_S11",
+        "T_W04_S11",
+        "T_W03_S11",
+        "T_W05_S12",
+        "T_W04_S12",
+        "T_W03_S12"
+      ],
+      "lat": 11.7285,
+      "lon": 108.3745,
+      "elev_msl_m": 945.0,
+      "x_m": -7706.426,
+      "y_m": -23590.715,
+      "z_local_m": -533.0,
+      "gltf_position": [
+        -7706.426,
+        -533.0,
+        23590.715
+      ],
+      "coordinate_space": "world_space_gltf_y_up_baked",
+      "heading_deg": 0.0,
+      "glb_path": "02_ASSETS_3D/ring3_districts_ultra/ring3_w2_duc_trong_lien_nghia_urban_da_nhim.glb",
+      "triangles": 25073,
+      "vertices": 41752,
+      "size_bytes": 1213716,
+      "sha256": "577910fc30cf0ed809dd8484a42b5cf70fe842e9eff4657d014beeb28e011fe9",
+      "khr_materials_transmission": false,
+      "sources": [
+        "https://vi.wikipedia.org/wiki/%C4%90%E1%BB%A9c_Tr%E1%BB%8Dng_(huy%E1%BB%87n)",
+        "https://vi.wikipedia.org/wiki/S%C3%B4ng_%C4%90a_Nhim",
+        "https://vnexpress.net/lam-dong-quy-hoach-trung-tam-hanh-chinh-moi-o-duc-trong-5147487.html",
+        "https://baolamdong.vn/lam-dong-quy-hoach-duc-trong-thanh-do-thi-trung-tam-moi-475266.html",
+        "https://cafeland.vn/tin-tuc/cap-nhat-tien-do-du-an-khu-do-thi-gan-12000-ty-dong-tai-lam-dong-134558.html"
+      ]
+    },
+    {
+      "id": "ring3_w2_lien_khuong_and_gougah_waterfalls",
+      "wave": 2,
+      "task_id": "T23_W2_DUC_TRONG_LIEN_NGHIA_GOUGAH_FALLS",
+      "name_vi": "Danh thắng Thác Liên Khương (rộng 200m, cao 36m) & Thác Gougah / Thác Ổ Gà (chia 2 màu nước, Nhà Rông & Núi lửa R'Chai)",
+      "ring": "RING_3",
+      "tile_id": "T_W03_S11",
+      "tiles_covered": [
+        "T_W03_S11",
+        "T_W05_S14",
+        "T_W06_S14"
+      ],
+      "lat": 11.7412,
+      "lon": 108.3828,
+      "elev_msl_m": 938.0,
+      "x_m": -6802.466,
+      "y_m": -22176.958,
+      "z_local_m": -540.0,
+      "gltf_position": [
+        -6802.466,
+        -540.0,
+        22176.958
+      ],
+      "secondary_anchor_gougah": {
+        "name_vi": "Thác Gougah (Xóm Chung, Phú Hội, Đức Trọng)",
+        "tile_id": "T_W05_S14",
+        "lat": 11.6965,
+        "lon": 108.349,
+        "elev_msl_m": 895.0,
+        "x_m": -10483.654,
+        "y_m": -27152.939,
+        "z_local_m": -583.0,
+        "gltf_position": [
+          -10483.654,
+          -583.0,
+          27152.939
+        ]
+      },
+      "coordinate_space": "world_space_gltf_y_up_baked",
+      "heading_deg": 0.0,
+      "glb_path": "02_ASSETS_3D/ring3_districts_ultra/ring3_w2_lien_khuong_and_gougah_waterfalls.glb",
+      "triangles": 17015,
+      "vertices": 27955,
+      "size_bytes": 859888,
+      "sha256": "510619a8cc153404b1c5d649925cdfecdd1f4b4b2824285cf0d2d9dad483c25b",
+      "khr_materials_transmission": false,
+      "sources": [
+        "https://ziontour.com.vn/en/destinations/lien-khuong-waterfall-1192.html",
+        "https://luhanhvietnam.com.vn/du-lich/thac-lien-khuong-da-lat.html",
+        "https://lamdong.gov.vn/sites/svhttdl/hoatdongdulich/danh-lam-thang-canh/SitePages/thac-gougah-lam-dong.aspx",
+        "https://vietnamtourism.vn/index.php/tourism/items/1508/2",
+        "https://happydaytravel.com/thac-gougah-chia-2-mau-nuoc-dac-biet.html"
+      ]
+    },
+    {
+      "id": "ring3_w3_don_duong_dran_town_and_da_nhim_dam",
+      "wave": 3,
+      "task_id": "T23_W3_DON_DUONG_DRAN_DA_NHIM_NGOAN_MUC_PASS",
+      "name_vi": "Thị trấn D'Ran (Đơn Dương), Hồ & Đập Thủy điện Đa Nhim (dài 1.500m, cao 38m), Đập tràn 4 cửa & Rừng thông Đèo D'Ran (QL20)",
+      "ring": "RING_3",
+      "tile_id": "T_E07_S06",
+      "tiles_covered": [
+        "T_E06_S05",
+        "T_E06_S06",
+        "T_E07_S05",
+        "T_E07_S06",
+        "T_E08_S06"
+      ],
+      "lat": 11.8335,
+      "lon": 108.575,
+      "elev_msl_m": 1042.0,
+      "x_m": 14130.209,
+      "y_m": -11902.169,
+      "z_local_m": -436.0,
+      "gltf_position": [
+        14130.209,
+        -436.0,
+        11902.169
+      ],
+      "coordinate_space": "world_space_gltf_y_up_baked",
+      "heading_deg": 0.0,
+      "glb_path": "02_ASSETS_3D/ring3_districts_ultra/ring3_w3_don_duong_dran_town_and_da_nhim_dam.glb",
+      "triangles": 26979,
+      "vertices": 44783,
+      "size_bytes": 1312852,
+      "sha256": "43fa57b9464cf7b615f4fcc9211fa07ace3251c9a516a2633f5230295b1a77e9",
+      "khr_materials_transmission": false,
+      "sources": [
+        "https://vi.wikipedia.org/wiki/Nh%C3%A0_m%C3%A1y_th%E1%BB%A7y_%C4%91i%E1%BB%87n_%C4%90a_Nhim",
+        "https://hoadalattravel.vn/dia-diem-du-lich/ho-da-nhim/",
+        "https://thuonghieucongluan.com.vn/deo-d-ran-thong-xe-hai-chieu-sau-su-co-sat-lo-can-chu-dong-phuong-an-bao-dam-an-toan-giao-thong-va-luu-thong-hang-hoa-a333925.html",
+        "https://baolamdong.vn/can-canh-deo-d-ran-noi-vua-ap-dung-tinh-huong-khan-cap-ve-thien-tai-399704.html"
+      ]
+    },
+    {
+      "id": "ring3_w3_ngoan_muc_pass_and_da_nhim_penstocks",
+      "wave": 3,
+      "task_id": "T23_W3_DON_DUONG_DRAN_DA_NHIM_NGOAN_MUC_PASS",
+      "name_vi": "Đèo Ngoạn Mục / Đèo Sông Pha (QL27, 980m -> 240m MSL), Đôi đường ống thủy áp Thủy điện Đa Nhim dài 2.257m & Nhà máy 240MW",
+      "ring": "RING_3",
+      "tile_id": "T_E11_S06",
+      "tiles_covered": [
+        "T_E10_S06",
+        "T_E11_S06",
+        "T_E12_S06"
+      ],
+      "lat": 11.8395,
+      "lon": 108.644,
+      "elev_msl_m": 610.0,
+      "x_m": 21645.062,
+      "y_m": -11234.252,
+      "z_local_m": -868.0,
+      "gltf_position": [
+        21645.062,
+        -868.0,
+        11234.252
+      ],
+      "coordinate_space": "world_space_gltf_y_up_baked",
+      "heading_deg": 0.0,
+      "glb_path": "02_ASSETS_3D/ring3_districts_ultra/ring3_w3_ngoan_muc_pass_and_da_nhim_penstocks.glb",
+      "triangles": 24698,
+      "vertices": 41723,
+      "size_bytes": 1217972,
+      "sha256": "d3ee68af68e13b655a9229c4b0f23d91db5552f90acef342610ef284fe106c20",
+      "khr_materials_transmission": false,
+      "sources": [
+        "https://vi.wikipedia.org/wiki/%C4%90%C3%A8o_Ngo%E1%BA%A1n_M%E1%BB%A5c",
+        "https://nguoiquansat.vn/huy-dong-hon-4-000-ky-su-cong-nhan-viet-nhat-lam-viec-lien-tuc-suot-33-thang-xay-cong-trinh-thuy-dien-lau-doi-bac-nhat-viet-nam-co-duong-ham-dai-4-885m-xuyen-qua-long-nui-326371.html",
+        "https://nangluongvietnam.vn/thuy-dien-da-nhim-60-nam-tham-tinh-viet-nam-nhat-ban-32099.html",
+        "https://www.eav.gov.vn/d/vi-VN/news-o/Nha-may-la-cai-noi-cua-thuy-dien-phia-Nam-Hon-60-nam-van-hanh-ben-bi-so-huu-duong-ong-khong-lo-tao-nen-canh-hung-vi-60-38-58662"
+      ]
+    },
+    {
+      "id": "ring3_w4_lang_cu_lan_kho_village_and_suoi_can_lake",
+      "wave": 4,
+      "task_id": "T23_W4_LANG_CU_LAN_SUOI_CAN_BIDOUP_CORRIDOR",
+      "name_vi": "Khu du lịch Làng Cù Lần (Nhà Rông Cổ, 38 nhà sàn K'Ho, Chợ Chồm Hổm, Hồ Trái Tim), Hồ Suối Cạn & Tuyến xe Jeep ĐT722",
+      "ring": "RING_3",
+      "tile_id": "T_W04_N07",
+      "tiles_covered": [
+        "T_W05_N07",
+        "T_W04_N07",
+        "T_W03_N07",
+        "T_W04_N06"
+      ],
+      "lat": 12.0628,
+      "lon": 108.3742,
+      "elev_msl_m": 1445.0,
+      "x_m": -7739.1,
+      "y_m": 13623.391,
+      "z_local_m": -33.0,
+      "gltf_position": [
+        -7739.1,
+        -33.0,
+        -13623.391
+      ],
+      "coordinate_space": "world_space_gltf_y_up_baked",
+      "heading_deg": 0.0,
+      "glb_path": "02_ASSETS_3D/ring3_districts_ultra/ring3_w4_lang_cu_lan_kho_village_and_suoi_can_lake.glb",
+      "triangles": 29414,
+      "vertices": 53211,
+      "size_bytes": 1521288,
+      "sha256": "a43c96c56074d839cdce8fc9f3600977994f7a0c125f31770d203e6a8ca6baff",
+      "khr_materials_transmission": false,
+      "sources": [
+        "https://travel.com.vn/tin-tuc-du-lich/lang-cu-lan-v18494.aspx",
+        "https://www.traveloka.com/vi-vn/explore/destination/lang-cu-lan-acc/273844?utm_id=Pamlbfc2",
+        "https://giaoducthoidai.vn/co-mot-ngoi-lang-mang-ten-cu-lan-post302858.html",
+        "https://sakos.vn/bi-an-cai-ten-lang-cu-lan-va-net-dep-say-long-du-khach/",
+        "https://mia.vn/cam-nang-du-lich/lang-cu-lan-da-lat-16228"
+      ]
+    },
+    {
+      "id": "ring3_w4_bidoup_nui_ba_national_park_corridor",
+      "wave": 4,
+      "task_id": "T23_W4_LANG_CU_LAN_SUOI_CAN_BIDOUP_CORRIDOR",
+      "name_vi": "Hành lang Vườn Quốc gia Bidoup – Núi Bà (Đỉnh Bidoup 2.287m MSL, Trung tâm Du khách, Rừng Thông 2 lá dẹt & Pơ mu cổ thụ, QL27C)",
+      "ring": "RING_3",
+      "tile_id": "T_E07_N10",
+      "tiles_covered": [
+        "T_E07_N09",
+        "T_E07_N10",
+        "T_E08_N09",
+        "T_E08_N10"
+      ],
+      "lat": 12.118,
+      "lon": 108.582,
+      "elev_msl_m": 1680.0,
+      "summit_elev_msl_m": 2287.0,
+      "x_m": 14892.586,
+      "y_m": 19768.226,
+      "z_local_m": 202.0,
+      "gltf_position": [
+        14892.586,
+        202.0,
+        -19768.226
+      ],
+      "coordinate_space": "world_space_gltf_y_up_baked",
+      "heading_deg": 0.0,
+      "glb_path": "02_ASSETS_3D/ring3_districts_ultra/ring3_w4_bidoup_nui_ba_national_park_corridor.glb",
+      "triangles": 32963,
+      "vertices": 61874,
+      "size_bytes": 1751916,
+      "sha256": "c50f0bf1a591e56cf80d8742efac49fd4b89ce62ce7717cc030853277d7017d4",
+      "khr_materials_transmission": false,
+      "sources": [
+        "https://thegioidisan.vn/vi/kham-pha-vuon-quoc-gia-bidoup-nui-ba.html",
+        "https://dulichcheckin.com/vuon-quoc-gia-bidoup-nui-ba/",
+        "https://www.jica.go.jp/oda/project/201400626/news/__icsFiles/afieldfile/2024/07/24/lb-rb_five-year_management_plan_en.pdf",
+        "https://vanhoanghethuat.vn/nguon-luc-phat-trien-du-lich-mao-hiem-gan-voi-bao-ton-van-hoa-cua-cu-dan-ban-dia-khu-vuc-vuon-quoc-gia-bidoup-nui-ba-77757646.html"
+      ]
+    },
+    {
+      "id": "RING3_W5_01_LAM_HA_NAM_BAN_MULBERRY_SILK_VALLEY",
+      "task_id": "T23_W5_LAM_HA_NAM_BAN_CHUA_LINH_AN_71M_STATUE",
+      "wave": 5,
+      "name": "Thị trấn Nam Ban (Lâm Hà), Thung lũng Nương Dâu Tằm & Nhà máy Ươm Tơ Dệt Lụa (ĐT725)",
+      "district": "Huyện Lâm Hà (Thị trấn Nam Ban)",
+      "ring": "RING_3",
+      "file": "02_ASSETS_3D/ring3_districts_ultra/ring3_w5_lam_ha_nam_ban_town_and_mulberry_silk_valley.glb",
+      "glb_filename": "ring3_w5_lam_ha_nam_ban_town_and_mulberry_silk_valley.glb",
+      "wgs84_center": {
+        "lat": 11.832,
+        "lon": 108.338,
+        "elev_msl": 1060.0
+      },
+      "local_origin_m": {
+        "x": -11681.674,
+        "y": -12069.148,
+        "z_local": -418.0
+      },
+      "world_baked_vertices": true,
+      "pivot_gltf_y_up": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertices": 87122,
+      "triangles": 40928,
+      "size_bytes": 2348420,
+      "sha256": "04c446d76c0491894a03424c101cb48d7d5550e412c81182a591cd154d1f03de",
+      "features": {
+        "mulberry_terraced_plots": 72,
+        "mulberry_hedgerows": 504,
+        "silk_factory_halls": 4,
+        "shophouses_and_villas": 102,
+        "streetlamps": 48,
+        "trees": 176
+      },
+      "sources": [
+        "https://diaoclamha.com/tin-tuc/khu-du-lich-thac-voi-thi-tran-nam-ban-diem-den-khong-the-bo-qua-khi-den-huyen-lam-ha.html",
+        "https://www.lemon8-app.com/experience/holiday-itinerary-for-3-days?region=sg"
+      ]
+    },
+    {
+      "id": "RING3_W5_02_CHUA_LINH_AN_71M_AVALOKITESVARA_THAC_VOI",
+      "task_id": "T23_W5_LAM_HA_NAM_BAN_CHUA_LINH_AN_71M_STATUE",
+      "wave": 5,
+      "name": "Quần thể Chùa Linh Ẩn, Đại tượng Quan Thế Âm 71m, Vườn Tịnh Thánh & Danh thắng Quốc gia Thác Voi",
+      "district": "Huyện Lâm Hà (Thị trấn Nam Ban)",
+      "ring": "RING_3",
+      "file": "02_ASSETS_3D/ring3_districts_ultra/ring3_w5_chua_linh_an_71m_avalokitesvara_and_thac_voi.glb",
+      "glb_filename": "ring3_w5_chua_linh_an_71m_avalokitesvara_and_thac_voi.glb",
+      "wgs84_center": {
+        "lat": 11.8256,
+        "lon": 108.334,
+        "elev_msl": 1068.0
+      },
+      "local_origin_m": {
+        "x": -12117.318,
+        "y": -12781.593,
+        "z_local": -410.0
+      },
+      "world_baked_vertices": true,
+      "pivot_gltf_y_up": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertices": 72613,
+      "triangles": 33533,
+      "size_bytes": 1956092,
+      "sha256": "13d17a695be837c4dd9aa0e6bc0a1d215807f2c44815e9e2947f8f0fd234adb4",
+      "features": {
+        "avalokitesvara_statue_height_m": 71.0,
+        "chanh_dien_area_m2": 1400.0,
+        "tinh_thanh_garden_statues_3d": 143,
+        "thac_voi_width_m": 40.0,
+        "thac_voi_drop_m": 32.0,
+        "elephant_basalt_boulders": 12,
+        "trees": 185
+      },
+      "sources": [
+        "https://travel.com.vn/tin-tuc-du-lich/chua-linh-an-da-lat-v18543.aspx",
+        "https://hdvlocal.com/blogs/du-lich/chua-linh-an",
+        "https://nucuoimekong.com/chua-linh-an-da-lat",
+        "https://lamdongtours.com/dia-diem-du-lich-da-lat/cong-trinh-ton-giao/chua-linh-an-tu/",
+        "https://lifestyle.zingnews.vn/chua-o-lam-dong-co-tuong-phat-ba-cao-71-m-post1148569.html",
+        "https://vi.wikipedia.org/wiki/Th%C3%A1c_Voi_(Nam_Ban)",
+        "https://vietnamtourism.gov.vn/post/35875",
+        "https://mia.vn/cam-nang-du-lich/thac-voi-da-lat-thac-nuoc-voi-ve-dep-hoang-so-hung-vi-1285",
+        "https://www.klook.com/vi/blog/thac-voi/"
+      ]
+    },
+    {
+      "id": "RING3_AUTO_B01_01_DUC_TRONG_PONGOUR_7TIER_WATERFALL_DAI_NINH",
+      "task_id": "T23_AUTO_B01_PONGOUR_7TIER_FALLS_THANH_MY_TU_TRA_DAIRY_VALLEY",
+      "wave": 6,
+      "batch": "AUTO_B01",
+      "name": "Danh thắng Quốc gia Thác Pongour (Nam Thiên Đệ Nhất Thác 7 Tầng 115m×38m) & Làng Chùa Đại Ninh - Sông Đa Nhim",
+      "district": "Huyện Đức Trọng (Ninh Gia - Phú Hội)",
+      "ring": "RING_3",
+      "file": "02_ASSETS_3D/ring3_districts_ultra/ring3_auto_b01_duc_trong_pongour_7tier_waterfall_and_dai_ninh.glb",
+      "glb_filename": "ring3_auto_b01_duc_trong_pongour_7tier_waterfall_and_dai_ninh.glb",
+      "wgs84_center": {
+        "lat": 11.6894,
+        "lon": 108.2658,
+        "elev_msl": 845.0
+      },
+      "local_origin_m": {
+        "x": -19545.042,
+        "y": -27943.307,
+        "z_local": -633.0
+      },
+      "world_baked_vertices": true,
+      "pivot_gltf_y_up": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertices": 71199,
+      "triangles": 32943,
+      "size_bytes": 1916712,
+      "sha256": "06886383ca60ae793ace69c3dc773b7ab00dd9a838e35d366831a70675becaeb",
+      "features": {
+        "waterfall_tiers": 7,
+        "waterfall_arc_width_m": 115.0,
+        "waterfall_drop_height_m": 38.0,
+        "waterfall_foam_chutes": 18,
+        "basalt_pool_boulders": 28,
+        "monastery_and_visitor_buildings": 23,
+        "night_lights": 25,
+        "trees": 213
+      },
+      "sources": [
+        "https://travel.com.vn/en/tin-tuc-du-lich/thac-pongour-da-lat-v18541.aspx",
+        "https://vinpearl.com/vi/thac-pongour-da-lat",
+        "https://www.traveloka.com/vi-vn/explore/destination/thac-7-tang/174317?utm_id=Pamlbfc2",
+        "https://saigonstartravel.com/kham-pha-khu-du-lich-sinh-thai-thac-pongour-da-lat",
+        "https://donatourist.com/thac-pongour-nam-thien-de-nhat-thac-7-tang-hung-vi",
+        "https://vietgoing.com/destination/648-thac-pongour.html"
+      ]
+    },
+    {
+      "id": "RING3_AUTO_B01_02_DON_DUONG_THANH_MY_TU_TRA_DAIRY_VALLEY",
+      "task_id": "T23_AUTO_B01_PONGOUR_7TIER_FALLS_THANH_MY_TU_TRA_DAIRY_VALLEY",
+      "wave": 6,
+      "batch": "AUTO_B01",
+      "name": "Cụm Đô thị Thị trấn Thạnh Mỹ (QL27 - Cầu Ông Thiều) & Thảo nguyên Nông trường Bò sữa Tu Tra - Dalat Milk Farm",
+      "district": "Huyện Đơn Dương (Thị trấn Thạnh Mỹ & Xã Tu Tra)",
+      "ring": "RING_3",
+      "file": "02_ASSETS_3D/ring3_districts_ultra/ring3_auto_b01_don_duong_thanh_my_town_and_tu_tra_dairy_plateau.glb",
+      "glb_filename": "ring3_auto_b01_don_duong_thanh_my_town_and_tu_tra_dairy_plateau.glb",
+      "wgs84_center": {
+        "lat": 11.7635,
+        "lon": 108.475,
+        "elev_msl": 1012.0
+      },
+      "local_origin_m": {
+        "x": 3239.119,
+        "y": -19694.533,
+        "z_local": -466.0
+      },
+      "world_baked_vertices": true,
+      "pivot_gltf_y_up": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertices": 70183,
+      "triangles": 32781,
+      "size_bytes": 1892264,
+      "sha256": "67eab1f057bccc50d66c135275c2d876453fc9ed557ea03663eb3d27680d9a2f",
+      "features": {
+        "dutch_windmill_height_m": 28.0,
+        "dairy_cattle_barns": 6,
+        "milk_silos": 4,
+        "sunflower_and_pasture_plots": 24,
+        "hightech_greenhouses": 24,
+        "shophouses_and_buildings": 109,
+        "streetlamps": 48,
+        "trees": 183
+      },
+      "sources": [
+        "https://lamdongtours.com/dia-diem-du-lich-da-lat/check-in/dalat-milk-farm/",
+        "https://merperledalat.vn/bai-viet/da-lat-milk-farm/",
+        "https://saigonstartravel.com/dalat-milk-farm",
+        "https://latour.vn/tin-tuc/review-da-lat-milk-farm-nong-trai-sua-song-ao-cuc-pham-da-lat-1715.html",
+        "https://vi.wikipedia.org/wiki/%C4%90%C6%A1n_D%C6%B0%C6%A1ng_(huy%E1%BB%87n)",
+        "https://donduong.lamdong.gov.vn/chi-tiet-tin-tuc/?param=xa-don-duong-tinh-lam-dong-3cef9876-d91e-457e-b638-0d43b00f8183"
+      ]
+    },
+    {
+      "id": "RING3_AUTO_B02_01_LAM_HA_DINH_VAN_PHUC_THO_LAKE_COFFEE_MACADAMIA",
+      "task_id": "T23_AUTO_B02_LAM_HA_DINH_VAN_PHUC_THO_LAKE_AND_DAI_NINH_RESERVOIR_DAM",
+      "wave": 7,
+      "batch": "AUTO_B02",
+      "name": "Cụm Đô thị Thị trấn Đinh Văn (Huyện lỵ Lâm Hà, QL27 × ĐT725), Hồ Thủy lợi Phúc Thọ & Đồi Cà phê - Mắc ca",
+      "district": "Huyện Lâm Hà (Thị trấn Đinh Văn, Xã Phúc Thọ & Xã Tân Hà)",
+      "ring": "RING_3",
+      "file": "02_ASSETS_3D/ring3_districts_ultra/ring3_auto_b02_lam_ha_dinh_van_town_and_phuc_tho_coffee_macadamia_lake.glb",
+      "glb_filename": "ring3_auto_b02_lam_ha_dinh_van_town_and_phuc_tho_coffee_macadamia_lake.glb",
+      "wgs84_center": {
+        "lat": 11.785,
+        "lon": 108.242,
+        "elev_msl": 950.0
+      },
+      "local_origin_m": {
+        "x": -22137.121,
+        "y": -17301.164,
+        "z_local": -528.0
+      },
+      "world_baked_vertices": true,
+      "pivot_gltf_y_up": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertices": 84660,
+      "triangles": 39224,
+      "size_bytes": 2279116,
+      "sha256": "7a610bd1b273c0a0be3d1d5c4435705383a220ebae3c5cfc0289ed18d9ad44f1",
+      "features": {
+        "coffee_macadamia_plots": 32,
+        "hightech_greenhouses": 18,
+        "lakeside_eco_villas": 22,
+        "urban_shophouses_and_admin": 118,
+        "streetlamps": 48,
+        "trees": 248
+      },
+      "sources": [
+        "https://vietnamtourism.gov.vn/post/42901",
+        "https://vietnamtourism.gov.vn/post/37529",
+        "https://baolamdong.vn/xa-phuc-tho-lam-ha-event737.html",
+        "https://anphareal.vn/tin-tuc/ho-phuc-tho-vien-ngoc-xanh-ben-trien-doi-lam-ha",
+        "https://luatvietnam.vn/xay-dung/quyet-dinh-90-qd-ttg-2025-ke-hoach-quy-hoach-tinh-lam-dong-thoi-ky-2021-2030-385811-d1.html"
+      ]
+    },
+    {
+      "id": "RING3_AUTO_B02_02_DUC_TRONG_DAI_NINH_HYDRO_RESERVOIR_DAM_BRIDGE",
+      "task_id": "T23_AUTO_B02_LAM_HA_DINH_VAN_PHUC_THO_LAKE_AND_DAI_NINH_RESERVOIR_DAM",
+      "wave": 7,
+      "batch": "AUTO_B02",
+      "name": "Cụm Hồ chứa & Đập Thủy điện Đại Ninh (300 MW, 319,77 triệu m³, MNDBT 880m MSL) & Cầu Đại Ninh (QL20 × QL28B)",
+      "district": "Huyện Đức Trọng (Xã Ninh Gia & Xã Tà Hine)",
+      "ring": "RING_3",
+      "file": "02_ASSETS_3D/ring3_districts_ultra/ring3_auto_b02_duc_trong_dai_ninh_hydro_reservoir_dam_and_bridge.glb",
+      "glb_filename": "ring3_auto_b02_duc_trong_dai_ninh_hydro_reservoir_dam_and_bridge.glb",
+      "wgs84_center": {
+        "lat": 11.6708,
+        "lon": 108.3138,
+        "elev_msl": 880.0
+      },
+      "local_origin_m": {
+        "x": -14317.318,
+        "y": -30013.85,
+        "z_local": -598.0
+      },
+      "world_baked_vertices": true,
+      "pivot_gltf_y_up": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertices": 64632,
+      "triangles": 30250,
+      "size_bytes": 1743696,
+      "sha256": "44623771e7e0b9b820b91dc3af13dbe7724a542dd9d7acffddc98c611623870c",
+      "features": {
+        "reservoir_mndbt_msl": 880.0,
+        "reservoir_volume_million_m3": 319.77,
+        "main_dam_length_m": 626.0,
+        "main_dam_height_m": 55.0,
+        "spillway_radial_gates": 3,
+        "cau_dai_ninh_bridge_length_m": 240.0,
+        "reservoir_islands": 5,
+        "buildings_and_towers": 56,
+        "night_lights": 42,
+        "trees": 170
+      },
+      "sources": [
+        "https://vi.wikipedia.org/wiki/Th%E1%BB%A7y_%C4%91i%E1%BB%87n_%C4%90%E1%BA%A1i_Ninh",
+        "https://cra.tlu.edu.vn/cong-trinh-tieu-bieu/cong-trinh-thuy-dien-dai-ninh-12091",
+        "https://danviet.vn/tinh-lam-dong-sau-sap-nhap-se-co-duong-ong-dan-nuoc-dai-nhat-viet-nam-d1330709.html",
+        "https://www.vietnamplus.vn/lam-dong-bao-dong-tinh-trang-lan-chiem-ho-thuy-dien-dai-ninh-post754176.vnp"
       ]
     }
   ]

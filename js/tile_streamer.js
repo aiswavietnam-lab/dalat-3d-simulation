@@ -356,10 +356,9 @@
   }
 
   class DalatTileStreamer {
-    constructor(scene, pbrLibrary, onShadowDirty) {
+    constructor(scene, pbrLibrary) {
       this.scene = scene;
       this.pbrLibrary = pbrLibrary || null;
-      this.onShadowDirty = typeof onShadowDirty === 'function' ? onShadowDirty : null;
       this.loader = typeof THREE.GLTFLoader === 'function' ? new THREE.GLTFLoader() : null;
 
       this.layers = {
@@ -385,9 +384,15 @@
       this._completedStreamCount = 0;
       this._lastRebuildCount = 0;
       this.emissiveMaterials = [];
+      this.waterMaterials = [];
       this.waterMeshes = [];
+      this.terrainPickMeshes = [];
       this.pickableMeshes = [];
       this.landmarkMeshes = [];
+      this.vegShadowMeshes = [];
+      this.lodScale = 1.0;
+      this.waterEnhancer = null;
+      this.onStreamBatchSettled = null;
       this.landmarkCatalog = Object.assign({}, DEFAULT_LANDMARK_CATALOG);
       this.worldIndex = null;
 
@@ -419,7 +424,7 @@
       }
       // Một số ô trọng điểm RING_2 (Langbiang, Suối Vàng, Cầu Đất)
       [
-        'T_E00_N00', 'T_E00_N01', 'T_E00_N02', 'T_E00_N03', 'T_E00_N04', 'T_E00_N05', 'T_E00_N06', 'T_E00_S01', 'T_E00_S02', 'T_E00_S03', 'T_E00_S04', 'T_E00_S05', 'T_E00_S06', 'T_E01_N00', 'T_E01_N01', 'T_E01_N02', 'T_E01_N03', 'T_E01_N04', 'T_E01_N05', 'T_E01_N06', 'T_E01_S01', 'T_E01_S02', 'T_E01_S03', 'T_E01_S04', 'T_E01_S05', 'T_E01_S06', 'T_E02_N00', 'T_E02_N01', 'T_E02_N02', 'T_E02_N03', 'T_E02_N04', 'T_E02_N05', 'T_E02_S01', 'T_E02_S02', 'T_E02_S03', 'T_E02_S05', 'T_E02_S06', 'T_E03_N00', 'T_E03_N01', 'T_E03_N02', 'T_E03_N03', 'T_E03_N04', 'T_E03_N05', 'T_E03_S01', 'T_E03_S02', 'T_E03_S03', 'T_E04_N00', 'T_E04_N01', 'T_E04_S01', 'T_E04_S02', 'T_E04_S03', 'T_E05_S01', 'T_E05_S02', 'T_E05_S03', 'T_E06_S02', 'T_E06_S03', 'T_E06_S04', 'T_E07_S03', 'T_E07_S04', 'T_E07_S05', 'T_E08_S04', 'T_E08_S05', 'T_E09_S05', 'T_W01_N00', 'T_W01_N01', 'T_W01_N02', 'T_W01_N03', 'T_W01_N04', 'T_W01_N05', 'T_W01_N06', 'T_W01_S01', 'T_W01_S02', 'T_W01_S03', 'T_W01_S04', 'T_W01_S05', 'T_W01_S06', 'T_W02_N00', 'T_W02_N01', 'T_W02_N02', 'T_W02_N03', 'T_W02_N04', 'T_W02_N05', 'T_W02_S01', 'T_W02_S02', 'T_W02_S03', 'T_W03_N00', 'T_W03_N01', 'T_W03_N02', 'T_W03_N03', 'T_W03_N04', 'T_W03_N05', 'T_W03_N06', 'T_W03_S01', 'T_W03_S02', 'T_W03_S03', 'T_W04_N03', 'T_W04_N04', 'T_W04_N05', 'T_W04_S01', 'T_W05_N04', 'T_W05_N05', 'T_W05_S01', 'T_W05_S02', 'T_W06_N04', 'T_W06_N05', 'T_W06_S02', 'T_W06_S03', 'T_W07_S02', 'T_W07_S03'
+        'T_E00_N00', 'T_E00_N01', 'T_E00_N02', 'T_E00_N03', 'T_E00_N04', 'T_E00_N05', 'T_E00_N06', 'T_E00_N07', 'T_E00_S01', 'T_E00_S02', 'T_E00_S03', 'T_E00_S04', 'T_E00_S05', 'T_E00_S06', 'T_E00_S07', 'T_E01_N00', 'T_E01_N01', 'T_E01_N02', 'T_E01_N03', 'T_E01_N04', 'T_E01_N05', 'T_E01_N06', 'T_E01_S01', 'T_E01_S02', 'T_E01_S03', 'T_E01_S04', 'T_E01_S05', 'T_E01_S06', 'T_E01_S07', 'T_E02_N00', 'T_E02_N01', 'T_E02_N02', 'T_E02_N03', 'T_E02_N04', 'T_E02_N05', 'T_E02_N06', 'T_E02_S01', 'T_E02_S02', 'T_E02_S03', 'T_E02_S05', 'T_E02_S06', 'T_E02_S07', 'T_E03_N00', 'T_E03_N01', 'T_E03_N02', 'T_E03_N03', 'T_E03_N04', 'T_E03_N05', 'T_E03_S01', 'T_E03_S02', 'T_E03_S03', 'T_E03_S06', 'T_E03_S07', 'T_E04_N00', 'T_E04_N01', 'T_E04_N04', 'T_E04_N05', 'T_E04_S01', 'T_E04_S02', 'T_E04_S03', 'T_E04_S07', 'T_E05_N04', 'T_E05_N05', 'T_E05_S01', 'T_E05_S02', 'T_E05_S03', 'T_E05_S04', 'T_E05_S07', 'T_E06_N04', 'T_E06_N05', 'T_E06_S02', 'T_E06_S03', 'T_E06_S04', 'T_E06_S07', 'T_E07_N05', 'T_E07_S03', 'T_E07_S04', 'T_E07_S05', 'T_E08_N05', 'T_E08_S02', 'T_E08_S03', 'T_E08_S04', 'T_E08_S05', 'T_E09_S01', 'T_E09_S02', 'T_E09_S03', 'T_E09_S04', 'T_E09_S05', 'T_E10_S01', 'T_E10_S02', 'T_E10_S03', 'T_E10_S04', 'T_E10_S05', 'T_E11_S05', 'T_W01_N00', 'T_W01_N01', 'T_W01_N02', 'T_W01_N03', 'T_W01_N04', 'T_W01_N05', 'T_W01_N06', 'T_W01_S01', 'T_W01_S02', 'T_W01_S03', 'T_W01_S04', 'T_W01_S05', 'T_W01_S06', 'T_W01_S07', 'T_W02_N00', 'T_W02_N01', 'T_W02_N02', 'T_W02_N03', 'T_W02_N04', 'T_W02_N05', 'T_W02_N06', 'T_W02_S01', 'T_W02_S02', 'T_W02_S03', 'T_W02_S05', 'T_W02_S06', 'T_W02_S07', 'T_W03_N00', 'T_W03_N01', 'T_W03_N02', 'T_W03_N03', 'T_W03_N04', 'T_W03_N05', 'T_W03_N06', 'T_W03_N07', 'T_W03_S01', 'T_W03_S02', 'T_W03_S03', 'T_W03_S07', 'T_W04_N03', 'T_W04_N04', 'T_W04_N05', 'T_W04_N06', 'T_W04_N07', 'T_W04_S01', 'T_W04_S07', 'T_W05_N04', 'T_W05_N05', 'T_W05_N06', 'T_W05_N07', 'T_W05_S01', 'T_W05_S02', 'T_W06_N04', 'T_W06_N05', 'T_W06_N06', 'T_W06_N07', 'T_W06_S02', 'T_W06_S03', 'T_W07_N00', 'T_W07_N04', 'T_W07_N05', 'T_W07_N06', 'T_W07_N07', 'T_W07_S02', 'T_W07_S03', 'T_W08_N00', 'T_W08_N01', 'T_W08_N06', 'T_W08_S01', 'T_W08_S02', 'T_W08_S03', 'T_W08_S04'
       ].forEach((tid) => this._ensureTileRecord(tid));
     }
 
@@ -456,7 +461,10 @@
       if (!this.tileGroups.has(tileId)) {
         this.tileGroups.set(tileId, {
           terrain: [],
+          water: [],
           vegetation: [],
+          landmarks: [],
+          roads: [],
           buildings: [],
         });
       }
@@ -466,11 +474,36 @@
     setLayerVisible(layerName, visible) {
       if (this.layers[layerName]) {
         this.layers[layerName].visible = Boolean(visible);
+        this.rebuildPickableList();
+        if (typeof this.onStreamBatchSettled === 'function') {
+          this.onStreamBatchSettled();
+        }
       }
     }
 
+    setWaterEnhancer(fn) {
+      this.waterEnhancer = typeof fn === 'function' ? fn : null;
+      if (this.waterEnhancer) {
+        for (const mat of this.waterMaterials) {
+          this.waterEnhancer(mat);
+        }
+      }
+    }
+
+    setQualityProfile(cfg) {
+      if (!cfg) return;
+      this.lodScale = Number(cfg.lodScale || 1.0);
+      this._maxConcurrentStreams = Number(cfg.maxConcurrentStreams || 4);
+      const enableVegShadows = Boolean(cfg.shadows && cfg.id !== 'fast');
+      for (const rec of this.vegShadowMeshes) {
+        if (!rec || !rec.mesh) continue;
+        rec.mesh.castShadow = enableVegShadows && (cfg.id === 'ultra' || rec.isCoreTile);
+      }
+      this._drainStreamQueue();
+    }
+
     /**
-     * Khử transmission > 0, nâng cấp vật liệu màu solid sang PBR dùng chung + bù UV chuẩn mét
+     * Khử toàn bộ transmission > 0, nâng cấp vật liệu màu solid sang PBR dùng chung + bù UV chuẩn mét
      * và đóng băng ma trận tĩnh để tối ưu FPS
      */
     sanitizeLoadedObject(root, isWaterLayer, landmarkMeta, allowCastShadow = true) {
@@ -507,8 +540,14 @@
           if (isWaterLayer) {
             mat.transparent = true;
             mat.opacity = 0.9;
-            mat.roughness = 0.12;
-            mat.metalness = 0.22;
+            mat.roughness = 0.14;
+            mat.metalness = 0.32;
+            if (!this.waterMaterials.includes(mat)) {
+              this.waterMaterials.push(mat);
+            }
+            if (this.waterEnhancer) {
+              this.waterEnhancer(mat);
+            }
           }
           if (mat.emissive && (mat.emissive.r > 0 || mat.emissive.g > 0 || mat.emissive.b > 0)) {
             this.registerEmissiveMaterial(mat, mat.emissiveIntensity || 1.0);
@@ -540,14 +579,18 @@
     }
 
     rebuildPickableList() {
+      this.terrainPickMeshes = [];
       this.pickableMeshes = [];
       this.landmarkMeshes = [];
       ['terrain', 'water', 'landmarks', 'roads', 'buildings'].forEach((k) => {
         const grp = this.layers[k];
-        if (!grp) return;
+        if (!grp || !grp.visible) return;
         grp.traverse((obj) => {
           if (obj.isMesh && obj.visible) {
             this.pickableMeshes.push(obj);
+            if (k === 'terrain' || k === 'water') {
+              this.terrainPickMeshes.push(obj);
+            }
             if (k === 'landmarks' || (obj.userData && obj.userData.landmarkId)) {
               this.landmarkMeshes.push(obj);
             }
@@ -643,7 +686,9 @@
             ) {
               this._lastRebuildCount = this._completedStreamCount;
               this.rebuildPickableList();
-              if (this.onShadowDirty) this.onShadowDirty();
+              if (typeof this.onStreamBatchSettled === 'function') {
+                this.onStreamBatchSettled();
+              }
             }
             job.resolve();
             const delayMs = job.priority >= 10 ? 25 : 0;
@@ -849,10 +894,9 @@
 
       if (layers.buildings && layers.buildings.length > 0) {
         for (const item of layers.buildings) {
-          const p = this._queueOrDeferTileTask(item.tile_id, item.url, 8, () =>
+          this._queueOrDeferTileTask(item.tile_id, item.url, 12, () =>
             this._loadGlbIntoLayer(item.url, 'buildings', false, item.tile_id)
           );
-          if (p) corePromises.push(p);
         }
       }
 
@@ -868,14 +912,19 @@
       if (!cameraPosGltf) return;
       const camX = cameraPosGltf.x;
       const camYNorth = -cameraPosGltf.z;
+      const scale = this.lodScale || 1.0;
+      const lod0Max = LOD_CONFIG.LOD0_MAX_M * scale;
+      const lod1Max = LOD_CONFIG.LOD1_MAX_M * scale;
+      const lod2Max = LOD_CONFIG.LOD2_MAX_M * scale;
+      let anyLodChanged = false;
 
       for (const [tileId, rec] of this.tileRegistry.entries()) {
         const dist = Math.hypot(camX - rec.center_x, camYNorth - rec.center_y);
         rec.distance_m = dist;
 
-        // Nạp động các Tile trong vùng LOD0..LOD1 (<= 6.2 km) khi camera di chuyển/bay tour tới gần
+        // Nạp động các Tile trong vùng LOD0..LOD1 khi camera di chuyển/bay tour tới gần
         if (
-          dist <= LOD_CONFIG.LOD1_MAX_M &&
+          dist <= lod1Max &&
           Array.isArray(rec.pendingLoads) &&
           rec.pendingLoads.length > 0
         ) {
@@ -889,28 +938,33 @@
         // Xác định mức LOD với độ trễ hysteresis
         let nextLod = rec.current_lod;
         const h = LOD_CONFIG.UNLOAD_HYSTERESIS_M;
-        if (dist <= LOD_CONFIG.LOD0_MAX_M) {
+        if (dist <= lod0Max) {
           nextLod = 'LOD0';
-        } else if (dist <= LOD_CONFIG.LOD1_MAX_M) {
-          if (rec.current_lod === 'LOD0' && dist < LOD_CONFIG.LOD0_MAX_M + h * 0.4) {
+        } else if (dist <= lod1Max) {
+          if (rec.current_lod === 'LOD0' && dist < lod0Max + h * 0.4) {
             nextLod = 'LOD0';
           } else {
             nextLod = 'LOD1';
           }
-        } else if (dist <= LOD_CONFIG.LOD2_MAX_M) {
-          if (rec.current_lod === 'LOD1' && dist < LOD_CONFIG.LOD1_MAX_M + h * 0.5) {
+        } else if (dist <= lod2Max) {
+          if (rec.current_lod === 'LOD1' && dist < lod1Max + h * 0.5) {
             nextLod = 'LOD1';
           } else {
             nextLod = 'LOD2';
           }
-        } else if (dist > LOD_CONFIG.LOD2_MAX_M + h) {
+        } else if (dist > lod2Max + h) {
           nextLod = 'CULLED';
         }
 
         if (nextLod !== rec.current_lod) {
           rec.current_lod = nextLod;
           this._applyTileLodVisibility(tileId, nextLod);
+          anyLodChanged = true;
         }
+      }
+
+      if (anyLodChanged && typeof this.onStreamBatchSettled === 'function') {
+        this.onStreamBatchSettled();
       }
     }
 
@@ -918,11 +972,16 @@
       const bucket = this.tileGroups.get(tileId);
       if (!bucket) return;
 
-      const showTerrain = lodState !== 'CULLED';
+      const isCore = tileId === 'T_E00_N00';
+      const showTerrain = isCore || lodState !== 'CULLED';
       const showVeg = lodState === 'LOD0' || lodState === 'LOD1';
       const showBuildings = lodState === 'LOD0' || lodState === 'LOD1';
+      const showRoads = isCore || lodState === 'LOD0' || lodState === 'LOD1';
 
       for (const obj of bucket.terrain) obj.visible = showTerrain;
+      for (const obj of bucket.water) obj.visible = showTerrain;
+      for (const obj of bucket.landmarks) obj.visible = showTerrain;
+      for (const obj of bucket.roads) obj.visible = showRoads;
       for (const obj of bucket.vegetation) {
         // Ở LOD1 ẩn các bụi cây thấp (da_quy_bush) để tăng FPS
         if (obj.userData && obj.userData.isLowShrub) {
@@ -951,7 +1010,7 @@
     _loadGlbIntoLayer(url, layerName, isWater, tileId) {
       if (!this.loader || this.loadedUrls.has(url)) return Promise.resolve();
       this.loadedUrls.add(url);
-      const allowCastShadow = layerName === 'landmarks' || layerName === 'buildings';
+      const allowCastShadow = layerName === 'landmarks';
       return new Promise((resolve) => {
         this.loader.load(
           url,
@@ -1020,12 +1079,25 @@
               root.userData.landmarkMeta = Object.assign({}, meta, { isRealGlb: true });
               this.sanitizeLoadedObject(root, false, root.userData.landmarkMeta);
 
-              // Gắn nhãn tên công trình phía trên đỉnh
-              const topY = (box.max.y || 24) + 10;
-              const label = this._createLabelSprite(meta.name_vi.split('(')[0].trim(), 0, topY, 0);
-              root.add(label);
+              // Chỉ gắn nhãn tên nổi 3D cho công trình có tên tiếng Việt chuẩn (bỏ qua mã file snake_case)
+              const cleanTitle = String(meta.name_vi || '').split('(')[0].trim();
+              if (cleanTitle && !cleanTitle.includes('_')) {
+                const topY = (box.max.y || 24) + 10;
+                const lx = Math.hypot(center.x, center.z) > 160.0 ? center.x - root.position.x : 0;
+                const lz = Math.hypot(center.x, center.z) > 160.0 ? center.z - root.position.z : 0;
+                const ly = Math.max(14, topY - root.position.y);
+                const label = this._createLabelSprite(cleanTitle, lx, ly, lz);
+                root.add(label);
+              }
 
               this.layers.landmarks.add(root);
+              const tid = meta.tile_id || this._inferRegionTileId(item);
+              if (tid) {
+                const bucket = this._ensureTileGroupBucket(tid);
+                bucket.landmarks.push(root);
+                const rec = this.tileRegistry.get(tid);
+                if (rec) this._applyTileLodVisibility(tid, rec.current_lod);
+              }
             }
             resolve();
           },
@@ -1198,13 +1270,19 @@
         transparent: true,
         opacity: 0.88,
         roughness: 0.14,
-        metalness: 0.22,
+        metalness: 0.32,
       });
 
       const waterMesh = new THREE.Mesh(geo, mat);
       if (this.pbrLibrary) {
         geo.deleteAttribute('uv');
         this.pbrLibrary.upgradeObjectHierarchy(waterMesh, true);
+      }
+      if (!this.waterMaterials.includes(waterMesh.material)) {
+        this.waterMaterials.push(waterMesh.material);
+      }
+      if (this.waterEnhancer) {
+        this.waterEnhancer(waterMesh.material);
       }
       waterMesh.receiveShadow = true;
       waterMesh.userData.isFallback = true;
@@ -1317,14 +1395,15 @@
 
       const trunks = new THREE.InstancedMesh(trunkGeo, trunkMat, count);
       const crowns = new THREE.InstancedMesh(crownGeo, crownMat, count);
-      const castVegShadow = tileId === 'T_E00_N00';
+      const isCoreTile = tileId === 'T_E00_N00';
       trunks.castShadow = false;
-      crowns.castShadow = castVegShadow;
+      crowns.castShadow = isCoreTile;
       crowns.receiveShadow = true;
       trunks.userData.isFallback = isFallback;
       crowns.userData.isFallback = isFallback;
       trunks.matrixAutoUpdate = false;
       crowns.matrixAutoUpdate = false;
+      this.vegShadowMeshes.push({ mesh: crowns, isCoreTile });
 
       const dummy = new THREE.Object3D();
       items.forEach((it, idx) => {
@@ -1392,7 +1471,6 @@
         crownGeo.deleteAttribute('uv');
         const cUp = this.pbrLibrary.upgradeMaterial(crownMat, false);
         crownMat = cUp.material;
-        // Chiếu cầu nhẹ không đường nối cho khối tán hoa Mai Anh Đào
         const pos = crownGeo.attributes.position;
         const cUv = new Float32Array(pos.count * 2);
         for (let i = 0; i < pos.count; i++) {
@@ -1405,11 +1483,13 @@
 
       const trunks = new THREE.InstancedMesh(trunkGeo, trunkMat, count);
       const crowns = new THREE.InstancedMesh(crownGeo, crownMat, count);
-      crowns.castShadow = tileId === 'T_E00_N00';
+      const isCoreTile = tileId === 'T_E00_N00';
+      crowns.castShadow = isCoreTile;
       trunks.userData.isFallback = isFallback;
       crowns.userData.isFallback = isFallback;
       trunks.matrixAutoUpdate = false;
       crowns.matrixAutoUpdate = false;
+      this.vegShadowMeshes.push({ mesh: crowns, isCoreTile });
 
       const dummy = new THREE.Object3D();
       items.forEach((it, idx) => {
@@ -1788,6 +1868,9 @@
     update(dt, elapsed) {
       for (const mesh of this.waterMeshes) {
         if (!mesh.visible || !mesh.geometry || !mesh.geometry.userData.baseY) continue;
+        if (mesh.material && mesh.material.userData && mesh.material.userData.dalatRealtimeWater) {
+          continue;
+        }
         const pos = mesh.geometry.attributes.position;
         for (let i = 0; i < pos.count; i++) {
           const x = pos.getX(i);

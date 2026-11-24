@@ -2,11 +2,11 @@
   "schema_version": "2.0.0",
   "project_name": "DALAT_3D_SIMULATION",
   "slot": 4,
-  "wave_completed": 10,
-  "updated_at_utc": "2026-11-24T03:43:33.512602+00:00",
+  "wave_completed": 13,
+  "updated_at_utc": "2026-11-24T09:49:50.781941+00:00",
   "registry_path": "01_DATA_REFS/landmarks_specs/landmarks_registry.json",
-  "total_registered_landmarks": 36,
-  "built_landmarks_count": 36,
+  "total_registered_landmarks": 48,
+  "built_landmarks_count": 48,
   "coordinate_origin": {
     "name": "Tam_Ho_Xuan_Huong_Da_Lat",
     "lat0": 11.940419,
@@ -4086,7 +4086,1363 @@
       "architect": "Kỹ sư Pháp Sở Đồn điền Trà Cầu Đất (Société des Plantations de Thé de Cầu Đất, 1927)",
       "year_completed": "1927",
       "description_vi": "Được người Pháp xây dựng năm 1927 trên cao nguyên Cầu Đất ở độ cao 1.650m, Nhà máy Chè cổ Cầu Đất là nhà máy sản xuất trà cổ nhất Đông Nam Á còn lưu giữ nguyên vẹn hệ thống 3 gian xưởng mái dốc, ống khói lò sấy gạch đỏ và cỗ máy chế biến trà gần 100 năm tuổi giữa đồi chè xanh ngát."
+    },
+    {
+      "id": "lm_37_biet_dien_tran_le_xuan",
+      "name_vi": "Biệt điện Trần Lệ Xuân & Trung tâm Lưu trữ Quốc gia IV (Mộc bản Triều Nguyễn)",
+      "name_en": "Tran Le Xuan Palace Trio & National Archives Center IV (UNESCO Woodblocks)",
+      "wave": 11,
+      "tier": 1,
+      "ring": 0,
+      "status": "built",
+      "built": true,
+      "lat": 11.9435,
+      "lon": 108.4265,
+      "elev_msl_m": 1520.0,
+      "x_m": -2043.06,
+      "y_m": 342.975,
+      "z_local_m": 42.0,
+      "gltf_position": [
+        -2043.06,
+        42.0,
+        -342.975
+      ],
+      "tile_id": "T_W01_N00",
+      "heading_deg": 140.0,
+      "rotation_y_rad": -2.443461,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "pivot_local_gltf": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "foundation_skirt_m": -3.0,
+      "bbox_y_range_m": [
+        -3.0,
+        15.0
+      ],
+      "footprint_m": {
+        "length": 96.0,
+        "width": 82.0,
+        "max_height": 15.0
+      },
+      "exclusion_polygon_wgs84": [
+        [
+          108.4270977,
+          11.9434395
+        ],
+        [
+          108.4264571,
+          11.9429136
+        ],
+        [
+          108.4263476,
+          11.942923
+        ],
+        [
+          108.4258927,
+          11.9434534
+        ],
+        [
+          108.4259023,
+          11.9435605
+        ],
+        [
+          108.4265429,
+          11.9440864
+        ],
+        [
+          108.4266524,
+          11.944077
+        ],
+        [
+          108.4271073,
+          11.9435466
+        ],
+        [
+          108.4270977,
+          11.9434395
+        ]
+      ],
+      "glb_path": "02_ASSETS_3D/landmarks/lm_37_biet_dien_tran_le_xuan.glb",
+      "sha256": "666e78a89bb70d06a231ed4fc51781f249d13281d99e2e7ec666ff359ff77705",
+      "size_bytes": 358884,
+      "triangles": 9746,
+      "nodes": 18,
+      "materials": 13,
+      "emissive_materials": 1,
+      "no_khr_transmission": true,
+      "camera_preset": {
+        "eye_gltf": [
+          -1950.395,
+          68.0,
+          -295.76
+        ],
+        "target_gltf": [
+          -2043.06,
+          48.2,
+          -342.975
+        ],
+        "local_offset_gltf": [
+          92.665,
+          26.0,
+          47.215
+        ],
+        "fov_deg": 45.0,
+        "distance_m": 105.87
+      },
+      "architectural_style": "French-Modernist First-Republic Palace Ensemble & Japanese Zen Garden Architecture (1958-1962)",
+      "architect": "KTS Nguyễn Văn Hoa & Kiến trúc sư Pháp – Nhật (xây dựng 1958–1962)",
+      "year_completed": "1962",
+      "description_vi": "Khởi công năm 1958 trên đồi thông số 2 Yết Kiêu rộng 13.000 m², Biệt điện Trần Lệ Xuân gồm 3 tòa biệt thự Bạch Ngọc, Lam Ngọc, Hồng Ngọc kết hợp hồ bơi nước nóng và Vườn Nhật Bản; hiện là Trung tâm Lưu trữ Quốc gia IV bảo quản khối Mộc bản Triều Nguyễn – Di sản Tư liệu Thế giới đầu tiên của Việt Nam được UNESCO vinh danh."
+    },
+    {
+      "id": "lm_38_giao_hoang_hoc_vien",
+      "name_vi": "Giáo hoàng Học viện Thánh Piô X Đà Lạt (1957–1959, Đồi Thánh Tâm)",
+      "name_en": "Pontifical College of St. Pius X Da Lat (Architect To Cong Van, 1957-1959)",
+      "wave": 11,
+      "tier": 1,
+      "ring": 0,
+      "status": "built",
+      "built": true,
+      "lat": 11.9518,
+      "lon": 108.4426,
+      "elev_msl_m": 1525.0,
+      "x_m": -289.594,
+      "y_m": 1266.927,
+      "z_local_m": 47.0,
+      "gltf_position": [
+        -289.594,
+        47.0,
+        -1266.927
+      ],
+      "tile_id": "T_E00_N01",
+      "heading_deg": 195.0,
+      "rotation_y_rad": -3.403392,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "pivot_local_gltf": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "foundation_skirt_m": -3.0,
+      "bbox_y_range_m": [
+        -3.0,
+        22.0
+      ],
+      "footprint_m": {
+        "length": 102.0,
+        "width": 84.0,
+        "max_height": 22.0
+      },
+      "exclusion_polygon_wgs84": [
+        [
+          108.4429173,
+          11.9512658
+        ],
+        [
+          108.4420522,
+          11.9514926
+        ],
+        [
+          108.4419955,
+          11.9515886
+        ],
+        [
+          108.4421845,
+          11.9522788
+        ],
+        [
+          108.4422827,
+          11.9523342
+        ],
+        [
+          108.4431478,
+          11.9521074
+        ],
+        [
+          108.4432045,
+          11.9520114
+        ],
+        [
+          108.4430155,
+          11.9513212
+        ],
+        [
+          108.4429173,
+          11.9512658
+        ]
+      ],
+      "glb_path": "02_ASSETS_3D/landmarks/lm_38_giao_hoang_hoc_vien.glb",
+      "sha256": "8fe524f85f504b8cd75d9f6d49ea0e02995a82f7a3b44a09925e39fc9d1378e2",
+      "size_bytes": 564984,
+      "triangles": 14638,
+      "nodes": 18,
+      "materials": 12,
+      "emissive_materials": 1,
+      "no_khr_transmission": true,
+      "camera_preset": {
+        "eye_gltf": [
+          -276.188,
+          75.0,
+          -1157.747
+        ],
+        "target_gltf": [
+          -289.594,
+          54.8,
+          -1266.927
+        ],
+        "local_offset_gltf": [
+          13.406,
+          28.0,
+          109.18
+        ],
+        "fov_deg": 45.0,
+        "distance_m": 111.84
+      },
+      "architectural_style": "Mid-Century Vietnamese Modernist Religious-Academic & Brise-Soleil Architecture (1957-1959)",
+      "architect": "KTS Tô Công Văn (khởi công 1957, khánh thành 1959)",
+      "year_completed": "1959",
+      "description_vi": "Tọa lạc uy nghi trên Đồi Thánh Tâm (đường Phù Đổng Thiên Vương), Giáo hoàng Học viện Thánh Piô X Đà Lạt do KTS Tô Công Văn thiết kế (1957–1959) là biểu tượng tiêu biểu của kiến trúc Hiện đại miền Nam thế kỷ XX với hệ lam đứng chắn nắng bê tông nhịp nhàng và tháp chuông cao vút giữa đồi thông."
+    },
+    {
+      "id": "lm_39_lang_nguyen_huu_hao",
+      "name_vi": "Lăng Nguyễn Hữu Hào (1939–1941, Đồi Thông Cam Ly – Hoàng Văn Thụ)",
+      "name_en": "Duke Nguyen Huu Hao Imperial Mausoleum (Cam Ly Pine Hill, 1939-1941)",
+      "wave": 11,
+      "tier": 1,
+      "ring": 1,
+      "status": "built",
+      "built": true,
+      "lat": 11.9362,
+      "lon": 108.4168,
+      "elev_msl_m": 1518.0,
+      "x_m": -3099.495,
+      "y_m": -469.657,
+      "z_local_m": 40.0,
+      "gltf_position": [
+        -3099.495,
+        40.0,
+        469.657
+      ],
+      "tile_id": "T_W02_N00",
+      "heading_deg": 170.0,
+      "rotation_y_rad": -2.96706,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "pivot_local_gltf": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "foundation_skirt_m": -3.0,
+      "bbox_y_range_m": [
+        -3.0,
+        14.5
+      ],
+      "footprint_m": {
+        "length": 76.0,
+        "width": 98.0,
+        "max_height": 14.5
+      },
+      "exclusion_polygon_wgs84": [
+        [
+          108.4172139,
+          11.9357697
+        ],
+        [
+          108.4165614,
+          11.9356572
+        ],
+        [
+          108.4164772,
+          11.9357149
+        ],
+        [
+          108.4163271,
+          11.9365479
+        ],
+        [
+          108.4163861,
+          11.9366303
+        ],
+        [
+          108.4170386,
+          11.9367428
+        ],
+        [
+          108.4171228,
+          11.9366851
+        ],
+        [
+          108.4172729,
+          11.9358521
+        ],
+        [
+          108.4172139,
+          11.9357697
+        ]
+      ],
+      "glb_path": "02_ASSETS_3D/landmarks/lm_39_lang_nguyen_huu_hao.glb",
+      "sha256": "34336615d8dbc2291ad9835b892c4c3734bf911b4d305dd6dbf98473534232e0",
+      "size_bytes": 348472,
+      "triangles": 11096,
+      "nodes": 15,
+      "materials": 11,
+      "emissive_materials": 1,
+      "no_khr_transmission": true,
+      "camera_preset": {
+        "eye_gltf": [
+          -3041.763,
+          67.0,
+          558.556
+        ],
+        "target_gltf": [
+          -3099.495,
+          46.5,
+          469.657
+        ],
+        "local_offset_gltf": [
+          57.732,
+          27.0,
+          88.899
+        ],
+        "fov_deg": 45.0,
+        "distance_m": 107.96
+      },
+      "architectural_style": "Hue Imperial Mausoleum & Early Modern Neo-Classical Architecture (1939-1941)",
+      "architect": "Kiến trúc sư triều Nguyễn & Nam Phương Hoàng hậu (xây dựng 1939–1941)",
+      "year_completed": "1941",
+      "description_vi": "Được xây dựng từ năm 1939 đến 1941 trên đỉnh đồi thông nhìn xuống thác Cam Ly để an táng Quốc công Nguyễn Hữu Hào (thân phụ Nam Phương Hoàng hậu), khu lăng mộ gây ấn tượng với 158 bậc thang đá 'Nhất chính đạo', 4 trụ biểu hoa sen và tòa Chính tẩm mái lưu ly cung đình Huế trầm mặc."
+    },
+    {
+      "id": "lm_40_thien_vuong_co_sat",
+      "name_vi": "Chùa Thiên Vương Cổ Sát (Chùa Tàu / Chùa Phật Trầm 1958 – Đồi Rồng Khe Sanh)",
+      "name_en": "Thien Vuong Co Sat Chinese Buddhist Monastery & Sandalwood Buddha Pagoda (1958)",
+      "wave": 11,
+      "tier": 1,
+      "ring": 0,
+      "status": "built",
+      "built": true,
+      "lat": 11.9265,
+      "lon": 108.4685,
+      "elev_msl_m": 1536.0,
+      "x_m": 2531.198,
+      "y_m": -1549.456,
+      "z_local_m": 58.0,
+      "gltf_position": [
+        2531.198,
+        58.0,
+        1549.456
+      ],
+      "tile_id": "T_E01_S01",
+      "heading_deg": 215.0,
+      "rotation_y_rad": -3.752458,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "pivot_local_gltf": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "foundation_skirt_m": -3.0,
+      "bbox_y_range_m": [
+        -3.0,
+        16.5
+      ],
+      "footprint_m": {
+        "length": 88.0,
+        "width": 82.0,
+        "max_height": 16.5
+      },
+      "exclusion_polygon_wgs84": [
+        [
+          108.4685649,
+          11.9259401
+        ],
+        [
+          108.46794,
+          11.9263682
+        ],
+        [
+          108.467921,
+          11.926474
+        ],
+        [
+          108.4683269,
+          11.9270412
+        ],
+        [
+          108.4684351,
+          11.9270599
+        ],
+        [
+          108.46906,
+          11.9266318
+        ],
+        [
+          108.469079,
+          11.926526
+        ],
+        [
+          108.4686731,
+          11.9259588
+        ],
+        [
+          108.4685649,
+          11.9259401
+        ]
+      ],
+      "glb_path": "02_ASSETS_3D/landmarks/lm_40_thien_vuong_co_sat.glb",
+      "sha256": "910550dae88608ef57f54e4e442a61ef65fe89d1242d8050cf1bf0852f0cbc99",
+      "size_bytes": 354912,
+      "triangles": 9856,
+      "nodes": 17,
+      "materials": 12,
+      "emissive_materials": 1,
+      "no_khr_transmission": true,
+      "camera_preset": {
+        "eye_gltf": [
+          2509.153,
+          84.0,
+          1644.944
+        ],
+        "target_gltf": [
+          2531.198,
+          64.8,
+          1549.456
+        ],
+        "local_offset_gltf": [
+          -22.045,
+          26.0,
+          95.488
+        ],
+        "fov_deg": 45.0,
+        "distance_m": 99.86
+      },
+      "architectural_style": "Chinese-Vietnamese Octagonal Pagoda & Monastery Architecture (Monk Tho Da, 1958)",
+      "architect": "Hòa thượng Thọ Dã (Hội quán Triều Châu kiến tạo năm 1958)",
+      "year_completed": "1958",
+      "description_vi": "Tọa lạc trên Đồi Rồng (385 Khe Sanh), Chùa Thiên Vương Cổ Sát (Chùa Tàu) do Hòa thượng Thọ Dã khởi dựng năm 1958 nổi tiếng với tòa Quang Minh Bảo Điện bát giác ở trung tâm, bộ Tam Thế Phật bằng gỗ trầm hương cao 4m quý hiếm trong Từ Bi Bảo Điện, chiếc Bàn Xoay Kỳ Diệu và tượng Phật Thích Ca lộ thiên uy nghiêm."
+    },
+    {
+      "id": "lm_41_lang_biet_thu_co_cadasa",
+      "name_vi": "Làng Biệt thự Pháp cổ Cadasa Đà Lạt (16 Trần Hưng Đạo – Quần thể Di sản 1920s)",
+      "name_en": "Dalat Cadasa Historic French Colonial Villa Cluster (16 Tran Hung Dao Boulevard)",
+      "wave": 12,
+      "tier": 1,
+      "ring": 0,
+      "status": "built",
+      "built": true,
+      "lat": 11.9395,
+      "lon": 108.4562,
+      "elev_msl_m": 1516.0,
+      "x_m": 1191.594,
+      "y_m": -102.303,
+      "z_local_m": 38.0,
+      "gltf_position": [
+        1191.594,
+        38.0,
+        102.303
+      ],
+      "tile_id": "T_E01_N00",
+      "heading_deg": 165.0,
+      "rotation_y_rad": -2.879793,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "pivot_local_gltf": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "foundation_skirt_m": -3.0,
+      "bbox_y_range_m": [
+        -3.0,
+        15.5
+      ],
+      "footprint_m": {
+        "length": 98.0,
+        "width": 82.0,
+        "max_height": 15.5
+      },
+      "exclusion_polygon_wgs84": [
+        [
+          108.4567245,
+          11.9392004
+        ],
+        [
+          108.4558989,
+          11.938984
+        ],
+        [
+          108.4558038,
+          11.9390377
+        ],
+        [
+          108.4556206,
+          11.9397065
+        ],
+        [
+          108.4556755,
+          11.9397996
+        ],
+        [
+          108.4565011,
+          11.940016
+        ],
+        [
+          108.4565962,
+          11.9399623
+        ],
+        [
+          108.4567794,
+          11.9392935
+        ],
+        [
+          108.4567245,
+          11.9392004
+        ]
+      ],
+      "glb_path": "02_ASSETS_3D/landmarks/lm_41_lang_biet_thu_co_cadasa.glb",
+      "sha256": "54100b75a9b2c71443e59c084aa66ef53a103e4e1ef3eb4dbaef8038670d98a8",
+      "size_bytes": 312284,
+      "triangles": 8786,
+      "nodes": 17,
+      "materials": 12,
+      "emissive_materials": 1,
+      "no_khr_transmission": true,
+      "camera_preset": {
+        "eye_gltf": [
+          1255.623,
+          64.0,
+          184.256
+        ],
+        "target_gltf": [
+          1191.594,
+          44.2,
+          102.303
+        ],
+        "local_offset_gltf": [
+          64.029,
+          26.0,
+          81.953
+        ],
+        "fov_deg": 45.0,
+        "distance_m": 105.87
+      },
+      "architectural_style": "1920s-1930s Northern French Regional Normandy Colombage, Basque & Mansard Villa Ensemble",
+      "architect": "Các kiến trúc sư Pháp quy hoạch đại lộ Trần Hưng Đạo thập niên 1920–1930",
+      "year_completed": "1932",
+      "description_vi": "Trải dài dưới tán thông cổ thụ dọc đại lộ di sản Trần Hưng Đạo, Làng Biệt thự Pháp cổ Cadasa (số 14–16–18 Trần Hưng Đạo) quy tụ những tuyệt tác kiến trúc biệt thự miền Bắc nước Pháp thập niên 1920–1930 với khung gỗ colombage vùng Normandy, mái lệch Basque, lò sưởi ống khói đá chẻ và vườn hoa hồng cổ điển."
+    },
+    {
+      "id": "lm_42_nha_tho_thanh_mau",
+      "name_vi": "Nhà thờ Thánh Mẫu Đà Lạt (1964, KTS Ngô Viết Thụ phác thảo – 117 Thánh Mẫu)",
+      "name_en": "Thanh Mau Pink Church of Da Lat (Architect Ngo Viet Thu Sketch Design, 1964)",
+      "wave": 12,
+      "tier": 1,
+      "ring": 1,
+      "status": "built",
+      "built": true,
+      "lat": 11.9728,
+      "lon": 108.4275,
+      "elev_msl_m": 1524.0,
+      "x_m": -1934.149,
+      "y_m": 3604.636,
+      "z_local_m": 46.0,
+      "gltf_position": [
+        -1934.149,
+        46.0,
+        -3604.636
+      ],
+      "tile_id": "T_W01_N02",
+      "heading_deg": 150.0,
+      "rotation_y_rad": -2.617994,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "pivot_local_gltf": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "foundation_skirt_m": -3.0,
+      "bbox_y_range_m": [
+        -3.0,
+        25.0
+      ],
+      "footprint_m": {
+        "length": 86.0,
+        "width": 78.0,
+        "max_height": 25.0
+      },
+      "exclusion_polygon_wgs84": [
+        [
+          108.4280318,
+          11.9726336
+        ],
+        [
+          108.4273814,
+          11.9722662
+        ],
+        [
+          108.4272798,
+          11.9722928
+        ],
+        [
+          108.426941,
+          11.972867
+        ],
+        [
+          108.4269682,
+          11.9729664
+        ],
+        [
+          108.4276186,
+          11.9733338
+        ],
+        [
+          108.4277202,
+          11.9733072
+        ],
+        [
+          108.428059,
+          11.972733
+        ],
+        [
+          108.4280318,
+          11.9726336
+        ]
+      ],
+      "glb_path": "02_ASSETS_3D/landmarks/lm_42_nha_tho_thanh_mau.glb",
+      "sha256": "0c317a8328cd6d1a982c958cc3d7fd6846e8183de7f4d4e2d2bd3b7732678b51",
+      "size_bytes": 364256,
+      "triangles": 12061,
+      "nodes": 17,
+      "materials": 12,
+      "emissive_materials": 1,
+      "no_khr_transmission": true,
+      "camera_preset": {
+        "eye_gltf": [
+          -1856.924,
+          73.0,
+          -3544.301
+        ],
+        "target_gltf": [
+          -1934.149,
+          54.2,
+          -3604.636
+        ],
+        "local_offset_gltf": [
+          77.225,
+          27.0,
+          60.335
+        ],
+        "fov_deg": 45.0,
+        "distance_m": 99.79
+      },
+      "architectural_style": "Mid-Century Vietnamese Modernist-Gothic Pink Sanctuary & Praying-Hands Bell Tower (1964)",
+      "architect": "KTS Ngô Viết Thụ phác thảo kiểu dáng kiến trúc (khánh thành mùa xuân 1964)",
+      "year_completed": "1964",
+      "description_vi": "Khánh thành vào mùa xuân năm Giáp Thìn 1964 trên đồi cao đường Thánh Mẫu (Phường 7) theo phác thảo của KTS danh tiếng Ngô Viết Thụ, Nhà thờ Thánh Mẫu nổi bật với sắc hồng phấn dịu dàng và tòa tháp chuông cao 25m vươn lên trời xanh tựa đôi bàn tay chắp cầu nguyện."
+    },
+    {
+      "id": "lm_43_chua_linh_quang",
+      "name_vi": "Tổ đình Chùa Linh Quang (1931 – Sắc tứ Linh Quang Tự, 133 Hai Bà Trưng)",
+      "name_en": "Linh Quang Ancestral Buddhist Pagoda (First Pagoda of Da Lat, Founded 1931)",
+      "wave": 12,
+      "tier": 1,
+      "ring": 0,
+      "status": "built",
+      "built": true,
+      "lat": 11.9542,
+      "lon": 108.4296,
+      "elev_msl_m": 1508.0,
+      "x_m": -1705.436,
+      "y_m": 1534.094,
+      "z_local_m": 30.0,
+      "gltf_position": [
+        -1705.436,
+        30.0,
+        -1534.094
+      ],
+      "tile_id": "T_W01_N01",
+      "heading_deg": 210.0,
+      "rotation_y_rad": -3.665191,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "pivot_local_gltf": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "foundation_skirt_m": -3.0,
+      "bbox_y_range_m": [
+        -3.0,
+        16.5
+      ],
+      "footprint_m": {
+        "length": 88.0,
+        "width": 80.0,
+        "max_height": 16.5
+      },
+      "exclusion_polygon_wgs84": [
+        [
+          108.4297206,
+          11.9536547
+        ],
+        [
+          108.4290571,
+          11.9540295
+        ],
+        [
+          108.4290292,
+          11.9541311
+        ],
+        [
+          108.4293756,
+          11.954718
+        ],
+        [
+          108.4294794,
+          11.9547453
+        ],
+        [
+          108.4301429,
+          11.9543705
+        ],
+        [
+          108.4301708,
+          11.9542689
+        ],
+        [
+          108.4298244,
+          11.953682
+        ],
+        [
+          108.4297206,
+          11.9536547
+        ]
+      ],
+      "glb_path": "02_ASSETS_3D/landmarks/lm_43_chua_linh_quang.glb",
+      "sha256": "f74fd1164e4f1a79f571f02f17a0bcfccc71002a000a0dfa47d4b9aba16b3534",
+      "size_bytes": 292868,
+      "triangles": 8792,
+      "nodes": 15,
+      "materials": 12,
+      "emissive_materials": 1,
+      "no_khr_transmission": true,
+      "camera_preset": {
+        "eye_gltf": [
+          -1718.797,
+          56.0,
+          -1439.028
+        ],
+        "target_gltf": [
+          -1705.436,
+          36.5,
+          -1534.094
+        ],
+        "local_offset_gltf": [
+          -13.361,
+          26.0,
+          95.066
+        ],
+        "fov_deg": 45.0,
+        "distance_m": 97.96
+      },
+      "architectural_style": "Traditional Vietnamese Imperial Sắc Tứ Pagoda & Ceramic Mosaic Dragon Architecture (1931-1938)",
+      "architect": "Hòa thượng Thích Nhân Thứ khai sơn năm 1931 (Vua Bảo Đại sắc tứ năm 1938)",
+      "year_completed": "1931",
+      "description_vi": "Được Hòa thượng Thích Nhân Thứ khai sơn năm 1931 tại số 133 Hai Bà Trưng và được vua Bảo Đại ban biển 'Sắc tứ Linh Quang Tự' năm 1938, Chùa Linh Quang là ngôi tổ đình Phật giáo đầu tiên đặt nền móng tại Đà Lạt với nghệ thuật khảm sành sứ tứ linh tinh xảo, bảo tháp 3 tầng và tượng Quán Thế Âm cưỡi voi trắng."
+    },
+    {
+      "id": "lm_44_hoc_vien_luc_quan_dalat",
+      "name_vi": "Học viện Lục quân Đà Lạt (Đồi Lữ Gia – 2B Lữ Gia, Phường 9)",
+      "name_en": "Da Lat Army Academy Grand Campus (2B Lu Gia Hilltop Military Academy)",
+      "wave": 12,
+      "tier": 1,
+      "ring": 0,
+      "status": "built",
+      "built": true,
+      "lat": 11.9488,
+      "lon": 108.4632,
+      "elev_msl_m": 1522.0,
+      "x_m": 1953.97,
+      "y_m": 932.969,
+      "z_local_m": 44.0,
+      "gltf_position": [
+        1953.97,
+        44.0,
+        -932.969
+      ],
+      "tile_id": "T_E01_N00",
+      "heading_deg": 175.0,
+      "rotation_y_rad": -3.054326,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "pivot_local_gltf": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "foundation_skirt_m": -3.0,
+      "bbox_y_range_m": [
+        -3.0,
+        19.5
+      ],
+      "footprint_m": {
+        "length": 106.0,
+        "width": 86.0,
+        "max_height": 19.5
+      },
+      "exclusion_polygon_wgs84": [
+        [
+          108.4637023,
+          11.9483966
+        ],
+        [
+          108.4627769,
+          11.9483174
+        ],
+        [
+          108.4626882,
+          11.9483902
+        ],
+        [
+          108.4626233,
+          11.9491167
+        ],
+        [
+          108.4626976,
+          11.9492034
+        ],
+        [
+          108.4636231,
+          11.9492826
+        ],
+        [
+          108.4637118,
+          11.9492098
+        ],
+        [
+          108.4637767,
+          11.9484833
+        ],
+        [
+          108.4637023,
+          11.9483966
+        ]
+      ],
+      "glb_path": "02_ASSETS_3D/landmarks/lm_44_hoc_vien_luc_quan_dalat.glb",
+      "sha256": "ee1dfb43b76c2d35e84a8f987b8ad27a6ae34b8482aa83742d953cfeac39f80c",
+      "size_bytes": 419800,
+      "triangles": 12123,
+      "nodes": 17,
+      "materials": 12,
+      "emissive_materials": 1,
+      "no_khr_transmission": true,
+      "camera_preset": {
+        "eye_gltf": [
+          2006.551,
+          72.0,
+          -834.079
+        ],
+        "target_gltf": [
+          1953.97,
+          51.0,
+          -932.969
+        ],
+        "local_offset_gltf": [
+          52.581,
+          28.0,
+          98.89
+        ],
+        "fov_deg": 45.0,
+        "distance_m": 113.95
+      },
+      "architectural_style": "Monumental Vietnamese Military-Academic Neoclassical & Modernist Hilltop Campus Architecture",
+      "architect": "Kiến trúc sư Học viện Quân sự trên nền đồi thông Lữ Gia lịch sử (1946–nay)",
+      "year_completed": "1950",
+      "description_vi": "Tọa lạc trên đồi thông rộng lớn tại số 2B đường Lữ Gia (Phường 9), Học viện Lục quân Đà Lạt là trung tâm đào tạo sĩ quan chỉ huy tham mưu cao cấp và nghiên cứu khoa học nghệ thuật quân sự hàng đầu, nổi bật với tòa nhà chỉ huy 3 tầng uy nghiêm, quảng trường duyệt binh và đại lộ thông xanh."
+    },
+    {
+      "id": "lm_45_nha_tho_chi_lang",
+      "name_vi": "Nhà thờ Giáo xứ Chi Lăng Đà Lạt (1957–1968, Đồi Chi Lăng – 7 Ngô Văn Sở)",
+      "name_en": "Chi Lang Parish Church of Da Lat (Hilltop Romanesque-Modern Sanctuary, 1957-1968)",
+      "wave": 13,
+      "tier": 1,
+      "ring": 0,
+      "status": "built",
+      "built": true,
+      "lat": 11.9465,
+      "lon": 108.4598,
+      "elev_msl_m": 1520.0,
+      "x_m": 1583.673,
+      "y_m": 676.934,
+      "z_local_m": 42.0,
+      "gltf_position": [
+        1583.673,
+        42.0,
+        -676.934
+      ],
+      "tile_id": "T_E01_N00",
+      "heading_deg": 160.0,
+      "rotation_y_rad": -2.792527,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "pivot_local_gltf": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "foundation_skirt_m": -3.0,
+      "bbox_y_range_m": [
+        -3.0,
+        21.0
+      ],
+      "footprint_m": {
+        "length": 86.0,
+        "width": 74.0,
+        "max_height": 21.0
+      },
+      "exclusion_polygon_wgs84": [
+        [
+          108.460291,
+          11.9462638
+        ],
+        [
+          108.459579,
+          11.9460103
+        ],
+        [
+          108.4594879,
+          11.9460518
+        ],
+        [
+          108.4592665,
+          11.9466471
+        ],
+        [
+          108.459309,
+          11.9467362
+        ],
+        [
+          108.460021,
+          11.9469897
+        ],
+        [
+          108.460112,
+          11.9469482
+        ],
+        [
+          108.4603335,
+          11.9463529
+        ],
+        [
+          108.460291,
+          11.9462638
+        ]
+      ],
+      "glb_path": "02_ASSETS_3D/landmarks/lm_45_nha_tho_chi_lang.glb",
+      "sha256": "fba0e6517af446bd239e677fc759f3445b8d707478fe5cf5e8eeffe2eee92506",
+      "size_bytes": 309328,
+      "triangles": 10501,
+      "nodes": 17,
+      "materials": 11,
+      "emissive_materials": 1,
+      "no_khr_transmission": true,
+      "camera_preset": {
+        "eye_gltf": [
+          1647.91,
+          68.0,
+          -605.592
+        ],
+        "target_gltf": [
+          1583.673,
+          49.2,
+          -676.934
+        ],
+        "local_offset_gltf": [
+          64.237,
+          26.0,
+          71.342
+        ],
+        "fov_deg": 45.0,
+        "distance_m": 97.82
+      },
+      "architectural_style": "Dalat Highland Romanesque-Modern Parish Church & Slate Spire Bell Tower Architecture",
+      "architect": "Giáo xứ Chi Lăng & Kiến trúc sư Giáo phận Đà Lạt (1957–1968, trùng tu hiện đại)",
+      "year_completed": "1968",
+      "description_vi": "Nằm yên bình trên sườn đồi thông Chi Lăng (số 7 Ngô Văn Sở, Phường 9) trên trục đường dẫn về Hồ Than Thở, Nhà thờ Giáo xứ Chi Lăng gây ấn tượng với tháp chuông chóp nhọn cao 21m, mặt đứng đá chẻ Đà Lạt kết hợp tường vàng kem ấm áp và hàng thông cổ thụ bao quanh."
+    },
+    {
+      "id": "lm_46_ho_than_tho_doi_thong_hai_mo",
+      "name_vi": "Khu Du lịch Hồ Than Thở & Đồi Thông Hai Mộ (Đường Hồ Xuân Hương, Phường 12)",
+      "name_en": "Lake of Sighs (Ho Than Tho) & Pine Hill of Two Graves Heritage Park",
+      "wave": 13,
+      "tier": 1,
+      "ring": 1,
+      "status": "built",
+      "built": true,
+      "lat": 11.9585,
+      "lon": 108.4772,
+      "elev_msl_m": 1514.0,
+      "x_m": 3478.723,
+      "y_m": 2012.768,
+      "z_local_m": 36.0,
+      "gltf_position": [
+        3478.723,
+        36.0,
+        -2012.768
+      ],
+      "tile_id": "T_E02_N01",
+      "heading_deg": 195.0,
+      "rotation_y_rad": -3.403392,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "pivot_local_gltf": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "foundation_skirt_m": -3.0,
+      "bbox_y_range_m": [
+        -3.0,
+        15.5
+      ],
+      "footprint_m": {
+        "length": 96.0,
+        "width": 84.0,
+        "max_height": 15.5
+      },
+      "exclusion_polygon_wgs84": [
+        [
+          108.4774882,
+          11.957978
+        ],
+        [
+          108.4766836,
+          11.958189
+        ],
+        [
+          108.4766275,
+          11.958284
+        ],
+        [
+          108.4768146,
+          11.9589671
+        ],
+        [
+          108.4769118,
+          11.959022
+        ],
+        [
+          108.4777164,
+          11.958811
+        ],
+        [
+          108.4777725,
+          11.958716
+        ],
+        [
+          108.4775854,
+          11.9580329
+        ],
+        [
+          108.4774882,
+          11.957978
+        ]
+      ],
+      "glb_path": "02_ASSETS_3D/landmarks/lm_46_ho_than_tho_doi_thong_hai_mo.glb",
+      "sha256": "83e9f9a89f5525fd3d69c5b5b87c2247fea3dc68a85d819a7613f8e2191d54a2",
+      "size_bytes": 321488,
+      "triangles": 9616,
+      "nodes": 18,
+      "materials": 12,
+      "emissive_materials": 1,
+      "no_khr_transmission": true,
+      "camera_preset": {
+        "eye_gltf": [
+          3493.197,
+          62.0,
+          -1909.78
+        ],
+        "target_gltf": [
+          3478.723,
+          41.8,
+          -2012.768
+        ],
+        "local_offset_gltf": [
+          14.474,
+          26.0,
+          102.988
+        ],
+        "fov_deg": 45.0,
+        "distance_m": 105.94
+      },
+      "architectural_style": "Romantic Pine-Hill Memorial Pavilion, Lakeside Gazebo & Biofresh Glasshouse Landscape Architecture",
+      "architect": "Khu di tích danh thắng Hồ Than Thở (hình thành từ 1917, Đồi Thông Hai Mộ 1956)",
+      "year_completed": "1956",
+      "description_vi": "Cách trung tâm Đà Lạt khoảng 6 km về phía Đông Bắc cuối đường Hồ Xuân Hương, Khu du lịch Hồ Than Thở và Đồi Thông Hai Mộ là thắng cảnh thơ mộng gắn liền với rừng thông rì rào bên mặt hồ tĩnh lặng, khu mộ đôi tưởng niệm chuyện tình 1956, nhà thủy tạ và vườn dâu Biofresh."
+    },
+    {
+      "id": "lm_47_san_van_dong_da_lat",
+      "name_vi": "Sân vận động Đà Lạt 20.000 chỗ ngồi (Đồi Thánh Mẫu – Xô Viết Nghệ Tĩnh)",
+      "name_en": "Da Lat 20,000-Seat Hilltop Stadium (Thanh Mau Hill Sports Complex, 2023)",
+      "wave": 13,
+      "tier": 1,
+      "ring": 1,
+      "status": "built",
+      "built": true,
+      "lat": 11.9682,
+      "lon": 108.4312,
+      "elev_msl_m": 1532.0,
+      "x_m": -1531.178,
+      "y_m": 3092.567,
+      "z_local_m": 54.0,
+      "gltf_position": [
+        -1531.178,
+        54.0,
+        -3092.567
+      ],
+      "tile_id": "T_W01_N02",
+      "heading_deg": 145.0,
+      "rotation_y_rad": -2.530727,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "pivot_local_gltf": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "foundation_skirt_m": -3.0,
+      "bbox_y_range_m": [
+        -3.0,
+        24.0
+      ],
+      "footprint_m": {
+        "length": 116.0,
+        "width": 96.0,
+        "max_height": 24.0
+      },
+      "exclusion_polygon_wgs84": [
+        [
+          108.4319041,
+          11.9680792
+        ],
+        [
+          108.4310752,
+          11.9675114
+        ],
+        [
+          108.4309486,
+          11.9675332
+        ],
+        [
+          108.4304736,
+          11.968197
+        ],
+        [
+          108.4304959,
+          11.9683208
+        ],
+        [
+          108.4313248,
+          11.9688886
+        ],
+        [
+          108.4314514,
+          11.9688668
+        ],
+        [
+          108.4319264,
+          11.968203
+        ],
+        [
+          108.4319041,
+          11.9680792
+        ]
+      ],
+      "glb_path": "02_ASSETS_3D/landmarks/lm_47_san_van_dong_da_lat.glb",
+      "sha256": "63fa5b6a7785d818e63ec1ee71f5ca018c37c9fdefa5da6e4332c20ec0c29c63",
+      "size_bytes": 381896,
+      "triangles": 13180,
+      "nodes": 12,
+      "materials": 11,
+      "emissive_materials": 1,
+      "no_khr_transmission": true,
+      "camera_preset": {
+        "eye_gltf": [
+          -1426.604,
+          86.0,
+          -3029.732
+        ],
+        "target_gltf": [
+          -1531.178,
+          61.5,
+          -3092.567
+        ],
+        "local_offset_gltf": [
+          104.574,
+          32.0,
+          62.835
+        ],
+        "fov_deg": 45.0,
+        "distance_m": 124.44
+      },
+      "architectural_style": "Modern Highland Elliptical Stadium Bowl, Cantilevered Space-Truss Roof & 24m Floodlight Masts",
+      "architect": "Khu Liên hợp Thể dục Thể thao tỉnh Lâm Đồng trên Đồi Thánh Mẫu (hoàn thành 2023)",
+      "year_completed": "2023",
+      "description_vi": "Tọa lạc trên đỉnh Đồi Thánh Mẫu (Phường 7), Sân vận động Đà Lạt với sức chứa 20.000 chỗ ngồi được mệnh danh là một trong những sân vận động trên đồi đẹp nhất Tây Nguyên, nổi bật với các dải ghế khán đài rực rỡ sắc màu, mái vòm giàn thép Khán đài A và tầm nhìn bao quát đồi thông sương mù."
+    },
+    {
+      "id": "lm_48_samten_hills_kinh_luan_dran",
+      "name_vi": "Samten Hills Dalat & Đại Bảo Tháp Kinh Luân 37,22m (Kỷ lục Guinness – Tu Tra, Đơn Dương)",
+      "name_en": "Samten Hills Dalat & 37.22m Guinness World-Record Golden Prayer Wheel Stupa",
+      "wave": 13,
+      "tier": 1,
+      "ring": 3,
+      "status": "built",
+      "built": true,
+      "lat": 11.7585,
+      "lon": 108.4865,
+      "elev_msl_m": 1165.0,
+      "x_m": 4491.594,
+      "y_m": -20251.13,
+      "z_local_m": -313.0,
+      "gltf_position": [
+        4491.594,
+        -313.0,
+        20251.13
+      ],
+      "tile_id": "T_E02_S10",
+      "heading_deg": 180.0,
+      "rotation_y_rad": -3.141593,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "pivot_local_gltf": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "foundation_skirt_m": -3.0,
+      "bbox_y_range_m": [
+        -3.0,
+        37.22
+      ],
+      "footprint_m": {
+        "length": 104.0,
+        "width": 92.0,
+        "max_height": 37.22
+      },
+      "exclusion_polygon_wgs84": [
+        [
+          108.4869541,
+          11.7580239
+        ],
+        [
+          108.4860459,
+          11.7580239
+        ],
+        [
+          108.4859583,
+          11.7581096
+        ],
+        [
+          108.4859583,
+          11.7588904
+        ],
+        [
+          108.4860459,
+          11.7589761
+        ],
+        [
+          108.4869541,
+          11.7589761
+        ],
+        [
+          108.4870417,
+          11.7588904
+        ],
+        [
+          108.4870417,
+          11.7581096
+        ],
+        [
+          108.4869541,
+          11.7580239
+        ]
+      ],
+      "glb_path": "02_ASSETS_3D/landmarks/lm_48_samten_hills_kinh_luan_dran.glb",
+      "sha256": "8f5267ca26d37c6a47d24fab4e080f6569442a87f3505800ce3ad0f9245c0083",
+      "size_bytes": 395308,
+      "triangles": 11654,
+      "nodes": 13,
+      "materials": 11,
+      "emissive_materials": 1,
+      "no_khr_transmission": true,
+      "camera_preset": {
+        "eye_gltf": [
+          4537.7,
+          -279.0,
+          20359.75
+        ],
+        "target_gltf": [
+          4491.594,
+          -301.0,
+          20251.13
+        ],
+        "local_offset_gltf": [
+          46.106,
+          34.0,
+          108.62
+        ],
+        "fov_deg": 45.0,
+        "distance_m": 120.03
+      },
+      "architectural_style": "Himalayan Vajrayana Buddhist Heritage Complex & 24K Gold Giant Prayer Wheel Architecture (2023)",
+      "architect": "Quần thể Văn hóa Tâm linh Phật giáo Kim Cương Thừa Drigung Kagyu Samten Ling (2023)",
+      "year_completed": "2023",
+      "description_vi": "Tọa lạc trên đỉnh đồi cao thôn Kambute (xã Tu Tra, huyện Đơn Dương), Samten Hills Dalat là quần thể văn hóa tâm linh Phật giáo Kim Cương Thừa nổi tiếng với Đại Bảo Tháp Kinh Luân bằng đồng phủ vàng 24K cao 37,22m, đường kính 16,53m, nặng 200 tấn đã được xác lập Kỷ lục Guinness Thế giới."
     }
   ],
-  "current_wave": "T4_AUTO_W10_COLONIAL_SPIRITUAL_TEA_4_LANDMARKS"
+  "current_wave": "T4_AUTO_W13_CHILANG_THANTHO_STADIUM_SAMTENHILLS_4_LANDMARKS"
 }

@@ -42,11 +42,19 @@ ASSET_FOLDERS = [
     ("urban_life_props", "1E23-McKgvU0lgftjvMqqisLNFnLfGi5H"),
     ("sourced_library/urban_props", "1MVMVQ2hnBzRTZOSHwNK-UgyKT2a_mguI"),
     ("sourced_library/landmarks", "1P8wAefoQejAOMJtii7XUHFWfJk4fWiC2"),
+    ("sourced_library/vegetation", "1zk2zhxbW28LJXWdehk0Qa5GFy6eLMHCC"),
     ("scene", "1RJnTMKFXkoiLEVm4ZYVD5HPyAgi8K04c"),
 ]
 
+WEB_VIEWER_FOLDERS = [
+    ("", "1ozm11VMa2dmK99lVvnjKv-HAeQhbjpJD", (".html",)),
+    ("css", "1jLKnM9RnDtq6iw165y8GvR-1Dra1I2SF", (".css",)),
+    ("js", "1OItlg-st_cgkb464_Emk8_8dWJUVSwbL", (".js",)),
+    ("js/vendor", "1uGmnngKr_ls5uaIp4yKEXuiN27M9aPan", (".js",)),
+]
 
-def list_folder(fid):
+
+def list_folder(fid, exts=(".glb", ".gltf", ".json")):
     out = subprocess.check_output(["gdrive", "readonly", "ls", fid, "--json"], text=True)
     data = json.loads(out)
     items = data.get("files", []) if isinstance(data, dict) else data
@@ -57,7 +65,7 @@ def list_folder(fid):
             continue
         if fn.startswith("_") or fn == "dalat_master_scene.glb":
             continue
-        if not (fn.endswith(".glb") or fn.endswith(".gltf") or fn.endswith(".json")):
+        if not fn.endswith(exts):
             continue
         if fn not in best or it.get("modifiedTime", "") > best[fn].get("modifiedTime", ""):
             best[fn] = it
@@ -238,10 +246,14 @@ def main():
     new_state = {}
     targets = {}
 
-    folder_ids = {v[0] for v in DATA_FILES.values()} | {fid for _, fid in ASSET_FOLDERS}
+    folder_jobs = {v[0]: (".glb", ".gltf", ".json") for v in DATA_FILES.values()}
+    for _, fid in ASSET_FOLDERS:
+        folder_jobs[fid] = (".glb", ".gltf", ".json")
+    for _, fid, exts in WEB_VIEWER_FOLDERS:
+        folder_jobs[fid] = exts
     folder_cache = {}
     with concurrent.futures.ThreadPoolExecutor(max_workers=6) as ex:
-        futs = {fid: ex.submit(list_folder, fid) for fid in folder_ids}
+        futs = {fid: ex.submit(list_folder, fid, exts) for fid, exts in folder_jobs.items()}
         for fid, fut in futs.items():
             folder_cache[fid] = fut.result()
 
@@ -251,6 +263,10 @@ def main():
     for subdir, fid in ASSET_FOLDERS:
         for fn, it in folder_cache[fid].items():
             targets[f"assets/{subdir}/{fn}"] = it
+    for subdir, fid, _ in WEB_VIEWER_FOLDERS:
+        for fn, it in folder_cache[fid].items():
+            rel = f"{subdir}/{fn}" if subdir else fn
+            targets[rel] = it
 
     changed = []
     for rel_path, it in sorted(targets.items()):

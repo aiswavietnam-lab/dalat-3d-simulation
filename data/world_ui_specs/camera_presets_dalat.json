@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "project": "DALAT_3D_SIMULATION",
-  "wave": "T5_AUTO_R2_125TILES_500KM2_AND_20K_STREETLAMP_SYNC",
+  "wave": "T5_AUTO_R2_166TILES_122K_BUILDINGS_AND_112_ROADS",
   "coordinate_origin": {
     "name": "Tam_Ho_Xuan_Huong_Da_Lat",
     "lat": 11.940419,
@@ -877,6 +877,306 @@
       "duration_ms": 1650,
       "recommended_lighting": "sunset_lake",
       "description": "Điểm cực Nam hành lang Cao tốc Liên Khương – Prenn và Quốc lộ 20 tại xã Hiệp Thạnh Nam trước khi tiến vào nút giao Cảng Hàng không Quốc tế Liên Khương."
+    },
+    {
+      "id": "finom_junction_ql20_ql27_don_duong_gateway",
+      "name_vi": "[RING_2] Ngã Ba Fi Nôm – Nút Giao Quốc Lộ 20 & Quốc Lộ 27 Đi Đơn Dương (T_E02_S07)",
+      "category": "Southern_gateway",
+      "tile_id": "T_E02_S07",
+      "position_gltf": [
+        3650.0,
+        165.0,
+        13450.0
+      ],
+      "target_gltf": [
+        4250.0,
+        -45.0,
+        14250.0
+      ],
+      "fov": 48,
+      "duration_ms": 1700,
+      "recommended_lighting": "highland_noon",
+      "description": "Nút giao Ngã ba Fi Nôm kết nối Quốc lộ 20 Nam và Quốc lộ 27 đi thị trấn Thạnh Mỹ (Đơn Dương) với cánh đồng nhà kính công nghệ cao."
+    },
+    {
+      "id": "gia_lam_elephant_falls_linh_an_pagoda_corridor",
+      "name_vi": "[RING_2] Xã Gia Lâm – Danh Thắng Thác Voi & Quần Thể Chùa Linh Ẩn Nam Ban (T_W08_S04)",
+      "category": "highland_corridor",
+      "tile_id": "T_W08_S04",
+      "position_gltf": [
+        -15350.0,
+        185.0,
+        7450.0
+      ],
+      "target_gltf": [
+        -16150.0,
+        -35.0,
+        8150.0
+      ],
+      "fov": 48,
+      "duration_ms": 1700,
+      "recommended_lighting": "sunset_lake",
+      "description": "Góc nhìn toàn cảnh hành lang Tỉnh lộ ĐT725 qua xã Gia Lâm, danh thắng Thác Voi và quần thể Chùa Linh Ẩn tại thị trấn Nam Ban (Lâm Hà)."
+    },
+    {
+      "id": "lang_cu_lan_suoi_can_ma_rung_lu_quan_dt722",
+      "name_vi": "[RING_2] Làng Cù Lần – Thung Lũng Suối Cạn & Ma Rừng Lữ Quán ĐT722 (T_W06_N06 / T_W07_N06)",
+      "category": "lake_panorama",
+      "tile_id": "T_W06_N06",
+      "position_gltf": [
+        -11550.0,
+        225.0,
+        -11450.0
+      ],
+      "target_gltf": [
+        -12350.0,
+        65.0,
+        -12150.0
+      ],
+      "fov": 48,
+      "duration_ms": 1700,
+      "recommended_lighting": "early_mist",
+      "description": "Thung lũng rừng thông nguyên sinh Làng Cù Lần, hồ Suối Cạn và Ma Rừng Lữ Quán trên tuyến Tỉnh lộ ĐT722 Tây Bắc (Lạc Dương)."
+    },
+    {
+      "id": "finom_east_ql27_thanh_my_don_duong_corridor",
+      "name_vi": "[RING_2] Đông Ngã Ba Fi Nôm – Hành Lang Quốc Lộ 27 Đi Thạnh Mỹ Đơn Dương (T_E03_S07)",
+      "category": "Southern_gateway",
+      "tile_id": "T_E03_S07",
+      "position_gltf": [
+        5350.0,
+        165.0,
+        13650.0
+      ],
+      "target_gltf": [
+        6150.0,
+        -45.0,
+        14250.0
+      ],
+      "fov": 48,
+      "duration_ms": 1700,
+      "recommended_lighting": "highland_noon",
+      "description": "Hành lang Quốc lộ 27 phía Đông Ngã ba Fi Nôm hướng về thị trấn Thạnh Mỹ (Đơn Dương) dọc thung lũng sông Đa Nhim và vùng chuyên canh rau hoa xuất khẩu."
+    },
+    {
+      "id": "me_linh_west_weasel_coffee_ta_nung_valley",
+      "name_vi": "[RING_2] Mê Linh Tây – Đồi Cà Phê Chồn & Thung Lũng Sương Mù Tà Nung Tây (T_W08_S01)",
+      "category": "highland_corridor",
+      "tile_id": "T_W08_S01",
+      "position_gltf": [
+        -15250.0,
+        195.0,
+        1650.0
+      ],
+      "target_gltf": [
+        -16150.0,
+        25.0,
+        2150.0
+      ],
+      "fov": 48,
+      "duration_ms": 1700,
+      "recommended_lighting": "early_mist",
+      "description": "Góc nhìn toàn cảnh các nông trại cà phê Moka/Chồn, cánh đồng hoa hướng dương và nhà kính sườn đồi tại xã Mê Linh Tây – Tà Nung."
+    },
+    {
+      "id": "da_nhim_center_ql27c_bidoup_national_park_gate",
+      "name_vi": "[RING_2] Trung Tâm Xã Đạ Nhim – Quốc Lộ 27C Cửa Ngõ Vườn Quốc Gia Bidoup (T_E05_N05)",
+      "category": "highland_corridor",
+      "tile_id": "T_E05_N05",
+      "position_gltf": [
+        9350.0,
+        245.0,
+        -9450.0
+      ],
+      "target_gltf": [
+        10150.0,
+        85.0,
+        -10250.0
+      ],
+      "fov": 48,
+      "duration_ms": 1700,
+      "recommended_lighting": "sunset_lake",
+      "description": "Trung tâm xã Đạ Nhim (Lạc Dương) trên trục Quốc lộ 27C nối Đà Lạt với Vườn Quốc gia Bidoup – Núi Bà và đèo Khánh Lê."
+    },
+    {
+      "id": "lienkhuong_international_airport_wild_sunflower_terminal",
+      "name_vi": "[RING_2] Cảng Hàng Không Quốc Tế Liên Khương – Nhà Ga Hoa Dã Quỳ & Đường Băng Bắc (T_W02_S07)",
+      "category": "Southern_gateway",
+      "tile_id": "T_W02_S07",
+      "position_gltf": [
+        -3350.0,
+        165.0,
+        13450.0
+      ],
+      "target_gltf": [
+        -4150.0,
+        -45.0,
+        14250.0
+      ],
+      "fov": 48,
+      "duration_ms": 1700,
+      "recommended_lighting": "sunset_lake",
+      "description": "Cửa ngõ hàng không của Đà Lạt – Lâm Đồng với nhà ga kiến trúc Hoa Dã Quỳ vàng, trục đại lộ sân bay nối Cao tốc Liên Khương – Prenn và Quốc lộ 20."
+    },
+    {
+      "id": "thanh_my_town_don_duong_da_nhim_agro_valley",
+      "name_vi": "[RING_2] Thị Trấn Thạnh Mỹ Tây – Thung Lũng Nông Nghiệp Đơn Dương & Sông Đa Nhim (T_E04_S07)",
+      "category": "Southern_gateway",
+      "tile_id": "T_E04_S07",
+      "position_gltf": [
+        7250.0,
+        175.0,
+        13550.0
+      ],
+      "target_gltf": [
+        8150.0,
+        -45.0,
+        14250.0
+      ],
+      "fov": 48,
+      "duration_ms": 1700,
+      "recommended_lighting": "highland_noon",
+      "description": "Thung lũng nông nghiệp công nghệ cao lớn nhất tỉnh Lâm Đồng dọc sông Đa Nhim và Quốc lộ 27 tại cửa ngõ thị trấn Thạnh Mỹ (huyện Đơn Dương)."
+    },
+    {
+      "id": "da_nhim_east_bidoup_khanh_le_pass_corridor",
+      "name_vi": "[RING_2] Đông & Nam Xã Đạ Nhim – Rừng Quốc Gia Bidoup & Quốc Lộ 27C Đi Khánh Lê (T_E06_N05 / T_E06_N04)",
+      "category": "highland_corridor",
+      "tile_id": "T_E06_N05",
+      "position_gltf": [
+        11350.0,
+        245.0,
+        -9250.0
+      ],
+      "target_gltf": [
+        12150.0,
+        85.0,
+        -10050.0
+      ],
+      "fov": 48,
+      "duration_ms": 1700,
+      "recommended_lighting": "early_mist",
+      "description": "Cửa ngõ phía Đông cao nguyên Lâm Viên trên tuyến Quốc lộ 27C xuyên qua rừng thông cổ thụ và rừng nguyên sinh Vườn Quốc gia Bidoup – Núi Bà."
+    },
+    {
+      "id": "thanh_my_center_don_duong_da_nhim_river_corridor",
+      "name_vi": "[RING_2] Trung Tâm Thị Trấn Thạnh Mỹ – Thung Lũng Sông Đa Nhim Đơn Dương (T_E05_S07)",
+      "category": "Southern_gateway",
+      "tile_id": "T_E05_S07",
+      "position_gltf": [
+        9350.0,
+        175.0,
+        13450.0
+      ],
+      "target_gltf": [
+        10150.0,
+        -45.0,
+        14250.0
+      ],
+      "fov": 48,
+      "duration_ms": 1700,
+      "recommended_lighting": "highland_noon",
+      "description": "Trung tâm đô thị Thị trấn Thạnh Mỹ (huyện Đơn Dương) trên trục Quốc lộ 27 và Tỉnh lộ ĐT729 dọc bờ Bắc sông Đa Nhim."
+    },
+    {
+      "id": "hon_giao_khanh_le_pass_west_bidoup_national_park",
+      "name_vi": "[RING_2] Đèo Khánh Lê Tây (Hòn Giao) – Vườn Quốc Gia Bidoup – Núi Bà (T_E07_N05)",
+      "category": "highland_corridor",
+      "tile_id": "T_E07_N05",
+      "position_gltf": [
+        13250.0,
+        265.0,
+        -9350.0
+      ],
+      "target_gltf": [
+        14150.0,
+        95.0,
+        -10150.0
+      ],
+      "fov": 48,
+      "duration_ms": 1700,
+      "recommended_lighting": "early_mist",
+      "description": "Cửa ngõ đỉnh Đèo Khánh Lê – Hòn Giao trên Quốc lộ 27C nối Đà Lạt với Nha Trang qua vùng lõi rừng nguyên sinh Vườn Quốc gia Bidoup – Núi Bà."
+    },
+    {
+      "id": "langbiang_north_slope_nui_ba_2167m_panorama",
+      "name_vi": "[RING_2] Bắc Núi Langbiang – Sườn Bắc Đỉnh Núi Bà 2.167m & Thung Lũng ĐT722 (T_W03_N07)",
+      "category": "highland_corridor",
+      "tile_id": "T_W03_N07",
+      "position_gltf": [
+        -5350.0,
+        255.0,
+        -13350.0
+      ],
+      "target_gltf": [
+        -6150.0,
+        85.0,
+        -14150.0
+      ],
+      "fov": 48,
+      "duration_ms": 1700,
+      "recommended_lighting": "sunset_lake",
+      "description": "Góc nhìn toàn cảnh sườn Bắc khối núi đôi Langbiang (Đỉnh Núi Bà 2.167m) nối xuống hành lang sinh thái Tỉnh lộ ĐT722 và Làng Cù Lần."
+    },
+    {
+      "id": "lien_nghia_center_duc_trong_ql20_ql27_junction",
+      "name_vi": "[RING_2] Trung Tâm Thị Trấn Liên Nghĩa (Đức Trọng) – Nút Giao Quốc Lộ 20 & Quốc Lộ 27 (T_W04_S07)",
+      "category": "Southern_gateway",
+      "tile_id": "T_W04_S07",
+      "position_gltf": [
+        -7350.0,
+        175.0,
+        13450.0
+      ],
+      "target_gltf": [
+        -8150.0,
+        -45.0,
+        14250.0
+      ],
+      "fov": 48,
+      "duration_ms": 1700,
+      "recommended_lighting": "highland_noon",
+      "description": "Trung tâm đô thị Thị trấn Liên Nghĩa (huyện Đức Trọng) tại nút giao Quốc lộ 20, Quốc lộ 27 và bờ Bắc sông Đa Nhim."
+    },
+    {
+      "id": "dran_east_da_nhim_hydro_ngoan_muc_pass_foot",
+      "name_vi": "[RING_2] Thị Trấn D'Ran Đông – Nhà Máy Thủy Điện Đa Nhim & Chân Đèo Ngoạn Mục (T_E11_S05)",
+      "category": "Eastern_agricultural_ring",
+      "tile_id": "T_E11_S05",
+      "position_gltf": [
+        21350.0,
+        195.0,
+        9350.0
+      ],
+      "target_gltf": [
+        22150.0,
+        -35.0,
+        10150.0
+      ],
+      "fov": 48,
+      "duration_ms": 1700,
+      "recommended_lighting": "sunset_lake",
+      "description": "Cửa ngõ phía Đông Thị trấn D'Ran (Đơn Dương) bên cụm Nhà máy Thủy điện Đa Nhim và tuyến Quốc lộ 27 hướng xuống Đèo Ngoạn Mục."
+    },
+    {
+      "id": "dankia_north_langbiang_nui_ba_north_summit_corridor",
+      "name_vi": "[RING_2] Thung Lũng Đankia Bắc – Sườn Bắc Đỉnh Núi Bà Langbiang 2.167m (T_W02_N06 / T_E00_N07)",
+      "category": "highland_corridor",
+      "tile_id": "T_E00_N07",
+      "position_gltf": [
+        -650.0,
+        265.0,
+        -13350.0
+      ],
+      "target_gltf": [
+        150.0,
+        95.0,
+        -14150.0
+      ],
+      "fov": 48,
+      "duration_ms": 1700,
+      "recommended_lighting": "early_mist",
+      "description": "Hành lang khép kín từ thung lũng Đankia Bắc qua sườn Tây Núi Ông đến sườn Bắc đỉnh Núi Bà Langbiang 2.167m và Đa Sar Bắc."
     }
   ],
   "climate_presets": [
@@ -937,7 +1237,7 @@
       "emissive_scale": 1.35
     }
   ],
-  "version": "2.7.0-wave19-125tiles-500km2-42presets",
+  "version": "3.2.0-wave24-166tiles-664km2-112roads-57presets",
   "flythrough_tour": [
     {
       "stop_index": 1,
@@ -958,5 +1258,5 @@
       "duration_sec": 8.0
     }
   ],
-  "updated_at_utc": "2026-11-24T04:46:06Z"
+  "updated_at_utc": "2026-11-24T10:00:36Z"
 }

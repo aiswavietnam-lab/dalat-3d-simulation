@@ -4,17 +4,20 @@
   "slot": 7,
   "display_slot_name": "ĐÀ LẠT - 06",
   "lane": "HERITAGE_VILLAS_FRENCH_ARCH",
-  "wave_completed": 6,
+  "wave_completed": 9,
   "completed_waves": [
     "T7_W1_TRAN_HUNG_DAO_FRENCH_VILLAS",
     "T7_W2_LE_LAI_HUNG_VUONG_VILLAS",
     "T7_W3_CRAZY_HOUSE_BAO_TANG_LOD0",
     "T7_W4_PHAN_VIEN_SINH_HOC_CUC_BAN_DO",
     "T7_W5_KHU_HOA_BINH_DOC_NHA_BO_SHOPHOUSES",
-    "T7_AUTO_W6_TRAN_PHU_QUANG_TRUNG_NGUYEN_DU_MANSIONS"
+    "T7_AUTO_W6_TRAN_PHU_QUANG_TRUNG_NGUYEN_DU_MANSIONS",
+    "T7_AUTO_W7_LE_HONG_PHONG_PASTEUR_CO_GIANG_CHI_LANG_VILLAS",
+    "T7_AUTO_W8_PHU_DONG_THIEN_VUONG_SUONG_NGUYET_ANH_YET_KIEU_MANSIONS",
+    "T7_AUTO_W9_TRIEU_VIET_VUONG_TRAN_QUANG_DIEU_HOANG_HOA_THAM_VILLAS"
   ],
-  "task_id": "T7_AUTO_W6_TRAN_PHU_QUANG_TRUNG_NGUYEN_DU_MANSIONS",
-  "updated_at_utc": "2026-11-24T03:12:04.901506+00:00",
+  "task_id": "T7_AUTO_W9_TRIEU_VIET_VUONG_TRAN_QUANG_DIEU_HOANG_HOA_THAM_VILLAS",
+  "updated_at_utc": "2026-11-24T09:19:16.225940+00:00",
   "coordinate_origin": {
     "name": "Tam_Ho_Xuan_Huong_Da_Lat",
     "lat0": 11.940419,
@@ -49,10 +52,16 @@
     "wave5_khu_hoa_binh_doc_nha_bo_shophouses_count": 10,
     "wave5_triangles": 159660,
     "wave6_tran_phu_quang_trung_nguyen_du_mansions_count": 10,
-    "wave6_triangles": 145012
+    "wave6_triangles": 145012,
+    "wave7_le_hong_phong_pasteur_co_giang_chi_lang_villas_count": 10,
+    "wave7_triangles": 142416,
+    "wave8_phu_dong_thien_vuong_suong_nguyet_anh_yet_kieu_mansions_count": 10,
+    "wave8_triangles": 144798,
+    "wave9_trieu_viet_vuong_tran_quang_dieu_hoang_hoa_tham_villas_count": 10,
+    "wave9_triangles": 144180
   },
-  "total_villas_built": 62,
-  "total_triangles": 901292,
+  "total_villas_built": 92,
+  "total_triangles": 1332686,
   "villas": [
     {
       "id": "fv_thd_01_villa_14_normandy",
@@ -7330,6 +7339,3519 @@
       "source_references": [
         "https://hoadalattravel.vn/dia-diem-du-lich/phuong-9-da-lat/",
         "https://happydaytravel.com/ve-dep-vua-co-kinh-vua-ma-mi-tai-nhung-ngoi-biet-thu-sang-chanh-dam-kien-truc-phap.html"
+      ]
+    },
+    {
+      "index": 1,
+      "id": "fv_cg_01_co_giang_villa_01_03_grand_estate",
+      "name_vi": "Biệt Thự Pháp Cổ Số 01–03 Cô Giang — Dinh Thự 391m² Trên Khuôn Viên Đồi Thông 1.775m² (Phường 9, Đà Lạt)",
+      "name_en": "Villa No. 01-03 Co Giang — Grand French Colonial Pine-Estate Manor (391m2 Footprint on 1,775m2 Grounds, Ward 9)",
+      "house_number": "01–03 Cô Giang (Biệt Thự Pháp Cổ Khuôn Viên 1.775m² Đường Cô Giang)",
+      "cluster_zone": "CO_GIANG_HERITAGE_VILLAS",
+      "wave": 7,
+      "slot": 7,
+      "ring": 0,
+      "status": "built",
+      "lat": 11.9443896,
+      "lon": 108.4566904,
+      "elev_msl_m": 1522.317,
+      "x_m": 1245.0,
+      "y_m": 442.0,
+      "z_local_m": 44.317,
+      "gltf_position": [
+        1245.0,
+        44.317,
+        -442.0
+      ],
+      "heading_deg": 184.0,
+      "rotation_y_rad": -3.211406,
+      "tile_id": "T_E01_N00",
+      "pivot_local_gltf": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "foundation_skirt_m": -3.5,
+      "bbox_y_range_m": [
+        -3.5,
+        18.23
+      ],
+      "footprint_m": {
+        "width": 21.4,
+        "depth": 15.0,
+        "wall_height": 8.1,
+        "roof_pitch": 5.1
+      },
+      "architectural_style": "Grand Normandy Conical-Turret & Romanesque Arcade Heritage Manor",
+      "roof_type": "fish_scale_clay",
+      "year_completed": "1936",
+      "window_emissive_hex": "#FFB86C",
+      "window_emissive_intensity": 0.45,
+      "glass_alpha_mode": "BLEND",
+      "glass_alpha": 0.85,
+      "no_khr_transmission": true,
+      "exclusion_polygon_wgs84": [
+        [
+          108.4568245,
+          11.9444767
+        ],
+        [
+          108.4565699,
+          11.9444942
+        ],
+        [
+          108.4565562,
+          11.9443024
+        ],
+        [
+          108.4568108,
+          11.944285
+        ],
+        [
+          108.4568245,
+          11.9444767
+        ]
+      ],
+      "exclusion_polygon_local_m": [
+        [
+          1259.613,
+          451.704
+        ],
+        [
+          1231.88,
+          453.644
+        ],
+        [
+          1230.387,
+          432.296
+        ],
+        [
+          1258.12,
+          430.356
+        ],
+        [
+          1259.613,
+          451.704
+        ]
+      ],
+      "glb_path": "02_ASSETS_3D/french_villas/fv_cg_01_co_giang_villa_01_03_grand_estate.glb",
+      "sha256": "4bbc2174fa71753678426c545dcbc922f3bf2afc43c0cae283658fbe5fde1ef8",
+      "size_bytes": 959104,
+      "triangles": 15518,
+      "nodes": 12,
+      "materials": 12,
+      "camera_preset": {
+        "eye_gltf": [
+          1256.349,
+          62.317,
+          -392.093
+        ],
+        "target_gltf": [
+          1245.0,
+          49.817,
+          -442.0
+        ],
+        "fov_deg": 45.0
+      },
+      "source_references": [
+        "https://dantri.com.vn/thoi-su/can-canh-loat-biet-thu-co-da-lat-bi-tac-dong-sua-chua-20260509102739440.htm",
+        "https://vnexpress.net/lam-dong-siet-quan-ly-126-biet-thu-o-da-lat-5147455.html"
+      ]
+    },
+    {
+      "index": 2,
+      "id": "fv_cg_02_co_giang_hem_05_yellow_normandy_villa",
+      "name_vi": "Biệt Thự Pháp Cổ Màu Vàng Hẻm Số 05 Cô Giang — Kiến Trúc Normandy Colombage & Cửa Chớp Xanh Lá Thông (Phường 9)",
+      "name_en": "Villa No. 05 Co Giang Alley — Iconic Ochre-Yellow Normandy Half-Timbered Heritage Villa (Ward 9, Dalat)",
+      "house_number": "05 Cô Giang (Biệt Thự Cổ Màu Vàng Hẻm Số 05 Cô Giang — Phường 9)",
+      "cluster_zone": "CO_GIANG_HERITAGE_VILLAS",
+      "wave": 7,
+      "slot": 7,
+      "ring": 0,
+      "status": "built",
+      "lat": 11.9445692,
+      "lon": 108.4572688,
+      "elev_msl_m": 1521.274,
+      "x_m": 1308.0,
+      "y_m": 462.0,
+      "z_local_m": 43.274,
+      "gltf_position": [
+        1308.0,
+        43.274,
+        -462.0
+      ],
+      "heading_deg": 188.0,
+      "rotation_y_rad": -3.281219,
+      "tile_id": "T_E01_N00",
+      "pivot_local_gltf": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "foundation_skirt_m": -3.5,
+      "bbox_y_range_m": [
+        -3.5,
+        16.8
+      ],
+      "footprint_m": {
+        "width": 19.2,
+        "depth": 14.2,
+        "wall_height": 7.8,
+        "roof_pitch": 4.9
+      },
+      "architectural_style": "Normandy Half-Timbered (Colombage) Ochre-Yellow Heritage Villa",
+      "roof_type": "fish_scale_clay",
+      "year_completed": "1937",
+      "window_emissive_hex": "#FFB86C",
+      "window_emissive_intensity": 0.45,
+      "glass_alpha_mode": "BLEND",
+      "glass_alpha": 0.85,
+      "no_khr_transmission": true,
+      "exclusion_polygon_wgs84": [
+        [
+          108.4573984,
+          11.9446448
+        ],
+        [
+          108.4571656,
+          11.9446768
+        ],
+        [
+          108.4571393,
+          11.9444936
+        ],
+        [
+          108.457372,
+          11.9444616
+        ],
+        [
+          108.4573984,
+          11.9446448
+        ]
+      ],
+      "exclusion_polygon_local_m": [
+        [
+          1322.109,
+          470.418
+        ],
+        [
+          1296.758,
+          473.981
+        ],
+        [
+          1293.891,
+          453.582
+        ],
+        [
+          1319.242,
+          450.019
+        ],
+        [
+          1322.109,
+          470.418
+        ]
+      ],
+      "glb_path": "02_ASSETS_3D/french_villas/fv_cg_02_co_giang_hem_05_yellow_normandy_villa.glb",
+      "sha256": "0be378b4cc758a976f73b7b9a616fa998d531b57189bb911d387f5256ff24330",
+      "size_bytes": 872064,
+      "triangles": 13978,
+      "nodes": 12,
+      "materials": 12,
+      "camera_preset": {
+        "eye_gltf": [
+          1316.711,
+          61.274,
+          -412.37
+        ],
+        "target_gltf": [
+          1308.0,
+          48.774,
+          -462.0
+        ],
+        "fov_deg": 45.0
+      },
+      "source_references": [
+        "https://www.lemon8-app.com/lehuynhnhu/7341721360357425666?region=vn",
+        "https://dantri.com.vn/thoi-su/can-canh-loat-biet-thu-co-da-lat-bi-tac-dong-sua-chua-20260509102739440.htm"
+      ]
+    },
+    {
+      "index": 3,
+      "id": "fv_cg_03_co_giang_villa_07_09_hoa_hong_manor",
+      "name_vi": "Biệt Thự Pháp Cổ Số 07–09 Cô Giang — Cụm Biệt Thự Hoa Hồng & Mái Đá Chẻ Bretagne (Phường 9, Đà Lạt)",
+      "name_en": "Villa No. 07-09 Co Giang — Rose Garden & Brittany Split-Slate Heritage Manor (Ward 9, Dalat)",
+      "house_number": "07–09 Cô Giang (Biệt Thự Hoa Hồng & Mái Đá Chẻ Bretagne Đường Cô Giang)",
+      "cluster_zone": "CO_GIANG_HERITAGE_VILLAS",
+      "wave": 7,
+      "slot": 7,
+      "ring": 0,
+      "status": "built",
+      "lat": 11.9447668,
+      "lon": 108.4578565,
+      "elev_msl_m": 1520.0,
+      "x_m": 1372.0,
+      "y_m": 484.0,
+      "z_local_m": 42.0,
+      "gltf_position": [
+        1372.0,
+        42.0,
+        -484.0
+      ],
+      "heading_deg": 192.0,
+      "rotation_y_rad": -3.351032,
+      "tile_id": "T_E01_N00",
+      "pivot_local_gltf": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "foundation_skirt_m": -3.5,
+      "bbox_y_range_m": [
+        -3.5,
+        17.0
+      ],
+      "footprint_m": {
+        "width": 19.8,
+        "depth": 14.4,
+        "wall_height": 7.9,
+        "roof_pitch": 5.0
+      },
+      "architectural_style": "Brittany Twin-Gable Split-Slate & Rose Pergola Heritage Villa",
+      "roof_type": "brittany_slate",
+      "year_completed": "1938",
+      "window_emissive_hex": "#FFB86C",
+      "window_emissive_intensity": 0.45,
+      "glass_alpha_mode": "BLEND",
+      "glass_alpha": 0.85,
+      "no_khr_transmission": true,
+      "exclusion_polygon_wgs84": [
+        [
+          108.457994,
+          11.9448338
+        ],
+        [
+          108.4577587,
+          11.9448827
+        ],
+        [
+          108.4577189,
+          11.9446999
+        ],
+        [
+          108.4579542,
+          11.944651
+        ],
+        [
+          108.457994,
+          11.9448338
+        ]
+      ],
+      "exclusion_polygon_local_m": [
+        [
+          1386.976,
+          491.449
+        ],
+        [
+          1361.349,
+          496.896
+        ],
+        [
+          1357.024,
+          476.551
+        ],
+        [
+          1382.651,
+          471.104
+        ],
+        [
+          1386.976,
+          491.449
+        ]
+      ],
+      "glb_path": "02_ASSETS_3D/french_villas/fv_cg_03_co_giang_villa_07_09_hoa_hong_manor.glb",
+      "sha256": "b1dea340f470e89b75a2c7cc8849a032e801acfc95674c00eaf440aa6c08d61c",
+      "size_bytes": 869748,
+      "triangles": 13888,
+      "nodes": 12,
+      "materials": 12,
+      "camera_preset": {
+        "eye_gltf": [
+          1378.099,
+          60.0,
+          -434.83
+        ],
+        "target_gltf": [
+          1372.0,
+          47.5,
+          -484.0
+        ],
+        "fov_deg": 45.0
+      },
+      "source_references": [
+        "https://dantri.com.vn/thoi-su/can-canh-loat-biet-thu-co-da-lat-bi-tac-dong-sua-chua-20260509102739440.htm",
+        "https://www.lemon8-app.com/lehuynhnhu/7341721360357425666?region=vn"
+      ]
+    },
+    {
+      "index": 4,
+      "id": "fv_lhp_04_le_hong_phong_villa_04_normandy_chalet",
+      "name_vi": "Biệt Thự Pháp Cổ Số 04 Lê Hồng Phong — Kiến Trúc Normandy Khung Gỗ Colombage Dưới Rừng Thông Phường 4",
+      "name_en": "Villa No. 04 Le Hong Phong — Normandy Half-Timbered Colombage Pine-Forest Villa (Ward 4, Dalat)",
+      "house_number": "04 Lê Hồng Phong (Biệt Thự Pháp Cổ Đầu Đường Lê Hồng Phong – Pasteur)",
+      "cluster_zone": "LE_HONG_PHONG_PASTEUR_VILLAS",
+      "wave": 7,
+      "slot": 7,
+      "ring": 0,
+      "status": "built",
+      "lat": 11.9349213,
+      "lon": 108.4338001,
+      "elev_msl_m": 1501.411,
+      "x_m": -1248.0,
+      "y_m": -612.0,
+      "z_local_m": 23.411,
+      "gltf_position": [
+        -1248.0,
+        23.411,
+        612.0
+      ],
+      "heading_deg": 118.0,
+      "rotation_y_rad": -2.059489,
+      "tile_id": "T_W01_N00",
+      "pivot_local_gltf": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "foundation_skirt_m": -3.5,
+      "bbox_y_range_m": [
+        -3.5,
+        16.8
+      ],
+      "footprint_m": {
+        "width": 19.4,
+        "depth": 14.2,
+        "wall_height": 7.8,
+        "roof_pitch": 4.9
+      },
+      "architectural_style": "Normandy Half-Timbered Colombage & Fish-Scale Clay Roof Villa",
+      "roof_type": "fish_scale_clay",
+      "year_completed": "1937",
+      "window_emissive_hex": "#FFB86C",
+      "window_emissive_intensity": 0.45,
+      "glass_alpha_mode": "BLEND",
+      "glass_alpha": 0.85,
+      "no_khr_transmission": true,
+      "exclusion_polygon_wgs84": [
+        [
+          108.4337722,
+          11.9350671
+        ],
+        [
+          108.433661,
+          11.9348624
+        ],
+        [
+          108.433828,
+          11.9347755
+        ],
+        [
+          108.4339392,
+          11.9349802
+        ],
+        [
+          108.4337722,
+          11.9350671
+        ]
+      ],
+      "exclusion_polygon_local_m": [
+        [
+          -1251.038,
+          -595.774
+        ],
+        [
+          -1263.151,
+          -618.554
+        ],
+        [
+          -1244.962,
+          -628.226
+        ],
+        [
+          -1232.849,
+          -605.446
+        ],
+        [
+          -1251.038,
+          -595.774
+        ]
+      ],
+      "glb_path": "02_ASSETS_3D/french_villas/fv_lhp_04_le_hong_phong_villa_04_normandy_chalet.glb",
+      "sha256": "5cc1b5962b6321d3032093317195e195113575bc51d68aa2d070ec54a9259ccd",
+      "size_bytes": 872148,
+      "triangles": 13978,
+      "nodes": 12,
+      "materials": 12,
+      "camera_preset": {
+        "eye_gltf": [
+          -1200.448,
+          41.411,
+          641.84
+        ],
+        "target_gltf": [
+          -1248.0,
+          28.911,
+          612.0
+        ],
+        "fov_deg": 45.0
+      },
+      "source_references": [
+        "https://thuvienlamdong.org.vn/chi-tiet-tin-tuc/biet-thu-co---hon-cua-da-lat-giu-gin-do-thi-hiem-co-tren-the-gioi_494",
+        "https://www.sggp.org.vn/hanh-trinh-tim-lai-di-san-kien-truc-biet-thu-da-lat-post241788.html"
+      ]
+    },
+    {
+      "index": 5,
+      "id": "fv_lhp_05_le_hong_phong_villa_18_brittany_manor",
+      "name_vi": "Biệt Thự Pháp Cổ Số 18 Lê Hồng Phong — Dinh Thự Đá Chẻ Bretagne & 2 Ống Khói Đá Cao (Phường 4, Đà Lạt)",
+      "name_en": "Villa No. 18 Le Hong Phong — Brittany Split-Slate & Granite Quoin Manor (Ward 4, Dalat)",
+      "house_number": "18 Lê Hồng Phong (Biệt Thự Pháp Cổ Đá Chẻ Bretagne Đường Lê Hồng Phong)",
+      "cluster_zone": "LE_HONG_PHONG_PASTEUR_VILLAS",
+      "wave": 7,
+      "slot": 7,
+      "ring": 0,
+      "status": "built",
+      "lat": 11.9344183,
+      "lon": 108.4331849,
+      "elev_msl_m": 1503.147,
+      "x_m": -1315.0,
+      "y_m": -668.0,
+      "z_local_m": 25.147,
+      "gltf_position": [
+        -1315.0,
+        25.147,
+        668.0
+      ],
+      "heading_deg": 124.0,
+      "rotation_y_rad": -2.164208,
+      "tile_id": "T_W01_N00",
+      "pivot_local_gltf": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "foundation_skirt_m": -3.5,
+      "bbox_y_range_m": [
+        -3.5,
+        17.1
+      ],
+      "footprint_m": {
+        "width": 20.2,
+        "depth": 14.6,
+        "wall_height": 8.0,
+        "roof_pitch": 5.0
+      },
+      "architectural_style": "Brittany (Bretagne) Split-Slate Roof & Granite Quoin Manor",
+      "roof_type": "brittany_slate",
+      "year_completed": "1939",
+      "window_emissive_hex": "#FFB86C",
+      "window_emissive_intensity": 0.45,
+      "glass_alpha_mode": "BLEND",
+      "glass_alpha": 0.85,
+      "no_khr_transmission": true,
+      "exclusion_polygon_wgs84": [
+        [
+          108.4331733,
+          11.9345701
+        ],
+        [
+          108.4330367,
+          11.9343719
+        ],
+        [
+          108.4331966,
+          11.9342665
+        ],
+        [
+          108.4333331,
+          11.9344646
+        ],
+        [
+          108.4331733,
+          11.9345701
+        ]
+      ],
+      "exclusion_polygon_local_m": [
+        [
+          -1316.268,
+          -651.102
+        ],
+        [
+          -1331.142,
+          -673.155
+        ],
+        [
+          -1313.732,
+          -684.898
+        ],
+        [
+          -1298.858,
+          -662.845
+        ],
+        [
+          -1316.268,
+          -651.102
+        ]
+      ],
+      "glb_path": "02_ASSETS_3D/french_villas/fv_lhp_05_le_hong_phong_villa_18_brittany_manor.glb",
+      "sha256": "57917234875e7db2b1ee7a2104a55b2992c590d061f3f4de072c85b51efd095f",
+      "size_bytes": 870988,
+      "triangles": 13912,
+      "nodes": 12,
+      "materials": 12,
+      "camera_preset": {
+        "eye_gltf": [
+          -1269.497,
+          43.147,
+          701.249
+        ],
+        "target_gltf": [
+          -1315.0,
+          30.647,
+          668.0
+        ],
+        "fov_deg": 45.0
+      },
+      "source_references": [
+        "https://crystalbay.com/lang-biet-thu-co-da-lat-ve-dep-mo-mong-cua-kien-truc-phap-giua-rung-thong-xanh-n51893.html",
+        "https://vnexpress.net/lam-dong-siet-quan-ly-126-biet-thu-o-da-lat-5147455.html"
+      ]
+    },
+    {
+      "index": 6,
+      "id": "fv_lhp_06_pasteur_villa_28_mansard_noble_manor",
+      "name_vi": "Dinh Thự Pháp Cổ Số 28 Pasteur — Kiến Trúc Tân Cổ Điển Mái Mansard Đá Chẻ & Hành Lang Vòm (Phường 4, Đà Lạt)",
+      "name_en": "Villa No. 28 Pasteur — French Neo-Classical Double-Slope Mansard Slate Manor (Pasteur - Le Hong Phong Junction)",
+      "house_number": "28 Pasteur (Dinh Thự Pháp Cổ Mái Đá Chẻ Mansard Giao Lộ Pasteur – Lê Hồng Phong)",
+      "cluster_zone": "LE_HONG_PHONG_PASTEUR_VILLAS",
+      "wave": 7,
+      "slot": 7,
+      "ring": 0,
+      "status": "built",
+      "lat": 11.9353435,
+      "lon": 108.4344428,
+      "elev_msl_m": 1501.475,
+      "x_m": -1178.0,
+      "y_m": -565.0,
+      "z_local_m": 23.475,
+      "gltf_position": [
+        -1178.0,
+        23.475,
+        565.0
+      ],
+      "heading_deg": 172.0,
+      "rotation_y_rad": -3.001966,
+      "tile_id": "T_W01_N00",
+      "pivot_local_gltf": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "foundation_skirt_m": -3.5,
+      "bbox_y_range_m": [
+        -3.5,
+        17.3
+      ],
+      "footprint_m": {
+        "width": 21.8,
+        "depth": 14.8,
+        "wall_height": 8.2,
+        "roof_pitch": 5.0
+      },
+      "architectural_style": "French Neo-Classical Double-Slope Mansard Slate & Arched Loggia Manor",
+      "roof_type": "mansard_slate",
+      "year_completed": "1938",
+      "window_emissive_hex": "#FFB86C",
+      "window_emissive_intensity": 0.45,
+      "glass_alpha_mode": "BLEND",
+      "glass_alpha": 0.85,
+      "no_khr_transmission": true,
+      "exclusion_polygon_wgs84": [
+        [
+          108.4345575,
+          11.9354554
+        ],
+        [
+          108.4343011,
+          11.9354202
+        ],
+        [
+          108.4343282,
+          11.9352316
+        ],
+        [
+          108.4345846,
+          11.9352668
+        ],
+        [
+          108.4345575,
+          11.9354554
+        ]
+      ],
+      "exclusion_polygon_local_m": [
+        [
+          -1165.512,
+          -552.541
+        ],
+        [
+          -1193.438,
+          -556.465
+        ],
+        [
+          -1190.488,
+          -577.459
+        ],
+        [
+          -1162.562,
+          -573.535
+        ],
+        [
+          -1165.512,
+          -552.541
+        ]
+      ],
+      "glb_path": "02_ASSETS_3D/french_villas/fv_lhp_06_pasteur_villa_28_mansard_noble_manor.glb",
+      "sha256": "03d6bf908685bd5ba90469a3b2001febc6e9cf3faabba8aa97ff3f9050fb6d65",
+      "size_bytes": 898176,
+      "triangles": 14408,
+      "nodes": 12,
+      "materials": 12,
+      "camera_preset": {
+        "eye_gltf": [
+          -1158.711,
+          41.475,
+          614.63
+        ],
+        "target_gltf": [
+          -1178.0,
+          28.975,
+          565.0
+        ],
+        "fov_deg": 45.0
+      },
+      "source_references": [
+        "https://vnexpress.net/lam-dong-siet-quan-ly-126-biet-thu-o-da-lat-5147455.html",
+        "https://latravel.com.vn/post/lang-biet-thu-co-da-lat-ve-dep-mo-mong-cua-kien-truc-phap-giua-rung-thong-xanh/"
+      ]
+    },
+    {
+      "index": 7,
+      "id": "fv_lhp_07_villa_dhiver_02_ngo_thi_sy_savoy_manor",
+      "name_vi": "Biệt Thự Pháp Cổ Villa d'Hiver (Số 02 Ngô Thì Sỹ — Phong Cách Savoy Đá Chẻ & Gỗ Thông Đồi Phường 4, Đà Lạt)",
+      "name_en": "Villa d'Hiver Heritage French Chalet (02 Ngo Thi Sy Street — Savoy Split-Stone & Timber Manor, Ward 4)",
+      "house_number": "02 Ngô Thì Sỹ (Biệt Thự Pháp Cổ Villa d'Hiver — Đồi Thông Phường 4)",
+      "cluster_zone": "LE_HONG_PHONG_PASTEUR_VILLAS",
+      "wave": 7,
+      "slot": 7,
+      "ring": 0,
+      "status": "built",
+      "lat": 11.9339152,
+      "lon": 108.4325697,
+      "elev_msl_m": 1506.197,
+      "x_m": -1382.0,
+      "y_m": -724.0,
+      "z_local_m": 28.197,
+      "gltf_position": [
+        -1382.0,
+        28.197,
+        724.0
+      ],
+      "heading_deg": 135.0,
+      "rotation_y_rad": -2.356194,
+      "tile_id": "T_W01_N00",
+      "pivot_local_gltf": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "foundation_skirt_m": -3.5,
+      "bbox_y_range_m": [
+        -3.5,
+        16.9
+      ],
+      "footprint_m": {
+        "width": 19.6,
+        "depth": 14.2,
+        "wall_height": 7.8,
+        "roof_pitch": 5.0
+      },
+      "architectural_style": "Savoy Split-Stone Plinth & Timber Highland Chalet (Villa d'Hiver)",
+      "roof_type": "fish_scale_clay",
+      "year_completed": "1940",
+      "window_emissive_hex": "#FFB86C",
+      "window_emissive_intensity": 0.45,
+      "glass_alpha_mode": "BLEND",
+      "glass_alpha": 0.85,
+      "no_khr_transmission": true,
+      "exclusion_polygon_wgs84": [
+        [
+          108.4325873,
+          11.9340632
+        ],
+        [
+          108.4324184,
+          11.933898
+        ],
+        [
+          108.4325522,
+          11.9337672
+        ],
+        [
+          108.432721,
+          11.9339323
+        ],
+        [
+          108.4325873,
+          11.9340632
+        ]
+      ],
+      "exclusion_polygon_local_m": [
+        [
+          -1380.091,
+          -707.524
+        ],
+        [
+          -1398.476,
+          -725.909
+        ],
+        [
+          -1383.909,
+          -740.476
+        ],
+        [
+          -1365.524,
+          -722.091
+        ],
+        [
+          -1380.091,
+          -707.524
+        ]
+      ],
+      "glb_path": "02_ASSETS_3D/french_villas/fv_lhp_07_villa_dhiver_02_ngo_thi_sy_savoy_manor.glb",
+      "sha256": "ab9bdfc560c3fe052c65b275220163941fe4429c486115cd477035cb70963964",
+      "size_bytes": 874108,
+      "triangles": 14012,
+      "nodes": 12,
+      "materials": 12,
+      "camera_preset": {
+        "eye_gltf": [
+          -1341.13,
+          46.197,
+          762.87
+        ],
+        "target_gltf": [
+          -1382.0,
+          33.697,
+          724.0
+        ],
+        "fov_deg": 45.0
+      },
+      "source_references": [
+        "https://www.lemon8-app.com/lehuynhnhu/7341721360357425666?region=vn",
+        "https://bannhadalat.com/bds/khu-nghi-duong-la-cerise-dalat-villas-biet-thu-kien-truc-phap-sang-trong-giua-long-da-lat/"
+      ]
+    },
+    {
+      "index": 8,
+      "id": "fv_cl_08_tran_hung_dao_49_creative_heritage_villa",
+      "name_vi": "Biệt Thự Pháp Cổ Số 49 Trần Hưng Đạo — Không Gian Văn Hóa Sáng Tạo & Triển Lãm Di Sản Kiến Trúc Pháp",
+      "name_en": "Villa No. 49 Tran Hung Dao — Creative Cultural Heritage French Manor (East Tran Hung Dao Axis)",
+      "house_number": "49 Trần Hưng Đạo (Biệt Thự Cổ Không Gian Văn Hóa Sáng Tạo 49 Trần Hưng Đạo)",
+      "cluster_zone": "CHI_LANG_YERSIN_EAST_HERITAGE",
+      "wave": 7,
+      "slot": 7,
+      "ring": 0,
+      "status": "built",
+      "lat": 11.9365742,
+      "lon": 108.4550652,
+      "elev_msl_m": 1528.896,
+      "x_m": 1068.0,
+      "y_m": -428.0,
+      "z_local_m": 50.896,
+      "gltf_position": [
+        1068.0,
+        50.896,
+        428.0
+      ],
+      "heading_deg": 176.0,
+      "rotation_y_rad": -3.071779,
+      "tile_id": "T_E01_N00",
+      "pivot_local_gltf": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "foundation_skirt_m": -3.5,
+      "bbox_y_range_m": [
+        -3.5,
+        18.13
+      ],
+      "footprint_m": {
+        "width": 20.8,
+        "depth": 14.6,
+        "wall_height": 8.0,
+        "roof_pitch": 5.1
+      },
+      "architectural_style": "Normandy Conical-Turret & Arched Veranda Cultural Heritage Manor",
+      "roof_type": "fish_scale_clay",
+      "year_completed": "1934",
+      "window_emissive_hex": "#FFB86C",
+      "window_emissive_intensity": 0.45,
+      "glass_alpha_mode": "BLEND",
+      "glass_alpha": 0.85,
+      "no_khr_transmission": true,
+      "exclusion_polygon_wgs84": [
+        [
+          108.455183,
+          11.9366768
+        ],
+        [
+          108.4549339,
+          11.9366598
+        ],
+        [
+          108.4549473,
+          11.9364716
+        ],
+        [
+          108.4551965,
+          11.9364886
+        ],
+        [
+          108.455183,
+          11.9366768
+        ]
+      ],
+      "exclusion_polygon_local_m": [
+        [
+          1080.834,
+          -416.577
+        ],
+        [
+          1053.701,
+          -418.474
+        ],
+        [
+          1055.166,
+          -439.423
+        ],
+        [
+          1082.299,
+          -437.526
+        ],
+        [
+          1080.834,
+          -416.577
+        ]
+      ],
+      "glb_path": "02_ASSETS_3D/french_villas/fv_cl_08_tran_hung_dao_49_creative_heritage_villa.glb",
+      "sha256": "9d81560043a85a479a8512803e63c31006cb54ea4e6821efeb7d291010537191",
+      "size_bytes": 884008,
+      "triangles": 14126,
+      "nodes": 12,
+      "materials": 12,
+      "camera_preset": {
+        "eye_gltf": [
+          1084.651,
+          68.896,
+          477.907
+        ],
+        "target_gltf": [
+          1068.0,
+          56.396,
+          428.0
+        ],
+        "fov_deg": 45.0
+      },
+      "source_references": [
+        "https://thanglong.chinhphu.vn/khong-gian-van-hoa-sang-tao-tai-biet-thu-co-49-tran-hung-dao-103261123214257077.htm",
+        "https://citytourdalat.vn/biet-thu-phap-co-da-lat-ve-dep-theo-nam-thang/"
+      ]
+    },
+    {
+      "index": 9,
+      "id": "fv_cl_09_yersin_102_geodesy_heritage_manor",
+      "name_vi": "Dinh Thự Pháp Cổ Số 102 Yersin — Khu Chuyên Gia Địa Dư & Bản Đồ Đà Lạt (Mái Đá Chẻ Mansard 2 Tầng, Phường 9)",
+      "name_en": "Villa No. 102 Yersin — Cartographic & Geodesy French Mansard Slate Manor (102 Yersin Street, Ward 9)",
+      "house_number": "102 Yersin (Dinh Thự Pháp Cổ Khu Địa Dư & Bản Đồ Số 102 Yersin — Phường 9)",
+      "cluster_zone": "CHI_LANG_YERSIN_EAST_HERITAGE",
+      "wave": 7,
+      "slot": 7,
+      "ring": 0,
+      "status": "built",
+      "lat": 11.944174,
+      "lon": 108.4592888,
+      "elev_msl_m": 1516.1,
+      "x_m": 1528.0,
+      "y_m": 418.0,
+      "z_local_m": 38.1,
+      "gltf_position": [
+        1528.0,
+        38.1,
+        -418.0
+      ],
+      "heading_deg": 215.0,
+      "rotation_y_rad": -3.752458,
+      "tile_id": "T_E01_N00",
+      "pivot_local_gltf": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "foundation_skirt_m": -3.5,
+      "bbox_y_range_m": [
+        -3.5,
+        17.3
+      ],
+      "footprint_m": {
+        "width": 22.0,
+        "depth": 14.8,
+        "wall_height": 8.2,
+        "roof_pitch": 5.0
+      },
+      "architectural_style": "French Neo-Classical Double-Slope Mansard Slate & Red-Brick Quoin Manor",
+      "roof_type": "mansard_slate",
+      "year_completed": "1942",
+      "window_emissive_hex": "#FFB86C",
+      "window_emissive_intensity": 0.45,
+      "glass_alpha_mode": "BLEND",
+      "glass_alpha": 0.85,
+      "no_khr_transmission": true,
+      "exclusion_polygon_wgs84": [
+        [
+          108.4594514,
+          11.9441788
+        ],
+        [
+          108.4592378,
+          11.9443251
+        ],
+        [
+          108.4591262,
+          11.9441691
+        ],
+        [
+          108.4593398,
+          11.9440228
+        ],
+        [
+          108.4594514,
+          11.9441788
+        ]
+      ],
+      "exclusion_polygon_local_m": [
+        [
+          1545.712,
+          418.538
+        ],
+        [
+          1522.448,
+          434.828
+        ],
+        [
+          1510.288,
+          417.462
+        ],
+        [
+          1533.552,
+          401.172
+        ],
+        [
+          1545.712,
+          418.538
+        ]
+      ],
+      "glb_path": "02_ASSETS_3D/french_villas/fv_cl_09_yersin_102_geodesy_heritage_manor.glb",
+      "sha256": "07b4a2634c9b2348e05fde94caa36fcd7675fa4ec0eba4744f9a1bd346b29dd3",
+      "size_bytes": 898124,
+      "triangles": 14408,
+      "nodes": 12,
+      "materials": 12,
+      "camera_preset": {
+        "eye_gltf": [
+          1520.204,
+          56.1,
+          -374.872
+        ],
+        "target_gltf": [
+          1528.0,
+          43.6,
+          -418.0
+        ],
+        "fov_deg": 45.0
+      },
+      "source_references": [
+        "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_c%C3%B4ng_tr%C3%ACnh_ki%E1%BA%BFn_tr%C3%BAc_%C4%90%C3%A0_L%E1%BA%A1t",
+        "https://www.sggp.org.vn/hanh-trinh-tim-lai-di-san-kien-truc-biet-thu-da-lat-post241788.html"
+      ]
+    },
+    {
+      "index": 10,
+      "id": "fv_cl_10_chi_lang_la_cerise_french_villa_12",
+      "name_vi": "Biệt Thự Pháp Cổ Số 12 Chi Lăng — Khu Biệt Thự Đồi Thông La Cerise Chi Lăng (Kiến Trúc Basque – Normandy, Phường 9)",
+      "name_en": "Villa No. 12 Chi Lang — La Cerise Pine-Hillside Basque-Normandy French Villa (Ward 9, Dalat)",
+      "house_number": "12 Chi Lăng (Biệt Thự Pháp Cổ Khu La Cerise Đường Chi Lăng — Phường 9)",
+      "cluster_zone": "CHI_LANG_YERSIN_EAST_HERITAGE",
+      "wave": 7,
+      "slot": 7,
+      "ring": 0,
+      "status": "built",
+      "lat": 11.9459167,
+      "lon": 108.4614649,
+      "elev_msl_m": 1510.127,
+      "x_m": 1765.0,
+      "y_m": 612.0,
+      "z_local_m": 32.127,
+      "gltf_position": [
+        1765.0,
+        32.127,
+        -612.0
+      ],
+      "heading_deg": 208.0,
+      "rotation_y_rad": -3.630285,
+      "tile_id": "T_E01_N00",
+      "pivot_local_gltf": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "foundation_skirt_m": -3.5,
+      "bbox_y_range_m": [
+        -3.5,
+        16.9
+      ],
+      "footprint_m": {
+        "width": 19.6,
+        "depth": 14.4,
+        "wall_height": 7.8,
+        "roof_pitch": 5.0
+      },
+      "architectural_style": "Basque-Normandy Wide-Eave Roof & Stone Loggia Hillside Villa",
+      "roof_type": "fish_scale_clay",
+      "year_completed": "1941",
+      "window_emissive_hex": "#FFB86C",
+      "window_emissive_intensity": 0.45,
+      "glass_alpha_mode": "BLEND",
+      "glass_alpha": 0.85,
+      "no_khr_transmission": true,
+      "exclusion_polygon_wgs84": [
+        [
+          108.4616151,
+          11.9459444
+        ],
+        [
+          108.4614043,
+          11.946054
+        ],
+        [
+          108.4613147,
+          11.945889
+        ],
+        [
+          108.4615255,
+          11.9457794
+        ],
+        [
+          108.4616151,
+          11.9459444
+        ]
+      ],
+      "exclusion_polygon_local_m": [
+        [
+          1781.361,
+          615.08
+        ],
+        [
+          1758.404,
+          627.286
+        ],
+        [
+          1748.639,
+          608.92
+        ],
+        [
+          1771.596,
+          596.714
+        ],
+        [
+          1781.361,
+          615.08
+        ]
+      ],
+      "glb_path": "02_ASSETS_3D/french_villas/fv_cl_10_chi_lang_la_cerise_french_villa_12.glb",
+      "sha256": "80c3b7fde9ad819f80c30ee2eb73819e150cbd43b838b6d543eb6f832f738d62",
+      "size_bytes": 883372,
+      "triangles": 14188,
+      "nodes": 12,
+      "materials": 12,
+      "camera_preset": {
+        "eye_gltf": [
+          1761.16,
+          50.127,
+          -566.448
+        ],
+        "target_gltf": [
+          1765.0,
+          37.627,
+          -612.0
+        ],
+        "fov_deg": 45.0
+      },
+      "source_references": [
+        "https://bannhadalat.com/bds/khu-nghi-duong-la-cerise-dalat-villas-biet-thu-kien-truc-phap-sang-trong-giua-long-da-lat/",
+        "https://www.booking.com/villas/city/vn/khu-chi-lang.vi.html"
+      ]
+    },
+    {
+      "index": 1,
+      "id": "fv_yk_01_biet_dien_tran_le_xuan_bach_ngoc_pool",
+      "name_vi": "Biệt Thự Bạch Ngọc & Hồ Bơi Nước Nóng — Quần Thể Biệt Điện Trần Lệ Xuân / Trung Tâm Lưu Trữ Quốc Gia IV (Số 02 Yết Kiêu)",
+      "name_en": "Bach Ngoc (White Jade) Villa & Heated Pool — Tran Le Xuan Palace / National Archives Center IV (02 Yet Kieu)",
+      "house_number": "02 Yết Kiêu (Biệt Thự Bạch Ngọc & Hồ Bơi Nước Nóng — Biệt Điện Trần Lệ Xuân)",
+      "cluster_zone": "BIET_DIEN_TRAN_LE_XUAN_YET_KIEU",
+      "wave": 8,
+      "slot": 7,
+      "ring": 0,
+      "status": "built",
+      "lat": 11.9420539,
+      "lon": 108.4307517,
+      "elev_msl_m": 1449.842,
+      "x_m": -1580.0,
+      "y_m": 182.0,
+      "z_local_m": -28.158,
+      "gltf_position": [
+        -1580.0,
+        -28.158,
+        -182.0
+      ],
+      "heading_deg": 142.0,
+      "rotation_y_rad": -2.478368,
+      "tile_id": "T_W01_N00",
+      "pivot_local_gltf": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "foundation_skirt_m": -3.5,
+      "bbox_y_range_m": [
+        -3.5,
+        17.2
+      ],
+      "footprint_m": {
+        "width": 22.4,
+        "depth": 15.0,
+        "wall_height": 8.2,
+        "roof_pitch": 4.9
+      },
+      "architectural_style": "French Neo-Classical & Modernist Heritage Villa with Heated Terrace Pool",
+      "roof_type": "fish_scale_clay",
+      "year_completed": "1958",
+      "window_emissive_hex": "#FFB86C",
+      "window_emissive_intensity": 0.45,
+      "glass_alpha_mode": "BLEND",
+      "glass_alpha": 0.85,
+      "no_khr_transmission": true,
+      "exclusion_polygon_wgs84": [
+        [
+          108.4307954,
+          11.9422093
+        ],
+        [
+          108.4305871,
+          11.94205
+        ],
+        [
+          108.430708,
+          11.9418986
+        ],
+        [
+          108.4309164,
+          11.9420578
+        ],
+        [
+          108.4307954,
+          11.9422093
+        ]
+      ],
+      "exclusion_polygon_local_m": [
+        [
+          -1575.24,
+          199.297
+        ],
+        [
+          -1597.935,
+          181.566
+        ],
+        [
+          -1584.76,
+          164.703
+        ],
+        [
+          -1562.065,
+          182.434
+        ],
+        [
+          -1575.24,
+          199.297
+        ]
+      ],
+      "glb_path": "02_ASSETS_3D/french_villas/fv_yk_01_biet_dien_tran_le_xuan_bach_ngoc_pool.glb",
+      "sha256": "aec976f59218fd1ccd2f012063e4d3cfcabf33c983c510cc6523b22173a57b8d",
+      "size_bytes": 968196,
+      "triangles": 15754,
+      "nodes": 12,
+      "materials": 12,
+      "camera_preset": {
+        "eye_gltf": [
+          -1542.605,
+          -10.158,
+          -140.056
+        ],
+        "target_gltf": [
+          -1580.0,
+          -22.658,
+          -182.0
+        ],
+        "fov_deg": 45.0
+      },
+      "source_references": [
+        "https://lamdong.gov.vn/sites/dulich/danh-thang-khac/SitePages/biet-dien-tran-le-xuan.aspx",
+        "https://madamededalat.vn/",
+        "https://lamdongtours.com/dia-diem-du-lich-da-lat/cong-trinh-kien-truc/biet-dien-tran-le-xuan/"
+      ]
+    },
+    {
+      "index": 2,
+      "id": "fv_yk_02_biet_dien_tran_le_xuan_lam_ngoc_manor",
+      "name_vi": "Đệ Nhất Biệt Điện Lam Ngọc — Trung Tâm Lưu Trữ Quốc Gia IV & Bảo Tàng Mộc Bản Triều Nguyễn (Số 02A Yết Kiêu)",
+      "name_en": "Lam Ngoc (Blue Sapphire) Villa — National Archives Center IV & UNESCO Nguyen Dynasty Woodblocks Museum (02A Yet Kieu)",
+      "house_number": "02A Yết Kiêu (Đệ Nhất Biệt Điện Lam Ngọc — Trung Tâm Lưu Trữ Mộc Bản Triều Nguyễn)",
+      "cluster_zone": "BIET_DIEN_TRAN_LE_XUAN_YET_KIEU",
+      "wave": 8,
+      "slot": 7,
+      "ring": 0,
+      "status": "built",
+      "lat": 11.9423594,
+      "lon": 108.4302467,
+      "elev_msl_m": 1449.597,
+      "x_m": -1635.0,
+      "y_m": 216.0,
+      "z_local_m": -28.403,
+      "gltf_position": [
+        -1635.0,
+        -28.403,
+        -216.0
+      ],
+      "heading_deg": 146.0,
+      "rotation_y_rad": -2.548181,
+      "tile_id": "T_W01_N00",
+      "pivot_local_gltf": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "foundation_skirt_m": -3.5,
+      "bbox_y_range_m": [
+        -3.5,
+        17.2
+      ],
+      "footprint_m": {
+        "width": 21.6,
+        "depth": 14.8,
+        "wall_height": 8.1,
+        "roof_pitch": 5.0
+      },
+      "architectural_style": "French Neo-Classical Double-Slope Mansard Slate & Arched Veranda Manor",
+      "roof_type": "mansard_slate",
+      "year_completed": "1958",
+      "window_emissive_hex": "#FFB86C",
+      "window_emissive_intensity": 0.45,
+      "glass_alpha_mode": "BLEND",
+      "glass_alpha": 0.85,
+      "no_khr_transmission": true,
+      "exclusion_polygon_wgs84": [
+        [
+          108.4302989,
+          11.9425086
+        ],
+        [
+          108.4300857,
+          11.942368
+        ],
+        [
+          108.4301946,
+          11.9422101
+        ],
+        [
+          108.4304077,
+          11.9423507
+        ],
+        [
+          108.4302989,
+          11.9425086
+        ]
+      ],
+      "exclusion_polygon_local_m": [
+        [
+          -1629.321,
+          232.616
+        ],
+        [
+          -1652.534,
+          216.959
+        ],
+        [
+          -1640.679,
+          199.384
+        ],
+        [
+          -1617.466,
+          215.041
+        ],
+        [
+          -1629.321,
+          232.616
+        ]
+      ],
+      "glb_path": "02_ASSETS_3D/french_villas/fv_yk_02_biet_dien_tran_le_xuan_lam_ngoc_manor.glb",
+      "sha256": "4e6142e3d533f152932b4857e65c58325a65e8e3d0bb492a6e6247b6c429093e",
+      "size_bytes": 898132,
+      "triangles": 14408,
+      "nodes": 12,
+      "materials": 12,
+      "camera_preset": {
+        "eye_gltf": [
+          -1599.751,
+          -10.403,
+          -172.497
+        ],
+        "target_gltf": [
+          -1635.0,
+          -22.903,
+          -216.0
+        ],
+        "fov_deg": 45.0
+      },
+      "source_references": [
+        "https://lamdong.gov.vn/sites/dulich/danh-thang-khac/SitePages/biet-dien-tran-le-xuan.aspx",
+        "https://kyluc.vn/tin-tuc/top-best/biet-dien-tran-le-xuan-lam-dong-top-20-nha-va-dinh-thu-co-tai-viet-nam-thu-hut-du-khach-tham-quan-p-8-vietkings-topplus-hanh-trinh-top-viet-nam",
+        "https://tuoitre.vn/biet-dien-tran-le-xuan-o-da-lat-263329.htm"
+      ]
+    },
+    {
+      "index": 3,
+      "id": "fv_yk_03_biet_dien_tran_le_xuan_hong_ngoc_villa",
+      "name_vi": "Biệt Thự Hồng Ngọc & Vườn Hoa Nhật Bản — Quần Thể Biệt Điện Trần Lệ Xuân (Số 02B Yết Kiêu, Phường 5, Đà Lạt)",
+      "name_en": "Hong Ngoc (Ruby) Heritage French Villa & Japanese Garden — Tran Le Xuan Palace Complex (02B Yet Kieu)",
+      "house_number": "02B Yết Kiêu (Biệt Thự Hồng Ngọc & Vườn Hoa Nhật Bản — Biệt Điện Trần Lệ Xuân)",
+      "cluster_zone": "BIET_DIEN_TRAN_LE_XUAN_YET_KIEU",
+      "wave": 8,
+      "slot": 7,
+      "ring": 0,
+      "status": "built",
+      "lat": 11.9417485,
+      "lon": 108.4312475,
+      "elev_msl_m": 1450.687,
+      "x_m": -1526.0,
+      "y_m": 148.0,
+      "z_local_m": -27.313,
+      "gltf_position": [
+        -1526.0,
+        -27.313,
+        -148.0
+      ],
+      "heading_deg": 138.0,
+      "rotation_y_rad": -2.408554,
+      "tile_id": "T_W01_N00",
+      "pivot_local_gltf": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "foundation_skirt_m": -3.5,
+      "bbox_y_range_m": [
+        -3.5,
+        17.93
+      ],
+      "footprint_m": {
+        "width": 19.8,
+        "depth": 14.4,
+        "wall_height": 7.9,
+        "roof_pitch": 5.0
+      },
+      "architectural_style": "Normandy Conical-Turret & Rose-Tinted Stucco Heritage Villa",
+      "roof_type": "fish_scale_clay",
+      "year_completed": "1959",
+      "window_emissive_hex": "#FFB86C",
+      "window_emissive_intensity": 0.45,
+      "glass_alpha_mode": "BLEND",
+      "glass_alpha": 0.85,
+      "no_khr_transmission": true,
+      "exclusion_polygon_wgs84": [
+        [
+          108.431273,
+          11.9418967
+        ],
+        [
+          108.4310943,
+          11.9417392
+        ],
+        [
+          108.4312221,
+          11.9416003
+        ],
+        [
+          108.4314008,
+          11.9417578
+        ],
+        [
+          108.431273,
+          11.9418967
+        ]
+      ],
+      "exclusion_polygon_local_m": [
+        [
+          -1523.224,
+          164.494
+        ],
+        [
+          -1542.694,
+          146.963
+        ],
+        [
+          -1528.776,
+          131.506
+        ],
+        [
+          -1509.306,
+          149.037
+        ],
+        [
+          -1523.224,
+          164.494
+        ]
+      ],
+      "glb_path": "02_ASSETS_3D/french_villas/fv_yk_03_biet_dien_tran_le_xuan_hong_ngoc_villa.glb",
+      "sha256": "8812fa7a03a9c46a9c7c6a323dd293a96b2d446bf939417935b3cb720c74747b",
+      "size_bytes": 881592,
+      "triangles": 14082,
+      "nodes": 12,
+      "materials": 12,
+      "camera_preset": {
+        "eye_gltf": [
+          -1486.573,
+          -9.313,
+          -107.76
+        ],
+        "target_gltf": [
+          -1526.0,
+          -21.813,
+          -148.0
+        ],
+        "fov_deg": 45.0
+      },
+      "source_references": [
+        "https://tuoitre.vn/biet-dien-tran-le-xuan-o-da-lat-263329.htm",
+        "https://www.dalattrip.com/dulich/biet-dien-tran-le-xuan/",
+        "https://hdvlocal.com/blogs/du-lich/biet-dien-tran-le-xuan"
+      ]
+    },
+    {
+      "index": 4,
+      "id": "fv_sna_04_suong_nguyet_anh_villa_01_lakeview_manor",
+      "name_vi": "Biệt Thự Pháp Cổ Số 01 Sương Nguyệt Ánh — Dinh Thự Đồi Thông Hướng Hồ Xuân Hương (Phường 9, Đà Lạt)",
+      "name_en": "Villa No. 01 Suong Nguyet Anh — Xuan Huong Lake-View Normandy Conical-Turret Heritage Manor (Ward 9)",
+      "house_number": "01 Sương Nguyệt Ánh (Biệt Thự Pháp Cổ View Hồ Xuân Hương Đầu Đường Sương Nguyệt Ánh)",
+      "cluster_zone": "SUONG_NGUYET_ANH_LAKEVIEW_VILLAS",
+      "wave": 8,
+      "slot": 7,
+      "ring": 0,
+      "status": "built",
+      "lat": 11.9423234,
+      "lon": 108.454854,
+      "elev_msl_m": 1520.443,
+      "x_m": 1045.0,
+      "y_m": 212.0,
+      "z_local_m": 42.443,
+      "gltf_position": [
+        1045.0,
+        42.443,
+        -212.0
+      ],
+      "heading_deg": 232.0,
+      "rotation_y_rad": -4.049164,
+      "tile_id": "T_E01_N00",
+      "pivot_local_gltf": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "foundation_skirt_m": -3.5,
+      "bbox_y_range_m": [
+        -3.5,
+        18.13
+      ],
+      "footprint_m": {
+        "width": 21.0,
+        "depth": 14.8,
+        "wall_height": 8.0,
+        "roof_pitch": 5.1
+      },
+      "architectural_style": "Grand Normandy Conical-Turret & Lakeview Romanesque Veranda Manor",
+      "roof_type": "fish_scale_clay",
+      "year_completed": "1936",
+      "window_emissive_hex": "#FFB86C",
+      "window_emissive_intensity": 0.45,
+      "glass_alpha_mode": "BLEND",
+      "glass_alpha": 0.85,
+      "no_khr_transmission": true,
+      "exclusion_polygon_wgs84": [
+        [
+          108.4550081,
+          11.9422851
+        ],
+        [
+          108.4548532,
+          11.942479
+        ],
+        [
+          108.4546999,
+          11.9423618
+        ],
+        [
+          108.4548548,
+          11.9421678
+        ],
+        [
+          108.4550081,
+          11.9422851
+        ]
+      ],
+      "exclusion_polygon_local_m": [
+        [
+          1061.787,
+          207.73
+        ],
+        [
+          1044.918,
+          229.322
+        ],
+        [
+          1028.213,
+          216.27
+        ],
+        [
+          1045.082,
+          194.678
+        ],
+        [
+          1061.787,
+          207.73
+        ]
+      ],
+      "glb_path": "02_ASSETS_3D/french_villas/fv_sna_04_suong_nguyet_anh_villa_01_lakeview_manor.glb",
+      "sha256": "47fe31c0a31329c6407034ce31f80f67d1f5c92bf9d6c15a9a8d9b10629ed180",
+      "size_bytes": 958052,
+      "triangles": 15498,
+      "nodes": 12,
+      "materials": 12,
+      "camera_preset": {
+        "eye_gltf": [
+          1029.056,
+          60.443,
+          -176.605
+        ],
+        "target_gltf": [
+          1045.0,
+          47.943,
+          -212.0
+        ],
+        "fov_deg": 45.0
+      },
+      "source_references": [
+        "https://dalathomes.com/ban/ban-biet-thu-mat-tien-suong-nguyet-anh-da-lat-3/",
+        "https://muabannhadatdalat.net/bds/villa-mat-tien-so-rieng-suong-nguyet-anh-phuong-9-da-lat-1517m2/"
+      ]
+    },
+    {
+      "index": 5,
+      "id": "fv_sna_05_suong_nguyet_anh_villa_08_normandy_colombage",
+      "name_vi": "Biệt Thự Pháp Cổ Số 08 Sương Nguyệt Ánh — Kiến Trúc Normandy Khung Gỗ Colombage Khuôn Viên 938m² (Phường 9)",
+      "name_en": "Villa No. 08 Suong Nguyet Anh — Normandy Half-Timbered Colombage 938m2 Garden Estate (Ward 9, Dalat)",
+      "house_number": "08 Sương Nguyệt Ánh (Biệt Thự Pháp Normandy Colombage Khuôn Viên 938m² Sương Nguyệt Ánh)",
+      "cluster_zone": "SUONG_NGUYET_ANH_LAKEVIEW_VILLAS",
+      "wave": 8,
+      "slot": 7,
+      "ring": 0,
+      "status": "built",
+      "lat": 11.9427007,
+      "lon": 108.4554141,
+      "elev_msl_m": 1520.967,
+      "x_m": 1106.0,
+      "y_m": 254.0,
+      "z_local_m": 42.967,
+      "gltf_position": [
+        1106.0,
+        42.967,
+        -254.0
+      ],
+      "heading_deg": 228.0,
+      "rotation_y_rad": -3.979351,
+      "tile_id": "T_E01_N00",
+      "pivot_local_gltf": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "foundation_skirt_m": -3.5,
+      "bbox_y_range_m": [
+        -3.5,
+        16.8
+      ],
+      "footprint_m": {
+        "width": 19.4,
+        "depth": 14.2,
+        "wall_height": 7.8,
+        "roof_pitch": 4.9
+      },
+      "architectural_style": "Normandy Half-Timbered (Colombage) Lakeview Garden Villa",
+      "roof_type": "fish_scale_clay",
+      "year_completed": "1938",
+      "window_emissive_hex": "#FFB86C",
+      "window_emissive_intensity": 0.45,
+      "glass_alpha_mode": "BLEND",
+      "glass_alpha": 0.85,
+      "no_khr_transmission": true,
+      "exclusion_polygon_wgs84": [
+        [
+          108.4555636,
+          11.9426765
+        ],
+        [
+          108.4554051,
+          11.9428488
+        ],
+        [
+          108.4552646,
+          11.9427249
+        ],
+        [
+          108.4554231,
+          11.9425527
+        ],
+        [
+          108.4555636,
+          11.9426765
+        ]
+      ],
+      "exclusion_polygon_local_m": [
+        [
+          1122.286,
+          251.305
+        ],
+        [
+          1105.023,
+          270.479
+        ],
+        [
+          1089.714,
+          256.695
+        ],
+        [
+          1106.977,
+          237.521
+        ],
+        [
+          1122.286,
+          251.305
+        ]
+      ],
+      "glb_path": "02_ASSETS_3D/french_villas/fv_sna_05_suong_nguyet_anh_villa_08_normandy_colombage.glb",
+      "sha256": "3da059c3205aa02dbca38e57ec2cda49c6287768cff7e1b489cdfd88107f5ace",
+      "size_bytes": 872156,
+      "triangles": 13978,
+      "nodes": 12,
+      "materials": 12,
+      "camera_preset": {
+        "eye_gltf": [
+          1091.76,
+          60.967,
+          -216.573
+        ],
+        "target_gltf": [
+          1106.0,
+          48.467,
+          -254.0
+        ],
+        "fov_deg": 45.0
+      },
+      "source_references": [
+        "https://muabannhadatdalat.net/bds/villa-mat-tien-so-rieng-suong-nguyet-anh-phuong-9-da-lat-1517m2/",
+        "https://alomuabannhadat.vn/ban-biet-thu-mat-tien-suong-nguyet-anh-view-om-tron-ho-xuan-huong-1118956.html"
+      ]
+    },
+    {
+      "index": 6,
+      "id": "fv_sna_06_suong_nguyet_anh_villa_16_brittany_slate",
+      "name_vi": "Biệt Thự Pháp Cổ Số 16 Sương Nguyệt Ánh — Dinh Thự Đá Chẻ Bretagne Khuôn Viên Đồi Thông 1.452m² (Phường 9)",
+      "name_en": "Villa No. 16 Suong Nguyet Anh — Brittany Split-Slate & Granite 1,452m2 Pine Estate (Ward 9, Dalat)",
+      "house_number": "16 Sương Nguyệt Ánh (Biệt Thự Pháp Đá Chẻ Bretagne Khuôn Viên 1.452m² Sương Nguyệt Ánh)",
+      "cluster_zone": "SUONG_NGUYET_ANH_LAKEVIEW_VILLAS",
+      "wave": 8,
+      "slot": 7,
+      "ring": 0,
+      "status": "built",
+      "lat": 11.943096,
+      "lon": 108.4559834,
+      "elev_msl_m": 1521.291,
+      "x_m": 1168.0,
+      "y_m": 298.0,
+      "z_local_m": 43.291,
+      "gltf_position": [
+        1168.0,
+        43.291,
+        -298.0
+      ],
+      "heading_deg": 225.0,
+      "rotation_y_rad": -3.926991,
+      "tile_id": "T_E01_N00",
+      "pivot_local_gltf": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "foundation_skirt_m": -3.5,
+      "bbox_y_range_m": [
+        -3.5,
+        17.0
+      ],
+      "footprint_m": {
+        "width": 20.0,
+        "depth": 14.4,
+        "wall_height": 7.9,
+        "roof_pitch": 5.0
+      },
+      "architectural_style": "Brittany Twin-Gable Split-Slate & Granite Quoin Manor",
+      "roof_type": "brittany_slate",
+      "year_completed": "1939",
+      "window_emissive_hex": "#FFB86C",
+      "window_emissive_intensity": 0.45,
+      "glass_alpha_mode": "BLEND",
+      "glass_alpha": 0.85,
+      "no_khr_transmission": true,
+      "exclusion_polygon_wgs84": [
+        [
+          108.4561366,
+          11.9430782
+        ],
+        [
+          108.4559652,
+          11.9432459
+        ],
+        [
+          108.4558301,
+          11.9431138
+        ],
+        [
+          108.4560015,
+          11.9429461
+        ],
+        [
+          108.4561366,
+          11.9430782
+        ]
+      ],
+      "exclusion_polygon_local_m": [
+        [
+          1184.688,
+          296.02
+        ],
+        [
+          1166.02,
+          314.688
+        ],
+        [
+          1151.312,
+          299.98
+        ],
+        [
+          1169.98,
+          281.312
+        ],
+        [
+          1184.688,
+          296.02
+        ]
+      ],
+      "glb_path": "02_ASSETS_3D/french_villas/fv_sna_06_suong_nguyet_anh_villa_16_brittany_slate.glb",
+      "sha256": "0e20492c8b83edb851b8c091d52981b290b9ba4c50f3c50b656a518a1056657c",
+      "size_bytes": 869700,
+      "triangles": 13888,
+      "nodes": 12,
+      "materials": 12,
+      "camera_preset": {
+        "eye_gltf": [
+          1155.13,
+          61.291,
+          -259.13
+        ],
+        "target_gltf": [
+          1168.0,
+          48.791,
+          -298.0
+        ],
+        "fov_deg": 45.0
+      },
+      "source_references": [
+        "https://dalathomes.com/ban/ban-biet-thu-mat-tien-suong-nguyet-anh-da-lat-3/",
+        "https://bannhadalat.com/bds/khu-nghi-duong-la-cerise-dalat-villas-biet-thu-kien-truc-phap-sang-trong-giua-long-da-lat/"
+      ]
+    },
+    {
+      "index": 7,
+      "id": "fv_sna_07_suong_nguyet_anh_villa_24_mansard_manor",
+      "name_vi": "Dinh Thự Pháp Cổ Số 24 Sương Nguyệt Ánh — Kiến Trúc Tân Cổ Điển Mái Đá Chẻ Mansard 2 Độ Dốc (Phường 9, Đà Lạt)",
+      "name_en": "Villa No. 24 Suong Nguyet Anh — French Neo-Classical Double-Slope Mansard Slate Manor (Ward 9, Dalat)",
+      "house_number": "24 Sương Nguyệt Ánh (Dinh Thự Pháp Mái Đá Chẻ Mansard Đồi Sương Nguyệt Ánh — Phường 9)",
+      "cluster_zone": "SUONG_NGUYET_ANH_LAKEVIEW_VILLAS",
+      "wave": 8,
+      "slot": 7,
+      "ring": 0,
+      "status": "built",
+      "lat": 11.9434912,
+      "lon": 108.4565343,
+      "elev_msl_m": 1521.312,
+      "x_m": 1228.0,
+      "y_m": 342.0,
+      "z_local_m": 43.312,
+      "gltf_position": [
+        1228.0,
+        43.312,
+        -342.0
+      ],
+      "heading_deg": 220.0,
+      "rotation_y_rad": -3.839724,
+      "tile_id": "T_E01_N00",
+      "pivot_local_gltf": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "foundation_skirt_m": -3.5,
+      "bbox_y_range_m": [
+        -3.5,
+        17.2
+      ],
+      "footprint_m": {
+        "width": 21.6,
+        "depth": 14.8,
+        "wall_height": 8.1,
+        "roof_pitch": 5.0
+      },
+      "architectural_style": "French Neo-Classical Double-Slope Mansard Slate Manor",
+      "roof_type": "mansard_slate",
+      "year_completed": "1940",
+      "window_emissive_hex": "#FFB86C",
+      "window_emissive_intensity": 0.45,
+      "glass_alpha_mode": "BLEND",
+      "glass_alpha": 0.85,
+      "no_khr_transmission": true,
+      "exclusion_polygon_wgs84": [
+        [
+          108.4566953,
+          11.9434833
+        ],
+        [
+          108.4564984,
+          11.943645
+        ],
+        [
+          108.4563732,
+          11.9434991
+        ],
+        [
+          108.4565702,
+          11.9433375
+        ],
+        [
+          108.4566953,
+          11.9434833
+        ]
+      ],
+      "exclusion_polygon_local_m": [
+        [
+          1245.538,
+          341.121
+        ],
+        [
+          1224.089,
+          359.119
+        ],
+        [
+          1210.462,
+          342.879
+        ],
+        [
+          1231.911,
+          324.881
+        ],
+        [
+          1245.538,
+          341.121
+        ]
+      ],
+      "glb_path": "02_ASSETS_3D/french_villas/fv_sna_07_suong_nguyet_anh_villa_24_mansard_manor.glb",
+      "sha256": "f87688fabca1925f5acb8a45a89c3e0e6529cbb51abab430c86a097913e26f89",
+      "size_bytes": 898136,
+      "triangles": 14408,
+      "nodes": 12,
+      "materials": 12,
+      "camera_preset": {
+        "eye_gltf": [
+          1217.574,
+          61.312,
+          -300.89
+        ],
+        "target_gltf": [
+          1228.0,
+          48.812,
+          -342.0
+        ],
+        "fov_deg": 45.0
+      },
+      "source_references": [
+        "https://resta.vn/mua-ban/nha-dat--duong--suong-nguyet-anh--da-lat--lam-dong",
+        "https://guland.vn/mua-ban-nha-mat-pho-mat-tien-duong-suong-nguyet-anh-phuong-9-thanh-pho-da-lat-lam-dong"
+      ]
+    },
+    {
+      "index": 8,
+      "id": "fv_pdtv_08_dinh_tien_hoang_09_pio_x_french_pavilion",
+      "name_vi": "Khối Dinh Thự Kiến Trúc Pháp Đồi Giáo Hoàng Học Viện Thánh Piô X (Số 09 Đinh Tiên Hoàng, Phường 2, Đà Lạt)",
+      "name_en": "St. Pius X Pontifical Institute Hill French Heritage Mansard Pavilion (09 Dinh Tien Hoang Street, Ward 2)",
+      "house_number": "09 Đinh Tiên Hoàng (Khối Dinh Thự Pháp Cổ Đồi Giáo Hoàng Học Viện Thánh Piô X — Phường 2)",
+      "cluster_zone": "DINH_TIEN_HOANG_PHU_DONG_THIEN_VUONG",
+      "wave": 8,
+      "slot": 7,
+      "ring": 0,
+      "status": "built",
+      "lat": 11.950013,
+      "lon": 108.4411731,
+      "elev_msl_m": 1497.18,
+      "x_m": -445.0,
+      "y_m": 1068.0,
+      "z_local_m": 19.18,
+      "gltf_position": [
+        -445.0,
+        19.18,
+        -1068.0
+      ],
+      "heading_deg": 108.0,
+      "rotation_y_rad": -1.884956,
+      "tile_id": "T_E00_N01",
+      "pivot_local_gltf": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "foundation_skirt_m": -3.5,
+      "bbox_y_range_m": [
+        -3.5,
+        17.5
+      ],
+      "footprint_m": {
+        "width": 23.2,
+        "depth": 15.0,
+        "wall_height": 8.3,
+        "roof_pitch": 5.1
+      },
+      "architectural_style": "Monumental French Neo-Classical Mansard Slate & Arched Colonnade Pavilion",
+      "roof_type": "mansard_slate",
+      "year_completed": "1957",
+      "window_emissive_hex": "#FFB86C",
+      "window_emissive_intensity": 0.45,
+      "glass_alpha_mode": "BLEND",
+      "glass_alpha": 0.85,
+      "no_khr_transmission": true,
+      "exclusion_polygon_wgs84": [
+        [
+          108.4411216,
+          11.9501692
+        ],
+        [
+          108.4410377,
+          11.9499163
+        ],
+        [
+          108.4412245,
+          11.9498569
+        ],
+        [
+          108.4413085,
+          11.9501097
+        ],
+        [
+          108.4411216,
+          11.9501692
+        ]
+      ],
+      "exclusion_polygon_local_m": [
+        [
+          -450.603,
+          1085.382
+        ],
+        [
+          -459.75,
+          1057.231
+        ],
+        [
+          -439.397,
+          1050.618
+        ],
+        [
+          -430.25,
+          1078.769
+        ],
+        [
+          -450.603,
+          1085.382
+        ]
+      ],
+      "glb_path": "02_ASSETS_3D/french_villas/fv_pdtv_08_dinh_tien_hoang_09_pio_x_french_pavilion.glb",
+      "sha256": "4fd463fa8fd560305ca1ebe4dcdbd9648c9cc295814f8222ec273c7f6f1ab860",
+      "size_bytes": 910876,
+      "triangles": 14644,
+      "nodes": 12,
+      "materials": 12,
+      "camera_preset": {
+        "eye_gltf": [
+          -394.86,
+          37.18,
+          -1044.257
+        ],
+        "target_gltf": [
+          -445.0,
+          24.68,
+          -1068.0
+        ],
+        "fov_deg": 45.0
+      },
+      "source_references": [
+        "https://thanhnien.vn/doc-nha-lang-da-lat-co-ngoi-dinh-tung-lam-le-quay-mat-185261121203336488.htm",
+        "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_c%C3%B4ng_tr%C3%ACnh_ki%E1%BA%BFn_tr%C3%BAc_%C4%90%C3%A0_L%E1%BA%A1t"
+      ]
+    },
+    {
+      "index": 9,
+      "id": "fv_pdtv_09_phu_dong_thien_vuong_02_normandy_manor",
+      "name_vi": "Dinh Thự Pháp Cổ Số 02 Phù Đổng Thiên Vương — Kiến Trúc Normandy Tháp Tròn Gần Ngã Năm Đại Học (Phường 8)",
+      "name_en": "Villa No. 02 Phu Dong Thien Vuong — Normandy Conical-Turret Heritage Manor near University Circle (Ward 8)",
+      "house_number": "02 Phù Đổng Thiên Vương (Dinh Thự Pháp Cổ Ngã Năm Đại Học – Phù Đổng Thiên Vương)",
+      "cluster_zone": "DINH_TIEN_HOANG_PHU_DONG_THIEN_VUONG",
+      "wave": 8,
+      "slot": 7,
+      "ring": 0,
+      "status": "built",
+      "lat": 11.953759,
+      "lon": 108.4416965,
+      "elev_msl_m": 1494.586,
+      "x_m": -388.0,
+      "y_m": 1485.0,
+      "z_local_m": 16.586,
+      "gltf_position": [
+        -388.0,
+        16.586,
+        -1485.0
+      ],
+      "heading_deg": 112.0,
+      "rotation_y_rad": -1.954769,
+      "tile_id": "T_E00_N01",
+      "pivot_local_gltf": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "foundation_skirt_m": -3.5,
+      "bbox_y_range_m": [
+        -3.5,
+        18.13
+      ],
+      "footprint_m": {
+        "width": 20.6,
+        "depth": 14.6,
+        "wall_height": 8.0,
+        "roof_pitch": 5.1
+      },
+      "architectural_style": "Normandy Conical-Turret & Fish-Scale Clay Roof Heritage Manor",
+      "roof_type": "fish_scale_clay",
+      "year_completed": "1942",
+      "window_emissive_hex": "#FFB86C",
+      "window_emissive_intensity": 0.45,
+      "glass_alpha_mode": "BLEND",
+      "glass_alpha": 0.85,
+      "no_khr_transmission": true,
+      "exclusion_polygon_wgs84": [
+        [
+          108.4416535,
+          11.9539068
+        ],
+        [
+          108.4415606,
+          11.9536819
+        ],
+        [
+          108.4417394,
+          11.9536112
+        ],
+        [
+          108.4418323,
+          11.9538361
+        ],
+        [
+          108.4416535,
+          11.9539068
+        ]
+      ],
+      "exclusion_polygon_local_m": [
+        [
+          -392.678,
+          1501.45
+        ],
+        [
+          -402.793,
+          1476.416
+        ],
+        [
+          -383.322,
+          1468.55
+        ],
+        [
+          -373.207,
+          1493.584
+        ],
+        [
+          -392.678,
+          1501.45
+        ]
+      ],
+      "glb_path": "02_ASSETS_3D/french_villas/fv_pdtv_09_phu_dong_thien_vuong_02_normandy_manor.glb",
+      "sha256": "50a77029651e77ddc5afb0cb805ecfebc1a235bba595c145686aa11f353512c1",
+      "size_bytes": 883972,
+      "triangles": 14126,
+      "nodes": 12,
+      "materials": 12,
+      "camera_preset": {
+        "eye_gltf": [
+          -338.767,
+          34.586,
+          -1458.765
+        ],
+        "target_gltf": [
+          -388.0,
+          22.086,
+          -1485.0
+        ],
+        "fov_deg": 45.0
+      },
+      "source_references": [
+        "https://lamdongtours.com/khach-san-da-lat/duong/phu-dong-thien-vuong/",
+        "https://guland.vn/mua-ban-bat-dong-san-duong-phu-dong-thien-vuong-lam-dong"
+      ]
+    },
+    {
+      "index": 10,
+      "id": "fv_pdtv_10_phu_dong_thien_vuong_15_anada_pine_villa",
+      "name_vi": "Biệt Thự Pháp Cổ Số 15 Phù Đổng Thiên Vương — Khu Biệt Thự Đồi Thông Anada (Kiến Trúc Savoy – Bretagne, Phường 8)",
+      "name_en": "Villa No. 15 Phu Dong Thien Vuong — Anada Pine-Hillside Savoy-Brittany Heritage Villa (Ward 8, Dalat)",
+      "house_number": "15 Phù Đổng Thiên Vương (Biệt Thự Pháp Cổ Khu Biệt Thự Anada Đường Phù Đổng Thiên Vương — Phường 8)",
+      "cluster_zone": "DINH_TIEN_HOANG_PHU_DONG_THIEN_VUONG",
+      "wave": 8,
+      "slot": 7,
+      "ring": 0,
+      "status": "built",
+      "lat": 11.95587,
+      "lon": 108.4421188,
+      "elev_msl_m": 1496.347,
+      "x_m": -342.0,
+      "y_m": 1720.0,
+      "z_local_m": 18.347,
+      "gltf_position": [
+        -342.0,
+        18.347,
+        -1720.0
+      ],
+      "heading_deg": 116.0,
+      "rotation_y_rad": -2.024582,
+      "tile_id": "T_E00_N01",
+      "pivot_local_gltf": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "foundation_skirt_m": -3.5,
+      "bbox_y_range_m": [
+        -3.5,
+        16.9
+      ],
+      "footprint_m": {
+        "width": 19.6,
+        "depth": 14.2,
+        "wall_height": 7.8,
+        "roof_pitch": 5.0
+      },
+      "architectural_style": "Savoy Split-Stone Plinth & Timber Highland Chalet (Anada Quarter)",
+      "roof_type": "brittany_slate",
+      "year_completed": "1943",
+      "window_emissive_hex": "#FFB86C",
+      "window_emissive_intensity": 0.45,
+      "glass_alpha_mode": "BLEND",
+      "glass_alpha": 0.85,
+      "no_khr_transmission": true,
+      "exclusion_polygon_wgs84": [
+        [
+          108.4420861,
+          11.9560155
+        ],
+        [
+          108.4419815,
+          11.9558056
+        ],
+        [
+          108.4421515,
+          11.9557245
+        ],
+        [
+          108.4422561,
+          11.9559344
+        ],
+        [
+          108.4420861,
+          11.9560155
+        ]
+      ],
+      "exclusion_polygon_local_m": [
+        [
+          -345.559,
+          1736.2
+        ],
+        [
+          -356.956,
+          1712.831
+        ],
+        [
+          -338.441,
+          1703.8
+        ],
+        [
+          -327.044,
+          1727.169
+        ],
+        [
+          -345.559,
+          1736.2
+        ]
+      ],
+      "glb_path": "02_ASSETS_3D/french_villas/fv_pdtv_10_phu_dong_thien_vuong_15_anada_pine_villa.glb",
+      "sha256": "b2f7d6ee74e87cef53113d9bc7a93169cd6aa2e6544a63e3b04409a5b4fe9226",
+      "size_bytes": 876228,
+      "triangles": 14012,
+      "nodes": 12,
+      "materials": 12,
+      "camera_preset": {
+        "eye_gltf": [
+          -293.846,
+          36.347,
+          -1691.342
+        ],
+        "target_gltf": [
+          -342.0,
+          23.847,
+          -1720.0
+        ],
+        "fov_deg": 45.0
+      },
+      "source_references": [
+        "https://nhadat.cafeland.vn/ban-nha-phu-dong-thien-vuong-da-lat-khu-anada-8-ty-2264050.html",
+        "https://dalathomes.com/ban/dat-lien-ke-phu-dong-thien-vuong-da-lat-mat-tien-lon-hem-rong-thuan-tien-kinh-doanh/"
+      ]
+    },
+    {
+      "index": 1,
+      "id": "fv_tvv_01_trieu_viet_vuong_02_dinh3_gate_normandy_manor",
+      "name_vi": "Dinh Thự Pháp Cổ Số 02 Triệu Việt Vương — Đầu Cổng Đồi Dinh III (Khuôn Viên 1.356,38m², Kiến Trúc Normandy Tháp Tròn, Phường 4)",
+      "name_en": "Villa No. 02 Trieu Viet Vuong — Palace III Gatehouse Normandy Conical-Turret 1,356m2 Heritage Manor (Ward 4, Dalat)",
+      "house_number": "02 Triệu Việt Vương (Dinh Thự Pháp Cổ Đầu Cổng Đồi Dinh III — Khuôn Viên 1.356,38m², Phường 4)",
+      "cluster_zone": "TRIEU_VIET_VUONG_DINH3_HILL_VILLAS",
+      "wave": 9,
+      "slot": 7,
+      "ring": 0,
+      "status": "built",
+      "lat": 11.9317503,
+      "lon": 108.4343785,
+      "elev_msl_m": 1508.811,
+      "x_m": -1185.0,
+      "y_m": -965.0,
+      "z_local_m": 30.811,
+      "gltf_position": [
+        -1185.0,
+        30.811,
+        965.0
+      ],
+      "heading_deg": 208.0,
+      "rotation_y_rad": -3.630285,
+      "tile_id": "T_W01_N00",
+      "pivot_local_gltf": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "foundation_skirt_m": -3.5,
+      "bbox_y_range_m": [
+        -3.5,
+        18.33
+      ],
+      "footprint_m": {
+        "width": 21.6,
+        "depth": 14.8,
+        "wall_height": 8.1,
+        "roof_pitch": 5.2
+      },
+      "architectural_style": "Grand Normandy Conical-Turret & Fish-Scale Clay Tile Heritage Manor",
+      "roof_type": "fish_scale_clay",
+      "year_completed": "1938",
+      "window_emissive_hex": "#FFB86C",
+      "window_emissive_intensity": 0.45,
+      "glass_alpha_mode": "BLEND",
+      "glass_alpha": 0.85,
+      "no_khr_transmission": true,
+      "exclusion_polygon_wgs84": [
+        [
+          108.4345377,
+          11.9317753
+        ],
+        [
+          108.4343107,
+          11.9318934
+        ],
+        [
+          108.4342194,
+          11.9317252
+        ],
+        [
+          108.4344464,
+          11.9316071
+        ],
+        [
+          108.4345377,
+          11.9317753
+        ]
+      ],
+      "exclusion_polygon_local_m": [
+        [
+          -1167.662,
+          -962.213
+        ],
+        [
+          -1192.385,
+          -949.068
+        ],
+        [
+          -1202.338,
+          -967.787
+        ],
+        [
+          -1177.615,
+          -980.932
+        ],
+        [
+          -1167.662,
+          -962.213
+        ]
+      ],
+      "glb_path": "02_ASSETS_3D/french_villas/fv_tvv_01_trieu_viet_vuong_02_dinh3_gate_normandy_manor.glb",
+      "sha256": "6207216ad297889c7649b4377ba7246d89bb231b419546e8c9bff87f23b6c35f",
+      "size_bytes": 960480,
+      "triangles": 15542,
+      "nodes": 12,
+      "materials": 12,
+      "camera_preset": {
+        "eye_gltf": [
+          -1188.84,
+          48.811,
+          1010.552
+        ],
+        "target_gltf": [
+          -1185.0,
+          36.311,
+          965.0
+        ],
+        "fov_deg": 45.0
+      },
+      "source_references": [
+        "https://bazantravel.com/dinh-iii-kien-truc-phap-tuyet-voi-o-cao-nguyen-da-lat/",
+        "https://bietthudalat.vip/nha-dat/dat-xay-khach-san-biet-thu/dat-xay-khach-san-biet-thu-vie-60d974af02bada947bff7e72.html"
+      ]
+    },
+    {
+      "index": 2,
+      "id": "fv_tvv_02_trieu_viet_vuong_16_colombage_pine_villa",
+      "name_vi": "Biệt Thự Pháp Cổ Số 16 Triệu Việt Vương — Kiến Trúc Normandy Khung Gỗ Lộ Thiên Colombage Giữa Rừng Thông (Phường 4)",
+      "name_en": "Villa No. 16 Trieu Viet Vuong — Normandy Half-Timbered Colombage Pine-Forest Heritage Villa (Ward 4, Dalat)",
+      "house_number": "16 Triệu Việt Vương (Biệt Thự Pháp Normandy Khung Gỗ Lộ Thiên Colombage Đồi Thông Phường 4)",
+      "cluster_zone": "TRIEU_VIET_VUONG_DINH3_HILL_VILLAS",
+      "wave": 9,
+      "slot": 7,
+      "ring": 0,
+      "status": "built",
+      "lat": 11.9308969,
+      "lon": 108.4337358,
+      "elev_msl_m": 1502.0,
+      "x_m": -1255.0,
+      "y_m": -1060.0,
+      "z_local_m": 24.0,
+      "gltf_position": [
+        -1255.0,
+        24.0,
+        1060.0
+      ],
+      "heading_deg": 215.0,
+      "rotation_y_rad": -3.752458,
+      "tile_id": "T_W01_S01",
+      "pivot_local_gltf": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "foundation_skirt_m": -3.5,
+      "bbox_y_range_m": [
+        -3.5,
+        16.8
+      ],
+      "footprint_m": {
+        "width": 19.6,
+        "depth": 14.2,
+        "wall_height": 7.8,
+        "roof_pitch": 4.9
+      },
+      "architectural_style": "Normandy Half-Timbered (Colombage) Pine-Hillside Garden Villa",
+      "roof_type": "fish_scale_clay",
+      "year_completed": "1939",
+      "window_emissive_hex": "#FFB86C",
+      "window_emissive_intensity": 0.45,
+      "glass_alpha_mode": "BLEND",
+      "glass_alpha": 0.85,
+      "no_khr_transmission": true,
+      "exclusion_polygon_wgs84": [
+        [
+          108.4338878,
+          11.9309057
+        ],
+        [
+          108.4336923,
+          11.9310396
+        ],
+        [
+          108.4335838,
+          11.930888
+        ],
+        [
+          108.4337794,
+          11.9307541
+        ],
+        [
+          108.4338878,
+          11.9309057
+        ]
+      ],
+      "exclusion_polygon_local_m": [
+        [
+          -1238.443,
+          -1059.019
+        ],
+        [
+          -1259.741,
+          -1044.106
+        ],
+        [
+          -1271.557,
+          -1060.981
+        ],
+        [
+          -1250.259,
+          -1075.894
+        ],
+        [
+          -1238.443,
+          -1059.019
+        ]
+      ],
+      "glb_path": "02_ASSETS_3D/french_villas/fv_tvv_02_trieu_viet_vuong_16_colombage_pine_villa.glb",
+      "sha256": "5dac461ed4faa8b4b7a22dc4f588737d583aaf798b57d27419b41e8ef2b0e03d",
+      "size_bytes": 873400,
+      "triangles": 14002,
+      "nodes": 12,
+      "materials": 12,
+      "camera_preset": {
+        "eye_gltf": [
+          -1262.796,
+          42.0,
+          1103.128
+        ],
+        "target_gltf": [
+          -1255.0,
+          29.5,
+          1060.0
+        ],
+        "fov_deg": 45.0
+      },
+      "source_references": [
+        "https://vinpearl.com/vi/dinh-bao-dai-da-lat-kham-pha-ve-dep-kien-truc-phap",
+        "https://vietnamnet.vn/dinh-thu-cua-vi-hoang-de-cuoi-cung-tai-da-lat-154469.html"
+      ]
+    },
+    {
+      "index": 3,
+      "id": "fv_tvv_03_trieu_viet_vuong_24_brittany_slate_manor",
+      "name_vi": "Biệt Thự Pháp Cổ Số 24 Triệu Việt Vương — Kiến Trúc Bretagne Mái Đá Chẻ & Chân Đế Đá Hoa Cương (Phường 4)",
+      "name_en": "Villa No. 24 Trieu Viet Vuong — Brittany Split-Slate & Granite Quoin Hillside Manor (Ward 4, Dalat)",
+      "house_number": "24 Triệu Việt Vương (Biệt Thự Pháp Đá Chẻ Bretagne Đồi Thông Triệu Việt Vương — Phường 4)",
+      "cluster_zone": "TRIEU_VIET_VUONG_DINH3_HILL_VILLAS",
+      "wave": 9,
+      "slot": 7,
+      "ring": 0,
+      "status": "built",
+      "lat": 11.9300435,
+      "lon": 108.4330472,
+      "elev_msl_m": 1502.0,
+      "x_m": -1330.0,
+      "y_m": -1155.0,
+      "z_local_m": 24.0,
+      "gltf_position": [
+        -1330.0,
+        24.0,
+        1155.0
+      ],
+      "heading_deg": 212.0,
+      "rotation_y_rad": -3.700098,
+      "tile_id": "T_W01_S01",
+      "pivot_local_gltf": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "foundation_skirt_m": -3.5,
+      "bbox_y_range_m": [
+        -3.5,
+        17.0
+      ],
+      "footprint_m": {
+        "width": 20.2,
+        "depth": 14.4,
+        "wall_height": 7.9,
+        "roof_pitch": 5.0
+      },
+      "architectural_style": "Brittany Twin-Gable Split-Slate & Granite Quoin Manor",
+      "roof_type": "brittany_slate",
+      "year_completed": "1940",
+      "window_emissive_hex": "#FFB86C",
+      "window_emissive_intensity": 0.45,
+      "glass_alpha_mode": "BLEND",
+      "glass_alpha": 0.85,
+      "no_khr_transmission": true,
+      "exclusion_polygon_wgs84": [
+        [
+          108.4332013,
+          11.9300594
+        ],
+        [
+          108.4329942,
+          11.930186
+        ],
+        [
+          108.432893,
+          11.9300275
+        ],
+        [
+          108.4331001,
+          11.9299009
+        ],
+        [
+          108.4332013,
+          11.9300594
+        ]
+      ],
+      "exclusion_polygon_local_m": [
+        [
+          -1313.21,
+          -1153.228
+        ],
+        [
+          -1335.768,
+          -1139.132
+        ],
+        [
+          -1346.79,
+          -1156.772
+        ],
+        [
+          -1324.232,
+          -1170.868
+        ],
+        [
+          -1313.21,
+          -1153.228
+        ]
+      ],
+      "glb_path": "02_ASSETS_3D/french_villas/fv_tvv_03_trieu_viet_vuong_24_brittany_slate_manor.glb",
+      "sha256": "80a51f8a1f1398dcfa18e4b5f1a8ed8f40dcce3c7129c413ad27392b356920ed",
+      "size_bytes": 870980,
+      "triangles": 13912,
+      "nodes": 12,
+      "materials": 12,
+      "camera_preset": {
+        "eye_gltf": [
+          -1336.137,
+          42.0,
+          1199.226
+        ],
+        "target_gltf": [
+          -1330.0,
+          29.5,
+          1155.0
+        ],
+        "fov_deg": 45.0
+      },
+      "source_references": [
+        "https://langthangdalat.com/blog/kham-pha-dinh-3-da-lat-dinh-thu-xa-hoa-sang-trong-bat-nhat-xu-so-ngan-hoa/",
+        "https://www.ivivu.com/blog/2024/10/dinh-bao-dai-da-lat-net-kien-truc-phap-giua-rung-thong/"
+      ]
+    },
+    {
+      "index": 4,
+      "id": "fv_tvv_04_trieu_viet_vuong_36_mansard_forest_manor",
+      "name_vi": "Dinh Thự Pháp Cổ Số 36 Triệu Việt Vương — Kiến Trúc Tân Cổ Điển Mái Mansard Cửa Ngõ Rừng Thông Tuyền Lâm (Phường 3)",
+      "name_en": "Villa No. 36 Trieu Viet Vuong — French Neo-Classical Double-Slope Mansard Pine-Forest Manor (Ward 3, Dalat)",
+      "house_number": "36 Triệu Việt Vương (Dinh Thự Pháp Mansard Cửa Ngõ Rừng Thông Hướng Hồ Tuyền Lâm — Phường 3)",
+      "cluster_zone": "TRIEU_VIET_VUONG_DINH3_HILL_VILLAS",
+      "wave": 9,
+      "slot": 7,
+      "ring": 0,
+      "status": "built",
+      "lat": 11.9291901,
+      "lon": 108.4323126,
+      "elev_msl_m": 1502.0,
+      "x_m": -1410.0,
+      "y_m": -1250.0,
+      "z_local_m": 24.0,
+      "gltf_position": [
+        -1410.0,
+        24.0,
+        1250.0
+      ],
+      "heading_deg": 202.0,
+      "rotation_y_rad": -3.525565,
+      "tile_id": "T_W01_S01",
+      "pivot_local_gltf": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "foundation_skirt_m": -3.5,
+      "bbox_y_range_m": [
+        -3.5,
+        17.4
+      ],
+      "footprint_m": {
+        "width": 22.0,
+        "depth": 15.0,
+        "wall_height": 8.2,
+        "roof_pitch": 5.1
+      },
+      "architectural_style": "French Neo-Classical Double-Slope Mansard Slate & Arched Veranda Manor",
+      "roof_type": "mansard_slate",
+      "year_completed": "1941",
+      "window_emissive_hex": "#FFB86C",
+      "window_emissive_intensity": 0.45,
+      "glass_alpha_mode": "BLEND",
+      "glass_alpha": 0.85,
+      "no_khr_transmission": true,
+      "exclusion_polygon_wgs84": [
+        [
+          108.4324703,
+          11.9292314
+        ],
+        [
+          108.4322286,
+          11.929327
+        ],
+        [
+          108.4321549,
+          11.9291487
+        ],
+        [
+          108.4323967,
+          11.9290532
+        ],
+        [
+          108.4324703,
+          11.9292314
+        ]
+      ],
+      "exclusion_polygon_local_m": [
+        [
+          -1392.826,
+          -1245.399
+        ],
+        [
+          -1419.158,
+          -1234.76
+        ],
+        [
+          -1427.174,
+          -1254.601
+        ],
+        [
+          -1400.842,
+          -1265.24
+        ],
+        [
+          -1392.826,
+          -1245.399
+        ]
+      ],
+      "glb_path": "02_ASSETS_3D/french_villas/fv_tvv_04_trieu_viet_vuong_36_mansard_forest_manor.glb",
+      "sha256": "f3b95af6bca0534b9c6bcd751304abf398de4705195a1932058ef24d3b8f8eab",
+      "size_bytes": 898112,
+      "triangles": 14408,
+      "nodes": 12,
+      "materials": 12,
+      "camera_preset": {
+        "eye_gltf": [
+          -1410.235,
+          42.0,
+          1297.233
+        ],
+        "target_gltf": [
+          -1410.0,
+          29.5,
+          1250.0
+        ],
+        "fov_deg": 45.0
+      },
+      "source_references": [
+        "https://dulichvietnam.com.vn/dinh-bao-dai-iii-da-lat.html",
+        "https://batdongsan.com.vn/ban-nha-biet-thu-lien-ke-duong-trieu-viet-vuong-391"
+      ]
+    },
+    {
+      "index": 5,
+      "id": "fv_tqd_05_tran_quang_dieu_02_royal_guard_manor",
+      "name_vi": "Dinh Thự Pháp Cổ Số 02 Trần Quang Diệu — Tư Dinh & Biệt Thự Cận Vệ Rừng Thông Đồi Dinh I (Phường 10, Đà Lạt)",
+      "name_en": "Villa No. 02 Tran Quang Dieu — King I Palace Guard & Aide-de-Camp French Neoclassical Manor (Ward 10, Dalat)",
+      "house_number": "02 Trần Quang Diệu (Dinh Thự Cận Vệ & Tư Dinh Pháp Cổ Đồi Thông Dinh I — Phường 10)",
+      "cluster_zone": "TRAN_QUANG_DIEU_DINH1_PINE_VILLAS",
+      "wave": 9,
+      "slot": 7,
+      "ring": 0,
+      "status": "built",
+      "lat": 11.9333223,
+      "lon": 108.4626585,
+      "elev_msl_m": 1557.374,
+      "x_m": 1895.0,
+      "y_m": -790.0,
+      "z_local_m": 79.374,
+      "gltf_position": [
+        1895.0,
+        79.374,
+        790.0
+      ],
+      "heading_deg": 162.0,
+      "rotation_y_rad": -2.827433,
+      "tile_id": "T_E01_N00",
+      "pivot_local_gltf": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "foundation_skirt_m": -3.5,
+      "bbox_y_range_m": [
+        -3.5,
+        17.1
+      ],
+      "footprint_m": {
+        "width": 21.2,
+        "depth": 14.8,
+        "wall_height": 8.0,
+        "roof_pitch": 5.0
+      },
+      "architectural_style": "French Neo-Classical Royal Ochre Stucco & Romanesque Arcade Manor",
+      "roof_type": "fish_scale_clay",
+      "year_completed": "1940",
+      "window_emissive_hex": "#FFB86C",
+      "window_emissive_intensity": 0.45,
+      "glass_alpha_mode": "BLEND",
+      "glass_alpha": 0.85,
+      "no_khr_transmission": true,
+      "exclusion_polygon_wgs84": [
+        [
+          108.462749,
+          11.9334512
+        ],
+        [
+          108.462508,
+          11.9333746
+        ],
+        [
+          108.4625681,
+          11.9331934
+        ],
+        [
+          108.4628091,
+          11.9332701
+        ],
+        [
+          108.462749,
+          11.9334512
+        ]
+      ],
+      "exclusion_polygon_local_m": [
+        [
+          1904.849,
+          -775.654
+        ],
+        [
+          1878.6,
+          -784.183
+        ],
+        [
+          1885.151,
+          -804.346
+        ],
+        [
+          1911.4,
+          -795.817
+        ],
+        [
+          1904.849,
+          -775.654
+        ]
+      ],
+      "glb_path": "02_ASSETS_3D/french_villas/fv_tqd_05_tran_quang_dieu_02_royal_guard_manor.glb",
+      "sha256": "2bb3517704ad04d8c3090bcd0ddda4211a3107e677f8f026169082d06b8a668a",
+      "size_bytes": 960968,
+      "triangles": 15624,
+      "nodes": 12,
+      "materials": 12,
+      "camera_preset": {
+        "eye_gltf": [
+          1920.743,
+          97.374,
+          838.14
+        ],
+        "target_gltf": [
+          1895.0,
+          84.874,
+          790.0
+        ],
+        "fov_deg": 45.0
+      },
+      "source_references": [
+        "https://www.sggp.org.vn/dinh-1-bao-dai-o-da-lat-diem-den-thu-hut-du-khach-post862522.html",
+        "https://agotourist.com/dinh-1-da-lat/"
+      ]
+    },
+    {
+      "index": 6,
+      "id": "fv_tqd_06_tran_quang_dieu_08_centennial_normandy_villa",
+      "name_vi": "Biệt Thự Pháp Cổ Trăm Năm Số 08 Trần Quang Diệu — Kiến Trúc Normandy Tháp Tròn Dưới Rừng Thông Hơn 1 Thế Kỷ (Phường 10)",
+      "name_en": "Villa No. 08 Tran Quang Dieu — Centennial Normandy Conical-Turret Pine-Forest Heritage Villa (Ward 10, Dalat)",
+      "house_number": "08 Trần Quang Diệu (Biệt Thự Pháp Cổ Trăm Năm Ẩn Mình Dưới Rừng Thông Trần Quang Diệu — Phường 10)",
+      "cluster_zone": "TRAN_QUANG_DIEU_DINH1_PINE_VILLAS",
+      "wave": 9,
+      "slot": 7,
+      "ring": 0,
+      "status": "built",
+      "lat": 11.9327833,
+      "lon": 108.4637145,
+      "elev_msl_m": 1564.095,
+      "x_m": 2010.0,
+      "y_m": -850.0,
+      "z_local_m": 86.095,
+      "gltf_position": [
+        2010.0,
+        86.095,
+        850.0
+      ],
+      "heading_deg": 168.0,
+      "rotation_y_rad": -2.932153,
+      "tile_id": "T_E01_N00",
+      "pivot_local_gltf": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "foundation_skirt_m": -3.5,
+      "bbox_y_range_m": [
+        -3.5,
+        18.13
+      ],
+      "footprint_m": {
+        "width": 20.4,
+        "depth": 14.6,
+        "wall_height": 8.0,
+        "roof_pitch": 5.1
+      },
+      "architectural_style": "Centennial Normandy Conical-Turret & Colombage Pine Forest Villa",
+      "roof_type": "fish_scale_clay",
+      "year_completed": "1929",
+      "window_emissive_hex": "#FFB86C",
+      "window_emissive_intensity": 0.45,
+      "glass_alpha_mode": "BLEND",
+      "glass_alpha": 0.85,
+      "no_khr_transmission": true,
+      "exclusion_polygon_wgs84": [
+        [
+          108.4638148,
+          11.9329006
+        ],
+        [
+          108.4635741,
+          11.9328506
+        ],
+        [
+          108.4636142,
+          11.932666
+        ],
+        [
+          108.4638548,
+          11.9327161
+        ],
+        [
+          108.4638148,
+          11.9329006
+        ]
+      ],
+      "exclusion_polygon_local_m": [
+        [
+          2020.924,
+          -836.943
+        ],
+        [
+          1994.71,
+          -842.515
+        ],
+        [
+          1999.076,
+          -863.057
+        ],
+        [
+          2025.29,
+          -857.485
+        ],
+        [
+          2020.924,
+          -836.943
+        ]
+      ],
+      "glb_path": "02_ASSETS_3D/french_villas/fv_tqd_06_tran_quang_dieu_08_centennial_normandy_villa.glb",
+      "sha256": "045e970cf709291e5a64177c86f7682f9012c3f2c7cf50542e89e786c7f99e6c",
+      "size_bytes": 882876,
+      "triangles": 14106,
+      "nodes": 12,
+      "materials": 12,
+      "camera_preset": {
+        "eye_gltf": [
+          2031.901,
+          104.095,
+          899.17
+        ],
+        "target_gltf": [
+          2010.0,
+          91.595,
+          850.0
+        ],
+        "fov_deg": 45.0
+      },
+      "source_references": [
+        "https://vtcnews.vn/4-dinh-thu-co-dep-ma-mi-an-minh-duoi-rung-thong-da-lat-hon-1-the-ky-ar662178.html",
+        "https://baodautu.vn/cac-biet-thu-co-se-duoc-tinh-lam-dong-bao-ve-nghiem-ngat-d746638.html"
+      ]
+    },
+    {
+      "index": 7,
+      "id": "fv_tqd_07_tran_quang_dieu_18_brittany_pine_estate",
+      "name_vi": "Biệt Thự Pháp Cổ Số 18 Trần Quang Diệu — Dinh Thự Đá Chẻ Bretagne Rừng Thông Đồi Dinh I (Phường 10, Đà Lạt)",
+      "name_en": "Villa No. 18 Tran Quang Dieu — Brittany Split-Slate & Granite Arched Pine Estate (Ward 10, Dalat)",
+      "house_number": "18 Trần Quang Diệu (Biệt Thự Pháp Đá Chẻ Bretagne Mặt Tiền Trần Quang Diệu — Phường 10)",
+      "cluster_zone": "TRAN_QUANG_DIEU_DINH1_PINE_VILLAS",
+      "wave": 9,
+      "slot": 7,
+      "ring": 0,
+      "status": "built",
+      "lat": 11.9321994,
+      "lon": 108.4648622,
+      "elev_msl_m": 1568.877,
+      "x_m": 2135.0,
+      "y_m": -915.0,
+      "z_local_m": 90.877,
+      "gltf_position": [
+        2135.0,
+        90.877,
+        915.0
+      ],
+      "heading_deg": 174.0,
+      "rotation_y_rad": -3.036873,
+      "tile_id": "T_E01_N00",
+      "pivot_local_gltf": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "foundation_skirt_m": -3.5,
+      "bbox_y_range_m": [
+        -3.5,
+        17.0
+      ],
+      "footprint_m": {
+        "width": 20.6,
+        "depth": 14.6,
+        "wall_height": 7.9,
+        "roof_pitch": 5.0
+      },
+      "architectural_style": "Brittany Twin-Gable Split-Slate & Granite Arched Pine Estate",
+      "roof_type": "brittany_slate",
+      "year_completed": "1936",
+      "window_emissive_hex": "#FFB86C",
+      "window_emissive_intensity": 0.45,
+      "glass_alpha_mode": "BLEND",
+      "glass_alpha": 0.85,
+      "no_khr_transmission": true,
+      "exclusion_polygon_wgs84": [
+        [
+          108.4649754,
+          11.9323059
+        ],
+        [
+          108.4647288,
+          11.9322805
+        ],
+        [
+          108.464749,
+          11.9320929
+        ],
+        [
+          108.4649955,
+          11.9321183
+        ],
+        [
+          108.4649754,
+          11.9323059
+        ]
+      ],
+      "exclusion_polygon_local_m": [
+        [
+          2147.328,
+          -903.146
+        ],
+        [
+          2120.476,
+          -905.969
+        ],
+        [
+          2122.672,
+          -926.854
+        ],
+        [
+          2149.524,
+          -924.031
+        ],
+        [
+          2147.328,
+          -903.146
+        ]
+      ],
+      "glb_path": "02_ASSETS_3D/french_villas/fv_tqd_07_tran_quang_dieu_18_brittany_pine_estate.glb",
+      "sha256": "abf61fdd5f6ee46786142bcb078bb780f402069a2ee595af6cf2c7942e8276af",
+      "size_bytes": 872088,
+      "triangles": 13932,
+      "nodes": 12,
+      "materials": 12,
+      "camera_preset": {
+        "eye_gltf": [
+          2152.972,
+          108.877,
+          964.792
+        ],
+        "target_gltf": [
+          2135.0,
+          96.377,
+          915.0
+        ],
+        "fov_deg": 45.0
+      },
+      "source_references": [
+        "https://bietthudalat.vip/nha-dat/biet-thu/biet-thu-sieu-vip-kien-truc-ph-60e913c285c0496e28260c5f.html",
+        "https://saigonstartravel.com/kham-pha-dinh-bao-dai-da-lat"
+      ]
+    },
+    {
+      "index": 8,
+      "id": "fv_hht_08_hoang_hoa_tham_04_valley_view_normandy_villa",
+      "name_vi": "Biệt Thự Pháp Cổ Số 04 Hoàng Hoa Thám — Biệt Thự Sân Vườn 438,1m² 3 Mặt Thoáng View Thung Lũng Thông (Phường 10)",
+      "name_en": "Villa No. 04 Hoang Hoa Tham — Normandy Fish-Scale Tile & Lucarne Dormer 438m2 Valley-View Villa (Ward 10, Dalat)",
+      "house_number": "04 Hoàng Hoa Thám (Biệt Thự Pháp Cổ Sân Vườn 438,1m² 3 Mặt Tiền View Thung Lũng Thông — Phường 10)",
+      "cluster_zone": "HOANG_HOA_THAM_PINE_VALLEY_VILLAS",
+      "wave": 9,
+      "slot": 7,
+      "ring": 0,
+      "status": "built",
+      "lat": 11.9346698,
+      "lon": 108.4591235,
+      "elev_msl_m": 1533.847,
+      "x_m": 1510.0,
+      "y_m": -640.0,
+      "z_local_m": 55.847,
+      "gltf_position": [
+        1510.0,
+        55.847,
+        640.0
+      ],
+      "heading_deg": 195.0,
+      "rotation_y_rad": -3.403392,
+      "tile_id": "T_E01_N00",
+      "pivot_local_gltf": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "foundation_skirt_m": -3.5,
+      "bbox_y_range_m": [
+        -3.5,
+        16.8
+      ],
+      "footprint_m": {
+        "width": 19.4,
+        "depth": 14.2,
+        "wall_height": 7.8,
+        "roof_pitch": 4.9
+      },
+      "architectural_style": "Normandy Fish-Scale Clay Tile & Lucarne Dormer Valley-View Villa",
+      "roof_type": "fish_scale_clay",
+      "year_completed": "1938",
+      "window_emissive_hex": "#FFB86C",
+      "window_emissive_intensity": 0.45,
+      "glass_alpha_mode": "BLEND",
+      "glass_alpha": 0.85,
+      "no_khr_transmission": true,
+      "exclusion_polygon_wgs84": [
+        [
+          108.4592624,
+          11.9347292
+        ],
+        [
+          108.4590336,
+          11.9347892
+        ],
+        [
+          108.4589847,
+          11.9346104
+        ],
+        [
+          108.4592135,
+          11.9345504
+        ],
+        [
+          108.4592624,
+          11.9347292
+        ]
+      ],
+      "exclusion_polygon_local_m": [
+        [
+          1525.126,
+          -633.39
+        ],
+        [
+          1500.205,
+          -626.712
+        ],
+        [
+          1494.874,
+          -646.61
+        ],
+        [
+          1519.795,
+          -653.288
+        ],
+        [
+          1525.126,
+          -633.39
+        ]
+      ],
+      "glb_path": "02_ASSETS_3D/french_villas/fv_hht_08_hoang_hoa_tham_04_valley_view_normandy_villa.glb",
+      "sha256": "790dc3ba841f8b83072442388120229af97991edc927e3129954e444ba607743",
+      "size_bytes": 872156,
+      "triangles": 13978,
+      "nodes": 12,
+      "materials": 12,
+      "camera_preset": {
+        "eye_gltf": [
+          1514.165,
+          73.847,
+          688.705
+        ],
+        "target_gltf": [
+          1510.0,
+          61.347,
+          640.0
+        ],
+        "fov_deg": 45.0
+      },
+      "source_references": [
+        "https://dalathomes.com/ban/ban-biet-thu-hoang-hoa-tham-phuong-10-da-lat/",
+        "https://anphareal.vn/ban-nha-dat-3-mat-tien-duong-hoang-hoa-tham-phuong-10-tp-da-lat-vi-tri-trung-tam-view-thong-dep-phap-ly-ro-rang"
+      ]
+    },
+    {
+      "index": 9,
+      "id": "fv_hht_09_hoang_hoa_tham_14_savoy_stone_timber_chalet",
+      "name_vi": "Biệt Thự Pháp Cổ Số 14 Hoàng Hoa Thám — Kiến Trúc Savoy – Bretagne Tầng Hầm Đá Chẻ & Khung Gỗ Đồi Thông (Phường 10)",
+      "name_en": "Villa No. 14 Hoang Hoa Tham — Savoy Split-Stone Plinth & Timber Highland Chalet (Ward 10, Dalat)",
+      "house_number": "14 Hoàng Hoa Thám (Biệt Thự Pháp Savoy – Bretagne 418m² Sàn Đồi Thông Hoàng Hoa Thám — Phường 10)",
+      "cluster_zone": "HOANG_HOA_THAM_PINE_VALLEY_VILLAS",
+      "wave": 9,
+      "slot": 7,
+      "ring": 0,
+      "status": "built",
+      "lat": 11.9340859,
+      "lon": 108.4601795,
+      "elev_msl_m": 1540.216,
+      "x_m": 1625.0,
+      "y_m": -705.0,
+      "z_local_m": 62.216,
+      "gltf_position": [
+        1625.0,
+        62.216,
+        705.0
+      ],
+      "heading_deg": 188.0,
+      "rotation_y_rad": -3.281219,
+      "tile_id": "T_E01_N00",
+      "pivot_local_gltf": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "foundation_skirt_m": -3.5,
+      "bbox_y_range_m": [
+        -3.5,
+        17.0
+      ],
+      "footprint_m": {
+        "width": 19.8,
+        "depth": 14.4,
+        "wall_height": 7.9,
+        "roof_pitch": 5.0
+      },
+      "architectural_style": "Savoy Split-Stone Plinth & Timber Highland Chalet",
+      "roof_type": "brittany_slate",
+      "year_completed": "1939",
+      "window_emissive_hex": "#FFB86C",
+      "window_emissive_intensity": 0.45,
+      "glass_alpha_mode": "BLEND",
+      "glass_alpha": 0.85,
+      "no_khr_transmission": true,
+      "exclusion_polygon_wgs84": [
+        [
+          108.4603119,
+          11.934162
+        ],
+        [
+          108.4600736,
+          11.9341948
+        ],
+        [
+          108.4600471,
+          11.9340097
+        ],
+        [
+          108.4602853,
+          11.933977
+        ],
+        [
+          108.4603119,
+          11.934162
+        ]
+      ],
+      "exclusion_polygon_local_m": [
+        [
+          1639.42,
+          -696.524
+        ],
+        [
+          1613.475,
+          -692.878
+        ],
+        [
+          1610.58,
+          -713.476
+        ],
+        [
+          1636.525,
+          -717.122
+        ],
+        [
+          1639.42,
+          -696.524
+        ]
+      ],
+      "glb_path": "02_ASSETS_3D/french_villas/fv_hht_09_hoang_hoa_tham_14_savoy_stone_timber_chalet.glb",
+      "sha256": "4e92d025c93aa774e78e6d8ed25178b4e173dbad598d54cb6c0fdefbf015e8d9",
+      "size_bytes": 877276,
+      "triangles": 14032,
+      "nodes": 12,
+      "materials": 12,
+      "camera_preset": {
+        "eye_gltf": [
+          1633.711,
+          80.216,
+          754.63
+        ],
+        "target_gltf": [
+          1625.0,
+          67.716,
+          705.0
+        ],
+        "fov_deg": 45.0
+      },
+      "source_references": [
+        "https://dalathomes.com/ban/ban-biet-thu-hoang-hoa-tham-p10-da-lat-view-dep/",
+        "https://dalathomes.com/ban/ban-biet-thu-san-vuon-hoang-hoa-tham-da-lat/"
+      ]
+    },
+    {
+      "index": 10,
+      "id": "fv_hht_10_hoang_hoa_tham_28_grand_mansard_pine_estate",
+      "name_vi": "Đại Dinh Thự Pháp Cổ Số 28 Hoàng Hoa Thám — Khuôn Viên 1.414,6m² Mái Đá Chẻ Mansard View Toàn Cảnh Rừng Thông (Phường 10)",
+      "name_en": "Villa No. 28 Hoang Hoa Tham — Grand French Mansard 1,414.6m2 Pine-Forest Estate (Ward 10, Dalat)",
+      "house_number": "28 Hoàng Hoa Thám (Đại Dinh Thự Pháp Mansard Khuôn Viên 1.414,6m² View Rừng Thông — Phường 10)",
+      "cluster_zone": "HOANG_HOA_THAM_PINE_VALLEY_VILLAS",
+      "wave": 9,
+      "slot": 7,
+      "ring": 0,
+      "status": "built",
+      "lat": 11.9335469,
+      "lon": 108.4612813,
+      "elev_msl_m": 1548.103,
+      "x_m": 1745.0,
+      "y_m": -765.0,
+      "z_local_m": 70.103,
+      "gltf_position": [
+        1745.0,
+        70.103,
+        765.0
+      ],
+      "heading_deg": 182.0,
+      "rotation_y_rad": -3.176499,
+      "tile_id": "T_E01_N00",
+      "pivot_local_gltf": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "foundation_skirt_m": -3.5,
+      "bbox_y_range_m": [
+        -3.5,
+        17.5
+      ],
+      "footprint_m": {
+        "width": 23.4,
+        "depth": 15.2,
+        "wall_height": 8.3,
+        "roof_pitch": 5.1
+      },
+      "architectural_style": "Monumental French Neo-Classical Mansard Slate & Arched Colonnade Estate",
+      "roof_type": "mansard_slate",
+      "year_completed": "1941",
+      "window_emissive_hex": "#FFB86C",
+      "window_emissive_intensity": 0.45,
+      "glass_alpha_mode": "BLEND",
+      "glass_alpha": 0.85,
+      "no_khr_transmission": true,
+      "exclusion_polygon_wgs84": [
+        [
+          108.4614215,
+          11.9336392
+        ],
+        [
+          108.461148,
+          11.9336485
+        ],
+        [
+          108.4611411,
+          11.9334546
+        ],
+        [
+          108.4614145,
+          11.9334453
+        ],
+        [
+          108.4614215,
+          11.9336392
+        ]
+      ],
+      "exclusion_polygon_local_m": [
+        [
+          1760.268,
+          -754.727
+        ],
+        [
+          1730.486,
+          -753.687
+        ],
+        [
+          1729.732,
+          -775.273
+        ],
+        [
+          1759.514,
+          -776.313
+        ],
+        [
+          1760.268,
+          -754.727
+        ]
+      ],
+      "glb_path": "02_ASSETS_3D/french_villas/fv_hht_10_hoang_hoa_tham_28_grand_mansard_pine_estate.glb",
+      "sha256": "5b87c42c6e4684390e04fabaca9925ea5ba8727dea4487d0a6f86c491fb891e4",
+      "size_bytes": 911056,
+      "triangles": 14644,
+      "nodes": 12,
+      "materials": 12,
+      "camera_preset": {
+        "eye_gltf": [
+          1757.674,
+          88.103,
+          814.977
+        ],
+        "target_gltf": [
+          1745.0,
+          75.603,
+          765.0
+        ],
+        "fov_deg": 45.0
+      },
+      "source_references": [
+        "https://batdongsan.com.vn/ban-nha-biet-thu-lien-ke-duong-hoang-hoa-tham-phuong-10_4-391/hon-1400m2-da-lat-co-san-vuon-rong-view-rung-thong-sieu-dep-pr43441156",
+        "https://dalathomes.com/ban/cho-thue-biet-thu-hoang-hoa-tham-p10-da-lat/"
       ]
     }
   ]

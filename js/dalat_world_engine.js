@@ -102,6 +102,8 @@
     constructor(container) {
       this.container = container;
       this.scene = new THREE.Scene();
+      this.scene.fog = new THREE.FogExp2(0xdce6ee, 0.00055);
+
       this.camera = new THREE.PerspectiveCamera(
         48,
         window.innerWidth / window.innerHeight,
@@ -113,17 +115,13 @@
         antialias: true,
         powerPreference: 'high-performance',
       });
-      this.renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.5));
+      this.renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.35));
       this.renderer.setSize(window.innerWidth, window.innerHeight);
       this.renderer.outputEncoding = THREE.sRGBEncoding;
       this.renderer.toneMapping = THREE.ACESFilmicToneMapping;
       this.renderer.toneMappingExposure = 1.05;
       this.renderer.shadowMap.enabled = true;
       this.renderer.shadowMap.type = THREE.PCFSoftShadowMap;
-      // Chỉ cập nhật lại Shadow Map khi đổi khí hậu hoặc nạp xong cụm Tile mới -> giảm ~45% tải GPU mỗi khung hình
-      this.renderer.shadowMap.autoUpdate = false;
-      this.renderer.shadowMap.needsUpdate = true;
-      this._shadowTimer = null;
       this.container.appendChild(this.renderer.domElement);
 
       this.hemiLight = new THREE.HemisphereLight(0xb4d0e8, 0x3b4d3b, 0.65);
@@ -142,19 +140,38 @@
       this.sunLight.shadow.camera.bottom = -d;
       this.sunLight.shadow.bias = -0.0004;
       this.scene.add(this.sunLight);
+      this.scene.add(this.sunLight.target);
+      this.sunOffsetVec = new THREE.Vector3(1800, 520, -280);
+
+      // Trạng thái Sương mù độc lập (chuyển mượt 0ms không biên dịch lại shader)
+      this.fogEnabled = true;
+      this.fogDensityPct = 100;
+      this._lastNonZeroFogPct = 100;
+      this._baseClimateFogDensity = 0.00055;
+      this._baseClimateFogHex = '#DCE6EE';
+      this._currentFogDensity = 0.00055;
+      this._targetFogDensity = 0.00055;
 
       this.pbrLibrary =
         typeof window.DalatPbrMaterialLibrary === 'function'
           ? new window.DalatPbrMaterialLibrary(this.renderer, this.scene)
           : null;
 
-      this.streamer = new window.DalatTileStreamer(this.scene, this.pbrLibrary, () =>
-        this.requestShadowUpdate(false)
-      );
+      this.streamer = new window.DalatTileStreamer(this.scene, this.pbrLibrary);
 
       this.target = new THREE.Vector3(0, 8, -40);
       this.camera.position.set(-680, 420, 860);
       this.camera.lookAt(this.target);
+
+      // Khởi tạo bộ xử lý đồ họa Realtime & kết nối mặt nước GPU / cache bóng đổ
+      this.realtime =
+        typeof window.DalatRealtimeRenderer === 'function'
+          ? new window.DalatRealtimeRenderer(this)
+          : null;
+      if (this.realtime) {
+        this.streamer.setWaterEnhancer((mat) => this.realtime.enhanceWaterMaterial(mat));
+        this.streamer.onStreamBatchSettled = () => this.realtime.markShadowDirty();
+      }
 
       this.dragMode = null;
       this.pointerDownPos = { x: 0, y: 0 };
@@ -178,11 +195,14 @@
       this._fpsFrames = 0;
       this._fpsLastTime = performance.now();
       this._lodLastTime = 0;
+      this._lastHoverRaycastTime = 0;
       this._coreReady = false;
 
       this._bindEvents();
       this._bindUi();
       this.applyClimate('early_mist');
+      this._syncFogUi();
+      this._syncRealtimeUi();
       this._bootstrap();
       this._animate();
     }
@@ -192,6 +212,7 @@
       await this._refreshWorldIndexAndUi();
       this._coreReady = true;
       this.streamer.updateCameraLod(this.camera.position);
+      if (this.realtime) this.realtime.markShadowDirty();
       if (this.minimapHud) this.minimapHud.update();
     }
 
@@ -292,7 +313,16 @@
       const skyColor = new THREE.Color(preset.sky_hex);
       const fogColor = new THREE.Color(preset.fog_hex);
       this.scene.background = skyColor;
-      this.scene.fog = new THREE.FogExp2(fogColor.getHex(), preset.fog_density);
+
+      this._baseClimateFogHex = preset.fog_hex;
+      this._baseClimateFogDensity = Number(preset.fog_density || 0.0004);
+
+      if (!this.scene.fog) {
+        this.scene.fog = new THREE.FogExp2(fogColor.getHex(), 0.0);
+      } else {
+        this.scene.fog.color.copy(fogColor);
+      }
+      this._recomputeTargetFogDensity(false);
 
       this.sunLight.color.set(preset.sun_hex);
       this.sunLight.intensity = preset.sun_intensity;
@@ -300,43 +330,201 @@
       const elevRad = THREE.MathUtils.degToRad(preset.sun_elevation_deg);
       const azimRad = THREE.MathUtils.degToRad(preset.sun_azimuth_deg);
       const dist = 2200;
-      this.sunLight.position.set(
+      this.sunOffsetVec.set(
         Math.sin(azimRad) * Math.cos(elevRad) * dist,
         Math.sin(elevRad) * dist,
         -Math.cos(azimRad) * Math.cos(elevRad) * dist
       );
+      this.sunLight.position.copy(this.target).add(this.sunOffsetVec);
 
       this.hemiLight.color.set(preset.ambient_hex);
       this.hemiLight.intensity = preset.ambient_intensity;
 
-      if (this.pbrLibrary) {
+      this.streamer.applyEmissiveScale(preset.emissive_scale != null ? preset.emissive_scale : 0.2);
+
+      if (this.realtime) {
+        this.realtime.syncClimate(preset, this.sunOffsetVec);
+        this.realtime.syncFogVisuals(
+          this._targetFogDensity,
+          this._baseClimateFogDensity,
+          this._baseClimateFogHex
+        );
+      } else if (this.pbrLibrary) {
         this.pbrLibrary.applyClimateEnvironment(preset);
       }
-      this.streamer.applyEmissiveScale(preset.emissive_scale != null ? preset.emissive_scale : 0.2);
-      this.requestShadowUpdate(true);
 
       document.querySelectorAll('#climate-grid .preset-btn').forEach((btn) => {
         btn.classList.toggle('active', btn.dataset.climate === preset.id);
       });
     }
 
-    requestShadowUpdate(immediate) {
-      if (!this.renderer.shadowMap.enabled) return;
-      if (immediate) {
-        if (this._shadowTimer) {
-          clearTimeout(this._shadowTimer);
-          this._shadowTimer = null;
+    /* ========================================================================
+     * ĐIỀU KHIỂN CHẾ ĐỘ BẬT / TẮT & MẬT ĐỘ SƯƠNG MÙ ĐÀ LẠT
+     * ======================================================================== */
+
+    _recomputeTargetFogDensity(snapImmediate) {
+      const scale = this.fogEnabled ? Math.max(0, this.fogDensityPct) / 100.0 : 0.0;
+      this._targetFogDensity = this._baseClimateFogDensity * scale;
+      if (snapImmediate) {
+        this._currentFogDensity = this._targetFogDensity;
+        if (this.scene.fog) this.scene.fog.density = this._currentFogDensity;
+        if (this.realtime) {
+          this.realtime.syncFogVisuals(
+            this._currentFogDensity,
+            this._baseClimateFogDensity,
+            this._baseClimateFogHex
+          );
         }
-        this.renderer.shadowMap.needsUpdate = true;
+      }
+    }
+
+    setFogEnabled(enabled) {
+      const next = Boolean(enabled);
+      if (next && this.fogDensityPct <= 0) {
+        this.fogDensityPct = this._lastNonZeroFogPct > 0 ? this._lastNonZeroFogPct : 100;
+      }
+      this.fogEnabled = next;
+      this._recomputeTargetFogDensity(false);
+      this._syncFogUi();
+    }
+
+    toggleFog() {
+      this.setFogEnabled(!this.fogEnabled);
+    }
+
+    setFogDensityPercent(pct) {
+      const clamped = Math.max(0, Math.min(250, Math.round(Number(pct) || 0)));
+      this.fogDensityPct = clamped;
+      if (clamped > 0) {
+        this._lastNonZeroFogPct = clamped;
+        this.fogEnabled = true;
+      } else {
+        this.fogEnabled = false;
+      }
+      this._recomputeTargetFogDensity(false);
+      this._syncFogUi();
+    }
+
+    _updateFogTransition(dt) {
+      if (!this.scene.fog) return;
+      const diff = this._targetFogDensity - this._currentFogDensity;
+      if (Math.abs(diff) <= 1e-7) {
+        if (this._currentFogDensity !== this._targetFogDensity) {
+          this._currentFogDensity = this._targetFogDensity;
+          this.scene.fog.density = this._currentFogDensity;
+          if (this.realtime) {
+            this.realtime.syncFogVisuals(
+              this._currentFogDensity,
+              this._baseClimateFogDensity,
+              null
+            );
+          }
+        }
         return;
       }
-      if (this._shadowTimer) return;
-      this._shadowTimer = setTimeout(() => {
-        this._shadowTimer = null;
-        if (this.renderer && this.renderer.shadowMap.enabled) {
-          this.renderer.shadowMap.needsUpdate = true;
-        }
-      }, 220);
+      const alpha = Math.min(1.0, dt * 8.5);
+      this._currentFogDensity += diff * alpha;
+      if (this._currentFogDensity < 1e-6 && this._targetFogDensity === 0) {
+        this._currentFogDensity = 0.0;
+      }
+      this.scene.fog.density = this._currentFogDensity;
+      if (this.realtime) {
+        this.realtime.syncFogVisuals(this._currentFogDensity, this._baseClimateFogDensity, null);
+      }
+    }
+
+    _syncFogUi() {
+      const isOn = Boolean(this.fogEnabled && this.fogDensityPct > 0);
+      const effectivePct = isOn ? this.fogDensityPct : 0;
+
+      const quickBtn = document.getElementById('quick-fog-btn');
+      const quickLbl = document.getElementById('quick-fog-label');
+      if (quickBtn) {
+        quickBtn.classList.toggle('is-active', isOn);
+        quickBtn.classList.toggle('is-off', !isOn);
+        quickBtn.setAttribute('aria-pressed', String(isOn));
+      }
+      if (quickLbl) {
+        quickLbl.textContent = isOn ? `Sương mù: BẬT (${effectivePct}%)` : 'Sương mù: TẮT';
+      }
+
+      const card = document.getElementById('fog-control-card');
+      if (card) card.classList.toggle('is-fog-off', !isOn);
+
+      const switchBtn = document.getElementById('fog-toggle-btn');
+      if (switchBtn) {
+        switchBtn.textContent = isOn ? 'Đang BẬT' : 'Đã TẮT';
+        switchBtn.classList.toggle('is-on', isOn);
+        switchBtn.classList.toggle('is-off', !isOn);
+        switchBtn.setAttribute('aria-pressed', String(isOn));
+      }
+
+      const slider = document.getElementById('fog-density-slider');
+      if (slider && Number(slider.value) !== effectivePct) {
+        slider.value = String(effectivePct);
+      }
+
+      const valEl = document.getElementById('fog-density-val');
+      if (valEl) {
+        valEl.textContent = isOn ? `${effectivePct}%` : 'TẮT (0%)';
+      }
+
+      document.querySelectorAll('.fog-chip[data-fog-pct]').forEach((chip) => {
+        const chipPct = Number(chip.dataset.fogPct);
+        chip.classList.toggle('active', effectivePct === chipPct);
+      });
+    }
+
+    /* ========================================================================
+     * ĐIỀU KHIỂN CHẤT LƯỢNG RENDER REALTIME & ADAPTIVE FPS
+     * ======================================================================== */
+
+    setQualityPreset(qualityId) {
+      if (!this.realtime) return;
+      this.realtime.applyQualityPreset(qualityId);
+      this._syncRealtimeUi();
+    }
+
+    cycleQualityPreset() {
+      if (!this.realtime) return;
+      const order = ['fast', 'balanced', 'ultra'];
+      const idx = order.indexOf(this.realtime.qualityId);
+      const nextId = order[(idx + 1) % order.length];
+      this.setQualityPreset(nextId);
+    }
+
+    _syncRealtimeUi() {
+      if (!this.realtime) return;
+      const st = this.realtime.getStatusSummary();
+
+      document.querySelectorAll('#quality-grid .quality-btn').forEach((btn) => {
+        btn.classList.toggle('active', btn.dataset.quality === st.qualityId);
+      });
+
+      const descEl = document.getElementById('quality-desc');
+      if (descEl) descEl.textContent = st.desc_vi;
+
+      const quickQualLbl = document.getElementById('quick-quality-label');
+      if (quickQualLbl) quickQualLbl.textContent = `Đồ họa: ${st.label_vi}`;
+
+      const renderBadge = document.getElementById('render-badge');
+      if (renderBadge) {
+        renderBadge.textContent = `${st.badge_vi} • ${st.dpr.toFixed(2)}x`;
+      }
+
+      const dprTag = document.getElementById('dpr-readout');
+      if (dprTag) {
+        dprTag.textContent = `${st.dpr.toFixed(2)}x`;
+      }
+
+      const autoChk = document.getElementById('auto-fps-toggle');
+      if (autoChk) autoChk.checked = st.autoFps;
+
+      const bloomChk = document.getElementById('bloom-toggle');
+      if (bloomChk) bloomChk.checked = st.bloomEnabled;
+
+      const shadowChk = document.getElementById('shadows-toggle');
+      if (shadowChk) shadowChk.checked = st.shadowsEnabled;
     }
 
     flyToPreset(preset) {
@@ -368,6 +556,20 @@
       this._setRaycasterFromClient(clientX, clientY);
       if (this.streamer.pickableMeshes.length > 0) {
         const hits = this.raycaster.intersectObjects(this.streamer.pickableMeshes, false);
+        if (hits.length > 0) return hits[0].point.clone();
+      }
+      const fallbackPt = new THREE.Vector3();
+      if (this.raycaster.ray.intersectPlane(this.groundPlane, fallbackPt)) {
+        return fallbackPt;
+      }
+      return null;
+    }
+
+    _raycastHoverTerrain(clientX, clientY) {
+      this._setRaycasterFromClient(clientX, clientY);
+      const terrainList = this.streamer.terrainPickMeshes;
+      if (terrainList && terrainList.length > 0) {
+        const hits = this.raycaster.intersectObjects(terrainList, false);
         if (hits.length > 0) return hits[0].point.clone();
       }
       const fallbackPt = new THREE.Vector3();
@@ -426,8 +628,12 @@
 
       dom.addEventListener('pointermove', (e) => {
         if (!this.dragMode) {
-          const hoverHit = this._raycastPoint(e.clientX, e.clientY);
-          if (hoverHit) this._updateGpsHud(hoverHit);
+          const nowHover = performance.now();
+          if (nowHover - this._lastHoverRaycastTime >= 75) {
+            this._lastHoverRaycastTime = nowHover;
+            const hoverHit = this._raycastHoverTerrain(e.clientX, e.clientY);
+            if (hoverHit) this._updateGpsHud(hoverHit);
+          }
           return;
         }
 
@@ -499,12 +705,22 @@
         { passive: false }
       );
 
-      // Flycam W/A/S/D + Q/E
+      // Flycam W/A/S/D + Q/E + Phím tắt F (Sương mù) / G (Đồ họa)
       window.addEventListener('keydown', (e) => {
-        if (['INPUT', 'TEXTAREA'].includes(document.activeElement.tagName)) return;
+        if (['INPUT', 'TEXTAREA', 'SELECT'].includes(document.activeElement.tagName)) return;
         if (e.code === 'Escape' && this.minimapHud) {
           this.minimapHud.hideLandmarkPopup();
           if (this.minimapHud.tourActive) this.minimapHud.stopTour();
+        }
+        if (!e.ctrlKey && !e.metaKey && !e.altKey && !e.repeat) {
+          if (e.code === 'KeyF') {
+            this.toggleFog();
+            return;
+          }
+          if (e.code === 'KeyG') {
+            this.cycleQualityPreset();
+            return;
+          }
         }
         this.keys.add(e.code);
       });
@@ -515,7 +731,11 @@
       window.addEventListener('resize', () => {
         this.camera.aspect = window.innerWidth / window.innerHeight;
         this.camera.updateProjectionMatrix();
-        this.renderer.setSize(window.innerWidth, window.innerHeight);
+        if (this.realtime) {
+          this.realtime.onResize();
+        } else {
+          this.renderer.setSize(window.innerWidth, window.innerHeight);
+        }
       });
     }
 
@@ -612,6 +832,68 @@
         });
       }
 
+      // Nút Bật / Tắt Sương mù nhanh trên thanh trên & trong bảng điều khiển
+      const quickFogBtn = document.getElementById('quick-fog-btn');
+      if (quickFogBtn) {
+        quickFogBtn.addEventListener('click', () => this.toggleFog());
+      }
+      const fogSwitchBtn = document.getElementById('fog-toggle-btn');
+      if (fogSwitchBtn) {
+        fogSwitchBtn.addEventListener('click', () => this.toggleFog());
+      }
+      const fogSlider = document.getElementById('fog-density-slider');
+      if (fogSlider) {
+        fogSlider.addEventListener('input', () => {
+          this.setFogDensityPercent(Number(fogSlider.value));
+        });
+      }
+      document.querySelectorAll('.fog-chip[data-fog-pct]').forEach((chip) => {
+        chip.addEventListener('click', () => {
+          this.setFogDensityPercent(Number(chip.dataset.fogPct));
+        });
+      });
+
+      // Chế độ chất lượng Đồ họa Realtime & Adaptive FPS
+      const quickQualityBtn = document.getElementById('quick-quality-btn');
+      if (quickQualityBtn) {
+        quickQualityBtn.addEventListener('click', () => this.cycleQualityPreset());
+      }
+      document.querySelectorAll('#quality-grid .quality-btn').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          this.setQualityPreset(btn.dataset.quality);
+        });
+      });
+
+      const autoFpsToggle = document.getElementById('auto-fps-toggle');
+      if (autoFpsToggle) {
+        autoFpsToggle.addEventListener('change', () => {
+          if (this.realtime) {
+            this.realtime.setAutoFps(autoFpsToggle.checked);
+            this._syncRealtimeUi();
+          }
+        });
+      }
+
+      const bloomToggle = document.getElementById('bloom-toggle');
+      if (bloomToggle) {
+        bloomToggle.addEventListener('change', () => {
+          if (this.realtime) {
+            this.realtime.setBloomEnabled(bloomToggle.checked);
+            this._syncRealtimeUi();
+          }
+        });
+      }
+
+      const shadowsToggle = document.getElementById('shadows-toggle');
+      if (shadowsToggle) {
+        shadowsToggle.addEventListener('change', () => {
+          if (this.realtime) {
+            this.realtime.setShadowsEnabled(shadowsToggle.checked);
+            this._syncRealtimeUi();
+          }
+        });
+      }
+
       document.querySelectorAll('#climate-grid .preset-btn').forEach((btn) => {
         btn.addEventListener('click', () => {
           this.applyClimate(btn.dataset.climate);
@@ -652,6 +934,7 @@
 
       this._updateFlycam(dt);
       this._updateFlightAnimation();
+      this._updateFogTransition(dt);
       this.streamer.update(dt, elapsed);
       if (this.pbrLibrary) this.pbrLibrary.update(dt);
 
@@ -664,13 +947,25 @@
         this._lodLastTime = now;
       }
 
-      this.renderer.render(this.scene, this.camera);
+      if (this.realtime) {
+        this.realtime.renderFrame(elapsed, this.sunOffsetVec);
+      } else {
+        this.renderer.render(this.scene, this.camera);
+      }
 
       this._fpsFrames++;
-      if (now - this._fpsLastTime >= 600) {
-        const fps = Math.round((this._fpsFrames * 1000) / (now - this._fpsLastTime));
+      const fpsWindowMs = now - this._fpsLastTime;
+      if (fpsWindowMs >= 650) {
+        const fps = Math.max(1, Math.round((this._fpsFrames * 1000) / fpsWindowMs));
+        if (this.realtime) {
+          this.realtime.reportFpsSample(fps, fpsWindowMs / 1000.0);
+          this._syncRealtimeUi();
+        }
         const fpsEl = document.getElementById('fps-badge');
-        if (fpsEl) fpsEl.textContent = `${fps} FPS`;
+        if (fpsEl) {
+          fpsEl.textContent = `${fps} FPS`;
+          fpsEl.className = fps >= 45 ? 'chip chip-emerald' : 'chip chip-amber';
+        }
         this._fpsFrames = 0;
         this._fpsLastTime = now;
       }

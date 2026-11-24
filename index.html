@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mô phỏng 3D thời gian thực TP. Đà Lạt với hiệu ứng ánh sáng PBR, mặt nước gợn sóng GPU, hậu kỳ Bloom, tự động giữ FPS mượt và chế độ bật/tắt sương mù linh hoạt." />
   <title>Đà Lạt 3D Simulation — Trình Xem Realtime Web 3D &amp; LOD Tile Streamer</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'%3E%3Crect width='28' height='28' rx='6' fill='%2308111e'/%3E%3Cpath d='M14 4L22 18H6L14 4Z' fill='%2310b981'/%3E%3Cpath d='M6 21C9 19 19 23 22 21' stroke='%2338bdf8' stroke-width='2' fill='none'/%3E%3C/svg%3E" />
   <link rel="stylesheet" href="./css/style.css" />
@@ -16,12 +17,13 @@
       <div class="brand-dot" aria-hidden="true"></div>
       <div>
         <h1>ĐÀ LẠT 3D SIMULATION</h1>
-        <p class="brand-sub">EPSG:32649 • Gốc Hồ Xuân Hương (1478m MSL) • Three.js r128</p>
+        <p class="brand-sub">EPSG:32649 • Gốc Hồ Xuân Hương (1478m MSL) • Realtime PBR Engine</p>
       </div>
     </div>
     <div class="status-chips">
       <span id="mode-badge" class="chip chip-amber">Đang khởi tạo...</span>
-      <span id="fps-badge" class="chip chip-neutral">-- FPS</span>
+      <span id="fps-badge" class="chip chip-emerald">-- FPS</span>
+      <span id="render-badge" class="chip chip-sky">✦ Realtime • 1.35x</span>
       <span id="tile-count-badge" class="chip chip-emerald">RING_0 (T_E00_N00)</span>
     </div>
   </header>
@@ -30,7 +32,7 @@
   <div id="tour-status-banner" class="tour-banner glass-panel hidden" role="status">
     <div class="tour-banner-top">
       <span class="tour-live-dot"></span>
-      <strong id="tour-step-title">Chặng 1/8: Toàn cảnh Hồ Xuân Hương</strong>
+      <strong id="tour-step-title">Chặng 1/15: Toàn cảnh Hồ Xuân Hương</strong>
       <button id="next-tour-step-btn" class="tour-mini-btn" type="button" title="Chuyển nhanh sang chặng kế tiếp">Chặng kế ⏭</button>
     </div>
     <p id="tour-step-caption" class="tour-caption">Đang bay tự động quanh thung lũng Đà Lạt...</p>
@@ -39,10 +41,19 @@
     </div>
   </div>
 
-  <!-- Nút thu gọn / mở rộng bảng điều khiển -->
-  <button id="toggle-panel-btn" class="glass-btn toggle-panel-btn" type="button" title="Ẩn/hiện bảng điều khiển">
-    ☰ Bảng điều khiển
-  </button>
+  <!-- Cụm nút thao tác nhanh Sương mù / Chất lượng Render / Bảng điều khiển góc trên phải -->
+  <div class="top-quick-bar" role="toolbar" aria-label="Thao tác nhanh Sương mù và Đồ họa">
+    <button id="quick-fog-btn" class="glass-btn quick-pill-btn is-active" type="button" title="Bật / Tắt sương mù Đà Lạt (Phím F)" aria-pressed="true">
+      <span class="pill-dot"></span>
+      <span id="quick-fog-label">Sương mù: BẬT</span>
+    </button>
+    <button id="quick-quality-btn" class="glass-btn quick-pill-btn" type="button" title="Chuyển nhanh chế độ đồ họa Realtime (Phím G)">
+      <span id="quick-quality-label">✦ Đồ họa: Cân bằng</span>
+    </button>
+    <button id="toggle-panel-btn" class="glass-btn toggle-panel-btn" type="button" title="Ẩn/hiện bảng điều khiển">
+      ☰ Bảng điều khiển
+    </button>
+  </div>
 
   <!-- Bảng điều khiển Glassmorphism Tiếng Việt bên phải -->
   <aside id="control-panel" class="control-panel glass-panel" aria-label="Bảng điều khiển Đà Lạt 3D">
@@ -51,6 +62,59 @@
       <div class="tour-controls-row">
         <button id="start-tour-btn" class="tour-btn" type="button">▶ Tour Bay Tự Động Quanh Đà Lạt</button>
         <button id="stop-tour-btn" class="tour-stop-btn hidden" type="button" title="Dừng Tour">■</button>
+      </div>
+    </section>
+
+    <section class="panel-section">
+      <h2 class="section-title">Hiệu Ứng Render Realtime &amp; Sương Mù</h2>
+
+      <div id="quality-grid" class="quality-grid" role="group" aria-label="Mức chất lượng đồ họa">
+        <button class="quality-btn" data-quality="fast" type="button" title="Ưu tiên 60 FPS tối đa cho máy cấu hình nhẹ">⚡ Siêu mượt</button>
+        <button class="quality-btn active" data-quality="balanced" type="button" title="Cân bằng hiệu ứng PBR, bóng mềm thông minh và FPS mượt">✦ Cân bằng</button>
+        <button class="quality-btn" data-quality="ultra" type="button" title="Bóng đổ 2K sắc nét, mặt nước Fresnel &amp; Bloom tối đa">💎 Ultra</button>
+      </div>
+      <p id="quality-desc" class="quality-desc">PBR Sky IBL • Bóng mềm thông minh • Hậu kỳ Bloom nhẹ GPU</p>
+
+      <div class="realtime-switches">
+        <label class="fx-toggle-row" title="Tự động co giãn độ phân giải nội bộ để giữ khung hình luôn mượt mà">
+          <input id="auto-fps-toggle" type="checkbox" checked />
+          <span class="fx-toggle-label">Tự động giữ FPS mượt (Auto DPR)</span>
+          <span id="dpr-readout" class="mini-mono-tag">1.35x</span>
+        </label>
+        <label class="fx-toggle-row" title="Hiệu ứng phát sáng ánh đèn đêm, nhà kính hoa và quầng nắng khí quyển">
+          <input id="bloom-toggle" type="checkbox" checked />
+          <span class="fx-toggle-label">Ánh sáng phát quang &amp; Tia nắng</span>
+        </label>
+        <label class="fx-toggle-row" title="Bóng đổ Mặt trời thực tế bám theo vị trí Camera">
+          <input id="shadows-toggle" type="checkbox" checked />
+          <span class="fx-toggle-label">Bóng đổ Mặt trời thời gian thực</span>
+        </label>
+      </div>
+
+      <div class="fog-control-card" id="fog-control-card">
+        <div class="fog-card-header">
+          <div class="fog-title-wrap">
+            <span class="fog-icon" aria-hidden="true">☁</span>
+            <span class="fog-card-title">Chế độ Sương mù</span>
+            <kbd class="kbd-tag" title="Phím tắt F">F</kbd>
+          </div>
+          <button id="fog-toggle-btn" class="fog-switch-btn is-on" type="button" aria-pressed="true">
+            Đang BẬT
+          </button>
+        </div>
+        <div class="fog-slider-block">
+          <div class="fog-slider-meta">
+            <span>Độ dày sương mù</span>
+            <span id="fog-density-val" class="mini-mono-tag">100%</span>
+          </div>
+          <input id="fog-density-slider" class="fog-slider" type="range" min="0" max="250" step="5" value="100" aria-label="Độ dày sương mù Đà Lạt" />
+        </div>
+        <div class="fog-quick-presets">
+          <button class="fog-chip" data-fog-pct="0" type="button">Trời quang</button>
+          <button class="fog-chip" data-fog-pct="50" type="button">Sương nhẹ</button>
+          <button class="fog-chip active" data-fog-pct="100" type="button">Chuẩn Đà Lạt</button>
+          <button class="fog-chip" data-fog-pct="180" type="button">Biển mây</button>
+        </div>
       </div>
     </section>
 
@@ -210,16 +274,18 @@
       <span><strong>Pan:</strong> Shift + Giữa / Phải</span>
       <span><strong>Zoom:</strong> Cuộn chuột</span>
       <span><strong>Flycam:</strong> W A S D + Q E</span>
+      <span><strong>Phím F / G:</strong> Sương mù / Đồ họa</span>
     </div>
   </footer>
 
   <!-- Thông báo lỗi nếu thiếu WebGL / CDN -->
   <div id="error-overlay" class="error-overlay hidden" role="alert"></div>
 
-  <!-- Three.js r128 + GLTFLoader + Shared PBR Material Pool + LOD Tile Streamer + Minimap Radar & Tour -->
+  <!-- Three.js r128 + GLTFLoader + Shared PBR Material Pool + Realtime Renderer + LOD Tile Streamer + Minimap Radar & Tour -->
   <script src="./js/vendor/three.min.js"></script>
   <script src="./js/vendor/GLTFLoader.js"></script>
   <script src="./js/pbr_material_library.js"></script>
+  <script src="./js/realtime_renderer.js"></script>
   <script src="./js/tile_streamer.js"></script>
   <script src="./js/minimap_hud.js"></script>
   <script src="./js/dalat_world_engine.js"></script>

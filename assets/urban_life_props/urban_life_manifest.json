@@ -4,9 +4,9 @@
   "slot": 10,
   "display_slot_name": "ĐÀ LẠT - 09",
   "lane": "URBAN_STREETSCAPE_VEHICLES_NIGHTMARKET",
-  "latest_wave": 6,
-  "latest_task_id": "T10_AUTO_R2_R3_B01_CAUDAT_LANGBIANG_SUOIVANG",
-  "updated_at_utc": "2026-11-24T03:34:24Z",
+  "latest_wave": 9,
+  "latest_task_id": "T10_AUTO_R2_R3_B04_XOM_LEO_SUNSET_STREETFOOD_MONGOLAND_ANKROET",
+  "updated_at_utc": "2026-11-24T09:44:00Z",
   "coordinate_system": {
     "origin": "Tam_Ho_Xuan_Huong_Da_Lat",
     "lat0": 11.940419,
@@ -22,9 +22,9 @@
     "forbid_khr_materials_transmission": true
   },
   "summary_metrics": {
-    "total_glb_files": 18,
-    "total_triangles": 817156,
-    "total_size_bytes": 43259720,
+    "total_glb_files": 27,
+    "total_triangles": 1084656,
+    "total_size_bytes": 58012172,
     "welcome_gates": 2,
     "canopy_stalls": 122,
     "soymilk_carts": 26,
@@ -64,7 +64,22 @@
     "langbiang_radar_mountain_jeeps": 18,
     "langbiang_paragliders": 6,
     "suoi_vang_wooden_boats_and_kayaks": 24,
-    "da_phu_suoi_vang_glamping_tents": 14
+    "da_phu_suoi_vang_glamping_tents": 14,
+    "thuy_thuan_ta_nung_cafe_complex": 1,
+    "datanla_alpine_coaster_carts": 12,
+    "datanla_tour_coach_buses": 10,
+    "trai_mat_agri_cargo_trucks": 14,
+    "trai_mat_night_market_stalls_prop15": 16,
+    "tuyen_lam_kayak_sup_fleet": 22,
+    "tuyen_lam_lavender_wooden_boats": 18,
+    "mimosa_double_decker_sleeper_buses": 10,
+    "van_thanh_refrigerated_flower_trucks": 12,
+    "van_thanh_glowing_greenhouses_prop09": 6,
+    "xom_leo_sunset_bbq_stalls_and_tables": 38,
+    "mongo_land_rainbow_dry_slide_lanes": 6,
+    "mongo_land_mongolian_yurts": 12,
+    "mongo_land_gokarts": 10,
+    "ankroet_thung_lung_vang_boats_and_piers": 13
   },
   "items": [
     {
@@ -1055,6 +1070,500 @@
         "campers_and_tourists": 34
       },
       "source_url": "https://nestahotel.com.vn/blog/san-may-da-lat/"
+    },
+    {
+      "path": "02_ASSETS_3D/urban_life_props/ul_w7_01_ta_nung_thuy_thuan_roastery_cafe_and_flower_valley.glb",
+      "size_bytes": 1518936,
+      "sha256": "884aa5a33dc9c1b4a8cdea126a5b5fd9f67a8a716510a355fbdd0916e49464ee",
+      "nodes": 21,
+      "materials": 22,
+      "vertices": 55264,
+      "triangles": 28948,
+      "bounds_gltf": {
+        "min": [
+          -6438.239,
+          19.966,
+          4880.366
+        ],
+        "max": [
+          -6319.733,
+          29.122,
+          4982.825
+        ]
+      },
+      "khr_materials_transmission": false,
+      "id": "ul_w7_01_ta_nung_thuy_thuan_roastery_cafe_and_flower_valley",
+      "name_vi": "Tổ Hợp KDL Cà Phê Thúy Thuận & F Cánh Đồng Hoa Đèo Tà Nung (Mái Gỗ Tam Giác Ven Hồ, Xưởng Rang, 6 Sàn Săn Mây & Đoàn Xe ĐT725)",
+      "wave": 7,
+      "task_id": "T10_AUTO_R2_R3_B02_TA_NUNG_DATANLA_TRAI_MAT",
+      "tile_id": "T_W03_S02",
+      "spanned_tiles": [
+        "T_W03_S02",
+        "T_W03_S03"
+      ],
+      "coordinate_space": "world_gltf_yup",
+      "world_anchor": {
+        "lat": 11.896222,
+        "lon": 108.386679,
+        "x_m": -6380.0,
+        "y_m": -4920.0,
+        "elev_msl_m": 1498.15,
+        "gltf_xyz": [
+          -6380.0,
+          20.147,
+          4920.0
+        ]
+      },
+      "sourced_props_used": [
+        "prop_10_cau_dat_wooden_cloud_hunting_deck.glb",
+        "prop_07_dalat_flower_pergola_arch.glb",
+        "prop_11_mountain_pass_guardrail_and_convex_mirror.glb"
+      ],
+      "counts": {
+        "triangular_wooden_lake_pavilion": 1,
+        "coffee_roastery_glass_hall": 1,
+        "cloud_hunting_wooden_decks_prop10": 6,
+        "flower_pergola_arches_prop07": 6,
+        "mountain_pass_guardrails_prop11": 8,
+        "terraced_flower_valley_rows": 16,
+        "tour_coaches_and_vans": 6,
+        "touring_motorbikes": 14,
+        "lanterns_and_string_bulbs": 136,
+        "valley_tourists": 38
+      },
+      "source_url": "https://zoomtravel.vn/kdl-thuy-thuan.html"
+    },
+    {
+      "path": "02_ASSETS_3D/urban_life_props/ul_w7_02_datanla_waterfall_alpine_coaster_plaza_and_tour_buses.glb",
+      "size_bytes": 1535472,
+      "sha256": "59905572d154f658417955f4bea747b40717e24c62704374f42e2111b22ffe9a",
+      "nodes": 18,
+      "materials": 22,
+      "vertices": 56286,
+      "triangles": 27952,
+      "bounds_gltf": {
+        "min": [
+          1319.715,
+          -2.448,
+          4819.542
+        ],
+        "max": [
+          1440.285,
+          5.028,
+          4947.837
+        ]
+      },
+      "khr_materials_transmission": false,
+      "id": "ul_w7_02_datanla_waterfall_alpine_coaster_plaza_and_tour_buses",
+      "name_vi": "Quảng Trường Đón Khách KDL Thác Datanla – Đèo Prenn, Nhà Ga & 12 Xe Trượt Thác New Alpine Coaster Cùng Đội 10 Xe Buýt Du Lịch 45 Chỗ",
+      "wave": 7,
+      "task_id": "T10_AUTO_R2_R3_B02_TA_NUNG_DATANLA_TRAI_MAT",
+      "tile_id": "T_E01_S02",
+      "spanned_tiles": [
+        "T_E01_S02",
+        "T_E01_S03"
+      ],
+      "coordinate_space": "world_gltf_yup",
+      "world_anchor": {
+        "lat": 11.896581,
+        "lon": 108.45793,
+        "x_m": 1380.0,
+        "y_m": -4880.0,
+        "elev_msl_m": 1475.81,
+        "gltf_xyz": [
+          1380.0,
+          -2.192,
+          4880.0
+        ]
+      },
+      "sourced_props_used": [
+        "prop_12_dalat_wooden_bus_stop_and_wayfinding_kiosk.glb",
+        "prop_11_mountain_pass_guardrail_and_convex_mirror.glb",
+        "prop_07_dalat_flower_pergola_arch.glb"
+      ],
+      "counts": {
+        "datanla_welcome_portal_and_station": 2,
+        "alpine_coaster_sled_carts": 12,
+        "tour_coach_buses_45_seat": 10,
+        "wayfinding_wooden_kiosks_prop12": 4,
+        "prenn_pass_guardrails_prop11": 10,
+        "flower_pergola_arches_prop07": 3,
+        "string_light_bulbs": 120,
+        "datanla_visitors": 42
+      },
+      "source_url": "https://vn.trip.com/travel-guide/attraction/dalat/datanla-new-alpine-coaster-141575316/"
+    },
+    {
+      "path": "02_ASSETS_3D/urban_life_props/ul_w7_03_trai_mat_night_agri_market_trucks_and_station_streetlife.glb",
+      "size_bytes": 2629156,
+      "sha256": "db30e57f12ef61698c78073722fc3d1b0ddbd7c4c77cd626210b0a8400b65136",
+      "nodes": 17,
+      "materials": 22,
+      "vertices": 98080,
+      "triangles": 43168,
+      "bounds_gltf": {
+        "min": [
+          5731.785,
+          33.254,
+          385.209
+        ],
+        "max": [
+          5828.214,
+          42.238,
+          478.124
+        ]
+      },
+      "khr_materials_transmission": false,
+      "id": "ul_w7_03_trai_mat_night_agri_market_trucks_and_station_streetlife",
+      "name_vi": "Chợ Nông Sản Đêm & Phố Ga Trại Mát: Đoàn 14 Xe Tải Chở Rau Hoa QL20, 16 Sạp Dù Sữa Đậu Nành, 12 Giàn Dâu Tây & 4 Sàn Ngắm Kinh Đô Ánh Sáng",
+      "wave": 7,
+      "task_id": "T10_AUTO_R2_R3_B02_TA_NUNG_DATANLA_TRAI_MAT",
+      "tile_id": "T_E03_N00",
+      "spanned_tiles": [
+        "T_E03_N00",
+        "T_E03_S01"
+      ],
+      "coordinate_space": "world_gltf_yup",
+      "world_anchor": {
+        "lat": 11.936646,
+        "lon": 108.49833,
+        "x_m": 5780.0,
+        "y_m": -420.0,
+        "elev_msl_m": 1512.53,
+        "gltf_xyz": [
+          5780.0,
+          34.532,
+          420.0
+        ]
+      },
+      "sourced_props_used": [
+        "prop_15_dalat_night_market_soy_milk_stall_and_umbrella_set.glb",
+        "prop_14_dalat_strawberry_hydroponic_a_frame_and_sign.glb",
+        "prop_10_cau_dat_wooden_cloud_hunting_deck.glb",
+        "prop_12_dalat_wooden_bus_stop_and_wayfinding_kiosk.glb"
+      ],
+      "counts": {
+        "trai_mat_wholesale_market_hall": 1,
+        "agri_flower_vegetable_cargo_trucks": 14,
+        "night_market_soy_milk_umbrella_stalls_prop15": 16,
+        "hydroponic_strawberry_aframes_prop14": 12,
+        "valley_of_lights_viewing_decks_prop10": 4,
+        "wooden_bus_stops_prop12": 2,
+        "flower_crate_motorbikes": 18,
+        "string_light_bulbs": 132,
+        "traders_and_visitors": 36
+      },
+      "source_url": "https://mia.vn/cam-nang-du-lich/trai-mat-da-lat-kinh-do-anh-sang-khi-ve-dem-1461"
+    },
+    {
+      "path": "02_ASSETS_3D/urban_life_props/ul_w8_01_tuyen_lam_lavender_kayak_marina_and_pinhatt_sunset_pier.glb",
+      "size_bytes": 1338340,
+      "sha256": "c1468dd87ec76eb2c531c2639536ae5a6325d93997a6233bd80de00902777af4",
+      "nodes": 15,
+      "materials": 23,
+      "vertices": 48342,
+      "triangles": 27178,
+      "bounds_gltf": {
+        "min": [
+          -3510.088,
+          -103.7,
+          4476.125
+        ],
+        "max": [
+          -3385.51,
+          -93.58,
+          4643.536
+        ]
+      },
+      "khr_materials_transmission": false,
+      "id": "ul_w8_01_tuyen_lam_lavender_kayak_marina_and_pinhatt_sunset_pier",
+      "name_vi": "Bến Du Thuyền Kayak/SUP, Cầu Gỗ Săn Mây KDL Lavender & 10 Lều Glamping Ven Hồ Tuyền Lâm – Chân Đỉnh Pinhatt (Y_gltf = -102.9m)",
+      "wave": 8,
+      "task_id": "T10_AUTO_R2_R3_B03_TUYEN_LAM_KAYAK_MARINA_MIMOSA_VAN_THANH",
+      "tile_id": "T_W02_S02",
+      "spanned_tiles": [
+        "T_W02_S02",
+        "T_W02_S03"
+      ],
+      "coordinate_space": "world_gltf_yup",
+      "world_anchor": {
+        "lat": 11.899546,
+        "lon": 108.413582,
+        "x_m": -3450.0,
+        "y_m": -4550.0,
+        "elev_msl_m": 1375.1,
+        "gltf_xyz": [
+          -3450.0,
+          -102.9,
+          4550.0
+        ]
+      },
+      "sourced_props_used": [
+        "prop_02_tuyen_lam_wooden_boat.glb",
+        "prop_03_lakeside_wooden_pier.glb",
+        "prop_10_cau_dat_wooden_cloud_hunting_deck.glb",
+        "prop_07_dalat_flower_pergola_arch.glb"
+      ],
+      "counts": {
+        "lakeside_wooden_piers_prop03": 4,
+        "curved_cloud_hunting_bridge_segments": 15,
+        "tuyen_lam_wooden_boats_prop02": 18,
+        "kayaks_and_sups_on_water": 22,
+        "lakeside_aframe_glamping_tents": 10,
+        "cloud_hunting_wooden_decks_prop10": 4,
+        "lavender_pergola_arches_prop07": 4,
+        "string_light_bulbs": 140,
+        "kayakers_and_visitors": 38
+      },
+      "source_url": "https://travel.com.vn/tin-tuc-du-lich/ho-tuyen-lam-da-lat-v18574.aspx"
+    },
+    {
+      "path": "02_ASSETS_3D/urban_life_props/ul_w8_02_mimosa_pass_cloud_cafes_and_sleeper_bus_convoy.glb",
+      "size_bytes": 1731276,
+      "sha256": "a26e102beb77762d57792e056c05e837e6b901f455c1ae6952c3f81ddf649d57",
+      "nodes": 19,
+      "materials": 23,
+      "vertices": 63200,
+      "triangles": 32772,
+      "bounds_gltf": {
+        "min": [
+          3607.693,
+          -0.613,
+          4078.429
+        ],
+        "max": [
+          3752.307,
+          8.433,
+          4176.75
+        ]
+      },
+      "khr_materials_transmission": false,
+      "id": "ul_w8_02_mimosa_pass_cloud_cafes_and_sleeper_bus_convoy",
+      "name_vi": "Tổ Hợp Quán Cafe Săn Mây Đèo Mimosa (F Cánh Đồng Hoa Mimosa) & Đoàn 10 Xe Khách Giường Nằm 2 Tầng Trên QL20",
+      "wave": 8,
+      "task_id": "T10_AUTO_R2_R3_B03_TUYEN_LAM_KAYAK_MARINA_MIMOSA_VAN_THANH",
+      "tile_id": "T_E02_S02",
+      "spanned_tiles": [
+        "T_E02_S02",
+        "T_E02_S03"
+      ],
+      "coordinate_space": "world_gltf_yup",
+      "world_anchor": {
+        "lat": 11.903408,
+        "lon": 108.479048,
+        "x_m": 3680.0,
+        "y_m": -4120.0,
+        "elev_msl_m": 1478.18,
+        "gltf_xyz": [
+          3680.0,
+          0.179,
+          4120.0
+        ]
+      },
+      "sourced_props_used": [
+        "prop_10_cau_dat_wooden_cloud_hunting_deck.glb",
+        "prop_07_dalat_flower_pergola_arch.glb",
+        "prop_11_mountain_pass_guardrail_and_convex_mirror.glb",
+        "prop_12_dalat_wooden_bus_stop_and_wayfinding_kiosk.glb"
+      ],
+      "counts": {
+        "mimosa_hillside_cafe_pavilion": 1,
+        "cloud_hunting_wooden_decks_prop10": 6,
+        "flower_pergola_arches_prop07": 4,
+        "mimosa_pass_guardrails_prop11": 12,
+        "wayfinding_wooden_kiosks_prop12": 2,
+        "double_decker_sleeper_buses": 10,
+        "touring_motorbikes": 16,
+        "string_light_bulbs": 128,
+        "pass_visitors": 36
+      },
+      "source_url": "https://mia.vn/cam-nang-du-lich/buoc-that-cham-giua-quan-f-canh-dong-hoa-coffee-da-lat-nen-tho-noi-deo-mimosa-1506"
+    },
+    {
+      "path": "02_ASSETS_3D/urban_life_props/ul_w8_03_van_thanh_flower_village_logistics_trucks_and_greenhouse_cafes.glb",
+      "size_bytes": 2490588,
+      "sha256": "a72e15f454eb78b1839deec2f15be3087c9a1fbe77aadcb73afb87f68c15e45c",
+      "nodes": 16,
+      "materials": 23,
+      "vertices": 92488,
+      "triangles": 42488,
+      "bounds_gltf": {
+        "min": [
+          -3670.9,
+          -7.404,
+          -1331.259
+        ],
+        "max": [
+          -3569.1,
+          0.195,
+          -1219.4
+        ]
+      },
+      "khr_materials_transmission": false,
+      "id": "ul_w8_03_van_thanh_flower_village_logistics_trucks_and_greenhouse_cafes",
+      "name_vi": "KDL Làng Hoa Vạn Thành (40/43 Vạn Hạnh) & Trạm Trung Chuyển 12 Xe Tải Lạnh Xuất Khẩu Hoa Tươi Đà Lạt, 6 Cụm Nhà Kính Hoa Hồng & 12 Giàn Thủy Canh",
+      "wave": 8,
+      "task_id": "T10_AUTO_R2_R3_B03_TUYEN_LAM_KAYAK_MARINA_MIMOSA_VAN_THANH",
+      "tile_id": "T_W02_N01",
+      "spanned_tiles": [
+        "T_W02_N01",
+        "T_W02_S01"
+      ],
+      "coordinate_space": "world_gltf_yup",
+      "world_anchor": {
+        "lat": 11.951917,
+        "lon": 108.412021,
+        "x_m": -3620.0,
+        "y_m": 1280.0,
+        "elev_msl_m": 1470.87,
+        "gltf_xyz": [
+          -3620.0,
+          -7.129,
+          -1280.0
+        ]
+      },
+      "sourced_props_used": [
+        "prop_09_dalat_agri_greenhouse_cluster.glb",
+        "prop_14_dalat_strawberry_hydroponic_a_frame_and_sign.glb",
+        "prop_15_dalat_night_market_soy_milk_stall_and_umbrella_set.glb",
+        "prop_07_dalat_flower_pergola_arch.glb",
+        "prop_12_dalat_wooden_bus_stop_and_wayfinding_kiosk.glb"
+      ],
+      "counts": {
+        "van_thanh_flower_packing_hall": 1,
+        "glowing_flower_greenhouse_clusters_prop09": 6,
+        "hydroponic_strawberry_flower_aframes_prop14": 12,
+        "flower_pergola_arches_prop07": 6,
+        "night_flower_market_stalls_prop15": 8,
+        "refrigerated_flower_export_trucks": 12,
+        "flower_crate_motorbikes": 16,
+        "string_light_bulbs": 124,
+        "growers_and_visitors": 34
+      },
+      "source_url": "https://bazantravel.com/lang-hoa-van-thanh-da-lat/"
+    },
+    {
+      "id": "ul_w9_01_xom_leo_trai_mat_sunset_bbq_promenade_and_streetfood_carts",
+      "wave": 9,
+      "task_id": "T10_AUTO_R2_R3_B04_XOM_LEO_SUNSET_STREETFOOD_MONGOLAND_ANKROET",
+      "ring": "RING_2",
+      "tile_id": "T_E03_N00",
+      "category": "sunset_bbq_promenade_and_streetfood_carts",
+      "path": "02_ASSETS_3D/urban_life_props/ul_w9_01_xom_leo_trai_mat_sunset_bbq_promenade_and_streetfood_carts.glb",
+      "size_bytes": 1421188,
+      "sha256": "fcb7619b406b3d14fe0748e7c382ecf20d214a76527b7d233d2c64fde486100c",
+      "vertices": 51403,
+      "triangles": 24334,
+      "coordinate_space": "WORLD_THREEJS_Y_UP",
+      "world_anchor": {
+        "x_m": 5320.0,
+        "y_m": -280.0,
+        "z_local_m": 31.26,
+        "elev_msl_m": 1509.26,
+        "lat": 11.937904,
+        "lon": 108.494106,
+        "gltf_xyz": [
+          5320.0,
+          31.26,
+          280.0
+        ]
+      },
+      "bounds_gltf": {
+        "min": [
+          5243.578,
+          30.59,
+          244.78
+        ],
+        "max": [
+          5396.815,
+          38.744,
+          311.158
+        ]
+      },
+      "khr_materials_transmission": false,
+      "description": "Phố ngắm hoàng hôn, Tiệm Nướng & Chill Xóm Lèo (113 Huỳnh Tấn Phát, Trại Mát), Thung Lũng Đèn Coffee – BBQ, 6 sàn gỗ ngắm kinh đô ánh sáng nhà lồng (prop_10), 14 sạp dù & xe đẩy ẩm thực đêm (prop_15), 24 bàn nướng than hồng, 10 ô tô & 22 xe máy, 148 đèn dây vàng & 42 thực khách"
+    },
+    {
+      "id": "ul_w9_02_mongo_land_ta_nung_rainbow_dry_slide_yurts_and_gokarts",
+      "wave": 9,
+      "task_id": "T10_AUTO_R2_R3_B04_XOM_LEO_SUNSET_STREETFOOD_MONGOLAND_ANKROET",
+      "ring": "RING_2_RING_3",
+      "tile_id": "T_W03_S02",
+      "category": "steppe_theme_park_dry_slide_yurts_and_gokarts",
+      "path": "02_ASSETS_3D/urban_life_props/ul_w9_02_mongo_land_ta_nung_rainbow_dry_slide_yurts_and_gokarts.glb",
+      "size_bytes": 1153624,
+      "sha256": "93a43ad75df19f52810384f5d9ab882b7b8ae3b41d0314ef2c5ffa313058a92a",
+      "vertices": 39970,
+      "triangles": 22280,
+      "coordinate_space": "WORLD_THREEJS_Y_UP",
+      "world_anchor": {
+        "x_m": -6820.0,
+        "y_m": -4580.0,
+        "z_local_m": 15.32,
+        "elev_msl_m": 1493.32,
+        "lat": 11.899276,
+        "lon": 108.382639,
+        "gltf_xyz": [
+          -6820.0,
+          15.32,
+          4580.0
+        ]
+      },
+      "bounds_gltf": {
+        "min": [
+          -6872.452,
+          14.712,
+          4528.784
+        ],
+        "max": [
+          -6759.108,
+          26.933,
+          4632.957
+        ]
+      },
+      "khr_materials_transmission": false,
+      "description": "KDL Thảo nguyên Mongo Land Tà Nung (Tổ 16 Thôn 1 Tà Nung): Đường trượt phao khô cầu vồng 6 làn song song dài 60m với 12 phao trượt, 12 túp lều du mục Mông Cổ (Ger/Yurt) đa sắc, đường đua & 10 xe Go-Kart, 4 sàn gỗ ngắm thảo nguyên (prop_10), 4 vòm hoa (prop_07), 2 nhà chờ gỗ (prop_12), 6 xe Limousine & 14 xe máy, 132 đèn dây & 38 du khách"
+    },
+    {
+      "id": "ul_w9_03_ankroet_thung_lung_vang_pine_cafes_and_vintage_tour_convoy",
+      "wave": 9,
+      "task_id": "T10_AUTO_R2_R3_B04_XOM_LEO_SUNSET_STREETFOOD_MONGOLAND_ANKROET",
+      "ring": "RING_3",
+      "tile_id": "T_W04_N03",
+      "category": "pine_forest_cafes_lakeside_marina_and_vintage_convoy",
+      "path": "02_ASSETS_3D/urban_life_props/ul_w9_03_ankroet_thung_lung_vang_pine_cafes_and_vintage_tour_convoy.glb",
+      "size_bytes": 933872,
+      "sha256": "5a9ba5b9a6b9b23a3f130afbf6f19c20497b3aeae790f93d84aa21dc201e37e3",
+      "vertices": 29598,
+      "triangles": 18380,
+      "coordinate_space": "WORLD_THREEJS_Y_UP",
+      "world_anchor": {
+        "x_m": -7850.0,
+        "y_m": 6420.0,
+        "z_local_m": -9.2,
+        "elev_msl_m": 1468.8,
+        "lat": 11.998091,
+        "lon": 108.373182,
+        "gltf_xyz": [
+          -7850.0,
+          -9.2,
+          -6420.0
+        ]
+      },
+      "bounds_gltf": {
+        "min": [
+          -7913.914,
+          -52.85,
+          -6459.0
+        ],
+        "max": [
+          -7785.032,
+          -2.014,
+          -6370.899
+        ]
+      },
+      "khr_materials_transmission": false,
+      "description": "Cung đường Đập Thủy Điện Ankroet – KDL Thung Lũng Vàng: Tổ hợp Quán Cafe Rừng Thông & Đài ngắm Đập Ankroet cổ, 3 cầu tàu gỗ ven hồ (prop_03) & 10 thuyền gỗ (prop_02) neo tại cao độ mặt nước chuẩn Y_gltf = -52.85m, 4 sàn gỗ săn mây (prop_10), 10 cụm hộ lan & gương cầu lồi đèo Ankroet (prop_11), đoàn 8 xe cổ Pháp/Jeep & 12 mô tô phượt, 120 đèn dây & 34 du khách"
     }
   ]
 }

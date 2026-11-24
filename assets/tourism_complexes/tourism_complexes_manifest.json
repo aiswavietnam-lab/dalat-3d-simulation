@@ -4,8 +4,8 @@
   "slot": 8,
   "display_slot_name": "ĐÀ LẠT - 07",
   "lane": "SPIRITUAL_TOURISM_COMPLEXES",
-  "wave_completed": 6,
-  "updated_at_utc": "2026-11-24T03:26:21.518925+00:00",
+  "wave_completed": 9,
+  "updated_at_utc": "2026-11-24T09:32:06.938326+00:00",
   "coordinate_origin": {
     "name": "Tam_Ho_Xuan_Huong_Da_Lat",
     "lat0": 11.940419,
@@ -15,7 +15,7 @@
     "axes_gltf_threejs": "+X=East, +Y=Up (z_local), +Z=South (-y_m)"
   },
   "no_khr_materials_transmission": true,
-  "built_complexes_count": 6,
+  "built_complexes_count": 9,
   "total_planned_waves": 5,
   "complexes": [
     {
@@ -934,7 +934,570 @@
       "year_completed": "1993 / 1999 / 2017 (Chùa Linh Ẩn) & 2022 / 2023 (Samten Hills Dalat)",
       "source_url": "https://travel.com.vn/tin-tuc-du-lich/chua-linh-an-da-lat-v18543.aspx",
       "description_vi": "Tổ hợp 2 quần thể du lịch văn hóa – tâm linh quy mô kỷ lục vùng vành đai RING_3 ngoại vi Đà Lạt cấp LOD0: (1) Quần thể Chùa Linh Ẩn (Đường Ba Đình, Thị trấn Nam Ban, Huyện Lâm Hà, sát Thác Voi — ô T_W06_S06) rộng 4ha với Đại tượng Bồ Tát Quan Thế Âm lộ thiên cao đúng 71.0m (cao nhất Lâm Đồng / Việt Nam, có 250 bậc thang trong lòng tượng), Chánh điện rộng 1.400m² mái ngói đỏ đao cong 2 tầng kèm cặp rồng xi măng dài 22m, Tượng Phật Di Lặc trắng cao 12.5m (rộng 6.5m, ngang 9.0m) và Vườn Tịnh Thánh quy tụ gần 500 pho tượng Quan Thế Âm xếp hàng trang nghiêm; (2) Quần thể Không gian Văn hóa Tâm linh Phật giáo Kim Cương Thừa Samten Hills Dalat (Thôn Kambute, Xã Tu Tra, Huyện Đơn Dương — ô T_E01_S12) với Đại Bảo Tháp Kinh Luân Drigung Kagyu Rinchen Khorchen Khorwe Go Gek bằng đồng tinh khiết dát vàng 24K cao đúng 37.22m, đường kính 16.53m, nặng 200 tấn (Kỷ lục Guinness Thế giới), Nhà trưng bày Di sản Phật giáo Himalaya, Tượng Phật Vô Lượng Thọ 10.5m, Tượng Phật Di Lặc thếp vàng 10.5m và Nhà Dâng Đèn Bơ."
+    },
+    {
+      "id": "tc_07_thung_lung_vang_lang_cu_lan_and_linh_quy_phap_an",
+      "name_vi": "Quần thể Khu Du lịch Sinh thái Thung lũng Vàng – Làng Văn hóa K'Ho Làng Cù Lần & Chùa Linh Quy Pháp Ấn (Cổng Trời Quán Chiếu Đường) (LOD0)",
+      "name_en": "Golden Valley Bonsai Park – Cu Lan K'Ho Cultural Village (16.5m Nha Rong, Heart Lake) & Linh Quy Phap An Cloud Pagoda (Quan Chieu Duong & 3 Torii Sky Gates) (LOD0)",
+      "task_id": "T8_AUTO_W7_THUNG_LUNG_VANG_LANG_CU_LAN_AND_LINH_QUY_PHAP_AN",
+      "wave": 7,
+      "slot": 8,
+      "ring": 3,
+      "status": "built",
+      "built": true,
+      "coordinate_space": "world_gltf_y_up",
+      "lat": 12.0012,
+      "lon": 108.3745,
+      "elev_msl_m": 1473.254,
+      "x_m": -7706.426,
+      "y_m": 6766.11,
+      "z_local_m": -4.746,
+      "gltf_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "sub_complexes": {
+        "thung_lung_vang_and_lang_cu_lan": {
+          "lat": 12.0012,
+          "lon": 108.3745,
+          "x_m": -7706.426,
+          "y_m": 6766.11,
+          "elev_msl_m": 1473.254,
+          "gltf_anchor": [
+            -7706.426,
+            -4.746,
+            -6766.11
+          ],
+          "heading_deg": 165.0,
+          "tile_id": "T_W04_N03",
+          "area_ha": 30.0,
+          "nha_rong_height_m": 16.5,
+          "heart_lake_dimensions_m": [
+            38.0,
+            32.0
+          ],
+          "suspension_bridge_length_m": 42.0,
+          "exclusion_polygon_wgs84": [
+            [
+              108.3741009,
+              12.0018254
+            ],
+            [
+              108.3751652,
+              12.0015464
+            ],
+            [
+              108.3748943,
+              12.0005572
+            ],
+            [
+              108.37383,
+              12.0008362
+            ],
+            [
+              108.3741009,
+              12.0018254
+            ]
+          ]
+        },
+        "chua_linh_quy_phap_an_cong_troi": {
+          "lat": 11.6625,
+          "lon": 108.3385,
+          "x_m": -11627.219,
+          "y_m": -30937.802,
+          "elev_msl_m": 1489.606,
+          "gltf_anchor": [
+            -11627.219,
+            11.606,
+            30937.802
+          ],
+          "heading_deg": 180.0,
+          "tile_id": "T_W06_S15",
+          "torii_sky_gates_count": 3,
+          "main_torii_gate_height_m": 7.6,
+          "zen_pebble_gardens_count": 2,
+          "exclusion_polygon_wgs84": [
+            [
+              108.3379858,
+              11.6630031
+            ],
+            [
+              108.3390142,
+              11.6630031
+            ],
+            [
+              108.3390142,
+              11.6619969
+            ],
+            [
+              108.3379858,
+              11.6619969
+            ],
+            [
+              108.3379858,
+              11.6630031
+            ]
+          ]
+        }
+      },
+      "tile_id": "T_W04_N03",
+      "spanned_tiles": [
+        "T_W04_N03",
+        "T_W06_S15"
+      ],
+      "heading_deg": 165.0,
+      "rotation_y_rad": 0.0,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "foundation_skirt_m": -4.5,
+      "bbox_min_m": [
+        -11683.219,
+        -9.246,
+        -6835.731
+      ],
+      "bbox_max_m": [
+        -7633.977,
+        32.156,
+        30993.802
+      ],
+      "footprint_m": {
+        "width_x": 4049.24,
+        "length_z": 37829.53,
+        "height_span_y": 41.4
+      },
+      "exclusion_polygon_wgs84": [
+        [
+          108.3741009,
+          12.0018254
+        ],
+        [
+          108.3751652,
+          12.0015464
+        ],
+        [
+          108.3748943,
+          12.0005572
+        ],
+        [
+          108.37383,
+          12.0008362
+        ],
+        [
+          108.3741009,
+          12.0018254
+        ]
+      ],
+      "glb_file": "tc_07_thung_lung_vang_lang_cu_lan_and_linh_quy_phap_an.glb",
+      "glb_path": "02_ASSETS_3D/tourism_complexes/tc_07_thung_lung_vang_lang_cu_lan_and_linh_quy_phap_an.glb",
+      "sha256": "782a1d916570b39f378d674f58cf0d745220086fcccfe980be0e8daf4e1b9abd",
+      "size_bytes": 575024,
+      "triangles": 6835,
+      "nodes": 15,
+      "materials": 11,
+      "embedded_textures": 3,
+      "no_khr_transmission": true,
+      "sourced_kits_reused": [
+        "02_ASSETS_3D/sourced_library/landmarks/lm_54_thung_lung_vang_pine_bonsai_zen_garden_and_pavilion_kit.glb",
+        "02_ASSETS_3D/sourced_library/landmarks/kit_vietnamese_pagoda_roof_stupa.glb"
+      ],
+      "camera_preset": {
+        "eye_gltf": [
+          -7736.9839,
+          33.2537,
+          -6852.979
+        ],
+        "target_gltf": [
+          -7707.4613,
+          1.2537,
+          -6762.2463
+        ],
+        "fov_deg": 48.0
+      },
+      "architectural_style": "K'Ho Central Highlands Nha Rong Stilt Village & Zen Cloud Sanctuary with Torii Sky Gates",
+      "architect": "KDL Thung lũng Vàng – Làng Cù Lần (Văn hóa K'Ho Lạc Dương) & Đại đức Thích Minh Thành (Chùa Linh Quy Pháp Ấn)",
+      "year_completed": "2005 / 2011 (Thung lũng Vàng & Làng Cù Lần) & 2006 / 2015 (Chùa Linh Quy Pháp Ấn)",
+      "source_url": "https://vietnamtourism.gov.vn/post/34974",
+      "description_vi": "Tổ hợp 2 quần thể du lịch sinh thái – văn hóa bản địa và thiền viện săn mây vùng vành đai RING_2 / RING_3 cấp LOD0: (1) Quần thể Khu Du lịch Sinh thái Thung lũng Vàng & Làng Văn hóa K'Ho Làng Cù Lần (Xã Lát, Huyện Lạc Dương — ô T_W04_N03) rộng 30ha dưới chân núi Lang Biang với Nhà Rông truyền thống của người K'Ho cao 16.5m, sân lửa trại cồng chiêng, Chợ Chồm Hổm, 8 ngôi nhà sàn mái tranh, Hồ Trái Tim (alphaMode BLEND) kèm cầu treo dây văng gỗ dài 42m bắc qua Suối Cạn và Vườn Thiền Bonsai Tùng La Hán – Lầu Vọng Cảnh lục giác; (2) Quần thể Chùa Linh Quy Pháp Ấn – Cổng Trời Quán Chiếu Đường (Đồi 45, Xã Lộc Thành, Huyện Bảo Lâm — ô T_W06_S15) với điện Quán Chiếu Đường mái ngói nâu đen đao cong 2 tầng, sân vọng cảnh săn mây gắn 3 Cổng Trời Thần Đạo (Torii Sky Gates) tại 3 hướng Đông - Tây - Nam, Vườn Sỏi Thiền Định Tịnh Tâm Karesansui, Tam Giải Thoát Môn và bậc đá rừng trúc."
+    },
+    {
+      "id": "tc_08_thien_vien_van_hanh_linh_quang_and_clay_tunnel",
+      "name_vi": "Quần thể Thiền viện Vạn Hạnh (Bảo tượng Phật Thích Ca 24m) – Tổ đình Cổ tự Linh Quang (1931) & Khu Du lịch Đường Hầm Điêu Khắc Đất Sét – Hồ Vô Cực (LOD0)",
+      "name_en": "Van Hanh Zen Monastery (24m Sakyamuni Statue) – Linh Quang 1931 Ancient Pagoda (100m Dragon) & Da Lat Basalt Clay Sculpture Tunnel – Infinity Lake (LOD0)",
+      "task_id": "T8_AUTO_W8_THIEN_VIEN_VAN_HANH_LINH_QUANG_AND_CLAY_TUNNEL",
+      "wave": 8,
+      "slot": 8,
+      "ring": 2,
+      "status": "built",
+      "built": true,
+      "coordinate_space": "world_gltf_y_up",
+      "lat": 11.9585,
+      "lon": 108.4418,
+      "elev_msl_m": 1499.244,
+      "x_m": -376.723,
+      "y_m": 2012.768,
+      "z_local_m": 21.244,
+      "gltf_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "sub_complexes": {
+        "thien_vien_van_hanh_and_chua_linh_quang": {
+          "lat": 11.9585,
+          "lon": 108.4418,
+          "x_m": -376.723,
+          "y_m": 2012.768,
+          "elev_msl_m": 1499.244,
+          "gltf_anchor": [
+            -376.723,
+            21.244,
+            -2012.768
+          ],
+          "heading_deg": 195.0,
+          "tile_id": "T_E00_N01",
+          "sakyamuni_statue_height_m": 24.0,
+          "sakyamuni_statue_width_m": 20.0,
+          "sakyamuni_statue_weight_tons": 60.0,
+          "linh_quang_dragon_length_m": 100.0,
+          "white_elephant_tusks": 6,
+          "exclusion_polygon_wgs84": [
+            [
+              108.441162,
+              11.9588164
+            ],
+            [
+              108.4421908,
+              11.9590861
+            ],
+            [
+              108.4424522,
+              11.9581316
+            ],
+            [
+              108.4414234,
+              11.9578619
+            ],
+            [
+              108.441162,
+              11.9588164
+            ]
+          ]
+        },
+        "duong_ham_dieu_khac_dat_set_ho_vo_cuc": {
+          "lat": 11.8942,
+          "lon": 108.4198,
+          "x_m": -2772.763,
+          "y_m": -5145.076,
+          "elev_msl_m": 1444.106,
+          "gltf_anchor": [
+            -2772.763,
+            -33.894,
+            5145.076
+          ],
+          "heading_deg": 210.0,
+          "tile_id": "T_W01_S03",
+          "clay_tunnel_length_km": 1.2,
+          "infinity_lake_diameter_m": 28.0,
+          "klang_hbiang_sculptures_height_m": 6.2,
+          "vietnam_record_clay_house_area_m2": 90.0,
+          "exclusion_polygon_wgs84": [
+            [
+              108.4190725,
+              11.8943907
+            ],
+            [
+              108.4199949,
+              11.8949117
+            ],
+            [
+              108.4205275,
+              11.8940093
+            ],
+            [
+              108.4196051,
+              11.8934883
+            ],
+            [
+              108.4190725,
+              11.8943907
+            ]
+          ]
+        }
+      },
+      "tile_id": "T_E00_N01",
+      "spanned_tiles": [
+        "T_E00_N01",
+        "T_W01_S03"
+      ],
+      "heading_deg": 195.0,
+      "rotation_y_rad": 0.0,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "foundation_skirt_m": -4.5,
+      "bbox_min_m": [
+        -2851.992,
+        -38.243,
+        -2078.008
+      ],
+      "bbox_max_m": [
+        -305.688,
+        48.323,
+        5224.306
+      ],
+      "footprint_m": {
+        "width_x": 2546.3,
+        "length_z": 7302.31,
+        "height_span_y": 86.57
+      },
+      "exclusion_polygon_wgs84": [
+        [
+          108.441162,
+          11.9588164
+        ],
+        [
+          108.4421908,
+          11.9590861
+        ],
+        [
+          108.4424522,
+          11.9581316
+        ],
+        [
+          108.4414234,
+          11.9578619
+        ],
+        [
+          108.441162,
+          11.9588164
+        ]
+      ],
+      "glb_file": "tc_08_thien_vien_van_hanh_linh_quang_and_clay_tunnel.glb",
+      "glb_path": "02_ASSETS_3D/tourism_complexes/tc_08_thien_vien_van_hanh_linh_quang_and_clay_tunnel.glb",
+      "sha256": "523b0232eeb399b75306561254be7a5079cfbb79069ac3c344c3d365c10ced96",
+      "size_bytes": 606436,
+      "triangles": 7465,
+      "nodes": 14,
+      "materials": 11,
+      "embedded_textures": 3,
+      "no_khr_transmission": true,
+      "sourced_kits_reused": [
+        "02_ASSETS_3D/sourced_library/landmarks/lm_71_chua_linh_quang_co_tu_1931.glb",
+        "02_ASSETS_3D/sourced_library/landmarks/lm_36_duong_ham_dieu_khac_dat_set_ho_vo_cuc.glb",
+        "02_ASSETS_3D/sourced_library/landmarks/kit_vietnamese_pagoda_roof_stupa.glb"
+      ],
+      "camera_preset": {
+        "eye_gltf": [
+          -350.0288,
+          53.2436,
+          -2098.6017
+        ],
+        "target_gltf": [
+          -370.7887,
+          33.2436,
+          -2006.0759
+        ],
+        "fov_deg": 48.0
+      },
+      "architectural_style": "Vietnamese Zen Monastery (24m Colossal Golden Sakyamuni & 1931 Ceramic Dragon) & Unfired Basalt Red Clay Sculpture Park",
+      "architect": "Thượng tọa Thích Viên Thanh - Nghệ nhân Thùy Lam (Thiền viện Vạn Hạnh), HT. Thích Nhân Thứ (Chùa Linh Quang) & KDL Đường Hầm Điêu Khắc",
+      "year_completed": "1931 / 1952 / 2002 (Linh Quang & Vạn Hạnh) & 2012 / 2019 (Đường Hầm Điêu Khắc Đất Sét & Hồ Vô Cực)",
+      "source_url": "https://vinpearl.com/vi/thien-vien-van-hanh",
+      "description_vi": "Tổ hợp 2 quần thể tâm linh – nghệ thuật điêu khắc biểu tượng của Đà Lạt cấp LOD0: (1) Quần thể Thiền viện Vạn Hạnh (Số 39/142 Phù Đổng Thiên Vương — ô T_E00_N01) với Bảo tượng Phật Thích Ca Niêm Hoa Vi Tiếu lộ thiên màu vàng cao đúng 24.0m, rộng 20.0m, nặng trên 60 tấn đặt trên đài sen và giả sơn hang động Tổ sư tham thiền, Chánh điện mái đao cong 2 tầng, kết hợp Tổ đình Cổ tự Linh Quang (khai sơn 1931) với tượng đài Quán Thế Âm trên thân rồng khảm sành dài 100m và Voi trắng 6 ngà (6m x 3m); (2) Quần thể Khu Du lịch Đường Hầm Điêu Khắc Đất Sét & Hồ Vô Cực (Đường Hoa Hồng, Hồ Tuyền Lâm — ô T_W01_S03) với Hồ Vô Cực đường kính 28.0m (alphaMode BLEND) có đôi tượng gương mặt Chàng K'Lang và Nàng H'Biang cao 6.2m hướng vào nhau, hào điêu khắc đất đỏ bazan không nung dài 1,2km và Ngôi nhà đất sét 90m² mái đắp nổi Bản đồ Việt Nam."
+    },
+    {
+      "id": "tc_09_chua_linh_son_linh_phong_and_la_phong_koi_garden",
+      "name_vi": "Quần thể Chùa Linh Sơn (1938) – Chùa Sư Nữ Linh Phong (1940) & Khu Du lịch Rừng Lá Phong Đà Lạt (Ngôi Nhà 132 Mái, Nhà Trống & Hồ Cá Koi Kokoro) (LOD0)",
+      "name_en": "Linh Son 1938 Pagoda (1,250kg Bronze Buddha) – Linh Phong 1940 Nunnery & Dalat Maple Forest Park (132-Roof Origami House, Drum House & Kokoro Koi Pond) (LOD0)",
+      "task_id": "T8_AUTO_W9_CHUA_LINH_SON_LINH_PHONG_AND_LA_PHONG_KOI_GARDEN",
+      "wave": 9,
+      "slot": 8,
+      "ring": 1,
+      "status": "built",
+      "built": true,
+      "coordinate_space": "world_gltf_y_up",
+      "lat": 11.9472,
+      "lon": 108.4358,
+      "elev_msl_m": 1493.888,
+      "x_m": -1030.188,
+      "y_m": 754.857,
+      "z_local_m": 15.888,
+      "gltf_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "sub_complexes": {
+        "chua_linh_son_1938_and_chua_linh_phong_1940": {
+          "lat": 11.9472,
+          "lon": 108.4358,
+          "x_m": -1030.188,
+          "y_m": 754.857,
+          "elev_msl_m": 1493.888,
+          "gltf_anchor": [
+            -1030.188,
+            15.888,
+            -754.857
+          ],
+          "heading_deg": 225.0,
+          "tile_id": "T_W01_N00",
+          "sakyamuni_bronze_1952_weight_kg": 1250,
+          "sakyamuni_bronze_1952_height_m": 1.7,
+          "dai_hong_chung_weight_kg": 450,
+          "octagonal_stupa_tiers": 3,
+          "exclusion_polygon_wgs84": [
+            [
+              108.4350988,
+              11.9471746
+            ],
+            [
+              108.435826,
+              11.947886
+            ],
+            [
+              108.4365272,
+              11.9472
+            ],
+            [
+              108.4358,
+              11.9464886
+            ],
+            [
+              108.4350988,
+              11.9471746
+            ]
+          ]
+        },
+        "khu_du_lich_la_phong_kokoro_koi_garden": {
+          "lat": 11.9268,
+          "lon": 108.4485,
+          "x_m": 352.98,
+          "y_m": -1516.06,
+          "elev_msl_m": 1497.818,
+          "gltf_anchor": [
+            352.98,
+            19.818,
+            1516.06
+          ],
+          "heading_deg": 170.0,
+          "tile_id": "T_E00_S01",
+          "origami_house_roof_facets": 132,
+          "drum_house_stained_glass_drums": 20,
+          "koi_pond_length_m": 36.0,
+          "temperate_maple_trees_count": 2000,
+          "exclusion_polygon_wgs84": [
+            [
+              108.448068,
+              11.9274036
+            ],
+            [
+              108.4491169,
+              11.9272226
+            ],
+            [
+              108.448932,
+              11.9261964
+            ],
+            [
+              108.4478831,
+              11.9263774
+            ],
+            [
+              108.448068,
+              11.9274036
+            ]
+          ]
+        }
+      },
+      "tile_id": "T_W01_N00",
+      "spanned_tiles": [
+        "T_W01_N00",
+        "T_E00_S01"
+      ],
+      "heading_deg": 225.0,
+      "rotation_y_rad": 0.0,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "foundation_skirt_m": -4.5,
+      "bbox_min_m": [
+        -1106.555,
+        11.388,
+        -831.225
+      ],
+      "bbox_max_m": [
+        420.17,
+        33.618,
+        1583.25
+      ],
+      "footprint_m": {
+        "width_x": 1526.73,
+        "length_z": 2414.47,
+        "height_span_y": 22.23
+      },
+      "exclusion_polygon_wgs84": [
+        [
+          108.4350988,
+          11.9471746
+        ],
+        [
+          108.435826,
+          11.947886
+        ],
+        [
+          108.4365272,
+          11.9472
+        ],
+        [
+          108.4358,
+          11.9464886
+        ],
+        [
+          108.4350988,
+          11.9471746
+        ]
+      ],
+      "glb_file": "tc_09_chua_linh_son_linh_phong_and_la_phong_koi_garden.glb",
+      "glb_path": "02_ASSETS_3D/tourism_complexes/tc_09_chua_linh_son_linh_phong_and_la_phong_koi_garden.glb",
+      "sha256": "3367025d770839b71f54172aa2239516b7e6c95c9d6dba479b2d459c00674768",
+      "size_bytes": 1131844,
+      "triangles": 12608,
+      "nodes": 15,
+      "materials": 11,
+      "embedded_textures": 3,
+      "no_khr_transmission": true,
+      "sourced_kits_reused": [
+        "02_ASSETS_3D/sourced_library/landmarks/lm_72_chua_linh_son_1938_doi_nguyen_van_troi.glb",
+        "02_ASSETS_3D/sourced_library/landmarks/lm_79_chua_linh_phong_su_nu_1940_doi_hoang_hoa_tham.glb",
+        "02_ASSETS_3D/sourced_library/landmarks/lm_57_khu_du_lich_la_phong_dalat_maple_garden_and_koi_house.glb"
+      ],
+      "camera_preset": {
+        "eye_gltf": [
+          -1049.987,
+          47.8884,
+          -839.7098
+        ],
+        "target_gltf": [
+          -1027.3596,
+          23.3884,
+          -752.0286
+        ],
+        "fov_deg": 48.0
+      },
+      "architectural_style": "Vietnamese Imperial Heritage Buddhist Pagodas (1938-1940) & 132-Roof Origami Maple Bonsai Ecological Park",
+      "architect": "Hội Phật học Trung phần & Sư bà Thích Nữ Từ Hương (Linh Sơn – Linh Phong) & KDL Lá Phong Đà Lạt",
+      "year_completed": "1938 / 1940 (Chùa Linh Sơn & Chùa Sư Nữ Linh Phong) & 2016 (Khu Du lịch Lá Phong Đà Lạt)",
+      "source_url": "https://dalat.vn/vi/chualinhson",
+      "description_vi": "Tổ hợp 2 quần thể cổ tự Phật giáo lịch sử thập niên 1930–1940 và khu du lịch sinh thái kiến trúc Origami – Nhật Bản cấp LOD0: (1) Quần thể Chùa Linh Sơn (120 Nguyễn Văn Trỗi, xây dựng 1938–1940 trên đồi thông 4ha — ô T_W01_N00) với Cổng Tam Quan hướng Tây Nam, Chánh điện mái đao cong 2 tầng tôn trí Tượng Phật Thích Ca bằng đồng đúc năm 1952 (cao 1.7m, nặng 1.250kg) và Đại Hồng Chung 450kg, Bảo tháp bát giác 3 tầng, kết hợp Chùa Sư Nữ Linh Phong (72C Hoàng Hoa Thám, khởi dựng 1940); (2) Quần thể Khu Du lịch Rừng Lá Phong Đà Lạt (45 Đặng Thái Thân — ô T_E00_S01) rộng gần 5ha với Ngôi Nhà 132 Mái Origami, Nhà Trống ghép từ 20 mặt trống kính màu phát sáng ban đêm (alphaMode BLEND), Hồ Cá Koi Nhật Bản dài 36m kèm cầu gỗ đỏ, Quán cà phê Kokoro, Cổng Quần Long Hội Tụ và rừng hơn 2.000 cây Lá Phong Đỏ ôn đới."
     }
   ],
-  "total_triangles_built": 75101
+  "total_triangles_built": 102009
 }
