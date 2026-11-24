@@ -1,0 +1,210 @@
+{
+  "schema_version": "1.0.0",
+  "project_name": "DALAT_3D_SIMULATION",
+  "slot": 22,
+  "display_slot_name": "ĐÀ LẠT - 21",
+  "lane": "HERO_LANDMARKS_ULTRA_LOD0_MASTERPIECES",
+  "active_wave_completed": 1,
+  "task_id": "T22_W1_ULTRA_LAM_VIEN_SQUARE_AND_THUY_TA",
+  "updated_at_utc": "2026-11-24T04:07:21.552332+00:00",
+  "coordinate_lock": {
+    "origin_name": "Tam_Ho_Xuan_Huong_Da_Lat",
+    "lat0": 11.940419,
+    "lon0": 108.445259,
+    "elev0_msl_m": 1478.0,
+    "epsg": "EPSG:32649",
+    "gltf_axes": "X=East, Y=Up(elev_msl-1478.0), Z=-North",
+    "foundation_skirt_m": -3.0,
+    "forbidden_extensions": [
+      "KHR_materials_transmission"
+    ],
+    "glass_water_blend_alpha": 0.85
+  },
+  "summary_metrics": {
+    "completed_landmarks_count": 2,
+    "target_total_landmarks": 20,
+    "total_triangles": 83784,
+    "total_vertices": 94483,
+    "embedded_512_pbr_textures_total": 10,
+    "khr_materials_transmission_count": 0,
+    "nan_inf_errors": 0
+  },
+  "landmarks_ultra": [
+    {
+      "id": "ultra_lm_01_quang_truong_lam_vien",
+      "short_label": "Quang Truong Lam Vien",
+      "replaces_slot4_id": "lm_01_quang_truong_lam_vien",
+      "name_vi": "Quảng trường Lâm Viên Ultra-LOD0 (Nụ Atiso, Hoa Dã Quỳ, Khán đài & Đài phun nước)",
+      "name_en": "Lam Vien Square Ultra-LOD0 Masterpiece",
+      "wave": 1,
+      "slot": 22,
+      "tile_id": "T_E00_N00",
+      "ring": 0,
+      "lat": 11.9388326,
+      "lon": 108.4448292,
+      "elev_msl_m": 1480.0,
+      "x_m": -46.809,
+      "y_m": -176.596,
+      "z_local_m": 2.0,
+      "gltf_position": [
+        -46.809,
+        2.0,
+        176.596
+      ],
+      "heading_deg": 342.3,
+      "rotation_y_rad": -5.974262,
+      "satellite_alignment": {
+        "tile_file": "satellite_T_E00_N00.jpg",
+        "anchor_px_940": [
+          448.0,
+          553.0
+        ],
+        "nu_atiso_px_940": [
+          415.0,
+          567.0
+        ],
+        "hoa_da_quy_px_940": [
+          479.0,
+          570.0
+        ],
+        "fountain_px_940": [
+          464.0,
+          526.0
+        ]
+      },
+      "architectural_metadata": {
+        "architect": "KTS Trần Văn Dũng",
+        "construction_years": "2009-2016",
+        "total_square_area_m2": 72405,
+        "wild_sunflower_height_m": 18.2,
+        "wild_sunflower_floor_m2": 1200,
+        "artichoke_bud_height_m": 15.4
+      },
+      "glb_path": "02_ASSETS_3D/hero_landmarks_ultra/ultra_lm_01_quang_truong_lam_vien.glb",
+      "sha256": "3a7d2678e043787e0e5245a98e5c4bf58f824073dd141c8ffcef1e9e2b2f6f27",
+      "qa": {
+        "file_name": "ultra_lm_01_quang_truong_lam_vien.glb",
+        "size_bytes": 2120064,
+        "triangles": 44018,
+        "vertices": 44104,
+        "meshes_count": 11,
+        "materials_count": 11,
+        "embedded_jpeg_textures": 5,
+        "blend_materials": [
+          "Sunflower_StainedGlass_Gold",
+          "Artichoke_StainedGlass_Jade",
+          "Musical_Fountain_Water"
+        ],
+        "emissive_materials": [
+          "Sunflower_StainedGlass_Gold",
+          "Artichoke_StainedGlass_Jade",
+          "Musical_Fountain_Water",
+          "Night_Interior_Warm_Emissive",
+          "Architectural_LED_Floodlight"
+        ],
+        "nan_inf_count": 0,
+        "khr_materials_transmission": false,
+        "local_pivot_compatible": true,
+        "bbox_min_m": [
+          -66.0,
+          -3.0,
+          -42.037
+        ],
+        "bbox_max_m": [
+          67.699,
+          20.255,
+          37.0
+        ],
+        "dimensions_xyz_m": [
+          133.7,
+          23.25,
+          79.04
+        ]
+      }
+    },
+    {
+      "id": "ultra_lm_06_nha_hang_thuy_ta",
+      "short_label": "Nha Hang Thuy Ta",
+      "replaces_slot4_id": "lm_06_thuy_ta_cau_ong_dao",
+      "name_vi": "Nhà hàng Thủy Tạ & Đảo Hồ Xuân Hương Ultra-LOD0",
+      "name_en": "Thuy Ta Lakeside Yacht Pavilion Ultra-LOD0 Masterpiece",
+      "wave": 1,
+      "slot": 22,
+      "tile_id": "T_E00_N00",
+      "ring": 0,
+      "lat": 11.93975,
+      "lon": 108.4419965,
+      "elev_msl_m": 1478.2,
+      "x_m": -355.319,
+      "y_m": -74.468,
+      "z_local_m": 0.2,
+      "gltf_position": [
+        -355.319,
+        0.2,
+        74.468
+      ],
+      "heading_deg": 8.0,
+      "rotation_y_rad": -0.139626,
+      "satellite_alignment": {
+        "tile_file": "satellite_T_E00_N00.jpg",
+        "island_center_px_940": [
+          303.0,
+          505.0
+        ],
+        "yacht_bow_px_940": [
+          305.0,
+          488.0
+        ],
+        "shore_bridge_px_940": [
+          299.0,
+          530.0
+        ]
+      },
+      "architectural_metadata": {
+        "style": "French Colonial Streamline Moderne (Nautical White Yacht Pavilion)",
+        "heritage_origin": "1930s (Khu vực I Danh thắng Quốc gia Hồ Xuân Hương)",
+        "total_island_land_area_m2": 3876.0,
+        "roofed_building_footprint_m2": 383.3,
+        "two_story_floor_area_m2": 267.0,
+        "flower_parterre_area_m2": 893.1
+      },
+      "glb_path": "02_ASSETS_3D/hero_landmarks_ultra/ultra_lm_06_nha_hang_thuy_ta.glb",
+      "sha256": "84f7c8065af334ade5b4eed18590aeb9671b2945523dfdaef5a9a662e833c5bf",
+      "qa": {
+        "file_name": "ultra_lm_06_nha_hang_thuy_ta.glb",
+        "size_bytes": 2148284,
+        "triangles": 39766,
+        "vertices": 50379,
+        "meshes_count": 12,
+        "materials_count": 12,
+        "embedded_jpeg_textures": 5,
+        "blend_materials": [
+          "Nautical_Bistro_RibbonGlass"
+        ],
+        "emissive_materials": [
+          "Nautical_Bistro_RibbonGlass",
+          "Bistro_Interior_Chandelier_Glow",
+          "Lakeside_Night_Floodlight"
+        ],
+        "nan_inf_count": 0,
+        "khr_materials_transmission": false,
+        "local_pivot_compatible": true,
+        "bbox_min_m": [
+          -32.85,
+          -3.0,
+          -34.89
+        ],
+        "bbox_max_m": [
+          32.85,
+          11.58,
+          58.6
+        ],
+        "dimensions_xyz_m": [
+          65.7,
+          14.58,
+          93.49
+        ]
+      }
+    }
+  ]
+}

@@ -785,7 +785,7 @@
         this._clearFallbackTag(this.layers.landmarks);
         for (const item of layers.landmarks) {
           const tid = this._inferRegionTileId(item);
-          const isCoreHero = /^lm_0[1-9]|^lm_1[0-4]/i.test(item.filename || item.id || '');
+          const isCoreHero = /^(?:ultra_)?lm_0[1-9]|^(?:ultra_)?lm_1[0-4]/i.test(item.filename || item.id || '');
           if (tid === 'T_E00_N00' || isCoreHero) {
             const p = this._enqueueStreamTask(item.url, isCoreHero ? 3 : 7, () =>
               this._loadLandmarkGlb(item)

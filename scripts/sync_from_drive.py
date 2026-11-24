@@ -19,6 +19,7 @@ DATA_FILES = {
 }
 
 ASSET_FOLDERS = [
+    ("satellite_dem_tiles", "1bkiDPZCvLzXcA4mGWEN1GJD4lXBz7snw"),
     ("terrain_tiles", "1Mmw2MAvM4zWSD9_pB8_n-xNEWQ0snEVD"),
     ("terrain_tiles_ring1_ext", "1fpxtzfrQ5fqls0qBxEX-Jn2Yo9TVyKsc"),
     ("terrain_tiles_ring2", "1cZJQ4S_m5PLxE3MNmx1z-hvBzNnfrfrW"),
@@ -26,12 +27,16 @@ ASSET_FOLDERS = [
     ("natural_wonders_pbr", "1O9tp9DRNOYfjx8EI4aAzA4KraRMiP5Kd"),
     ("vegetation", "1HaRb4wLyLkHKjQAnaTVHllWkysgr1kRg"),
     ("vegetation_expanded", "1RYnBkMNngZ-q17uzzLvsDswuDaTbF5fe"),
+    ("hero_landmarks_ultra", "1YbzG2s6cijkl2AX-Kh-FbRZT5Ddd1z4A"),
     ("landmarks", "14Ra-AgsC1Ajtao86wx0lvcCCEHm_Fbf-"),
     ("french_villas", "1woX_LL92dQBM68nMoA9VlUhTZZOk1W0p"),
     ("tourism_complexes", "1WA_quOOVBG3mHfyi-4u_vm23m0SeJcWp"),
     ("agri_landscapes", "1Bwv0bDJBaPWFC_8Ft1qsVigQwjzJXTl7"),
+    ("ring3_districts_ultra", "1vKSwnoYKAWUveniP-nb5AegV82J-jTOZ"),
+    ("osm_true_buildings", "1ES9NV3JXMcXgbjyvIHWkjBRvBew9XbRb"),
     ("building_tiles", "1FiUTNcGW3Wl7IGfuGTw_zO3Oh1cxvPVa"),
     ("urban_wards_tiles", "1fMPnbX4XHalKxba7Af1kvYbm3U10klBZ"),
+    ("osm_true_roads_hydro", "1Dl-n2z0j1mH3InryZca8UYN2iWAYZamm"),
     ("infrastructure_buildings", "1wcjuRNhHP2tv8iMyvglrpU9Pnrgz_jSR"),
     ("transport_infra", "1jLBfgW1T0qWs74MXUpI6n8Tu_kpIwGt0"),
     ("urban_life_props", "1E23-McKgvU0lgftjvMqqisLNFnLfGi5H"),
@@ -110,12 +115,14 @@ def tile_dist_key(it):
 
 def rebuild_world_index():
     terrain_glb = sorted(dedupe_by_tile(
-        scan_dir("terrain_tiles", {".glb", ".gltf"})
+        scan_dir("satellite_dem_tiles", {".glb", ".gltf"})
+        + scan_dir("terrain_tiles", {".glb", ".gltf"})
         + scan_dir("terrain_tiles_ring1_ext", {".glb", ".gltf"})
         + scan_dir("terrain_tiles_ring2", {".glb", ".gltf"})
     ), key=tile_dist_key)
     terrain_hm = sorted(dedupe_by_tile(
-        scan_dir("terrain_tiles", {".json"}, lambda n: n.startswith("heightmap_"))
+        scan_dir("satellite_dem_tiles", {".json"}, lambda n: n.startswith("heightmap_"))
+        + scan_dir("terrain_tiles", {".json"}, lambda n: n.startswith("heightmap_"))
         + scan_dir("terrain_tiles_ring1_ext", {".json"}, lambda n: n.startswith("heightmap_"))
         + scan_dir("terrain_tiles_ring2", {".json"}, lambda n: n.startswith("heightmap_"))
     ), key=tile_dist_key)
@@ -126,10 +133,12 @@ def rebuild_world_index():
         + scan_dir("vegetation_expanded", {".json"}, lambda n: n.startswith("instances_"))
     ), key=tile_dist_key)
     raw_landmarks = (
-        scan_dir("landmarks", {".glb", ".gltf"})
+        scan_dir("hero_landmarks_ultra", {".glb", ".gltf"})
+        + scan_dir("landmarks", {".glb", ".gltf"})
         + scan_dir("french_villas", {".glb", ".gltf"})
         + scan_dir("tourism_complexes", {".glb", ".gltf"})
         + scan_dir("agri_landscapes", {".glb", ".gltf"})
+        + scan_dir("ring3_districts_ultra", {".glb", ".gltf"})
     )
     scene_idx_path = ASSETS / "scene" / "world_index.json"
     landmarks_glb = raw_landmarks
@@ -166,12 +175,14 @@ def rebuild_world_index():
     if (ASSETS / "sourced_library/urban_props/prop_03_lakeside_wooden_pier.glb").exists():
         props.append({"id": "hxh_thuy_ta_pier", "url": "./assets/sourced_library/urban_props/prop_03_lakeside_wooden_pier.glb", "gltf_position": [-555.0, 0.05, -88.0], "rotation_y_rad": -1.8})
     roads_glb = (
-        scan_dir("infrastructure_buildings", {".glb", ".gltf"})
+        scan_dir("osm_true_roads_hydro", {".glb", ".gltf"})
+        + scan_dir("infrastructure_buildings", {".glb", ".gltf"})
         + scan_dir("transport_infra", {".glb", ".gltf"})
         + scan_dir("urban_life_props", {".glb", ".gltf"})
     )
     buildings_glb = sorted(dedupe_by_tile(
-        scan_dir("building_tiles", {".glb", ".gltf"})
+        scan_dir("osm_true_buildings", {".glb", ".gltf"})
+        + scan_dir("building_tiles", {".glb", ".gltf"})
         + scan_dir("urban_wards_tiles", {".glb", ".gltf"})
     ), key=tile_dist_key)
     total_glb = len(terrain_glb) + len(water_glb) + len(veg_models) + len(landmarks_glb) + len(roads_glb) + len(buildings_glb)

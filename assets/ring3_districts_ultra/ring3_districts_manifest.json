@@ -1,0 +1,108 @@
+{
+  "schema_version": "2.1.0",
+  "project_name": "DALAT_3D_SIMULATION",
+  "gemini_slot": 23,
+  "display_slot_name": "ĐÀ LẠT - 22",
+  "lane": "GREATER_LAMDONG_RING3_SATELLITE_DISTRICTS",
+  "updated_at_utc": "2026-11-24T04:05:20Z",
+  "origin_reference": {
+    "name": "Tam_Ho_Xuan_Huong_Da_Lat",
+    "lat": 11.940419,
+    "lon": 108.445259,
+    "elev_msl_m": 1478.0,
+    "epsg": "EPSG:32649",
+    "gltf_axes": "X_gltf = x_m (East), Y_gltf = elev_msl - 1478.0 (Up), Z_gltf = -y_m (South)"
+  },
+  "completed_waves": [
+    {
+      "wave": 1,
+      "task_id": "T23_W1_LIEN_KHUONG_INTERNATIONAL_AIRPORT_COMPLEX",
+      "completed_at_utc": "2026-11-24T04:05:20Z",
+      "total_triangles": 37868,
+      "total_vertices": 64074
+    }
+  ],
+  "districts": [
+    {
+      "id": "ring3_w1_lien_khuong_airport_complex",
+      "wave": 1,
+      "task_id": "T23_W1_LIEN_KHUONG_INTERNATIONAL_AIRPORT_COMPLEX",
+      "name_vi": "Cảng Hàng Không Quốc Tế Liên Khương (Nhà ga Hoa Dã Quỳ, Đường CHC 09/27 3.250m & Đài KSKL VATM)",
+      "icao": "VVDL",
+      "iata": "DLI",
+      "ring": "RING_3",
+      "tile_id": "T_W04_S11",
+      "tiles_covered": [
+        "T_W06_S11",
+        "T_W05_S11",
+        "T_W04_S11",
+        "T_W04_S10",
+        "T_W05_S10"
+      ],
+      "lat": 11.7506,
+      "lon": 108.367,
+      "elev_msl_m": 962.0,
+      "x_m": -8523.258,
+      "y_m": -21130.554,
+      "z_local_m": -516.0,
+      "gltf_position": [
+        -8523.258,
+        -516.0,
+        21130.554
+      ],
+      "coordinate_space": "world_space_gltf_y_up_baked",
+      "heading_deg": 0.0,
+      "glb_path": "02_ASSETS_3D/ring3_districts_ultra/ring3_w1_lien_khuong_airport_complex.glb",
+      "triangles": 24227,
+      "vertices": 40990,
+      "size_bytes": 1207444,
+      "sha256": "b79ce516c9dcbbd55f662b4bcbd86ccf5e6482a8fb73731e183cee57abad3cc4",
+      "khr_materials_transmission": false,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Lien_Khuong_International_Airport",
+        "https://metar-taf.com/airport/VVDL-lien-khuong-airport",
+        "https://nhandan.vn/lien-khuong-tro-thanh-cang-hang-khong-quoc-te-dau-tien-vung-tay-nguyen-post815692.html",
+        "https://caa.gov.vn/Pages/Print.aspx?NewsId=20240620144042384",
+        "https://mia.vn/cam-nang-du-lich/thong-tin-ve-san-bay-lien-khuong-15728",
+        "https://vatm.vn/dai-kiem-soat-khong-luu-lien-khuong-san-sang-cho-nhung-canh-bay-an-toan-dieu-hoa-hieu-qua.html"
+      ]
+    },
+    {
+      "id": "ring3_w1_lien_khuong_expressway_interchange",
+      "wave": 1,
+      "task_id": "T23_W1_LIEN_KHUONG_INTERNATIONAL_AIRPORT_COMPLEX",
+      "name_vi": "Nút giao Cao tốc Liên Khương – Prenn (CT.27 Km208+650) giao Quốc lộ 20 & Đại lộ Sân bay",
+      "ring": "RING_3",
+      "tile_id": "T_W03_S10",
+      "tiles_covered": [
+        "T_W04_S11",
+        "T_W03_S11",
+        "T_W03_S10"
+      ],
+      "lat": 11.7546,
+      "lon": 108.3852,
+      "elev_msl_m": 958.0,
+      "x_m": -6541.08,
+      "y_m": -20685.276,
+      "z_local_m": -520.0,
+      "gltf_position": [
+        -6541.08,
+        -520.0,
+        20685.276
+      ],
+      "coordinate_space": "world_space_gltf_y_up_baked",
+      "heading_deg": 0.0,
+      "glb_path": "02_ASSETS_3D/ring3_districts_ultra/ring3_w1_lien_khuong_expressway_interchange.glb",
+      "triangles": 13641,
+      "vertices": 23084,
+      "size_bytes": 672404,
+      "sha256": "04b5c58f518b10c11112a3cb02ad5395ff83941739bd25c6514a863ce478c7ea",
+      "khr_materials_transmission": false,
+      "sources": [
+        "https://vi.wikipedia.org/wiki/%C4%90%C6%B0%E1%BB%9Dng_cao_t%E1%BB%91c_D%E1%BA%A7u_Gi%C3%A2y_%E2%80%93_Li%C3%AAn_Kh%C6%B0%C6%A1ng",
+        "https://thuvienphapluat.vn/phap-luat-nha-dat/duong-cao-toc-bao-loc-lien-khuong-dai-bao-nhieu-km-diem-dau-diem-cuoi-o-dau-15393.html",
+        "https://swproperty.vn/thong-tin-tong-quan-du-an-cao-toc-bao-loc-lien-khuong/"
+      ]
+    }
+  ]
+}

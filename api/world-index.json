@@ -3,7 +3,7 @@
   "project": "DALAT_3D_SIMULATION",
   "static_build": true,
   "has_real_assets": true,
-  "total_glb_count": 388,
+  "total_glb_count": 392,
   "discovered_tile_ids": [
     "T_E00_N00",
     "T_E00_N01",
@@ -207,7 +207,7 @@
     "water_bodies": 38,
     "vegetation_models": 11,
     "vegetation_instances": 179,
-    "landmarks": 108,
+    "landmarks": 112,
     "lakeside_props": 7,
     "roads_infrastructure": 41,
     "building_tiles": 117
@@ -3595,6 +3595,22 @@
         }
       },
       {
+        "id": "ultra_lm_01_quang_truong_lam_vien",
+        "filename": "ultra_lm_01_quang_truong_lam_vien.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/hero_landmarks_ultra/ultra_lm_01_quang_truong_lam_vien.glb",
+        "size_bytes": 2120064
+      },
+      {
+        "id": "ultra_lm_06_nha_hang_thuy_ta",
+        "filename": "ultra_lm_06_nha_hang_thuy_ta.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/hero_landmarks_ultra/ultra_lm_06_nha_hang_thuy_ta.glb",
+        "size_bytes": 2148284
+      },
+      {
         "id": "lm_13_bao_tang_lam_dong",
         "filename": "lm_13_bao_tang_lam_dong.glb",
         "ext": ".glb",
@@ -4313,6 +4329,22 @@
         "tile_id": "T_E02_N00",
         "url": "./assets/agri_landscapes/agri_w1_thai_phien_south_view_T_E02_N00.glb",
         "size_bytes": 4230264
+      },
+      {
+        "id": "ring3_w1_lien_khuong_airport_complex",
+        "filename": "ring3_w1_lien_khuong_airport_complex.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/ring3_districts_ultra/ring3_w1_lien_khuong_airport_complex.glb",
+        "size_bytes": 1207444
+      },
+      {
+        "id": "ring3_w1_lien_khuong_expressway_interchange",
+        "filename": "ring3_w1_lien_khuong_expressway_interchange.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/ring3_districts_ultra/ring3_w1_lien_khuong_expressway_interchange.glb",
+        "size_bytes": 672404
       }
     ],
     "props": [

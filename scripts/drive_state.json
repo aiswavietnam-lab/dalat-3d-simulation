@@ -929,6 +929,21 @@
     "modifiedTime": "2026-11-24T03:12:34.141Z",
     "size": "946536"
   },
+  "assets/hero_landmarks_ultra/hero_landmarks_manifest.json": {
+    "id": "1sxVP17hPRA0cxDWnB_PT5j66rLAP_V7o",
+    "modifiedTime": "2026-11-24T04:09:51.770Z",
+    "size": "6049"
+  },
+  "assets/hero_landmarks_ultra/ultra_lm_01_quang_truong_lam_vien.glb": {
+    "id": "1m5yGYQrMxfnqoZPG_bxBJMo7-AAjjHWU",
+    "modifiedTime": "2026-11-24T04:10:23.485Z",
+    "size": "2120064"
+  },
+  "assets/hero_landmarks_ultra/ultra_lm_06_nha_hang_thuy_ta.glb": {
+    "id": "1T4m8GcESAMbZjbUXEei_6YRIBIDbgxCw",
+    "modifiedTime": "2026-11-24T04:10:22.702Z",
+    "size": "2148284"
+  },
   "assets/infrastructure_buildings/roads_ring0.glb": {
     "id": "1DQT1NRASKTnnHKc2MetHyTpAF29hPT4S",
     "modifiedTime": "2026-11-23T10:59:42.169Z",
@@ -1183,6 +1198,21 @@
     "id": "1YnOsAtGBlfz7FduHvVpXn0iWABXkTRQz",
     "modifiedTime": "2026-11-23T17:30:04.645Z",
     "size": "3039"
+  },
+  "assets/ring3_districts_ultra/ring3_districts_manifest.json": {
+    "id": "1ZtKaHl0ApOhTTpxR5M2REAJ7wrV-hYXF",
+    "modifiedTime": "2026-11-24T04:07:52.860Z",
+    "size": "3916"
+  },
+  "assets/ring3_districts_ultra/ring3_w1_lien_khuong_airport_complex.glb": {
+    "id": "1fis1LI_I4cj49jiiufJEEaYkfk8D2VNL",
+    "modifiedTime": "2026-11-24T04:07:55.604Z",
+    "size": "1207444"
+  },
+  "assets/ring3_districts_ultra/ring3_w1_lien_khuong_expressway_interchange.glb": {
+    "id": "1GhCdKGMfavzIIxev1CE8REuhJe0-WBoZ",
+    "modifiedTime": "2026-11-24T04:07:54.445Z",
+    "size": "672404"
   },
   "assets/scene/world_index.json": {
     "id": "1odxtF144aNkdpPcyWbjo2qyrDFwgJj9i",
