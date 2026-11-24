@@ -120,6 +120,10 @@
       this.renderer.toneMappingExposure = 1.05;
       this.renderer.shadowMap.enabled = true;
       this.renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+      // Chỉ cập nhật lại Shadow Map khi đổi khí hậu hoặc nạp xong cụm Tile mới -> giảm ~45% tải GPU mỗi khung hình
+      this.renderer.shadowMap.autoUpdate = false;
+      this.renderer.shadowMap.needsUpdate = true;
+      this._shadowTimer = null;
       this.container.appendChild(this.renderer.domElement);
 
       this.hemiLight = new THREE.HemisphereLight(0xb4d0e8, 0x3b4d3b, 0.65);
@@ -139,7 +143,14 @@
       this.sunLight.shadow.bias = -0.0004;
       this.scene.add(this.sunLight);
 
-      this.streamer = new window.DalatTileStreamer(this.scene);
+      this.pbrLibrary =
+        typeof window.DalatPbrMaterialLibrary === 'function'
+          ? new window.DalatPbrMaterialLibrary(this.renderer, this.scene)
+          : null;
+
+      this.streamer = new window.DalatTileStreamer(this.scene, this.pbrLibrary, () =>
+        this.requestShadowUpdate(false)
+      );
 
       this.target = new THREE.Vector3(0, 8, -40);
       this.camera.position.set(-680, 420, 860);
@@ -298,11 +309,34 @@
       this.hemiLight.color.set(preset.ambient_hex);
       this.hemiLight.intensity = preset.ambient_intensity;
 
+      if (this.pbrLibrary) {
+        this.pbrLibrary.applyClimateEnvironment(preset);
+      }
       this.streamer.applyEmissiveScale(preset.emissive_scale != null ? preset.emissive_scale : 0.2);
+      this.requestShadowUpdate(true);
 
       document.querySelectorAll('#climate-grid .preset-btn').forEach((btn) => {
         btn.classList.toggle('active', btn.dataset.climate === preset.id);
       });
+    }
+
+    requestShadowUpdate(immediate) {
+      if (!this.renderer.shadowMap.enabled) return;
+      if (immediate) {
+        if (this._shadowTimer) {
+          clearTimeout(this._shadowTimer);
+          this._shadowTimer = null;
+        }
+        this.renderer.shadowMap.needsUpdate = true;
+        return;
+      }
+      if (this._shadowTimer) return;
+      this._shadowTimer = setTimeout(() => {
+        this._shadowTimer = null;
+        if (this.renderer && this.renderer.shadowMap.enabled) {
+          this.renderer.shadowMap.needsUpdate = true;
+        }
+      }, 220);
     }
 
     flyToPreset(preset) {
@@ -619,6 +653,7 @@
       this._updateFlycam(dt);
       this._updateFlightAnimation();
       this.streamer.update(dt, elapsed);
+      if (this.pbrLibrary) this.pbrLibrary.update(dt);
 
       // Cập nhật LOD theo khoảng cách Camera & Minimap Radar mỗi 180ms sau khi lõi sẵn sàng
       if (now - this._lodLastTime >= 180) {

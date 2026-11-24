@@ -356,8 +356,10 @@
   }
 
   class DalatTileStreamer {
-    constructor(scene) {
+    constructor(scene, pbrLibrary, onShadowDirty) {
       this.scene = scene;
+      this.pbrLibrary = pbrLibrary || null;
+      this.onShadowDirty = typeof onShadowDirty === 'function' ? onShadowDirty : null;
       this.loader = typeof THREE.GLTFLoader === 'function' ? new THREE.GLTFLoader() : null;
 
       this.layers = {
@@ -468,9 +470,27 @@
     }
 
     /**
-     * Khử toàn bộ transmission > 0 trên vật liệu GLB để chống màn hình đen Three.js r128
+     * Khử transmission > 0, nâng cấp vật liệu màu solid sang PBR dùng chung + bù UV chuẩn mét
+     * và đóng băng ma trận tĩnh để tối ưu FPS
      */
     sanitizeLoadedObject(root, isWaterLayer, landmarkMeta, allowCastShadow = true) {
+      root.traverse((obj) => {
+        if (!obj.isMesh) return;
+        const mats = Array.isArray(obj.material) ? obj.material : [obj.material];
+        mats.forEach((mat) => {
+          if (!mat) return;
+          if (typeof mat.transmission === 'number' && mat.transmission > 0) {
+            mat.transmission = 0;
+            mat.transparent = true;
+            mat.opacity = Math.min(mat.opacity || 0.88, 0.88);
+          }
+        });
+      });
+
+      if (this.pbrLibrary) {
+        this.pbrLibrary.upgradeObjectHierarchy(root, Boolean(isWaterLayer));
+      }
+
       root.traverse((obj) => {
         if (!obj.isMesh) return;
         obj.castShadow = Boolean(allowCastShadow && !isWaterLayer);
@@ -484,22 +504,22 @@
         const mats = Array.isArray(obj.material) ? obj.material : [obj.material];
         mats.forEach((mat) => {
           if (!mat) return;
-          if (typeof mat.transmission === 'number' && mat.transmission > 0) {
-            mat.transmission = 0;
-            mat.transparent = true;
-            mat.opacity = Math.min(mat.opacity || 0.88, 0.88);
-          }
           if (isWaterLayer) {
             mat.transparent = true;
-            mat.opacity = 0.88;
-            mat.roughness = 0.18;
-            mat.metalness = 0.25;
+            mat.opacity = 0.9;
+            mat.roughness = 0.12;
+            mat.metalness = 0.22;
           }
           if (mat.emissive && (mat.emissive.r > 0 || mat.emissive.g > 0 || mat.emissive.b > 0)) {
             this.registerEmissiveMaterial(mat, mat.emissiveIntensity || 1.0);
           }
           mat.needsUpdate = true;
         });
+
+        if (!isWaterLayer && obj !== root) {
+          obj.updateMatrix();
+          obj.matrixAutoUpdate = false;
+        }
       });
     }
 
@@ -623,6 +643,7 @@
             ) {
               this._lastRebuildCount = this._completedStreamCount;
               this.rebuildPickableList();
+              if (this.onShadowDirty) this.onShadowDirty();
             }
             job.resolve();
             const delayMs = job.priority >= 10 ? 25 : 0;
@@ -1148,6 +1169,9 @@
       });
 
       const mesh = new THREE.Mesh(geo, mat);
+      if (this.pbrLibrary) {
+        this.pbrLibrary.upgradeObjectHierarchy(mesh, false);
+      }
       mesh.receiveShadow = true;
       mesh.name = isOuterSkirt ? 'fallback_terrain_ring0_skirt' : 'fallback_terrain_T_E00_N00';
       return mesh;
@@ -1169,14 +1193,19 @@
       geo.computeVertexNormals();
 
       const mat = new THREE.MeshStandardMaterial({
+        name: 'water_ho_xuan_huong',
         color: 0x2b6e78,
         transparent: true,
         opacity: 0.88,
-        roughness: 0.18,
-        metalness: 0.25,
+        roughness: 0.14,
+        metalness: 0.22,
       });
 
       const waterMesh = new THREE.Mesh(geo, mat);
+      if (this.pbrLibrary) {
+        geo.deleteAttribute('uv');
+        this.pbrLibrary.upgradeObjectHierarchy(waterMesh, true);
+      }
       waterMesh.receiveShadow = true;
       waterMesh.userData.isFallback = true;
       waterMesh.name = 'fallback_water_ho_xuan_huong';
@@ -1248,11 +1277,43 @@
       const count = items.length;
       const trunkGeo = new THREE.CylinderGeometry(0.45, 0.75, 7.5, 6);
       trunkGeo.translate(0, 3.75, 0);
-      const trunkMat = new THREE.MeshStandardMaterial({ color: 0x5c3d28, roughness: 0.95 });
+      let trunkMat = new THREE.MeshStandardMaterial({
+        name: 'pine_bark',
+        color: new THREE.Color(0x5c3d28).convertSRGBToLinear(),
+        roughness: 0.92,
+      });
 
-      const crownGeo = new THREE.ConeGeometry(4.4, 15.0, 7);
+      const crownGeo = new THREE.ConeGeometry(4.4, 15.0, 8);
       crownGeo.translate(0, 12.5, 0);
-      const crownMat = new THREE.MeshStandardMaterial({ color: 0x1e4d2b, roughness: 0.85 });
+      let crownMat = new THREE.MeshStandardMaterial({
+        name: 'pine_canopy_mid',
+        color: new THREE.Color(0x1f5430).convertSRGBToLinear(),
+        roughness: 0.8,
+      });
+
+      const scaleExistingUv = (geo, su, sv) => {
+        const uv = geo.attributes.uv;
+        if (!uv) return false;
+        const arr = uv.array;
+        for (let i = 0; i < arr.length; i += 2) {
+          arr[i] *= su;
+          arr[i + 1] *= sv;
+        }
+        uv.needsUpdate = true;
+        geo.userData = geo.userData || {};
+        geo.userData._pbrUvReady = true;
+        return true;
+      };
+
+      if (this.pbrLibrary) {
+        const tUp = this.pbrLibrary.upgradeMaterial(trunkMat, false);
+        trunkMat = tUp.material;
+        scaleExistingUv(trunkGeo, 3.0, 6.0);
+
+        const cUp = this.pbrLibrary.upgradeMaterial(crownMat, false);
+        crownMat = cUp.material;
+        scaleExistingUv(crownGeo, 10.0, 7.0);
+      }
 
       const trunks = new THREE.InstancedMesh(trunkGeo, trunkMat, count);
       const crowns = new THREE.InstancedMesh(crownGeo, crownMat, count);
@@ -1262,9 +1323,10 @@
       crowns.receiveShadow = true;
       trunks.userData.isFallback = isFallback;
       crowns.userData.isFallback = isFallback;
+      trunks.matrixAutoUpdate = false;
+      crowns.matrixAutoUpdate = false;
 
       const dummy = new THREE.Object3D();
-      const tint = new THREE.Color();
       items.forEach((it, idx) => {
         const x = Number(it.x ?? it.x_m ?? 0);
         const yNorth = Number(it.y ?? it.y_m ?? 0);
@@ -1281,14 +1343,10 @@
         dummy.updateMatrix();
         trunks.setMatrixAt(idx, dummy.matrix);
         crowns.setMatrixAt(idx, dummy.matrix);
-
-        tint.setHSL(0.36 + ((idx * 17) % 10) * 0.004, 0.45, 0.22 + ((idx * 13) % 7) * 0.015);
-        crowns.setColorAt(idx, tint);
       });
 
       trunks.instanceMatrix.needsUpdate = true;
       crowns.instanceMatrix.needsUpdate = true;
-      if (crowns.instanceColor) crowns.instanceColor.needsUpdate = true;
 
       this.layers.vegetation.add(trunks, crowns);
       if (tileId) {
@@ -1303,21 +1361,57 @@
       const count = items.length;
       const trunkGeo = new THREE.CylinderGeometry(0.28, 0.48, 4.2, 5);
       trunkGeo.translate(0, 2.1, 0);
-      const trunkMat = new THREE.MeshStandardMaterial({ color: 0x4b362b, roughness: 0.92 });
+      let trunkMat = new THREE.MeshStandardMaterial({
+        name: 'cherry_bark',
+        color: new THREE.Color(0x4f3629).convertSRGBToLinear(),
+        roughness: 0.9,
+      });
 
       const crownGeo = new THREE.DodecahedronGeometry(3.4, 0);
       crownGeo.scale(1.15, 0.78, 1.15);
       crownGeo.translate(0, 5.6, 0);
-      const crownMat = new THREE.MeshStandardMaterial({ color: 0xf48fb1, roughness: 0.75 });
+      let crownMat = new THREE.MeshStandardMaterial({
+        name: 'cherry_blossom_foliage',
+        color: new THREE.Color(0xf282a8).convertSRGBToLinear(),
+        roughness: 0.72,
+      });
+
+      if (this.pbrLibrary) {
+        const tUp = this.pbrLibrary.upgradeMaterial(trunkMat, false);
+        trunkMat = tUp.material;
+        const uv = trunkGeo.attributes.uv;
+        if (uv) {
+          for (let i = 0; i < uv.array.length; i += 2) {
+            uv.array[i] *= 2.0;
+            uv.array[i + 1] *= 4.0;
+          }
+          uv.needsUpdate = true;
+          trunkGeo.userData = { _pbrUvReady: true };
+        }
+
+        crownGeo.deleteAttribute('uv');
+        const cUp = this.pbrLibrary.upgradeMaterial(crownMat, false);
+        crownMat = cUp.material;
+        // Chiếu cầu nhẹ không đường nối cho khối tán hoa Mai Anh Đào
+        const pos = crownGeo.attributes.position;
+        const cUv = new Float32Array(pos.count * 2);
+        for (let i = 0; i < pos.count; i++) {
+          cUv[i * 2] = (pos.getX(i) + pos.getZ(i) * 0.6) * 0.55;
+          cUv[i * 2 + 1] = (pos.getY(i) - pos.getZ(i) * 0.4) * 0.55;
+        }
+        crownGeo.setAttribute('uv', new THREE.BufferAttribute(cUv, 2));
+        crownGeo.userData = { _pbrUvReady: true };
+      }
 
       const trunks = new THREE.InstancedMesh(trunkGeo, trunkMat, count);
       const crowns = new THREE.InstancedMesh(crownGeo, crownMat, count);
       crowns.castShadow = tileId === 'T_E00_N00';
       trunks.userData.isFallback = isFallback;
       crowns.userData.isFallback = isFallback;
+      trunks.matrixAutoUpdate = false;
+      crowns.matrixAutoUpdate = false;
 
       const dummy = new THREE.Object3D();
-      const tint = new THREE.Color();
       items.forEach((it, idx) => {
         const x = Number(it.x ?? it.x_m ?? 0);
         const yNorth = Number(it.y ?? it.y_m ?? 0);
@@ -1332,14 +1426,10 @@
         dummy.updateMatrix();
         trunks.setMatrixAt(idx, dummy.matrix);
         crowns.setMatrixAt(idx, dummy.matrix);
-
-        tint.setHSL(0.94 + ((idx * 7) % 5) * 0.005, 0.72, 0.72 + ((idx * 11) % 6) * 0.02);
-        crowns.setColorAt(idx, tint);
       });
 
       trunks.instanceMatrix.needsUpdate = true;
       crowns.instanceMatrix.needsUpdate = true;
-      if (crowns.instanceColor) crowns.instanceColor.needsUpdate = true;
 
       this.layers.vegetation.add(trunks, crowns);
       if (tileId) {
@@ -1353,14 +1443,23 @@
       const bushGeo = new THREE.DodecahedronGeometry(1.45, 0);
       bushGeo.scale(1.25, 0.85, 1.25);
       bushGeo.translate(0, 1.0, 0);
-      const bushMat = new THREE.MeshStandardMaterial({
+      let bushMat = new THREE.MeshStandardMaterial({
+        name: 'da_quy_flower_foliage',
         color: 0xf59e0b,
-        roughness: 0.78,
+        roughness: 0.76,
       });
+
+      if (this.pbrLibrary) {
+        bushGeo.deleteAttribute('uv');
+        const bUp = this.pbrLibrary.upgradeMaterial(bushMat, false);
+        bushMat = bUp.material;
+        this.pbrLibrary.ensureMetricUVs(bushGeo, bUp.tileScaleM || 1.3);
+      }
 
       const bushes = new THREE.InstancedMesh(bushGeo, bushMat, count);
       bushes.userData.isFallback = isFallback;
       bushes.userData.isLowShrub = true;
+      bushes.matrixAutoUpdate = false;
 
       const dummy = new THREE.Object3D();
       items.forEach((it, idx) => {
@@ -1566,6 +1665,7 @@
       }
 
       if (root.children.length > 0) {
+        if (this.pbrLibrary) this.pbrLibrary.upgradeObjectHierarchy(root, false);
         this.layers.landmarks.add(root);
       }
     }
@@ -1588,7 +1688,17 @@
       const curve = new THREE.CatmullRomCurve3(curvePts, true);
       const tubeGeo = new THREE.TubeGeometry(curve, 140, 4.2, 5, true);
       tubeGeo.scale(1, 0.14, 1);
-      const roadMat = new THREE.MeshStandardMaterial({ color: 0x3b4252, roughness: 0.9 });
+      let roadMat = new THREE.MeshStandardMaterial({
+        name: 'road_asphalt',
+        color: 0x3b4252,
+        roughness: 0.88,
+      });
+      if (this.pbrLibrary) {
+        tubeGeo.deleteAttribute('uv');
+        const rUp = this.pbrLibrary.upgradeMaterial(roadMat, false);
+        roadMat = rUp.material;
+        this.pbrLibrary.ensureMetricUVs(tubeGeo, rUp.tileScaleM || 3.8);
+      }
       const roadMesh = new THREE.Mesh(tubeGeo, roadMat);
       roadMesh.receiveShadow = true;
       group.add(roadMesh);
