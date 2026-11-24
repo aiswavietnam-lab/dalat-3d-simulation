@@ -3,9 +3,9 @@
   "slot": 23,
   "slot_code": "GREATER_LAMDONG_RING3_SATELLITE_DISTRICTS",
   "task_name": "ĐÀ LẠT - 22",
-  "latest_wave_completed": 7,
-  "latest_task_id": "T23_AUTO_B02_LAM_HA_DINH_VAN_PHUC_THO_LAKE_AND_DAI_NINH_RESERVOIR_DAM",
-  "updated_at": "2026-11-24T09:56:14.389126+00:00",
+  "latest_wave_completed": 10,
+  "latest_task_id": "T23_AUTO_B05_SAMTEN_HILLS_DALAT_37M_PRAYER_WHEEL_DA_RON_LAKE_AND_DA_LOAN_TA_HINE_HUB",
+  "updated_at": "2026-11-24T12:55:51.606574+00:00",
   "crs": "EPSG:32649",
   "origin_wgs84": {
     "name": "Tâm Hồ Xuân Hương",
@@ -14,9 +14,9 @@
     "elev_msl": 1478.0
   },
   "gltf_axes": "Y-Up (X_gltf = x_east, Y_gltf = z_local, Z_gltf = -y_north)",
-  "total_districts_count": 14,
-  "total_vertices_cumulative": 785781,
-  "total_triangles_cumulative": 403669,
+  "total_districts_count": 20,
+  "total_vertices_cumulative": 1206634,
+  "total_triangles_cumulative": 598900,
   "khr_materials_transmission_count": 0,
   "districts": [
     {
@@ -637,6 +637,285 @@
         "https://cra.tlu.edu.vn/cong-trinh-tieu-bieu/cong-trinh-thuy-dien-dai-ninh-12091",
         "https://danviet.vn/tinh-lam-dong-sau-sap-nhap-se-co-duong-ong-dan-nuoc-dai-nhat-viet-nam-d1330709.html",
         "https://www.vietnamplus.vn/lam-dong-bao-dong-tinh-trang-lan-chiem-ho-thuy-dien-dai-ninh-post754176.vnp"
+      ]
+    },
+    {
+      "id": "RING3_AUTO_B03_01_DUC_TRONG_TA_NANG_PHAN_DUNG_3PROVINCE_MARKER",
+      "task_id": "T23_AUTO_B03_TA_NANG_PHAN_DUNG_GRASSLAND_TREK_AND_KA_DO_KA_DON_CHURU_CHURCH",
+      "wave": 8,
+      "batch": "AUTO_B03",
+      "name": "Cụm Thảo nguyên Đồi cỏ Tà Năng – Đồi Lính – Đồi Hai Cây Thông – Cột mốc 3 Tỉnh (1.168m MSL) & Bản Chu Ru Ma Bó",
+      "district": "Huyện Đức Trọng (Xã Tà Năng & Xã Đa Quyn)",
+      "ring": "RING_3",
+      "file": "02_ASSETS_3D/ring3_districts_ultra/ring3_auto_b03_duc_trong_ta_nang_phan_dung_grassland_and_3province_marker.glb",
+      "glb_filename": "ring3_auto_b03_duc_trong_ta_nang_phan_dung_grassland_and_3province_marker.glb",
+      "wgs84_center": {
+        "lat": 11.554,
+        "lon": 108.485,
+        "elev_msl": 1085.0
+      },
+      "local_origin_m": {
+        "x": 4328.228,
+        "y": -43015.966,
+        "z_local": -393.0
+      },
+      "world_baked_vertices": true,
+      "pivot_gltf_y_up": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertices": 68131,
+      "triangles": 31499,
+      "size_bytes": 1835232,
+      "sha256": "c303bb5c5a1a7564a3784e2c58f07acb14ffedbc18faa00d6674a3d123e316af",
+      "features": {
+        "three_province_marker_elev_msl": 1168.0,
+        "trekking_trail_length_m": 5800.0,
+        "trekking_dome_tents": 27,
+        "ma_bo_stilt_houses": 34,
+        "pine_trees": 228
+      },
+      "sources": [
+        "https://vi.wikipedia.org/wiki/Cung_%C4%91%C6%B0%E1%BB%9Dng_T%C3%A0_N%C4%83ng_%E2%80%93_Phan_D%C5%A9ng",
+        "https://www.decathlon.vn/blog/trekking-ta-nang/",
+        "https://hoadalattravel.vn/dia-diem-du-lich/trekking-da-lat/",
+        "https://guland.vn/dia-danh-hanh-chinh/xa-ta-nang-huyen-duc-trong-lam-dong"
+      ]
+    },
+    {
+      "id": "RING3_AUTO_B03_02_DON_DUONG_KA_DO_AGRI_AND_KA_DON_CHURU_CHURCH",
+      "task_id": "T23_AUTO_B03_TA_NANG_PHAN_DUNG_GRASSLAND_TREK_AND_KA_DO_KA_DON_CHURU_CHURCH",
+      "wave": 8,
+      "batch": "AUTO_B03",
+      "name": "Cụm Nhà thờ Ka Đơn (Kiệt tác Kiến trúc Bản địa Chu Ru – Giải Quốc tế Frate Sole) & Thung lũng Nông nghiệp Công nghệ cao Ka Đô – Lạc Lâm",
+      "district": "Huyện Đơn Dương (Xã Ka Đơn, Quảng Lập, Ka Đô & Lạc Lâm)",
+      "ring": "RING_3",
+      "file": "02_ASSETS_3D/ring3_districts_ultra/ring3_auto_b03_don_duong_ka_do_agri_valley_and_ka_don_churu_church.glb",
+      "glb_filename": "ring3_auto_b03_don_duong_ka_do_agri_valley_and_ka_don_churu_church.glb",
+      "wgs84_center": {
+        "lat": 11.738,
+        "lon": 108.528,
+        "elev_msl": 1025.0
+      },
+      "local_origin_m": {
+        "x": 9011.397,
+        "y": -22533.18,
+        "z_local": -453.0
+      },
+      "world_baked_vertices": true,
+      "pivot_gltf_y_up": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertices": 70467,
+      "triangles": 32901,
+      "size_bytes": 1899868,
+      "sha256": "03af2335562754911a37d3de7c6121baabd6c0dfa82b9e89010a34bd62e40cea",
+      "features": {
+        "ka_don_church_capacity_people": 5000,
+        "ka_don_bell_tower_height_m": 28.5,
+        "churu_museum_pavilions": 2,
+        "hightech_greenhouses": 42,
+        "vietgap_open_plots": 16,
+        "shophouses_and_buildings": 94,
+        "streetlamps": 48,
+        "trees": 195
+      },
+      "sources": [
+        "https://thanhnien.vn/nha-tho-ka-don-khi-kien-truc-thanh-lang-nghe-tieng-noi-cua-nui-rung-185260331211205854.htm",
+        "https://www.tapchikientruc.com.vn/tac-gia-tac-pham/tro-ve-hon-dia-chu-ru.html",
+        "https://giaophandalat.com/gioi-thieu-hinh-anh-nha-tho-ka-don-don-duong.html",
+        "https://vietnam.vnanet.vn/vietnamese/tin-tuc/nhip-dieu-kien-truc-nha-tho-ka-don-137768.html",
+        "https://baolamdong.vn/xa-ka-o-tao-dot-pha-bang-nong-nghiep-thong-minh-416486.html",
+        "https://baolamdong.vn/vung-rau-cong-nghe-cao-lac-lam-277480.html",
+        "https://dantocphattrien.vietnamnet.vn/don-duong-lam-dong-chu-trong-san-xuat-nong-nghiep-cong-nghe-cao-59159.html"
+      ]
+    },
+    {
+      "id": "RING3_AUTO_B04_01_LAC_DUONG_DA_CHAIS_STURGEON_KHANH_LE_PASS_1700M",
+      "task_id": "T23_AUTO_B04_LAC_DUONG_DA_CHAIS_STURGEON_KHANH_LE_PASS_AND_LAM_HA_DONG_THANH_RESERVOIR",
+      "wave": 9,
+      "batch": "AUTO_B04",
+      "name": "Cụm Hành lang Đạ Nhim – Đạ Chais (Buôn K'Long K'Lanh), Trại Cá tầm Nước lạnh Bidoup & Đỉnh Đèo Khánh Lê / Hòn Giao (1.700m MSL, QL27C)",
+      "district": "Huyện Lạc Dương (Xã Đạ Chais & Xã Đạ Nhim)",
+      "ring": "RING_3",
+      "file": "02_ASSETS_3D/ring3_districts_ultra/ring3_auto_b04_lac_duong_da_nhim_da_chais_sturgeon_farms_and_khanh_le_pass_head.glb",
+      "glb_filename": "ring3_auto_b04_lac_duong_da_nhim_da_chais_sturgeon_farms_and_khanh_le_pass_head.glb",
+      "wgs84_center": {
+        "lat": 12.143,
+        "lon": 108.646,
+        "elev_msl": 1540.0
+      },
+      "local_origin_m": {
+        "x": 21862.883,
+        "y": 22551.214,
+        "z_local": 62.0
+      },
+      "world_baked_vertices": true,
+      "pivot_gltf_y_up": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertices": 76139,
+      "triangles": 34981,
+      "size_bytes": 2047504,
+      "sha256": "50770275db1fe608a7dbe6a88956e0eeb611a6c123fcb0b37d703c5c4bb5ed19",
+      "features": {
+        "khanh_le_pass_summit_elev_msl": 1700.0,
+        "circular_sturgeon_tanks": 36,
+        "trout_raceways": 12,
+        "zoodoo_and_klong_klanh_buildings": 50,
+        "fog_beacon_lights": 33,
+        "trees": 223
+      },
+      "sources": [
+        "https://vi.wikipedia.org/wiki/%C4%90%C3%A8o_Kh%C3%A1nh_L%C3%AA",
+        "https://www.traveloka.com/vi-vn/explore/destination/deo-khanh-le-khanh-hoa/340412?utm_id=Pamlbfc2",
+        "https://travel.com.vn/tin-tuc-du-lich/vuon-thu-zoodoo-da-lat-v18481.aspx",
+        "https://xaydungchinhsach.chinhphu.vn/toan-van-quy-hoach-tinh-lam-dong-thoi-ky-2021-2030-tam-nhin-den-nam-2050-119240108130604433.htm"
+      ]
+    },
+    {
+      "id": "RING3_AUTO_B04_02_LAM_HA_DONG_THANH_ECO_RESERVOIR_AND_GIA_LAM",
+      "task_id": "T23_AUTO_B04_LAC_DUONG_DA_CHAIS_STURGEON_KHANH_LE_PASS_AND_LAM_HA_DONG_THANH_RESERVOIR",
+      "wave": 9,
+      "batch": "AUTO_B04",
+      "name": "Cụm Hồ chứa nước & Khu du lịch sinh thái Hồ Đông Thanh (Đập 310m, Tràn xả lũ & Nhà van) – Đồi Cà phê Gia Lâm",
+      "district": "Huyện Lâm Hà (Xã Đông Thanh & Xã Gia Lâm)",
+      "ring": "RING_3",
+      "file": "02_ASSETS_3D/ring3_districts_ultra/ring3_auto_b04_lam_ha_dong_thanh_eco_reservoir_and_gia_lam_coffee_hills.glb",
+      "glb_filename": "ring3_auto_b04_lam_ha_dong_thanh_eco_reservoir_and_gia_lam_coffee_hills.glb",
+      "wgs84_center": {
+        "lat": 11.862,
+        "lon": 108.332,
+        "elev_msl": 1110.0
+      },
+      "local_origin_m": {
+        "x": -12335.14,
+        "y": -8729.563,
+        "z_local": -368.0
+      },
+      "world_baked_vertices": true,
+      "pivot_gltf_y_up": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertices": 70034,
+      "triangles": 32728,
+      "size_bytes": 1889140,
+      "sha256": "3b00a861920ca10a3e968ed34149f7de3bb318b96f0c11cb6a4bd88a97a42eaf",
+      "features": {
+        "reservoir_water_elev_msl": 1107.0,
+        "main_dam_length_m": 310.0,
+        "spillway_chute_length_m": 165.0,
+        "lakeside_eco_villas": 24,
+        "coffee_terraced_plots": 30,
+        "shophouses_and_buildings": 89,
+        "night_lights": 35,
+        "trees": 178
+      },
+      "sources": [
+        "https://vietnamtourism.gov.vn/post/42901",
+        "https://vietnamtourism.gov.vn/post/37529",
+        "https://tuoitre.vn/plo/lam-dong-se-cong-bo-nguyen-nhan-su-co-ho-dong-thanh-sau-3-nam-dung-thi-cong-109905804.htm",
+        "https://baomoi.com/tag/h%E1%BB%93-%C4%90%C3%B4ng-Thanh.epi"
+      ]
+    },
+    {
+      "id": "RING3_AUTO_B05_01_DON_DUONG_SAMTEN_HILLS_37M22_PRAYER_WHEEL_DA_RON_GOLF",
+      "task_id": "T23_AUTO_B05_SAMTEN_HILLS_DALAT_37M_PRAYER_WHEEL_DA_RON_LAKE_AND_DA_LOAN_TA_HINE_HUB",
+      "wave": 10,
+      "batch": "AUTO_B05",
+      "name": "Quần thể Văn hóa Tâm linh Samten Hills Dalat (Đại Bảo Tháp Kinh Luân 37,22m Kỷ lục Guinness) & Hồ Đạ Ròn – Sân Golf The Dàlat at 1200",
+      "district": "Huyện Đơn Dương (Thôn Kambute Xã Tu Tra & Xã Đạ Ròn)",
+      "ring": "RING_3",
+      "file": "02_ASSETS_3D/ring3_districts_ultra/ring3_auto_b05_don_duong_samten_hills_37m_prayer_wheel_and_da_ron_golf_lake.glb",
+      "glb_filename": "ring3_auto_b05_don_duong_samten_hills_37m_prayer_wheel_and_da_ron_golf_lake.glb",
+      "wgs84_center": {
+        "lat": 11.7145,
+        "lon": 108.431,
+        "elev_msl": 1185.0
+      },
+      "local_origin_m": {
+        "x": -1552.961,
+        "y": -25149.188,
+        "z_local": -293.0
+      },
+      "world_baked_vertices": true,
+      "pivot_gltf_y_up": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertices": 68643,
+      "triangles": 31637,
+      "size_bytes": 1848532,
+      "sha256": "1d8abd750c99aed8833b598954fe943942b2c30f912daa121047f2715d6251d1",
+      "features": {
+        "guinness_prayer_wheel_height_m": 37.22,
+        "guinness_prayer_wheel_diameter_m": 16.53,
+        "guinness_prayer_wheel_weight_tons": 200,
+        "tibetan_chorten_stupas": 8,
+        "golf_1200_fairways": 18,
+        "golf_resort_villas": 26,
+        "night_lights": 32,
+        "trees": 185
+      },
+      "sources": [
+        "https://samtenhills.vn/cong-trinh-cua-nhung-ky-luc/dai-bao-thap-kinh-luan/",
+        "https://lamdong.gov.vn/sites/dulich/diem-du-lich/SitePages/Tu-vung-dat-kho-den-dinh-danh-ban-do-the-gioi.aspx",
+        "https://tuoitre.vn/plo/ve-don-duong-chiem-nguong-dai-bao-thap-kinh-luan-lon-nhat-the-gioi-109723382.htm",
+        "https://vietnamnet.vn/samten-hills-dalat-thien-duong-chua-lanh-giua-cao-nguyen-lam-dong-2132956.html",
+        "https://thuonghieucongluan.com.vn/samten-hills-da-lat-diem-hen-binh-yen-mua-festival-hoa-a342691.html",
+        "https://swproperty.vn/san-golf-the-dalat-at-1200/"
+      ]
+    },
+    {
+      "id": "RING3_AUTO_B05_02_DUC_TRONG_DA_LOAN_NINH_LOAN_TA_HINE_QL28B_HUB",
+      "task_id": "T23_AUTO_B05_SAMTEN_HILLS_DALAT_37M_PRAYER_WHEEL_DA_RON_LAKE_AND_DA_LOAN_TA_HINE_HUB",
+      "wave": 10,
+      "batch": "AUTO_B05",
+      "name": "Cụm Đô thị Đà Loan – Ninh Loan – Ngã ba Tà Hine (Giao lộ Quốc lộ 28B × ĐT729, Chợ Đà Loan & Cầu Đà Loan)",
+      "district": "Huyện Đức Trọng (Xã Đà Loan, Ninh Loan & Tà Hine)",
+      "ring": "RING_3",
+      "file": "02_ASSETS_3D/ring3_districts_ultra/ring3_auto_b05_duc_trong_da_loan_ninh_loan_town_and_ta_hine_ql28b_junction.glb",
+      "glb_filename": "ring3_auto_b05_duc_trong_da_loan_ninh_loan_town_and_ta_hine_ql28b_junction.glb",
+      "wgs84_center": {
+        "lat": 11.632,
+        "lon": 108.395,
+        "elev_msl": 905.0
+      },
+      "local_origin_m": {
+        "x": -5473.753,
+        "y": -34333.046,
+        "z_local": -573.0
+      },
+      "world_baked_vertices": true,
+      "pivot_gltf_y_up": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertices": 67439,
+      "triangles": 31485,
+      "size_bytes": 1818600,
+      "sha256": "fba52a7250ad91bbaef337a28cc970df89d112c5ffdd7745bf7cec15f495c428",
+      "features": {
+        "farm_and_paddy_plots": 28,
+        "hightech_greenhouses": 18,
+        "shophouses_and_buildings": 122,
+        "streetlamps": 50,
+        "trees": 183
+      },
+      "sources": [
+        "https://alonhadat.com.vn/can-ban-nha-dat/lam-dong/ta-hine",
+        "https://nhadatductrong.com.vn/khu-vuc/ta-hine/",
+        "https://thuviennhadat.vn/bang-gia-dat/lam-dong/huyen-duc-trong/quoc-lo-28b-xa-ninh-loan",
+        "https://guland.vn/dia-danh-hanh-chinh/duong-quoc-lo-28b-khu-vuc-i-xa-ninh-loan-huyen-duc-trong-lam-dong"
       ]
     }
   ],
@@ -1259,6 +1538,285 @@
         "https://cra.tlu.edu.vn/cong-trinh-tieu-bieu/cong-trinh-thuy-dien-dai-ninh-12091",
         "https://danviet.vn/tinh-lam-dong-sau-sap-nhap-se-co-duong-ong-dan-nuoc-dai-nhat-viet-nam-d1330709.html",
         "https://www.vietnamplus.vn/lam-dong-bao-dong-tinh-trang-lan-chiem-ho-thuy-dien-dai-ninh-post754176.vnp"
+      ]
+    },
+    {
+      "id": "RING3_AUTO_B03_01_DUC_TRONG_TA_NANG_PHAN_DUNG_3PROVINCE_MARKER",
+      "task_id": "T23_AUTO_B03_TA_NANG_PHAN_DUNG_GRASSLAND_TREK_AND_KA_DO_KA_DON_CHURU_CHURCH",
+      "wave": 8,
+      "batch": "AUTO_B03",
+      "name": "Cụm Thảo nguyên Đồi cỏ Tà Năng – Đồi Lính – Đồi Hai Cây Thông – Cột mốc 3 Tỉnh (1.168m MSL) & Bản Chu Ru Ma Bó",
+      "district": "Huyện Đức Trọng (Xã Tà Năng & Xã Đa Quyn)",
+      "ring": "RING_3",
+      "file": "02_ASSETS_3D/ring3_districts_ultra/ring3_auto_b03_duc_trong_ta_nang_phan_dung_grassland_and_3province_marker.glb",
+      "glb_filename": "ring3_auto_b03_duc_trong_ta_nang_phan_dung_grassland_and_3province_marker.glb",
+      "wgs84_center": {
+        "lat": 11.554,
+        "lon": 108.485,
+        "elev_msl": 1085.0
+      },
+      "local_origin_m": {
+        "x": 4328.228,
+        "y": -43015.966,
+        "z_local": -393.0
+      },
+      "world_baked_vertices": true,
+      "pivot_gltf_y_up": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertices": 68131,
+      "triangles": 31499,
+      "size_bytes": 1835232,
+      "sha256": "c303bb5c5a1a7564a3784e2c58f07acb14ffedbc18faa00d6674a3d123e316af",
+      "features": {
+        "three_province_marker_elev_msl": 1168.0,
+        "trekking_trail_length_m": 5800.0,
+        "trekking_dome_tents": 27,
+        "ma_bo_stilt_houses": 34,
+        "pine_trees": 228
+      },
+      "sources": [
+        "https://vi.wikipedia.org/wiki/Cung_%C4%91%C6%B0%E1%BB%9Dng_T%C3%A0_N%C4%83ng_%E2%80%93_Phan_D%C5%A9ng",
+        "https://www.decathlon.vn/blog/trekking-ta-nang/",
+        "https://hoadalattravel.vn/dia-diem-du-lich/trekking-da-lat/",
+        "https://guland.vn/dia-danh-hanh-chinh/xa-ta-nang-huyen-duc-trong-lam-dong"
+      ]
+    },
+    {
+      "id": "RING3_AUTO_B03_02_DON_DUONG_KA_DO_AGRI_AND_KA_DON_CHURU_CHURCH",
+      "task_id": "T23_AUTO_B03_TA_NANG_PHAN_DUNG_GRASSLAND_TREK_AND_KA_DO_KA_DON_CHURU_CHURCH",
+      "wave": 8,
+      "batch": "AUTO_B03",
+      "name": "Cụm Nhà thờ Ka Đơn (Kiệt tác Kiến trúc Bản địa Chu Ru – Giải Quốc tế Frate Sole) & Thung lũng Nông nghiệp Công nghệ cao Ka Đô – Lạc Lâm",
+      "district": "Huyện Đơn Dương (Xã Ka Đơn, Quảng Lập, Ka Đô & Lạc Lâm)",
+      "ring": "RING_3",
+      "file": "02_ASSETS_3D/ring3_districts_ultra/ring3_auto_b03_don_duong_ka_do_agri_valley_and_ka_don_churu_church.glb",
+      "glb_filename": "ring3_auto_b03_don_duong_ka_do_agri_valley_and_ka_don_churu_church.glb",
+      "wgs84_center": {
+        "lat": 11.738,
+        "lon": 108.528,
+        "elev_msl": 1025.0
+      },
+      "local_origin_m": {
+        "x": 9011.397,
+        "y": -22533.18,
+        "z_local": -453.0
+      },
+      "world_baked_vertices": true,
+      "pivot_gltf_y_up": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertices": 70467,
+      "triangles": 32901,
+      "size_bytes": 1899868,
+      "sha256": "03af2335562754911a37d3de7c6121baabd6c0dfa82b9e89010a34bd62e40cea",
+      "features": {
+        "ka_don_church_capacity_people": 5000,
+        "ka_don_bell_tower_height_m": 28.5,
+        "churu_museum_pavilions": 2,
+        "hightech_greenhouses": 42,
+        "vietgap_open_plots": 16,
+        "shophouses_and_buildings": 94,
+        "streetlamps": 48,
+        "trees": 195
+      },
+      "sources": [
+        "https://thanhnien.vn/nha-tho-ka-don-khi-kien-truc-thanh-lang-nghe-tieng-noi-cua-nui-rung-185260331211205854.htm",
+        "https://www.tapchikientruc.com.vn/tac-gia-tac-pham/tro-ve-hon-dia-chu-ru.html",
+        "https://giaophandalat.com/gioi-thieu-hinh-anh-nha-tho-ka-don-don-duong.html",
+        "https://vietnam.vnanet.vn/vietnamese/tin-tuc/nhip-dieu-kien-truc-nha-tho-ka-don-137768.html",
+        "https://baolamdong.vn/xa-ka-o-tao-dot-pha-bang-nong-nghiep-thong-minh-416486.html",
+        "https://baolamdong.vn/vung-rau-cong-nghe-cao-lac-lam-277480.html",
+        "https://dantocphattrien.vietnamnet.vn/don-duong-lam-dong-chu-trong-san-xuat-nong-nghiep-cong-nghe-cao-59159.html"
+      ]
+    },
+    {
+      "id": "RING3_AUTO_B04_01_LAC_DUONG_DA_CHAIS_STURGEON_KHANH_LE_PASS_1700M",
+      "task_id": "T23_AUTO_B04_LAC_DUONG_DA_CHAIS_STURGEON_KHANH_LE_PASS_AND_LAM_HA_DONG_THANH_RESERVOIR",
+      "wave": 9,
+      "batch": "AUTO_B04",
+      "name": "Cụm Hành lang Đạ Nhim – Đạ Chais (Buôn K'Long K'Lanh), Trại Cá tầm Nước lạnh Bidoup & Đỉnh Đèo Khánh Lê / Hòn Giao (1.700m MSL, QL27C)",
+      "district": "Huyện Lạc Dương (Xã Đạ Chais & Xã Đạ Nhim)",
+      "ring": "RING_3",
+      "file": "02_ASSETS_3D/ring3_districts_ultra/ring3_auto_b04_lac_duong_da_nhim_da_chais_sturgeon_farms_and_khanh_le_pass_head.glb",
+      "glb_filename": "ring3_auto_b04_lac_duong_da_nhim_da_chais_sturgeon_farms_and_khanh_le_pass_head.glb",
+      "wgs84_center": {
+        "lat": 12.143,
+        "lon": 108.646,
+        "elev_msl": 1540.0
+      },
+      "local_origin_m": {
+        "x": 21862.883,
+        "y": 22551.214,
+        "z_local": 62.0
+      },
+      "world_baked_vertices": true,
+      "pivot_gltf_y_up": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertices": 76139,
+      "triangles": 34981,
+      "size_bytes": 2047504,
+      "sha256": "50770275db1fe608a7dbe6a88956e0eeb611a6c123fcb0b37d703c5c4bb5ed19",
+      "features": {
+        "khanh_le_pass_summit_elev_msl": 1700.0,
+        "circular_sturgeon_tanks": 36,
+        "trout_raceways": 12,
+        "zoodoo_and_klong_klanh_buildings": 50,
+        "fog_beacon_lights": 33,
+        "trees": 223
+      },
+      "sources": [
+        "https://vi.wikipedia.org/wiki/%C4%90%C3%A8o_Kh%C3%A1nh_L%C3%AA",
+        "https://www.traveloka.com/vi-vn/explore/destination/deo-khanh-le-khanh-hoa/340412?utm_id=Pamlbfc2",
+        "https://travel.com.vn/tin-tuc-du-lich/vuon-thu-zoodoo-da-lat-v18481.aspx",
+        "https://xaydungchinhsach.chinhphu.vn/toan-van-quy-hoach-tinh-lam-dong-thoi-ky-2021-2030-tam-nhin-den-nam-2050-119240108130604433.htm"
+      ]
+    },
+    {
+      "id": "RING3_AUTO_B04_02_LAM_HA_DONG_THANH_ECO_RESERVOIR_AND_GIA_LAM",
+      "task_id": "T23_AUTO_B04_LAC_DUONG_DA_CHAIS_STURGEON_KHANH_LE_PASS_AND_LAM_HA_DONG_THANH_RESERVOIR",
+      "wave": 9,
+      "batch": "AUTO_B04",
+      "name": "Cụm Hồ chứa nước & Khu du lịch sinh thái Hồ Đông Thanh (Đập 310m, Tràn xả lũ & Nhà van) – Đồi Cà phê Gia Lâm",
+      "district": "Huyện Lâm Hà (Xã Đông Thanh & Xã Gia Lâm)",
+      "ring": "RING_3",
+      "file": "02_ASSETS_3D/ring3_districts_ultra/ring3_auto_b04_lam_ha_dong_thanh_eco_reservoir_and_gia_lam_coffee_hills.glb",
+      "glb_filename": "ring3_auto_b04_lam_ha_dong_thanh_eco_reservoir_and_gia_lam_coffee_hills.glb",
+      "wgs84_center": {
+        "lat": 11.862,
+        "lon": 108.332,
+        "elev_msl": 1110.0
+      },
+      "local_origin_m": {
+        "x": -12335.14,
+        "y": -8729.563,
+        "z_local": -368.0
+      },
+      "world_baked_vertices": true,
+      "pivot_gltf_y_up": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertices": 70034,
+      "triangles": 32728,
+      "size_bytes": 1889140,
+      "sha256": "3b00a861920ca10a3e968ed34149f7de3bb318b96f0c11cb6a4bd88a97a42eaf",
+      "features": {
+        "reservoir_water_elev_msl": 1107.0,
+        "main_dam_length_m": 310.0,
+        "spillway_chute_length_m": 165.0,
+        "lakeside_eco_villas": 24,
+        "coffee_terraced_plots": 30,
+        "shophouses_and_buildings": 89,
+        "night_lights": 35,
+        "trees": 178
+      },
+      "sources": [
+        "https://vietnamtourism.gov.vn/post/42901",
+        "https://vietnamtourism.gov.vn/post/37529",
+        "https://tuoitre.vn/plo/lam-dong-se-cong-bo-nguyen-nhan-su-co-ho-dong-thanh-sau-3-nam-dung-thi-cong-109905804.htm",
+        "https://baomoi.com/tag/h%E1%BB%93-%C4%90%C3%B4ng-Thanh.epi"
+      ]
+    },
+    {
+      "id": "RING3_AUTO_B05_01_DON_DUONG_SAMTEN_HILLS_37M22_PRAYER_WHEEL_DA_RON_GOLF",
+      "task_id": "T23_AUTO_B05_SAMTEN_HILLS_DALAT_37M_PRAYER_WHEEL_DA_RON_LAKE_AND_DA_LOAN_TA_HINE_HUB",
+      "wave": 10,
+      "batch": "AUTO_B05",
+      "name": "Quần thể Văn hóa Tâm linh Samten Hills Dalat (Đại Bảo Tháp Kinh Luân 37,22m Kỷ lục Guinness) & Hồ Đạ Ròn – Sân Golf The Dàlat at 1200",
+      "district": "Huyện Đơn Dương (Thôn Kambute Xã Tu Tra & Xã Đạ Ròn)",
+      "ring": "RING_3",
+      "file": "02_ASSETS_3D/ring3_districts_ultra/ring3_auto_b05_don_duong_samten_hills_37m_prayer_wheel_and_da_ron_golf_lake.glb",
+      "glb_filename": "ring3_auto_b05_don_duong_samten_hills_37m_prayer_wheel_and_da_ron_golf_lake.glb",
+      "wgs84_center": {
+        "lat": 11.7145,
+        "lon": 108.431,
+        "elev_msl": 1185.0
+      },
+      "local_origin_m": {
+        "x": -1552.961,
+        "y": -25149.188,
+        "z_local": -293.0
+      },
+      "world_baked_vertices": true,
+      "pivot_gltf_y_up": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertices": 68643,
+      "triangles": 31637,
+      "size_bytes": 1848532,
+      "sha256": "1d8abd750c99aed8833b598954fe943942b2c30f912daa121047f2715d6251d1",
+      "features": {
+        "guinness_prayer_wheel_height_m": 37.22,
+        "guinness_prayer_wheel_diameter_m": 16.53,
+        "guinness_prayer_wheel_weight_tons": 200,
+        "tibetan_chorten_stupas": 8,
+        "golf_1200_fairways": 18,
+        "golf_resort_villas": 26,
+        "night_lights": 32,
+        "trees": 185
+      },
+      "sources": [
+        "https://samtenhills.vn/cong-trinh-cua-nhung-ky-luc/dai-bao-thap-kinh-luan/",
+        "https://lamdong.gov.vn/sites/dulich/diem-du-lich/SitePages/Tu-vung-dat-kho-den-dinh-danh-ban-do-the-gioi.aspx",
+        "https://tuoitre.vn/plo/ve-don-duong-chiem-nguong-dai-bao-thap-kinh-luan-lon-nhat-the-gioi-109723382.htm",
+        "https://vietnamnet.vn/samten-hills-dalat-thien-duong-chua-lanh-giua-cao-nguyen-lam-dong-2132956.html",
+        "https://thuonghieucongluan.com.vn/samten-hills-da-lat-diem-hen-binh-yen-mua-festival-hoa-a342691.html",
+        "https://swproperty.vn/san-golf-the-dalat-at-1200/"
+      ]
+    },
+    {
+      "id": "RING3_AUTO_B05_02_DUC_TRONG_DA_LOAN_NINH_LOAN_TA_HINE_QL28B_HUB",
+      "task_id": "T23_AUTO_B05_SAMTEN_HILLS_DALAT_37M_PRAYER_WHEEL_DA_RON_LAKE_AND_DA_LOAN_TA_HINE_HUB",
+      "wave": 10,
+      "batch": "AUTO_B05",
+      "name": "Cụm Đô thị Đà Loan – Ninh Loan – Ngã ba Tà Hine (Giao lộ Quốc lộ 28B × ĐT729, Chợ Đà Loan & Cầu Đà Loan)",
+      "district": "Huyện Đức Trọng (Xã Đà Loan, Ninh Loan & Tà Hine)",
+      "ring": "RING_3",
+      "file": "02_ASSETS_3D/ring3_districts_ultra/ring3_auto_b05_duc_trong_da_loan_ninh_loan_town_and_ta_hine_ql28b_junction.glb",
+      "glb_filename": "ring3_auto_b05_duc_trong_da_loan_ninh_loan_town_and_ta_hine_ql28b_junction.glb",
+      "wgs84_center": {
+        "lat": 11.632,
+        "lon": 108.395,
+        "elev_msl": 905.0
+      },
+      "local_origin_m": {
+        "x": -5473.753,
+        "y": -34333.046,
+        "z_local": -573.0
+      },
+      "world_baked_vertices": true,
+      "pivot_gltf_y_up": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertices": 67439,
+      "triangles": 31485,
+      "size_bytes": 1818600,
+      "sha256": "fba52a7250ad91bbaef337a28cc970df89d112c5ffdd7745bf7cec15f495c428",
+      "features": {
+        "farm_and_paddy_plots": 28,
+        "hightech_greenhouses": 18,
+        "shophouses_and_buildings": 122,
+        "streetlamps": 50,
+        "trees": 183
+      },
+      "sources": [
+        "https://alonhadat.com.vn/can-ban-nha-dat/lam-dong/ta-hine",
+        "https://nhadatductrong.com.vn/khu-vuc/ta-hine/",
+        "https://thuviennhadat.vn/bang-gia-dat/lam-dong/huyen-duc-trong/quoc-lo-28b-xa-ninh-loan",
+        "https://guland.vn/dia-danh-hanh-chinh/duong-quoc-lo-28b-khu-vuc-i-xa-ninh-loan-huyen-duc-trong-lam-dong"
       ]
     }
   ]

@@ -10,14 +10,14 @@
   "forbid_raw_hsv_on_basalt_soil": true,
   "forbid_khr_materials_transmission": true,
   "slope_seating_rule_m": -1.2,
-  "updated_at_utc": "2026-11-24T10:00:36Z",
-  "total_tiles_built": 166,
+  "updated_at_utc": "2026-11-24T12:50:34Z",
+  "total_tiles_built": 190,
   "ring0_tiles_count": 9,
   "ring1_tiles_count": 21,
-  "total_buildings_across_tiles": 121956,
-  "total_residential_and_villas_across_tiles": 78924,
-  "total_greenhouses_across_tiles": 43032,
-  "total_triangles_across_tiles": 3358472,
+  "total_buildings_across_tiles": 144739,
+  "total_residential_and_villas_across_tiles": 93922,
+  "total_greenhouses_across_tiles": 50817,
+  "total_triangles_across_tiles": 3983542,
   "tiles": {
     "T_E00_N00": {
       "tile_id": "T_E00_N00",
@@ -7848,19 +7848,1173 @@
         }
       },
       "updated_at_utc": "2026-11-24T10:00:36Z"
+    },
+    "T_W02_N07": {
+      "tile_id": "T_W02_N07",
+      "label_vi": "[RING_2] Bắc Hồ Đankia – Sườn Bắc Đỉnh Núi Ông Langbiang 2.124m",
+      "ix": -2,
+      "iy": 7,
+      "ring": 2,
+      "glb_path": "02_ASSETS_3D/building_tiles/buildings_T_W02_N07.glb",
+      "size_bytes": 1552840,
+      "sha256": "d28717127ec2ff7487b9a6d2bda9fa7f4024c02654d4102fa82a35c7fb034837",
+      "nodes": 11,
+      "triangles": 26812,
+      "total_buildings": 978,
+      "residential_and_villa_count": 644,
+      "greenhouse_count": 334,
+      "counts_by_category": {
+        "residential": 544,
+        "heritage_villa": 100,
+        "agriculture_greenhouse": 334
+      },
+      "counts_by_roof_class": {
+        "roof_terracotta_gable": 171,
+        "roof_pine_green_hip": 164,
+        "roof_highland_blue_gable": 156,
+        "roof_zinc_silver_gable": 53,
+        "roof_slate_French_villa_hip": 100,
+        "agri_greenhouse_arch": 334
+      },
+      "slope_seating_audit": {
+        "target_foundation_drop_m": -1.2,
+        "verified_min_embed_m": -1.2,
+        "max_terrain_slope_delta_m": 7.438,
+        "floating_buildings_count": 0
+      },
+      "exclusion_clipping_audit": {
+        "in_water_count": 0,
+        "in_landmark_exclusion_count": 0,
+        "in_road_carriageway_count": 0,
+        "rejected_candidates": {
+          "water": 0,
+          "doi_cu_fairway": 0,
+          "landmark_exclusion": 0,
+          "road_carriageway": 118,
+          "parcel_overlap": 137,
+          "steep_cliff": 0
+        }
+      },
+      "updated_at_utc": "2026-11-24T11:11:02Z"
+    },
+    "T_W01_N07": {
+      "tile_id": "T_W01_N07",
+      "label_vi": "[RING_2] Yên Ngựa Bắc Núi Ông – Núi Bà Langbiang – Thung lũng K'Nớ Nam",
+      "ix": -1,
+      "iy": 7,
+      "ring": 2,
+      "glb_path": "02_ASSETS_3D/building_tiles/buildings_T_W01_N07.glb",
+      "size_bytes": 1670416,
+      "sha256": "78e32aac16679971cf9322ed2e818dc396f4610a07a4d7f0a8e50f46d33e5e99",
+      "nodes": 11,
+      "triangles": 28918,
+      "total_buildings": 1067,
+      "residential_and_villa_count": 736,
+      "greenhouse_count": 331,
+      "counts_by_category": {
+        "residential": 634,
+        "heritage_villa": 102,
+        "agriculture_greenhouse": 331
+      },
+      "counts_by_roof_class": {
+        "roof_terracotta_gable": 194,
+        "roof_highland_blue_gable": 173,
+        "roof_zinc_silver_gable": 80,
+        "roof_pine_green_hip": 187,
+        "roof_slate_French_villa_hip": 102,
+        "agri_greenhouse_arch": 331
+      },
+      "slope_seating_audit": {
+        "target_foundation_drop_m": -1.2,
+        "verified_min_embed_m": -1.2,
+        "max_terrain_slope_delta_m": 8.845,
+        "floating_buildings_count": 0
+      },
+      "exclusion_clipping_audit": {
+        "in_water_count": 0,
+        "in_landmark_exclusion_count": 0,
+        "in_road_carriageway_count": 0,
+        "rejected_candidates": {
+          "water": 0,
+          "doi_cu_fairway": 0,
+          "landmark_exclusion": 0,
+          "road_carriageway": 156,
+          "parcel_overlap": 144,
+          "steep_cliff": 0
+        }
+      },
+      "updated_at_utc": "2026-11-24T11:11:05Z"
+    },
+    "T_E01_N07": {
+      "tile_id": "T_E01_N07",
+      "label_vi": "[RING_2] Đông Bắc Đỉnh Núi Bà Langbiang – Thượng nguồn Suối Đa Sar Bắc",
+      "ix": 1,
+      "iy": 7,
+      "ring": 2,
+      "glb_path": "02_ASSETS_3D/building_tiles/buildings_T_E01_N07.glb",
+      "size_bytes": 1520448,
+      "sha256": "75cd29b8341b619091a6d38162442bb6d86dd13540370c7947a026f0573c9b17",
+      "nodes": 10,
+      "triangles": 26266,
+      "total_buildings": 959,
+      "residential_and_villa_count": 634,
+      "greenhouse_count": 325,
+      "counts_by_category": {
+        "residential": 465,
+        "heritage_villa": 169,
+        "agriculture_greenhouse": 325
+      },
+      "counts_by_roof_class": {
+        "roof_pine_green_hip": 175,
+        "roof_slate_French_villa_hip": 169,
+        "roof_terracotta_gable": 179,
+        "roof_highland_blue_gable": 111,
+        "agri_greenhouse_arch": 325
+      },
+      "slope_seating_audit": {
+        "target_foundation_drop_m": -1.2,
+        "verified_min_embed_m": -1.2,
+        "max_terrain_slope_delta_m": 7.452,
+        "floating_buildings_count": 0
+      },
+      "exclusion_clipping_audit": {
+        "in_water_count": 0,
+        "in_landmark_exclusion_count": 0,
+        "in_road_carriageway_count": 0,
+        "rejected_candidates": {
+          "water": 0,
+          "doi_cu_fairway": 0,
+          "landmark_exclusion": 0,
+          "road_carriageway": 202,
+          "parcel_overlap": 140,
+          "steep_cliff": 0
+        }
+      },
+      "updated_at_utc": "2026-11-24T11:11:07Z"
+    },
+    "T_E03_N06": {
+      "tile_id": "T_E03_N06",
+      "label_vi": "[RING_2] Bắc Xã Đa Sar – Rừng Thông Thượng Nguồn Đạ Nhim Tây",
+      "ix": 3,
+      "iy": 6,
+      "ring": 2,
+      "glb_path": "02_ASSETS_3D/building_tiles/buildings_T_E03_N06.glb",
+      "size_bytes": 1344240,
+      "sha256": "0c29aa4910dde7b09bcdb6a4416fcc83317f711e13ad1f5e2f661b005d9e45eb",
+      "nodes": 10,
+      "triangles": 23142,
+      "total_buildings": 833,
+      "residential_and_villa_count": 518,
+      "greenhouse_count": 315,
+      "counts_by_category": {
+        "residential": 368,
+        "heritage_villa": 150,
+        "agriculture_greenhouse": 315
+      },
+      "counts_by_roof_class": {
+        "roof_terracotta_gable": 135,
+        "roof_pine_green_hip": 136,
+        "roof_slate_French_villa_hip": 150,
+        "roof_highland_blue_gable": 97,
+        "agri_greenhouse_arch": 315
+      },
+      "slope_seating_audit": {
+        "target_foundation_drop_m": -1.2,
+        "verified_min_embed_m": -1.2,
+        "max_terrain_slope_delta_m": 1.75,
+        "floating_buildings_count": 0
+      },
+      "exclusion_clipping_audit": {
+        "in_water_count": 0,
+        "in_landmark_exclusion_count": 0,
+        "in_road_carriageway_count": 0,
+        "rejected_candidates": {
+          "water": 67,
+          "doi_cu_fairway": 0,
+          "landmark_exclusion": 0,
+          "road_carriageway": 99,
+          "parcel_overlap": 140,
+          "steep_cliff": 0
+        }
+      },
+      "updated_at_utc": "2026-11-24T11:11:09Z"
+    },
+    "T_W06_N00": {
+      "tile_id": "T_W06_N00",
+      "label_vi": "[RING_2] Đèo Tà Nung Trung Tâm (ĐT725) – Thung lũng Cà Phê Mê Linh Đông",
+      "ix": -6,
+      "iy": 0,
+      "ring": 2,
+      "glb_path": "02_ASSETS_3D/building_tiles/buildings_T_W06_N00.glb",
+      "size_bytes": 1622084,
+      "sha256": "52bb0eae40b5789ac65bd647ba9cd07283e74a3139da6caf24d5f1a7abb36c92",
+      "nodes": 12,
+      "triangles": 28110,
+      "total_buildings": 1030,
+      "residential_and_villa_count": 709,
+      "greenhouse_count": 321,
+      "counts_by_category": {
+        "residential": 538,
+        "commercial_shophouse": 45,
+        "heritage_villa": 126,
+        "agriculture_greenhouse": 321
+      },
+      "counts_by_roof_class": {
+        "roof_highland_blue_gable": 169,
+        "roof_terracotta_gable": 183,
+        "roof_commercial_flat_parapet": 45,
+        "roof_zinc_silver_gable": 31,
+        "roof_pine_green_hip": 155,
+        "roof_slate_French_villa_hip": 126,
+        "agri_greenhouse_arch": 321
+      },
+      "slope_seating_audit": {
+        "target_foundation_drop_m": -1.2,
+        "verified_min_embed_m": -1.2,
+        "max_terrain_slope_delta_m": 0.731,
+        "floating_buildings_count": 0
+      },
+      "exclusion_clipping_audit": {
+        "in_water_count": 0,
+        "in_landmark_exclusion_count": 0,
+        "in_road_carriageway_count": 0,
+        "rejected_candidates": {
+          "water": 0,
+          "doi_cu_fairway": 0,
+          "landmark_exclusion": 0,
+          "road_carriageway": 193,
+          "parcel_overlap": 149,
+          "steep_cliff": 0
+        }
+      },
+      "updated_at_utc": "2026-11-24T11:11:11Z"
+    },
+    "T_W05_N00": {
+      "tile_id": "T_W05_N00",
+      "label_vi": "[RING_2] Đỉnh Đèo Tà Nung Đông – Thung lũng Suối Cam Ly Hạ",
+      "ix": -5,
+      "iy": 0,
+      "ring": 2,
+      "glb_path": "02_ASSETS_3D/building_tiles/buildings_T_W05_N00.glb",
+      "size_bytes": 1512760,
+      "sha256": "abcdd62364a0a11e8d166a5052aa8483fa14bf06083aa0dbf1f937c63e2bec4a",
+      "nodes": 12,
+      "triangles": 26160,
+      "total_buildings": 954,
+      "residential_and_villa_count": 640,
+      "greenhouse_count": 314,
+      "counts_by_category": {
+        "residential": 466,
+        "heritage_villa": 143,
+        "commercial_shophouse": 31,
+        "agriculture_greenhouse": 314
+      },
+      "counts_by_roof_class": {
+        "roof_pine_green_hip": 142,
+        "roof_terracotta_gable": 159,
+        "roof_slate_French_villa_hip": 143,
+        "roof_commercial_flat_parapet": 31,
+        "roof_highland_blue_gable": 151,
+        "roof_zinc_silver_gable": 14,
+        "agri_greenhouse_arch": 314
+      },
+      "slope_seating_audit": {
+        "target_foundation_drop_m": -1.2,
+        "verified_min_embed_m": -1.2,
+        "max_terrain_slope_delta_m": 0.833,
+        "floating_buildings_count": 0
+      },
+      "exclusion_clipping_audit": {
+        "in_water_count": 0,
+        "in_landmark_exclusion_count": 0,
+        "in_road_carriageway_count": 0,
+        "rejected_candidates": {
+          "water": 52,
+          "doi_cu_fairway": 0,
+          "landmark_exclusion": 0,
+          "road_carriageway": 172,
+          "parcel_overlap": 145,
+          "steep_cliff": 0
+        }
+      },
+      "updated_at_utc": "2026-11-24T11:11:13Z"
+    },
+    "T_W04_N00": {
+      "tile_id": "T_W04_N00",
+      "label_vi": "[RING_2] Cửa Ngõ Tây Vạn Thành – Đầu Đèo Tà Nung – Suối Vàng Đông Nam",
+      "ix": -4,
+      "iy": 0,
+      "ring": 2,
+      "glb_path": "02_ASSETS_3D/building_tiles/buildings_T_W04_N00.glb",
+      "size_bytes": 1539800,
+      "sha256": "812746ba90bfac54d3c8840328846463e1bb609f5324697eb7efa81798a05570",
+      "nodes": 12,
+      "triangles": 26612,
+      "total_buildings": 967,
+      "residential_and_villa_count": 639,
+      "greenhouse_count": 328,
+      "counts_by_category": {
+        "residential": 481,
+        "commercial_shophouse": 31,
+        "heritage_villa": 127,
+        "agriculture_greenhouse": 328
+      },
+      "counts_by_roof_class": {
+        "roof_highland_blue_gable": 150,
+        "roof_commercial_flat_parapet": 31,
+        "roof_terracotta_gable": 162,
+        "roof_zinc_silver_gable": 22,
+        "roof_pine_green_hip": 147,
+        "roof_slate_French_villa_hip": 127,
+        "agri_greenhouse_arch": 328
+      },
+      "slope_seating_audit": {
+        "target_foundation_drop_m": -1.2,
+        "verified_min_embed_m": -1.2,
+        "max_terrain_slope_delta_m": 0.65,
+        "floating_buildings_count": 0
+      },
+      "exclusion_clipping_audit": {
+        "in_water_count": 0,
+        "in_landmark_exclusion_count": 0,
+        "in_road_carriageway_count": 0,
+        "rejected_candidates": {
+          "water": 0,
+          "doi_cu_fairway": 0,
+          "landmark_exclusion": 0,
+          "road_carriageway": 107,
+          "parcel_overlap": 157,
+          "steep_cliff": 0
+        }
+      },
+      "updated_at_utc": "2026-11-24T11:11:15Z"
+    },
+    "T_W07_N01": {
+      "tile_id": "T_W07_N01",
+      "label_vi": "[RING_2] Nam Hồ Suối Vàng – Đồi Thông Tà Nung Đông Bắc",
+      "ix": -7,
+      "iy": 1,
+      "ring": 2,
+      "glb_path": "02_ASSETS_3D/building_tiles/buildings_T_W07_N01.glb",
+      "size_bytes": 1448428,
+      "sha256": "eb7088ceddb3589bfd89a31e7332c7442b8903f2089664def9258a627f61f4b3",
+      "nodes": 11,
+      "triangles": 24990,
+      "total_buildings": 910,
+      "residential_and_villa_count": 595,
+      "greenhouse_count": 315,
+      "counts_by_category": {
+        "residential": 488,
+        "heritage_villa": 107,
+        "agriculture_greenhouse": 315
+      },
+      "counts_by_roof_class": {
+        "roof_zinc_silver_gable": 48,
+        "roof_highland_blue_gable": 145,
+        "roof_pine_green_hip": 139,
+        "roof_terracotta_gable": 156,
+        "roof_slate_French_villa_hip": 107,
+        "agri_greenhouse_arch": 315
+      },
+      "slope_seating_audit": {
+        "target_foundation_drop_m": -1.2,
+        "verified_min_embed_m": -1.2,
+        "max_terrain_slope_delta_m": 0.952,
+        "floating_buildings_count": 0
+      },
+      "exclusion_clipping_audit": {
+        "in_water_count": 0,
+        "in_landmark_exclusion_count": 0,
+        "in_road_carriageway_count": 0,
+        "rejected_candidates": {
+          "water": 84,
+          "doi_cu_fairway": 0,
+          "landmark_exclusion": 0,
+          "road_carriageway": 94,
+          "parcel_overlap": 136,
+          "steep_cliff": 0
+        }
+      },
+      "updated_at_utc": "2026-11-24T11:11:17Z"
+    },
+    "T_W06_N01": {
+      "tile_id": "T_W06_N01",
+      "label_vi": "[RING_2] Bắc Đèo Tà Nung – Thung lũng Suối Vàng Đông Nam",
+      "ix": -6,
+      "iy": 1,
+      "ring": 2,
+      "glb_path": "02_ASSETS_3D/building_tiles/buildings_T_W06_N01.glb",
+      "size_bytes": 1605096,
+      "sha256": "70f1f81892f4959804be89dee9482a4560a004300e0f3ef3bab780c520356bb8",
+      "nodes": 11,
+      "triangles": 27772,
+      "total_buildings": 1023,
+      "residential_and_villa_count": 701,
+      "greenhouse_count": 322,
+      "counts_by_category": {
+        "residential": 579,
+        "heritage_villa": 122,
+        "agriculture_greenhouse": 322
+      },
+      "counts_by_roof_class": {
+        "roof_terracotta_gable": 160,
+        "roof_highland_blue_gable": 176,
+        "roof_pine_green_hip": 178,
+        "roof_zinc_silver_gable": 65,
+        "roof_slate_French_villa_hip": 122,
+        "agri_greenhouse_arch": 322
+      },
+      "slope_seating_audit": {
+        "target_foundation_drop_m": -1.2,
+        "verified_min_embed_m": -1.2,
+        "max_terrain_slope_delta_m": 0.658,
+        "floating_buildings_count": 0
+      },
+      "exclusion_clipping_audit": {
+        "in_water_count": 0,
+        "in_landmark_exclusion_count": 0,
+        "in_road_carriageway_count": 0,
+        "rejected_candidates": {
+          "water": 0,
+          "doi_cu_fairway": 0,
+          "landmark_exclusion": 0,
+          "road_carriageway": 141,
+          "parcel_overlap": 155,
+          "steep_cliff": 0
+        }
+      },
+      "updated_at_utc": "2026-11-24T11:50:05Z"
+    },
+    "T_W05_N01": {
+      "tile_id": "T_W05_N01",
+      "label_vi": "[RING_2] Nam Hồ Suối Vàng – Đập Thủy Điện Ankroet Nam",
+      "ix": -5,
+      "iy": 1,
+      "ring": 2,
+      "glb_path": "02_ASSETS_3D/building_tiles/buildings_T_W05_N01.glb",
+      "size_bytes": 1564100,
+      "sha256": "002e0166118e11e32d5633dd44756231bfa2c9234562bd07f302a9f57478dc00",
+      "nodes": 11,
+      "triangles": 27038,
+      "total_buildings": 992,
+      "residential_and_villa_count": 669,
+      "greenhouse_count": 323,
+      "counts_by_category": {
+        "residential": 550,
+        "heritage_villa": 119,
+        "agriculture_greenhouse": 323
+      },
+      "counts_by_roof_class": {
+        "roof_terracotta_gable": 175,
+        "roof_pine_green_hip": 168,
+        "roof_highland_blue_gable": 161,
+        "roof_zinc_silver_gable": 46,
+        "roof_slate_French_villa_hip": 119,
+        "agri_greenhouse_arch": 323
+      },
+      "slope_seating_audit": {
+        "target_foundation_drop_m": -1.2,
+        "verified_min_embed_m": -1.2,
+        "max_terrain_slope_delta_m": 0.704,
+        "floating_buildings_count": 0
+      },
+      "exclusion_clipping_audit": {
+        "in_water_count": 0,
+        "in_landmark_exclusion_count": 0,
+        "in_road_carriageway_count": 0,
+        "rejected_candidates": {
+          "water": 0,
+          "doi_cu_fairway": 0,
+          "landmark_exclusion": 0,
+          "road_carriageway": 111,
+          "parcel_overlap": 156,
+          "steep_cliff": 0
+        }
+      },
+      "updated_at_utc": "2026-11-24T11:50:07Z"
+    },
+    "T_W04_N01": {
+      "tile_id": "T_W04_N01",
+      "label_vi": "[RING_2] Tây Bắc Làng Hoa Vạn Thành – Rừng Thông Ankroet Đông Nam",
+      "ix": -4,
+      "iy": 1,
+      "ring": 2,
+      "glb_path": "02_ASSETS_3D/building_tiles/buildings_T_W04_N01.glb",
+      "size_bytes": 1540004,
+      "sha256": "1c745995e80d41a1cbd17a05eb5928523d3cb690abd54d751147410a42b710ae",
+      "nodes": 11,
+      "triangles": 26590,
+      "total_buildings": 970,
+      "residential_and_villa_count": 639,
+      "greenhouse_count": 331,
+      "counts_by_category": {
+        "residential": 532,
+        "heritage_villa": 107,
+        "agriculture_greenhouse": 331
+      },
+      "counts_by_roof_class": {
+        "roof_zinc_silver_gable": 54,
+        "roof_terracotta_gable": 170,
+        "roof_highland_blue_gable": 141,
+        "roof_pine_green_hip": 167,
+        "roof_slate_French_villa_hip": 107,
+        "agri_greenhouse_arch": 331
+      },
+      "slope_seating_audit": {
+        "target_foundation_drop_m": -1.2,
+        "verified_min_embed_m": -1.2,
+        "max_terrain_slope_delta_m": 0.722,
+        "floating_buildings_count": 0
+      },
+      "exclusion_clipping_audit": {
+        "in_water_count": 0,
+        "in_landmark_exclusion_count": 0,
+        "in_road_carriageway_count": 0,
+        "rejected_candidates": {
+          "water": 0,
+          "doi_cu_fairway": 0,
+          "landmark_exclusion": 0,
+          "road_carriageway": 127,
+          "parcel_overlap": 156,
+          "steep_cliff": 0
+        }
+      },
+      "updated_at_utc": "2026-11-24T11:50:10Z"
+    },
+    "T_W04_N02": {
+      "tile_id": "T_W04_N02",
+      "label_vi": "[RING_2] Đông Nam Hồ Suối Vàng – Thung lũng Vàng Nam – Ankroet Đông",
+      "ix": -4,
+      "iy": 2,
+      "ring": 2,
+      "glb_path": "02_ASSETS_3D/building_tiles/buildings_T_W04_N02.glb",
+      "size_bytes": 1474076,
+      "sha256": "3e3c925eb00724ea90628254b699c1db842071c43a86486855fb2495b4baf8f9",
+      "nodes": 11,
+      "triangles": 25422,
+      "total_buildings": 923,
+      "residential_and_villa_count": 596,
+      "greenhouse_count": 327,
+      "counts_by_category": {
+        "residential": 490,
+        "heritage_villa": 106,
+        "agriculture_greenhouse": 327
+      },
+      "counts_by_roof_class": {
+        "roof_zinc_silver_gable": 39,
+        "roof_terracotta_gable": 143,
+        "roof_highland_blue_gable": 152,
+        "roof_pine_green_hip": 156,
+        "roof_slate_French_villa_hip": 106,
+        "agri_greenhouse_arch": 327
+      },
+      "slope_seating_audit": {
+        "target_foundation_drop_m": -1.2,
+        "verified_min_embed_m": -1.2,
+        "max_terrain_slope_delta_m": 0.891,
+        "floating_buildings_count": 0
+      },
+      "exclusion_clipping_audit": {
+        "in_water_count": 0,
+        "in_landmark_exclusion_count": 0,
+        "in_road_carriageway_count": 0,
+        "rejected_candidates": {
+          "water": 119,
+          "doi_cu_fairway": 0,
+          "landmark_exclusion": 0,
+          "road_carriageway": 81,
+          "parcel_overlap": 138,
+          "steep_cliff": 0
+        }
+      },
+      "updated_at_utc": "2026-11-24T11:50:12Z"
+    },
+    "T_W05_N02": {
+      "tile_id": "T_W05_N02",
+      "label_vi": "[RING_2] Trung tâm Đập Đankia – Nhà máy Thủy điện Ankroet Lạc Dương",
+      "ix": -5,
+      "iy": 2,
+      "ring": 2,
+      "glb_path": "02_ASSETS_3D/building_tiles/buildings_T_W05_N02.glb",
+      "size_bytes": 1439668,
+      "sha256": "1292748a5cdcd1de3ac4959dc3f4fa2e46a7ec1889d2dfa2e0e7f517c77dcc99",
+      "nodes": 11,
+      "triangles": 24836,
+      "total_buildings": 904,
+      "residential_and_villa_count": 590,
+      "greenhouse_count": 314,
+      "counts_by_category": {
+        "residential": 488,
+        "heritage_villa": 102,
+        "agriculture_greenhouse": 314
+      },
+      "counts_by_roof_class": {
+        "roof_pine_green_hip": 135,
+        "roof_highland_blue_gable": 166,
+        "roof_terracotta_gable": 138,
+        "roof_zinc_silver_gable": 49,
+        "roof_slate_French_villa_hip": 102,
+        "agri_greenhouse_arch": 314
+      },
+      "slope_seating_audit": {
+        "target_foundation_drop_m": -1.2,
+        "verified_min_embed_m": -1.2,
+        "max_terrain_slope_delta_m": 0.689,
+        "floating_buildings_count": 0
+      },
+      "exclusion_clipping_audit": {
+        "in_water_count": 0,
+        "in_landmark_exclusion_count": 0,
+        "in_road_carriageway_count": 0,
+        "rejected_candidates": {
+          "water": 138,
+          "doi_cu_fairway": 0,
+          "landmark_exclusion": 0,
+          "road_carriageway": 96,
+          "parcel_overlap": 115,
+          "steep_cliff": 0
+        }
+      },
+      "updated_at_utc": "2026-11-24T11:50:14Z"
+    },
+    "T_W06_N02": {
+      "tile_id": "T_W06_N02",
+      "label_vi": "[RING_2] Tây Nam Hồ Suối Vàng – Đồi Cỏ Hồng Nam",
+      "ix": -6,
+      "iy": 2,
+      "ring": 2,
+      "glb_path": "02_ASSETS_3D/building_tiles/buildings_T_W06_N02.glb",
+      "size_bytes": 1552580,
+      "sha256": "bca57352643c34adb0c40e4d3296cbc9ae72acf14373d587b1db08c501d6b13d",
+      "nodes": 11,
+      "triangles": 26852,
+      "total_buildings": 988,
+      "residential_and_villa_count": 674,
+      "greenhouse_count": 314,
+      "counts_by_category": {
+        "residential": 581,
+        "heritage_villa": 93,
+        "agriculture_greenhouse": 314
+      },
+      "counts_by_roof_class": {
+        "roof_highland_blue_gable": 160,
+        "roof_terracotta_gable": 178,
+        "roof_zinc_silver_gable": 62,
+        "roof_pine_green_hip": 181,
+        "roof_slate_French_villa_hip": 93,
+        "agri_greenhouse_arch": 314
+      },
+      "slope_seating_audit": {
+        "target_foundation_drop_m": -1.2,
+        "verified_min_embed_m": -1.2,
+        "max_terrain_slope_delta_m": 0.669,
+        "floating_buildings_count": 0
+      },
+      "exclusion_clipping_audit": {
+        "in_water_count": 0,
+        "in_landmark_exclusion_count": 0,
+        "in_road_carriageway_count": 0,
+        "rejected_candidates": {
+          "water": 0,
+          "doi_cu_fairway": 0,
+          "landmark_exclusion": 0,
+          "road_carriageway": 121,
+          "parcel_overlap": 170,
+          "steep_cliff": 0
+        }
+      },
+      "updated_at_utc": "2026-11-24T11:50:16Z"
+    },
+    "T_W05_N03": {
+      "tile_id": "T_W05_N03",
+      "label_vi": "[RING_2] Lòng chảo Hồ Suối Vàng Tây Nam – Bán đảo Cây Thông Cô Đơn Nam",
+      "ix": -5,
+      "iy": 3,
+      "ring": 2,
+      "glb_path": "02_ASSETS_3D/building_tiles/buildings_T_W05_N03.glb",
+      "size_bytes": 1425616,
+      "sha256": "8a905d419f84baf937ed6cc97daa4c0f4e472c60d835a08d602194f2585424bb",
+      "nodes": 11,
+      "triangles": 24574,
+      "total_buildings": 891,
+      "residential_and_villa_count": 572,
+      "greenhouse_count": 319,
+      "counts_by_category": {
+        "residential": 467,
+        "heritage_villa": 105,
+        "agriculture_greenhouse": 319
+      },
+      "counts_by_roof_class": {
+        "roof_pine_green_hip": 132,
+        "roof_zinc_silver_gable": 37,
+        "roof_highland_blue_gable": 132,
+        "roof_terracotta_gable": 166,
+        "roof_slate_French_villa_hip": 105,
+        "agri_greenhouse_arch": 319
+      },
+      "slope_seating_audit": {
+        "target_foundation_drop_m": -1.2,
+        "verified_min_embed_m": -1.2,
+        "max_terrain_slope_delta_m": 0.785,
+        "floating_buildings_count": 0
+      },
+      "exclusion_clipping_audit": {
+        "in_water_count": 0,
+        "in_landmark_exclusion_count": 0,
+        "in_road_carriageway_count": 0,
+        "rejected_candidates": {
+          "water": 122,
+          "doi_cu_fairway": 0,
+          "landmark_exclusion": 0,
+          "road_carriageway": 67,
+          "parcel_overlap": 116,
+          "steep_cliff": 0
+        }
+      },
+      "updated_at_utc": "2026-11-24T11:50:18Z"
+    },
+    "T_W06_N03": {
+      "tile_id": "T_W06_N03",
+      "label_vi": "[RING_2] Tây Hồ Suối Vàng – Rừng Thông Suối Cạn Nam",
+      "ix": -6,
+      "iy": 3,
+      "ring": 2,
+      "glb_path": "02_ASSETS_3D/building_tiles/buildings_T_W06_N03.glb",
+      "size_bytes": 1466512,
+      "sha256": "69f17b09f414b2ea2740f1f3f9ae4d80101474d85bb0d348f93a1db970f47c94",
+      "nodes": 11,
+      "triangles": 25324,
+      "total_buildings": 926,
+      "residential_and_villa_count": 616,
+      "greenhouse_count": 310,
+      "counts_by_category": {
+        "residential": 517,
+        "heritage_villa": 99,
+        "agriculture_greenhouse": 310
+      },
+      "counts_by_roof_class": {
+        "roof_zinc_silver_gable": 43,
+        "roof_pine_green_hip": 170,
+        "roof_highland_blue_gable": 160,
+        "roof_terracotta_gable": 144,
+        "roof_slate_French_villa_hip": 99,
+        "agri_greenhouse_arch": 310
+      },
+      "slope_seating_audit": {
+        "target_foundation_drop_m": -1.2,
+        "verified_min_embed_m": -1.2,
+        "max_terrain_slope_delta_m": 0.83,
+        "floating_buildings_count": 0
+      },
+      "exclusion_clipping_audit": {
+        "in_water_count": 0,
+        "in_landmark_exclusion_count": 0,
+        "in_road_carriageway_count": 0,
+        "rejected_candidates": {
+          "water": 133,
+          "doi_cu_fairway": 0,
+          "landmark_exclusion": 0,
+          "road_carriageway": 123,
+          "parcel_overlap": 137,
+          "steep_cliff": 0
+        }
+      },
+      "updated_at_utc": "2026-11-24T11:50:20Z"
+    },
+    "T_W07_N02": {
+      "tile_id": "T_W07_N02",
+      "label_vi": "[RING_2] Rừng Thông Tây Hồ Suối Vàng – Đồi Cỏ Hồng Tây",
+      "ix": -7,
+      "iy": 2,
+      "ring": 2,
+      "glb_path": "02_ASSETS_3D/building_tiles/buildings_T_W07_N02.glb",
+      "size_bytes": 1539960,
+      "sha256": "f9a6d8d11754cbc7606cd043991feee6c2d59c44859b9513889aa5867e70eb31",
+      "nodes": 11,
+      "triangles": 26598,
+      "total_buildings": 972,
+      "residential_and_villa_count": 645,
+      "greenhouse_count": 327,
+      "counts_by_category": {
+        "residential": 554,
+        "heritage_villa": 91,
+        "agriculture_greenhouse": 327
+      },
+      "counts_by_roof_class": {
+        "roof_terracotta_gable": 174,
+        "roof_pine_green_hip": 166,
+        "roof_highland_blue_gable": 160,
+        "roof_zinc_silver_gable": 54,
+        "roof_slate_French_villa_hip": 91,
+        "agri_greenhouse_arch": 327
+      },
+      "slope_seating_audit": {
+        "target_foundation_drop_m": -1.2,
+        "verified_min_embed_m": -1.2,
+        "max_terrain_slope_delta_m": 0.645,
+        "floating_buildings_count": 0
+      },
+      "exclusion_clipping_audit": {
+        "in_water_count": 0,
+        "in_landmark_exclusion_count": 0,
+        "in_road_carriageway_count": 0,
+        "rejected_candidates": {
+          "water": 0,
+          "doi_cu_fairway": 0,
+          "landmark_exclusion": 0,
+          "road_carriageway": 126,
+          "parcel_overlap": 159,
+          "steep_cliff": 0
+        }
+      },
+      "updated_at_utc": "2026-11-24T12:50:19Z"
+    },
+    "T_W08_N02": {
+      "tile_id": "T_W08_N02",
+      "label_vi": "[RING_2] Hành lang Tây Hồ Suối Vàng – Thượng nguồn Suối Cạn Nam",
+      "ix": -8,
+      "iy": 2,
+      "ring": 2,
+      "glb_path": "02_ASSETS_3D/building_tiles/buildings_T_W08_N02.glb",
+      "size_bytes": 1544024,
+      "sha256": "97c8baa35aadacf2ea5d0f55b5925df737bba173bfcaa0562ecd79713417eab1",
+      "nodes": 11,
+      "triangles": 26666,
+      "total_buildings": 974,
+      "residential_and_villa_count": 645,
+      "greenhouse_count": 329,
+      "counts_by_category": {
+        "residential": 537,
+        "heritage_villa": 108,
+        "agriculture_greenhouse": 329
+      },
+      "counts_by_roof_class": {
+        "roof_pine_green_hip": 153,
+        "roof_zinc_silver_gable": 40,
+        "roof_terracotta_gable": 173,
+        "roof_highland_blue_gable": 171,
+        "roof_slate_French_villa_hip": 108,
+        "agri_greenhouse_arch": 329
+      },
+      "slope_seating_audit": {
+        "target_foundation_drop_m": -1.2,
+        "verified_min_embed_m": -1.2,
+        "max_terrain_slope_delta_m": 0.848,
+        "floating_buildings_count": 0
+      },
+      "exclusion_clipping_audit": {
+        "in_water_count": 0,
+        "in_landmark_exclusion_count": 0,
+        "in_road_carriageway_count": 0,
+        "rejected_candidates": {
+          "water": 0,
+          "doi_cu_fairway": 0,
+          "landmark_exclusion": 0,
+          "road_carriageway": 82,
+          "parcel_overlap": 172,
+          "steep_cliff": 0
+        }
+      },
+      "updated_at_utc": "2026-11-24T12:50:21Z"
+    },
+    "T_W07_N03": {
+      "tile_id": "T_W07_N03",
+      "label_vi": "[RING_2] Thung lũng Suối Cạn Nam – Bờ Tây Bắc Hồ Suối Vàng",
+      "ix": -7,
+      "iy": 3,
+      "ring": 2,
+      "glb_path": "02_ASSETS_3D/building_tiles/buildings_T_W07_N03.glb",
+      "size_bytes": 1459960,
+      "sha256": "aa9056024ddc50e3896a75d69a54e0073eea3980ac4259bba7c14072862d0f8f",
+      "nodes": 11,
+      "triangles": 25176,
+      "total_buildings": 914,
+      "residential_and_villa_count": 590,
+      "greenhouse_count": 324,
+      "counts_by_category": {
+        "residential": 480,
+        "heritage_villa": 110,
+        "agriculture_greenhouse": 324
+      },
+      "counts_by_roof_class": {
+        "roof_highland_blue_gable": 146,
+        "roof_zinc_silver_gable": 38,
+        "roof_terracotta_gable": 147,
+        "roof_pine_green_hip": 149,
+        "roof_slate_French_villa_hip": 110,
+        "agri_greenhouse_arch": 324
+      },
+      "slope_seating_audit": {
+        "target_foundation_drop_m": -1.2,
+        "verified_min_embed_m": -1.2,
+        "max_terrain_slope_delta_m": 0.726,
+        "floating_buildings_count": 0
+      },
+      "exclusion_clipping_audit": {
+        "in_water_count": 0,
+        "in_landmark_exclusion_count": 0,
+        "in_road_carriageway_count": 0,
+        "rejected_candidates": {
+          "water": 109,
+          "doi_cu_fairway": 0,
+          "landmark_exclusion": 0,
+          "road_carriageway": 97,
+          "parcel_overlap": 149,
+          "steep_cliff": 0
+        }
+      },
+      "updated_at_utc": "2026-11-24T12:50:23Z"
+    },
+    "T_W08_N03": {
+      "tile_id": "T_W08_N03",
+      "label_vi": "[RING_2] Rừng Nguyên Sinh Tây Suối Vàng – Đèo Tà Nung Tây Bắc",
+      "ix": -8,
+      "iy": 3,
+      "ring": 2,
+      "glb_path": "02_ASSETS_3D/building_tiles/buildings_T_W08_N03.glb",
+      "size_bytes": 1562824,
+      "sha256": "d259fc1aa0647e46341f145f0e0b8dc5a81228517fa89b423fec4ea600556383",
+      "nodes": 11,
+      "triangles": 27006,
+      "total_buildings": 989,
+      "residential_and_villa_count": 662,
+      "greenhouse_count": 327,
+      "counts_by_category": {
+        "residential": 557,
+        "heritage_villa": 105,
+        "agriculture_greenhouse": 327
+      },
+      "counts_by_roof_class": {
+        "roof_highland_blue_gable": 166,
+        "roof_pine_green_hip": 178,
+        "roof_zinc_silver_gable": 47,
+        "roof_terracotta_gable": 166,
+        "roof_slate_French_villa_hip": 105,
+        "agri_greenhouse_arch": 327
+      },
+      "slope_seating_audit": {
+        "target_foundation_drop_m": -1.2,
+        "verified_min_embed_m": -1.2,
+        "max_terrain_slope_delta_m": 0.804,
+        "floating_buildings_count": 0
+      },
+      "exclusion_clipping_audit": {
+        "in_water_count": 0,
+        "in_landmark_exclusion_count": 0,
+        "in_road_carriageway_count": 0,
+        "rejected_candidates": {
+          "water": 0,
+          "doi_cu_fairway": 0,
+          "landmark_exclusion": 0,
+          "road_carriageway": 109,
+          "parcel_overlap": 155,
+          "steep_cliff": 0
+        }
+      },
+      "updated_at_utc": "2026-11-24T12:50:25Z"
+    },
+    "T_W08_N04": {
+      "tile_id": "T_W08_N04",
+      "label_vi": "[RING_2] Ma Rừng Lữ Quán Nam – Thung lũng Suối Cạn Tây",
+      "ix": -8,
+      "iy": 4,
+      "ring": 2,
+      "glb_path": "02_ASSETS_3D/building_tiles/buildings_T_W08_N04.glb",
+      "size_bytes": 1493184,
+      "sha256": "45acae3ecc8abf844b194c48e62d24d5f9c9c4cee4cc2a2af0efc76a2cdb1e76",
+      "nodes": 11,
+      "triangles": 25714,
+      "total_buildings": 926,
+      "residential_and_villa_count": 577,
+      "greenhouse_count": 349,
+      "counts_by_category": {
+        "residential": 480,
+        "heritage_villa": 97,
+        "agriculture_greenhouse": 349
+      },
+      "counts_by_roof_class": {
+        "roof_highland_blue_gable": 151,
+        "roof_pine_green_hip": 142,
+        "roof_zinc_silver_gable": 34,
+        "roof_terracotta_gable": 153,
+        "roof_slate_French_villa_hip": 97,
+        "agri_greenhouse_arch": 349
+      },
+      "slope_seating_audit": {
+        "target_foundation_drop_m": -1.2,
+        "verified_min_embed_m": -1.2,
+        "max_terrain_slope_delta_m": 0.77,
+        "floating_buildings_count": 0
+      },
+      "exclusion_clipping_audit": {
+        "in_water_count": 0,
+        "in_landmark_exclusion_count": 0,
+        "in_road_carriageway_count": 0,
+        "rejected_candidates": {
+          "water": 0,
+          "doi_cu_fairway": 0,
+          "landmark_exclusion": 0,
+          "road_carriageway": 57,
+          "parcel_overlap": 126,
+          "steep_cliff": 0
+        }
+      },
+      "updated_at_utc": "2026-11-24T12:50:27Z"
+    },
+    "T_W08_N05": {
+      "tile_id": "T_W08_N05",
+      "label_vi": "[RING_2] Ma Rừng Lữ Quán Trung Tâm – Rừng Thông Đankia Tây Bắc",
+      "ix": -8,
+      "iy": 5,
+      "ring": 2,
+      "glb_path": "02_ASSETS_3D/building_tiles/buildings_T_W08_N05.glb",
+      "size_bytes": 1392928,
+      "sha256": "d19c1e3dbdc4c25960acf53e8ca89a7605aa898c6e0cc17606436756e7436e66",
+      "nodes": 11,
+      "triangles": 23948,
+      "total_buildings": 857,
+      "residential_and_villa_count": 519,
+      "greenhouse_count": 338,
+      "counts_by_category": {
+        "residential": 423,
+        "heritage_villa": 96,
+        "agriculture_greenhouse": 338
+      },
+      "counts_by_roof_class": {
+        "roof_pine_green_hip": 126,
+        "roof_terracotta_gable": 144,
+        "roof_highland_blue_gable": 136,
+        "roof_zinc_silver_gable": 17,
+        "roof_slate_French_villa_hip": 96,
+        "agri_greenhouse_arch": 338
+      },
+      "slope_seating_audit": {
+        "target_foundation_drop_m": -1.2,
+        "verified_min_embed_m": -1.2,
+        "max_terrain_slope_delta_m": 0.653,
+        "floating_buildings_count": 0
+      },
+      "exclusion_clipping_audit": {
+        "in_water_count": 0,
+        "in_landmark_exclusion_count": 0,
+        "in_road_carriageway_count": 0,
+        "rejected_candidates": {
+          "water": 96,
+          "doi_cu_fairway": 0,
+          "landmark_exclusion": 0,
+          "road_carriageway": 42,
+          "parcel_overlap": 114,
+          "steep_cliff": 0
+        }
+      },
+      "updated_at_utc": "2026-11-24T12:50:29Z"
+    },
+    "T_E04_N02": {
+      "tile_id": "T_E04_N02",
+      "label_vi": "[RING_2] Đông Làng Hoa Thái Phiên – Hành lang Trại Mát Bắc – Đa Ra Hoa",
+      "ix": 4,
+      "iy": 2,
+      "ring": 2,
+      "glb_path": "02_ASSETS_3D/building_tiles/buildings_T_E04_N02.glb",
+      "size_bytes": 1416112,
+      "sha256": "bec55e007ef0740868e01aa97555e67e4bf205ae113a9ffa337b6a09f752090d",
+      "nodes": 10,
+      "triangles": 24428,
+      "total_buildings": 887,
+      "residential_and_villa_count": 573,
+      "greenhouse_count": 314,
+      "counts_by_category": {
+        "heritage_villa": 146,
+        "residential": 427,
+        "agriculture_greenhouse": 314
+      },
+      "counts_by_roof_class": {
+        "roof_slate_French_villa_hip": 146,
+        "roof_pine_green_hip": 153,
+        "roof_terracotta_gable": 164,
+        "roof_highland_blue_gable": 110,
+        "agri_greenhouse_arch": 314
+      },
+      "slope_seating_audit": {
+        "target_foundation_drop_m": -1.2,
+        "verified_min_embed_m": -1.2,
+        "max_terrain_slope_delta_m": 0.824,
+        "floating_buildings_count": 0
+      },
+      "exclusion_clipping_audit": {
+        "in_water_count": 0,
+        "in_landmark_exclusion_count": 0,
+        "in_road_carriageway_count": 0,
+        "rejected_candidates": {
+          "water": 79,
+          "doi_cu_fairway": 0,
+          "landmark_exclusion": 0,
+          "road_carriageway": 151,
+          "parcel_overlap": 136,
+          "steep_cliff": 0
+        }
+      },
+      "updated_at_utc": "2026-11-24T12:50:31Z"
+    },
+    "T_E04_N03": {
+      "tile_id": "T_E04_N03",
+      "label_vi": "[RING_2] Đồi Thông Đa Ra Hoa – Hành lang Quốc lộ 27C Đa Nhim Tây",
+      "ix": 4,
+      "iy": 3,
+      "ring": 2,
+      "glb_path": "02_ASSETS_3D/building_tiles/buildings_T_E04_N03.glb",
+      "size_bytes": 1513128,
+      "sha256": "b85b38fa407ba1a15b5aedfcd6c4c85c8172da982fe30aeab42fcee3f634e17d",
+      "nodes": 10,
+      "triangles": 26116,
+      "total_buildings": 949,
+      "residential_and_villa_count": 615,
+      "greenhouse_count": 334,
+      "counts_by_category": {
+        "residential": 450,
+        "heritage_villa": 165,
+        "agriculture_greenhouse": 334
+      },
+      "counts_by_roof_class": {
+        "roof_pine_green_hip": 160,
+        "roof_terracotta_gable": 176,
+        "roof_slate_French_villa_hip": 165,
+        "roof_highland_blue_gable": 114,
+        "agri_greenhouse_arch": 334
+      },
+      "slope_seating_audit": {
+        "target_foundation_drop_m": -1.2,
+        "verified_min_embed_m": -1.2,
+        "max_terrain_slope_delta_m": 0.903,
+        "floating_buildings_count": 0
+      },
+      "exclusion_clipping_audit": {
+        "in_water_count": 0,
+        "in_landmark_exclusion_count": 0,
+        "in_road_carriageway_count": 0,
+        "rejected_candidates": {
+          "water": 0,
+          "doi_cu_fairway": 0,
+          "landmark_exclusion": 0,
+          "road_carriageway": 220,
+          "parcel_overlap": 140,
+          "steep_cliff": 0
+        }
+      },
+      "updated_at_utc": "2026-11-24T12:50:34Z"
     }
   },
-  "wave": "T5_AUTO_R2_166TILES_122K_BUILDINGS_AND_112_ROADS",
-  "total_tiles": 166,
+  "wave": "T5_AUTO_R2_190TILES_144K_BUILDINGS_50K_GREENHOUSES_AND_130_ROADS",
+  "total_tiles": 190,
   "floating_buildings_across_tiles": 0,
   "closed_7x7_basin_tiles": 49,
-  "ring2_tiles_count": 136,
-  "outer_ring2_corridor_tiles": 117,
+  "ring2_tiles_count": 160,
+  "outer_ring2_corridor_tiles": 141,
   "road_network_summary": {
-    "total_corridors": 112,
-    "total_length_km": 476.874,
-    "total_triangles": 603560,
-    "total_streetlamps": 30842,
+    "total_corridors": 130,
+    "total_length_km": 587.632,
+    "total_triangles": 750504,
+    "total_streetlamps": 38892,
     "layers": [
       {
         "layer": "RING_0",
@@ -7980,6 +9134,27 @@
         "glb": "roads_ring2_c166.glb",
         "corridors": 6,
         "length_km": 29.459
+      },
+      {
+        "layer": "RING_2_500KM_ROADS_CORRIDORS",
+        "geojson": "major_roads_ring2_c174.geojson",
+        "glb": "roads_ring2_c174.glb",
+        "corridors": 6,
+        "length_km": 39.057
+      },
+      {
+        "layer": "RING_2_728KM2_CORRIDORS",
+        "geojson": "major_roads_ring2_c182.geojson",
+        "glb": "roads_ring2_c182.glb",
+        "corridors": 6,
+        "length_km": 35.073
+      },
+      {
+        "layer": "RING_2_50K_GREENHOUSES_CORRIDORS",
+        "geojson": "major_roads_ring2_c190.geojson",
+        "glb": "roads_ring2_c190.glb",
+        "corridors": 6,
+        "length_km": 36.628
       }
     ]
   },

@@ -4,8 +4,8 @@
   "slot": 8,
   "display_slot_name": "ĐÀ LẠT - 07",
   "lane": "SPIRITUAL_TOURISM_COMPLEXES",
-  "wave_completed": 9,
-  "updated_at_utc": "2026-11-24T09:32:06.938326+00:00",
+  "wave_completed": 10,
+  "updated_at_utc": "2026-11-24T11:41:32.251609+00:00",
   "coordinate_origin": {
     "name": "Tam_Ho_Xuan_Huong_Da_Lat",
     "lat0": 11.940419,
@@ -15,7 +15,7 @@
     "axes_gltf_threejs": "+X=East, +Y=Up (z_local), +Z=South (-y_m)"
   },
   "no_khr_materials_transmission": true,
-  "built_complexes_count": 9,
+  "built_complexes_count": 10,
   "total_planned_waves": 5,
   "complexes": [
     {
@@ -1497,7 +1497,197 @@
       "year_completed": "1938 / 1940 (Chùa Linh Sơn & Chùa Sư Nữ Linh Phong) & 2016 (Khu Du lịch Lá Phong Đà Lạt)",
       "source_url": "https://dalat.vn/vi/chualinhson",
       "description_vi": "Tổ hợp 2 quần thể cổ tự Phật giáo lịch sử thập niên 1930–1940 và khu du lịch sinh thái kiến trúc Origami – Nhật Bản cấp LOD0: (1) Quần thể Chùa Linh Sơn (120 Nguyễn Văn Trỗi, xây dựng 1938–1940 trên đồi thông 4ha — ô T_W01_N00) với Cổng Tam Quan hướng Tây Nam, Chánh điện mái đao cong 2 tầng tôn trí Tượng Phật Thích Ca bằng đồng đúc năm 1952 (cao 1.7m, nặng 1.250kg) và Đại Hồng Chung 450kg, Bảo tháp bát giác 3 tầng, kết hợp Chùa Sư Nữ Linh Phong (72C Hoàng Hoa Thám, khởi dựng 1940); (2) Quần thể Khu Du lịch Rừng Lá Phong Đà Lạt (45 Đặng Thái Thân — ô T_E00_S01) rộng gần 5ha với Ngôi Nhà 132 Mái Origami, Nhà Trống ghép từ 20 mặt trống kính màu phát sáng ban đêm (alphaMode BLEND), Hồ Cá Koi Nhật Bản dài 36m kèm cầu gỗ đỏ, Quán cà phê Kokoro, Cổng Quần Long Hội Tụ và rừng hơn 2.000 cây Lá Phong Đỏ ôn đới."
+    },
+    {
+      "id": "tc_10_chua_thien_vuong_co_sat_and_van_thanh_flower_village",
+      "name_vi": "Quần thể Chùa Thiên Vương Cổ Sát (Chùa Tàu 1958 – 3 Tượng Phật Trầm Hương 1.500kg & Bàn Xoay Kỳ Diệu) & Khu Du lịch Làng Hoa Vạn Thành – Fresh Garden Đà Lạt (LOD0)",
+      "name_en": "Thien Vuong Co Sat 1958 Chinese Pagoda (Three 1,500kg Agarwood Buddhas & Magic Spinning Table) & Van Thanh 200ha Flower Village – Fresh Garden Dalat (LOD0)",
+      "task_id": "T8_AUTO_W10_CHUA_THIEN_VUONG_CO_SAT_AND_VAN_THANH_FLOWER_VILLAGE",
+      "wave": 10,
+      "slot": 8,
+      "ring": 2,
+      "status": "built",
+      "built": true,
+      "coordinate_space": "world_gltf_y_up",
+      "lat": 11.9308,
+      "lon": 108.4635,
+      "elev_msl_m": 1558.963,
+      "x_m": 1986.644,
+      "y_m": -1070.782,
+      "z_local_m": 80.963,
+      "gltf_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "sub_complexes": {
+        "chua_thien_vuong_co_sat_1958_chua_tau": {
+          "lat": 11.9308,
+          "lon": 108.4635,
+          "x_m": 1986.644,
+          "y_m": -1070.782,
+          "elev_msl_m": 1558.963,
+          "gltf_anchor": [
+            1986.644,
+            80.963,
+            1070.782
+          ],
+          "heading_deg": 250.0,
+          "tile_id": "T_E01_S01",
+          "quang_minh_bao_dien_size_m": [
+            12.0,
+            12.0,
+            12.0
+          ],
+          "agarwood_buddha_statues_count": 3,
+          "agarwood_buddha_weight_kg_each": 1500,
+          "outdoor_sakyamuni_height_m": 10.5,
+          "magic_spinning_table": true,
+          "exclusion_polygon_wgs84": [
+            [
+              108.462888,
+              11.9305208
+            ],
+            [
+              108.4632146,
+              11.9313987
+            ],
+            [
+              108.4641465,
+              11.9310669
+            ],
+            [
+              108.4638199,
+              11.930189
+            ],
+            [
+              108.462888,
+              11.9305208
+            ]
+          ]
+        },
+        "lang_hoa_van_thanh_and_fresh_garden_dalat": {
+          "lat": 11.9412,
+          "lon": 108.4148,
+          "x_m": -3317.317,
+          "y_m": 86.941,
+          "elev_msl_m": 1476.455,
+          "gltf_anchor": [
+            -3317.317,
+            -1.545,
+            -86.941
+          ],
+          "heading_deg": 165.0,
+          "tile_id": "T_W02_N00",
+          "cultivation_area_ha": 200.0,
+          "flower_households_count": 300,
+          "exclusion_polygon_wgs84": [
+            [
+              108.4144081,
+              11.9418515
+            ],
+            [
+              108.4154723,
+              11.9415725
+            ],
+            [
+              108.4151919,
+              11.9405486
+            ],
+            [
+              108.4141277,
+              11.9408276
+            ],
+            [
+              108.4144081,
+              11.9418515
+            ]
+          ]
+        }
+      },
+      "tile_id": "T_E01_S01",
+      "spanned_tiles": [
+        "T_E01_S01",
+        "T_W02_N00"
+      ],
+      "heading_deg": 250.0,
+      "rotation_y_rad": 0.0,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "foundation_skirt_m": -4.5,
+      "bbox_min_m": [
+        -3390.543,
+        -5.895,
+        -159.46
+      ],
+      "bbox_max_m": [
+        2057.052,
+        97.163,
+        1138.799
+      ],
+      "footprint_m": {
+        "width_x": 5447.6,
+        "length_z": 1298.26,
+        "height_span_y": 103.06
+      },
+      "exclusion_polygon_wgs84": [
+        [
+          108.462888,
+          11.9305208
+        ],
+        [
+          108.4632146,
+          11.9313987
+        ],
+        [
+          108.4641465,
+          11.9310669
+        ],
+        [
+          108.4638199,
+          11.930189
+        ],
+        [
+          108.462888,
+          11.9305208
+        ]
+      ],
+      "glb_file": "tc_10_chua_thien_vuong_co_sat_and_van_thanh_flower_village.glb",
+      "glb_path": "02_ASSETS_3D/tourism_complexes/tc_10_chua_thien_vuong_co_sat_and_van_thanh_flower_village.glb",
+      "sha256": "e1436c216327454b6ef4eac9c534bfd49503e9551f0fc412123259bef01e4fde",
+      "size_bytes": 766900,
+      "triangles": 9494,
+      "nodes": 15,
+      "materials": 11,
+      "embedded_textures": 3,
+      "no_khr_transmission": true,
+      "sourced_kits_reused": [
+        "02_ASSETS_3D/sourced_library/landmarks/kit_vietnamese_pagoda_roof_stupa.glb",
+        "02_ASSETS_3D/sourced_library/landmarks/lm_55_van_thanh_flower_village_rose_and_gerbera_glasshouse_kit.glb",
+        "02_ASSETS_3D/sourced_library/landmarks/lm_74_fresh_garden_dalat_windmill_flower_gate.glb"
+      ],
+      "camera_preset": {
+        "eye_gltf": [
+          1930.9603,
+          112.9631,
+          1001.5626
+        ],
+        "target_gltf": [
+          1992.2822,
+          87.9631,
+          1072.8341
+        ],
+        "fov_deg": 48.0
+      },
+      "architectural_style": "Huayan Chinese Buddhist Monastery (1958) & European Windmill / Highland Agricultural Glasshouse Park",
+      "architect": "Hòa thượng Thọ Dã – Hội quán Triều Châu (Chùa Thiên Vương Cổ Sát) & Làng Hoa Vạn Thành – KDL Fresh Garden",
+      "year_completed": "1958 / 1989 (Chùa Thiên Vương Cổ Sát) & 2012 / 2019 (Làng Hoa Vạn Thành & Fresh Garden Đà Lạt)",
+      "source_url": "https://vi.wikipedia.org/wiki/Thi%C3%AAn_V%C6%B0%C6%A1ng_C%E1%BB%95_S%C3%A1t",
+      "description_vi": "Tổ hợp quần thể tâm linh kiến trúc Hoa Nghiêm Tông và làng hoa du lịch sinh thái nhà kính cấp LOD0: (1) Quần thể Chùa Thiên Vương Cổ Sát (Chùa Tàu / Chùa Phật Trầm, số 385 Khe Sanh, Đồi Rồng — ô T_E01_S01) khởi dựng năm 1958 bởi Hòa thượng Thọ Dã với Cổng Tam Quan ngói lưu ly vàng, Từ Bi Bảo Điện thờ Phật Di Lặc cao 3m, Tứ Đại Thiên Vương và Chiếc Bàn Xoay Kỳ Diệu bằng gỗ, Quang Minh Bảo Điện hình tứ giác 12x12m cao 2 tầng (12m) tôn trí 3 pho tượng Tây Phương Tam Thánh bằng gỗ Trầm Hương cao 4m nặng 1.500kg mỗi pho thỉnh từ Hồng Kông năm 1958, cùng Đại tượng Phật Thích Ca lộ thiên cao trên 10m ngự đài sen trước bức phù điêu Cửu Long (9 rồng); (2) Quần thể Làng Hoa Truyền Thống Vạn Thành (200ha, 300 hộ trồng hoa) & KDL Fresh Garden Đà Lạt (40 - 90B Vạn Thành — ô T_W02_N00) với hệ thống nhà lồng kính vòm thép trồng hoa hồng/đồng tiền phát sáng 2700K ban đêm (alphaMode BLEND), Cối Xay Gió Hà Lan khổng lồ kết hoa Ngọc Thảo, Ngôi Nhà Hoa, Cổng Trời Âu, Hồ Nước Xanh và Động Băng Thiên Thần."
     }
   ],
-  "total_triangles_built": 102009
+  "total_triangles_built": 111503
 }

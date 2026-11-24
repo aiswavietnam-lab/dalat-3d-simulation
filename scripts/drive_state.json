@@ -25,39 +25,14 @@
     "size": "4230264"
   },
   "assets/building_tiles/building_tiles_manifest.json": {
-    "id": "1Ro-0n4FWEf4oH0k4om1TFpaBSqpwLTqE",
-    "modifiedTime": "2026-11-24T10:01:11.563Z",
-    "size": "261464"
-  },
-  "assets/building_tiles/buildings_T_E00_N00.glb": {
-    "id": "11QCtSXIJDF-PwK0k7cWRM6ZCxiMLI6eb",
-    "modifiedTime": "2026-11-23T13:09:45.923Z",
-    "size": "2187972"
-  },
-  "assets/building_tiles/buildings_T_E00_N01.glb": {
-    "id": "14TpxnhVv5vX1Jbh77nloRHb9H1b31fiv",
-    "modifiedTime": "2026-11-23T14:56:19.003Z",
-    "size": "1283028"
-  },
-  "assets/building_tiles/buildings_T_E00_N02.glb": {
-    "id": "1g_4x3zBT7S__eCqPHYxl1SG6KrZqWyn0",
-    "modifiedTime": "2026-11-23T16:08:45.211Z",
-    "size": "972188"
-  },
-  "assets/building_tiles/buildings_T_E00_N03.glb": {
-    "id": "1DoboazsYlH0QIZRi7mcRYODn7SQXd2Sl",
-    "modifiedTime": "2026-11-23T17:04:51.119Z",
-    "size": "1165356"
+    "id": "1PtLpbljadrRn8bAyBxetTSB-Ue_K1og3",
+    "modifiedTime": "2026-11-24T12:51:14.487Z",
+    "size": "300078"
   },
   "assets/building_tiles/buildings_T_E00_N04.glb": {
     "id": "1K_p7TI4N-lq6mBoECiKApvJA9rAeaG6a",
     "modifiedTime": "2026-11-23T21:14:24.920Z",
     "size": "1112848"
-  },
-  "assets/building_tiles/buildings_T_E00_N05.glb": {
-    "id": "1yRtSuwJZQCErWotZzy0R2QVotQRLM4eL",
-    "modifiedTime": "2026-11-23T21:45:35.485Z",
-    "size": "769536"
   },
   "assets/building_tiles/buildings_T_E00_N06.glb": {
     "id": "10rVbgT1pIS7BTI_mLrlj1AGPv-42Zc_l",
@@ -68,21 +43,6 @@
     "id": "1cwtKEPO7JKW6Qwm_dWsaXrZjpjDT-t0t",
     "modifiedTime": "2026-11-24T10:01:01.426Z",
     "size": "1493960"
-  },
-  "assets/building_tiles/buildings_T_E00_S01.glb": {
-    "id": "1dmJnLZB_KtslXGSv7zbvc0nIbGJzqRGV",
-    "modifiedTime": "2026-11-23T14:56:18.150Z",
-    "size": "712772"
-  },
-  "assets/building_tiles/buildings_T_E00_S02.glb": {
-    "id": "1JMYWbcBkoqKqf4rzolDSCpJWaknDXSN3",
-    "modifiedTime": "2026-11-23T16:08:44.514Z",
-    "size": "503780"
-  },
-  "assets/building_tiles/buildings_T_E00_S03.glb": {
-    "id": "1nqK47RHYeKiVUbR1Inx6eCj7qQxzJerX",
-    "modifiedTime": "2026-11-23T17:04:51.282Z",
-    "size": "860056"
   },
   "assets/building_tiles/buildings_T_E00_S04.glb": {
     "id": "1nSZ_G6vDxKZLkgCL2riIhFLM6lORkQ_R",
@@ -104,26 +64,6 @@
     "modifiedTime": "2026-11-24T04:47:39.499Z",
     "size": "964036"
   },
-  "assets/building_tiles/buildings_T_E01_N00.glb": {
-    "id": "1FCEtg9owTlVP7hrDwLIPI0lR23kPSr5L",
-    "modifiedTime": "2026-11-23T14:56:16.098Z",
-    "size": "962096"
-  },
-  "assets/building_tiles/buildings_T_E01_N01.glb": {
-    "id": "1AHu_mS71RXoNpFyJs5H89RPuWWnFEiTh",
-    "modifiedTime": "2026-11-23T14:56:19.242Z",
-    "size": "1125604"
-  },
-  "assets/building_tiles/buildings_T_E01_N02.glb": {
-    "id": "1qiwKYw90UeWXloqqXY3yl15ZUfCiZV2H",
-    "modifiedTime": "2026-11-23T17:04:52.856Z",
-    "size": "1231972"
-  },
-  "assets/building_tiles/buildings_T_E01_N03.glb": {
-    "id": "1LHi6djnyEOYmO5GiLNSk_OIuKARc9ehi",
-    "modifiedTime": "2026-11-23T18:13:30.216Z",
-    "size": "1151468"
-  },
   "assets/building_tiles/buildings_T_E01_N04.glb": {
     "id": "1rTcW3onAaJb380s0NpLjVtiReMDlzJ1O",
     "modifiedTime": "2026-11-23T23:50:53.708Z",
@@ -139,15 +79,10 @@
     "modifiedTime": "2026-11-23T23:11:33.638Z",
     "size": "908828"
   },
-  "assets/building_tiles/buildings_T_E01_S01.glb": {
-    "id": "15GbDNV3UTft_t4E3mfvYxccgY5qOVgm2",
-    "modifiedTime": "2026-11-23T14:56:15.845Z",
-    "size": "844580"
-  },
-  "assets/building_tiles/buildings_T_E01_S02.glb": {
-    "id": "1l894Bqp1er8lw8hayb8nitxr0I_fyNEJ",
-    "modifiedTime": "2026-11-23T16:08:46.736Z",
-    "size": "881760"
+  "assets/building_tiles/buildings_T_E01_N07.glb": {
+    "id": "1aglz7xDnVGLIAurA3z5SU9yPCgKE8wpv",
+    "modifiedTime": "2026-11-24T11:11:57.762Z",
+    "size": "1520448"
   },
   "assets/building_tiles/buildings_T_E01_S03.glb": {
     "id": "1-9QlCw_gQUoibSFKPRe-oUyv5nuYh3Ab",
@@ -174,26 +109,6 @@
     "modifiedTime": "2026-11-24T04:47:40.751Z",
     "size": "1015192"
   },
-  "assets/building_tiles/buildings_T_E02_N00.glb": {
-    "id": "1-_Gy4hU6aFtsAnfdg7oyoFsIcYm_l_yM",
-    "modifiedTime": "2026-11-23T16:08:46.675Z",
-    "size": "1335668"
-  },
-  "assets/building_tiles/buildings_T_E02_N01.glb": {
-    "id": "1Ew2mikMZ8jFEpscXzdQ_g-ds7MBiaNcF",
-    "modifiedTime": "2026-11-23T14:56:16.836Z",
-    "size": "1447212"
-  },
-  "assets/building_tiles/buildings_T_E02_N02.glb": {
-    "id": "1fv9VNeOhJuk3U6rAah2tkc-SR8NefcVB",
-    "modifiedTime": "2026-11-23T19:11:49.090Z",
-    "size": "1291536"
-  },
-  "assets/building_tiles/buildings_T_E02_N03.glb": {
-    "id": "1p6pPffDg_CRfXLSIOwTJQCbbN6eAaqS_",
-    "modifiedTime": "2026-11-23T19:49:15.353Z",
-    "size": "1101444"
-  },
   "assets/building_tiles/buildings_T_E02_N04.glb": {
     "id": "13GtZULUnIcFxQdQujer0dxv6RKQ8Kklx",
     "modifiedTime": "2026-11-24T00:43:59.863Z",
@@ -208,11 +123,6 @@
     "id": "1RWRSE5INiix7dkYmbGsi5k2GYw_ijQBA",
     "modifiedTime": "2026-11-24T10:01:03.014Z",
     "size": "1412596"
-  },
-  "assets/building_tiles/buildings_T_E02_S01.glb": {
-    "id": "1UDGTeKOVE19yiBQwmj0LdgXDC7V1btBF",
-    "modifiedTime": "2026-11-23T17:04:55.356Z",
-    "size": "772204"
   },
   "assets/building_tiles/buildings_T_E02_S02.glb": {
     "id": "1URQozdX5epSMrOLyqy4mMT1C0YDBZDm9",
@@ -239,21 +149,6 @@
     "modifiedTime": "2026-11-24T05:50:33.921Z",
     "size": "1430648"
   },
-  "assets/building_tiles/buildings_T_E03_N00.glb": {
-    "id": "1c1CTLabmfOsRk2d2hHvH8B-Ry2h0ZqOG",
-    "modifiedTime": "2026-11-23T14:56:18.235Z",
-    "size": "1562684"
-  },
-  "assets/building_tiles/buildings_T_E03_N01.glb": {
-    "id": "1fUN-qM88NSZYNcq4AhaiVxkpxf93y-ct",
-    "modifiedTime": "2026-11-23T18:15:15.439Z",
-    "size": "1250872"
-  },
-  "assets/building_tiles/buildings_T_E03_N02.glb": {
-    "id": "1gjUwXedBvymPwWLchnkQCuXEDg0c4Jtl",
-    "modifiedTime": "2026-11-23T19:49:14.594Z",
-    "size": "1100776"
-  },
   "assets/building_tiles/buildings_T_E03_N03.glb": {
     "id": "1m_eoviAKp8xQice9TDzN0UiNxcbMabaT",
     "modifiedTime": "2026-11-23T19:49:14.787Z",
@@ -269,10 +164,10 @@
     "modifiedTime": "2026-11-24T03:09:56.970Z",
     "size": "1131720"
   },
-  "assets/building_tiles/buildings_T_E03_S01.glb": {
-    "id": "1Sw4_6sGBm-OlcfmnbRp3uEiJ4UkemZ7j",
-    "modifiedTime": "2026-11-23T19:11:54.939Z",
-    "size": "1294944"
+  "assets/building_tiles/buildings_T_E03_N06.glb": {
+    "id": "1yLDF7zjvWXWruE2-9shZaQu_QWCg2vNk",
+    "modifiedTime": "2026-11-24T11:11:58.887Z",
+    "size": "1344240"
   },
   "assets/building_tiles/buildings_T_E03_S02.glb": {
     "id": "1ONvsQaFOlIdbXTTISW66taATiwhiAUm3",
@@ -294,15 +189,15 @@
     "modifiedTime": "2026-11-24T07:03:39.667Z",
     "size": "1370988"
   },
-  "assets/building_tiles/buildings_T_E04_N00.glb": {
-    "id": "10TpmbwucmGcoBQDUuHpyVLrxoVrvEHDn",
-    "modifiedTime": "2026-11-23T17:04:53.703Z",
-    "size": "1294136"
+  "assets/building_tiles/buildings_T_E04_N02.glb": {
+    "id": "1ZHpg7njHXHQNABdMlQfTBwvmUP3WxT2J",
+    "modifiedTime": "2026-11-24T12:51:14.034Z",
+    "size": "1416112"
   },
-  "assets/building_tiles/buildings_T_E04_N01.glb": {
-    "id": "1RdgVDVa1CdDo4Ce0ad3DN1zwbxVrv2Zr",
-    "modifiedTime": "2026-11-23T21:45:38.123Z",
-    "size": "1167728"
+  "assets/building_tiles/buildings_T_E04_N03.glb": {
+    "id": "1WQsRJOCNEkKDE36gTXSKMi1CVUqXs7lG",
+    "modifiedTime": "2026-11-24T12:51:11.275Z",
+    "size": "1513128"
   },
   "assets/building_tiles/buildings_T_E04_N04.glb": {
     "id": "19thUnao1pcoT6ITidKOpN-ughK2-_T85",
@@ -318,11 +213,6 @@
     "id": "1nhPtVQJhqJNZKOvuFJUfvi6C_YfWhIOX",
     "modifiedTime": "2026-11-23T19:11:55.239Z",
     "size": "1260460"
-  },
-  "assets/building_tiles/buildings_T_E04_S02.glb": {
-    "id": "1TruzqVnQ0cXD1g4CEKD44KSjtKLUUO0F",
-    "modifiedTime": "2026-11-23T21:45:39.814Z",
-    "size": "1244168"
   },
   "assets/building_tiles/buildings_T_E04_S03.glb": {
     "id": "1n0P1gZXiGer0sqwfqmPaNfdriirsjR2I",
@@ -354,11 +244,6 @@
     "modifiedTime": "2026-11-23T21:14:27.851Z",
     "size": "1305096"
   },
-  "assets/building_tiles/buildings_T_E05_S03.glb": {
-    "id": "1Clble7Sb5pQ2TKM_EZo0W2NeQiYr0CEY",
-    "modifiedTime": "2026-11-23T23:11:44.114Z",
-    "size": "1235348"
-  },
   "assets/building_tiles/buildings_T_E05_S04.glb": {
     "id": "1vPyTFHLkBOWJIuY93laAytyitKNf_Yp_",
     "modifiedTime": "2026-11-24T04:03:22.832Z",
@@ -383,16 +268,6 @@
     "id": "1G6W9Vln6ZsymOKd3XG8-Uqs1g5cBHdCl",
     "modifiedTime": "2026-11-24T01:49:47.795Z",
     "size": "1160860"
-  },
-  "assets/building_tiles/buildings_T_E06_S03.glb": {
-    "id": "1MGOidN8mRoCMjSgJztZvNByiMxZOmVi7",
-    "modifiedTime": "2026-11-23T21:14:29.542Z",
-    "size": "1295604"
-  },
-  "assets/building_tiles/buildings_T_E06_S04.glb": {
-    "id": "1lPhTF32uPgi5G96Rec_637d3fPkE9L3i",
-    "modifiedTime": "2026-11-23T23:11:44.945Z",
-    "size": "1235400"
   },
   "assets/building_tiles/buildings_T_E06_S07.glb": {
     "id": "1Tgi2-z3vLUglv09-3_4j9uR7HM9PGeJo",
@@ -499,55 +374,20 @@
     "modifiedTime": "2026-11-24T10:01:07.920Z",
     "size": "1346328"
   },
-  "assets/building_tiles/buildings_T_W01_N00.glb": {
-    "id": "1s2afpJtwFU-N5tBMgf0yCiEwlXRpB0Oz",
-    "modifiedTime": "2026-11-23T14:56:15.708Z",
-    "size": "1034852"
-  },
-  "assets/building_tiles/buildings_T_W01_N01.glb": {
-    "id": "1j6un4ea0jjIHxDs_QnwWM9IAC8YSh-ZV",
-    "modifiedTime": "2026-11-23T14:56:17.368Z",
-    "size": "977316"
-  },
-  "assets/building_tiles/buildings_T_W01_N02.glb": {
-    "id": "1l-wTEbMfmE_ATKfHascOYInDBfboNzL7",
-    "modifiedTime": "2026-11-23T17:04:50.750Z",
-    "size": "1312300"
-  },
-  "assets/building_tiles/buildings_T_W01_N03.glb": {
-    "id": "1K99nc98ttpK_30U-kkQ3isdT1D2D-OyU",
-    "modifiedTime": "2026-11-23T18:13:28.861Z",
-    "size": "1161652"
-  },
   "assets/building_tiles/buildings_T_W01_N04.glb": {
     "id": "1Y2SSjT_j0-VRlKKyi1MA0JyJ-jlnNK4V",
     "modifiedTime": "2026-11-23T21:14:24.959Z",
     "size": "1051696"
-  },
-  "assets/building_tiles/buildings_T_W01_N05.glb": {
-    "id": "1Tc79vQb1U8RIKuHjoUwp-_GIJansq9Ze",
-    "modifiedTime": "2026-11-23T21:45:34.347Z",
-    "size": "759424"
   },
   "assets/building_tiles/buildings_T_W01_N06.glb": {
     "id": "10aNPUr0fUly6qamgw9bzOdOc2pKpCD7i",
     "modifiedTime": "2026-11-23T23:11:33.005Z",
     "size": "894716"
   },
-  "assets/building_tiles/buildings_T_W01_S01.glb": {
-    "id": "1YMjZf0ZHykUqkOXTZ2hxJdc30OGXQTW7",
-    "modifiedTime": "2026-11-23T14:56:16.099Z",
-    "size": "821296"
-  },
-  "assets/building_tiles/buildings_T_W01_S02.glb": {
-    "id": "1vewELX3UPmbgalHCmg5lrueDe9ETWpug",
-    "modifiedTime": "2026-11-23T17:04:50.298Z",
-    "size": "70972"
-  },
-  "assets/building_tiles/buildings_T_W01_S03.glb": {
-    "id": "1NkHm72EXIPUzOZYVNlrdoMcmoDYD27CZ",
-    "modifiedTime": "2026-11-23T17:04:52.092Z",
-    "size": "518592"
+  "assets/building_tiles/buildings_T_W01_N07.glb": {
+    "id": "1-E-gQfuJHvFtjU9csiEo1Kuvv-lqGZvD",
+    "modifiedTime": "2026-11-24T11:11:56.586Z",
+    "size": "1670416"
   },
   "assets/building_tiles/buildings_T_W01_S04.glb": {
     "id": "1knRQPCd_v9JLjSVojrBAIlwLUBuadNUz",
@@ -569,21 +409,6 @@
     "modifiedTime": "2026-11-24T05:50:34.286Z",
     "size": "1401976"
   },
-  "assets/building_tiles/buildings_T_W02_N00.glb": {
-    "id": "1Go4ZOh-lH4Zm-yod3nLsW9X7JQNye-ni",
-    "modifiedTime": "2026-11-23T14:56:17.903Z",
-    "size": "1565448"
-  },
-  "assets/building_tiles/buildings_T_W02_N01.glb": {
-    "id": "1s1VtA_mjKJYKB28sL69mgCS2AuDwXGlU",
-    "modifiedTime": "2026-11-23T16:08:45.585Z",
-    "size": "1388024"
-  },
-  "assets/building_tiles/buildings_T_W02_N02.glb": {
-    "id": "1aKUYtXNpMqoAvXS9rexe2b0osMq54Ynn",
-    "modifiedTime": "2026-11-23T19:11:47.974Z",
-    "size": "1354768"
-  },
   "assets/building_tiles/buildings_T_W02_N03.glb": {
     "id": "1BY5sKHODQu7t_Np5gkQHbFaT7ZFcfWAg",
     "modifiedTime": "2026-11-23T18:13:34.056Z",
@@ -604,15 +429,15 @@
     "modifiedTime": "2026-11-24T10:01:01.871Z",
     "size": "1403584"
   },
+  "assets/building_tiles/buildings_T_W02_N07.glb": {
+    "id": "1xxgwejHTfJgJi3YbD5gqyzPgTl4YAHcj",
+    "modifiedTime": "2026-11-24T11:11:56.733Z",
+    "size": "1552840"
+  },
   "assets/building_tiles/buildings_T_W02_S01.glb": {
     "id": "1x-SqBFEYNdf4QwDihUp_Nid3IM4E4a6N",
     "modifiedTime": "2026-11-23T16:08:46.087Z",
     "size": "1333688"
-  },
-  "assets/building_tiles/buildings_T_W02_S02.glb": {
-    "id": "14SLww1DhD5lR7vP-qNrQv3paW2wAEinY",
-    "modifiedTime": "2026-11-23T17:04:52.666Z",
-    "size": "505144"
   },
   "assets/building_tiles/buildings_T_W02_S03.glb": {
     "id": "1TBGC8WaGtXvz1m788d6XZuFWSwzoQxI0",
@@ -634,11 +459,6 @@
     "modifiedTime": "2026-11-24T07:47:07.338Z",
     "size": "1355504"
   },
-  "assets/building_tiles/buildings_T_W03_N00.glb": {
-    "id": "1H1jhsqsDI32fBeCoTIwBhFVhLzZbKghd",
-    "modifiedTime": "2026-11-23T19:11:51.161Z",
-    "size": "1274900"
-  },
   "assets/building_tiles/buildings_T_W03_N01.glb": {
     "id": "1E4FXsaJspIKmAmNJqFwi7T4CFYARzOLU",
     "modifiedTime": "2026-11-23T19:11:51.589Z",
@@ -653,11 +473,6 @@
     "id": "1fIEHNNh1CsttLYQ7ZqnE6Jpa5Sb1xNmr",
     "modifiedTime": "2026-11-23T19:49:12.881Z",
     "size": "293864"
-  },
-  "assets/building_tiles/buildings_T_W03_N04.glb": {
-    "id": "1iKnTDcAelE3-4kUYRyBLACp_9d-uIBh7",
-    "modifiedTime": "2026-11-23T23:11:34.219Z",
-    "size": "1060384"
   },
   "assets/building_tiles/buildings_T_W03_N05.glb": {
     "id": "1KSD7MOrSd9P5fnU_I6hHa5dZFfJ5vHUP",
@@ -694,20 +509,15 @@
     "modifiedTime": "2026-11-24T09:14:56.252Z",
     "size": "1395288"
   },
-  "assets/building_tiles/buildings_T_W04_N03.glb": {
-    "id": "1k_O-vFL-BDLQApdlf7SV0zTXTWLpeDW-",
-    "modifiedTime": "2026-11-23T21:14:25.907Z",
-    "size": "967576"
+  "assets/building_tiles/buildings_T_W04_N01.glb": {
+    "id": "1ebDJX6aMHJogTnC5eZOj3M_38ZJ2mnKy",
+    "modifiedTime": "2026-11-24T11:50:52.648Z",
+    "size": "1540004"
   },
-  "assets/building_tiles/buildings_T_W04_N04.glb": {
-    "id": "1Rj818whM7yx5cI5mxGPcdM0X84bs_9rp",
-    "modifiedTime": "2026-11-23T21:14:26.678Z",
-    "size": "1021836"
-  },
-  "assets/building_tiles/buildings_T_W04_N05.glb": {
-    "id": "1YgYSlykBZDbfT7-B0QgjAzWVZ-gHRNYW",
-    "modifiedTime": "2026-11-23T23:11:34.918Z",
-    "size": "1196608"
+  "assets/building_tiles/buildings_T_W04_N02.glb": {
+    "id": "1UfZ8RlUgNElYMTuzSqBVHGfvODbN3ynD",
+    "modifiedTime": "2026-11-24T11:50:54.225Z",
+    "size": "1474076"
   },
   "assets/building_tiles/buildings_T_W04_N06.glb": {
     "id": "153wkTYEXtnzKbTEAwAA29zvqKOy7HHDl",
@@ -719,20 +529,30 @@
     "modifiedTime": "2026-11-24T07:47:13.063Z",
     "size": "1488588"
   },
-  "assets/building_tiles/buildings_T_W04_S01.glb": {
-    "id": "1CSB_9GLANv1NIy0n3d-eNYht-4vtFHnv",
-    "modifiedTime": "2026-11-23T21:14:34.482Z",
-    "size": "1254756"
-  },
   "assets/building_tiles/buildings_T_W04_S07.glb": {
     "id": "17BxiexWg5b3CDJX_PRg6Se78qCpfLBuJ",
     "modifiedTime": "2026-11-24T10:01:06.711Z",
     "size": "1351524"
   },
-  "assets/building_tiles/buildings_T_W05_N04.glb": {
-    "id": "1fKZgbUIwB1cn7Arq_YcR7RdipBO4W1Wc",
-    "modifiedTime": "2026-11-23T23:11:43.010Z",
-    "size": "1168160"
+  "assets/building_tiles/buildings_T_W05_N00.glb": {
+    "id": "1KbSMobHmghBsWmodOm5eLI0IsyKdhsen",
+    "modifiedTime": "2026-11-24T11:12:01.223Z",
+    "size": "1512760"
+  },
+  "assets/building_tiles/buildings_T_W05_N01.glb": {
+    "id": "1LnbuIr7DZwgVQWNSCyF0UKLGjPhJaRhY",
+    "modifiedTime": "2026-11-24T11:50:51.068Z",
+    "size": "1564100"
+  },
+  "assets/building_tiles/buildings_T_W05_N02.glb": {
+    "id": "15mVBTgyvRMIcaKkKg_JMwQiShtEY4AA9",
+    "modifiedTime": "2026-11-24T11:50:55.406Z",
+    "size": "1439668"
+  },
+  "assets/building_tiles/buildings_T_W05_N03.glb": {
+    "id": "1rN9gC4Lo_-y7QWdBDY1WZMm-OCrn6fZF",
+    "modifiedTime": "2026-11-24T11:50:58.717Z",
+    "size": "1425616"
   },
   "assets/building_tiles/buildings_T_W05_N05.glb": {
     "id": "1Rmi3yk0sJX8oyELCENfLu-8ohBX38CsR",
@@ -749,15 +569,25 @@
     "modifiedTime": "2026-11-24T07:03:44.361Z",
     "size": "1398924"
   },
-  "assets/building_tiles/buildings_T_W05_S01.glb": {
-    "id": "1pw2JCzeZ2PGVG9Xkkx7qnGVulfQ5Yob2",
-    "modifiedTime": "2026-11-23T23:11:46.355Z",
-    "size": "985396"
+  "assets/building_tiles/buildings_T_W06_N00.glb": {
+    "id": "1viwQdqVHrPogDiF5uL9AzjG40ec5HlAZ",
+    "modifiedTime": "2026-11-24T11:12:00.329Z",
+    "size": "1622084"
   },
-  "assets/building_tiles/buildings_T_W05_S02.glb": {
-    "id": "1_KVN_i5mBP-k5j_i0miw-CVBTYPPffNW",
-    "modifiedTime": "2026-11-23T23:50:51.504Z",
-    "size": "1431728"
+  "assets/building_tiles/buildings_T_W06_N01.glb": {
+    "id": "1_WVPZbXOhmnAz7RkI_JvQkJqVA6FXLly",
+    "modifiedTime": "2026-11-24T11:50:49.431Z",
+    "size": "1605096"
+  },
+  "assets/building_tiles/buildings_T_W06_N02.glb": {
+    "id": "1HAvqZIIlXaK99z1Pl-9yHS5ae9zyoP6E",
+    "modifiedTime": "2026-11-24T11:50:56.850Z",
+    "size": "1552580"
+  },
+  "assets/building_tiles/buildings_T_W06_N03.glb": {
+    "id": "1IAOzsCNYzZrHVH9-LGFhTJPFbPEwBI98",
+    "modifiedTime": "2026-11-24T11:50:59.583Z",
+    "size": "1466512"
   },
   "assets/building_tiles/buildings_T_W06_N04.glb": {
     "id": "1ght4Cd5Y1gy9X0lAzlaCC7otHqVxCl3x",
@@ -793,6 +623,21 @@
     "id": "1dBOhu5FLKWtUZ1c6Sm8BM35t4MOfxS3-",
     "modifiedTime": "2026-11-24T10:01:09.100Z",
     "size": "1557184"
+  },
+  "assets/building_tiles/buildings_T_W07_N01.glb": {
+    "id": "11-ag1cu23-mN4zreNWeS7LMhnkEMoANI",
+    "modifiedTime": "2026-11-24T11:12:05.731Z",
+    "size": "1448428"
+  },
+  "assets/building_tiles/buildings_T_W07_N02.glb": {
+    "id": "1R1p6ueBN_MLDPUxLQBt_bpKcLasNtXuu",
+    "modifiedTime": "2026-11-24T12:51:02.586Z",
+    "size": "1539960"
+  },
+  "assets/building_tiles/buildings_T_W07_N03.glb": {
+    "id": "1LmYfCuPTAT2SYDeSwlX2hlkVHOy0kDzi",
+    "modifiedTime": "2026-11-24T12:51:04.177Z",
+    "size": "1459960"
   },
   "assets/building_tiles/buildings_T_W07_N04.glb": {
     "id": "1N0xCPQsnhy5gH9x-hw_mJh1mTF9FEDCW",
@@ -834,6 +679,26 @@
     "modifiedTime": "2026-11-24T09:14:57.550Z",
     "size": "1547472"
   },
+  "assets/building_tiles/buildings_T_W08_N02.glb": {
+    "id": "109iBR-rLftJuZHvhc7hcEK09hw-JsXn8",
+    "modifiedTime": "2026-11-24T12:51:03.598Z",
+    "size": "1544024"
+  },
+  "assets/building_tiles/buildings_T_W08_N03.glb": {
+    "id": "1dM1BYYaf_ipJuui0gMvmbWwQiJ4GS96h",
+    "modifiedTime": "2026-11-24T12:51:07.474Z",
+    "size": "1562824"
+  },
+  "assets/building_tiles/buildings_T_W08_N04.glb": {
+    "id": "1gGETQcYMzwtLCfPABLaXtkW8HlyThYUc",
+    "modifiedTime": "2026-11-24T12:51:07.179Z",
+    "size": "1493184"
+  },
+  "assets/building_tiles/buildings_T_W08_N05.glb": {
+    "id": "1Zcwu0wRxHsWn6ziJT3cuacF3_2aXMfsG",
+    "modifiedTime": "2026-11-24T12:51:10.289Z",
+    "size": "1392928"
+  },
   "assets/building_tiles/buildings_T_W08_N06.glb": {
     "id": "1q2BMisK2hnn9wklj3AGVsiTEECX3Pl9Q",
     "modifiedTime": "2026-11-24T09:15:02.384Z",
@@ -860,9 +725,9 @@
     "size": "1379444"
   },
   "assets/french_villas/french_villas_manifest.json": {
-    "id": "1D2SrGxNPdOHSnt9qFbXodPdkZ-vtZRxr",
-    "modifiedTime": "2026-11-24T09:20:00.301Z",
-    "size": "281200"
+    "id": "1NPqAg5DB83Kykj7kWXOb-n0pBkr_V5Rl",
+    "modifiedTime": "2026-11-24T11:31:23.314Z",
+    "size": "312681"
   },
   "assets/french_villas/fv_bt_05_dinh_nguyen_huu_hao_nam_phuong_palace.glb": {
     "id": "1cfA75D4MJTSjr3bYljvdQc5cwv8j3apo",
@@ -883,6 +748,21 @@
     "id": "1Ch30juO57hGlumqRvDbK3bPD_7XRkN0i",
     "modifiedTime": "2026-11-23T21:38:47.146Z",
     "size": "870056"
+  },
+  "assets/french_villas/fv_btx_05_bui_thi_xuan_15_lake_corridor_manor.glb": {
+    "id": "1ywZ-mSmNAQniNsd2HCG-amNultj3UcJw",
+    "modifiedTime": "2026-11-24T11:31:12.652Z",
+    "size": "959808"
+  },
+  "assets/french_villas/fv_btx_06_bui_thi_xuan_58_normandy_turret_villa.glb": {
+    "id": "1qlh1SkT1IYfqr0ni4CXL14cHqIOloVWd",
+    "modifiedTime": "2026-11-24T11:31:13.559Z",
+    "size": "882868"
+  },
+  "assets/french_villas/fv_btx_07_bui_thi_xuan_117_le_recit_boutique_mansard.glb": {
+    "id": "1OERa5T5rs3p32FOK_hpVm7R1RrypzCm_",
+    "modifiedTime": "2026-11-24T11:31:15.271Z",
+    "size": "899316"
   },
   "assets/french_villas/fv_cb_04_cuc_ban_do_dalat_mansard_main_hq.glb": {
     "id": "1O42F9pAkoLfzuHX0RxAcILvMLIWcw5gj",
@@ -1094,6 +974,26 @@
     "modifiedTime": "2026-11-23T19:21:35.466Z",
     "size": "797736"
   },
+  "assets/french_villas/fv_ltk_01_ly_thuong_kiet_02_normandy_hill_manor.glb": {
+    "id": "1mKrCOIbF7gBLufiz8TN9OaC_SwxwOQUd",
+    "modifiedTime": "2026-11-24T11:31:06.361Z",
+    "size": "959160"
+  },
+  "assets/french_villas/fv_ltk_02_ly_thuong_kiet_10_colombage_garden_villa.glb": {
+    "id": "1Q4LUE7OxxldEyNgsSDApUOgHBgTCUm4c",
+    "modifiedTime": "2026-11-24T11:31:07.755Z",
+    "size": "873400"
+  },
+  "assets/french_villas/fv_ltk_03_ly_thuong_kiet_18_brittany_slate_villa.glb": {
+    "id": "1U3qulLfLVutf7X2n_Oc3qZWA1hmlA7nP",
+    "modifiedTime": "2026-11-24T11:31:09.174Z",
+    "size": "870976"
+  },
+  "assets/french_villas/fv_ltk_04_ly_thuong_kiet_26_mansard_noble_manor.glb": {
+    "id": "1nAAHQYE0QMcFdxCMhyn7enko2R4PC6lq",
+    "modifiedTime": "2026-11-24T11:31:10.379Z",
+    "size": "898164"
+  },
   "assets/french_villas/fv_nb_08_doc_nha_bo_dao_duy_tu_lower_stair_shophouses.glb": {
     "id": "1NVPn5W4oapP08BX8rZ6R30fXEquYel9q",
     "modifiedTime": "2026-11-24T01:29:26.643Z",
@@ -1128,6 +1028,21 @@
     "id": "1M6jTAQFEREDQlLySyMrqBmpJMDUXDeyw",
     "modifiedTime": "2026-11-24T03:12:39.587Z",
     "size": "872852"
+  },
+  "assets/french_villas/fv_nvt_08_nguyen_van_troi_12_colonial_avenue_villa.glb": {
+    "id": "1avsTRnTH3ssbJb4PL8Uzq2dR9XNhgt5_",
+    "modifiedTime": "2026-11-24T11:31:16.810Z",
+    "size": "873400"
+  },
+  "assets/french_villas/fv_nvt_09_nguyen_van_troi_48_savoy_brittany_manor.glb": {
+    "id": "1CaZ5qfFSOUauqpgKNkcHua86yc8s2XwU",
+    "modifiedTime": "2026-11-24T11:31:18.674Z",
+    "size": "877220"
+  },
+  "assets/french_villas/fv_pdp_10_phan_dinh_phung_60_grand_mansard_manor.glb": {
+    "id": "14sk7ORqDYxqy-ckBoRbGDqDq6zNbkCCF",
+    "modifiedTime": "2026-11-24T11:31:19.639Z",
+    "size": "909780"
   },
   "assets/french_villas/fv_pdtv_08_dinh_tien_hoang_09_pio_x_french_pavilion.glb": {
     "id": "12t6MhLgMIDKthF2AQGtF4mkjuOkqPDcw",
@@ -1325,9 +1240,9 @@
     "size": "881592"
   },
   "assets/hero_landmarks_ultra/hero_landmarks_manifest.json": {
-    "id": "1R2bpAn56xcpkXG_BvMjuoUJizS8pU7pP",
-    "modifiedTime": "2026-11-24T09:59:53.331Z",
-    "size": "57788"
+    "id": "1zUukXW2cAH3L96EYzcKxJrRcbbFDBu43",
+    "modifiedTime": "2026-11-24T12:56:36.830Z",
+    "size": "86247"
   },
   "assets/hero_landmarks_ultra/ultra_lm_01_quang_truong_lam_vien.glb": {
     "id": "1m5yGYQrMxfnqoZPG_bxBJMo7-AAjjHWU",
@@ -1429,10 +1344,20 @@
     "modifiedTime": "2026-11-24T09:07:42.204Z",
     "size": "1424340"
   },
+  "assets/hero_landmarks_ultra/ultra_lm_21_lang_cu_lan.glb": {
+    "id": "1dbETFOlR9cPRTi6xrOZHa2-x4BY9jcg9",
+    "modifiedTime": "2026-11-24T11:08:36.093Z",
+    "size": "1870424"
+  },
   "assets/hero_landmarks_ultra/ultra_lm_22_dien_gio_cau_dat.glb": {
     "id": "1OiBgnS3aiOdcfPgl4gkRfJAQw-DhkUYo",
     "modifiedTime": "2026-11-24T09:07:45.670Z",
     "size": "1438420"
+  },
+  "assets/hero_landmarks_ultra/ultra_lm_23_san_bay_lien_khuong.glb": {
+    "id": "1ydSghObvoSWAKMwRIlChu2W-THi5I3Z9",
+    "modifiedTime": "2026-11-24T12:56:34.158Z",
+    "size": "1454992"
   },
   "assets/hero_landmarks_ultra/ultra_lm_24_chua_linh_an_thac_voi.glb": {
     "id": "16rRIV6jCkfaMqTWKH1ZNvREAaVBiQHTH",
@@ -1444,10 +1369,60 @@
     "modifiedTime": "2026-11-24T09:59:46.461Z",
     "size": "1585632"
   },
+  "assets/hero_landmarks_ultra/ultra_lm_26_nha_tho_cam_ly.glb": {
+    "id": "1NnF4lIjx6ZR4mf88TzX0TLhDniZ-Pqkx",
+    "modifiedTime": "2026-11-24T11:08:31.454Z",
+    "size": "1540248"
+  },
   "assets/hero_landmarks_ultra/ultra_lm_27_vien_pasteur_da_lat.glb": {
     "id": "1L0BQklGbgfxoljS9eJKXQEyX4ee2glGU",
     "modifiedTime": "2026-11-24T09:59:49.762Z",
     "size": "1499800"
+  },
+  "assets/hero_landmarks_ultra/ultra_lm_28_chua_linh_quy_phap_an.glb": {
+    "id": "1mP9Mcf3gDPalmkcOb4-6D3P0BU5aqWO9",
+    "modifiedTime": "2026-11-24T11:08:42.680Z",
+    "size": "1458136"
+  },
+  "assets/hero_landmarks_ultra/ultra_lm_29_cuc_ban_do_dalat.glb": {
+    "id": "1VI5eDmU0eIEEgEQjoqgOD5Ca9trdF8EU",
+    "modifiedTime": "2026-11-24T11:08:47.278Z",
+    "size": "1522172"
+  },
+  "assets/hero_landmarks_ultra/ultra_lm_30_thien_vien_van_hanh.glb": {
+    "id": "1Y3yzBB-1WBmx8dwrFW5fruBv7I3QWbjv",
+    "modifiedTime": "2026-11-24T11:50:05.112Z",
+    "size": "1307856"
+  },
+  "assets/hero_landmarks_ultra/ultra_lm_31_nha_tho_du_sinh.glb": {
+    "id": "14z6NDfRBdfwX8MoIkbXKmSrW9TFnSOox",
+    "modifiedTime": "2026-11-24T11:50:09.411Z",
+    "size": "1602456"
+  },
+  "assets/hero_landmarks_ultra/ultra_lm_32_duong_ham_dieu_khac.glb": {
+    "id": "1GAyKjWyGR3nHvTIbMFNhFqQFGCuigvwe",
+    "modifiedTime": "2026-11-24T11:50:09.075Z",
+    "size": "1610500"
+  },
+  "assets/hero_landmarks_ultra/ultra_lm_33_couvent_des_oiseaux.glb": {
+    "id": "1nD-AMXMlKYzTiutocRi2MsuxgZN6e_b0",
+    "modifiedTime": "2026-11-24T11:50:09.433Z",
+    "size": "1654300"
+  },
+  "assets/hero_landmarks_ultra/ultra_lm_34_chua_linh_son.glb": {
+    "id": "1UjtOIZ7w4c21t4lgdZiVJFiF-V1GkZHE",
+    "modifiedTime": "2026-11-24T12:56:34.958Z",
+    "size": "1662420"
+  },
+  "assets/hero_landmarks_ultra/ultra_lm_35_dinh_tinh_truong.glb": {
+    "id": "1sqbw2NQ68XRKA_hXbhrs5DTkik3itZmz",
+    "modifiedTime": "2026-11-24T12:56:35.988Z",
+    "size": "1826496"
+  },
+  "assets/hero_landmarks_ultra/ultra_lm_36_nha_may_che_cau_dat_1927.glb": {
+    "id": "1FJBn5BoL_KzEucSqkadOZ6tjMWL-q7II",
+    "modifiedTime": "2026-11-24T12:56:37.576Z",
+    "size": "1666316"
   },
   "assets/infrastructure_buildings/roads_ring0.glb": {
     "id": "1DQT1NRASKTnnHKc2MetHyTpAF29hPT4S",
@@ -1494,6 +1469,21 @@
     "modifiedTime": "2026-11-24T10:00:58.969Z",
     "size": "1106512"
   },
+  "assets/infrastructure_buildings/roads_ring2_c174.glb": {
+    "id": "1AFvS1O44gDJztMXp2-nDXGWoko_90Ft0",
+    "modifiedTime": "2026-11-24T11:11:56.004Z",
+    "size": "1399420"
+  },
+  "assets/infrastructure_buildings/roads_ring2_c182.glb": {
+    "id": "1Tu6X-_M73LMKNc4jZ9vBOoeqL8X0WbvY",
+    "modifiedTime": "2026-11-24T11:50:48.755Z",
+    "size": "1287108"
+  },
+  "assets/infrastructure_buildings/roads_ring2_c190.glb": {
+    "id": "1W2KHKlyI52ouUmpyRYOubrzY9qVBPRi4",
+    "modifiedTime": "2026-11-24T12:51:02.035Z",
+    "size": "1321652"
+  },
   "assets/infrastructure_buildings/roads_ring2_c500.glb": {
     "id": "1X2pDxLLiff9ldhVPOIZMKnwXF0EYMjCL",
     "modifiedTime": "2026-11-24T04:47:38.482Z",
@@ -1535,9 +1525,9 @@
     "size": "906732"
   },
   "assets/landmarks/landmarks_manifest.json": {
-    "id": "1ZtukmfOaee4UYvceOP6JPLWfiK3D3BYv",
-    "modifiedTime": "2026-11-24T09:50:32.945Z",
-    "size": "138994"
+    "id": "1U1Y_nC3wyA2rmQn8CEqJaVbY4XAbn7Gi",
+    "modifiedTime": "2026-11-24T12:08:51.483Z",
+    "size": "151082"
   },
   "assets/landmarks/lm_01_quang_truong_lam_vien.glb": {
     "id": "1Rm9QoUXOkvEuhIP2ApZjJB70BESvw3-R",
@@ -1779,6 +1769,26 @@
     "modifiedTime": "2026-11-24T09:50:32.304Z",
     "size": "395308"
   },
+  "assets/landmarks/lm_49_rap_hoa_binh_khu_hoa_binh.glb": {
+    "id": "1WcoytT4bvd8ORt8gtHUc6BVSfsZHHtyE",
+    "modifiedTime": "2026-11-24T12:08:46.989Z",
+    "size": "411468"
+  },
+  "assets/landmarks/lm_50_chua_linh_phong_su_nu.glb": {
+    "id": "1ztV5rPEGJ2OAMAo5jk0HUNuGMpvnq2Ul",
+    "modifiedTime": "2026-11-24T12:08:48.010Z",
+    "size": "315608"
+  },
+  "assets/landmarks/lm_51_nha_cau_lac_bo_golf_doi_cu.glb": {
+    "id": "1JljJrkctHH-mnyiMldL-PBncpEDdigVi",
+    "modifiedTime": "2026-11-24T12:08:49.644Z",
+    "size": "320356"
+  },
+  "assets/landmarks/lm_52_nha_tho_ka_don_don_duong.glb": {
+    "id": "120GvAylc1KAWXAtPTwz-z9FNNV3tP7q9",
+    "modifiedTime": "2026-11-24T12:08:51.774Z",
+    "size": "410616"
+  },
   "assets/natural_wonders_pbr/cliff_thac_datanla_alpine_coaster.glb": {
     "id": "1CZQ6nHSi465YZOmCqpI0xVMAFKykhmUc",
     "modifiedTime": "2026-11-23T17:30:06.016Z",
@@ -1808,6 +1818,11 @@
     "id": "1mS5kmJ6-6tukzOFgsiYaxmwyEWTo1Z1e",
     "modifiedTime": "2026-11-24T06:45:28.036Z",
     "size": "5031944"
+  },
+  "assets/osm_true_buildings/osm_buildings_T_E00_N03.glb": {
+    "id": "11uMZW60vpIepiA9Qf9zo-2BA6t7tvKVM",
+    "modifiedTime": "2026-11-24T11:37:29.198Z",
+    "size": "5107620"
   },
   "assets/osm_true_buildings/osm_buildings_T_E00_N05.glb": {
     "id": "1m_f1UZezcbkCMHop6-ZmOJ-gMrnIwVq4",
@@ -1844,6 +1859,11 @@
     "modifiedTime": "2026-11-24T06:45:29.213Z",
     "size": "4390444"
   },
+  "assets/osm_true_buildings/osm_buildings_T_E01_N03.glb": {
+    "id": "1I7bJVm70u39g1Cs8BWQytLSKpW7kl-XG",
+    "modifiedTime": "2026-11-24T12:42:52.710Z",
+    "size": "4999088"
+  },
   "assets/osm_true_buildings/osm_buildings_T_E01_S01.glb": {
     "id": "1dutW1B8OeKZf1GydZgSCGyJidloToQoh",
     "modifiedTime": "2026-11-24T05:55:02.662Z",
@@ -1864,6 +1884,16 @@
     "modifiedTime": "2026-11-24T06:45:23.929Z",
     "size": "4408616"
   },
+  "assets/osm_true_buildings/osm_buildings_T_E02_N02.glb": {
+    "id": "1LTVFoP3d7S-KtwRBCoMt6xy4ErEaSCSH",
+    "modifiedTime": "2026-11-24T11:37:25.635Z",
+    "size": "5188880"
+  },
+  "assets/osm_true_buildings/osm_buildings_T_E02_N03.glb": {
+    "id": "1i_-i-4nJtm4GhhMN__ko2OvoCWlrBv0w",
+    "modifiedTime": "2026-11-24T12:42:52.744Z",
+    "size": "5374136"
+  },
   "assets/osm_true_buildings/osm_buildings_T_E02_S01.glb": {
     "id": "1bWPE8oB2RjHfmT5cbrRb3gDxfXhpqoYI",
     "modifiedTime": "2026-11-24T09:38:30.853Z",
@@ -1874,10 +1904,30 @@
     "modifiedTime": "2026-11-24T06:45:30.677Z",
     "size": "6104808"
   },
+  "assets/osm_true_buildings/osm_buildings_T_E03_N01.glb": {
+    "id": "1WYA0EoTQUv-MGYpGi-HJErXjqCRw_xTy",
+    "modifiedTime": "2026-11-24T11:37:27.298Z",
+    "size": "5041100"
+  },
+  "assets/osm_true_buildings/osm_buildings_T_E03_N02.glb": {
+    "id": "13OnpBa64Rs4qDxcGajuqw7NUSqCgSNzd",
+    "modifiedTime": "2026-11-24T12:42:55.580Z",
+    "size": "5379580"
+  },
   "assets/osm_true_buildings/osm_buildings_T_E03_S01.glb": {
     "id": "1LTVqBhKJdGZHzCR5Ek33OrlF1asHFmcy",
     "modifiedTime": "2026-11-24T09:38:31.741Z",
     "size": "5243696"
+  },
+  "assets/osm_true_buildings/osm_buildings_T_E04_N00.glb": {
+    "id": "1qsnn-tTZbfXjcQggMWRf8xsJFtGYOfZp",
+    "modifiedTime": "2026-11-24T12:42:55.914Z",
+    "size": "5157548"
+  },
+  "assets/osm_true_buildings/osm_buildings_T_E04_N01.glb": {
+    "id": "1nAlVBXCPFMEUMqdE91nso0JzsaXfgOfE",
+    "modifiedTime": "2026-11-24T12:43:00.913Z",
+    "size": "5095992"
   },
   "assets/osm_true_buildings/osm_buildings_T_E04_S02.glb": {
     "id": "1SZ-vuglgmXFxxTfQ6VPgSovKTSTe4wnS",
@@ -1909,6 +1959,16 @@
     "modifiedTime": "2026-11-24T05:05:45.813Z",
     "size": "3799876"
   },
+  "assets/osm_true_buildings/osm_buildings_T_W01_N02.glb": {
+    "id": "1qXGLgdJ-6_0PfGK2dsEYhY0Lq5HfyLz_",
+    "modifiedTime": "2026-11-24T11:37:23.068Z",
+    "size": "4936888"
+  },
+  "assets/osm_true_buildings/osm_buildings_T_W01_N03.glb": {
+    "id": "1HmwpfR2KGwkpBZbBkXcK1SlN2AlMxIHM",
+    "modifiedTime": "2026-11-24T12:42:52.332Z",
+    "size": "5124620"
+  },
   "assets/osm_true_buildings/osm_buildings_T_W01_N05.glb": {
     "id": "1ngcLS0s1wI3vmbMbuC0OOVUZfY-bb0_w",
     "modifiedTime": "2026-11-24T08:01:40.908Z",
@@ -1934,6 +1994,16 @@
     "modifiedTime": "2026-11-24T06:45:27.466Z",
     "size": "4843376"
   },
+  "assets/osm_true_buildings/osm_buildings_T_W02_N01.glb": {
+    "id": "1iOPCt_NYTXN9maUEe3PawBaSBLZCvTup",
+    "modifiedTime": "2026-11-24T11:37:21.815Z",
+    "size": "5072536"
+  },
+  "assets/osm_true_buildings/osm_buildings_T_W02_N02.glb": {
+    "id": "1UpfxH2dm8JRusHQvOL0RbOjfAREDMhoP",
+    "modifiedTime": "2026-11-24T11:37:24.482Z",
+    "size": "4883788"
+  },
   "assets/osm_true_buildings/osm_buildings_T_W02_S02.glb": {
     "id": "1YwsKMI3l21HaJH1JcnxtB3wxIlZhtp2d",
     "modifiedTime": "2026-11-24T09:00:56.338Z",
@@ -1944,20 +2014,60 @@
     "modifiedTime": "2026-11-24T09:38:34.141Z",
     "size": "5316512"
   },
+  "assets/osm_true_buildings/osm_buildings_T_W03_N04.glb": {
+    "id": "1GnnhDH7WWPdaKUrPRLCbK3O4GojrejFo",
+    "modifiedTime": "2026-11-24T10:34:12.154Z",
+    "size": "4623028"
+  },
   "assets/osm_true_buildings/osm_buildings_T_W04_N00.glb": {
     "id": "1y7v5SuoVUXFVEBUIB5DsIN5G6gItZWPV",
     "modifiedTime": "2026-11-24T09:38:34.647Z",
     "size": "4881056"
+  },
+  "assets/osm_true_buildings/osm_buildings_T_W04_N03.glb": {
+    "id": "1q_CqX9WgQiM1VdI8yFPkXnkBJfiAyU5C",
+    "modifiedTime": "2026-11-24T10:34:11.020Z",
+    "size": "3722608"
+  },
+  "assets/osm_true_buildings/osm_buildings_T_W04_N04.glb": {
+    "id": "1aVPaHJ200o6qAYdde6qD7UgTEkCB5kZV",
+    "modifiedTime": "2026-11-24T10:34:12.928Z",
+    "size": "2608772"
+  },
+  "assets/osm_true_buildings/osm_buildings_T_W04_N05.glb": {
+    "id": "1lLC979pns6N7nqL49EFOWFGO_RQ9fyfi",
+    "modifiedTime": "2026-11-24T10:34:16.176Z",
+    "size": "4852868"
   },
   "assets/osm_true_buildings/osm_buildings_T_W04_S01.glb": {
     "id": "1wwcHehsoTdMlzRTUx86iSQCqbqy6fiN-",
     "modifiedTime": "2026-11-24T09:38:36.080Z",
     "size": "4918624"
   },
+  "assets/osm_true_buildings/osm_buildings_T_W05_N04.glb": {
+    "id": "1LduTF2Wvtzbgb1itEl80qFE9A_XNxW9L",
+    "modifiedTime": "2026-11-24T10:34:14.003Z",
+    "size": "4417080"
+  },
+  "assets/osm_true_buildings/osm_buildings_T_W05_S01.glb": {
+    "id": "12Rsbx7S9cF3S_Fgs6pOi7hY6TxLyuz2w",
+    "modifiedTime": "2026-11-24T10:34:10.094Z",
+    "size": "4715452"
+  },
   "assets/osm_true_buildings/osm_buildings_T_W05_S02.glb": {
     "id": "1bYh1AMXpa0XR3GfwY9VxHT3RGUWVBCoZ",
     "modifiedTime": "2026-11-24T08:01:43.880Z",
     "size": "3642688"
+  },
+  "assets/osm_true_roads_hydro/dalat_heritage_villa_driveways_courtyards_and_granite_taluy_walls_auto_b04.glb": {
+    "id": "1WVSJJ1U-Q3euvTLhWchJOgNxL41svFgu",
+    "modifiedTime": "2026-11-24T11:39:53.102Z",
+    "size": "2274584"
+  },
+  "assets/osm_true_roads_hydro/dalat_historic_cog_railway_traimat_caudat_dran_and_forest_trails_auto_b03.glb": {
+    "id": "18j7qSeB58jth7wJR_A-PQ009038FmTpq",
+    "modifiedTime": "2026-11-24T10:24:25.124Z",
+    "size": "4503048"
   },
   "assets/osm_true_roads_hydro/dalat_park_ponds_agricultural_reservoirs_and_irrigation_canals_auto_b02.glb": {
     "id": "1-TKvo2USsXfM5kxOfjiXf93r11W5ecBZ",
@@ -1974,15 +2084,35 @@
     "modifiedTime": "2026-11-24T06:26:24.102Z",
     "size": "3211364"
   },
+  "assets/osm_true_roads_hydro/dalat_suoi_tia_flooded_forest_wetlands_and_railway_culvert_streams_auto_b03.glb": {
+    "id": "1DRJZKt1D8ItYgqrZbbBVD_rjA-huqR46",
+    "modifiedTime": "2026-11-24T10:24:24.594Z",
+    "size": "734592"
+  },
   "assets/osm_true_roads_hydro/dalat_urban_parks_campus_and_greenhouse_agro_roads_auto_b02.glb": {
     "id": "1ztrWZ5-kspvPWCzRSASK-JHdNie-aq2_",
     "modifiedTime": "2026-11-24T09:42:56.798Z",
     "size": "5535604"
   },
+  "assets/osm_true_roads_hydro/dalat_villa_ornamental_pools_cam_ly_embankment_and_stepped_drainage_auto_b04.glb": {
+    "id": "1g2p6gDavd6bODdoka0jfriuIniB-YSEM",
+    "modifiedTime": "2026-11-24T11:39:54.233Z",
+    "size": "822184"
+  },
   "assets/osm_true_roads_hydro/ho_xuan_huong_true_shoreline_and_embankment_w1.glb": {
     "id": "1IlFaIsWxzYDmGBCZVLwu3vT5doLEEbtv",
     "modifiedTime": "2026-11-24T04:24:37.102Z",
     "size": "1075776"
+  },
+  "assets/osm_true_roads_hydro/lien_khuong_airfield_perimeter_drainage_canals_and_phu_hoi_eco_basins_auto_b05.glb": {
+    "id": "17xo5yT0-RaVgVTKrMN8p2y61TMkjsGPP",
+    "modifiedTime": "2026-11-24T12:41:08.973Z",
+    "size": "634664"
+  },
+  "assets/osm_true_roads_hydro/lien_khuong_airport_runway_09_27_taxiways_and_phu_hoi_industrial_roads_auto_b05.glb": {
+    "id": "1f23_ctIj18ZgRKp-gVSqAuGAq-uYLNUm",
+    "modifiedTime": "2026-11-24T12:41:07.877Z",
+    "size": "1828900"
   },
   "assets/osm_true_roads_hydro/ring0_hillside_slopes_and_connectors_w2.glb": {
     "id": "1YRiewvfTIRWL-72Qor1TpfjDpVkNmLYJ",
@@ -2049,10 +2179,40 @@
     "modifiedTime": "2026-11-24T09:56:32.962Z",
     "size": "2279116"
   },
+  "assets/ring3_districts_ultra/ring3_auto_b03_don_duong_ka_do_agri_valley_and_ka_don_churu_church.glb": {
+    "id": "1cFuzVUiBG_63R00o9JGh67aVty75Jiou",
+    "modifiedTime": "2026-11-24T10:53:27.796Z",
+    "size": "1899868"
+  },
+  "assets/ring3_districts_ultra/ring3_auto_b03_duc_trong_ta_nang_phan_dung_grassland_and_3province_marker.glb": {
+    "id": "1jZIYjO9OrKJ5b0dvZR-XxZf9QY5rFqbf",
+    "modifiedTime": "2026-11-24T10:53:30.263Z",
+    "size": "1835232"
+  },
+  "assets/ring3_districts_ultra/ring3_auto_b04_lac_duong_da_nhim_da_chais_sturgeon_farms_and_khanh_le_pass_head.glb": {
+    "id": "1yZN6w39UwMhDzF9Toyki2jru216JAL0x",
+    "modifiedTime": "2026-11-24T12:02:17.151Z",
+    "size": "2047504"
+  },
+  "assets/ring3_districts_ultra/ring3_auto_b04_lam_ha_dong_thanh_eco_reservoir_and_gia_lam_coffee_hills.glb": {
+    "id": "1TKuSGOvVK0sRCM0P59U-I6x7jdQge3Ud",
+    "modifiedTime": "2026-11-24T12:02:21.542Z",
+    "size": "1889140"
+  },
+  "assets/ring3_districts_ultra/ring3_auto_b05_don_duong_samten_hills_37m_prayer_wheel_and_da_ron_golf_lake.glb": {
+    "id": "1U1Ko6MAzmgGFGKNQD2_rDe7neFOj2PmA",
+    "modifiedTime": "2026-11-24T12:57:32.967Z",
+    "size": "1848532"
+  },
+  "assets/ring3_districts_ultra/ring3_auto_b05_duc_trong_da_loan_ninh_loan_town_and_ta_hine_ql28b_junction.glb": {
+    "id": "1wVcFNw4jnqpMa6eYkXAovK72LF9w6gS4",
+    "modifiedTime": "2026-11-24T12:57:34.043Z",
+    "size": "1818600"
+  },
   "assets/ring3_districts_ultra/ring3_districts_manifest.json": {
-    "id": "1e05nzfUhuoZjsrfoBdCWLRVsxoS0N_cz",
-    "modifiedTime": "2026-11-24T09:56:34.824Z",
-    "size": "50281"
+    "id": "1oDoKMdVnOwKsFY_g9rKhlouYRahJzGRw",
+    "modifiedTime": "2026-11-24T12:57:34.731Z",
+    "size": "74080"
   },
   "assets/ring3_districts_ultra/ring3_w1_lien_khuong_airport_complex.glb": {
     "id": "1fis1LI_I4cj49jiiufJEEaYkfk8D2VNL",
@@ -2103,291 +2263,6 @@
     "id": "1Kuerwf5mHxPR41zOGYkVxeF4yJFCPPch",
     "modifiedTime": "2026-11-24T08:06:20.733Z",
     "size": "2348420"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_E00_N00.json": {
-    "id": "1olIMhRvnrBu_UER18lgmPMQzkx9dKhva",
-    "modifiedTime": "2026-11-24T04:25:21.757Z",
-    "size": "146732"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_E00_N01.json": {
-    "id": "1MVmdTboF12BEK1pD4UlF9ik4QpF06scZ",
-    "modifiedTime": "2026-11-24T04:48:32.377Z",
-    "size": "149547"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_E00_N02.json": {
-    "id": "1BPTV-el1579aCniZlVzZjtsEbmWgLJ1p",
-    "modifiedTime": "2026-11-24T08:30:57.284Z",
-    "size": "329836"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_E00_N03.json": {
-    "id": "1IDzMVpEyH54NnzwDxnLfUuI4M54IcyzH",
-    "modifiedTime": "2026-11-24T08:31:09.942Z",
-    "size": "330190"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_E00_N04.json": {
-    "id": "1ONfQM6gMtrqj8g9tdqJgFoDqfQiyBe2W",
-    "modifiedTime": "2026-11-24T08:31:14.174Z",
-    "size": "329988"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_E00_N05.json": {
-    "id": "1e8Uyjabd5fywhQBb29BEJ4uIJCE33Qy6",
-    "modifiedTime": "2026-11-24T06:47:42.342Z",
-    "size": "363279"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_E00_N06.json": {
-    "id": "1f2DbFHbhmgM84z5LjlQ6mekp5k_W1Yb6",
-    "modifiedTime": "2026-11-24T06:47:45.256Z",
-    "size": "363391"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_E00_S01.json": {
-    "id": "1tqAmQ3nBjSs34Lq3iuEv7Ca0sDvL7uvb",
-    "modifiedTime": "2026-11-24T04:48:39.766Z",
-    "size": "149536"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_E00_S02.json": {
-    "id": "1rsacuaIB2yekWu9JcG2aCxCU34fGgIbl",
-    "modifiedTime": "2026-11-24T05:55:17.423Z",
-    "size": "164792"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_E00_S03.json": {
-    "id": "1pLOFK-BeSreBI-T9uLf9jv4kAP_7WAaL",
-    "modifiedTime": "2026-11-24T05:55:23.251Z",
-    "size": "165259"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_E01_N00.json": {
-    "id": "1XreMWjzNfO18dRnNQqwAf2zT2VxRF-qA",
-    "modifiedTime": "2026-11-24T04:48:37.245Z",
-    "size": "149284"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_E01_N01.json": {
-    "id": "1CCc-BumLEF05ZahamgyqU1I-7aYVPKSX",
-    "modifiedTime": "2026-11-24T04:48:33.674Z",
-    "size": "148881"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_E01_N02.json": {
-    "id": "1zbkYBBmI_DFMdP8mEhyB0I8yzQ8v8MvO",
-    "modifiedTime": "2026-11-24T08:30:57.595Z",
-    "size": "330104"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_E01_N03.json": {
-    "id": "15qCc_sE64xlPwBJiyelmLNUb2GAZ5rqu",
-    "modifiedTime": "2026-11-24T09:47:31.159Z",
-    "size": "330162"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_E01_N06.json": {
-    "id": "1UXYUWUgIKwXrTPOb1erQtRzonFZvQx2g",
-    "modifiedTime": "2026-11-24T06:47:46.094Z",
-    "size": "363362"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_E01_S01.json": {
-    "id": "1Wxm1Gm7ZyEB3rXr_5bBYUcCuGEMt6iH-",
-    "modifiedTime": "2026-11-24T04:48:40.631Z",
-    "size": "149607"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_E01_S02.json": {
-    "id": "1vWVb-uwogSQAEoSv38dvVQ5Rzv-2SEj4",
-    "modifiedTime": "2026-11-24T05:55:20.109Z",
-    "size": "164776"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_E01_S03.json": {
-    "id": "1u_p46bgCmIWpLLYRSXfFmY5ELRv0fcsS",
-    "modifiedTime": "2026-11-24T05:55:26.007Z",
-    "size": "165268"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_E02_N01.json": {
-    "id": "1-_LDrMhs-C6M_6CGEscstDVHSLYTjw6D",
-    "modifiedTime": "2026-11-24T08:30:58.025Z",
-    "size": "328282"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_E02_N02.json": {
-    "id": "1ithZgxjIqcNlemS5S8xz9Q7eVHQCKXms",
-    "modifiedTime": "2026-11-24T08:30:59.810Z",
-    "size": "330209"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_E02_N03.json": {
-    "id": "1oNeVtVi2IRJ6BAr3adEiArC3jkxdPJt7",
-    "modifiedTime": "2026-11-24T09:47:32.408Z",
-    "size": "330165"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_E02_S02.json": {
-    "id": "1imkRl3Byyq9cK-wNUb7eKApzMI7AdtJJ",
-    "modifiedTime": "2026-11-24T09:47:36.029Z",
-    "size": "330174"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_E02_S03.json": {
-    "id": "1YwSBWFWNBFfsX_-VvrJKXNRtBg3GgD0I",
-    "modifiedTime": "2026-11-24T09:47:38.806Z",
-    "size": "330095"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_E03_N01.json": {
-    "id": "1goqQP5aNuIghKoqtGcpaYmSC1CsRQl5C",
-    "modifiedTime": "2026-11-24T08:30:59.044Z",
-    "size": "330089"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_E03_N02.json": {
-    "id": "1XDlSOybj0ZNCVpBbhaaSxsysmHiqkKN6",
-    "modifiedTime": "2026-11-24T08:31:00.160Z",
-    "size": "330149"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_E03_N03.json": {
-    "id": "1f_CiVe0sgxB0ehgYfkVqqLPgO9k_81P-",
-    "modifiedTime": "2026-11-24T09:47:34.192Z",
-    "size": "330195"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_E03_S02.json": {
-    "id": "1JNhC_iQ-ch3rXhF-ZAKwHnokzq0wjxqI",
-    "modifiedTime": "2026-11-24T09:47:37.417Z",
-    "size": "330183"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_E03_S03.json": {
-    "id": "14sfIz-K8qnf-Pf8wMBSgcNRTO8f-MEPv",
-    "modifiedTime": "2026-11-24T09:47:41.189Z",
-    "size": "330317"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_E04_N00.json": {
-    "id": "1SsZI5rQyVY2PYvsMTnLI6NKoh45Obs6E",
-    "modifiedTime": "2026-11-24T08:31:07.233Z",
-    "size": "329761"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_E04_N01.json": {
-    "id": "1Gka-J_p3oDwosQOp1jcTTc_w7AoTRuRx",
-    "modifiedTime": "2026-11-24T08:31:07.603Z",
-    "size": "330069"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_W01_N00.json": {
-    "id": "16WiHAohimeHOwwOCDds80GiyxAgCB3oR",
-    "modifiedTime": "2026-11-24T04:48:35.541Z",
-    "size": "149223"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_W01_N01.json": {
-    "id": "1nuW0yPE6XFDvhaj5qmdsLibdXypSbqcs",
-    "modifiedTime": "2026-11-24T04:48:31.541Z",
-    "size": "149584"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_W01_N02.json": {
-    "id": "15KV43G2Fx0Fmc4OAYA6LkNib9UjJe-uj",
-    "modifiedTime": "2026-11-24T08:31:08.744Z",
-    "size": "329942"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_W01_N03.json": {
-    "id": "1U6pxKEPS2D4pCJEQsWL06lcVSigcvzUV",
-    "modifiedTime": "2026-11-24T08:31:08.956Z",
-    "size": "330208"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_W01_N04.json": {
-    "id": "1za4q97lt-COMwnp5c1piBARRt8-AerKr",
-    "modifiedTime": "2026-11-24T08:31:10.727Z",
-    "size": "329945"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_W01_N05.json": {
-    "id": "19lASfODVRErLxtz7dSXppCCD_sw78Ztj",
-    "modifiedTime": "2026-11-24T06:47:40.351Z",
-    "size": "363253"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_W01_N06.json": {
-    "id": "1IYdd_XV8zRyrNpcsxkcELnmhOfLYC5va",
-    "modifiedTime": "2026-11-24T06:47:43.848Z",
-    "size": "363177"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_W01_S01.json": {
-    "id": "1g5jgVD8tgcthXsdIrr2o2t7QV6sIRsAR",
-    "modifiedTime": "2026-11-24T04:48:37.510Z",
-    "size": "149504"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_W01_S02.json": {
-    "id": "1yQZ4YM6Gx6KROKgQ9HPaB4vF73L03XAb",
-    "modifiedTime": "2026-11-24T05:55:16.034Z",
-    "size": "145152"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_W01_S03.json": {
-    "id": "10QVParyq6KCVB-EI6TQKH7XXxpXZfGI4",
-    "modifiedTime": "2026-11-24T05:55:25.242Z",
-    "size": "161479"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_W02_N01.json": {
-    "id": "1hLZyt2wI9f1exxMqlnSZb08Bfzfu9diC",
-    "modifiedTime": "2026-11-24T08:31:07.843Z",
-    "size": "330063"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_W02_N02.json": {
-    "id": "1MSDsGOKvMbZp3s2XR1K_NR3o-jGImitt",
-    "modifiedTime": "2026-11-24T08:31:08.400Z",
-    "size": "330269"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_W02_N03.json": {
-    "id": "1Q5pyazEqm0LpMt9Q14dvBDSXeqt8pVTM",
-    "modifiedTime": "2026-11-24T09:47:30.217Z",
-    "size": "330173"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_W02_S01.json": {
-    "id": "1yj2m-7N3-Uv1O2SX0yDqlaaub-0tYgAz",
-    "modifiedTime": "2026-11-24T09:47:19.816Z",
-    "size": "329992"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_W02_S02.json": {
-    "id": "1s30e17WS4YDrEaj4KtW6uPYyrEe-T3Bo",
-    "modifiedTime": "2026-11-24T05:55:15.262Z",
-    "size": "165305"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_W02_S03.json": {
-    "id": "1epIrHYd4TtBOKCy4OznMRQpJIvMq82S5",
-    "modifiedTime": "2026-11-24T05:55:21.152Z",
-    "size": "165274"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_W03_N01.json": {
-    "id": "1NtNX41HBMzfhAWVIF4apR1TlyeM8mSJh",
-    "modifiedTime": "2026-11-24T09:47:26.006Z",
-    "size": "330127"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_W03_N02.json": {
-    "id": "1FHK02G8VKLQXcgNaCNN-A4cQLr1JKdDL",
-    "modifiedTime": "2026-11-24T09:47:26.996Z",
-    "size": "330085"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_W03_N03.json": {
-    "id": "1GcmzsvOe43vtQBNu2lGCwns4Tf8jHItR",
-    "modifiedTime": "2026-11-24T09:47:28.525Z",
-    "size": "330222"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_W03_N04.json": {
-    "id": "1iRbiLmsbWGLq9lrVGcW3-wiMFx_DHRzy",
-    "modifiedTime": "2026-11-24T06:47:50.046Z",
-    "size": "360255"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_W03_S01.json": {
-    "id": "1I2aGmLozlcYdmh4AyyKCWUbtiA-eNH8i",
-    "modifiedTime": "2026-11-24T09:47:21.506Z",
-    "size": "330262"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_W03_S02.json": {
-    "id": "11f1KOx_uQbyvJRHhTPSVYWFqlNu_gY3x",
-    "modifiedTime": "2026-11-24T09:47:23.071Z",
-    "size": "330112"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_W03_S03.json": {
-    "id": "13BMYnLaU-pungHM_WrFWZFJDosNAMcDI",
-    "modifiedTime": "2026-11-24T09:47:25.623Z",
-    "size": "330124"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_W04_N03.json": {
-    "id": "1j2aIn-c4cCOAb2BTZ_JoCDUevK5ecx7Y",
-    "modifiedTime": "2026-11-24T06:47:46.928Z",
-    "size": "351187"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_W04_N04.json": {
-    "id": "1NIHk_yUn8SO5HkPxHxVaxGnqZ8PoQNVK",
-    "modifiedTime": "2026-11-24T06:47:51.220Z",
-    "size": "314690"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_W04_N05.json": {
-    "id": "1qywMwjpRfDpCQq1y1IDwKOY2K44VOn8s",
-    "modifiedTime": "2026-11-24T06:47:52.105Z",
-    "size": "348422"
-  },
-  "assets/satellite_dem_tiles/heightmap_real_T_W05_N04.json": {
-    "id": "1yhw8uMZjD9C8ynKWNGjSHCqephQl7SiG",
-    "modifiedTime": "2026-11-24T06:47:51.098Z",
-    "size": "363217"
   },
   "assets/satellite_dem_tiles/satellite_dem_tiles_manifest.json": {
     "id": "1MPZVuxkM-tBHWvmXsogJ_3hFiNB6SxAL",
@@ -2459,6 +2334,16 @@
     "modifiedTime": "2026-11-24T05:55:12.625Z",
     "size": "957156"
   },
+  "assets/satellite_dem_tiles/terrain_real_T_E00_S04.glb": {
+    "id": "1_W2fwvIvBWgPkXhnUAX3SSQuksNqZimB",
+    "modifiedTime": "2026-11-24T10:26:38.762Z",
+    "size": "1013132"
+  },
+  "assets/satellite_dem_tiles/terrain_real_T_E00_S05.glb": {
+    "id": "1Hx38liWnQk6R3UdU0n-c_yHFvgQW9_pj",
+    "modifiedTime": "2026-11-24T11:40:18.858Z",
+    "size": "1073416"
+  },
   "assets/satellite_dem_tiles/terrain_real_T_E01_N00.glb": {
     "id": "1a72rH3RgvwRXDL31T89RCTGeV4IW12e8",
     "modifiedTime": "2026-11-24T04:48:27.234Z",
@@ -2478,6 +2363,16 @@
     "id": "1k0cyYLeLtWmuXhmYe1aLvbrMIP4Swj1p",
     "modifiedTime": "2026-11-24T09:47:10.657Z",
     "size": "1004064"
+  },
+  "assets/satellite_dem_tiles/terrain_real_T_E01_N04.glb": {
+    "id": "1AraOjCmsSSMZ4ZKVReS8ilS91YnuNBNy",
+    "modifiedTime": "2026-11-24T10:26:24.711Z",
+    "size": "1008808"
+  },
+  "assets/satellite_dem_tiles/terrain_real_T_E01_N05.glb": {
+    "id": "1mHfEiGa3SoT5vnIsBrDyGcRcCteC7KP8",
+    "modifiedTime": "2026-11-24T11:40:13.162Z",
+    "size": "1054996"
   },
   "assets/satellite_dem_tiles/terrain_real_T_E01_N06.glb": {
     "id": "1QzCsFyx_ZqO-BhFnus9VMw5ePtNug1o0",
@@ -2499,6 +2394,16 @@
     "modifiedTime": "2026-11-24T05:55:13.727Z",
     "size": "955436"
   },
+  "assets/satellite_dem_tiles/terrain_real_T_E01_S04.glb": {
+    "id": "1xgmvOUzzyxloJ8cqm4CcxPZvmK1oh495",
+    "modifiedTime": "2026-11-24T10:26:40.764Z",
+    "size": "1007396"
+  },
+  "assets/satellite_dem_tiles/terrain_real_T_E01_S05.glb": {
+    "id": "1K6ZYaakGNhv80MzmOWZciS0PJ7tvWMJ9",
+    "modifiedTime": "2026-11-24T11:40:22.010Z",
+    "size": "1101792"
+  },
   "assets/satellite_dem_tiles/terrain_real_T_E02_N00.glb": {
     "id": "1bmrdmpCIYMYBz87C3bTW4c3q4yfiJc0y",
     "modifiedTime": "2026-11-24T07:36:24.890Z",
@@ -2519,6 +2424,11 @@
     "modifiedTime": "2026-11-24T09:47:12.357Z",
     "size": "1008972"
   },
+  "assets/satellite_dem_tiles/terrain_real_T_E02_N04.glb": {
+    "id": "1L2gcLUVugEDgs5JlnexoLvj3QtKiOb6J",
+    "modifiedTime": "2026-11-24T10:26:26.774Z",
+    "size": "1149040"
+  },
   "assets/satellite_dem_tiles/terrain_real_T_E02_S01.glb": {
     "id": "195C-FCHbxqbQDfjgFuLl4VKIwuV1l0GW",
     "modifiedTime": "2026-11-24T07:36:29.389Z",
@@ -2533,6 +2443,11 @@
     "id": "1evtalcCOhG24UqBDxnvRRYzX8bIBEeos",
     "modifiedTime": "2026-11-24T09:47:17.446Z",
     "size": "1001448"
+  },
+  "assets/satellite_dem_tiles/terrain_real_T_E02_S04.glb": {
+    "id": "1yf4IFbvuOVh7_4kVyVeM6XhmCRBVuGhF",
+    "modifiedTime": "2026-11-24T10:26:43.882Z",
+    "size": "994348"
   },
   "assets/satellite_dem_tiles/terrain_real_T_E03_N00.glb": {
     "id": "1YidIYTZgtTN8zLLPTAgRY6_hlsCi51SZ",
@@ -2554,6 +2469,11 @@
     "modifiedTime": "2026-11-24T09:47:13.901Z",
     "size": "1149080"
   },
+  "assets/satellite_dem_tiles/terrain_real_T_E03_N04.glb": {
+    "id": "1V8wTKT8xxNdKvkLDlEYo5miIUTWK-Kk8",
+    "modifiedTime": "2026-11-24T10:26:28.347Z",
+    "size": "1148292"
+  },
   "assets/satellite_dem_tiles/terrain_real_T_E03_S01.glb": {
     "id": "1NUl0_84LXwHTNd1UjBYQPnhtTC7eReA4",
     "modifiedTime": "2026-11-24T07:36:37.235Z",
@@ -2569,6 +2489,11 @@
     "modifiedTime": "2026-11-24T09:47:18.997Z",
     "size": "996460"
   },
+  "assets/satellite_dem_tiles/terrain_real_T_E03_S04.glb": {
+    "id": "107a-CuKdBl5GfgLCrz_ptq5LQlqf8KTg",
+    "modifiedTime": "2026-11-24T11:40:11.261Z",
+    "size": "997636"
+  },
   "assets/satellite_dem_tiles/terrain_real_T_E04_N00.glb": {
     "id": "14VVRFQ2c_zIEtpE-2daj1w49WQGmTAkq",
     "modifiedTime": "2026-11-24T08:30:51.792Z",
@@ -2579,15 +2504,65 @@
     "modifiedTime": "2026-11-24T08:30:52.112Z",
     "size": "998088"
   },
+  "assets/satellite_dem_tiles/terrain_real_T_E04_N02.glb": {
+    "id": "1Uj160Hl2gw9B84CoeRyRPtg-p2dk4BEy",
+    "modifiedTime": "2026-11-24T10:26:29.277Z",
+    "size": "1144752"
+  },
+  "assets/satellite_dem_tiles/terrain_real_T_E04_N03.glb": {
+    "id": "1pzxJVnMyTpDyPkKywjMNefBwhne4vhes",
+    "modifiedTime": "2026-11-24T11:40:06.859Z",
+    "size": "997480"
+  },
+  "assets/satellite_dem_tiles/terrain_real_T_E04_N04.glb": {
+    "id": "1hqBEdp9rUYbIxy4tTomdbbIGSvsgnKB0",
+    "modifiedTime": "2026-11-24T11:40:08.305Z",
+    "size": "1128304"
+  },
+  "assets/satellite_dem_tiles/terrain_real_T_E04_S01.glb": {
+    "id": "1juXWrFIwBlLroMUiCtY5nBOpo3wdSqJ_",
+    "modifiedTime": "2026-11-24T10:26:30.262Z",
+    "size": "1153188"
+  },
   "assets/satellite_dem_tiles/terrain_real_T_E04_S02.glb": {
     "id": "1eJuz4pa0kCCbdjPtuZdQSKUihIwaRqvd",
     "modifiedTime": "2026-11-24T07:36:40.716Z",
     "size": "1011652"
   },
+  "assets/satellite_dem_tiles/terrain_real_T_E04_S03.glb": {
+    "id": "1skxN05BpauXc-YAC90yqjfBmcQqmNof_",
+    "modifiedTime": "2026-11-24T11:40:07.866Z",
+    "size": "1130716"
+  },
+  "assets/satellite_dem_tiles/terrain_real_T_E04_S04.glb": {
+    "id": "1m5dzOIz0w8nBmpPyA_fT36jYuhVRZ9oi",
+    "modifiedTime": "2026-11-24T11:40:10.007Z",
+    "size": "1144592"
+  },
+  "assets/satellite_dem_tiles/terrain_real_T_E05_S01.glb": {
+    "id": "1nwceiHXmdVGjTyGiA5HGjVNtUQ9dauBN",
+    "modifiedTime": "2026-11-24T11:40:13.496Z",
+    "size": "1128880"
+  },
+  "assets/satellite_dem_tiles/terrain_real_T_E05_S02.glb": {
+    "id": "11nfzvOcHSV5Y-VxueuS9rEiLQ9Ve4MlG",
+    "modifiedTime": "2026-11-24T10:26:32.484Z",
+    "size": "1026408"
+  },
   "assets/satellite_dem_tiles/terrain_real_T_E05_S03.glb": {
     "id": "10U6oXJqyN6KFyDinkiPgIQrz8MYq1CO2",
     "modifiedTime": "2026-11-24T07:36:45.612Z",
     "size": "1056156"
+  },
+  "assets/satellite_dem_tiles/terrain_real_T_E05_S04.glb": {
+    "id": "1qu8W54HtpyzndQIxllO2Q8sB5DR7mAKy",
+    "modifiedTime": "2026-11-24T11:40:16.375Z",
+    "size": "1148916"
+  },
+  "assets/satellite_dem_tiles/terrain_real_T_E05_S05.glb": {
+    "id": "1VFImqtRyAyTNbUfbqR8dVWOD4ZFrVVK2",
+    "modifiedTime": "2026-11-24T12:47:22.874Z",
+    "size": "1128252"
   },
   "assets/satellite_dem_tiles/terrain_real_T_E06_S03.glb": {
     "id": "11FPHJmYCHzcRfRjg2sM6FnEWmNrhrVy_",
@@ -2598,6 +2573,26 @@
     "id": "12wqEHXMzqLGKo3w-Dt6vcaFExAMM6uTz",
     "modifiedTime": "2026-11-24T07:36:53.771Z",
     "size": "1057952"
+  },
+  "assets/satellite_dem_tiles/terrain_real_T_E06_S05.glb": {
+    "id": "1lX5tmyLioWW5DL1FHYFzTOKmxU0eo1wu",
+    "modifiedTime": "2026-11-24T12:47:22.692Z",
+    "size": "1135656"
+  },
+  "assets/satellite_dem_tiles/terrain_real_T_E07_S03.glb": {
+    "id": "1ZDee-g02gfUw48oNqIdgS0V6_dP4hV24",
+    "modifiedTime": "2026-11-24T12:47:27.881Z",
+    "size": "1048328"
+  },
+  "assets/satellite_dem_tiles/terrain_real_T_E07_S04.glb": {
+    "id": "18vy8QrvdqVt2dePH4Rfr8JkV89G2pbIr",
+    "modifiedTime": "2026-11-24T12:47:28.062Z",
+    "size": "1154264"
+  },
+  "assets/satellite_dem_tiles/terrain_real_T_E07_S05.glb": {
+    "id": "1yea4EgbsnBuBwIF9l49BrUI1ZjWlC7Gn",
+    "modifiedTime": "2026-11-24T12:47:28.539Z",
+    "size": "1154140"
   },
   "assets/satellite_dem_tiles/terrain_real_T_W01_N00.glb": {
     "id": "1SueJ0IHxHq7yTEv7KCPHW7KmZ5bUmuzp",
@@ -2649,6 +2644,16 @@
     "modifiedTime": "2026-11-24T05:55:10.957Z",
     "size": "945828"
   },
+  "assets/satellite_dem_tiles/terrain_real_T_W01_S04.glb": {
+    "id": "1hVZ6VOsnkvrFS4HUkIUaCIL1mjza7vFE",
+    "modifiedTime": "2026-11-24T10:26:38.808Z",
+    "size": "1006788"
+  },
+  "assets/satellite_dem_tiles/terrain_real_T_W01_S05.glb": {
+    "id": "1z1Mvvk_Y2_MM6jBwxlREB_qz1aL4HDFf",
+    "modifiedTime": "2026-11-24T11:40:17.456Z",
+    "size": "1106732"
+  },
   "assets/satellite_dem_tiles/terrain_real_T_W02_N00.glb": {
     "id": "1hbIDdNbpLz-2RITsr518RDDUMg4fFpht",
     "modifiedTime": "2026-11-24T07:36:57.225Z",
@@ -2669,6 +2674,11 @@
     "modifiedTime": "2026-11-24T09:47:09.390Z",
     "size": "1009792"
   },
+  "assets/satellite_dem_tiles/terrain_real_T_W02_N04.glb": {
+    "id": "1zvDTIGOTLj9_uyPPfjoO9V8jparx9v-U",
+    "modifiedTime": "2026-11-24T10:26:24.341Z",
+    "size": "1007020"
+  },
   "assets/satellite_dem_tiles/terrain_real_T_W02_S01.glb": {
     "id": "1Dc6lv_5aCnBu_AEz7OMrpwC5s1LpgBJb",
     "modifiedTime": "2026-11-24T09:47:00.541Z",
@@ -2683,6 +2693,16 @@
     "id": "1f6HNFtlhfe8Jk5CnPEV_4hpa86sda_vo",
     "modifiedTime": "2026-11-24T05:55:09.550Z",
     "size": "951544"
+  },
+  "assets/satellite_dem_tiles/terrain_real_T_W02_S04.glb": {
+    "id": "1YXZt79OwjcrCigmCD5pOoCKfzbzdRRx5",
+    "modifiedTime": "2026-11-24T10:26:36.939Z",
+    "size": "998340"
+  },
+  "assets/satellite_dem_tiles/terrain_real_T_W02_S05.glb": {
+    "id": "1hby3iwKIh_ACPReIS0EJPToJDIeqPiZZ",
+    "modifiedTime": "2026-11-24T12:47:21.484Z",
+    "size": "1075164"
   },
   "assets/satellite_dem_tiles/terrain_real_T_W03_N00.glb": {
     "id": "1c4z5eiVZc8zo6VpzS_8OwwqaxEtZZxWP",
@@ -2709,6 +2729,11 @@
     "modifiedTime": "2026-11-24T06:47:36.528Z",
     "size": "1006504"
   },
+  "assets/satellite_dem_tiles/terrain_real_T_W03_N05.glb": {
+    "id": "1ZOYz1ut-OHWHF2RGL8zTh6apMXfM929d",
+    "modifiedTime": "2026-11-24T11:40:12.661Z",
+    "size": "998320"
+  },
   "assets/satellite_dem_tiles/terrain_real_T_W03_S01.glb": {
     "id": "1nkMkuQIYK1AOfMtIWvGrvg_ur4JZuqVK",
     "modifiedTime": "2026-11-24T09:47:01.660Z",
@@ -2724,10 +2749,30 @@
     "modifiedTime": "2026-11-24T09:47:04.247Z",
     "size": "1005864"
   },
+  "assets/satellite_dem_tiles/terrain_real_T_W03_S04.glb": {
+    "id": "1p23oyuT0Zqlb2J6ISPHn8Dlp4stZw5oy",
+    "modifiedTime": "2026-11-24T10:26:35.721Z",
+    "size": "1004020"
+  },
+  "assets/satellite_dem_tiles/terrain_real_T_W03_S05.glb": {
+    "id": "1F-a9NqTyHobeo6FhZGAkL3FIDiWRKM3z",
+    "modifiedTime": "2026-11-24T12:47:19.937Z",
+    "size": "1084676"
+  },
   "assets/satellite_dem_tiles/terrain_real_T_W04_N00.glb": {
     "id": "1lTqa_1HMyEfb9Y1M4lSI8WP-tIqs-NKh",
     "modifiedTime": "2026-11-24T07:37:03.814Z",
     "size": "997156"
+  },
+  "assets/satellite_dem_tiles/terrain_real_T_W04_N01.glb": {
+    "id": "1yrqGUkjRZE_bBLbQ9XbP-fWfAzdFHID2",
+    "modifiedTime": "2026-11-24T11:40:03.379Z",
+    "size": "1115016"
+  },
+  "assets/satellite_dem_tiles/terrain_real_T_W04_N02.glb": {
+    "id": "1f10PRSoMiqjUpuD2tYlt9Pq4FxeomU_L",
+    "modifiedTime": "2026-11-24T11:40:03.765Z",
+    "size": "997516"
   },
   "assets/satellite_dem_tiles/terrain_real_T_W04_N03.glb": {
     "id": "1IB82OlSIxGsJaeZ1493kE3xI9RnbSCPJ",
@@ -2749,6 +2794,46 @@
     "modifiedTime": "2026-11-24T07:37:08.070Z",
     "size": "1004536"
   },
+  "assets/satellite_dem_tiles/terrain_real_T_W04_S02.glb": {
+    "id": "1vQtyMRXzaiGilW19WwMfOZiJb-q_UM49",
+    "modifiedTime": "2026-11-24T10:26:33.602Z",
+    "size": "997996"
+  },
+  "assets/satellite_dem_tiles/terrain_real_T_W04_S03.glb": {
+    "id": "1gvOLN7uYo12CvEBc11KeqeRPj5dhDO_Z",
+    "modifiedTime": "2026-11-24T10:26:33.350Z",
+    "size": "994228"
+  },
+  "assets/satellite_dem_tiles/terrain_real_T_W04_S04.glb": {
+    "id": "1ClRjFTuaHfjaS90Vab2NVdPigz0kgOpn",
+    "modifiedTime": "2026-11-24T11:40:04.406Z",
+    "size": "997620"
+  },
+  "assets/satellite_dem_tiles/terrain_real_T_W04_S05.glb": {
+    "id": "1EDjLxRH1-1yixGB7UDjbHCrKFGPOlC4L",
+    "modifiedTime": "2026-11-24T12:47:17.614Z",
+    "size": "997464"
+  },
+  "assets/satellite_dem_tiles/terrain_real_T_W05_N00.glb": {
+    "id": "163-ZLuBgIUFsuODRBsi0HBqy522gAxnN",
+    "modifiedTime": "2026-11-24T12:47:11.920Z",
+    "size": "1007172"
+  },
+  "assets/satellite_dem_tiles/terrain_real_T_W05_N01.glb": {
+    "id": "1oTB-Vec78cpss2yC-wK7S6g2prGTFTEp",
+    "modifiedTime": "2026-11-24T12:47:15.496Z",
+    "size": "997828"
+  },
+  "assets/satellite_dem_tiles/terrain_real_T_W05_N02.glb": {
+    "id": "14c5L5IpIZhX4FzDlxKbPZR1RnQz5BYAD",
+    "modifiedTime": "2026-11-24T12:47:14.357Z",
+    "size": "997764"
+  },
+  "assets/satellite_dem_tiles/terrain_real_T_W05_N03.glb": {
+    "id": "1n18Azs5J7L4m-WHNKdL9BF3kL9IU0cvC",
+    "modifiedTime": "2026-11-24T12:47:15.368Z",
+    "size": "997328"
+  },
   "assets/satellite_dem_tiles/terrain_real_T_W05_N04.glb": {
     "id": "1SJxQqGQijJy_5kjMUWqIXLSNFOS9SD5C",
     "modifiedTime": "2026-11-24T06:47:38.215Z",
@@ -2763,6 +2848,21 @@
     "id": "1yCiUV5Dr6z_nCUgmY89Zsz_rQg8cjaCJ",
     "modifiedTime": "2026-11-24T07:37:15.215Z",
     "size": "1015952"
+  },
+  "assets/satellite_dem_tiles/terrain_real_T_W05_S03.glb": {
+    "id": "1PUa8OWXKBtijj8JBm-6KQTvOyohPWZuJ",
+    "modifiedTime": "2026-11-24T12:47:16.690Z",
+    "size": "1107708"
+  },
+  "assets/satellite_dem_tiles/terrain_real_T_W05_S04.glb": {
+    "id": "1NK4MW2XIR-TyGCHSdijf2OKg6AU6glW9",
+    "modifiedTime": "2026-11-24T12:47:16.861Z",
+    "size": "997232"
+  },
+  "assets/satellite_dem_tiles/terrain_real_T_W06_S02.glb": {
+    "id": "11oYC-90iy12loOD15HwhFuaN7S_tzsvG",
+    "modifiedTime": "2026-11-24T12:47:14.150Z",
+    "size": "1097812"
   },
   "assets/scene/world_index.json": {
     "id": "1odxtF144aNkdpPcyWbjo2qyrDFwgJj9i",
@@ -2904,15 +3004,90 @@
     "modifiedTime": "2026-11-24T10:04:01.325Z",
     "size": "195996"
   },
+  "assets/sourced_library/landmarks/lm_116_san_bay_cam_ly_lich_su_hangar_vom_thep_va_dai_quan_sat_doi_thong.glb": {
+    "id": "1zSKGG4tqKcNkHql-pjBWF5Foss1vuaw_",
+    "modifiedTime": "2026-11-24T11:15:29.464Z",
+    "size": "191068"
+  },
+  "assets/sourced_library/landmarks/lm_117_ben_du_thuyen_va_cau_lac_bo_kayak_ho_tuyen_lam_marina_club.glb": {
+    "id": "1i8LkZKsgS7q26Xal5X9XCRoEJnXsfZrC",
+    "modifiedTime": "2026-11-24T11:15:33.001Z",
+    "size": "191804"
+  },
+  "assets/sourced_library/landmarks/lm_118_dinh_pinhatt_1691m_mom_da_san_may_va_dai_vong_canh_ho_tuyen_lam.glb": {
+    "id": "1JCVTdmFb97DLiDhp2R4pjzP4y0t75WY0",
+    "modifiedTime": "2026-11-24T11:15:38.704Z",
+    "size": "188800"
+  },
+  "assets/sourced_library/landmarks/lm_119_biet_thu_phap_co_nguyen_du_quang_trung_mansard_slate_heritage.glb": {
+    "id": "1QOCMDVZqZBhO7X50ylMlmZFofMOHR7wx",
+    "modifiedTime": "2026-11-24T11:15:43.947Z",
+    "size": "178320"
+  },
   "assets/sourced_library/landmarks/lm_11_crazy_house_organic_base.glb": {
     "id": "1WoFDeT2kw5n5LZrj7c4_zhPmFkhWxt-K",
     "modifiedTime": "2026-11-23T13:24:29.401Z",
     "size": "63832"
   },
+  "assets/sourced_library/landmarks/lm_120_trang_trai_duoc_lieu_atiso_va_nha_say_tra_thao_moc_thai_phien_da_thien.glb": {
+    "id": "1Z9Pzg5gsjcM3y7MU8xTKLKjZG75TB6-z",
+    "modifiedTime": "2026-11-24T11:15:50.749Z",
+    "size": "195464"
+  },
+  "assets/sourced_library/landmarks/lm_121_thac_voi_lieng_rowoa_nam_ban_vach_da_bazan_voi_phuc_va_hang_doi.glb": {
+    "id": "1dNUMkmxgdjoKN2xGDYOzY_60IUfGAYVR",
+    "modifiedTime": "2026-11-24T12:20:56.394Z",
+    "size": "297264"
+  },
+  "assets/sourced_library/landmarks/lm_122_nha_may_che_co_tram_hanh_1927_phan_xuong_say_che_olong_cau_dat.glb": {
+    "id": "1gkk6cNFQp6J5-_3Ku_W2pUW30hAfmtjN",
+    "modifiedTime": "2026-11-24T12:20:57.187Z",
+    "size": "268464"
+  },
+  "assets/sourced_library/landmarks/lm_123_nha_long_phoi_hong_gio_hoshigaki_va_vuon_hong_co_trai_mat_xuan_tho.glb": {
+    "id": "1pSPAjed0AxZJw8SsHe5Jo9wD-hyc7K-a",
+    "modifiedTime": "2026-11-24T12:20:58.435Z",
+    "size": "277344"
+  },
+  "assets/sourced_library/landmarks/lm_124_biet_thu_phap_co_le_hong_phong_pasteur_stone_chimney_normandy_villa.glb": {
+    "id": "1NGLTQT9Th-1gsWe_wS-bEFx4PrvW-5of",
+    "modifiedTime": "2026-11-24T12:21:00.750Z",
+    "size": "270384"
+  },
+  "assets/sourced_library/landmarks/lm_125_tram_dung_ngam_canh_va_cau_go_san_may_deo_dran_ngoan_muc_don_duong.glb": {
+    "id": "15XQVSRaI_kNULRo5qbIskJYHm17qgI3e",
+    "modifiedTime": "2026-11-24T12:21:01.998Z",
+    "size": "253104"
+  },
+  "assets/sourced_library/landmarks/lm_126_dap_thuy_dien_da_nhim_va_duong_ong_ap_luc_doi_deo_ngoan_muc_don_duong.glb": {
+    "id": "1_TbBy5ytNPmAoWqDv5BsRvWOpsfOf_tY",
+    "modifiedTime": "2026-11-24T13:13:54.383Z",
+    "size": "338308"
+  },
+  "assets/sourced_library/landmarks/lm_127_thac_gougah_phu_hoi_duc_trong_vach_da_bazan_vong_cung_ho_da_nhim.glb": {
+    "id": "16aaSTAFDZd3BvD8JDb-Gn1Z0gmYqQcSz",
+    "modifiedTime": "2026-11-24T13:13:56.608Z",
+    "size": "281424"
+  },
+  "assets/sourced_library/landmarks/lm_128_nha_san_go_k_ho_va_cau_treo_suoi_can_khu_du_lich_lang_cu_lan.glb": {
+    "id": "1zoVjbyJ84qMB-F64tkMkS6hxq3A4GZ-b",
+    "modifiedTime": "2026-11-24T13:13:57.544Z",
+    "size": "229840"
+  },
+  "assets/sourced_library/landmarks/lm_129_biet_thu_phap_co_bui_thi_xuan_nguyen_van_troi_basalt_arch_mansard_villa.glb": {
+    "id": "1Ll3hLdZdAQHHXss-Wd789ZRALRSw0fSA",
+    "modifiedTime": "2026-11-24T13:14:00.378Z",
+    "size": "252400"
+  },
   "assets/sourced_library/landmarks/lm_12_dalat_palace_hotel_base.glb": {
     "id": "1WsmPDUpEzxYt94C6_2fGTojESCH0IbMe",
     "modifiedTime": "2026-11-23T13:24:28.949Z",
     "size": "30788"
+  },
+  "assets/sourced_library/landmarks/lm_130_trung_tam_du_khach_va_tram_kiem_lam_vuon_quoc_gia_bidoup_nui_ba.glb": {
+    "id": "1eQmv685wVRF_wOVDg_kBKxmFHRSHzuGU",
+    "modifiedTime": "2026-11-24T13:14:03.639Z",
+    "size": "240624"
   },
   "assets/sourced_library/landmarks/lm_13_tran_hung_dao_french_villa_cluster.glb": {
     "id": "1T1UbxVHRwZOBmMjoujd_QtTRPdF9efw5",
@@ -3499,6 +3674,21 @@
     "modifiedTime": "2026-11-24T10:04:12.965Z",
     "size": "56528"
   },
+  "assets/sourced_library/urban_props/prop_29_cam_ly_airstrip_windsock_beacon_and_runway_marker_kit.glb": {
+    "id": "1kK5yQypZYhNyfG32uOMtV3zgtcizkS8b",
+    "modifiedTime": "2026-11-24T11:16:05.646Z",
+    "size": "48484"
+  },
+  "assets/sourced_library/urban_props/prop_30_hoshigaki_persimmon_hanging_racks_and_bamboo_harvest_baskets_kit.glb": {
+    "id": "1QplXQjPjsNrtSMVzq5zilqJnHTm__ILd",
+    "modifiedTime": "2026-11-24T12:21:06.085Z",
+    "size": "65420"
+  },
+  "assets/sourced_library/urban_props/prop_31_lang_cu_lan_k_ho_wooden_totem_gong_stand_and_jeep_ford_crossing_kit.glb": {
+    "id": "1AJP_iBAvOcLfwV7g5D9wKtfNGWKHWZYD",
+    "modifiedTime": "2026-11-24T13:14:05.928Z",
+    "size": "26292"
+  },
   "assets/sourced_library/vegetation/dalat_da_quy_flower_bush.glb": {
     "id": "11NYD_SHymreHhUBrIDveekR9gVYipfp8",
     "modifiedTime": "2026-11-23T09:54:28.734Z",
@@ -3694,6 +3884,36 @@
     "modifiedTime": "2026-11-24T10:04:08.458Z",
     "size": "43116"
   },
+  "assets/sourced_library/vegetation/flora_45_rosmarinus_officinalis_luong_huong_thao_va_bac_ha_au_da_lat.glb": {
+    "id": "1xrJG3AZI93B36gTpUbXiTjb-zyJp3qlc",
+    "modifiedTime": "2026-11-24T11:15:57.074Z",
+    "size": "30668"
+  },
+  "assets/sourced_library/vegetation/flora_46_rhododendron_simsii_cum_hoa_do_quyen_rung_langbiang_bidoup.glb": {
+    "id": "1rn7AbAAcR9WtbyNIfGObxUa1Vnt4WSRY",
+    "modifiedTime": "2026-11-24T11:16:00.943Z",
+    "size": "36228"
+  },
+  "assets/sourced_library/vegetation/flora_47_diospyros_kaki_cay_hong_gion_trai_mat_xuan_tho_laden_fruit_tree.glb": {
+    "id": "1Cm6O-5g_UG5gxJahNWsinvgoUqcM5Sgi",
+    "modifiedTime": "2026-11-24T12:21:03.728Z",
+    "size": "38540"
+  },
+  "assets/sourced_library/vegetation/flora_48_camellia_sinensis_ancient_shan_tuyet_tea_tree_cau_dat_1927.glb": {
+    "id": "1L77E831Ssm20YMmdS6Qr6bsMB2XLaKQ8",
+    "modifiedTime": "2026-11-24T12:21:05.069Z",
+    "size": "25576"
+  },
+  "assets/sourced_library/vegetation/flora_49_bambusa_multiplex_khom_tre_truc_vang_lang_cu_lan_thi_tran_dran.glb": {
+    "id": "14Qayy1zCk3-FKlrybI4ESFFwsUeA5cFg",
+    "modifiedTime": "2026-11-24T13:14:04.839Z",
+    "size": "46464"
+  },
+  "assets/sourced_library/vegetation/flora_50_lilium_longiflorum_luong_hoa_ly_ly_kép_nha_kinh_van_thanh_ha_dong.glb": {
+    "id": "1KKSap9SyUYUxeDYGbiENEPIeytQJb9SV",
+    "modifiedTime": "2026-11-24T13:14:05.061Z",
+    "size": "38552"
+  },
   "assets/sourced_library/vegetation/mai_anh_dao_blossom_lod0.glb": {
     "id": "11Ch6BwXw_AeFkhXm6iBeLsrv_3tfo7oK",
     "modifiedTime": "2026-11-23T09:54:28.543Z",
@@ -3724,1085 +3944,20 @@
     "modifiedTime": "2026-11-23T09:54:28.963Z",
     "size": "3896"
   },
-  "assets/terrain_tiles/heightmap_T_E00_N00.json": {
-    "id": "1c7sAhKlSoxOFE1LRt3HVRGj7J7w1SrMn",
-    "modifiedTime": "2026-11-23T11:12:01.622Z",
-    "size": "145304"
-  },
-  "assets/terrain_tiles/heightmap_T_E00_N01.json": {
-    "id": "1s7RMfw4zeV7CJgnKDsQJmVkKmGOcDldc",
-    "modifiedTime": "2026-11-23T11:14:07.950Z",
-    "size": "149137"
-  },
-  "assets/terrain_tiles/heightmap_T_E00_N02.json": {
-    "id": "1-CB-KcFWROWHWiNzPBTrm_rlkv2LcEhD",
-    "modifiedTime": "2026-11-23T14:05:23.227Z",
-    "size": "83435"
-  },
-  "assets/terrain_tiles/heightmap_T_E00_N03.json": {
-    "id": "13XAjLnNQ-nlK-xfgXKEHLWTGPRl6y4G2",
-    "modifiedTime": "2026-11-23T17:06:58.634Z",
-    "size": "84741"
-  },
-  "assets/terrain_tiles/heightmap_T_E00_N04.json": {
-    "id": "1LMfO_rUFTsJukOJl6Ri_NuN5y6wHqSi3",
-    "modifiedTime": "2026-11-23T23:10:49.572Z",
-    "size": "38586"
-  },
-  "assets/terrain_tiles/heightmap_T_E00_N05.json": {
-    "id": "1rmpIv-V2RZknrDHsYafNwQPBsCdrRgcs",
-    "modifiedTime": "2026-11-23T23:10:54.505Z",
-    "size": "38618"
-  },
-  "assets/terrain_tiles/heightmap_T_E00_N06.json": {
-    "id": "1QX-4d9pU4BCsc251QS-XP74zL4vnq0YU",
-    "modifiedTime": "2026-11-23T23:10:59.789Z",
-    "size": "38610"
-  },
-  "assets/terrain_tiles/heightmap_T_E00_S01.json": {
-    "id": "1O3E93xF_d2EFkqmxiusrir7IPOx0wcrz",
-    "modifiedTime": "2026-11-23T12:12:23.969Z",
-    "size": "149055"
-  },
-  "assets/terrain_tiles/heightmap_T_E00_S02.json": {
-    "id": "11_xiY423ASPaLYxfh0K2JXRvbA5X51TG",
-    "modifiedTime": "2026-11-23T13:20:50.549Z",
-    "size": "83671"
-  },
-  "assets/terrain_tiles/heightmap_T_E00_S03.json": {
-    "id": "1e9-aEZp7Nf0f-Ft73L7iXe-vHIGG3sC-",
-    "modifiedTime": "2026-11-23T13:20:50.649Z",
-    "size": "84799"
-  },
-  "assets/terrain_tiles/heightmap_T_E00_S04.json": {
-    "id": "18sxugO5SiKGy03m5ohV8bbYrIL-toc3j",
-    "modifiedTime": "2026-11-24T04:55:16.767Z",
-    "size": "38635"
-  },
-  "assets/terrain_tiles/heightmap_T_E00_S05.json": {
-    "id": "1vckss3s1ct0gNq2Iy4nRa-PGUzHVD2LM",
-    "modifiedTime": "2026-11-24T04:55:18.109Z",
-    "size": "38622"
-  },
-  "assets/terrain_tiles/heightmap_T_E01_N00.json": {
-    "id": "16hlfC4Fqj8KtlVmlCkAwzYVA546q9dsT",
-    "modifiedTime": "2026-11-23T12:12:24.005Z",
-    "size": "149147"
-  },
-  "assets/terrain_tiles/heightmap_T_E01_N01.json": {
-    "id": "1QOmgycgtlxZ_p7Ry-KRwGpm_vJVfc3B1",
-    "modifiedTime": "2026-11-23T11:14:04.433Z",
-    "size": "149159"
-  },
-  "assets/terrain_tiles/heightmap_T_E01_N02.json": {
-    "id": "1XvPASZp9qTEl-sm51PnOVL2cTgPLQf-T",
-    "modifiedTime": "2026-11-23T15:11:17.056Z",
-    "size": "84805"
-  },
-  "assets/terrain_tiles/heightmap_T_E01_N03.json": {
-    "id": "1pRDGLpq0ZMyvbp_iNNUekw5ZLacp40d_",
-    "modifiedTime": "2026-11-23T17:59:22.950Z",
-    "size": "84717"
-  },
-  "assets/terrain_tiles/heightmap_T_E01_N04.json": {
-    "id": "1ZEBntFZEKn7y1aU6kaAvMmaEUWizbhrL",
-    "modifiedTime": "2026-11-24T00:21:09.547Z",
-    "size": "38609"
-  },
-  "assets/terrain_tiles/heightmap_T_E01_N05.json": {
-    "id": "1J_E3EJ7ubWLuBOVRjIVvyHQ4zgaoRs6F",
-    "modifiedTime": "2026-11-24T00:21:10.364Z",
-    "size": "38595"
-  },
-  "assets/terrain_tiles/heightmap_T_E01_N06.json": {
-    "id": "1sFQmwz8EbZ5ckMPbuf_wuV9me38MN6sa",
-    "modifiedTime": "2026-11-24T01:17:20.521Z",
-    "size": "38610"
-  },
-  "assets/terrain_tiles/heightmap_T_E01_S01.json": {
-    "id": "1LkclPPg9mMHwH7nf5a_EtE7EJncsCrIr",
-    "modifiedTime": "2026-11-23T12:12:24.783Z",
-    "size": "149175"
-  },
-  "assets/terrain_tiles/heightmap_T_E01_S02.json": {
-    "id": "1GWsj2wJGokU8YVTzPrwHidOdbm7D9TYn",
-    "modifiedTime": "2026-11-23T15:11:17.302Z",
-    "size": "84757"
-  },
-  "assets/terrain_tiles/heightmap_T_E01_S03.json": {
-    "id": "1jtWmwNFL19AXfaWy5SR3dY6GcqK5nG4D",
-    "modifiedTime": "2026-11-23T19:04:53.118Z",
-    "size": "84789"
-  },
-  "assets/terrain_tiles/heightmap_T_E01_S04.json": {
-    "id": "18Jd4FOkhGHP7G5BcYAZDXOMe7KIaUZbD",
-    "modifiedTime": "2026-11-24T04:55:17.172Z",
-    "size": "38609"
-  },
-  "assets/terrain_tiles/heightmap_T_E01_S05.json": {
-    "id": "1ewEb3quAYBjV1CjDJNuScw9BoihmCsNX",
-    "modifiedTime": "2026-11-24T06:54:07.495Z",
-    "size": "38631"
-  },
-  "assets/terrain_tiles/heightmap_T_E02_N00.json": {
-    "id": "18BXfPozDI3fn7WH8zPjp8XJYEPFfCm6L",
-    "modifiedTime": "2026-11-23T15:11:16.348Z",
-    "size": "84817"
-  },
-  "assets/terrain_tiles/heightmap_T_E02_N01.json": {
-    "id": "1rxs5-m7AJCQWQZ3GpAImRPOPxh3gUIIX",
-    "modifiedTime": "2026-11-23T14:05:20.577Z",
-    "size": "84160"
-  },
-  "assets/terrain_tiles/heightmap_T_E02_N02.json": {
-    "id": "1NkLqr5AIa2hDMS5qTJ0qedko5RnQiC24",
-    "modifiedTime": "2026-11-23T17:06:57.417Z",
-    "size": "84769"
-  },
-  "assets/terrain_tiles/heightmap_T_E02_N03.json": {
-    "id": "1TKaQkfhyMv9Yx60ziQRRGVn17ll5BzVm",
-    "modifiedTime": "2026-11-23T20:12:06.286Z",
-    "size": "84804"
-  },
-  "assets/terrain_tiles/heightmap_T_E02_N04.json": {
-    "id": "1RX6GxRIC9PZqwuBefmYGt31oP4Hu6MbS",
-    "modifiedTime": "2026-11-24T07:55:58.271Z",
-    "size": "38633"
-  },
-  "assets/terrain_tiles/heightmap_T_E02_S01.json": {
-    "id": "1jqnYsBKyB2c7HKaagcL6Zbwr6otIV9fF",
-    "modifiedTime": "2026-11-23T15:57:30.641Z",
-    "size": "84820"
-  },
-  "assets/terrain_tiles/heightmap_T_E02_S02.json": {
-    "id": "1ZRH2nMA4tUe1fhT4ExD01Vz2dRR0br1O",
-    "modifiedTime": "2026-11-23T17:06:57.025Z",
-    "size": "84826"
-  },
-  "assets/terrain_tiles/heightmap_T_E02_S03.json": {
-    "id": "182buTPssqa7xA42Ylv_wlXnNKWNL9SSm",
-    "modifiedTime": "2026-11-23T21:20:16.925Z",
-    "size": "84714"
-  },
-  "assets/terrain_tiles/heightmap_T_E02_S04.json": {
-    "id": "1Bp9kNox8RogsqhjJr5lzNeC_OeChav4e",
-    "modifiedTime": "2026-11-24T06:54:07.886Z",
-    "size": "38642"
-  },
-  "assets/terrain_tiles/heightmap_T_E03_N00.json": {
-    "id": "1QFtvndKTURc1PpiRjLj_44pQWw8k9D0B",
-    "modifiedTime": "2026-11-23T14:05:19.729Z",
-    "size": "84776"
-  },
-  "assets/terrain_tiles/heightmap_T_E03_N01.json": {
-    "id": "1FlLbto9_a7j-plxy4bS0_YigrrrmYGnw",
-    "modifiedTime": "2026-11-23T17:59:24.253Z",
-    "size": "84759"
-  },
-  "assets/terrain_tiles/heightmap_T_E03_N02.json": {
-    "id": "1uWtglruAUfv0z4BZEKw2cyPm7E6-61sj",
-    "modifiedTime": "2026-11-23T20:12:07.151Z",
-    "size": "84786"
-  },
-  "assets/terrain_tiles/heightmap_T_E03_N03.json": {
-    "id": "1WCl1M0NR9szSnFyIDjCjXtIuywA_6nXz",
-    "modifiedTime": "2026-11-23T21:54:33.391Z",
-    "size": "84726"
-  },
-  "assets/terrain_tiles/heightmap_T_E03_N04.json": {
-    "id": "1JhsiBCSSIDzK1sJXuIFS2Bd_g0qm4BlT",
-    "modifiedTime": "2026-11-24T07:56:00.843Z",
-    "size": "38633"
-  },
-  "assets/terrain_tiles/heightmap_T_E03_S01.json": {
-    "id": "1WeLADFHlTfx1SPF4UBR24SIYFhhi0-PU",
-    "modifiedTime": "2026-11-23T17:59:28.168Z",
-    "size": "84763"
-  },
-  "assets/terrain_tiles/heightmap_T_E03_S02.json": {
-    "id": "1rVCLb0_HIdIU8Rzpjxf0C8l-bGGr8g4X",
-    "modifiedTime": "2026-11-23T20:12:07.369Z",
-    "size": "84779"
-  },
-  "assets/terrain_tiles/heightmap_T_E03_S03.json": {
-    "id": "1lYmAO-2ItVlCLkJwJraFQ47bZMUmiHTj",
-    "modifiedTime": "2026-11-23T21:54:34.217Z",
-    "size": "84837"
-  },
-  "assets/terrain_tiles/heightmap_T_E03_S04.json": {
-    "id": "1t60KnD0JYx3hJW1jq6WwBGO9pub1Ee4E",
-    "modifiedTime": "2026-11-24T06:54:09.527Z",
-    "size": "38643"
-  },
-  "assets/terrain_tiles/heightmap_T_E04_N00.json": {
-    "id": "1Bb5w1k-N4XhAGWL7oq1Y1nZ3jCoC0iBQ",
-    "modifiedTime": "2026-11-24T02:54:05.550Z",
-    "size": "38602"
-  },
-  "assets/terrain_tiles/heightmap_T_E04_N01.json": {
-    "id": "11vKDWqaQk5Jw-WQM1wJTSEdGmrhIN1Td",
-    "modifiedTime": "2026-11-24T07:56:01.147Z",
-    "size": "38585"
-  },
-  "assets/terrain_tiles/heightmap_T_E04_N02.json": {
-    "id": "1XViX4-6No76Z00WRhm9CRJWKh1rybKcV",
-    "modifiedTime": "2026-11-24T07:56:01.496Z",
-    "size": "38622"
-  },
-  "assets/terrain_tiles/heightmap_T_E04_N03.json": {
-    "id": "1h9_GDNHch8-S1YOU5McMItTbPE8rcUj8",
-    "modifiedTime": "2026-11-24T10:01:04.814Z",
-    "size": "38611"
-  },
-  "assets/terrain_tiles/heightmap_T_E04_N04.json": {
-    "id": "1wVZ1DXDNRwTRLsw-adeb_EVaNcIZHljE",
-    "modifiedTime": "2026-11-24T10:01:06.110Z",
-    "size": "38617"
-  },
-  "assets/terrain_tiles/heightmap_T_E04_S01.json": {
-    "id": "182lVMVH-5vDQ9dfPUBS7Z2BPp4BDw-Ob",
-    "modifiedTime": "2026-11-24T02:54:09.605Z",
-    "size": "38601"
-  },
-  "assets/terrain_tiles/heightmap_T_E04_S02.json": {
-    "id": "1aN0pQRtwJRGn9Mmjr1BpnMNhSejfKDWu",
-    "modifiedTime": "2026-11-24T04:10:25.042Z",
-    "size": "38657"
-  },
-  "assets/terrain_tiles/heightmap_T_E05_S01.json": {
-    "id": "1g3hFEQxdiXbfGDRPEcly3rNcD9RjyNXd",
-    "modifiedTime": "2026-11-24T02:54:14.889Z",
-    "size": "38594"
-  },
-  "assets/terrain_tiles/heightmap_T_E05_S02.json": {
-    "id": "1au0WNsuO9dj7Qpp-pLTJwdH6lkKK8sBH",
-    "modifiedTime": "2026-11-24T02:54:16.126Z",
-    "size": "38632"
-  },
-  "assets/terrain_tiles/heightmap_T_E05_S03.json": {
-    "id": "1BXmHOEJUt3HpNFuT518NWOOusiuYEZL6",
-    "modifiedTime": "2026-11-24T04:10:26.211Z",
-    "size": "38594"
-  },
-  "assets/terrain_tiles/heightmap_T_E06_S03.json": {
-    "id": "17aLDREQ_B6vPGvSMpuFlsEEdDV8v7AtO",
-    "modifiedTime": "2026-11-24T04:10:27.809Z",
-    "size": "38627"
-  },
-  "assets/terrain_tiles/heightmap_T_E06_S04.json": {
-    "id": "1Bf1wIYLIlLaTVB2yrGXU8_-76WIu-YOr",
-    "modifiedTime": "2026-11-24T04:10:29.200Z",
-    "size": "38595"
-  },
-  "assets/terrain_tiles/heightmap_T_W01_N00.json": {
-    "id": "1PI-kfYg3OPlhnBRpXdI0-AxOh-66eL-4",
-    "modifiedTime": "2026-11-23T11:14:03.755Z",
-    "size": "149134"
-  },
-  "assets/terrain_tiles/heightmap_T_W01_N01.json": {
-    "id": "1SBOjZxeL5w5xfqu0DanRN2vOKAXlnFR6",
-    "modifiedTime": "2026-11-23T11:14:04.185Z",
-    "size": "149117"
-  },
-  "assets/terrain_tiles/heightmap_T_W01_N02.json": {
-    "id": "1qP86tY7s1hquzf59YI9Sq9AqCGilmgTu",
-    "modifiedTime": "2026-11-23T15:11:17.383Z",
-    "size": "84777"
-  },
-  "assets/terrain_tiles/heightmap_T_W01_N03.json": {
-    "id": "1PRp2ksGzPtyOo_4J6lV1jczlfIzqrsbH",
-    "modifiedTime": "2026-11-23T17:59:22.500Z",
-    "size": "84728"
-  },
-  "assets/terrain_tiles/heightmap_T_W01_N04.json": {
-    "id": "1thRnVLvjRtxJcmf3_fa6QWSxqzC-wRzJ",
-    "modifiedTime": "2026-11-23T23:10:45.619Z",
-    "size": "38613"
-  },
-  "assets/terrain_tiles/heightmap_T_W01_N05.json": {
-    "id": "1NmUHn-WUytsTy6mxL2_G9Of4utS4aXBp",
-    "modifiedTime": "2026-11-24T00:21:05.077Z",
-    "size": "38581"
-  },
-  "assets/terrain_tiles/heightmap_T_W01_N06.json": {
-    "id": "12yLHLqdsMlH0RDxiL8hi4jAvN8i-UE81",
-    "modifiedTime": "2026-11-24T00:21:09.424Z",
-    "size": "38677"
-  },
-  "assets/terrain_tiles/heightmap_T_W01_S01.json": {
-    "id": "1qNNzCQfSC-UIe2X1XK4nS082ecIkwLgh",
-    "modifiedTime": "2026-11-23T12:12:24.562Z",
-    "size": "149146"
-  },
-  "assets/terrain_tiles/heightmap_T_W01_S02.json": {
-    "id": "1Ppn4lS-n7Iw6q6nWv7zA0CzDFoK5OYh_",
-    "modifiedTime": "2026-11-23T13:20:50.217Z",
-    "size": "77929"
-  },
-  "assets/terrain_tiles/heightmap_T_W01_S03.json": {
-    "id": "1U-Welssoaa7moQAeavBlUUIotDM5ts1v",
-    "modifiedTime": "2026-11-23T13:20:50.838Z",
-    "size": "84295"
-  },
-  "assets/terrain_tiles/heightmap_T_W01_S04.json": {
-    "id": "1-IPWHEHvOMbqdU1d869aFWqY4DGh7i9q",
-    "modifiedTime": "2026-11-24T04:55:15.317Z",
-    "size": "38620"
-  },
-  "assets/terrain_tiles/heightmap_T_W01_S05.json": {
-    "id": "1zgUXafeCFmPiXgfYXDAXU_D7__pHvjkA",
-    "modifiedTime": "2026-11-24T06:54:06.739Z",
-    "size": "38655"
-  },
-  "assets/terrain_tiles/heightmap_T_W02_N00.json": {
-    "id": "1SH5NiHMJ5asGjJk94jaz8qocxjPvnJSK",
-    "modifiedTime": "2026-11-23T14:05:19.871Z",
-    "size": "84798"
-  },
-  "assets/terrain_tiles/heightmap_T_W02_N01.json": {
-    "id": "1g0UYaepS7FMAHRmIde6IwFrzMWkcqxxY",
-    "modifiedTime": "2026-11-23T15:57:30.925Z",
-    "size": "84745"
-  },
-  "assets/terrain_tiles/heightmap_T_W02_N02.json": {
-    "id": "1FyUoDq_soDt0yDAua3RN4SQjekrqaV1s",
-    "modifiedTime": "2026-11-23T17:06:58.832Z",
-    "size": "84785"
-  },
-  "assets/terrain_tiles/heightmap_T_W02_N03.json": {
-    "id": "1Q11rm4kAwHPBMvB97sWgnJmaNQ9q-eb5",
-    "modifiedTime": "2026-11-23T20:12:03.244Z",
-    "size": "84775"
-  },
-  "assets/terrain_tiles/heightmap_T_W02_N04.json": {
-    "id": "1O3pDvmiQrsgmyr4T80L7RoQa7UYax28u",
-    "modifiedTime": "2026-11-24T01:17:22.701Z",
-    "size": "38610"
-  },
-  "assets/terrain_tiles/heightmap_T_W02_S01.json": {
-    "id": "1AxtBRAxFMjzy0XsurSA9sA2ZybjBaOG6",
-    "modifiedTime": "2026-11-23T15:57:28.880Z",
-    "size": "84729"
-  },
-  "assets/terrain_tiles/heightmap_T_W02_S02.json": {
-    "id": "1hIjNn_01d_fe_RoIO_e1mogrdqiqcQUh",
-    "modifiedTime": "2026-11-23T15:57:31.844Z",
-    "size": "84783"
-  },
-  "assets/terrain_tiles/heightmap_T_W02_S03.json": {
-    "id": "1682p9sMmgnd7jpGWUv5BVCGmwLOINo7i",
-    "modifiedTime": "2026-11-23T19:04:54.496Z",
-    "size": "84781"
-  },
-  "assets/terrain_tiles/heightmap_T_W02_S04.json": {
-    "id": "1D-X_ogDbnKxludvfKzThr7wdzO-tUs_I",
-    "modifiedTime": "2026-11-24T09:00:32.672Z",
-    "size": "38581"
-  },
-  "assets/terrain_tiles/heightmap_T_W03_N00.json": {
-    "id": "152ExxOi1pbtu9GX_GosK15aje8PkrhRa",
-    "modifiedTime": "2026-11-23T19:04:54.405Z",
-    "size": "84757"
-  },
-  "assets/terrain_tiles/heightmap_T_W03_N01.json": {
-    "id": "1dIwlFgDdgGjM1LDKMLmvTalZLggQhUpQ",
-    "modifiedTime": "2026-11-23T21:20:12.576Z",
-    "size": "84773"
-  },
-  "assets/terrain_tiles/heightmap_T_W03_N02.json": {
-    "id": "1c8G44v_eiEGj5AnLvqyWbcLwUzxbNb3-",
-    "modifiedTime": "2026-11-23T21:20:15.092Z",
-    "size": "84777"
-  },
-  "assets/terrain_tiles/heightmap_T_W03_N03.json": {
-    "id": "1ff-3C4OJxn6lP4ApUw1lamxY6yVj4Bn5",
-    "modifiedTime": "2026-11-23T21:54:31.081Z",
-    "size": "84782"
-  },
-  "assets/terrain_tiles/heightmap_T_W03_N04.json": {
-    "id": "1msFHrw7EcYgEoC-fMNtDJBj2YTUA50zo",
-    "modifiedTime": "2026-11-24T01:17:21.999Z",
-    "size": "38571"
-  },
-  "assets/terrain_tiles/heightmap_T_W03_N05.json": {
-    "id": "1-7vMQm3TWgqtqw_vts9p3qUK9W7QxJTi",
-    "modifiedTime": "2026-11-24T02:06:17.182Z",
-    "size": "38615"
-  },
-  "assets/terrain_tiles/heightmap_T_W03_S01.json": {
-    "id": "1TkajnPnd3xvgwxViXnIeJlTZqUp33YFv",
-    "modifiedTime": "2026-11-23T19:04:55.155Z",
-    "size": "84740"
-  },
-  "assets/terrain_tiles/heightmap_T_W03_S02.json": {
-    "id": "16lAIWgiig5O-jDkzoA5tfCbwJL3Nuoft",
-    "modifiedTime": "2026-11-23T21:20:14.223Z",
-    "size": "84786"
-  },
-  "assets/terrain_tiles/heightmap_T_W03_S03.json": {
-    "id": "1n6EJcEqeBzOma-Uc2w9RChTBTVFuZ6LV",
-    "modifiedTime": "2026-11-23T21:54:33.937Z",
-    "size": "84774"
-  },
-  "assets/terrain_tiles/heightmap_T_W03_S04.json": {
-    "id": "1OZXKkvb5mqvmXTwWLsTKmNYfju-4gus-",
-    "modifiedTime": "2026-11-24T09:00:30.724Z",
-    "size": "38609"
-  },
-  "assets/terrain_tiles/heightmap_T_W04_N00.json": {
-    "id": "1Q9Pl6pIbl87FCVxjRBq10N0S79L2Yp_Z",
-    "modifiedTime": "2026-11-24T06:21:47.837Z",
-    "size": "38626"
-  },
-  "assets/terrain_tiles/heightmap_T_W04_N01.json": {
-    "id": "1wwEdsdQ0TCv8z9Sc7ILkoL9GKR37xlvh",
-    "modifiedTime": "2026-11-24T10:01:01.952Z",
-    "size": "38706"
-  },
-  "assets/terrain_tiles/heightmap_T_W04_N02.json": {
-    "id": "1slY5MbOdscj9xG07MGnn1ufA_Xik83RJ",
-    "modifiedTime": "2026-11-24T10:01:03.271Z",
-    "size": "38623"
-  },
-  "assets/terrain_tiles/heightmap_T_W04_N03.json": {
-    "id": "12BIYEwmx6EbXSWNv2sUKd4f4O1yU2jw7",
-    "modifiedTime": "2026-11-24T02:06:15.559Z",
-    "size": "37923"
-  },
-  "assets/terrain_tiles/heightmap_T_W04_N04.json": {
-    "id": "1kLchyPXwwYmpEnbaSBQ0NOMH6PdxoSN5",
-    "modifiedTime": "2026-11-24T01:17:23.405Z",
-    "size": "36052"
-  },
-  "assets/terrain_tiles/heightmap_T_W04_N05.json": {
-    "id": "148IrCH37ZvXnMPugEnIGn_Zyrb78ICjU",
-    "modifiedTime": "2026-11-24T02:06:16.140Z",
-    "size": "38615"
-  },
-  "assets/terrain_tiles/heightmap_T_W04_S01.json": {
-    "id": "1EZ3fPo6UP63oEBeFmY9i8WcmfOydqFBf",
-    "modifiedTime": "2026-11-24T06:21:48.564Z",
-    "size": "38609"
-  },
-  "assets/terrain_tiles/heightmap_T_W04_S02.json": {
-    "id": "1VZvI2QSD0DTM4-NJ1Y8_zZ3eoAVcvlki",
-    "modifiedTime": "2026-11-24T09:00:27.545Z",
-    "size": "38589"
-  },
-  "assets/terrain_tiles/heightmap_T_W04_S03.json": {
-    "id": "1Hex_Oo_hsrB9bvYaYTFSEPJvdqt1ejcE",
-    "modifiedTime": "2026-11-24T09:00:29.694Z",
-    "size": "38641"
-  },
-  "assets/terrain_tiles/heightmap_T_W05_N04.json": {
-    "id": "1nXWdk7phRrhS68UCR8xQjTHlfq2NtVND",
-    "modifiedTime": "2026-11-24T02:06:15.675Z",
-    "size": "38646"
-  },
-  "assets/terrain_tiles/heightmap_T_W05_S01.json": {
-    "id": "1foWVb_MW32BVdatGnGAc8mEL0lhp93JE",
-    "modifiedTime": "2026-11-24T06:21:49.198Z",
-    "size": "38625"
-  },
-  "assets/terrain_tiles/heightmap_T_W05_S02.json": {
-    "id": "1lpeNGNKEcfHQ0V4bGXwO6cVL-avEobZs",
-    "modifiedTime": "2026-11-24T06:21:50.672Z",
-    "size": "38631"
-  },
-  "assets/terrain_tiles/terrain_T_E00_N00.glb": {
-    "id": "1GSUZXMS-andfNw_kC7F_HzV82C0TDK0y",
-    "modifiedTime": "2026-11-23T11:12:02.503Z",
-    "size": "743876"
-  },
-  "assets/terrain_tiles/terrain_T_E00_N01.glb": {
-    "id": "18AemZ_KdV90eW_xW7CEh05NDHEE7sGDo",
-    "modifiedTime": "2026-11-23T11:14:13.762Z",
-    "size": "735580"
-  },
-  "assets/terrain_tiles/terrain_T_E00_N02.glb": {
-    "id": "17ZynAxjOCCj4jvV9RHB22d5veM_ltX6g",
-    "modifiedTime": "2026-11-23T14:05:19.618Z",
-    "size": "427272"
-  },
-  "assets/terrain_tiles/terrain_T_E00_N03.glb": {
-    "id": "127B-Ivt38xbddeaTmp4eJ9NF2XPZF9_I",
-    "modifiedTime": "2026-11-23T17:06:55.160Z",
-    "size": "423328"
-  },
-  "assets/terrain_tiles/terrain_T_E00_N04.glb": {
-    "id": "14SF75N1HVrGSE4xCHF--VPoKOln6sUIr",
-    "modifiedTime": "2026-11-23T23:10:27.566Z",
-    "size": "189396"
-  },
-  "assets/terrain_tiles/terrain_T_E00_N05.glb": {
-    "id": "1UAIutm6dDJTTbDOzfAIXGNI02z5J6z-X",
-    "modifiedTime": "2026-11-23T23:10:32.342Z",
-    "size": "188988"
-  },
-  "assets/terrain_tiles/terrain_T_E00_N06.glb": {
-    "id": "1VyIp9Nv4bfIWWWkZCfTzhmB0A5hAx_-F",
-    "modifiedTime": "2026-11-23T23:10:39.459Z",
-    "size": "193268"
-  },
-  "assets/terrain_tiles/terrain_T_E00_S01.glb": {
-    "id": "1I_guk0xwM50lJ2PV40mRqesTDCMAgmkY",
-    "modifiedTime": "2026-11-23T12:12:24.263Z",
-    "size": "739944"
-  },
-  "assets/terrain_tiles/terrain_T_E00_S02.glb": {
-    "id": "1nvuqBvGr3VMoXEeo0PIc0JuyeMy4fLBc",
-    "modifiedTime": "2026-11-23T13:20:50.954Z",
-    "size": "422048"
-  },
-  "assets/terrain_tiles/terrain_T_E00_S03.glb": {
-    "id": "1-bjWFlRjCY6awmhgoWFVy_50JTVZMytn",
-    "modifiedTime": "2026-11-23T13:20:50.506Z",
-    "size": "420740"
-  },
-  "assets/terrain_tiles/terrain_T_E00_S04.glb": {
-    "id": "1DlUGlnz4lo51FL7PsCYB6hvGmmUEYgMK",
-    "modifiedTime": "2026-11-24T04:55:12.575Z",
-    "size": "194164"
-  },
-  "assets/terrain_tiles/terrain_T_E00_S05.glb": {
-    "id": "1qRTJYOopg5YTKGArZlzTjJH9ahxd-Iqm",
-    "modifiedTime": "2026-11-24T04:55:14.411Z",
-    "size": "196532"
-  },
-  "assets/terrain_tiles/terrain_T_E01_N00.glb": {
-    "id": "1ota-qQyt1_p1kL0r_jAisea27t7PIKtK",
-    "modifiedTime": "2026-11-23T12:12:24.258Z",
-    "size": "735744"
-  },
-  "assets/terrain_tiles/terrain_T_E01_N01.glb": {
-    "id": "1_FblIq--2ZKCRpl1pdXMmQyxMs81Z29T",
-    "modifiedTime": "2026-11-23T11:14:11.974Z",
-    "size": "736352"
-  },
-  "assets/terrain_tiles/terrain_T_E01_N02.glb": {
-    "id": "1m082OF81GVNB5MtfEgFER74Ba6FKbjTG",
-    "modifiedTime": "2026-11-23T15:11:16.743Z",
-    "size": "420888"
-  },
-  "assets/terrain_tiles/terrain_T_E01_N03.glb": {
-    "id": "1RM6vSLD_aBOby4jW67RSrmml96Om-VJj",
-    "modifiedTime": "2026-11-23T17:59:19.265Z",
-    "size": "425300"
-  },
-  "assets/terrain_tiles/terrain_T_E01_N04.glb": {
-    "id": "1DhIDgafbuprp6EE7wQz9gB--4uPa_g9B",
-    "modifiedTime": "2026-11-24T00:21:04.262Z",
-    "size": "191728"
-  },
-  "assets/terrain_tiles/terrain_T_E01_N05.glb": {
-    "id": "1ESVRfZehAbeah1nBBdcxGNXsB7daZ3FS",
-    "modifiedTime": "2026-11-24T00:21:04.550Z",
-    "size": "188544"
-  },
-  "assets/terrain_tiles/terrain_T_E01_N06.glb": {
-    "id": "1AQfsTJ7PJUwMegGWkD2pkzLVycGmWqW8",
-    "modifiedTime": "2026-11-24T01:17:16.569Z",
-    "size": "188956"
-  },
-  "assets/terrain_tiles/terrain_T_E01_S01.glb": {
-    "id": "1-4mmMncvG4KZrVWxINqbl5J5kzWkgzsw",
-    "modifiedTime": "2026-11-23T12:12:24.117Z",
-    "size": "737396"
-  },
-  "assets/terrain_tiles/terrain_T_E01_S02.glb": {
-    "id": "1lTQolVi-kR6SsXZNNhd12mVa3iycA91o",
-    "modifiedTime": "2026-11-23T15:11:16.601Z",
-    "size": "420512"
-  },
-  "assets/terrain_tiles/terrain_T_E01_S03.glb": {
-    "id": "1XR5MtwEBlnv0t9p93svcVSfLEHs25-PB",
-    "modifiedTime": "2026-11-23T19:04:48.410Z",
-    "size": "422328"
-  },
-  "assets/terrain_tiles/terrain_T_E01_S04.glb": {
-    "id": "18CP95VRgw_H5EQU-Cjuv7F_LdYNFKPXH",
-    "modifiedTime": "2026-11-24T04:55:13.589Z",
-    "size": "195560"
-  },
-  "assets/terrain_tiles/terrain_T_E01_S05.glb": {
-    "id": "1eI8058V60wM7M2-g0cG_O3M9Wy1ISc9n",
-    "modifiedTime": "2026-11-24T06:54:02.967Z",
-    "size": "194804"
-  },
-  "assets/terrain_tiles/terrain_T_E02_N00.glb": {
-    "id": "13MjQf_nROCZpind8-Hwcv5eioW81j85z",
-    "modifiedTime": "2026-11-23T15:11:17.255Z",
-    "size": "419556"
-  },
-  "assets/terrain_tiles/terrain_T_E02_N01.glb": {
-    "id": "18iup-LUyGADHnkYwsmz-m5ouIQOua1Yw",
-    "modifiedTime": "2026-11-23T14:05:19.996Z",
-    "size": "427884"
-  },
-  "assets/terrain_tiles/terrain_T_E02_N02.glb": {
-    "id": "1AbyArdm_frQvPrYVZ61Ipwv5tIcyMsTF",
-    "modifiedTime": "2026-11-23T17:06:56.147Z",
-    "size": "424748"
-  },
-  "assets/terrain_tiles/terrain_T_E02_N03.glb": {
-    "id": "1jDVtVbJbXU0KtBckqXrFIMKfvP1MdqG2",
-    "modifiedTime": "2026-11-23T20:12:00.990Z",
-    "size": "421768"
-  },
-  "assets/terrain_tiles/terrain_T_E02_N04.glb": {
-    "id": "13jZpTA9-a5JjBqVLee_yztkqbwamOH4U",
-    "modifiedTime": "2026-11-24T07:55:53.550Z",
-    "size": "196872"
-  },
-  "assets/terrain_tiles/terrain_T_E02_S01.glb": {
-    "id": "1_oshzXxAnarkkaW6yN0bID98JasuhbRv",
-    "modifiedTime": "2026-11-23T15:57:32.981Z",
-    "size": "419428"
-  },
-  "assets/terrain_tiles/terrain_T_E02_S02.glb": {
-    "id": "1nkcQHcmeO3qZtl6a0nVFDEjPl5xUpHfy",
-    "modifiedTime": "2026-11-23T17:07:17.063Z",
-    "size": "425344"
-  },
-  "assets/terrain_tiles/terrain_T_E02_S03.glb": {
-    "id": "1tUBGOJ3ioeYVuIrBP5o7Ny9C9o5C_brD",
-    "modifiedTime": "2026-11-23T21:20:10.731Z",
-    "size": "420092"
-  },
-  "assets/terrain_tiles/terrain_T_E02_S04.glb": {
-    "id": "19J5QHnS7A9CZt91s80Ib1kSpj38zdyFJ",
-    "modifiedTime": "2026-11-24T06:54:04.078Z",
-    "size": "194640"
-  },
-  "assets/terrain_tiles/terrain_T_E03_N00.glb": {
-    "id": "1xfg7FFu6FwG4lkxTnfiGM3iFQnZKPUS2",
-    "modifiedTime": "2026-11-23T14:05:20.319Z",
-    "size": "419364"
-  },
-  "assets/terrain_tiles/terrain_T_E03_N01.glb": {
-    "id": "1GqAbGBuFGagEvDys6cOxvpak98mp2GNl",
-    "modifiedTime": "2026-11-23T17:59:20.006Z",
-    "size": "419960"
-  },
-  "assets/terrain_tiles/terrain_T_E03_N02.glb": {
-    "id": "1hqIASiMh8zNIZpSQlzA96XMLjdskBO0u",
-    "modifiedTime": "2026-11-23T20:12:01.619Z",
-    "size": "424276"
-  },
-  "assets/terrain_tiles/terrain_T_E03_N03.glb": {
-    "id": "1WV4LqIlb0LwpOJ2DM6R4ak-D7Yxfy0WZ",
-    "modifiedTime": "2026-11-23T21:54:27.524Z",
-    "size": "425692"
-  },
-  "assets/terrain_tiles/terrain_T_E03_N04.glb": {
-    "id": "147_j90uKXLZ_VrsZq7yU6JJ54IA19y3K",
-    "modifiedTime": "2026-11-24T07:55:55.003Z",
-    "size": "195240"
-  },
-  "assets/terrain_tiles/terrain_T_E03_S01.glb": {
-    "id": "1L0DnEvKJ6XvpZf7iJfmn02qKgub8kIaQ",
-    "modifiedTime": "2026-11-23T17:59:21.188Z",
-    "size": "426752"
-  },
-  "assets/terrain_tiles/terrain_T_E03_S02.glb": {
-    "id": "1C8Hsjb2LiKPqM_CKnBByiv7Wg1L0ae6p",
-    "modifiedTime": "2026-11-23T20:12:03.261Z",
-    "size": "423784"
-  },
-  "assets/terrain_tiles/terrain_T_E03_S03.glb": {
-    "id": "1fmDqvRwohnQwIvk6sSdYYIyRR42BB4yr",
-    "modifiedTime": "2026-11-23T21:54:30.043Z",
-    "size": "425336"
-  },
-  "assets/terrain_tiles/terrain_T_E03_S04.glb": {
-    "id": "1sdpJkLVMhomBqraba75ao_NpRw-sdkc5",
-    "modifiedTime": "2026-11-24T06:54:05.339Z",
-    "size": "195136"
-  },
-  "assets/terrain_tiles/terrain_T_E04_N00.glb": {
-    "id": "1mEMr5Vw52KQNyZQ1GYkRzYckk5opJDu6",
-    "modifiedTime": "2026-11-24T02:53:58.056Z",
-    "size": "193184"
-  },
-  "assets/terrain_tiles/terrain_T_E04_N01.glb": {
-    "id": "1fdIBRiV2xp0ShD9kev3-L4zwfyB_B9i0",
-    "modifiedTime": "2026-11-24T07:55:56.455Z",
-    "size": "198836"
-  },
-  "assets/terrain_tiles/terrain_T_E04_N02.glb": {
-    "id": "1egO6LN6uzhGa3HAgdRvCCoKYUW0eAe-h",
-    "modifiedTime": "2026-11-24T07:55:56.713Z",
-    "size": "196840"
-  },
-  "assets/terrain_tiles/terrain_T_E04_N03.glb": {
-    "id": "1swPjmYDdUk_vyY-2MoY3E1n_S1zh2c32",
-    "modifiedTime": "2026-11-24T10:00:58.828Z",
-    "size": "191812"
-  },
-  "assets/terrain_tiles/terrain_T_E04_N04.glb": {
-    "id": "12QQBcf1Bj3FCCiiqOf_-mDwR-COtzQ_t",
-    "modifiedTime": "2026-11-24T10:01:01.326Z",
-    "size": "194280"
-  },
-  "assets/terrain_tiles/terrain_T_E04_S01.glb": {
-    "id": "1porEj2pTHRO424iBdDwlK-k8oLo97iZF",
-    "modifiedTime": "2026-11-24T02:53:59.329Z",
-    "size": "193116"
-  },
-  "assets/terrain_tiles/terrain_T_E04_S02.glb": {
-    "id": "1dPKqWsg6BTSIaMD9xshoXhLneLLlA8TM",
-    "modifiedTime": "2026-11-24T04:10:20.286Z",
-    "size": "194400"
-  },
-  "assets/terrain_tiles/terrain_T_E05_S01.glb": {
-    "id": "1oKoZkz9HlrFUqz53A0NkU7rlqtUeJeer",
-    "modifiedTime": "2026-11-24T02:54:02.232Z",
-    "size": "189752"
-  },
-  "assets/terrain_tiles/terrain_T_E05_S02.glb": {
-    "id": "15kmHq6jSThlIEX7okYEMpLyh0AHXNyhH",
-    "modifiedTime": "2026-11-24T02:54:04.385Z",
-    "size": "191292"
-  },
-  "assets/terrain_tiles/terrain_T_E05_S03.glb": {
-    "id": "1iSAodD99-Bwf9yEkyLD3jOkbbrbdZoAu",
-    "modifiedTime": "2026-11-24T04:10:22.026Z",
-    "size": "187628"
-  },
-  "assets/terrain_tiles/terrain_T_E06_S03.glb": {
-    "id": "1-XhAQUhMhA3GOAn-r5nd86BY97yww4aZ",
-    "modifiedTime": "2026-11-24T04:10:22.215Z",
-    "size": "187628"
-  },
-  "assets/terrain_tiles/terrain_T_E06_S04.glb": {
-    "id": "1iS4QtqV1Yrqs8pUlWZSAA3OQ-AM82zvV",
-    "modifiedTime": "2026-11-24T04:10:23.669Z",
-    "size": "187620"
-  },
-  "assets/terrain_tiles/terrain_T_W01_N00.glb": {
-    "id": "166n3EXIL0bkqODckWMZ2vniPiu8QkaYI",
-    "modifiedTime": "2026-11-23T11:14:07.094Z",
-    "size": "738836"
-  },
-  "assets/terrain_tiles/terrain_T_W01_N01.glb": {
-    "id": "1qmMHv7_k_tHgHy44_aPWANYcqbYEjMKY",
-    "modifiedTime": "2026-11-23T11:14:11.817Z",
-    "size": "738284"
-  },
-  "assets/terrain_tiles/terrain_T_W01_N02.glb": {
-    "id": "1PFX_V9qxdZUR2bXULNzM8OTFeC6RqExU",
-    "modifiedTime": "2026-11-23T15:11:16.926Z",
-    "size": "419672"
-  },
-  "assets/terrain_tiles/terrain_T_W01_N03.glb": {
-    "id": "15ZOTBL3VmDLrgfFAi7ZZSp39Ay8VRl5i",
-    "modifiedTime": "2026-11-23T17:59:17.148Z",
-    "size": "420028"
-  },
-  "assets/terrain_tiles/terrain_T_W01_N04.glb": {
-    "id": "13yqxt7r_G_04CkidcSOZY5BqgF-3xSW1",
-    "modifiedTime": "2026-11-23T23:10:22.764Z",
-    "size": "189688"
-  },
-  "assets/terrain_tiles/terrain_T_W01_N05.glb": {
-    "id": "1CTii7hx177pDSGCnvEpZrksWOQye_spr",
-    "modifiedTime": "2026-11-24T00:21:01.206Z",
-    "size": "188840"
-  },
-  "assets/terrain_tiles/terrain_T_W01_N06.glb": {
-    "id": "14ASWxahFUv_rY4Oqt4KcjrFhjyGfx6UM",
-    "modifiedTime": "2026-11-24T00:21:03.694Z",
-    "size": "189860"
-  },
-  "assets/terrain_tiles/terrain_T_W01_S01.glb": {
-    "id": "1yBXWe2jiym_EG-q1uiTcZB5g2hnwqq60",
-    "modifiedTime": "2026-11-23T12:12:23.863Z",
-    "size": "737800"
-  },
-  "assets/terrain_tiles/terrain_T_W01_S02.glb": {
-    "id": "15hUY9Fer0PkmPVizISv-psF4kRTnmh-D",
-    "modifiedTime": "2026-11-23T13:20:50.477Z",
-    "size": "425336"
-  },
-  "assets/terrain_tiles/terrain_T_W01_S03.glb": {
-    "id": "1k--P4jKDZNuQeVWRdF45-_wN2UtRgtf6",
-    "modifiedTime": "2026-11-23T13:20:50.874Z",
-    "size": "424292"
-  },
-  "assets/terrain_tiles/terrain_T_W01_S04.glb": {
-    "id": "18yT4jgAiF3fY0GWO3eQAkjvShomkQHY0",
-    "modifiedTime": "2026-11-24T04:55:11.616Z",
-    "size": "195220"
-  },
-  "assets/terrain_tiles/terrain_T_W01_S05.glb": {
-    "id": "1eFKOJD9aZn-AOQnRJU_prpKvwgxBYqUW",
-    "modifiedTime": "2026-11-24T06:54:01.537Z",
-    "size": "196488"
-  },
-  "assets/terrain_tiles/terrain_T_W02_N00.glb": {
-    "id": "14iCKGtO1-iZPe_NEEKpsHTjYVtH50XJW",
-    "modifiedTime": "2026-11-23T14:05:19.367Z",
-    "size": "424760"
-  },
-  "assets/terrain_tiles/terrain_T_W02_N01.glb": {
-    "id": "1J0e-CTQ5URlP7R2tURoUHtebtMjMqUq3",
-    "modifiedTime": "2026-11-23T15:57:31.949Z",
-    "size": "422916"
-  },
-  "assets/terrain_tiles/terrain_T_W02_N02.glb": {
-    "id": "1BjjfR7rZ6RmFMTGvq08XzJVw60lpsHxT",
-    "modifiedTime": "2026-11-23T17:06:57.295Z",
-    "size": "425020"
-  },
-  "assets/terrain_tiles/terrain_T_W02_N03.glb": {
-    "id": "14_qilsnl6P7XLWz2c7BS8MpdWAOtMmWL",
-    "modifiedTime": "2026-11-23T20:11:59.907Z",
-    "size": "417356"
-  },
-  "assets/terrain_tiles/terrain_T_W02_N04.glb": {
-    "id": "1XDKljMdg3e_pdVlx0nCHt9Wg7OZ_Mv26",
-    "modifiedTime": "2026-11-24T01:17:17.538Z",
-    "size": "190716"
-  },
-  "assets/terrain_tiles/terrain_T_W02_S01.glb": {
-    "id": "1m4H_Pih7OajvOHiwJv_mQQa55dicgd4E",
-    "modifiedTime": "2026-11-23T15:57:32.161Z",
-    "size": "421704"
-  },
-  "assets/terrain_tiles/terrain_T_W02_S02.glb": {
-    "id": "11J089JTKqRZ2tlQ9gsR94lPf-fOpIiOp",
-    "modifiedTime": "2026-11-23T15:57:30.624Z",
-    "size": "421604"
-  },
-  "assets/terrain_tiles/terrain_T_W02_S03.glb": {
-    "id": "174C_rf0KRgLliYDhMSUuGL0taboq4Sdo",
-    "modifiedTime": "2026-11-23T19:04:49.782Z",
-    "size": "425448"
-  },
-  "assets/terrain_tiles/terrain_T_W02_S04.glb": {
-    "id": "1fZEtHHrhhvXPmsmnFadd7bllC2lCMkBU",
-    "modifiedTime": "2026-11-24T09:00:25.253Z",
-    "size": "193040"
-  },
-  "assets/terrain_tiles/terrain_T_W03_N00.glb": {
-    "id": "19VbWMAQmp_-3CUV_BtSocsHO6AnhjEEO",
-    "modifiedTime": "2026-11-23T19:04:51.200Z",
-    "size": "423008"
-  },
-  "assets/terrain_tiles/terrain_T_W03_N01.glb": {
-    "id": "1O0AP7cq_8JANUU7gZ5x3oqC7pR9lnT8u",
-    "modifiedTime": "2026-11-23T21:20:06.848Z",
-    "size": "423660"
-  },
-  "assets/terrain_tiles/terrain_T_W03_N02.glb": {
-    "id": "1WjtJukKtxkZUpFLvnIRChT_uBe8Ga9ur",
-    "modifiedTime": "2026-11-23T21:20:08.189Z",
-    "size": "423588"
-  },
-  "assets/terrain_tiles/terrain_T_W03_N03.glb": {
-    "id": "1kVnNBMh4jLIsHJZEPVD_TaEdXGJIMg90",
-    "modifiedTime": "2026-11-23T21:54:26.406Z",
-    "size": "425936"
-  },
-  "assets/terrain_tiles/terrain_T_W03_N04.glb": {
-    "id": "1wRngR_ezuVd6joGaUsb4t1yqRmlMLOyt",
-    "modifiedTime": "2026-11-24T01:17:19.676Z",
-    "size": "193276"
-  },
-  "assets/terrain_tiles/terrain_T_W03_N05.glb": {
-    "id": "1C-4vGBkq494ccPQ11Xnke75x0TbyryGz",
-    "modifiedTime": "2026-11-24T02:06:14.774Z",
-    "size": "191264"
-  },
-  "assets/terrain_tiles/terrain_T_W03_S01.glb": {
-    "id": "1TeNNbZPVK5P5iiszBxq4jcndyeucGSFv",
-    "modifiedTime": "2026-11-23T19:04:54.745Z",
-    "size": "422336"
-  },
-  "assets/terrain_tiles/terrain_T_W03_S02.glb": {
-    "id": "1hp9W7Z39FAI8beyKwimIsXnT1RVsDltX",
-    "modifiedTime": "2026-11-23T21:20:10.057Z",
-    "size": "424884"
-  },
-  "assets/terrain_tiles/terrain_T_W03_S03.glb": {
-    "id": "1sLCL5yYnOBzXB7DNJA3CPai5zetn7Azg",
-    "modifiedTime": "2026-11-23T21:54:28.514Z",
-    "size": "425132"
-  },
-  "assets/terrain_tiles/terrain_T_W03_S04.glb": {
-    "id": "1ne6yeXKMgySmA3fEQs0zTUwTONkdGjCM",
-    "modifiedTime": "2026-11-24T09:00:23.566Z",
-    "size": "198124"
-  },
-  "assets/terrain_tiles/terrain_T_W04_N00.glb": {
-    "id": "1rntrIBjN54xMPZiFthDNlOIvUr8C9tkO",
-    "modifiedTime": "2026-11-24T06:21:42.189Z",
-    "size": "195608"
-  },
-  "assets/terrain_tiles/terrain_T_W04_N01.glb": {
-    "id": "1KoWm8z62F2QmihozjClsvQEu-mGxH3Nl",
-    "modifiedTime": "2026-11-24T10:00:55.863Z",
-    "size": "193624"
-  },
-  "assets/terrain_tiles/terrain_T_W04_N02.glb": {
-    "id": "1qns3K5xTZqXxurWI2jFYKyufou2Vna8y",
-    "modifiedTime": "2026-11-24T10:00:57.601Z",
-    "size": "196924"
-  },
-  "assets/terrain_tiles/terrain_T_W04_N03.glb": {
-    "id": "1lnHQoRC9E6risoEOdaKiDZRk86t2bud-",
-    "modifiedTime": "2026-11-24T02:06:10.161Z",
-    "size": "194756"
-  },
-  "assets/terrain_tiles/terrain_T_W04_N04.glb": {
-    "id": "1XjovRPTlf5haLup2u5GvJ_D-FJiqz0Bx",
-    "modifiedTime": "2026-11-24T01:17:19.906Z",
-    "size": "196164"
-  },
-  "assets/terrain_tiles/terrain_T_W04_N05.glb": {
-    "id": "1wXR5HXKm_iXOhp-VMUfOaVMHoIrhi001",
-    "modifiedTime": "2026-11-24T02:06:11.742Z",
-    "size": "193220"
-  },
-  "assets/terrain_tiles/terrain_T_W04_S01.glb": {
-    "id": "1oFlxLBVdFbKrWuSecUetM0qes3KojekU",
-    "modifiedTime": "2026-11-24T06:21:43.802Z",
-    "size": "196360"
-  },
-  "assets/terrain_tiles/terrain_T_W04_S02.glb": {
-    "id": "1ip29Zn3btuX8sfOteS6MwZCwDXJQvWu_",
-    "modifiedTime": "2026-11-24T09:00:20.126Z",
-    "size": "197032"
-  },
-  "assets/terrain_tiles/terrain_T_W04_S03.glb": {
-    "id": "1AevyMVKWQLOM8VSuyfWSLw1TcZ_v7xxW",
-    "modifiedTime": "2026-11-24T09:00:22.201Z",
-    "size": "192312"
-  },
-  "assets/terrain_tiles/terrain_T_W05_N04.glb": {
-    "id": "14n-_xgMhR60ywNp1bzSanYupZncsQS2u",
-    "modifiedTime": "2026-11-24T02:06:10.837Z",
-    "size": "194056"
-  },
-  "assets/terrain_tiles/terrain_T_W05_S01.glb": {
-    "id": "1ZfSFqx82PL-Sw2UDbcvzX3wW5BFEbpDo",
-    "modifiedTime": "2026-11-24T06:21:46.012Z",
-    "size": "193788"
-  },
-  "assets/terrain_tiles/terrain_T_W05_S02.glb": {
-    "id": "11mDbEZXLSQgBVAQMUpiQpS3mPXnTTYph",
-    "modifiedTime": "2026-11-24T06:21:47.056Z",
-    "size": "196280"
+  "assets/terrain_tiles/terrain_T_W02_N05.glb": {
+    "id": "1n0XOivMZUXS0QzuXwSa9f3fPoWAAwfMW",
+    "modifiedTime": "2026-11-24T13:00:45.101Z",
+    "size": "188592"
   },
   "assets/terrain_tiles/terrain_tiles_manifest.json": {
-    "id": "1-A9-_F3qMLAVPEDNTyZuOgGRxiUPEzs-",
-    "modifiedTime": "2026-11-24T10:01:52.455Z",
-    "size": "124907"
-  },
-  "assets/terrain_tiles_ring1_ext/heightmap_T_W01_N03.json": {
-    "id": "1pEqL9OGXy5g0nGO4TK5boUefP8i0IBth",
-    "modifiedTime": "2026-11-23T17:19:04.966Z",
-    "size": "84827"
-  },
-  "assets/terrain_tiles_ring1_ext/heightmap_T_W02_N02.json": {
-    "id": "1MfxYAXbPqYkeglcw1_ciCd--elBFLguI",
-    "modifiedTime": "2026-11-23T17:19:05.560Z",
-    "size": "84881"
-  },
-  "assets/terrain_tiles_ring1_ext/heightmap_T_W02_N03.json": {
-    "id": "1m-ctdtlFfAyPXlX-xVAokWvQIHW5hQ9n",
-    "modifiedTime": "2026-11-23T17:19:05.414Z",
-    "size": "84875"
-  },
-  "assets/terrain_tiles_ring1_ext/heightmap_T_W03_N02.json": {
-    "id": "1iLzatNIZ2R10b3KGPPMa5aVik1jHFS2o",
-    "modifiedTime": "2026-11-23T17:19:05.265Z",
-    "size": "84878"
-  },
-  "assets/terrain_tiles_ring1_ext/heightmap_T_W03_N03.json": {
-    "id": "1PTq1e69t7vPxGOWHs85J9eUK-GpQw3gF",
-    "modifiedTime": "2026-11-23T17:19:03.811Z",
-    "size": "84884"
-  },
-  "assets/terrain_tiles_ring1_ext/terrain_T_W01_N03.glb": {
-    "id": "1jwhCTRrTnj9aFXsFGjIi-0sH9CM2B17N",
-    "modifiedTime": "2026-11-23T17:19:05.315Z",
-    "size": "420028"
-  },
-  "assets/terrain_tiles_ring1_ext/terrain_T_W02_N02.glb": {
-    "id": "18Vt8CvKXP2KjlcmidzXj-lFtDmEmTzlb",
-    "modifiedTime": "2026-11-23T17:19:05.875Z",
-    "size": "425020"
-  },
-  "assets/terrain_tiles_ring1_ext/terrain_T_W02_N03.glb": {
-    "id": "1kL7s4k46WhZG-eIaZ8RHBFnl8RMVWw86",
-    "modifiedTime": "2026-11-23T17:19:05.463Z",
-    "size": "417356"
-  },
-  "assets/terrain_tiles_ring1_ext/terrain_T_W03_N02.glb": {
-    "id": "1MqRk3yNYoBn5SlPro46haL4XviNjnbH0",
-    "modifiedTime": "2026-11-23T17:19:05.164Z",
-    "size": "423588"
-  },
-  "assets/terrain_tiles_ring1_ext/terrain_T_W03_N03.glb": {
-    "id": "14rAoSjd6fmDCqv9jj0RxacstUvkB98jt",
-    "modifiedTime": "2026-11-23T17:19:05.262Z",
-    "size": "425936"
+    "id": "1_bIeB4xDIjJIaLATWbf_zZCxjelvKtML",
+    "modifiedTime": "2026-11-24T13:01:07.402Z",
+    "size": "140328"
   },
   "assets/terrain_tiles_ring1_ext/terrain_ring1_ext_manifest.json": {
     "id": "1kowGseDiih3M2LWs9ptvsM1KH4A_DW3t",
     "modifiedTime": "2026-11-23T17:19:04.851Z",
     "size": "11575"
-  },
-  "assets/terrain_tiles_ring2/heightmap_T_E00_N05.json": {
-    "id": "1QhoVDAfeVZpb8ohX1zv_X_pe-tG3BSpP",
-    "modifiedTime": "2026-11-23T17:25:31.676Z",
-    "size": "38666"
-  },
-  "assets/terrain_tiles_ring2/heightmap_T_E00_N06.json": {
-    "id": "1E-BQbnQyonUVmPH7ufNdcZotcMlLUHD7",
-    "modifiedTime": "2026-11-23T17:25:31.165Z",
-    "size": "38612"
-  },
-  "assets/terrain_tiles_ring2/heightmap_T_E01_N06.json": {
-    "id": "16AL7YJu7k579-Z5_ySm62mQPCWWFG0G-",
-    "modifiedTime": "2026-11-23T17:25:32.195Z",
-    "size": "38697"
-  },
-  "assets/terrain_tiles_ring2/heightmap_T_W01_N05.json": {
-    "id": "1JvXMRBUJxsGInmvTEnVP5WqotsTUk16m",
-    "modifiedTime": "2026-11-23T17:25:32.275Z",
-    "size": "38654"
-  },
-  "assets/terrain_tiles_ring2/heightmap_T_W01_N06.json": {
-    "id": "1eo6NUZIzEoelPdcyC-hfQkMVDSug9RuR",
-    "modifiedTime": "2026-11-23T17:25:32.343Z",
-    "size": "38644"
-  },
-  "assets/terrain_tiles_ring2/terrain_T_E00_N05.glb": {
-    "id": "1eSp0wiUIR5K-t34op1lyOmxzqd7KTpdB",
-    "modifiedTime": "2026-11-23T17:25:32.563Z",
-    "size": "193352"
-  },
-  "assets/terrain_tiles_ring2/terrain_T_E00_N06.glb": {
-    "id": "152o712SlCoThFMGT2a5T9hwks9TeLjo1",
-    "modifiedTime": "2026-11-23T17:25:32.350Z",
-    "size": "196736"
-  },
-  "assets/terrain_tiles_ring2/terrain_T_E01_N06.glb": {
-    "id": "1grcOTC02scgOXdQdwgellrlJXX2LjZSp",
-    "modifiedTime": "2026-11-23T17:25:31.551Z",
-    "size": "196660"
-  },
-  "assets/terrain_tiles_ring2/terrain_T_W01_N05.glb": {
-    "id": "17UeluJXmi_U6B_YUjv7-kM8GjB4VUb9D",
-    "modifiedTime": "2026-11-23T17:25:32.424Z",
-    "size": "193264"
-  },
-  "assets/terrain_tiles_ring2/terrain_T_W01_N06.glb": {
-    "id": "1YM1PrBM5kApApXZY8RGDzRaxuqwuhqQt",
-    "modifiedTime": "2026-11-23T17:25:31.007Z",
-    "size": "198228"
   },
   "assets/terrain_tiles_ring2/terrain_ring2_manifest.json": {
     "id": "1JU8NAdwVgL3X-qTawht_c2JEOmta_uHo",
@@ -4854,10 +4009,15 @@
     "modifiedTime": "2026-11-24T09:32:28.408Z",
     "size": "1131844"
   },
+  "assets/tourism_complexes/tc_10_chua_thien_vuong_co_sat_and_van_thanh_flower_village.glb": {
+    "id": "1KrS0sYiJ2aFUQKe8rnho2lNJp4WeH_9A",
+    "modifiedTime": "2026-11-24T11:41:56.935Z",
+    "size": "766900"
+  },
   "assets/tourism_complexes/tourism_complexes_manifest.json": {
-    "id": "1NveyTotcT3hJEFQTnjr5Vh0lsYiPDgWw",
-    "modifiedTime": "2026-11-24T09:32:29.080Z",
-    "size": "49675"
+    "id": "10BzmsUHFD947jG8WCYhPWVJKuDmyUQuV",
+    "modifiedTime": "2026-11-24T11:42:00.065Z",
+    "size": "56431"
   },
   "assets/transport_infra/cau_can_dien_gio_cau_dat_va_deo_doi_che_tram_hanh.glb": {
     "id": "1W_UePGFvpYh1n270EPojkPfTM9rDSxJr",
@@ -4879,6 +4039,11 @@
     "modifiedTime": "2026-11-24T03:40:22.919Z",
     "size": "6545392"
   },
+  "assets/transport_infra/cau_treo_thac_voi_nam_ban_va_deo_linh_an_cam_ly_ha.glb": {
+    "id": "1hJza26-0no153m9VP69boqSd-xqwREm-",
+    "modifiedTime": "2026-11-24T11:28:11.309Z",
+    "size": "6551360"
+  },
   "assets/transport_infra/dap_tran_cau_day_vang_va_deo_ven_ho_tuyen_lam.glb": {
     "id": "114B5vcJb3bndD_-43kNgJQmjmJn96M4c",
     "modifiedTime": "2026-11-24T05:50:33.563Z",
@@ -4893,6 +4058,11 @@
     "id": "1z5KHWs3hrURAj3v050YCU3PNNzgVHhXa",
     "modifiedTime": "2026-11-24T07:58:36.267Z",
     "size": "6901576"
+  },
+  "assets/transport_infra/deo_me_linh_nam_ban_ca_phe_chon_va_cau_can_ta_nung_ha.glb": {
+    "id": "1DOy6HdCKu93eEJMXABRXWelOW20PAsDD",
+    "modifiedTime": "2026-11-24T11:28:09.589Z",
+    "size": "5486116"
   },
   "assets/transport_infra/deo_mimosa_mountain_pass.glb": {
     "id": "1LNTpaPJBq7hTAyzISFzHo9GP4K1Jtz_-",
@@ -4945,14 +4115,29 @@
     "size": "160648"
   },
   "assets/transport_infra/transport_infra_manifest.json": {
-    "id": "1HnNGuKOIDTY-69tQweyNs5fzwZ2ba_Pw",
-    "modifiedTime": "2026-11-24T09:26:43.813Z",
-    "size": "23610"
+    "id": "1_Dfq1mRMkBp57NolwnyGP_DTuIJ06jOi",
+    "modifiedTime": "2026-11-24T11:28:20.002Z",
+    "size": "26774"
   },
   "assets/transport_infra/vong_xoay_dai_phun_nuoc_va_cau_chu_y_hoa_binh.glb": {
     "id": "1lCok10FBovEIuiwC75TZCC5SUxCKgN-v",
     "modifiedTime": "2026-11-23T21:46:55.967Z",
     "size": "1333424"
+  },
+  "assets/urban_life_props/ul_w10_01_chika_farm_xuan_tho_alpaca_pasture_and_countryside_cafe.glb": {
+    "id": "1EU6Qb2ikkxGEnEW_ShZY-7nlhBbNumCQ",
+    "modifiedTime": "2026-11-24T11:29:51.364Z",
+    "size": "1147048"
+  },
+  "assets/urban_life_props/ul_w10_02_da_sar_pass_ql27c_cloud_cafes_and_intercity_coach_convoy.glb": {
+    "id": "1O9Heon1B18BsSmFHz0XqcwHGtAHIifvp",
+    "modifiedTime": "2026-11-24T11:29:53.376Z",
+    "size": "1139208"
+  },
+  "assets/urban_life_props/ul_w10_03_prenn_waterfall_gateway_electric_shuttles_and_tour_buses.glb": {
+    "id": "1p8jHwKMP10nkOzD_ZpgNAA6dGv9Nv7Sm",
+    "modifiedTime": "2026-11-24T11:29:53.890Z",
+    "size": "1334396"
   },
   "assets/urban_life_props/ul_w1_01_cho_dem_gates_and_canopy_stalls.glb": {
     "id": "1Uli8dwiPV6p6h4wWrvDRRVq-mFtvplXi",
@@ -5090,24 +4275,9 @@
     "size": "933872"
   },
   "assets/urban_life_props/urban_life_manifest.json": {
-    "id": "1UCZVC3-3Go8SkkX34_BlIgHhk27gerSN",
-    "modifiedTime": "2026-11-24T09:44:54.068Z",
-    "size": "50618"
-  },
-  "assets/urban_wards_tiles/dalat_stadium_thanh_mau_T_W01_N02.glb": {
-    "id": "1mb_8-nEcE3HTpbKqIagUVm8LuCTuVHvB",
-    "modifiedTime": "2026-11-23T17:20:42.574Z",
-    "size": "173036"
-  },
-  "assets/urban_wards_tiles/dalat_university_35halls_T_E00_N01.glb": {
-    "id": "1EQ93J2CpviCBT3hC_Vxz0Y98Cm9EHKGn",
-    "modifiedTime": "2026-11-23T17:20:44.066Z",
-    "size": "623356"
-  },
-  "assets/urban_wards_tiles/doi_cu_golf_18holes_T_E00_N00.glb": {
-    "id": "15qIl8tiDjhrPa9bcq8CaGVx2HVJDosFB",
-    "modifiedTime": "2026-11-23T17:20:43.989Z",
-    "size": "536472"
+    "id": "1EZAIOfJEFemEllAO3rKWmRiHbl049Fji",
+    "modifiedTime": "2026-11-24T11:29:59.954Z",
+    "size": "55701"
   },
   "assets/urban_wards_tiles/urban_wards_manifest.json": {
     "id": "189Lb_ZSDuWYDimH41FfPttFJe4TVJ_gO",
@@ -5120,9 +4290,9 @@
     "size": "9560"
   },
   "assets/vegetation/instances_T_E00_N00.json": {
-    "id": "1URqGCD0YVra9bRF42ZAIEsBYsD8Vb8fk",
-    "modifiedTime": "2026-11-23T23:47:17.855Z",
-    "size": "232635"
+    "id": "1t2fKayfUh8ghZmMpgrnRcZib6zNVvTfL",
+    "modifiedTime": "2026-11-24T12:47:31.729Z",
+    "size": "182610"
   },
   "assets/vegetation/instances_T_E00_N01.json": {
     "id": "1rPOcb33e8eUkCTD2ewzir7t0XsgU_ddh",
@@ -5190,9 +4360,9 @@
     "size": "306072"
   },
   "assets/vegetation/instances_T_E01_N00.json": {
-    "id": "1WjIYcTozF97hIH61AwL3ln0ztA_FaaJm",
-    "modifiedTime": "2026-11-24T09:52:21.487Z",
-    "size": "312312"
+    "id": "1AhONWKz1x4cpHNfhaETcrxF6Rlph6UQU",
+    "modifiedTime": "2026-11-24T10:47:29.644Z",
+    "size": "310925"
   },
   "assets/vegetation/instances_T_E01_N01.json": {
     "id": "1fNsccxrZUQSHIX0jxqtwa8hbjz8hHBSn",
@@ -5225,9 +4395,9 @@
     "size": "528417"
   },
   "assets/vegetation/instances_T_E01_S01.json": {
-    "id": "1wYYs6-alNNfLHzAbebyRHSSum8xJMA3q",
-    "modifiedTime": "2026-11-24T06:38:33.735Z",
-    "size": "326044"
+    "id": "1zB3m-LicKr2MJomRjPUYnJzA4LPaPpJu",
+    "modifiedTime": "2026-11-24T12:47:32.025Z",
+    "size": "323908"
   },
   "assets/vegetation/instances_T_E01_S02.json": {
     "id": "1g9BvV8iyYRA4rqP7snWLBMCf6bDw-F64",
@@ -5270,9 +4440,9 @@
     "size": "536228"
   },
   "assets/vegetation/instances_T_E02_N01.json": {
-    "id": "1MzRP25WnfahI_gJte6Zsc-vhrzvqxHEc",
-    "modifiedTime": "2026-11-23T23:47:51.156Z",
-    "size": "315363"
+    "id": "1U5JZ9dDTN6nO0H1M9y3ODylyPHWxCII-",
+    "modifiedTime": "2026-11-24T10:47:30.253Z",
+    "size": "302199"
   },
   "assets/vegetation/instances_T_E02_N02.json": {
     "id": "1ZdilJNfvebreR3XzMuJEzfQZtnixM5ho",
@@ -5325,9 +4495,9 @@
     "size": "202399"
   },
   "assets/vegetation/instances_T_E02_S10.json": {
-    "id": "1I3K63j80qJH4a2fkLcqynMWWoh7K-NGx",
-    "modifiedTime": "2026-11-24T04:38:17.005Z",
-    "size": "353304"
+    "id": "1uMAoaAru3rM4P7M_zPQ3DKdCjyqdVa4Z",
+    "modifiedTime": "2026-11-24T10:47:30.692Z",
+    "size": "295967"
   },
   "assets/vegetation/instances_T_E03_N00.json": {
     "id": "16TQ5q_KL29PhM4pZ8JSRhYWx3srRmIrA",
@@ -5384,6 +4554,11 @@
     "modifiedTime": "2026-11-23T22:31:18.054Z",
     "size": "401471"
   },
+  "assets/vegetation/instances_T_E03_S10.json": {
+    "id": "1U0msM844fixWQG03z9e3OBDnlNtD_IoQ",
+    "modifiedTime": "2026-11-24T12:48:03.654Z",
+    "size": "394588"
+  },
   "assets/vegetation/instances_T_E03_S11.json": {
     "id": "1lsc9Z8NP6L2-jKnHZRjI_4-vPN7eFz-6",
     "modifiedTime": "2026-11-24T00:52:05.932Z",
@@ -5410,14 +4585,14 @@
     "size": "558780"
   },
   "assets/vegetation/instances_T_E04_N03.json": {
-    "id": "1WCcVPlWnKt20TIL1XYHrkQKydhceyXg4",
-    "modifiedTime": "2026-11-24T09:52:30.597Z",
-    "size": "391379"
+    "id": "1HTM7O0KGSnkFd6zu3RqrCvjWMdt55hXc",
+    "modifiedTime": "2026-11-24T10:47:28.163Z",
+    "size": "393948"
   },
   "assets/vegetation/instances_T_E04_N04.json": {
-    "id": "1uByc_SFlfk0ozFsZiiv7ChsosnRPhIsv",
-    "modifiedTime": "2026-11-24T09:52:24.111Z",
-    "size": "395238"
+    "id": "1dAJV6YhpCJbNx4Xxr3pO_1y-CB8qQxJq",
+    "modifiedTime": "2026-11-24T10:47:29.239Z",
+    "size": "396094"
   },
   "assets/vegetation/instances_T_E04_S01.json": {
     "id": "1p8rLyXJTIWK-GHtnUYmQpzYHhlTPNtHi",
@@ -5430,14 +4605,14 @@
     "size": "307639"
   },
   "assets/vegetation/instances_T_E04_S03.json": {
-    "id": "1VSEjcuk9ngwr6XQL2dWS42tVYyIdkmE7",
-    "modifiedTime": "2026-11-24T05:30:53.543Z",
-    "size": "604588"
+    "id": "1__ZxxYl975CN-sQ89VKqBMihfyy8zL_L",
+    "modifiedTime": "2026-11-24T11:34:38.152Z",
+    "size": "613509"
   },
   "assets/vegetation/instances_T_E04_S04.json": {
-    "id": "14qN5E6Lj6yXXyO44mEOAN_Z2YBFv5Y8z",
-    "modifiedTime": "2026-11-24T05:32:35.876Z",
-    "size": "623137"
+    "id": "1YirApUn5F-LqnPhQAE6dwSeL379qBvEp",
+    "modifiedTime": "2026-11-24T11:34:39.787Z",
+    "size": "616760"
   },
   "assets/vegetation/instances_T_E04_S05.json": {
     "id": "1TV48s5ErVrfXP4PhGbM-hGhheVuMH_O0",
@@ -5449,10 +4624,15 @@
     "modifiedTime": "2026-11-24T07:33:32.945Z",
     "size": "394926"
   },
+  "assets/vegetation/instances_T_E04_S10.json": {
+    "id": "1ch1l76va_sj5wM05vciITjuoYYfZAaIa",
+    "modifiedTime": "2026-11-24T12:48:01.541Z",
+    "size": "386753"
+  },
   "assets/vegetation/instances_T_E04_S11.json": {
-    "id": "1jEjd4j2divJBGXs1wMpYf-VnBcsNaMjR",
-    "modifiedTime": "2026-11-24T00:52:08.944Z",
-    "size": "330360"
+    "id": "1hUEuckgdwtQ5fDoe6EZIvUKUcl19GO5_",
+    "modifiedTime": "2026-11-24T12:47:32.167Z",
+    "size": "258734"
   },
   "assets/vegetation/instances_T_E04_S12.json": {
     "id": "1EBZ-veI1YhgVI-cna21qPJD1a0dIHEcz",
@@ -5500,9 +4680,9 @@
     "size": "782174"
   },
   "assets/vegetation/instances_T_E05_S04.json": {
-    "id": "1hE4zfjB6gsdxP9VAUubB_apKebnY1ltk",
-    "modifiedTime": "2026-11-24T09:52:04.488Z",
-    "size": "362810"
+    "id": "1EOyvt4LhMbkzCT45xbObR7i2wY0ycCbH",
+    "modifiedTime": "2026-11-24T11:34:43.114Z",
+    "size": "423476"
   },
   "assets/vegetation/instances_T_E05_S05.json": {
     "id": "1RLBsbh5nnfuzXiN_tT9fhnHDUOe_5GfB",
@@ -5520,14 +4700,24 @@
     "size": "280310"
   },
   "assets/vegetation/instances_T_E05_S10.json": {
-    "id": "1OgzF0Nlopyj9x5jRAUtpHifJZRJmB3G3",
-    "modifiedTime": "2026-11-24T00:52:02.987Z",
-    "size": "336715"
+    "id": "1bU4SrgJYOuqkGShYXvpAe7Gn_a22Irf2",
+    "modifiedTime": "2026-11-24T12:47:39.263Z",
+    "size": "212436"
+  },
+  "assets/vegetation/instances_T_E05_S11.json": {
+    "id": "1GkDxYXcFkyXP0-6rvSX38ZkgYV7Q4PDN",
+    "modifiedTime": "2026-11-24T12:48:00.870Z",
+    "size": "556615"
   },
   "assets/vegetation/instances_T_E06_N01.json": {
     "id": "1wZPxwmx3AHg79mneZFhCNH_lpzqffK8n",
     "modifiedTime": "2026-11-24T02:58:27.618Z",
     "size": "402307"
+  },
+  "assets/vegetation/instances_T_E06_N02.json": {
+    "id": "1B3je0I0TXnfxZfr4IJPV3KnnuWoXJTsm",
+    "modifiedTime": "2026-11-24T10:48:00.475Z",
+    "size": "580834"
   },
   "assets/vegetation/instances_T_E06_S02.json": {
     "id": "13bE1Bo6lZZ7DF5UYb6x-v9FzsHIbnJU7",
@@ -5554,6 +4744,16 @@
     "modifiedTime": "2026-11-24T07:33:03.293Z",
     "size": "433127"
   },
+  "assets/vegetation/instances_T_E06_S10.json": {
+    "id": "1B4grhbuOD9qinrAy38eAWKM4LdoJO3kh",
+    "modifiedTime": "2026-11-24T12:48:02.397Z",
+    "size": "600210"
+  },
+  "assets/vegetation/instances_T_E06_S11.json": {
+    "id": "1sYXclrMBoNsIsHRlgNHZfOa4a1NFIWLt",
+    "modifiedTime": "2026-11-24T12:48:02.588Z",
+    "size": "416448"
+  },
   "assets/vegetation/instances_T_E07_N01.json": {
     "id": "1NaIr5V57gIaNQan7EMZW2KaAoRvb0l5H",
     "modifiedTime": "2026-11-24T02:58:32.181Z",
@@ -5564,25 +4764,30 @@
     "modifiedTime": "2026-11-24T02:58:00.376Z",
     "size": "387994"
   },
+  "assets/vegetation/instances_T_E07_N04.json": {
+    "id": "1PMACVo5uRsuVHu7o2YdiMcjsvMxxo5zU",
+    "modifiedTime": "2026-11-24T10:48:00.465Z",
+    "size": "399756"
+  },
   "assets/vegetation/instances_T_E07_S02.json": {
     "id": "1ujjiolQxer5Mgh90lY8Df5eQTvDTVnuX",
     "modifiedTime": "2026-11-24T04:38:27.703Z",
     "size": "629074"
   },
   "assets/vegetation/instances_T_E07_S03.json": {
-    "id": "1pbsCvIBEptj0ZNT0hN1FAlR97xSAzuqh",
-    "modifiedTime": "2026-11-24T03:31:51.470Z",
-    "size": "866154"
+    "id": "14blDDaIsZTjkiLtRkNpFDfNfea41en3U",
+    "modifiedTime": "2026-11-24T12:47:31.536Z",
+    "size": "725294"
   },
   "assets/vegetation/instances_T_E07_S04.json": {
-    "id": "1uYSndtzwmFq6di1HftWyPZwtW4anQsQB",
-    "modifiedTime": "2026-11-23T13:40:18.225Z",
-    "size": "854061"
+    "id": "1fZ6-lvi4nS_CQNkWCdTFNgfjAYrpV_4l",
+    "modifiedTime": "2026-11-24T12:47:31.073Z",
+    "size": "734767"
   },
   "assets/vegetation/instances_T_E07_S05.json": {
-    "id": "1LUXhdO8FmjuHrV_3g0KcEly3Fwr4pDry",
-    "modifiedTime": "2026-11-23T21:35:56.787Z",
-    "size": "800500"
+    "id": "1BUBAXzTC9EPs4z5DO6dRtd0_MPAk1qMN",
+    "modifiedTime": "2026-11-24T12:47:31.193Z",
+    "size": "705787"
   },
   "assets/vegetation/instances_T_E07_S06.json": {
     "id": "1KbB8dKBWi4QTFLfPDwYIR2IzfKO0CPk7",
@@ -5593,6 +4798,11 @@
     "id": "19pgwi5dfn5FyMSbK4BJBdfN5woVHnDXh",
     "modifiedTime": "2026-11-24T02:58:04.376Z",
     "size": "371456"
+  },
+  "assets/vegetation/instances_T_E08_N04.json": {
+    "id": "1klVGM2FfzAoigOgGaoJcwC6vE_rDc_Uf",
+    "modifiedTime": "2026-11-24T10:47:56.723Z",
+    "size": "397624"
   },
   "assets/vegetation/instances_T_E08_N05.json": {
     "id": "1WqbxVq0kzn75ewtTr_T43u4nOocfffDK",
@@ -5619,6 +4829,11 @@
     "modifiedTime": "2026-11-23T22:31:15.789Z",
     "size": "91841"
   },
+  "assets/vegetation/instances_T_E09_N04.json": {
+    "id": "1dJLnzcmRgUPw_ijLngno6A1Vk1Ks_PaM",
+    "modifiedTime": "2026-11-24T10:47:54.109Z",
+    "size": "404916"
+  },
   "assets/vegetation/instances_T_E09_N05.json": {
     "id": "11rlhLEN-nM-mAowSahkNyjzfvrGEDZJS",
     "modifiedTime": "2026-11-24T09:52:30.132Z",
@@ -5634,6 +4849,16 @@
     "modifiedTime": "2026-11-23T23:47:58.032Z",
     "size": "380138"
   },
+  "assets/vegetation/instances_T_E10_N04.json": {
+    "id": "1fI4PAoK9raQg6BK4Em-ZMAfzO9LtDcXz",
+    "modifiedTime": "2026-11-24T10:47:54.771Z",
+    "size": "395103"
+  },
+  "assets/vegetation/instances_T_E10_N05.json": {
+    "id": "1t-HUHiyL324MwdnwVqmHETdgTm8ZVqZ3",
+    "modifiedTime": "2026-11-24T10:47:57.175Z",
+    "size": "404688"
+  },
   "assets/vegetation/instances_T_W01_N00.json": {
     "id": "1VcTLguRW849WYYDZEX3Ofq_vRtEo5mLN",
     "modifiedTime": "2026-11-24T06:38:17.211Z",
@@ -5645,9 +4870,9 @@
     "size": "315417"
   },
   "assets/vegetation/instances_T_W01_N02.json": {
-    "id": "1bjBE-8t2_EgOT7BzqmxqBUVgryqE-n_n",
-    "modifiedTime": "2026-11-24T09:52:21.897Z",
-    "size": "291987"
+    "id": "1A_B5zirF62u9eea96L2Z_Yxn9szGj_yu",
+    "modifiedTime": "2026-11-24T10:47:31.279Z",
+    "size": "291449"
   },
   "assets/vegetation/instances_T_W01_N03.json": {
     "id": "1Ep5YbiRVdIbpmCV4qmNLaa_UWmwGktuB",
@@ -5844,6 +5069,16 @@
     "modifiedTime": "2026-11-24T06:38:00.123Z",
     "size": "392681"
   },
+  "assets/vegetation/instances_T_W04_N01.json": {
+    "id": "16eARjLwUMy7P3nxGgUbN-PzUXnSH9iwK",
+    "modifiedTime": "2026-11-24T10:47:52.920Z",
+    "size": "579487"
+  },
+  "assets/vegetation/instances_T_W04_N02.json": {
+    "id": "17ys_dgmIWJCa2AuAxYFl-yRbJfBjBPnJ",
+    "modifiedTime": "2026-11-24T10:47:53.059Z",
+    "size": "402589"
+  },
   "assets/vegetation/instances_T_W04_N03.json": {
     "id": "1wmq54ubmT-PZCCkoyUivYY2ouzVLURVd",
     "modifiedTime": "2026-11-24T02:57:50.752Z",
@@ -5875,9 +5110,19 @@
     "size": "408714"
   },
   "assets/vegetation/instances_T_W04_S04.json": {
-    "id": "1N-RoYkuxtbXew5fLMp3vm7az0VJSPobD",
-    "modifiedTime": "2026-11-24T06:39:14.158Z",
-    "size": "397660"
+    "id": "1wwAxd6ru9DkX-zfm6ayxOnp4hX7S8S4t",
+    "modifiedTime": "2026-11-24T11:34:43.062Z",
+    "size": "404171"
+  },
+  "assets/vegetation/instances_T_W04_S05.json": {
+    "id": "1vTcvEWyN1tR9xWIjPYDZEkRMGU_Qp9_q",
+    "modifiedTime": "2026-11-24T10:47:55.393Z",
+    "size": "610971"
+  },
+  "assets/vegetation/instances_T_W04_S06.json": {
+    "id": "1Q7nPrwPGmKfZE2rQOR9iABWziXzGIWo-",
+    "modifiedTime": "2026-11-24T10:47:53.869Z",
+    "size": "621319"
   },
   "assets/vegetation/instances_T_W04_S10.json": {
     "id": "1R4D6RZ1Aa92tlbtfPo6vp3bx3P8x6vOl",
@@ -5945,9 +5190,9 @@
     "size": "330753"
   },
   "assets/vegetation/instances_T_W05_S06.json": {
-    "id": "1hdWs2uWlmEazCZGeUaQAc9MxjGvGX85x",
-    "modifiedTime": "2026-11-24T01:43:45.277Z",
-    "size": "385279"
+    "id": "1vTYCBFNSh7Kk4sOIuMhUB9j4aAqCU-8A",
+    "modifiedTime": "2026-11-24T10:47:29.076Z",
+    "size": "218442"
   },
   "assets/vegetation/instances_T_W05_S11.json": {
     "id": "1yW0HQfJFid68quGCRL7eoU138n1CBM0W",
@@ -5965,9 +5210,9 @@
     "size": "430443"
   },
   "assets/vegetation/instances_T_W06_S02.json": {
-    "id": "1TXkHco04kIL52-LwTiW0FtoSUJ0oWHai",
-    "modifiedTime": "2026-11-23T22:30:52.931Z",
-    "size": "414366"
+    "id": "1nKHtML0dNwC-C9Ztu0559pKtrDZ-ZnZZ",
+    "modifiedTime": "2026-11-24T12:47:31.447Z",
+    "size": "589850"
   },
   "assets/vegetation/instances_T_W06_S04.json": {
     "id": "12O_tCz1RNMz_MI8bW-sYL1TEFIam_oub",
@@ -5999,6 +5244,11 @@
     "modifiedTime": "2026-11-24T06:38:42.778Z",
     "size": "377589"
   },
+  "assets/vegetation/instances_T_W07_S10.json": {
+    "id": "1dKdlfECOSaI9MeV55mvG9NOmVWQxTEVG",
+    "modifiedTime": "2026-11-24T11:34:49.274Z",
+    "size": "631283"
+  },
   "assets/vegetation/instances_T_W07_S11.json": {
     "id": "1b2xN6EHViGXmf598a9baweSDHf3Vgah-",
     "modifiedTime": "2026-11-24T01:43:57.377Z",
@@ -6013,6 +5263,11 @@
     "id": "1DRD9nO_blxfaMOr-4hEQyH5rN1uM_ham",
     "modifiedTime": "2026-11-24T06:38:52.051Z",
     "size": "602214"
+  },
+  "assets/vegetation/instances_T_W08_S03.json": {
+    "id": "18xHoBNP1RJ5te6FARpJxRcxf0G3ERvQR",
+    "modifiedTime": "2026-11-24T11:34:47.308Z",
+    "size": "596617"
   },
   "assets/vegetation/instances_T_W08_S07.json": {
     "id": "1nIosoqR94qw7RH-75F7vqJD8I1w5IROg",
@@ -6029,10 +5284,35 @@
     "modifiedTime": "2026-11-24T02:58:08.978Z",
     "size": "359565"
   },
+  "assets/vegetation/instances_T_W08_S10.json": {
+    "id": "184g_XqSI5hh2AWVyVUgav73ihoQoub7r",
+    "modifiedTime": "2026-11-24T11:34:42.718Z",
+    "size": "379913"
+  },
+  "assets/vegetation/instances_T_W08_S11.json": {
+    "id": "1FGhnGD1iP2wgiRwBQkDtkZldTvybGIZ-",
+    "modifiedTime": "2026-11-24T11:34:48.798Z",
+    "size": "627335"
+  },
   "assets/vegetation/instances_T_W08_S14.json": {
     "id": "1YV6prKFM9O1hQkN-U4MuTRTXxZ__q1Di",
     "modifiedTime": "2026-11-24T01:44:16.563Z",
     "size": "429474"
+  },
+  "assets/vegetation/instances_T_W09_S02.json": {
+    "id": "1L2EWfCCwhQcwQcJ__ZdQ72JCUs8dipUF",
+    "modifiedTime": "2026-11-24T11:34:48.978Z",
+    "size": "407340"
+  },
+  "assets/vegetation/instances_T_W09_S03.json": {
+    "id": "1qf4ejX-1_DITmCwD2CCzqBj_J8wwc7M0",
+    "modifiedTime": "2026-11-24T11:34:45.934Z",
+    "size": "409800"
+  },
+  "assets/vegetation/instances_T_W09_S04.json": {
+    "id": "1EJw0Itl6PFNnwqFSY5e559wgtdmtCxtx",
+    "modifiedTime": "2026-11-24T11:34:49.027Z",
+    "size": "410607"
   },
   "assets/vegetation/instances_T_W09_S07.json": {
     "id": "1Xx9qfY2SqcH2ON5DNau5r93KO5RUfwo3",
@@ -6049,6 +5329,16 @@
     "modifiedTime": "2026-11-24T02:58:17.632Z",
     "size": "230158"
   },
+  "assets/vegetation/instances_T_W09_S10.json": {
+    "id": "1BVowswJtHzP5HanrJ_EvohJI7atNtoYg",
+    "modifiedTime": "2026-11-24T11:34:43.603Z",
+    "size": "336968"
+  },
+  "assets/vegetation/instances_T_W09_S11.json": {
+    "id": "1OJT3Tu4LDRv0PWtLAQAgrIyTxh8dkYQf",
+    "modifiedTime": "2026-11-24T11:34:49.239Z",
+    "size": "419907"
+  },
   "assets/vegetation/instances_T_W09_S14.json": {
     "id": "1CmAetEdVo-aSi0tzoxbdNH7ZL_PuuKIP",
     "modifiedTime": "2026-11-24T01:44:20.858Z",
@@ -6059,6 +5349,16 @@
     "modifiedTime": "2026-11-24T01:44:24.606Z",
     "size": "408341"
   },
+  "assets/vegetation/instances_T_W10_S03.json": {
+    "id": "17Ohap6_4AfRWoDaF3U6uFmm0hu8GtNp0",
+    "modifiedTime": "2026-11-24T11:34:48.882Z",
+    "size": "410086"
+  },
+  "assets/vegetation/instances_T_W10_S06.json": {
+    "id": "1Bbe_0qKxgAyjlG-WU2ryOmox7jz2MCp0",
+    "modifiedTime": "2026-11-24T12:48:04.875Z",
+    "size": "622000"
+  },
   "assets/vegetation/instances_T_W10_S07.json": {
     "id": "1kLZs2Kb9x_UmMK_FMTIVN1pXbFkeUWQp",
     "modifiedTime": "2026-11-24T07:33:12.922Z",
@@ -6068,6 +5368,26 @@
     "id": "1X6WpyzM_RmTvAuFWSmid5isXjUcXAqkL",
     "modifiedTime": "2026-11-24T02:58:22.639Z",
     "size": "379566"
+  },
+  "assets/vegetation/instances_T_W11_S05.json": {
+    "id": "1lOp_qOPQchZ1FLqwK4SWRBONOzaHbp2u",
+    "modifiedTime": "2026-11-24T12:48:08.865Z",
+    "size": "415041"
+  },
+  "assets/vegetation/instances_T_W11_S06.json": {
+    "id": "16KLoaZ5GgbrvqW10Ahyg2kx5ZIgjrQzM",
+    "modifiedTime": "2026-11-24T12:48:04.375Z",
+    "size": "416687"
+  },
+  "assets/vegetation/instances_T_W11_S07.json": {
+    "id": "1kfeJh3npcOJ1SJCo8BM0Ew1_aSU5M5_r",
+    "modifiedTime": "2026-11-24T12:48:08.789Z",
+    "size": "417821"
+  },
+  "assets/vegetation/instances_T_W12_S06.json": {
+    "id": "15M6Prmz2xi061W9xfrHKE_GFjxDVeQK7",
+    "modifiedTime": "2026-11-24T12:48:05.827Z",
+    "size": "419056"
   },
   "assets/vegetation/mai_anh_dao.glb": {
     "id": "1kCeV0-CDCvRJIJpQXBTncZxoMkk9rP6P",
@@ -6104,11 +5424,6 @@
     "modifiedTime": "2026-11-23T17:20:44.881Z",
     "size": "13716"
   },
-  "assets/vegetation_expanded/instances_T_E00_N04.json": {
-    "id": "1JMywqEpKpD4tJFQsWydobqGfYTMyef-z",
-    "modifiedTime": "2026-11-23T19:53:05.189Z",
-    "size": "455035"
-  },
   "assets/vegetation_expanded/instances_T_E00_N07.json": {
     "id": "1dBtJE17eUqRiSd0eJvgaavSxTjTmMloh",
     "modifiedTime": "2026-11-23T23:45:02.514Z",
@@ -6123,16 +5438,6 @@
     "id": "14_PxRkrVYDMAhJNwHs3jmH2Sop9HDW6F",
     "modifiedTime": "2026-11-24T07:59:19.663Z",
     "size": "506770"
-  },
-  "assets/vegetation_expanded/instances_T_E01_N04.json": {
-    "id": "1zEm4RV1cIWPIibN7f3QQYFC5GPr_WuUi",
-    "modifiedTime": "2026-11-23T19:53:07.378Z",
-    "size": "461053"
-  },
-  "assets/vegetation_expanded/instances_T_E01_N05.json": {
-    "id": "1whDA_cy2tIFdl54ejdMJxzahmTDJwAyA",
-    "modifiedTime": "2026-11-23T19:53:13.967Z",
-    "size": "475799"
   },
   "assets/vegetation_expanded/instances_T_E01_N07.json": {
     "id": "1mu8WKmgGH3AQK0F4LMLU0ITzCPULXavz",
@@ -6149,16 +5454,6 @@
     "modifiedTime": "2026-11-24T10:02:19.646Z",
     "size": "531272"
   },
-  "assets/vegetation_expanded/instances_T_E02_N02.json": {
-    "id": "1H-mI7UDis-2VphLdwDm6X4qyz7WF1u6e",
-    "modifiedTime": "2026-11-23T17:20:46.982Z",
-    "size": "471253"
-  },
-  "assets/vegetation_expanded/instances_T_E02_N04.json": {
-    "id": "18r80G57m903y0PcK-JjVa2gsWZ4efXiF",
-    "modifiedTime": "2026-11-23T19:53:08.177Z",
-    "size": "452961"
-  },
   "assets/vegetation_expanded/instances_T_E02_N05.json": {
     "id": "1HRV40tLmtaWsigW2KYrbMUlyPWb-En_S",
     "modifiedTime": "2026-11-23T19:53:16.535Z",
@@ -6174,25 +5469,15 @@
     "modifiedTime": "2026-11-24T06:07:02.421Z",
     "size": "509829"
   },
-  "assets/vegetation_expanded/instances_T_E02_S02.json": {
-    "id": "1P2D78f-mWw1ULLZ7K5AnF3gsHQGSTVud",
-    "modifiedTime": "2026-11-23T17:20:48.374Z",
-    "size": "483114"
-  },
-  "assets/vegetation_expanded/instances_T_E02_S05.json": {
-    "id": "1YsL4sZVOAXj1VYocMVUsjtzXhUzBrgIX",
-    "modifiedTime": "2026-11-24T04:05:46.558Z",
-    "size": "517638"
-  },
   "assets/vegetation_expanded/instances_T_E02_S06.json": {
     "id": "1RyZ-Cm04olqQvUUO5htd68bOc669Zj8D",
     "modifiedTime": "2026-11-24T07:59:17.839Z",
     "size": "520273"
   },
-  "assets/vegetation_expanded/instances_T_E03_N04.json": {
-    "id": "1xCKRTp8NHkE3SguqsH66_PFVNvPoldxn",
-    "modifiedTime": "2026-11-23T19:53:10.446Z",
-    "size": "450887"
+  "assets/vegetation_expanded/instances_T_E02_S07.json": {
+    "id": "14ot0NQVj5Aq1SBGUfZ8B7PhgWa6WStWE",
+    "modifiedTime": "2026-11-24T11:56:38.353Z",
+    "size": "526494"
   },
   "assets/vegetation_expanded/instances_T_E03_N05.json": {
     "id": "1uDhjy3bg7B1qtwQOlqUE4u0WLhOnxXxH",
@@ -6209,45 +5494,15 @@
     "modifiedTime": "2026-11-24T07:59:36.259Z",
     "size": "515166"
   },
-  "assets/vegetation_expanded/instances_T_E03_S04.json": {
-    "id": "1eBuT-knkT5RCZtJ8sEknxdvGQeg5vAyi",
-    "modifiedTime": "2026-11-23T21:55:43.164Z",
-    "size": "503737"
-  },
-  "assets/vegetation_expanded/instances_T_E03_S05.json": {
-    "id": "1CxGCrTHrDMXMHlXf08YhSqhdQ4vrBT5K",
-    "modifiedTime": "2026-11-23T21:55:45.205Z",
-    "size": "518753"
-  },
   "assets/vegetation_expanded/instances_T_E03_S06.json": {
     "id": "1D7AAmhGN87k5VuWuF-hAWGgDI8EXyc4j",
     "modifiedTime": "2026-11-24T07:59:19.141Z",
     "size": "524207"
   },
-  "assets/vegetation_expanded/instances_T_E04_N00.json": {
-    "id": "1fXgCuB4Jk75f5JVPAdSNZrtfR-Us1yk4",
-    "modifiedTime": "2026-11-23T21:55:39.146Z",
-    "size": "482266"
-  },
-  "assets/vegetation_expanded/instances_T_E04_N01.json": {
-    "id": "1dA2v9Yzy98RF0xduZdMHk1c-xQRj_Uin",
-    "modifiedTime": "2026-11-23T21:55:38.517Z",
-    "size": "486207"
-  },
-  "assets/vegetation_expanded/instances_T_E04_N02.json": {
-    "id": "11XgJZlyCdsuCM3agvte5F0CQqumD57l2",
-    "modifiedTime": "2026-11-23T21:55:36.555Z",
-    "size": "488137"
-  },
-  "assets/vegetation_expanded/instances_T_E04_N03.json": {
-    "id": "1OkHq-cfnjMwxgk27tMqXMxRXtpA4uBKq",
-    "modifiedTime": "2026-11-23T19:52:59.563Z",
-    "size": "453034"
-  },
-  "assets/vegetation_expanded/instances_T_E04_N04.json": {
-    "id": "19NWrC_jN6NGGecAzQhRfZrkOKao3fDa_",
-    "modifiedTime": "2026-11-23T19:53:10.353Z",
-    "size": "456014"
+  "assets/vegetation_expanded/instances_T_E03_S07.json": {
+    "id": "1IeFb6xfDvlugwV9rwugOPFI3LndHQcRk",
+    "modifiedTime": "2026-11-24T11:56:39.792Z",
+    "size": "513402"
   },
   "assets/vegetation_expanded/instances_T_E04_N05.json": {
     "id": "1X6RTec5cQvPBYzkMQ54goGvl8UwfXsqa",
@@ -6264,30 +5519,10 @@
     "modifiedTime": "2026-11-24T10:02:29.142Z",
     "size": "507312"
   },
-  "assets/vegetation_expanded/instances_T_E04_S03.json": {
-    "id": "1jlQ4RrJAUrNbnKgbPePw9ieop6mFuHz2",
-    "modifiedTime": "2026-11-23T21:55:41.707Z",
-    "size": "510072"
-  },
-  "assets/vegetation_expanded/instances_T_E04_S04.json": {
-    "id": "1VD6rgyBLug-DnuL5vKnZaNJDG2x4f0ZX",
-    "modifiedTime": "2026-11-23T21:55:41.708Z",
-    "size": "498290"
-  },
-  "assets/vegetation_expanded/instances_T_E04_S05.json": {
-    "id": "1tBVuW_fhBJrbDKSto3ifGmGnVQH49U2D",
-    "modifiedTime": "2026-11-24T06:06:54.652Z",
-    "size": "511687"
-  },
-  "assets/vegetation_expanded/instances_T_E05_N02.json": {
-    "id": "1cNwgvPnTcxqg-TzlcW_SMJU_iPJElOLT",
-    "modifiedTime": "2026-11-24T07:59:21.126Z",
-    "size": "507009"
-  },
-  "assets/vegetation_expanded/instances_T_E05_N03.json": {
-    "id": "18tF06yU0HuZhFf116fyE39cqSIrilQEn",
-    "modifiedTime": "2026-11-24T07:59:23.401Z",
-    "size": "506952"
+  "assets/vegetation_expanded/instances_T_E04_S07.json": {
+    "id": "1N7kSU0HdO5NdmRbRdsoTcQDbmGbeepYR",
+    "modifiedTime": "2026-11-24T11:56:40.984Z",
+    "size": "518259"
   },
   "assets/vegetation_expanded/instances_T_E05_N05.json": {
     "id": "1Q5zeRM1HTxVaCx9waeqFOu-0yCyUYbvP",
@@ -6304,30 +5539,15 @@
     "modifiedTime": "2026-11-24T10:02:29.607Z",
     "size": "515192"
   },
-  "assets/vegetation_expanded/instances_T_E05_S04.json": {
-    "id": "1pfh6qyrzaqEjyFVsyQbeCA_lwW_pCpFR",
-    "modifiedTime": "2026-11-24T04:05:52.675Z",
-    "size": "523860"
-  },
-  "assets/vegetation_expanded/instances_T_E05_S05.json": {
-    "id": "1aNlr-qwnvesG0uq0Jbh-2BEFlePEu2Vi",
-    "modifiedTime": "2026-11-24T04:05:52.778Z",
-    "size": "518445"
-  },
-  "assets/vegetation_expanded/instances_T_E05_S06.json": {
-    "id": "15m9kLN5Uqr8Hqn5mZ0JgrXcdH1J-x5gG",
-    "modifiedTime": "2026-11-24T06:06:55.877Z",
-    "size": "532854"
+  "assets/vegetation_expanded/instances_T_E05_S07.json": {
+    "id": "15ncVVFF0qUv_Nz2tyP6dycBCMvXT_Eul",
+    "modifiedTime": "2026-11-24T11:56:45.283Z",
+    "size": "528271"
   },
   "assets/vegetation_expanded/instances_T_E06_N00.json": {
     "id": "1nw49lDWySypw0_ydTycQJZmSEg6fheTf",
     "modifiedTime": "2026-11-24T06:07:00.754Z",
     "size": "497969"
-  },
-  "assets/vegetation_expanded/instances_T_E06_N02.json": {
-    "id": "1e8JZzpB2sjVLChdaqp1jR0yE7rXdXBbp",
-    "modifiedTime": "2026-11-24T07:59:23.480Z",
-    "size": "512153"
   },
   "assets/vegetation_expanded/instances_T_E06_N03.json": {
     "id": "1Bd8qrQRzoXiYz-KFmDPKytJxZHPpU0-9",
@@ -6339,50 +5559,50 @@
     "modifiedTime": "2026-11-24T10:02:21.774Z",
     "size": "504651"
   },
+  "assets/vegetation_expanded/instances_T_E06_N05.json": {
+    "id": "1TRKtpTWhCu6Dq0JsAveZ9GrADpquwEDU",
+    "modifiedTime": "2026-11-24T11:56:49.087Z",
+    "size": "514424"
+  },
+  "assets/vegetation_expanded/instances_T_E06_N06.json": {
+    "id": "12ZdgmnXmSf-K4zR0n3TqN_bmjQ4Da7uO",
+    "modifiedTime": "2026-11-24T11:56:50.550Z",
+    "size": "522510"
+  },
+  "assets/vegetation_expanded/instances_T_E06_N07.json": {
+    "id": "1V07cOnfZVdGN1OM_gfucgiSA9tGDSPot",
+    "modifiedTime": "2026-11-24T11:56:51.115Z",
+    "size": "524930"
+  },
   "assets/vegetation_expanded/instances_T_E06_S01.json": {
     "id": "13uvob8jTECJLJJEeZ4w3X3LbO58BTXr1",
     "modifiedTime": "2026-11-24T04:05:53.568Z",
     "size": "526770"
   },
-  "assets/vegetation_expanded/instances_T_E06_S02.json": {
-    "id": "1SGrCBxLNH9rpSKl3NETHJEc8IQExHS89",
-    "modifiedTime": "2026-11-24T04:05:54.399Z",
-    "size": "523238"
-  },
-  "assets/vegetation_expanded/instances_T_E06_S05.json": {
-    "id": "1smga7aWNXAcN2bnSt2P_1txtQTZEUr04",
-    "modifiedTime": "2026-11-24T04:05:53.518Z",
-    "size": "531551"
-  },
-  "assets/vegetation_expanded/instances_T_E06_S06.json": {
-    "id": "12LcN8gcgYZqABn5buuMTmW3MuNPSVnI0",
-    "modifiedTime": "2026-11-24T06:06:56.932Z",
-    "size": "534502"
+  "assets/vegetation_expanded/instances_T_E06_S07.json": {
+    "id": "1koMnErLROV1M0LzAkizBWy-L_ASO3wPU",
+    "modifiedTime": "2026-11-24T11:56:43.480Z",
+    "size": "528794"
   },
   "assets/vegetation_expanded/instances_T_E07_N00.json": {
     "id": "1NBx5Zb8ef0XXUYTtM18LpwDmA2TK2JrB",
     "modifiedTime": "2026-11-24T10:02:24.511Z",
     "size": "504927"
   },
+  "assets/vegetation_expanded/instances_T_E07_N03.json": {
+    "id": "1c4P1lXPZ-mXqpPVuD-SFZRFqb95Tdh6B",
+    "modifiedTime": "2026-11-24T11:56:50.916Z",
+    "size": "507082"
+  },
   "assets/vegetation_expanded/instances_T_E07_S01.json": {
     "id": "1O-MzwXnTHQJxnxrlnThY-j8YYBePT2aC",
     "modifiedTime": "2026-11-24T07:59:31.848Z",
     "size": "523036"
   },
-  "assets/vegetation_expanded/instances_T_W01_N04.json": {
-    "id": "1NFuuLtRkdMwq67-_kQgje1rX16LkTLok",
-    "modifiedTime": "2026-11-23T19:53:03.575Z",
-    "size": "478984"
-  },
   "assets/vegetation_expanded/instances_T_W01_N07.json": {
     "id": "1WqZkiGmPColNlvNiyDOClL2Iue-RFmv8",
     "modifiedTime": "2026-11-23T23:45:02.618Z",
     "size": "543008"
-  },
-  "assets/vegetation_expanded/instances_T_W01_S05.json": {
-    "id": "184DJQjbchb2JWaHk7Ker-JfmThamZRgP",
-    "modifiedTime": "2026-11-24T04:05:45.411Z",
-    "size": "525960"
   },
   "assets/vegetation_expanded/instances_T_W01_S06.json": {
     "id": "1mkmfxXpTN--nARDW9wZ5WX7WQBmPRbfD",
@@ -6394,21 +5614,6 @@
     "modifiedTime": "2026-11-24T10:02:17.968Z",
     "size": "537477"
   },
-  "assets/vegetation_expanded/instances_T_W02_N02.json": {
-    "id": "1--scoR25BAeIF9aFBgvzWfzXoQTQme_O",
-    "modifiedTime": "2026-11-23T17:20:45.559Z",
-    "size": "488709"
-  },
-  "assets/vegetation_expanded/instances_T_W02_N04.json": {
-    "id": "1mqB4lBSDCxmuNEVOjt_E4UZFlsqmsmwI",
-    "modifiedTime": "2026-11-23T19:53:02.522Z",
-    "size": "469926"
-  },
-  "assets/vegetation_expanded/instances_T_W02_N05.json": {
-    "id": "1czkrwLqQs2nN-G8Ce4jHm6VMzTOs1-04",
-    "modifiedTime": "2026-11-23T19:53:16.585Z",
-    "size": "487230"
-  },
   "assets/vegetation_expanded/instances_T_W02_N06.json": {
     "id": "1itVNYD7jNYpudgW2FriZNOqeA2ZEYoMF",
     "modifiedTime": "2026-11-23T23:45:00.762Z",
@@ -6418,11 +5623,6 @@
     "id": "1AbB7ISrekf_E8HmnaTf-ZblwrqFAkh4X",
     "modifiedTime": "2026-11-24T06:07:02.434Z",
     "size": "536082"
-  },
-  "assets/vegetation_expanded/instances_T_W02_S05.json": {
-    "id": "1whBPrn-x6snYlzgAAM5EL5XT1ZluLPdU",
-    "modifiedTime": "2026-11-24T04:05:46.703Z",
-    "size": "525929"
   },
   "assets/vegetation_expanded/instances_T_W02_S06.json": {
     "id": "1LyFr5Io0c8ohjrUxBasRlQks02ZjUK5L",
@@ -6434,35 +5634,10 @@
     "modifiedTime": "2026-11-24T10:02:16.875Z",
     "size": "534448"
   },
-  "assets/vegetation_expanded/instances_T_W03_N04.json": {
-    "id": "1pUtdi7HoTBPQU0HzaD2uRwrSa7-m4W39",
-    "modifiedTime": "2026-11-23T19:53:01.080Z",
-    "size": "442774"
-  },
-  "assets/vegetation_expanded/instances_T_W03_N05.json": {
-    "id": "1KXTpwLNbIv3tRCPctXwjsqh-7OeCx1jY",
-    "modifiedTime": "2026-11-23T19:53:13.046Z",
-    "size": "389530"
-  },
-  "assets/vegetation_expanded/instances_T_W03_N06.json": {
-    "id": "1xgd5El5de7KK9Ct6P5h5OTM9NW8NJxzz",
-    "modifiedTime": "2026-11-23T23:44:59.501Z",
-    "size": "533031"
-  },
   "assets/vegetation_expanded/instances_T_W03_N07.json": {
     "id": "1s6kR_tG2hYHgdThlqOaJrxUe-XrTNjQy",
     "modifiedTime": "2026-11-24T07:59:36.050Z",
     "size": "530448"
-  },
-  "assets/vegetation_expanded/instances_T_W03_S04.json": {
-    "id": "1Burs2d4EtWfKeq0PwxwyFySF3vxiOw0R",
-    "modifiedTime": "2026-11-23T21:55:42.888Z",
-    "size": "516668"
-  },
-  "assets/vegetation_expanded/instances_T_W03_S05.json": {
-    "id": "1_h0tgzTQFmHLKeNQHQ_1ZOUAc0hJ45Ge",
-    "modifiedTime": "2026-11-23T21:55:43.684Z",
-    "size": "525786"
   },
   "assets/vegetation_expanded/instances_T_W03_S06.json": {
     "id": "1liJe_5McVJfRYR18b4HbAC7hDH9EqLmi",
@@ -6474,21 +5649,6 @@
     "modifiedTime": "2026-11-24T10:02:15.437Z",
     "size": "531030"
   },
-  "assets/vegetation_expanded/instances_T_W04_N01.json": {
-    "id": "1sFSqXzo1Q-VrTvghkLdHOXwSNRModvkX",
-    "modifiedTime": "2026-11-23T21:55:32.900Z",
-    "size": "507728"
-  },
-  "assets/vegetation_expanded/instances_T_W04_N02.json": {
-    "id": "1BnH6afyGCjWBG8zW3ZJZOj2M4OySCtii",
-    "modifiedTime": "2026-11-23T21:55:32.300Z",
-    "size": "506206"
-  },
-  "assets/vegetation_expanded/instances_T_W04_N03.json": {
-    "id": "1NLS0vk1NS1Vhb5P5cH3yplLWnvIJAXBC",
-    "modifiedTime": "2026-11-23T19:52:58.060Z",
-    "size": "405513"
-  },
   "assets/vegetation_expanded/instances_T_W04_N06.json": {
     "id": "1OkiklBKIwkcBcTZScd4ePcNhwMJtJPcI",
     "modifiedTime": "2026-11-23T23:44:58.454Z",
@@ -6499,70 +5659,25 @@
     "modifiedTime": "2026-11-24T10:02:28.268Z",
     "size": "520817"
   },
-  "assets/vegetation_expanded/instances_T_W04_S02.json": {
-    "id": "1hW2qI_-mbzLn63s_DhD3lJP0FM8H5Umq",
-    "modifiedTime": "2026-11-23T21:55:33.542Z",
-    "size": "521904"
-  },
-  "assets/vegetation_expanded/instances_T_W04_S03.json": {
-    "id": "1savY2E6qTzLGUgw7iX2ENBg40oHIVh95",
-    "modifiedTime": "2026-11-23T21:55:35.051Z",
-    "size": "521639"
-  },
-  "assets/vegetation_expanded/instances_T_W04_S04.json": {
-    "id": "1DyL5s4DN99zjz_P2DK_HZdmp6GWqKJYj",
-    "modifiedTime": "2026-11-23T21:55:35.713Z",
-    "size": "514223"
-  },
-  "assets/vegetation_expanded/instances_T_W04_S05.json": {
-    "id": "1zWnspSrDiYF9blFHy1B-4ALKFRv4QQAG",
-    "modifiedTime": "2026-11-24T06:06:53.346Z",
-    "size": "530594"
-  },
-  "assets/vegetation_expanded/instances_T_W04_S06.json": {
-    "id": "1Z7yssMeJ8i880gv_PQGZ3ZGvkF0lDE-E",
-    "modifiedTime": "2026-11-24T07:59:16.659Z",
-    "size": "534022"
-  },
   "assets/vegetation_expanded/instances_T_W04_S07.json": {
     "id": "1fi88RDZeyD0DC6UOeLZtWbt5-VT-M49z",
     "modifiedTime": "2026-11-24T10:02:15.080Z",
     "size": "541020"
   },
-  "assets/vegetation_expanded/instances_T_W05_N00.json": {
-    "id": "1NhWWr9yND_Tt7QxFqUfszmfC2EEKvwza",
-    "modifiedTime": "2026-11-24T04:05:49.816Z",
-    "size": "513122"
+  "assets/vegetation_expanded/instances_T_W05_N06.json": {
+    "id": "1kI7El8XwCmbqnrzMwlwxORwKVmHz8lNn",
+    "modifiedTime": "2026-11-24T11:56:45.504Z",
+    "size": "541171"
   },
-  "assets/vegetation_expanded/instances_T_W05_N01.json": {
-    "id": "18MsZEoLv-JBHUmQ_42fcMeAX9jTl5PkA",
-    "modifiedTime": "2026-11-24T06:07:00.012Z",
-    "size": "514460"
+  "assets/vegetation_expanded/instances_T_W05_N07.json": {
+    "id": "12EXiSUGHBJYgkqQD7QgX-fywyEB13OlS",
+    "modifiedTime": "2026-11-24T11:56:47.681Z",
+    "size": "531938"
   },
-  "assets/vegetation_expanded/instances_T_W05_N02.json": {
-    "id": "13P16dFUkjQYUzkJYKAM-vgB2hYryf6s6",
-    "modifiedTime": "2026-11-23T23:44:56.427Z",
-    "size": "509228"
-  },
-  "assets/vegetation_expanded/instances_T_W05_N03.json": {
-    "id": "1IjBOiRAbhRlBkqNlc5X8jV1hOulnoC50",
-    "modifiedTime": "2026-11-23T23:44:56.604Z",
-    "size": "515881"
-  },
-  "assets/vegetation_expanded/instances_T_W05_N05.json": {
-    "id": "16BxitfLOZbcBGtaYZfBbsEJbw7AIHMKH",
-    "modifiedTime": "2026-11-23T23:44:57.412Z",
-    "size": "525028"
-  },
-  "assets/vegetation_expanded/instances_T_W05_S03.json": {
-    "id": "1rloBPmgHEFF7jamsYb8wZfT3Ff3v_A9O",
-    "modifiedTime": "2026-11-24T04:05:50.100Z",
-    "size": "522789"
-  },
-  "assets/vegetation_expanded/instances_T_W05_S04.json": {
-    "id": "1bZjkx84gUg_e9HWBxvSCrtix-2fRZydz",
-    "modifiedTime": "2026-11-24T04:05:51.961Z",
-    "size": "534200"
+  "assets/vegetation_expanded/instances_T_W05_S07.json": {
+    "id": "11LNFVwQAS1jicByJgwbEJJoPc_vsA3dF",
+    "modifiedTime": "2026-11-24T11:56:37.557Z",
+    "size": "549352"
   },
   "assets/vegetation_expanded/instances_T_W06_N00.json": {
     "id": "1d-Iro4YtLVgJ5HfuW3p2ENsjZzBYBJKN",
@@ -6589,6 +5704,16 @@
     "modifiedTime": "2026-11-24T10:02:27.472Z",
     "size": "526556"
   },
+  "assets/vegetation_expanded/instances_T_W06_N06.json": {
+    "id": "1efMmmAOC8DqkOF126CriAQUkK58t3f4I",
+    "modifiedTime": "2026-11-24T11:56:44.782Z",
+    "size": "537850"
+  },
+  "assets/vegetation_expanded/instances_T_W06_N07.json": {
+    "id": "1SO40F8EZSpKqd0uYeLPcxvZkJkej1TCh",
+    "modifiedTime": "2026-11-24T11:56:48.606Z",
+    "size": "541276"
+  },
   "assets/vegetation_expanded/instances_T_W06_S01.json": {
     "id": "1oEmjq10tYGe7vt9bc1ISFpKhiKSTkbXd",
     "modifiedTime": "2026-11-24T07:59:35.612Z",
@@ -6598,11 +5723,6 @@
     "id": "1kDOBLxXa0U7hCOzfgCnOWp1BXC3Qx7Eb",
     "modifiedTime": "2026-11-24T04:05:50.897Z",
     "size": "538339"
-  },
-  "assets/vegetation_expanded/instances_T_W06_S04.json": {
-    "id": "1Q3YZ-LUnLzEMcooNRAdJ9qkSK45SiRey",
-    "modifiedTime": "2026-11-24T06:07:01.547Z",
-    "size": "537825"
   },
   "assets/vegetation_expanded/instances_T_W07_S02.json": {
     "id": "1WXPwNYO7At4INGAdBsy0u1wv_LJjAfNP",
@@ -6620,9 +5740,9 @@
     "size": "18688"
   },
   "assets/vegetation_expanded/vegetation_expanded_manifest.json": {
-    "id": "1IwyYgq41x82T4AIZkcgk1zk4FTvEFBPe",
-    "modifiedTime": "2026-11-24T10:02:32.629Z",
-    "size": "72069"
+    "id": "1_PsFt4QalRLdtPh342d5jdBbWwzDRs1E",
+    "modifiedTime": "2026-11-24T11:57:22.601Z",
+    "size": "81086"
   },
   "assets/vegetation_expanded/weeping_willow.glb": {
     "id": "15NcuutH0UcAiIIuUPTYoNW-Bhrk-WWOd",
@@ -6689,6 +5809,11 @@
     "modifiedTime": "2026-11-24T01:30:51.973Z",
     "size": "276216"
   },
+  "assets/water_bodies/water_ho_gia_lam_nam_ban.glb": {
+    "id": "1uZAxtzneSEfLBCreKTQ3fYqGKdQsFPoA",
+    "modifiedTime": "2026-11-24T10:20:32.696Z",
+    "size": "258132"
+  },
   "assets/water_bodies/water_ho_ka_do_don_duong.glb": {
     "id": "1_4vayWFkiD5jujsTDcFb6A9aQWFANDvV",
     "modifiedTime": "2026-11-24T00:19:30.442Z",
@@ -6714,6 +5839,11 @@
     "modifiedTime": "2026-11-23T21:39:17.002Z",
     "size": "286140"
   },
+  "assets/water_bodies/water_ho_quang_lap_don_duong.glb": {
+    "id": "1sIJg-1Dt10XFVzYzqvoNGz9zjUsmAbFO",
+    "modifiedTime": "2026-11-24T12:27:05.615Z",
+    "size": "277148"
+  },
   "assets/water_bodies/water_ho_rlom_don_duong.glb": {
     "id": "1J1ATAw4WSt2B-GauwbW3xEsGe2uq51DY",
     "modifiedTime": "2026-11-24T04:27:36.692Z",
@@ -6723,6 +5853,11 @@
     "id": "1VcmKHljR3KAKDMBn9qCiYWATi7TVHROg",
     "modifiedTime": "2026-11-23T13:18:26.799Z",
     "size": "260716"
+  },
+  "assets/water_bodies/water_ho_tan_thanh_lam_ha.glb": {
+    "id": "1LeXdEtuGDqt_plk7d82mwXPQlhMqGAhp",
+    "modifiedTime": "2026-11-24T11:16:29.049Z",
+    "size": "285776"
   },
   "assets/water_bodies/water_ho_than_tho.glb": {
     "id": "1mx2gcZDQw2cCqXP8dD54T88m1QCqMfOj",
@@ -6760,9 +5895,9 @@
     "size": "377572"
   },
   "assets/water_bodies/water_manifest.json": {
-    "id": "1xgSIEPTZJlGVhBJwutK_VI9nQFuRyxug",
-    "modifiedTime": "2026-11-24T09:32:48.705Z",
-    "size": "516886"
+    "id": "1T_2hPwZGk9mhiG0h1y3Qh40HVcP3QCIO",
+    "modifiedTime": "2026-11-24T12:27:08.985Z",
+    "size": "581342"
   },
   "assets/water_bodies/water_manifest_w19_archive.json": {
     "id": "1I2rlYXkZTQNWSqBVPTLaYV_MS6QpNYmi",
@@ -6798,6 +5933,21 @@
     "id": "1_DVAr1PLsMvrZ_3bR1ExY80z5AVdXjbp",
     "modifiedTime": "2026-11-24T09:32:41.097Z",
     "size": "495311"
+  },
+  "assets/water_bodies/water_manifest_w25_archive.json": {
+    "id": "1xgSIEPTZJlGVhBJwutK_VI9nQFuRyxug",
+    "modifiedTime": "2026-11-24T10:20:26.575Z",
+    "size": "516886"
+  },
+  "assets/water_bodies/water_manifest_w26_archive.json": {
+    "id": "1UZKieNxgJvARF2rsobJAsK8SKZtZT5gM",
+    "modifiedTime": "2026-11-24T11:16:22.385Z",
+    "size": "538302"
+  },
+  "assets/water_bodies/water_manifest_w27_archive.json": {
+    "id": "1pFksZe2Pu4075os4C3dKUa8RqOZ8guNx",
+    "modifiedTime": "2026-11-24T12:27:00.629Z",
+    "size": "559846"
   },
   "assets/water_bodies/water_manifest_w2_archive.json": {
     "id": "1VYjgpoZHSoVDu7AmW2YMDBTVWsLsdi8x",
@@ -6889,6 +6039,11 @@
     "modifiedTime": "2026-11-24T08:28:29.840Z",
     "size": "71292"
   },
+  "assets/water_bodies/water_thac_da_chay_lac_duong.glb": {
+    "id": "1cNJdGyPHfkL-X0KzeZYo_K6SOBhcFftU",
+    "modifiedTime": "2026-11-24T10:20:32.850Z",
+    "size": "71316"
+  },
   "assets/water_bodies/water_thac_da_dang_lam_ha.glb": {
     "id": "1vMoCrleS0yJpV97H0azth2xUKaT0K-Gf",
     "modifiedTime": "2026-11-24T07:15:48.938Z",
@@ -6898,6 +6053,11 @@
     "id": "1wBJcmCx0hIOwwZUBYuBSSNw84Js5Z8z1",
     "modifiedTime": "2026-11-24T02:21:20.238Z",
     "size": "71272"
+  },
+  "assets/water_bodies/water_thac_da_ton_lam_ha.glb": {
+    "id": "1Tg-X2ufU9KqO3NDLty-Wuu1oDPCAwksH",
+    "modifiedTime": "2026-11-24T12:27:07.412Z",
+    "size": "71268"
   },
   "assets/water_bodies/water_thac_datanla.glb": {
     "id": "1T_96FASiVyUII8CNUgwk2GAic3DUpNfC",
@@ -6934,6 +6094,11 @@
     "modifiedTime": "2026-11-24T09:32:47.778Z",
     "size": "71320"
   },
+  "assets/water_bodies/water_thac_phu_son_lam_ha.glb": {
+    "id": "1RPdYqp4BCxw87D3dvHeCnLh1cVlB5Arf",
+    "modifiedTime": "2026-11-24T11:16:28.609Z",
+    "size": "71280"
+  },
   "assets/water_bodies/water_thac_pongour_duc_trong.glb": {
     "id": "1Z62Fv6PqOy9CfjW5fVC_2kwuWYi0fDdP",
     "modifiedTime": "2026-11-23T16:18:24.669Z",
@@ -6949,55 +6114,15 @@
     "modifiedTime": "2026-11-23T16:18:24.597Z",
     "size": "63780"
   },
-  "css/style.css": {
-    "id": "1zahXF7waY_AA3k-Xt9cFWebyOo9-PkfX",
-    "modifiedTime": "2026-11-24T10:03:35.856Z",
-    "size": "20746"
-  },
   "data/references/dalat_core_seeds.json": {
     "id": "1W-_9fAVcjqF55BPStMRM8Zvj10jH1opO",
     "modifiedTime": "2026-11-23T09:07:18.566Z",
     "size": "19200"
   },
   "data/world_ui_specs/camera_presets_dalat.json": {
-    "id": "1HLRJSJmXXR8dXGgmNpjseejhE4YTgOS1",
-    "modifiedTime": "2026-11-24T10:01:11.722Z",
-    "size": "40638"
-  },
-  "index.html": {
-    "id": "1x77BYHFMVQgoYL42mZNBx_XfKoerthdr",
-    "modifiedTime": "2026-11-24T10:03:34.263Z",
-    "size": "15782"
-  },
-  "js/dalat_world_engine.js": {
-    "id": "141JC22KobqPXTjfOjDVf7OAQP3OvoS1M",
-    "modifiedTime": "2026-11-24T10:03:37.232Z",
-    "size": "35638"
-  },
-  "js/minimap_hud.js": {
-    "id": "1VR1sYokx3D7kHSV4fDyNgwk44OMFPm-H",
-    "modifiedTime": "2026-11-23T21:46:02.756Z",
-    "size": "26013"
-  },
-  "js/realtime_renderer.js": {
-    "id": "1k9-NqCZOTrGcW4eAy-kYSan7qp88Q7Fi",
-    "modifiedTime": "2026-11-24T10:03:40.280Z",
-    "size": "35824"
-  },
-  "js/tile_streamer.js": {
-    "id": "1eonsjTuiMyz3-n1rWjX-pFheu9tZhIlc",
-    "modifiedTime": "2026-11-24T10:06:12.829Z",
-    "size": "69895"
-  },
-  "js/vendor/GLTFLoader.js": {
-    "id": "1bpCopDhQvGzCOoFMUKjwOvtdE0yDOe3v",
-    "modifiedTime": "2026-11-23T15:30:10.637Z",
-    "size": "96550"
-  },
-  "js/vendor/three.min.js": {
-    "id": "1vMVbzju7-6urV_hb_vN1XXXQzFFSMORT",
-    "modifiedTime": "2026-11-23T15:30:11.606Z",
-    "size": "603445"
+    "id": "1J2fejvKoLLK3NdRuCY7Wq0A0WvDn3lIU",
+    "modifiedTime": "2026-11-24T12:51:17.959Z",
+    "size": "47168"
   },
   "state/TILE_GRID_SPEC.json": {
     "id": "11iqtkIo9tpCDxY2QlLvz-Bvc4xjyMBp3",

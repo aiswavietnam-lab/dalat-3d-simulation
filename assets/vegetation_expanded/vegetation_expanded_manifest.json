@@ -4,9 +4,9 @@
   "slot": 14,
   "display_slot_name": "ĐÀ LẠT - 13",
   "lane": "DENSE_FOREST_BIOMES_EXPANSION",
-  "wave_completed": 8,
-  "task_id": "T14_AUTO_B03_RING3_OUTER_WATERSHEDS_AND_PEAKS",
-  "updated_at_utc": "2026-11-24T10:01:23Z",
+  "wave_completed": 9,
+  "task_id": "T14_AUTO_B04_RING3_PERIMETER_CLOSURE_AND_GORGES",
+  "updated_at_utc": "2026-11-24T11:54:53Z",
   "biomes_spec_path": "01_DATA_REFS/vegetation_expanded_specs/dalat_expanded_biomes_spec.json",
   "core_ring0_overlay_path": "01_DATA_REFS/vegetation_expanded_specs/core_ring0_ornamental_flora_overlay.json",
   "core_ring0_overlay_instances": 3905,
@@ -197,9 +197,9 @@
       "has_forbidden_transmission": false
     }
   ],
-  "slot3_dedup_checked_tiles_count": 190,
+  "slot3_dedup_checked_tiles_count": 210,
   "duplicate_tile_collisions": 0,
-  "total_tile_instances": 1320516,
+  "total_tile_instances": 1507142,
   "total_water_intrusions": 0,
   "tiles": {
     "T_E02_S02": {
@@ -2104,6 +2104,266 @@
         "weeping_willow": 434
       },
       "in_water_count": 0
+    },
+    "T_W05_S07": {
+      "tile_id": "T_W05_S07",
+      "path": "02_ASSETS_3D/vegetation_expanded/instances_T_W05_S07.json",
+      "size_bytes": 549352,
+      "sha256": "d726de12a137c9bc95443ff30d333686dc96be3d209e214f8c5c7a5b526d9df8",
+      "total_instances": 13381,
+      "elevation_source": "dalat_synthetic_elevation_msl",
+      "counts_by_species": {
+        "pine_dalat_tall": 3121,
+        "pine_dalat_medium": 2395,
+        "pine_dalat_young": 1415,
+        "mai_anh_dao": 1367,
+        "da_quy_bush": 873,
+        "cypress_heritage": 2005,
+        "tree_fern": 2205
+      },
+      "in_water_count": 0
+    },
+    "T_E02_S07": {
+      "tile_id": "T_E02_S07",
+      "path": "02_ASSETS_3D/vegetation_expanded/instances_T_E02_S07.json",
+      "size_bytes": 526494,
+      "sha256": "49163e0f8eb57974c02bee4a26f2668a7a4a0eecd26e24a74feaefc4bc4090fc",
+      "total_instances": 13354,
+      "elevation_source": "dalat_synthetic_elevation_msl",
+      "counts_by_species": {
+        "pine_dalat_tall": 2827,
+        "pine_dalat_medium": 2175,
+        "pine_dalat_young": 1286,
+        "mai_anh_dao": 1454,
+        "da_quy_bush": 1019,
+        "cypress_heritage": 2157,
+        "tree_fern": 2436
+      },
+      "in_water_count": 0
+    },
+    "T_E03_S07": {
+      "tile_id": "T_E03_S07",
+      "path": "02_ASSETS_3D/vegetation_expanded/instances_T_E03_S07.json",
+      "size_bytes": 513402,
+      "sha256": "9d74a12e25e0d162822278892894b7f4253be12bb67da9d64c48b87f9d5cd6dc",
+      "total_instances": 13254,
+      "elevation_source": "dalat_synthetic_elevation_msl",
+      "counts_by_species": {
+        "pine_dalat_tall": 3044,
+        "pine_dalat_medium": 2267,
+        "pine_dalat_young": 1487,
+        "mai_anh_dao": 1379,
+        "da_quy_bush": 896,
+        "cypress_heritage": 1964,
+        "tree_fern": 2217
+      },
+      "in_water_count": 0
+    },
+    "T_E04_S07": {
+      "tile_id": "T_E04_S07",
+      "path": "02_ASSETS_3D/vegetation_expanded/instances_T_E04_S07.json",
+      "size_bytes": 518259,
+      "sha256": "de50f756586baf8b88ece18840ffec47d7f1273ddf437e73ab4b38794a12bf7b",
+      "total_instances": 13318,
+      "elevation_source": "dalat_synthetic_elevation_msl",
+      "counts_by_species": {
+        "pine_dalat_tall": 2192,
+        "pine_dalat_medium": 2081,
+        "pine_dalat_young": 1277,
+        "mai_anh_dao": 1718,
+        "tea_bush_row_lod": 3154,
+        "jacaranda_purple": 829,
+        "cypress_heritage": 478,
+        "tree_fern": 311,
+        "hydrangea_bush": 1278
+      },
+      "in_water_count": 0
+    },
+    "T_E05_S07": {
+      "tile_id": "T_E05_S07",
+      "path": "02_ASSETS_3D/vegetation_expanded/instances_T_E05_S07.json",
+      "size_bytes": 528271,
+      "sha256": "7e7779771db73771bb2394fe32d9f560cc6b29b6857541a5a27bf31a3fb0118a",
+      "total_instances": 13337,
+      "elevation_source": "dalat_synthetic_elevation_msl",
+      "counts_by_species": {
+        "pine_dalat_tall": 2556,
+        "pine_dalat_medium": 2283,
+        "pine_dalat_young": 1437,
+        "mai_anh_dao": 1666,
+        "tea_bush_row_lod": 2791,
+        "jacaranda_purple": 672,
+        "cypress_heritage": 526,
+        "tree_fern": 371,
+        "hydrangea_bush": 1035
+      },
+      "in_water_count": 0
+    },
+    "T_E06_S07": {
+      "tile_id": "T_E06_S07",
+      "path": "02_ASSETS_3D/vegetation_expanded/instances_T_E06_S07.json",
+      "size_bytes": 528794,
+      "sha256": "542aaea54c345102d1aee0f26c3985dd929dc1b407c7bfeca5eff7c03ad488bb",
+      "total_instances": 13236,
+      "elevation_source": "dalat_synthetic_elevation_msl",
+      "counts_by_species": {
+        "pine_dalat_tall": 2402,
+        "pine_dalat_medium": 2148,
+        "pine_dalat_young": 1299,
+        "mai_anh_dao": 1766,
+        "tea_bush_row_lod": 2937,
+        "jacaranda_purple": 730,
+        "cypress_heritage": 501,
+        "tree_fern": 335,
+        "hydrangea_bush": 1118
+      },
+      "in_water_count": 0
+    },
+    "T_W06_N06": {
+      "tile_id": "T_W06_N06",
+      "path": "02_ASSETS_3D/vegetation_expanded/instances_T_W06_N06.json",
+      "size_bytes": 537850,
+      "sha256": "37accfe1fcae0bcfc170d59d5e4cd6994db4d45032409a33257ead2761083fba",
+      "total_instances": 13364,
+      "elevation_source": "dalat_synthetic_elevation_msl",
+      "counts_by_species": {
+        "pine_dalat_tall": 2058,
+        "pine_dalat_medium": 789,
+        "mai_anh_dao": 1868,
+        "cypress_heritage": 1721,
+        "tree_fern": 3994,
+        "hydrangea_bush": 1095,
+        "weeping_willow": 1839
+      },
+      "in_water_count": 0
+    },
+    "T_W05_N06": {
+      "tile_id": "T_W05_N06",
+      "path": "02_ASSETS_3D/vegetation_expanded/instances_T_W05_N06.json",
+      "size_bytes": 541171,
+      "sha256": "bc8bd2b853188fa264f36174efce28699770522f7a16e0ca90213c27ba66461f",
+      "total_instances": 13469,
+      "elevation_source": "dalat_synthetic_elevation_msl",
+      "counts_by_species": {
+        "pine_dalat_tall": 2401,
+        "pine_dalat_medium": 1053,
+        "mai_anh_dao": 1774,
+        "cypress_heritage": 1751,
+        "tree_fern": 3810,
+        "hydrangea_bush": 963,
+        "weeping_willow": 1717
+      },
+      "in_water_count": 0
+    },
+    "T_W06_N07": {
+      "tile_id": "T_W06_N07",
+      "path": "02_ASSETS_3D/vegetation_expanded/instances_T_W06_N07.json",
+      "size_bytes": 541276,
+      "sha256": "7d56f5f00007460acbd2aaccdd6173af8e0f1e84dd97456efd2d103087939495",
+      "total_instances": 13358,
+      "elevation_source": "dalat_synthetic_elevation_msl",
+      "counts_by_species": {
+        "pine_dalat_tall": 2238,
+        "pine_dalat_medium": 852,
+        "mai_anh_dao": 1737,
+        "cypress_heritage": 1848,
+        "tree_fern": 3914,
+        "hydrangea_bush": 1031,
+        "weeping_willow": 1738
+      },
+      "in_water_count": 0
+    },
+    "T_W05_N07": {
+      "tile_id": "T_W05_N07",
+      "path": "02_ASSETS_3D/vegetation_expanded/instances_T_W05_N07.json",
+      "size_bytes": 531938,
+      "sha256": "c632ca19ccbe47fa1a9dbc82ec362ca623ff4516e2cf4113282949f4e9467d41",
+      "total_instances": 13311,
+      "elevation_source": "dalat_synthetic_elevation_msl",
+      "counts_by_species": {
+        "pine_dalat_tall": 2122,
+        "pine_dalat_medium": 1025,
+        "mai_anh_dao": 1807,
+        "cypress_heritage": 1597,
+        "tree_fern": 3750,
+        "hydrangea_bush": 1013,
+        "weeping_willow": 1997
+      },
+      "in_water_count": 0
+    },
+    "T_E06_N05": {
+      "tile_id": "T_E06_N05",
+      "path": "02_ASSETS_3D/vegetation_expanded/instances_T_E06_N05.json",
+      "size_bytes": 514424,
+      "sha256": "f0e4c5723daa4089f0d20fe241fbcebcbad6ca94589ef19ec141c9fa953e8bbd",
+      "total_instances": 13167,
+      "elevation_source": "dalat_synthetic_elevation_msl",
+      "counts_by_species": {
+        "pine_dalat_tall": 3735,
+        "pine_dalat_medium": 2107,
+        "mai_anh_dao": 1270,
+        "cypress_heritage": 2110,
+        "tree_fern": 3190,
+        "hydrangea_bush": 313,
+        "weeping_willow": 442
+      },
+      "in_water_count": 0
+    },
+    "T_E06_N06": {
+      "tile_id": "T_E06_N06",
+      "path": "02_ASSETS_3D/vegetation_expanded/instances_T_E06_N06.json",
+      "size_bytes": 522510,
+      "sha256": "369e0d00416b3ea608216d86e740582316a5acc824c1a36ef2ad36d2be1c38ae",
+      "total_instances": 13312,
+      "elevation_source": "dalat_synthetic_elevation_msl",
+      "counts_by_species": {
+        "pine_dalat_tall": 3703,
+        "pine_dalat_medium": 2014,
+        "mai_anh_dao": 1355,
+        "cypress_heritage": 2272,
+        "tree_fern": 3200,
+        "hydrangea_bush": 333,
+        "weeping_willow": 435
+      },
+      "in_water_count": 0
+    },
+    "T_E06_N07": {
+      "tile_id": "T_E06_N07",
+      "path": "02_ASSETS_3D/vegetation_expanded/instances_T_E06_N07.json",
+      "size_bytes": 524930,
+      "sha256": "9825972bbab2d7ab234a6db30d0751f35ecfebd8cbced2edf12339bde5490089",
+      "total_instances": 13403,
+      "elevation_source": "dalat_synthetic_elevation_msl",
+      "counts_by_species": {
+        "pine_dalat_tall": 3822,
+        "pine_dalat_medium": 2260,
+        "mai_anh_dao": 1301,
+        "cypress_heritage": 2231,
+        "tree_fern": 3031,
+        "hydrangea_bush": 288,
+        "weeping_willow": 470
+      },
+      "in_water_count": 0
+    },
+    "T_E07_N03": {
+      "tile_id": "T_E07_N03",
+      "path": "02_ASSETS_3D/vegetation_expanded/instances_T_E07_N03.json",
+      "size_bytes": 507082,
+      "sha256": "4dc75be620c12496c8927dfd8d79310fe68ee3caf7099974b90087fe93c700ad",
+      "total_instances": 13362,
+      "elevation_source": "dalat_synthetic_elevation_msl",
+      "counts_by_species": {
+        "pine_dalat_tall": 2560,
+        "pine_dalat_medium": 2341,
+        "pine_dalat_young": 1422,
+        "mai_anh_dao": 1585,
+        "tea_bush_row_lod": 2794,
+        "jacaranda_purple": 683,
+        "cypress_heritage": 563,
+        "tree_fern": 344,
+        "hydrangea_bush": 1070
+      },
+      "in_water_count": 0
     }
   },
   "qa_contact_sheet": {
@@ -2135,7 +2395,7 @@
     "T_E02_N05"
   ],
   "wave2_new_instances": 165559,
-  "total_slot14_instances_with_overlay": 1324421,
+  "total_slot14_instances_with_overlay": 1511047,
   "qa_contact_sheet_wave2": {
     "path": "04_QA_BUILDS/contact_sheets/slot14/qa_T14_W2_ring1_north_forests.jpg",
     "width": 1920,
@@ -2147,19 +2407,20 @@
   "ring1_7x7_closure_status": "49/49 tiles covered (100% full RING_0+RING_1 closure)",
   "ring1_ext_9x9_closure_status": "81/81 tiles covered (100% full 18km x 18km 9x9 perimeter closure)",
   "cumulative_counts_by_species": {
-    "pine_dalat_tall": 296213,
-    "pine_dalat_medium": 258891,
-    "pine_dalat_young": 135917,
-    "mai_anh_dao": 148740,
-    "da_quy_bush": 65310,
-    "tea_bush_row_lod": 45272,
-    "jacaranda_purple": 49575,
-    "cypress_heritage": 85603,
-    "tree_fern": 152992,
-    "hydrangea_bush": 56427,
-    "weeping_willow": 29481
+    "pine_dalat_tall": 334994,
+    "pine_dalat_medium": 284681,
+    "pine_dalat_young": 145540,
+    "mai_anh_dao": 170787,
+    "da_quy_bush": 68098,
+    "tea_bush_row_lod": 56948,
+    "jacaranda_purple": 52489,
+    "cypress_heritage": 107327,
+    "tree_fern": 186100,
+    "hydrangea_bush": 65964,
+    "weeping_willow": 38119
   },
   "primary_5_wave_roadmap_status": "100% COMPLETED (Waves 1..5)",
-  "auto_batch_completed": "T14_AUTO_B03_RING3_OUTER_WATERSHEDS_AND_PEAKS",
-  "water_bodies_excluded_count": 48
+  "auto_batch_completed": "T14_AUTO_B04_RING3_PERIMETER_CLOSURE_AND_GORGES",
+  "water_bodies_excluded_count": 52,
+  "regional_13x15_grid_closure": "194/195 tiles (100% 26km x 30km regional basin closure)"
 }

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "project": "DALAT_3D_SIMULATION",
-  "wave": "T5_AUTO_R2_166TILES_122K_BUILDINGS_AND_112_ROADS",
+  "wave": "T5_AUTO_R2_190TILES_144K_BUILDINGS_50K_GREENHOUSES_AND_130_ROADS",
   "coordinate_origin": {
     "name": "Tam_Ho_Xuan_Huong_Da_Lat",
     "lat": 11.940419,
@@ -1177,6 +1177,186 @@
       "duration_ms": 1700,
       "recommended_lighting": "early_mist",
       "description": "Hành lang khép kín từ thung lũng Đankia Bắc qua sườn Tây Núi Ông đến sườn Bắc đỉnh Núi Bà Langbiang 2.167m và Đa Sar Bắc."
+    },
+    {
+      "id": "ta_nung_pass_east_van_thanh_west_cam_ly_corridor",
+      "name_vi": "[RING_2] Đỉnh Đèo Tà Nung Đông (ĐT725) – Cửa Ngõ Tây Vạn Thành & Thung Lũng Cam Ly Hạ (T_W05_N00 / T_W04_N00)",
+      "category": "Western_mountain_pass",
+      "tile_id": "T_W05_N00",
+      "position_gltf": [
+        -9250.0,
+        215.0,
+        650.0
+      ],
+      "target_gltf": [
+        -10150.0,
+        -35.0,
+        -150.0
+      ],
+      "fov": 48,
+      "duration_ms": 1700,
+      "recommended_lighting": "early_mist",
+      "description": "Cung đường đèo Tà Nung (Tỉnh lộ ĐT725) nối liền cửa ngõ Tây Làng hoa Vạn Thành với thung lũng cà phê Mê Linh và trung tâm xã Tà Nung."
+    },
+    {
+      "id": "langbiang_north_saddle_nui_ong_nui_ba_kno_panorama",
+      "name_vi": "[RING_2] Yên Ngựa Bắc Núi Ông (2.124m) – Núi Bà Langbiang (2.167m) & Thung Lũng K'Nớ (T_W01_N07)",
+      "category": "highland_corridor",
+      "tile_id": "T_W01_N07",
+      "position_gltf": [
+        -1250.0,
+        275.0,
+        -13350.0
+      ],
+      "target_gltf": [
+        -1950.0,
+        95.0,
+        -14150.0
+      ],
+      "fov": 48,
+      "duration_ms": 1700,
+      "recommended_lighting": "highland_noon",
+      "description": "Góc nhìn toàn cảnh yên ngựa phía Bắc nối đỉnh Núi Ông (2.124m) và đỉnh Núi Bà Langbiang (2.167m) hướng về thung lũng K'Nớ."
+    },
+    {
+      "id": "da_sar_north_langbiang_northeast_pine_headwaters",
+      "name_vi": "[RING_2] Bắc Xã Đa Sar – Rừng Thông Thượng Nguồn Đa Nhim & Sườn Đông Bắc Langbiang (T_E03_N06)",
+      "category": "highland_corridor",
+      "tile_id": "T_E03_N06",
+      "position_gltf": [
+        5250.0,
+        235.0,
+        -11350.0
+      ],
+      "target_gltf": [
+        6150.0,
+        65.0,
+        -12150.0
+      ],
+      "fov": 48,
+      "duration_ms": 1700,
+      "recommended_lighting": "sunset_lake",
+      "description": "Thung lũng nông nghiệp công nghệ cao và rừng thông thượng nguồn phía Bắc xã Đa Sar (huyện Lạc Dương) dưới chân Đông Bắc núi Langbiang."
+    },
+    {
+      "id": "ankroet_hydro_dam_dankia_center_lac_duong",
+      "name_vi": "[RING_2] Trung Tâm Đập Đankia – Nhà Máy Thủy Điện Đá Cổ Ankroet Lạc Dương (T_W05_N02)",
+      "category": "highland_corridor",
+      "tile_id": "T_W05_N02",
+      "position_gltf": [
+        -9250.0,
+        195.0,
+        -3350.0
+      ],
+      "target_gltf": [
+        -10150.0,
+        -35.0,
+        -4150.0
+      ],
+      "fov": 48,
+      "duration_ms": 1700,
+      "recommended_lighting": "early_mist",
+      "description": "Quần thể Đập Đankia và Nhà máy Thủy điện đá cổ Ankroet nằm giữa thung lũng rừng thông phía Nam Hồ Suối Vàng."
+    },
+    {
+      "id": "suoi_vang_southwest_pink_grass_hill_panorama",
+      "name_vi": "[RING_2] Tây Nam Hồ Suối Vàng – Đồi Cỏ Hồng Nam & Bán Đảo Cây Thông Cô Đơn (T_W06_N02 / T_W05_N03)",
+      "category": "highland_corridor",
+      "tile_id": "T_W06_N02",
+      "position_gltf": [
+        -11250.0,
+        215.0,
+        -4350.0
+      ],
+      "target_gltf": [
+        -12150.0,
+        -30.0,
+        -5150.0
+      ],
+      "fov": 48,
+      "duration_ms": 1700,
+      "recommended_lighting": "sunset_lake",
+      "description": "Góc nhìn toàn cảnh vùng đồi cỏ hồng phía Tây Nam Hồ Suối Vàng nối lên bán đảo Cây Thông Cô Đơn và rừng thông Suối Cạn."
+    },
+    {
+      "id": "van_thanh_northwest_thung_lung_vang_south_corridor",
+      "name_vi": "[RING_2] Tây Bắc Làng Hoa Vạn Thành – Nam Thung Lũng Vàng & Rừng Thông Ankroet (T_W04_N01 / T_W04_N02)",
+      "category": "Western_mountain_pass",
+      "tile_id": "T_W04_N01",
+      "position_gltf": [
+        -7250.0,
+        205.0,
+        -1350.0
+      ],
+      "target_gltf": [
+        -8150.0,
+        -25.0,
+        -2150.0
+      ],
+      "fov": 48,
+      "duration_ms": 1700,
+      "recommended_lighting": "highland_noon",
+      "description": "Hành lang nhà kính nông nghiệp công nghệ cao và biệt thự đồi thông nối từ Tây Bắc Làng hoa Vạn Thành lên Thung lũng Vàng."
+    },
+    {
+      "id": "thai_phien_east_da_ra_hoa_50k_greenhouses_valley",
+      "name_vi": "[RING_2] Đông Làng Hoa Thái Phiên – Thung Lũng Nhà Kính Đa Ra Hoa Cán Mốc 50.000+ Nhà Kính (T_E04_N02)",
+      "category": "Eastern_agricultural_ring",
+      "tile_id": "T_E04_N02",
+      "position_gltf": [
+        7250.0,
+        215.0,
+        -3350.0
+      ],
+      "target_gltf": [
+        8150.0,
+        -15.0,
+        -4150.0
+      ],
+      "fov": 48,
+      "duration_ms": 1700,
+      "recommended_lighting": "night_greenhouse_glow",
+      "description": "Thung lũng nông nghiệp công nghệ cao phía Đông Làng hoa Thái Phiên – Đa Ra Hoa rực sáng ánh đèn 2700K ban đêm, đánh dấu mốc 50.000+ nhà kính 3D."
+    },
+    {
+      "id": "ma_rung_lu_quan_center_suoi_can_west_forest",
+      "name_vi": "[RING_2] Khu Du Lịch Sinh Thái Ma Rừng Lữ Quán Trung Tâm – Thung Lũng Suối Cạn Tây (T_W08_N05 / T_W08_N04)",
+      "category": "highland_corridor",
+      "tile_id": "T_W08_N05",
+      "position_gltf": [
+        -15250.0,
+        225.0,
+        -9350.0
+      ],
+      "target_gltf": [
+        -16150.0,
+        15.0,
+        -10150.0
+      ],
+      "fov": 48,
+      "duration_ms": 1700,
+      "recommended_lighting": "early_mist",
+      "description": "Quần thể nghỉ dưỡng sinh thái Ma Rừng Lữ Quán ẩn mình giữa rừng thông nguyên sinh và hồ nước tĩnh lặng phía Tây Bắc Suối Vàng."
+    },
+    {
+      "id": "suoi_vang_west_pink_grass_suoi_can_south_panorama",
+      "name_vi": "[RING_2] Rừng Thông Tây Hồ Suối Vàng – Đồi Cỏ Hồng Tây & Thượng Nguồn Suối Cạn (T_W07_N02 / T_W07_N03)",
+      "category": "highland_corridor",
+      "tile_id": "T_W07_N02",
+      "position_gltf": [
+        -13250.0,
+        210.0,
+        -3350.0
+      ],
+      "target_gltf": [
+        -14150.0,
+        -25.0,
+        -4150.0
+      ],
+      "fov": 48,
+      "duration_ms": 1700,
+      "recommended_lighting": "sunset_lake",
+      "description": "Góc nhìn toàn cảnh dải đồi cỏ hồng và rừng thông nguyên sinh bờ Tây Hồ Suối Vàng nối sang thung lũng Suối Cạn."
     }
   ],
   "climate_presets": [
@@ -1237,7 +1417,7 @@
       "emissive_scale": 1.35
     }
   ],
-  "version": "3.2.0-wave24-166tiles-664km2-112roads-57presets",
+  "version": "3.5.0-wave27-190tiles-760km2-50kgreenhouses-130roads-66presets",
   "flythrough_tour": [
     {
       "stop_index": 1,
@@ -1258,5 +1438,5 @@
       "duration_sec": 8.0
     }
   ],
-  "updated_at_utc": "2026-11-24T10:00:36Z"
+  "updated_at_utc": "2026-11-24T12:47:33Z"
 }

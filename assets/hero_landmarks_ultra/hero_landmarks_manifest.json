@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.6.0",
+  "schema_version": "1.9.0",
   "project_name": "DALAT_3D_SIMULATION",
   "slot": 22,
   "display_slot_name": "ĐÀ LẠT - 21",
   "lane": "HERO_LANDMARKS_ULTRA_LOD0_MASTERPIECES",
-  "active_wave_completed": 7,
-  "task_id": "T22_AUTO_W7_ANKROET_LINH_AN_PASTEUR_UNIVERSITY",
-  "updated_at_utc": "2026-11-24T09:59:06.763808+00:00",
+  "active_wave_completed": 10,
+  "task_id": "T22_AUTO_W10_LIEN_KHUONG_LINH_SON_DINH_TINH_TRUONG_CAU_DAT_1927",
+  "updated_at_utc": "2026-11-24T12:56:11.001681+00:00",
   "coordinate_lock": {
     "origin_name": "Tam_Ho_Xuan_Huong_Da_Lat",
     "lat0": 11.940419,
@@ -21,13 +21,14 @@
     "glass_water_blend_alpha": 0.85
   },
   "summary_metrics": {
-    "completed_landmarks_count": 24,
-    "target_total_landmarks": 20,
-    "wave7_new_triangles": 106835,
-    "wave7_new_vertices": 135377,
-    "cumulative_total_triangles": 682309,
-    "cumulative_total_vertices": 847482,
-    "cumulative_embedded_512_pbr_textures": 141,
+    "completed_landmarks_count": 36,
+    "target_total_landmarks": 36,
+    "registry_coverage_percent": 100.0,
+    "wave10_new_triangles": 101858,
+    "wave10_new_vertices": 130398,
+    "cumulative_total_triangles": 969217,
+    "cumulative_total_vertices": 1219225,
+    "cumulative_embedded_512_pbr_textures": 226,
     "khr_materials_transmission_count": 0,
     "nan_inf_errors": 0
   },
@@ -1767,6 +1768,821 @@
           88.0,
           19.55,
           78.5
+        ]
+      }
+    },
+    {
+      "id": "ultra_lm_26_nha_tho_cam_ly",
+      "short_label": "Nha Tho Cam Ly 1968",
+      "replaces_slot4_id": "lm_26_nha_tho_cam_ly",
+      "name_vi": "Nhà thờ Cam Ly (Nhà thờ Sơn Cước Mái Nhà Rông K'Ho 1968) Ultra-LOD0 (Mái Nhà Rông 17m Lợp 80.000 Viên Ngói, Cặp Sừng Trâu & Kính Màu Thổ Cẩm)",
+      "name_en": "Cam Ly Highland Church (1960-1968 K'Ho Rong-Roof Vernacular Catholic Church) Ultra-LOD0 Masterpiece",
+      "wave": 8,
+      "slot": 22,
+      "tile_id": "T_W01_N00",
+      "ring": 0,
+      "lat": 11.9428,
+      "lon": 108.4192,
+      "elev_msl_m": 1492.0,
+      "x_m": -2838.109,
+      "y_m": 265.052,
+      "z_local_m": 14.0,
+      "gltf_position": [
+        -2838.109,
+        14.0,
+        -265.052
+      ],
+      "heading_deg": 155.0,
+      "rotation_y_rad": -2.70526,
+      "satellite_alignment": {
+        "tile_id": "T_W01_N00",
+        "address": "11 Nguyễn Khuyến, Phường 5, Đà Lạt"
+      },
+      "architectural_metadata": {
+        "architect_and_founder": "Linh mục Boutary & KTS Nguyễn Mỹ Lộc (thi công: Nguyễn Thanh Hồ, 1960-1968)",
+        "construction_years": "1960-1968",
+        "style": "Central Highlands K'Ho Rong-Roof & Brutalist Split-Stone Ecclesiastical Architecture"
+      },
+      "glb_path": "02_ASSETS_3D/hero_landmarks_ultra/ultra_lm_26_nha_tho_cam_ly.glb",
+      "sha256": "00c3d58e5c336df248f7cb4469ce781006e1a2d3b041da5a7983ccceef81c00e",
+      "qa": {
+        "file_name": "ultra_lm_26_nha_tho_cam_ly.glb",
+        "size_bytes": 1540248,
+        "triangles": 23686,
+        "vertices": 30978,
+        "meshes_count": 10,
+        "materials_count": 10,
+        "embedded_jpeg_textures": 6,
+        "blend_materials": [
+          "KHo_Brocade_StainedGlass_Blend085"
+        ],
+        "emissive_materials": [
+          "KHo_Brocade_StainedGlass_Blend085",
+          "Sanctuary_Altar_WarmAmber_Glow"
+        ],
+        "nan_inf_count": 0,
+        "khr_materials_transmission": false,
+        "local_pivot_compatible": true,
+        "bbox_min_m": [
+          -38.0,
+          -3.0,
+          -34.0
+        ],
+        "bbox_max_m": [
+          38.0,
+          17.05,
+          34.0
+        ],
+        "dimensions_xyz_m": [
+          76.0,
+          20.05,
+          68.0
+        ]
+      }
+    },
+    {
+      "id": "ultra_lm_21_lang_cu_lan",
+      "short_label": "KDL Lang Cu Lan 2011",
+      "replaces_slot4_id": "lm_21_lang_cu_lan",
+      "name_vi": "Khu Du lịch Làng Cù Lần & Nhà Rông K'Ho Suối Cạn Ultra-LOD0 (Nhà Rông 16.5m, Cây Nêu Lửa Trại, 6 Nhà Sàn Gỗ, Cầu Treo & Hồ Trái Tim)",
+      "name_en": "Cu Lan Cultural Village & K'Ho Communal Rong House (2011) Ultra-LOD0 Masterpiece",
+      "wave": 8,
+      "slot": 22,
+      "tile_id": "T_W05_N05",
+      "ring": 2,
+      "lat": 12.0365,
+      "lon": 108.3525,
+      "elev_msl_m": 1445.0,
+      "x_m": -10102.466,
+      "y_m": 10695.688,
+      "z_local_m": -33.0,
+      "gltf_position": [
+        -10102.466,
+        -33.0,
+        -10695.688
+      ],
+      "heading_deg": 160.0,
+      "rotation_y_rad": -2.792527,
+      "satellite_alignment": {
+        "tile_id": "T_W05_N05",
+        "address": "ĐT722, thôn Suối Cạn, xã Lát, huyện Lạc Dương, Lâm Đồng"
+      },
+      "architectural_metadata": {
+        "architect_and_culture": "Kiến trúc bản địa dân tộc K'Ho thôn Suối Cạn dưới chân núi Langbiang",
+        "construction_years": "2011",
+        "style": "Central Highlands K'Ho Vernacular Stilt Village, Towering Thatch Rong House & Suspension Bridge"
+      },
+      "glb_path": "02_ASSETS_3D/hero_landmarks_ultra/ultra_lm_21_lang_cu_lan.glb",
+      "sha256": "359fc4794ed7bc19d979434728a96fa0bf0424ec66b6957a87045c07d658515d",
+      "qa": {
+        "file_name": "ultra_lm_21_lang_cu_lan.glb",
+        "size_bytes": 1870424,
+        "triangles": 29102,
+        "vertices": 36984,
+        "meshes_count": 8,
+        "materials_count": 8,
+        "embedded_jpeg_textures": 6,
+        "blend_materials": [
+          "HeartLake_SuoiCan_EmeraldWater_Blend085"
+        ],
+        "emissive_materials": [
+          "GongFestival_Bonfire_And_Lantern_Glow"
+        ],
+        "nan_inf_count": 0,
+        "khr_materials_transmission": false,
+        "local_pivot_compatible": true,
+        "bbox_min_m": [
+          -51.0,
+          -3.0,
+          -44.0
+        ],
+        "bbox_max_m": [
+          51.0,
+          16.509,
+          44.0
+        ],
+        "dimensions_xyz_m": [
+          102.0,
+          19.51,
+          88.0
+        ]
+      }
+    },
+    {
+      "id": "ultra_lm_28_chua_linh_quy_phap_an",
+      "short_label": "Chua Linh Quy Phap An",
+      "replaces_slot4_id": "lm_28_chua_linh_quy_phap_an",
+      "name_vi": "Chùa Linh Quy Pháp Ấn & Cổng Trời Quán Chiếu Đường Ultra-LOD0 (Quán Chiếu Đường 2 Tầng Mái Đao, 3 Cổng Trời Torii & Vườn Sỏi Thiền Định)",
+      "name_en": "Linh Quy Phap An Zen Pagoda & Heaven's Gate Torii Sanctuary Ultra-LOD0 Masterpiece",
+      "wave": 8,
+      "slot": 22,
+      "tile_id": "T_W07_S11",
+      "ring": 3,
+      "lat": 11.7515,
+      "lon": 108.3125,
+      "elev_msl_m": 1085.0,
+      "x_m": -14458.902,
+      "y_m": -21030.367,
+      "z_local_m": -393.0,
+      "gltf_position": [
+        -14458.902,
+        -393.0,
+        21030.367
+      ],
+      "heading_deg": 165.0,
+      "rotation_y_rad": -2.879793,
+      "satellite_alignment": {
+        "tile_id": "T_W07_S11",
+        "address": "Đồi 45, xã Lộc Thành, Bảo Lâm, Lâm Đồng"
+      },
+      "architectural_metadata": {
+        "founder": "Đại đức Thích Minh Thành kiến tạo trên Đồi 45 (núi Quy Ô, khởi dựng năm 2006)",
+        "construction_years": "2006-2015",
+        "style": "Vietnamese-Japanese Zen Mountain Sanctuary, Quán Chiếu Đường Pavilion, Karesansui Rock Garden & 3 Torii Heaven's Gates"
+      },
+      "glb_path": "02_ASSETS_3D/hero_landmarks_ultra/ultra_lm_28_chua_linh_quy_phap_an.glb",
+      "sha256": "f6e939203b848266fc364f7dff67e1f3a89c324d3b0ae9266704ae6c7cc85737",
+      "qa": {
+        "file_name": "ultra_lm_28_chua_linh_quy_phap_an.glb",
+        "size_bytes": 1458136,
+        "triangles": 19658,
+        "vertices": 25294,
+        "meshes_count": 9,
+        "materials_count": 9,
+        "embedded_jpeg_textures": 7,
+        "blend_materials": [],
+        "emissive_materials": [
+          "QuanChieuDuong_Amber_Lantern_Glow"
+        ],
+        "nan_inf_count": 0,
+        "khr_materials_transmission": false,
+        "local_pivot_compatible": true,
+        "bbox_min_m": [
+          -47.0,
+          -3.0,
+          -44.0
+        ],
+        "bbox_max_m": [
+          47.0,
+          16.2,
+          47.5
+        ],
+        "dimensions_xyz_m": [
+          94.0,
+          19.2,
+          91.5
+        ]
+      }
+    },
+    {
+      "id": "ultra_lm_29_cuc_ban_do_dalat",
+      "short_label": "Cuc Ban Do Da Lat 1939",
+      "replaces_slot4_id": "lm_29_cuc_ban_do_dalat",
+      "name_vi": "Tòa nhà Cục Bản đồ Đà Lạt (Sở Địa dư Đông Dương 1939–1943) Ultra-LOD0 (Dinh Thự 3 Tầng Dài 74m, Mái Đá Mansard Normandie & 8 Trụ Đá Hoa Cương)",
+      "name_en": "Dalat Map Enterprise Building (Service Geographique de l'Indochine 1939-1943) Ultra-LOD0 Masterpiece",
+      "wave": 8,
+      "slot": 22,
+      "tile_id": "T_E01_N00",
+      "ring": 0,
+      "lat": 11.9438,
+      "lon": 108.4548,
+      "elev_msl_m": 1514.0,
+      "x_m": 1039.119,
+      "y_m": 376.371,
+      "z_local_m": 36.0,
+      "gltf_position": [
+        1039.119,
+        36.0,
+        -376.371
+      ],
+      "heading_deg": 170.0,
+      "rotation_y_rad": -2.96706,
+      "satellite_alignment": {
+        "tile_id": "T_E01_N00",
+        "address": "14 Yersin, Phường 10, Đà Lạt"
+      },
+      "architectural_metadata": {
+        "agency_and_architect": "Sở Địa dư Đông Dương (Service Géographique de l'Indochine, khởi công 1939, hoàn thành 1943)",
+        "construction_years": "1939-1943",
+        "style": "French Indochina Monumental Neoclassical & Normandy Mansard Slate Architecture (74m facade, 1m-thick stone basement)"
+      },
+      "glb_path": "02_ASSETS_3D/hero_landmarks_ultra/ultra_lm_29_cuc_ban_do_dalat.glb",
+      "sha256": "8160a38fc6306442f47bed8e20b746f97ac9a1124c27bbe6dbeb3c33c3bf40ea",
+      "qa": {
+        "file_name": "ultra_lm_29_cuc_ban_do_dalat.glb",
+        "size_bytes": 1522172,
+        "triangles": 22394,
+        "vertices": 30179,
+        "meshes_count": 9,
+        "materials_count": 9,
+        "embedded_jpeg_textures": 7,
+        "blend_materials": [
+          "CartographyHall_FrenchWindow_Blend085"
+        ],
+        "emissive_materials": [
+          "MapArchive_And_DraftingHall_WarmGlow"
+        ],
+        "nan_inf_count": 0,
+        "khr_materials_transmission": false,
+        "local_pivot_compatible": true,
+        "bbox_min_m": [
+          -47.0,
+          -3.0,
+          -37.0
+        ],
+        "bbox_max_m": [
+          47.0,
+          18.5,
+          44.5
+        ],
+        "dimensions_xyz_m": [
+          94.0,
+          21.5,
+          81.5
+        ]
+      }
+    },
+    {
+      "id": "ultra_lm_30_thien_vien_van_hanh",
+      "short_label": "Thien Vien Van Hanh",
+      "replaces_slot4_id": "lm_30_thien_vien_van_hanh",
+      "name_vi": "Thiền viện Vạn Hạnh & Đại tượng Phật Thích Ca Niêm Hoa Vi Tiếu Ultra-LOD0 (Bảo Tượng Vàng 24m Trên Đài Sen & Hang Giả Sơn Cao 30m, Chánh Điện Mái Đao & Cổng Tam Quan Gỗ Quý)",
+      "name_en": "Van Hanh Zen Monastery & 24m Golden Shakyamuni Lotus Buddha Statue (1952/2002) Ultra-LOD0 Masterpiece",
+      "wave": 9,
+      "slot": 22,
+      "tile_id": "T_E00_N01",
+      "ring": 0,
+      "lat": 11.9612,
+      "lon": 108.4418,
+      "elev_msl_m": 1522.0,
+      "x_m": -376.723,
+      "y_m": 2313.33,
+      "z_local_m": 44.0,
+      "gltf_position": [
+        -376.723,
+        44.0,
+        -2313.33
+      ],
+      "heading_deg": 125.0,
+      "rotation_y_rad": -2.181662,
+      "satellite_alignment": {
+        "tile_id": "T_E00_N01",
+        "address": "39 Phù Đổng Thiên Vương, Phường 8, Đà Lạt"
+      },
+      "architectural_metadata": {
+        "architect_and_sculptor": "Hòa thượng Thích Viên Thanh chỉ đạo thiết kế & Điêu khắc gia Thùy Lam thực hiện (khởi lập 1952, đúc tượng 14/04/2002)",
+        "construction_years": "1952-2002",
+        "style": "Vietnamese Mahayana Buddhist Monumental Golden Sculpture (24m statue, 30m total height) & Traditional Curved-Roof Monastery"
+      },
+      "glb_path": "02_ASSETS_3D/hero_landmarks_ultra/ultra_lm_30_thien_vien_van_hanh.glb",
+      "sha256": "f39c26e8821e42de466fe68dd96bea2660cd2894d3f01eaa785f486a8a64ce23",
+      "qa": {
+        "file_name": "ultra_lm_30_thien_vien_van_hanh.glb",
+        "size_bytes": 1307856,
+        "triangles": 18386,
+        "vertices": 23998,
+        "meshes_count": 10,
+        "materials_count": 10,
+        "embedded_jpeg_textures": 7,
+        "blend_materials": [
+          "Sanctuary_Amber_StainedGlass_Blend085"
+        ],
+        "emissive_materials": [
+          "Buddha_Halo_And_Sanctuary_Night_Glow"
+        ],
+        "nan_inf_count": 0,
+        "khr_materials_transmission": false,
+        "local_pivot_compatible": true,
+        "bbox_min_m": [
+          -45.0,
+          -3.0,
+          -46.0
+        ],
+        "bbox_max_m": [
+          45.0,
+          30.24,
+          41.0
+        ],
+        "dimensions_xyz_m": [
+          90.0,
+          33.24,
+          87.0
+        ]
+      }
+    },
+    {
+      "id": "ultra_lm_31_nha_tho_du_sinh",
+      "short_label": "Nha Tho Du Sinh 1957",
+      "replaces_slot4_id": "lm_31_nha_tho_du_sinh",
+      "name_vi": "Nhà thờ Du Sinh & Tháp Chuông Cung Đình Á Đông (1955–1957) Ultra-LOD0 (Tháp Chuông 3 Tầng Mái Đao Cong 21m, Thánh Đường Ngói Lưu Ly & Cổng Tam Quan Lưỡng Long)",
+      "name_en": "Du Sinh Catholic Church & Oriental Palace-Style Bell Tower (1955-1957) Ultra-LOD0 Masterpiece",
+      "wave": 9,
+      "slot": 22,
+      "tile_id": "T_W01_S01",
+      "ring": 0,
+      "lat": 11.9285,
+      "lon": 108.4235,
+      "elev_msl_m": 1515.0,
+      "x_m": -2369.792,
+      "y_m": -1326.817,
+      "z_local_m": 37.0,
+      "gltf_position": [
+        -2369.792,
+        37.0,
+        1326.817
+      ],
+      "heading_deg": 145.0,
+      "rotation_y_rad": -2.530727,
+      "satellite_alignment": {
+        "tile_id": "T_W01_S01",
+        "address": "12B / 40/8 Huyền Trân Công Chúa, Phường 4, Đà Lạt"
+      },
+      "architectural_metadata": {
+        "architect_and_founder": "Linh mục Thiên Phong Bửu Dưỡng thiết kế & khởi dựng (khởi công 1955, khánh thành Giáng sinh 1957, trùng tu tháp chuông 1962)",
+        "construction_years": "1955-1957",
+        "style": "Sino-Vietnamese Imperial Temple Curved-Roof & Catholic Ecclesiastical Fusion Architecture"
+      },
+      "glb_path": "02_ASSETS_3D/hero_landmarks_ultra/ultra_lm_31_nha_tho_du_sinh.glb",
+      "sha256": "8a3b05cd3d47a700731bf2b8abcda46ea492b24be96cb0bde85e7b4378b6e143",
+      "qa": {
+        "file_name": "ultra_lm_31_nha_tho_du_sinh.glb",
+        "size_bytes": 1602456,
+        "triangles": 24208,
+        "vertices": 30928,
+        "meshes_count": 10,
+        "materials_count": 10,
+        "embedded_jpeg_textures": 7,
+        "blend_materials": [
+          "Oriental_StainedGlass_Arch_Blend085"
+        ],
+        "emissive_materials": [
+          "Sanctuary_WarmAmber_Interior_Glow"
+        ],
+        "nan_inf_count": 0,
+        "khr_materials_transmission": false,
+        "local_pivot_compatible": true,
+        "bbox_min_m": [
+          -39.0,
+          -3.0,
+          -39.2
+        ],
+        "bbox_max_m": [
+          39.0,
+          21.025,
+          34.0
+        ],
+        "dimensions_xyz_m": [
+          78.0,
+          24.03,
+          73.2
+        ]
+      }
+    },
+    {
+      "id": "ultra_lm_32_duong_ham_dieu_khac",
+      "short_label": "Duong Ham Dieu Khac",
+      "replaces_slot4_id": "lm_32_duong_ham_dieu_khac",
+      "name_vi": "Đường hầm Điêu khắc Đất sét & Hồ Vô Cực Tuyền Lâm Ultra-LOD0 (Hồ Vô Cực Đôi Tượng K'Lang - H'Biang 9.5m, Cổng Đôi Rồng Đất Đỏ 14m & Nhà Đất Đỏ Bản Đồ Việt Nam)",
+      "name_en": "Da Lat Red-Basalt Clay Tunnel Sculpture Park & Infinity Lake (2010-2019) Ultra-LOD0 Masterpiece",
+      "wave": 9,
+      "slot": 22,
+      "tile_id": "T_W01_S03",
+      "ring": 1,
+      "lat": 11.8845,
+      "lon": 108.4185,
+      "elev_msl_m": 1438.0,
+      "x_m": -2914.347,
+      "y_m": -6224.875,
+      "z_local_m": -40.0,
+      "gltf_position": [
+        -2914.347,
+        -40.0,
+        6224.875
+      ],
+      "heading_deg": 190.0,
+      "rotation_y_rad": -3.316126,
+      "satellite_alignment": {
+        "tile_id": "T_W01_S03",
+        "address": "Khu du lịch Quốc gia Hồ Tuyền Lâm, Phường 4, Đà Lạt"
+      },
+      "architectural_metadata": {
+        "founder_and_artist": "Nghệ nhân - Kỹ sư Trịnh Bá Dũng khởi xướng & chế tác bằng đất đỏ bazan không nung (2010-2019)",
+        "construction_years": "2010-2019",
+        "style": "Unfired Red-Basalt Clay Sculptural Trench, Twin Lovers Layered Infinity Pool & Record-Holding Basalt Houses"
+      },
+      "glb_path": "02_ASSETS_3D/hero_landmarks_ultra/ultra_lm_32_duong_ham_dieu_khac.glb",
+      "sha256": "a94f9ddcd8bc3b4a5fdf837a02a9b95815ce114e5fc471be06d8e4b00c76d74f",
+      "qa": {
+        "file_name": "ultra_lm_32_duong_ham_dieu_khac.glb",
+        "size_bytes": 1610500,
+        "triangles": 24956,
+        "vertices": 31882,
+        "meshes_count": 9,
+        "materials_count": 9,
+        "embedded_jpeg_textures": 6,
+        "blend_materials": [
+          "HoVoCuc_InfinityPool_Turquoise_Blend085"
+        ],
+        "emissive_materials": [
+          "ClayTunnel_And_InfinityPool_NightGlow"
+        ],
+        "nan_inf_count": 0,
+        "khr_materials_transmission": false,
+        "local_pivot_compatible": true,
+        "bbox_min_m": [
+          -55.0,
+          -3.0,
+          -46.0
+        ],
+        "bbox_max_m": [
+          55.0,
+          14.0,
+          46.0
+        ],
+        "dimensions_xyz_m": [
+          110.0,
+          17.0,
+          92.0
+        ]
+      }
+    },
+    {
+      "id": "ultra_lm_33_couvent_des_oiseaux",
+      "short_label": "Couvent des Oiseaux",
+      "replaces_slot4_id": "lm_33_couvent_des_oiseaux",
+      "name_vi": "Trường Nữ Couvent des Oiseaux (Trường Đức Bà Lâm Viên 1934) Ultra-LOD0 (Dãy Học Đường 3 Tầng Dài 78m Mái Mansard Khắc Chữ N.D. Du Langbian & Nhà Nguyện Tháp Chuông 20m)",
+      "name_en": "Couvent des Oiseaux Colonial Boarding School (Paul Veysseyre, 1934-1936) Ultra-LOD0 Masterpiece",
+      "wave": 9,
+      "slot": 22,
+      "tile_id": "T_W01_S01",
+      "ring": 0,
+      "lat": 11.9308,
+      "lon": 108.4254,
+      "elev_msl_m": 1528.0,
+      "x_m": -2162.862,
+      "y_m": -1070.782,
+      "z_local_m": 50.0,
+      "gltf_position": [
+        -2162.862,
+        50.0,
+        1070.782
+      ],
+      "heading_deg": 135.0,
+      "rotation_y_rad": -2.356194,
+      "satellite_alignment": {
+        "tile_id": "T_W01_S01",
+        "address": "02 Huyền Trân Công Chúa, Phường 5, Đà Lạt"
+      },
+      "architectural_metadata": {
+        "architect": "KTS Paul Veysseyre & Alexandre Léonard (Dòng Đức Bà Truyền giáo Notre-Dame des Missions, 1934-1936)",
+        "construction_years": "1934-1936",
+        "style": "French Eclectic Normandy Mansard Slate, Pointed-Arch Stone Ground Floor & Collegiate Chapel Architecture"
+      },
+      "glb_path": "02_ASSETS_3D/hero_landmarks_ultra/ultra_lm_33_couvent_des_oiseaux.glb",
+      "sha256": "a39502db1fe4ea7e3a492ec605a3947957875530de114fd7702c67f977021b9a",
+      "qa": {
+        "file_name": "ultra_lm_33_couvent_des_oiseaux.glb",
+        "size_bytes": 1654300,
+        "triangles": 22660,
+        "vertices": 31102,
+        "meshes_count": 10,
+        "materials_count": 10,
+        "embedded_jpeg_textures": 8,
+        "blend_materials": [
+          "Chapel_And_Classroom_FrenchWindow_Blend085"
+        ],
+        "emissive_materials": [
+          "Dormitory_And_Chapel_WarmAmber_Glow"
+        ],
+        "nan_inf_count": 0,
+        "khr_materials_transmission": false,
+        "local_pivot_compatible": true,
+        "bbox_min_m": [
+          -49.0,
+          -3.0,
+          -38.0
+        ],
+        "bbox_max_m": [
+          49.2,
+          20.2,
+          44.5
+        ],
+        "dimensions_xyz_m": [
+          98.2,
+          23.2,
+          82.5
+        ]
+      }
+    },
+    {
+      "id": "ultra_lm_23_san_bay_lien_khuong",
+      "short_label": "San Bay Lien Khuong",
+      "replaces_slot4_id": "lm_23_san_bay_lien_khuong",
+      "name_vi": "Nhà ga Hoa Dã Quỳ — Sân bay Quốc tế Liên Khương Ultra-LOD0 (Nhà Ga 2 Tầng 12.400m² Mái Vòm 18 Cánh Hoa Dã Quỳ Vàng, Cầu Cạn Ga Đi, 2 Cầu Ống Lồng & Đài Không Lưu 32m)",
+      "name_en": "Lien Khuong International Airport (Wild Sunflower Terminal 2009 & 32m ATC Tower) Ultra-LOD0 Masterpiece",
+      "wave": 10,
+      "slot": 22,
+      "tile_id": "T_W04_S10",
+      "ring": 3,
+      "lat": 11.753382,
+      "lon": 108.368021,
+      "elev_msl_m": 962.0,
+      "x_m": -8412.06,
+      "y_m": -20820.864,
+      "z_local_m": -516.0,
+      "gltf_position": [
+        -8412.06,
+        -516.0,
+        20820.864
+      ],
+      "heading_deg": 0.0,
+      "rotation_y_rad": -0.0,
+      "satellite_alignment": {
+        "tile_id": "T_W04_S10",
+        "address": "Quốc lộ 20, thị trấn Liên Nghĩa, huyện Đức Trọng, Lâm Đồng"
+      },
+      "architectural_metadata": {
+        "operator_and_architect": "Tổng công ty Cảng hàng không Việt Nam (ACV, khởi công 24/12/2007, khánh thành 26/12/2009)",
+        "construction_years": "2007-2009",
+        "style": "Contemporary Aerodynamic Wild-Sunflower Golden Shell Roof (12,400 m² floor area) & 32m ATC Tower"
+      },
+      "glb_path": "02_ASSETS_3D/hero_landmarks_ultra/ultra_lm_23_san_bay_lien_khuong.glb",
+      "sha256": "0f8b9ee4076450a8835f8cb2dc473b9c236d5d739201ba01e173e74971f83378",
+      "qa": {
+        "file_name": "ultra_lm_23_san_bay_lien_khuong.glb",
+        "size_bytes": 1454992,
+        "triangles": 24002,
+        "vertices": 28464,
+        "meshes_count": 9,
+        "materials_count": 9,
+        "embedded_jpeg_textures": 7,
+        "blend_materials": [
+          "Terminal_CurtainWall_BlueGlass_Blend085"
+        ],
+        "emissive_materials": [
+          "Terminal_Concourse_And_ATC_Beacon_Glow"
+        ],
+        "nan_inf_count": 0,
+        "khr_materials_transmission": false,
+        "local_pivot_compatible": true,
+        "bbox_min_m": [
+          -80.0,
+          -3.0,
+          -46.0
+        ],
+        "bbox_max_m": [
+          80.0,
+          32.2,
+          46.0
+        ],
+        "dimensions_xyz_m": [
+          160.0,
+          35.2,
+          92.0
+        ]
+      }
+    },
+    {
+      "id": "ultra_lm_34_chua_linh_son",
+      "short_label": "Chua Linh Son 1938",
+      "replaces_slot4_id": "lm_34_chua_linh_son",
+      "name_vi": "Chùa Linh Sơn Cổ Tự (1938–1940) Ultra-LOD0 (Chánh Điện Cung Đình Huế Mái Đao Tứ Linh, Bảo Tháp Bát Giác 3 Tầng 17.5m, Đài Quán Thế Âm Hồ Sen & Cổng Tam Quan)",
+      "name_en": "Linh Son Historic Buddhist Pagoda (1938-1940 Imperial Hue Temple Architecture) Ultra-LOD0 Masterpiece",
+      "wave": 10,
+      "slot": 22,
+      "tile_id": "T_E00_N00",
+      "ring": 0,
+      "lat": 11.9482,
+      "lon": 108.4368,
+      "elev_msl_m": 1512.0,
+      "x_m": -921.277,
+      "y_m": 866.177,
+      "z_local_m": 34.0,
+      "gltf_position": [
+        -921.277,
+        34.0,
+        -866.177
+      ],
+      "heading_deg": 245.0,
+      "rotation_y_rad": -4.276057,
+      "satellite_alignment": {
+        "tile_id": "T_E00_N00",
+        "address": "120 Nguyễn Văn Trỗi, Phường 2, Đà Lạt"
+      },
+      "architectural_metadata": {
+        "patron_and_founder": "Đoan Huy Hoàng thái hậu (Đức Từ Cung) & Hội Phật học Trung Phần khởi dựng (1938-1940, HT. Thích Trí Thủ trụ trì đầu tiên)",
+        "construction_years": "1938-1940",
+        "style": "Classical Central Vietnamese Imperial Hue Buddhist Temple Architecture & 3-Tier Octagonal Stupa"
+      },
+      "glb_path": "02_ASSETS_3D/hero_landmarks_ultra/ultra_lm_34_chua_linh_son.glb",
+      "sha256": "ca9740ca59d9f4c5818ca84e7e64ab5eff133b1c9091692defdf48143947211b",
+      "qa": {
+        "file_name": "ultra_lm_34_chua_linh_son.glb",
+        "size_bytes": 1662420,
+        "triangles": 25402,
+        "vertices": 32490,
+        "meshes_count": 11,
+        "materials_count": 11,
+        "embedded_jpeg_textures": 8,
+        "blend_materials": [
+          "QuanAm_LotusPond_EmeraldWater_Blend085"
+        ],
+        "emissive_materials": [
+          "Sanctuary_Altar_WarmAmber_Glow"
+        ],
+        "nan_inf_count": 0,
+        "khr_materials_transmission": false,
+        "local_pivot_compatible": true,
+        "bbox_min_m": [
+          -43.0,
+          -3.0,
+          -42.4
+        ],
+        "bbox_max_m": [
+          43.0,
+          17.55,
+          38.0
+        ],
+        "dimensions_xyz_m": [
+          86.0,
+          20.55,
+          80.4
+        ]
+      }
+    },
+    {
+      "id": "ultra_lm_35_dinh_tinh_truong",
+      "short_label": "Dinh Tinh Truong 1910",
+      "replaces_slot4_id": "lm_35_dinh_tinh_truong",
+      "name_vi": "Dinh Tỉnh Trưởng Đà Lạt (1910, Đồi Hòa Bình) Ultra-LOD0 (Dinh Thự Tân Cổ Điển Pháp 2 Tầng Lầu Trên Hầm Đá Chẻ, Tháp Vọng Cảnh 16m, Sảnh Porte-Cochère & Rừng Thông Trăm Tuổi)",
+      "name_en": "Former Governor's Mansion of Da Lat (c. 1910 Neoclassical Hilltop Residence & Belvedere) Ultra-LOD0 Masterpiece",
+      "wave": 10,
+      "slot": 22,
+      "tile_id": "T_W01_N00",
+      "ring": 0,
+      "lat": 11.9422,
+      "lon": 108.4332,
+      "elev_msl_m": 1534.0,
+      "x_m": -1313.357,
+      "y_m": 198.26,
+      "z_local_m": 56.0,
+      "gltf_position": [
+        -1313.357,
+        56.0,
+        -198.26
+      ],
+      "heading_deg": 110.0,
+      "rotation_y_rad": -1.919862,
+      "satellite_alignment": {
+        "tile_id": "T_W01_N00",
+        "address": "01 Lý Tự Trọng, Đồi Hòa Bình, Phường 1, Đà Lạt"
+      },
+      "architectural_metadata": {
+        "architect_and_history": "Kiến trúc sư Pháp thời kỳ đầu kiến thiết Đà Lạt (xây dựng trước 1910, dinh Thị trưởng Đà Lạt & Tỉnh trưởng Tuyên Đức)",
+        "construction_years": "c. 1910",
+        "style": "Early French Colonial Neoclassical Villa, Arched Loggia, Porte-Cochère Terrace & 16m Belvedere Tower"
+      },
+      "glb_path": "02_ASSETS_3D/hero_landmarks_ultra/ultra_lm_35_dinh_tinh_truong.glb",
+      "sha256": "1e4c5fc568e3d22f5ab2277d5ff3cbf774be3ea77135222eb102bc08b245baa8",
+      "qa": {
+        "file_name": "ultra_lm_35_dinh_tinh_truong.glb",
+        "size_bytes": 1826496,
+        "triangles": 29166,
+        "vertices": 38418,
+        "meshes_count": 9,
+        "materials_count": 9,
+        "embedded_jpeg_textures": 7,
+        "blend_materials": [
+          "GovernorSalon_FrenchWindow_Blend085"
+        ],
+        "emissive_materials": [
+          "Salon_And_Belvedere_WarmAmber_Glow"
+        ],
+        "nan_inf_count": 0,
+        "khr_materials_transmission": false,
+        "local_pivot_compatible": true,
+        "bbox_min_m": [
+          -42.0,
+          -3.0,
+          -37.0
+        ],
+        "bbox_max_m": [
+          42.0,
+          16.1,
+          37.0
+        ],
+        "dimensions_xyz_m": [
+          84.0,
+          19.1,
+          74.0
+        ]
+      }
+    },
+    {
+      "id": "ultra_lm_36_nha_may_che_cau_dat_1927",
+      "short_label": "Nha May Che Cau Dat 1927",
+      "replaces_slot4_id": "lm_36_nha_may_che_cau_dat_1927",
+      "name_vi": "Nhà máy Chè cổ Cầu Đất 1927 & Bảo tàng Trà Cầu Đất Farm Ultra-LOD0 (Tổ Hợp 3 Gian Xưởng Chè Cổ Nhất Đông Nam Á Mái Tôn Xanh Cổ Vịt, Ống Khói Lò Sấy Gạch Đỏ 16.5m & Đồi Chè Bậc Thang)",
+      "name_en": "Cau Dat 1927 Historic French Tea Factory & Tea Heritage Museum Ultra-LOD0 Masterpiece",
+      "wave": 10,
+      "slot": 22,
+      "tile_id": "T_E06_S04",
+      "ring": 2,
+      "lat": 11.8742,
+      "lon": 108.5625,
+      "elev_msl_m": 1635.0,
+      "x_m": 12768.823,
+      "y_m": -7371.465,
+      "z_local_m": 157.0,
+      "gltf_position": [
+        12768.823,
+        157.0,
+        7371.465
+      ],
+      "heading_deg": 165.0,
+      "rotation_y_rad": -2.879793,
+      "satellite_alignment": {
+        "tile_id": "T_E06_S04",
+        "address": "Thôn Cầu Đất, xã Xuân Trường, Phường 12, Đà Lạt"
+      },
+      "architectural_metadata": {
+        "founder_and_agency": "Sở Đồn điền Trà Cầu Đất của người Pháp (Société des Plantations de Thé de Cầu Đất, thành lập năm 1927)",
+        "construction_years": "1927",
+        "style": "1927 French Colonial Agro-Industrial 3-Bay Gable Factory, Clerestory Monitors & 16.5m Red-Brick Kiln Chimney"
+      },
+      "glb_path": "02_ASSETS_3D/hero_landmarks_ultra/ultra_lm_36_nha_may_che_cau_dat_1927.glb",
+      "sha256": "ca918ed3525b23e185dedb990b3db6ed19bc8c89864972a46dbd423ac96fe536",
+      "qa": {
+        "file_name": "ultra_lm_36_nha_may_che_cau_dat_1927.glb",
+        "size_bytes": 1666316,
+        "triangles": 23288,
+        "vertices": 31026,
+        "meshes_count": 10,
+        "materials_count": 10,
+        "embedded_jpeg_textures": 9,
+        "blend_materials": [
+          "TeaMuseum_Industrial_Window_Blend085"
+        ],
+        "emissive_materials": [
+          "TeaMuseum_Gallery_WarmIndustrial_Glow"
+        ],
+        "nan_inf_count": 0,
+        "khr_materials_transmission": false,
+        "local_pivot_compatible": true,
+        "bbox_min_m": [
+          -53.0,
+          -3.0,
+          -43.0
+        ],
+        "bbox_max_m": [
+          53.0,
+          16.55,
+          46.0
+        ],
+        "dimensions_xyz_m": [
+          106.0,
+          19.55,
+          89.0
         ]
       }
     }

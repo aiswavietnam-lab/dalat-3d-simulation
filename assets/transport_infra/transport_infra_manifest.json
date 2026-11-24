@@ -1,11 +1,11 @@
 {
-  "schema_version": "1.7.0",
+  "schema_version": "1.8.0",
   "project": "DALAT_3D_SIMULATION",
   "slot": 9,
   "task_name": "ĐÀ LẠT - 08 (PASSES_BRIDGES_RAILWAY_INFRA)",
-  "wave_completed": 9,
-  "latest_wave": "Wave 9 (T9_AUTO_R2_R3_B04_TRAI_MAT_DASAR_PASS_AND_CAU_DAT_WIND_FARM_VIADUCTS)",
-  "updated_at_utc": "2026-11-24T09:26:11Z",
+  "wave_completed": 10,
+  "latest_wave": "Wave 10 (T9_AUTO_R2_R3_B05_ME_LINH_NAM_BAN_COFFEE_PASS_AND_VOI_WATERFALL_VIADUCTS)",
+  "updated_at_utc": "2026-11-24T11:27:34Z",
   "world_crs": {
     "origin_lat": 11.940419,
     "origin_lon": 108.445259,
@@ -22,11 +22,12 @@
     "T9_AUTO_R2_R3_B01_DRAN_KHANH_LE_SUOI_VANG",
     "T9_AUTO_R2_R3_B02_ANKROET_CAM_LY_TUYEN_LAM_VIADUCTS",
     "T9_AUTO_R2_R3_B03_LANGBIANG_RADAR_PASS_AND_LIEN_KHUONG_HIGHWAY",
-    "T9_AUTO_R2_R3_B04_TRAI_MAT_DASAR_PASS_AND_CAU_DAT_WIND_FARM_VIADUCTS"
+    "T9_AUTO_R2_R3_B04_TRAI_MAT_DASAR_PASS_AND_CAU_DAT_WIND_FARM_VIADUCTS",
+    "T9_AUTO_R2_R3_B05_ME_LINH_NAM_BAN_COFFEE_PASS_AND_VOI_WATERFALL_VIADUCTS"
   ],
-  "total_assets": 18,
-  "total_triangles": 2122636,
-  "wave9_triangles": 265072,
+  "total_assets": 20,
+  "total_triangles": 2354016,
+  "wave10_triangles": 231380,
   "assets": [
     {
       "id": "railway_dalat_traimat_7km",
@@ -756,6 +757,96 @@
         "T_E03_S03",
         "T_E04_N00",
         "T_E04_S01"
+      ],
+      "khr_materials_transmission": false
+    },
+    {
+      "id": "deo_me_linh_nam_ban_ca_phe_chon_va_cau_can_ta_nung_ha",
+      "wave": 10,
+      "task_id": "T9_AUTO_R2_R3_B05_ME_LINH_NAM_BAN_COFFEE_PASS_AND_VOI_WATERFALL_VIADUCTS",
+      "name_vi": "Cung Đường Đèo Tà Nung Hạ – Mê Linh – Cà Phê Chồn – Nam Ban Bắc, Đèo Vòng Hồ Đập Mê Linh, Cầu Vòm Đá Đập Tràn 04 Khoang Hồ Mê Linh & Cầu Gỗ Vòng Tròn Săn Mây 360 Độ – Cổng Trời Mê Linh",
+      "glb_path": "02_ASSETS_3D/transport_infra/deo_me_linh_nam_ban_ca_phe_chon_va_cau_can_ta_nung_ha.glb",
+      "category": "mountain_pass_spillway_bridge_and_360_cloud_skywalk_world",
+      "world_space_yup": true,
+      "gltf_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_y_rad": 0.0,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "z_offset_applied_m": 0.22,
+      "triangles": 107184,
+      "size_bytes": 5486116,
+      "sha256": "cbefa62bd979db69963e455ba249f512a4714e91e373c5f05bcc7d2ba571d8eb",
+      "total_length_m": 17962.39,
+      "spillway_bridge_length_m": 148.0,
+      "skywalk_360_diameter_m": 39.0,
+      "viaduct_count": 5,
+      "convex_mirrors": 39,
+      "streetlamps_35m": 514,
+      "cloud_hunting_decks": 4,
+      "tiles_covered": [
+        "T_W03_N00",
+        "T_W03_S01",
+        "T_W03_S02",
+        "T_W04_N00",
+        "T_W04_S01",
+        "T_W04_S02",
+        "T_W04_S03",
+        "T_W05_S01",
+        "T_W05_S02"
+      ],
+      "khr_materials_transmission": false
+    },
+    {
+      "id": "cau_treo_thac_voi_nam_ban_va_deo_linh_an_cam_ly_ha",
+      "wave": 10,
+      "task_id": "T9_AUTO_R2_R3_B05_ME_LINH_NAM_BAN_COFFEE_PASS_AND_VOI_WATERFALL_VIADUCTS",
+      "name_vi": "Cầu Treo Dây Cáp Vượt Hẻm Vực Thác Voi (Liêng Rơwoa) – Nam Ban, Cung Đường Đèo Chùa Linh Ấn – Thác Voi – Sườn Tây Núi Voi & Cung Đường Đèo Đạ Nghịt – Suối Cạn – Vạn Thành Tây",
+      "glb_path": "02_ASSETS_3D/transport_infra/cau_treo_thac_voi_nam_ban_va_deo_linh_an_cam_ly_ha.glb",
+      "category": "suspension_bridge_waterfall_gorge_and_southwest_passes_world",
+      "world_space_yup": true,
+      "gltf_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_y_rad": 0.0,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "z_offset_applied_m": 0.22,
+      "triangles": 124196,
+      "size_bytes": 6551360,
+      "sha256": "ca57e86c6edfb90e72a301cb60813699921f8409af04b1dffa42f270ebb4eca9",
+      "total_length_m": 22321.8,
+      "suspension_bridge_span_m": 162.0,
+      "pylon_height_m": 19.5,
+      "viaduct_count": 5,
+      "convex_mirrors": 44,
+      "streetlamps_35m": 639,
+      "cloud_hunting_decks": 4,
+      "tiles_covered": [
+        "T_W02_S03",
+        "T_W02_S04",
+        "T_W03_N01",
+        "T_W03_N02",
+        "T_W03_N03",
+        "T_W03_S03",
+        "T_W03_S04",
+        "T_W04_N00",
+        "T_W04_N01",
+        "T_W04_N02",
+        "T_W04_N03",
+        "T_W04_S03",
+        "T_W04_S04"
       ],
       "khr_materials_transmission": false
     }

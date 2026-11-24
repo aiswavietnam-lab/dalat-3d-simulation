@@ -2,11 +2,11 @@
   "schema_version": "2.0.0",
   "project_name": "DALAT_3D_SIMULATION",
   "slot": 4,
-  "wave_completed": 13,
-  "updated_at_utc": "2026-11-24T09:49:50.781941+00:00",
+  "wave_completed": 14,
+  "updated_at_utc": "2026-11-24T12:05:52.879844+00:00",
   "registry_path": "01_DATA_REFS/landmarks_specs/landmarks_registry.json",
-  "total_registered_landmarks": 48,
-  "built_landmarks_count": 48,
+  "total_registered_landmarks": 52,
+  "built_landmarks_count": 52,
   "coordinate_origin": {
     "name": "Tam_Ho_Xuan_Huong_Da_Lat",
     "lat0": 11.940419,
@@ -5442,7 +5442,459 @@
       "architect": "Quần thể Văn hóa Tâm linh Phật giáo Kim Cương Thừa Drigung Kagyu Samten Ling (2023)",
       "year_completed": "2023",
       "description_vi": "Tọa lạc trên đỉnh đồi cao thôn Kambute (xã Tu Tra, huyện Đơn Dương), Samten Hills Dalat là quần thể văn hóa tâm linh Phật giáo Kim Cương Thừa nổi tiếng với Đại Bảo Tháp Kinh Luân bằng đồng phủ vàng 24K cao 37,22m, đường kính 16,53m, nặng 200 tấn đã được xác lập Kỷ lục Guinness Thế giới."
+    },
+    {
+      "id": "lm_49_rap_hoa_binh_khu_hoa_binh",
+      "name_vi": "Rạp Hòa Bình & Quảng trường Khu Hòa Bình Đà Lạt (Biểu tượng Đô thị 1960s)",
+      "name_en": "Hoa Binh Cinema Rotunda & Historic Hoa Binh Civic Square (1960s Urban Icon)",
+      "wave": 14,
+      "tier": 1,
+      "ring": 0,
+      "status": "built",
+      "built": true,
+      "lat": 11.9428,
+      "lon": 108.4368,
+      "elev_msl_m": 1506.0,
+      "x_m": -921.277,
+      "y_m": 265.052,
+      "z_local_m": 28.0,
+      "gltf_position": [
+        -921.277,
+        28.0,
+        -265.052
+      ],
+      "tile_id": "T_E00_N00",
+      "heading_deg": 170.0,
+      "rotation_y_rad": -2.96706,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "pivot_local_gltf": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "foundation_skirt_m": -3.0,
+      "bbox_y_range_m": [
+        -3.0,
+        16.5
+      ],
+      "footprint_m": {
+        "length": 84.0,
+        "width": 74.0,
+        "max_height": 16.5
+      },
+      "exclusion_polygon_wgs84": [
+        [
+          108.4372326,
+          11.9424824
+        ],
+        [
+          108.4365045,
+          11.9423568
+        ],
+        [
+          108.4364222,
+          11.9424132
+        ],
+        [
+          108.4363098,
+          11.9430371
+        ],
+        [
+          108.4363674,
+          11.9431176
+        ],
+        [
+          108.4370955,
+          11.9432432
+        ],
+        [
+          108.4371778,
+          11.9431868
+        ],
+        [
+          108.4372903,
+          11.9425629
+        ],
+        [
+          108.4372326,
+          11.9424824
+        ]
+      ],
+      "glb_path": "02_ASSETS_3D/landmarks/lm_49_rap_hoa_binh_khu_hoa_binh.glb",
+      "sha256": "7ce52d7168a6eb73c6434197d5a8223f330f8e092ab5a7d18af5980dee06e65a",
+      "size_bytes": 411468,
+      "triangles": 14310,
+      "nodes": 12,
+      "materials": 9,
+      "emissive_materials": 1,
+      "no_khr_transmission": true,
+      "camera_preset": {
+        "eye_gltf": [
+          -871.465,
+          53.0,
+          -185.335
+        ],
+        "target_gltf": [
+          -921.277,
+          34.2,
+          -265.052
+        ],
+        "local_offset_gltf": [
+          49.812,
+          25.0,
+          79.717
+        ],
+        "fov_deg": 45.0,
+        "distance_m": 95.86
+      },
+      "architectural_style": "Mid-Century Vietnamese Modernist Civic Rotunda & Commercial Shophouse Arcade (1960s)",
+      "architect": "Công ty Hòa Bình kiến thiết trên nền Chợ Cây Đà Lạt cũ (đầu thập niên 1960)",
+      "year_completed": "1962",
+      "description_vi": "Được xây dựng đầu thập niên 1960 ngay trên nền Chợ Cây lịch sử tại trung tâm Khu Hòa Bình, Rạp Hòa Bình (Rạp 3 Tháng 4) với mặt đứng bo cong màu vàng đặc trưng và hệ lam bê tông đứng là biểu tượng ký ức văn hóa đô thị gắn bó với nhiều thế hệ thị dân và du khách Đà Lạt."
+    },
+    {
+      "id": "lm_50_chua_linh_phong_su_nu",
+      "name_vi": "Chùa Sư Nữ Linh Phong (1940, 72C Hoàng Hoa Thám – Phường 10)",
+      "name_en": "Linh Phong Historic Buddhist Nuns' Pagoda (72C Hoang Hoa Tham, Founded 1940)",
+      "wave": 14,
+      "tier": 1,
+      "ring": 0,
+      "status": "built",
+      "built": true,
+      "lat": 11.9288,
+      "lon": 108.4624,
+      "elev_msl_m": 1528.0,
+      "x_m": 1866.842,
+      "y_m": -1293.421,
+      "z_local_m": 50.0,
+      "gltf_position": [
+        1866.842,
+        50.0,
+        1293.421
+      ],
+      "tile_id": "T_E01_S01",
+      "heading_deg": 200.0,
+      "rotation_y_rad": -3.490659,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "pivot_local_gltf": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "foundation_skirt_m": -3.0,
+      "bbox_y_range_m": [
+        -3.0,
+        16.0
+      ],
+      "footprint_m": {
+        "length": 86.0,
+        "width": 78.0,
+        "max_height": 16.0
+      },
+      "exclusion_polygon_wgs84": [
+        [
+          108.4626116,
+          11.9282945
+        ],
+        [
+          108.4619058,
+          11.9285458
+        ],
+        [
+          108.4618613,
+          11.9286391
+        ],
+        [
+          108.4620931,
+          11.929262
+        ],
+        [
+          108.4621884,
+          11.9293055
+        ],
+        [
+          108.4628942,
+          11.9290542
+        ],
+        [
+          108.4629387,
+          11.9289609
+        ],
+        [
+          108.4627069,
+          11.928338
+        ],
+        [
+          108.4626116,
+          11.9282945
+        ]
+      ],
+      "glb_path": "02_ASSETS_3D/landmarks/lm_50_chua_linh_phong_su_nu.glb",
+      "sha256": "5277b152f95a99435cb7f91655d7206dad8f7cd1dbcbd1c64809f40355b16605",
+      "size_bytes": 315608,
+      "triangles": 9668,
+      "nodes": 18,
+      "materials": 12,
+      "emissive_materials": 1,
+      "no_khr_transmission": true,
+      "camera_preset": {
+        "eye_gltf": [
+          1870.192,
+          76.0,
+          1389.363
+        ],
+        "target_gltf": [
+          1866.842,
+          56.2,
+          1293.421
+        ],
+        "local_offset_gltf": [
+          3.35,
+          26.0,
+          95.942
+        ],
+        "fov_deg": 45.0,
+        "distance_m": 98.02
+      },
+      "architectural_style": "Traditional Vietnamese Buddhist Nunnery & Pine-Ridge Temple Architecture (1940)",
+      "architect": "Khai sơn năm 1940, Ni trưởng Thích Nữ Diệu Hương & Thích Nữ Huệ Hương trùng tu",
+      "year_completed": "1940",
+      "description_vi": "Tọa lạc trên đồi thông yên tĩnh số 72C Hoàng Hoa Thám (Phường 10), Chùa Sư Nữ Linh Phong được khởi dựng từ năm 1940 là ngôi Ni tự cổ kính tiêu biểu của Phật giáo Đà Lạt với chánh điện mái đao cong ẩn mình giữa rừng thông, đài Quán Thế Âm thanh tịnh và bảo tháp uy nghiêm."
+    },
+    {
+      "id": "lm_51_nha_cau_lac_bo_golf_doi_cu",
+      "name_vi": "Nhà Câu lạc bộ Sân Golf Đồi Cù Đà Lạt (Dalat Palace Golf Club 1922 – 2 Phù Đổng Thiên Vương)",
+      "name_en": "Dalat Palace Golf Club Heritage Clubhouse & 18th Green (Colt & Alison, 1922-1930s)",
+      "wave": 14,
+      "tier": 1,
+      "ring": 0,
+      "status": "built",
+      "built": true,
+      "lat": 11.9472,
+      "lon": 108.4448,
+      "elev_msl_m": 1502.0,
+      "x_m": -49.99,
+      "y_m": 754.857,
+      "z_local_m": 24.0,
+      "gltf_position": [
+        -49.99,
+        24.0,
+        -754.857
+      ],
+      "tile_id": "T_E00_N00",
+      "heading_deg": 155.0,
+      "rotation_y_rad": -2.70526,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "pivot_local_gltf": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "foundation_skirt_m": -3.0,
+      "bbox_y_range_m": [
+        -3.0,
+        15.0
+      ],
+      "footprint_m": {
+        "length": 96.0,
+        "width": 82.0,
+        "max_height": 15.0
+      },
+      "exclusion_polygon_wgs84": [
+        [
+          108.4453613,
+          11.9469902
+        ],
+        [
+          108.4446034,
+          11.9466445
+        ],
+        [
+          108.4445002,
+          11.9466812
+        ],
+        [
+          108.4442011,
+          11.9473088
+        ],
+        [
+          108.4442387,
+          11.9474098
+        ],
+        [
+          108.4449966,
+          11.9477555
+        ],
+        [
+          108.4450998,
+          11.9477188
+        ],
+        [
+          108.4453989,
+          11.9470912
+        ],
+        [
+          108.4453613,
+          11.9469902
+        ]
+      ],
+      "glb_path": "02_ASSETS_3D/landmarks/lm_51_nha_cau_lac_bo_golf_doi_cu.glb",
+      "sha256": "d96f4264f445e9fd7ea890a463df335b3a2390253c523c832af0af9a6ffeefc3",
+      "size_bytes": 320356,
+      "triangles": 9758,
+      "nodes": 15,
+      "materials": 11,
+      "emissive_materials": 1,
+      "no_khr_transmission": true,
+      "camera_preset": {
+        "eye_gltf": [
+          27.297,
+          50.0,
+          -685.267
+        ],
+        "target_gltf": [
+          -49.99,
+          29.8,
+          -754.857
+        ],
+        "local_offset_gltf": [
+          77.287,
+          26.0,
+          69.59
+        ],
+        "fov_deg": 45.0,
+        "distance_m": 105.94
+      },
+      "architectural_style": "1930s French-Scottish Colonial Golf Clubhouse Manor & Championship Bentgrass Green",
+      "architect": "Colt & Alison quy hoạch (1922), kiến thiết phục vụ Vua Bảo Đại (thập niên 1930)",
+      "year_completed": "1935",
+      "description_vi": "Được quy hoạch từ năm 1922 và xây dựng hoàn chỉnh vào thập niên 1930 dưới thời Vua Bảo Đại tại số 2 Phù Đổng Thiên Vương, Sân Golf Đồi Cù (Dalat Palace Golf Club) là sân golf đầu tiên của Việt Nam với tòa Clubhouse cổ điển Pháp nhìn ra thảm cỏ Bentgrass xanh mướt và mặt nước Hồ Xuân Hương."
+    },
+    {
+      "id": "lm_52_nha_tho_ka_don_don_duong",
+      "name_vi": "Nhà thờ Gỗ Ka Đơn (2014, Giải Nhì Kiến trúc Thánh Quốc tế – Đơn Dương)",
+      "name_en": "Ka Don Indigenous Churu Wooden Church (International Sacred Architecture Award, 2014)",
+      "wave": 14,
+      "tier": 1,
+      "ring": 3,
+      "status": "built",
+      "built": true,
+      "lat": 11.7345,
+      "lon": 108.532,
+      "elev_msl_m": 1045.0,
+      "x_m": 9447.041,
+      "y_m": -22922.798,
+      "z_local_m": -433.0,
+      "gltf_position": [
+        9447.041,
+        -433.0,
+        22922.798
+      ],
+      "tile_id": "T_E05_S11",
+      "heading_deg": 165.0,
+      "rotation_y_rad": -2.879793,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "pivot_local_gltf": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "foundation_skirt_m": -3.0,
+      "bbox_y_range_m": [
+        -3.0,
+        19.0
+      ],
+      "footprint_m": {
+        "length": 92.0,
+        "width": 80.0,
+        "max_height": 19.0
+      },
+      "exclusion_polygon_wgs84": [
+        [
+          108.5325019,
+          11.7341991
+        ],
+        [
+          108.5317191,
+          11.7339939
+        ],
+        [
+          108.531625,
+          11.7340471
+        ],
+        [
+          108.5314438,
+          11.7347088
+        ],
+        [
+          108.5314981,
+          11.7348009
+        ],
+        [
+          108.5322809,
+          11.7350061
+        ],
+        [
+          108.532375,
+          11.7349529
+        ],
+        [
+          108.5325562,
+          11.7342912
+        ],
+        [
+          108.5325019,
+          11.7341991
+        ]
+      ],
+      "glb_path": "02_ASSETS_3D/landmarks/lm_52_nha_tho_ka_don_don_duong.glb",
+      "sha256": "1104e8665c6f869842d579c5724761d81832f2316063c603c69df83098dc0511",
+      "size_bytes": 410616,
+      "triangles": 12722,
+      "nodes": 17,
+      "materials": 10,
+      "emissive_materials": 1,
+      "no_khr_transmission": true,
+      "camera_preset": {
+        "eye_gltf": [
+          9509.838,
+          -407.0,
+          23003.175
+        ],
+        "target_gltf": [
+          9447.041,
+          -426.8,
+          22922.798
+        ],
+        "local_offset_gltf": [
+          62.797,
+          26.0,
+          80.377
+        ],
+        "fov_deg": 45.0,
+        "distance_m": 103.9
+      },
+      "architectural_style": "Indigenous Churu Longhouse Timber-Louver & Transparent Glass Sacred Architecture (2009-2014)",
+      "architect": "ThS.KTS Nguyễn Tuấn Dũng & ThS.KTS Vũ Thị Thu Hương (Giải Frate Sole 2011 & Giải Nhì Quốc tế 2016)",
+      "year_completed": "2014",
+      "description_vi": "Ẩn mình giữa rừng thông thôn Krăng Gọ 2 (huyện Đơn Dương), Nhà thờ Ka Đơn do KTS Nguyễn Tuấn Dũng và Vũ Thị Thu Hương thiết kế (hoàn thành năm 2014, Giải Nhì Kiến trúc Thánh Quốc tế 2016 tại Pavia, Ý) hòa quyện với văn hóa bản địa người Chu Ru qua mái ngói đỏ trải thấp, hệ rèm lam gỗ thông xen kính và sân đá mở không cổng rào."
     }
   ],
-  "current_wave": "T4_AUTO_W13_CHILANG_THANTHO_STADIUM_SAMTENHILLS_4_LANDMARKS"
+  "current_wave": "T4_AUTO_W14_HOABINH_LINHPHONG_DOICU_KADON_4_LANDMARKS"
 }

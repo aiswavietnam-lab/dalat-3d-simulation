@@ -1,0 +1,54 @@
+name: Daily Auto-Sync Dalat 3D from Google Drive
+
+on:
+  schedule:
+    # 06:00 sáng giờ Việt Nam (GMT+7) mỗi ngày = 23:00 UTC
+    - cron: "0 23 * * *"
+  workflow_dispatch:
+    inputs:
+      no_prune:
+        description: "Giữ nguyên các tile cũ bị phủ (mặc định tự dọn để giữ site gọn nhẹ)"
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+concurrency:
+  group: dalat-3d-drive-sync
+  cancel-in-progress: false
+
+jobs:
+  sync-drive:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Configure git bot author
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Sync Dalat 3D assets and rebuild world-index from Google Drive
+        env:
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          GDRIVE_OAUTH_REFRESH_TOKEN: ${{ secrets.GDRIVE_OAUTH_REFRESH_TOKEN }}
+          GDRIVE_CLIENT_ID: ${{ secrets.GDRIVE_CLIENT_ID }}
+          GDRIVE_CLIENT_SECRET: ${{ secrets.GDRIVE_CLIENT_SECRET }}
+          GDRIVE_API_KEY: ${{ secrets.GDRIVE_API_KEY }}
+          REQUIRE_DRIVE_AUTH: "1"
+        run: |
+          EXTRA_ARGS=""
+          if [ "${{ inputs.no_prune }}" = "true" ]; then
+            EXTRA_ARGS="--no-prune"
+          fi
+          python3 scripts/sync_from_drive.py --push $EXTRA_ARGS

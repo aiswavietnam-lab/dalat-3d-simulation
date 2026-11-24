@@ -3,7 +3,7 @@
   "project": "DALAT_3D_SIMULATION",
   "static_build": true,
   "has_real_assets": true,
-  "total_glb_count": 592,
+  "total_glb_count": 688,
   "discovered_tile_ids": [
     "T_E00_N00",
     "T_E00_N01",
@@ -74,6 +74,7 @@
     "T_E03_S06",
     "T_E03_S07",
     "T_E03_S08",
+    "T_E03_S10",
     "T_E03_S11",
     "T_E03_S12",
     "T_E04_N00",
@@ -91,6 +92,7 @@
     "T_E04_S05",
     "T_E04_S06",
     "T_E04_S07",
+    "T_E04_S10",
     "T_E04_S11",
     "T_E04_S12",
     "T_E05_N00",
@@ -110,12 +112,15 @@
     "T_E05_S07",
     "T_E05_S09",
     "T_E05_S10",
+    "T_E05_S11",
     "T_E06_N00",
     "T_E06_N01",
     "T_E06_N02",
     "T_E06_N03",
     "T_E06_N04",
     "T_E06_N05",
+    "T_E06_N06",
+    "T_E06_N07",
     "T_E06_S01",
     "T_E06_S02",
     "T_E06_S03",
@@ -123,9 +128,13 @@
     "T_E06_S05",
     "T_E06_S06",
     "T_E06_S07",
+    "T_E06_S10",
+    "T_E06_S11",
     "T_E07_N00",
     "T_E07_N01",
     "T_E07_N02",
+    "T_E07_N03",
+    "T_E07_N04",
     "T_E07_N05",
     "T_E07_S01",
     "T_E07_S02",
@@ -134,12 +143,14 @@
     "T_E07_S05",
     "T_E07_S06",
     "T_E08_N02",
+    "T_E08_N04",
     "T_E08_N05",
     "T_E08_S02",
     "T_E08_S03",
     "T_E08_S04",
     "T_E08_S05",
     "T_E08_S06",
+    "T_E09_N04",
     "T_E09_N05",
     "T_E09_S01",
     "T_E09_S02",
@@ -147,6 +158,8 @@
     "T_E09_S04",
     "T_E09_S05",
     "T_E09_S06",
+    "T_E10_N04",
+    "T_E10_N05",
     "T_E10_S01",
     "T_E10_S02",
     "T_E10_S03",
@@ -235,6 +248,7 @@
     "T_W05_S04",
     "T_W05_S05",
     "T_W05_S06",
+    "T_W05_S07",
     "T_W05_S11",
     "T_W05_S12",
     "T_W05_S13",
@@ -256,17 +270,25 @@
     "T_W06_S12",
     "T_W06_S13",
     "T_W07_N00",
+    "T_W07_N01",
+    "T_W07_N02",
+    "T_W07_N03",
     "T_W07_N04",
     "T_W07_N05",
     "T_W07_N06",
     "T_W07_N07",
     "T_W07_S02",
     "T_W07_S03",
+    "T_W07_S10",
     "T_W07_S11",
     "T_W07_S12",
     "T_W07_S13",
     "T_W08_N00",
     "T_W08_N01",
+    "T_W08_N02",
+    "T_W08_N03",
+    "T_W08_N04",
+    "T_W08_N05",
     "T_W08_N06",
     "T_W08_S01",
     "T_W08_S02",
@@ -275,14 +297,27 @@
     "T_W08_S07",
     "T_W08_S08",
     "T_W08_S09",
+    "T_W08_S10",
+    "T_W08_S11",
     "T_W08_S14",
+    "T_W09_S02",
+    "T_W09_S03",
+    "T_W09_S04",
     "T_W09_S07",
     "T_W09_S08",
     "T_W09_S09",
+    "T_W09_S10",
+    "T_W09_S11",
     "T_W09_S14",
     "T_W09_S15",
+    "T_W10_S03",
+    "T_W10_S06",
     "T_W10_S07",
-    "T_W10_S14"
+    "T_W10_S14",
+    "T_W11_S05",
+    "T_W11_S06",
+    "T_W11_S07",
+    "T_W12_S06"
   ],
   "refs": {
     "master_scene_glb_url": null,
@@ -291,15 +326,15 @@
     "tile_grid_spec_url": "./state/TILE_GRID_SPEC.json"
   },
   "counts": {
-    "terrain_tiles": 97,
-    "heightmaps": 97,
-    "water_bodies": 50,
+    "terrain_tiles": 117,
+    "heightmaps": 0,
+    "water_bodies": 56,
     "vegetation_models": 11,
-    "vegetation_instances": 242,
-    "landmarks": 191,
+    "vegetation_instances": 281,
+    "landmarks": 224,
     "lakeside_props": 7,
-    "roads_infrastructure": 76,
-    "building_tiles": 167
+    "roads_infrastructure": 90,
+    "building_tiles": 190
   },
   "layers": {
     "terrain": [
@@ -672,6 +707,14 @@
         "size_bytes": 1003976
       },
       {
+        "id": "terrain_real_T_E00_S04",
+        "filename": "terrain_real_T_E00_S04.glb",
+        "ext": ".glb",
+        "tile_id": "T_E00_S04",
+        "url": "./assets/satellite_dem_tiles/terrain_real_T_E00_S04.glb",
+        "size_bytes": 1013132
+      },
+      {
         "id": "terrain_real_T_E04_N00",
         "filename": "terrain_real_T_E04_N00.glb",
         "ext": ".glb",
@@ -688,12 +731,20 @@
         "size_bytes": 997156
       },
       {
-        "id": "terrain_T_E00_S04",
-        "filename": "terrain_T_E00_S04.glb",
+        "id": "terrain_real_T_E01_N04",
+        "filename": "terrain_real_T_E01_N04.glb",
         "ext": ".glb",
-        "tile_id": "T_E00_S04",
-        "url": "./assets/terrain_tiles/terrain_T_E00_S04.glb",
-        "size_bytes": 194164
+        "tile_id": "T_E01_N04",
+        "url": "./assets/satellite_dem_tiles/terrain_real_T_E01_N04.glb",
+        "size_bytes": 1008808
+      },
+      {
+        "id": "terrain_real_T_E01_S04",
+        "filename": "terrain_real_T_E01_S04.glb",
+        "ext": ".glb",
+        "tile_id": "T_E01_S04",
+        "url": "./assets/satellite_dem_tiles/terrain_real_T_E01_S04.glb",
+        "size_bytes": 1007396
       },
       {
         "id": "terrain_real_T_E04_N01",
@@ -704,6 +755,14 @@
         "size_bytes": 998088
       },
       {
+        "id": "terrain_real_T_E04_S01",
+        "filename": "terrain_real_T_E04_S01.glb",
+        "ext": ".glb",
+        "tile_id": "T_E04_S01",
+        "url": "./assets/satellite_dem_tiles/terrain_real_T_E04_S01.glb",
+        "size_bytes": 1153188
+      },
+      {
         "id": "terrain_real_T_W01_N04",
         "filename": "terrain_real_T_W01_N04.glb",
         "ext": ".glb",
@@ -712,52 +771,28 @@
         "size_bytes": 1005792
       },
       {
+        "id": "terrain_real_T_W01_S04",
+        "filename": "terrain_real_T_W01_S04.glb",
+        "ext": ".glb",
+        "tile_id": "T_W01_S04",
+        "url": "./assets/satellite_dem_tiles/terrain_real_T_W01_S04.glb",
+        "size_bytes": 1006788
+      },
+      {
+        "id": "terrain_real_T_W04_N01",
+        "filename": "terrain_real_T_W04_N01.glb",
+        "ext": ".glb",
+        "tile_id": "T_W04_N01",
+        "url": "./assets/satellite_dem_tiles/terrain_real_T_W04_N01.glb",
+        "size_bytes": 1115016
+      },
+      {
         "id": "terrain_real_T_W04_S01",
         "filename": "terrain_real_T_W04_S01.glb",
         "ext": ".glb",
         "tile_id": "T_W04_S01",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W04_S01.glb",
         "size_bytes": 1004536
-      },
-      {
-        "id": "terrain_T_E01_N04",
-        "filename": "terrain_T_E01_N04.glb",
-        "ext": ".glb",
-        "tile_id": "T_E01_N04",
-        "url": "./assets/terrain_tiles/terrain_T_E01_N04.glb",
-        "size_bytes": 191728
-      },
-      {
-        "id": "terrain_T_E01_S04",
-        "filename": "terrain_T_E01_S04.glb",
-        "ext": ".glb",
-        "tile_id": "T_E01_S04",
-        "url": "./assets/terrain_tiles/terrain_T_E01_S04.glb",
-        "size_bytes": 195560
-      },
-      {
-        "id": "terrain_T_E04_S01",
-        "filename": "terrain_T_E04_S01.glb",
-        "ext": ".glb",
-        "tile_id": "T_E04_S01",
-        "url": "./assets/terrain_tiles/terrain_T_E04_S01.glb",
-        "size_bytes": 193116
-      },
-      {
-        "id": "terrain_T_W01_S04",
-        "filename": "terrain_T_W01_S04.glb",
-        "ext": ".glb",
-        "tile_id": "T_W01_S04",
-        "url": "./assets/terrain_tiles/terrain_T_W01_S04.glb",
-        "size_bytes": 195220
-      },
-      {
-        "id": "terrain_T_W04_N01",
-        "filename": "terrain_T_W04_N01.glb",
-        "ext": ".glb",
-        "tile_id": "T_W04_N01",
-        "url": "./assets/terrain_tiles/terrain_T_W04_N01.glb",
-        "size_bytes": 193624
       },
       {
         "id": "terrain_real_T_E03_N03",
@@ -792,6 +827,30 @@
         "size_bytes": 1005864
       },
       {
+        "id": "terrain_real_T_E02_N04",
+        "filename": "terrain_real_T_E02_N04.glb",
+        "ext": ".glb",
+        "tile_id": "T_E02_N04",
+        "url": "./assets/satellite_dem_tiles/terrain_real_T_E02_N04.glb",
+        "size_bytes": 1149040
+      },
+      {
+        "id": "terrain_real_T_E02_S04",
+        "filename": "terrain_real_T_E02_S04.glb",
+        "ext": ".glb",
+        "tile_id": "T_E02_S04",
+        "url": "./assets/satellite_dem_tiles/terrain_real_T_E02_S04.glb",
+        "size_bytes": 994348
+      },
+      {
+        "id": "terrain_real_T_E04_N02",
+        "filename": "terrain_real_T_E04_N02.glb",
+        "ext": ".glb",
+        "tile_id": "T_E04_N02",
+        "url": "./assets/satellite_dem_tiles/terrain_real_T_E04_N02.glb",
+        "size_bytes": 1144752
+      },
+      {
         "id": "terrain_real_T_E04_S02",
         "filename": "terrain_real_T_E04_S02.glb",
         "ext": ".glb",
@@ -800,60 +859,36 @@
         "size_bytes": 1011652
       },
       {
-        "id": "terrain_T_E02_N04",
-        "filename": "terrain_T_E02_N04.glb",
-        "ext": ".glb",
-        "tile_id": "T_E02_N04",
-        "url": "./assets/terrain_tiles/terrain_T_E02_N04.glb",
-        "size_bytes": 196872
-      },
-      {
-        "id": "terrain_T_E02_S04",
-        "filename": "terrain_T_E02_S04.glb",
-        "ext": ".glb",
-        "tile_id": "T_E02_S04",
-        "url": "./assets/terrain_tiles/terrain_T_E02_S04.glb",
-        "size_bytes": 194640
-      },
-      {
-        "id": "terrain_T_E04_N02",
-        "filename": "terrain_T_E04_N02.glb",
-        "ext": ".glb",
-        "tile_id": "T_E04_N02",
-        "url": "./assets/terrain_tiles/terrain_T_E04_N02.glb",
-        "size_bytes": 196840
-      },
-      {
-        "id": "terrain_T_W02_N04",
-        "filename": "terrain_T_W02_N04.glb",
+        "id": "terrain_real_T_W02_N04",
+        "filename": "terrain_real_T_W02_N04.glb",
         "ext": ".glb",
         "tile_id": "T_W02_N04",
-        "url": "./assets/terrain_tiles/terrain_T_W02_N04.glb",
-        "size_bytes": 190716
+        "url": "./assets/satellite_dem_tiles/terrain_real_T_W02_N04.glb",
+        "size_bytes": 1007020
       },
       {
-        "id": "terrain_T_W02_S04",
-        "filename": "terrain_T_W02_S04.glb",
+        "id": "terrain_real_T_W02_S04",
+        "filename": "terrain_real_T_W02_S04.glb",
         "ext": ".glb",
         "tile_id": "T_W02_S04",
-        "url": "./assets/terrain_tiles/terrain_T_W02_S04.glb",
-        "size_bytes": 193040
+        "url": "./assets/satellite_dem_tiles/terrain_real_T_W02_S04.glb",
+        "size_bytes": 998340
       },
       {
-        "id": "terrain_T_W04_N02",
-        "filename": "terrain_T_W04_N02.glb",
+        "id": "terrain_real_T_W04_N02",
+        "filename": "terrain_real_T_W04_N02.glb",
         "ext": ".glb",
         "tile_id": "T_W04_N02",
-        "url": "./assets/terrain_tiles/terrain_T_W04_N02.glb",
-        "size_bytes": 196924
+        "url": "./assets/satellite_dem_tiles/terrain_real_T_W04_N02.glb",
+        "size_bytes": 997516
       },
       {
-        "id": "terrain_T_W04_S02",
-        "filename": "terrain_T_W04_S02.glb",
+        "id": "terrain_real_T_W04_S02",
+        "filename": "terrain_real_T_W04_S02.glb",
         "ext": ".glb",
         "tile_id": "T_W04_S02",
-        "url": "./assets/terrain_tiles/terrain_T_W04_S02.glb",
-        "size_bytes": 197032
+        "url": "./assets/satellite_dem_tiles/terrain_real_T_W04_S02.glb",
+        "size_bytes": 997996
       },
       {
         "id": "terrain_real_T_E00_N05",
@@ -864,12 +899,60 @@
         "size_bytes": 1049164
       },
       {
+        "id": "terrain_real_T_E00_S05",
+        "filename": "terrain_real_T_E00_S05.glb",
+        "ext": ".glb",
+        "tile_id": "T_E00_S05",
+        "url": "./assets/satellite_dem_tiles/terrain_real_T_E00_S05.glb",
+        "size_bytes": 1073416
+      },
+      {
+        "id": "terrain_real_T_E03_N04",
+        "filename": "terrain_real_T_E03_N04.glb",
+        "ext": ".glb",
+        "tile_id": "T_E03_N04",
+        "url": "./assets/satellite_dem_tiles/terrain_real_T_E03_N04.glb",
+        "size_bytes": 1148292
+      },
+      {
+        "id": "terrain_real_T_E03_S04",
+        "filename": "terrain_real_T_E03_S04.glb",
+        "ext": ".glb",
+        "tile_id": "T_E03_S04",
+        "url": "./assets/satellite_dem_tiles/terrain_real_T_E03_S04.glb",
+        "size_bytes": 997636
+      },
+      {
+        "id": "terrain_real_T_E04_N03",
+        "filename": "terrain_real_T_E04_N03.glb",
+        "ext": ".glb",
+        "tile_id": "T_E04_N03",
+        "url": "./assets/satellite_dem_tiles/terrain_real_T_E04_N03.glb",
+        "size_bytes": 997480
+      },
+      {
+        "id": "terrain_real_T_E04_S03",
+        "filename": "terrain_real_T_E04_S03.glb",
+        "ext": ".glb",
+        "tile_id": "T_E04_S03",
+        "url": "./assets/satellite_dem_tiles/terrain_real_T_E04_S03.glb",
+        "size_bytes": 1130716
+      },
+      {
         "id": "terrain_real_T_W03_N04",
         "filename": "terrain_real_T_W03_N04.glb",
         "ext": ".glb",
         "tile_id": "T_W03_N04",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W03_N04.glb",
         "size_bytes": 1006504
+      },
+      {
+        "id": "terrain_real_T_W03_S04",
+        "filename": "terrain_real_T_W03_S04.glb",
+        "ext": ".glb",
+        "tile_id": "T_W03_S04",
+        "url": "./assets/satellite_dem_tiles/terrain_real_T_W03_S04.glb",
+        "size_bytes": 1004020
       },
       {
         "id": "terrain_real_T_W04_N03",
@@ -880,52 +963,44 @@
         "size_bytes": 1020720
       },
       {
-        "id": "terrain_T_E00_S05",
-        "filename": "terrain_T_E00_S05.glb",
-        "ext": ".glb",
-        "tile_id": "T_E00_S05",
-        "url": "./assets/terrain_tiles/terrain_T_E00_S05.glb",
-        "size_bytes": 196532
-      },
-      {
-        "id": "terrain_T_E03_N04",
-        "filename": "terrain_T_E03_N04.glb",
-        "ext": ".glb",
-        "tile_id": "T_E03_N04",
-        "url": "./assets/terrain_tiles/terrain_T_E03_N04.glb",
-        "size_bytes": 195240
-      },
-      {
-        "id": "terrain_T_E03_S04",
-        "filename": "terrain_T_E03_S04.glb",
-        "ext": ".glb",
-        "tile_id": "T_E03_S04",
-        "url": "./assets/terrain_tiles/terrain_T_E03_S04.glb",
-        "size_bytes": 195136
-      },
-      {
-        "id": "terrain_T_E04_N03",
-        "filename": "terrain_T_E04_N03.glb",
-        "ext": ".glb",
-        "tile_id": "T_E04_N03",
-        "url": "./assets/terrain_tiles/terrain_T_E04_N03.glb",
-        "size_bytes": 191812
-      },
-      {
-        "id": "terrain_T_W03_S04",
-        "filename": "terrain_T_W03_S04.glb",
-        "ext": ".glb",
-        "tile_id": "T_W03_S04",
-        "url": "./assets/terrain_tiles/terrain_T_W03_S04.glb",
-        "size_bytes": 198124
-      },
-      {
-        "id": "terrain_T_W04_S03",
-        "filename": "terrain_T_W04_S03.glb",
+        "id": "terrain_real_T_W04_S03",
+        "filename": "terrain_real_T_W04_S03.glb",
         "ext": ".glb",
         "tile_id": "T_W04_S03",
-        "url": "./assets/terrain_tiles/terrain_T_W04_S03.glb",
-        "size_bytes": 192312
+        "url": "./assets/satellite_dem_tiles/terrain_real_T_W04_S03.glb",
+        "size_bytes": 994228
+      },
+      {
+        "id": "terrain_real_T_W05_N00",
+        "filename": "terrain_real_T_W05_N00.glb",
+        "ext": ".glb",
+        "tile_id": "T_W05_N00",
+        "url": "./assets/satellite_dem_tiles/terrain_real_T_W05_N00.glb",
+        "size_bytes": 1007172
+      },
+      {
+        "id": "terrain_real_T_E01_N05",
+        "filename": "terrain_real_T_E01_N05.glb",
+        "ext": ".glb",
+        "tile_id": "T_E01_N05",
+        "url": "./assets/satellite_dem_tiles/terrain_real_T_E01_N05.glb",
+        "size_bytes": 1054996
+      },
+      {
+        "id": "terrain_real_T_E01_S05",
+        "filename": "terrain_real_T_E01_S05.glb",
+        "ext": ".glb",
+        "tile_id": "T_E01_S05",
+        "url": "./assets/satellite_dem_tiles/terrain_real_T_E01_S05.glb",
+        "size_bytes": 1101792
+      },
+      {
+        "id": "terrain_real_T_E05_S01",
+        "filename": "terrain_real_T_E05_S01.glb",
+        "ext": ".glb",
+        "tile_id": "T_E05_S01",
+        "url": "./assets/satellite_dem_tiles/terrain_real_T_E05_S01.glb",
+        "size_bytes": 1128880
       },
       {
         "id": "terrain_real_T_W01_N05",
@@ -936,6 +1011,22 @@
         "size_bytes": 1039908
       },
       {
+        "id": "terrain_real_T_W01_S05",
+        "filename": "terrain_real_T_W01_S05.glb",
+        "ext": ".glb",
+        "tile_id": "T_W01_S05",
+        "url": "./assets/satellite_dem_tiles/terrain_real_T_W01_S05.glb",
+        "size_bytes": 1106732
+      },
+      {
+        "id": "terrain_real_T_W05_N01",
+        "filename": "terrain_real_T_W05_N01.glb",
+        "ext": ".glb",
+        "tile_id": "T_W05_N01",
+        "url": "./assets/satellite_dem_tiles/terrain_real_T_W05_N01.glb",
+        "size_bytes": 997828
+      },
+      {
         "id": "terrain_real_T_W05_S01",
         "filename": "terrain_real_T_W05_S01.glb",
         "ext": ".glb",
@@ -944,36 +1035,28 @@
         "size_bytes": 1004212
       },
       {
-        "id": "terrain_T_E01_N05",
-        "filename": "terrain_T_E01_N05.glb",
+        "id": "terrain_real_T_E05_S02",
+        "filename": "terrain_real_T_E05_S02.glb",
         "ext": ".glb",
-        "tile_id": "T_E01_N05",
-        "url": "./assets/terrain_tiles/terrain_T_E01_N05.glb",
-        "size_bytes": 188544
+        "tile_id": "T_E05_S02",
+        "url": "./assets/satellite_dem_tiles/terrain_real_T_E05_S02.glb",
+        "size_bytes": 1026408
       },
       {
-        "id": "terrain_T_E01_S05",
-        "filename": "terrain_T_E01_S05.glb",
+        "id": "terrain_real_T_W02_S05",
+        "filename": "terrain_real_T_W02_S05.glb",
         "ext": ".glb",
-        "tile_id": "T_E01_S05",
-        "url": "./assets/terrain_tiles/terrain_T_E01_S05.glb",
-        "size_bytes": 194804
+        "tile_id": "T_W02_S05",
+        "url": "./assets/satellite_dem_tiles/terrain_real_T_W02_S05.glb",
+        "size_bytes": 1075164
       },
       {
-        "id": "terrain_T_E05_S01",
-        "filename": "terrain_T_E05_S01.glb",
+        "id": "terrain_real_T_W05_N02",
+        "filename": "terrain_real_T_W05_N02.glb",
         "ext": ".glb",
-        "tile_id": "T_E05_S01",
-        "url": "./assets/terrain_tiles/terrain_T_E05_S01.glb",
-        "size_bytes": 189752
-      },
-      {
-        "id": "terrain_T_W01_S05",
-        "filename": "terrain_T_W01_S05.glb",
-        "ext": ".glb",
-        "tile_id": "T_W01_S05",
-        "url": "./assets/terrain_tiles/terrain_T_W01_S05.glb",
-        "size_bytes": 196488
+        "tile_id": "T_W05_N02",
+        "url": "./assets/satellite_dem_tiles/terrain_real_T_W05_N02.glb",
+        "size_bytes": 997764
       },
       {
         "id": "terrain_real_T_W05_S02",
@@ -984,12 +1067,28 @@
         "size_bytes": 1015952
       },
       {
-        "id": "terrain_T_E05_S02",
-        "filename": "terrain_T_E05_S02.glb",
+        "id": "terrain_T_W02_N05",
+        "filename": "terrain_T_W02_N05.glb",
         "ext": ".glb",
-        "tile_id": "T_E05_S02",
-        "url": "./assets/terrain_tiles/terrain_T_E05_S02.glb",
-        "size_bytes": 191292
+        "tile_id": "T_W02_N05",
+        "url": "./assets/terrain_tiles/terrain_T_W02_N05.glb",
+        "size_bytes": 188592
+      },
+      {
+        "id": "terrain_real_T_E04_N04",
+        "filename": "terrain_real_T_E04_N04.glb",
+        "ext": ".glb",
+        "tile_id": "T_E04_N04",
+        "url": "./assets/satellite_dem_tiles/terrain_real_T_E04_N04.glb",
+        "size_bytes": 1128304
+      },
+      {
+        "id": "terrain_real_T_E04_S04",
+        "filename": "terrain_real_T_E04_S04.glb",
+        "ext": ".glb",
+        "tile_id": "T_E04_S04",
+        "url": "./assets/satellite_dem_tiles/terrain_real_T_E04_S04.glb",
+        "size_bytes": 1144592
       },
       {
         "id": "terrain_real_T_W04_N04",
@@ -1000,12 +1099,12 @@
         "size_bytes": 1024624
       },
       {
-        "id": "terrain_T_E04_N04",
-        "filename": "terrain_T_E04_N04.glb",
+        "id": "terrain_real_T_W04_S04",
+        "filename": "terrain_real_T_W04_S04.glb",
         "ext": ".glb",
-        "tile_id": "T_E04_N04",
-        "url": "./assets/terrain_tiles/terrain_T_E04_N04.glb",
-        "size_bytes": 194280
+        "tile_id": "T_W04_S04",
+        "url": "./assets/satellite_dem_tiles/terrain_real_T_W04_S04.glb",
+        "size_bytes": 997620
       },
       {
         "id": "terrain_real_T_E05_S03",
@@ -1016,12 +1115,36 @@
         "size_bytes": 1056156
       },
       {
-        "id": "terrain_T_W03_N05",
-        "filename": "terrain_T_W03_N05.glb",
+        "id": "terrain_real_T_W03_N05",
+        "filename": "terrain_real_T_W03_N05.glb",
         "ext": ".glb",
         "tile_id": "T_W03_N05",
-        "url": "./assets/terrain_tiles/terrain_T_W03_N05.glb",
-        "size_bytes": 191264
+        "url": "./assets/satellite_dem_tiles/terrain_real_T_W03_N05.glb",
+        "size_bytes": 998320
+      },
+      {
+        "id": "terrain_real_T_W03_S05",
+        "filename": "terrain_real_T_W03_S05.glb",
+        "ext": ".glb",
+        "tile_id": "T_W03_S05",
+        "url": "./assets/satellite_dem_tiles/terrain_real_T_W03_S05.glb",
+        "size_bytes": 1084676
+      },
+      {
+        "id": "terrain_real_T_W05_N03",
+        "filename": "terrain_real_T_W05_N03.glb",
+        "ext": ".glb",
+        "tile_id": "T_W05_N03",
+        "url": "./assets/satellite_dem_tiles/terrain_real_T_W05_N03.glb",
+        "size_bytes": 997328
+      },
+      {
+        "id": "terrain_real_T_W05_S03",
+        "filename": "terrain_real_T_W05_S03.glb",
+        "ext": ".glb",
+        "tile_id": "T_W05_S03",
+        "url": "./assets/satellite_dem_tiles/terrain_real_T_W05_S03.glb",
+        "size_bytes": 1107708
       },
       {
         "id": "terrain_real_T_E00_N06",
@@ -1048,12 +1171,36 @@
         "size_bytes": 1011240
       },
       {
+        "id": "terrain_real_T_W06_S02",
+        "filename": "terrain_real_T_W06_S02.glb",
+        "ext": ".glb",
+        "tile_id": "T_W06_S02",
+        "url": "./assets/satellite_dem_tiles/terrain_real_T_W06_S02.glb",
+        "size_bytes": 1097812
+      },
+      {
+        "id": "terrain_real_T_E05_S04",
+        "filename": "terrain_real_T_E05_S04.glb",
+        "ext": ".glb",
+        "tile_id": "T_E05_S04",
+        "url": "./assets/satellite_dem_tiles/terrain_real_T_E05_S04.glb",
+        "size_bytes": 1148916
+      },
+      {
         "id": "terrain_real_T_W04_N05",
         "filename": "terrain_real_T_W04_N05.glb",
         "ext": ".glb",
         "tile_id": "T_W04_N05",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W04_N05.glb",
         "size_bytes": 1013104
+      },
+      {
+        "id": "terrain_real_T_W04_S05",
+        "filename": "terrain_real_T_W04_S05.glb",
+        "ext": ".glb",
+        "tile_id": "T_W04_S05",
+        "url": "./assets/satellite_dem_tiles/terrain_real_T_W04_S05.glb",
+        "size_bytes": 997464
       },
       {
         "id": "terrain_real_T_W05_N04",
@@ -1064,6 +1211,14 @@
         "size_bytes": 999604
       },
       {
+        "id": "terrain_real_T_W05_S04",
+        "filename": "terrain_real_T_W05_S04.glb",
+        "ext": ".glb",
+        "tile_id": "T_W05_S04",
+        "url": "./assets/satellite_dem_tiles/terrain_real_T_W05_S04.glb",
+        "size_bytes": 997232
+      },
+      {
         "id": "terrain_real_T_E06_S03",
         "filename": "terrain_real_T_E06_S03.glb",
         "ext": ".glb",
@@ -1072,792 +1227,55 @@
         "size_bytes": 1056616
       },
       {
+        "id": "terrain_real_T_E05_S05",
+        "filename": "terrain_real_T_E05_S05.glb",
+        "ext": ".glb",
+        "tile_id": "T_E05_S05",
+        "url": "./assets/satellite_dem_tiles/terrain_real_T_E05_S05.glb",
+        "size_bytes": 1128252
+      },
+      {
         "id": "terrain_real_T_E06_S04",
         "filename": "terrain_real_T_E06_S04.glb",
         "ext": ".glb",
         "tile_id": "T_E06_S04",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E06_S04.glb",
         "size_bytes": 1057952
+      },
+      {
+        "id": "terrain_real_T_E07_S03",
+        "filename": "terrain_real_T_E07_S03.glb",
+        "ext": ".glb",
+        "tile_id": "T_E07_S03",
+        "url": "./assets/satellite_dem_tiles/terrain_real_T_E07_S03.glb",
+        "size_bytes": 1048328
+      },
+      {
+        "id": "terrain_real_T_E06_S05",
+        "filename": "terrain_real_T_E06_S05.glb",
+        "ext": ".glb",
+        "tile_id": "T_E06_S05",
+        "url": "./assets/satellite_dem_tiles/terrain_real_T_E06_S05.glb",
+        "size_bytes": 1135656
+      },
+      {
+        "id": "terrain_real_T_E07_S04",
+        "filename": "terrain_real_T_E07_S04.glb",
+        "ext": ".glb",
+        "tile_id": "T_E07_S04",
+        "url": "./assets/satellite_dem_tiles/terrain_real_T_E07_S04.glb",
+        "size_bytes": 1154264
+      },
+      {
+        "id": "terrain_real_T_E07_S05",
+        "filename": "terrain_real_T_E07_S05.glb",
+        "ext": ".glb",
+        "tile_id": "T_E07_S05",
+        "url": "./assets/satellite_dem_tiles/terrain_real_T_E07_S05.glb",
+        "size_bytes": 1154140
       }
     ],
-    "heightmaps": [
-      {
-        "id": "heightmap_real_T_E00_N00",
-        "filename": "heightmap_real_T_E00_N00.json",
-        "ext": ".json",
-        "tile_id": "T_E00_N00",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_E00_N00.json",
-        "size_bytes": 146732
-      },
-      {
-        "id": "heightmap_real_T_E00_N01",
-        "filename": "heightmap_real_T_E00_N01.json",
-        "ext": ".json",
-        "tile_id": "T_E00_N01",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_E00_N01.json",
-        "size_bytes": 149547
-      },
-      {
-        "id": "heightmap_real_T_E00_S01",
-        "filename": "heightmap_real_T_E00_S01.json",
-        "ext": ".json",
-        "tile_id": "T_E00_S01",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_E00_S01.json",
-        "size_bytes": 149536
-      },
-      {
-        "id": "heightmap_real_T_E01_N00",
-        "filename": "heightmap_real_T_E01_N00.json",
-        "ext": ".json",
-        "tile_id": "T_E01_N00",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_E01_N00.json",
-        "size_bytes": 149284
-      },
-      {
-        "id": "heightmap_real_T_W01_N00",
-        "filename": "heightmap_real_T_W01_N00.json",
-        "ext": ".json",
-        "tile_id": "T_W01_N00",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_W01_N00.json",
-        "size_bytes": 149223
-      },
-      {
-        "id": "heightmap_real_T_E01_N01",
-        "filename": "heightmap_real_T_E01_N01.json",
-        "ext": ".json",
-        "tile_id": "T_E01_N01",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_E01_N01.json",
-        "size_bytes": 148881
-      },
-      {
-        "id": "heightmap_real_T_E01_S01",
-        "filename": "heightmap_real_T_E01_S01.json",
-        "ext": ".json",
-        "tile_id": "T_E01_S01",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_E01_S01.json",
-        "size_bytes": 149607
-      },
-      {
-        "id": "heightmap_real_T_W01_N01",
-        "filename": "heightmap_real_T_W01_N01.json",
-        "ext": ".json",
-        "tile_id": "T_W01_N01",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_W01_N01.json",
-        "size_bytes": 149584
-      },
-      {
-        "id": "heightmap_real_T_W01_S01",
-        "filename": "heightmap_real_T_W01_S01.json",
-        "ext": ".json",
-        "tile_id": "T_W01_S01",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_W01_S01.json",
-        "size_bytes": 149504
-      },
-      {
-        "id": "heightmap_real_T_E00_N02",
-        "filename": "heightmap_real_T_E00_N02.json",
-        "ext": ".json",
-        "tile_id": "T_E00_N02",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_E00_N02.json",
-        "size_bytes": 329836
-      },
-      {
-        "id": "heightmap_real_T_E00_S02",
-        "filename": "heightmap_real_T_E00_S02.json",
-        "ext": ".json",
-        "tile_id": "T_E00_S02",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_E00_S02.json",
-        "size_bytes": 164792
-      },
-      {
-        "id": "heightmap_T_E02_N00",
-        "filename": "heightmap_T_E02_N00.json",
-        "ext": ".json",
-        "tile_id": "T_E02_N00",
-        "url": "./assets/terrain_tiles/heightmap_T_E02_N00.json",
-        "size_bytes": 84817
-      },
-      {
-        "id": "heightmap_T_W02_N00",
-        "filename": "heightmap_T_W02_N00.json",
-        "ext": ".json",
-        "tile_id": "T_W02_N00",
-        "url": "./assets/terrain_tiles/heightmap_T_W02_N00.json",
-        "size_bytes": 84798
-      },
-      {
-        "id": "heightmap_real_T_E01_N02",
-        "filename": "heightmap_real_T_E01_N02.json",
-        "ext": ".json",
-        "tile_id": "T_E01_N02",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_E01_N02.json",
-        "size_bytes": 330104
-      },
-      {
-        "id": "heightmap_real_T_E01_S02",
-        "filename": "heightmap_real_T_E01_S02.json",
-        "ext": ".json",
-        "tile_id": "T_E01_S02",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_E01_S02.json",
-        "size_bytes": 164776
-      },
-      {
-        "id": "heightmap_real_T_E02_N01",
-        "filename": "heightmap_real_T_E02_N01.json",
-        "ext": ".json",
-        "tile_id": "T_E02_N01",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_E02_N01.json",
-        "size_bytes": 328282
-      },
-      {
-        "id": "heightmap_real_T_W01_N02",
-        "filename": "heightmap_real_T_W01_N02.json",
-        "ext": ".json",
-        "tile_id": "T_W01_N02",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_W01_N02.json",
-        "size_bytes": 329942
-      },
-      {
-        "id": "heightmap_real_T_W01_S02",
-        "filename": "heightmap_real_T_W01_S02.json",
-        "ext": ".json",
-        "tile_id": "T_W01_S02",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_W01_S02.json",
-        "size_bytes": 145152
-      },
-      {
-        "id": "heightmap_real_T_W02_N01",
-        "filename": "heightmap_real_T_W02_N01.json",
-        "ext": ".json",
-        "tile_id": "T_W02_N01",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_W02_N01.json",
-        "size_bytes": 330063
-      },
-      {
-        "id": "heightmap_real_T_W02_S01",
-        "filename": "heightmap_real_T_W02_S01.json",
-        "ext": ".json",
-        "tile_id": "T_W02_S01",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_W02_S01.json",
-        "size_bytes": 329992
-      },
-      {
-        "id": "heightmap_T_E02_S01",
-        "filename": "heightmap_T_E02_S01.json",
-        "ext": ".json",
-        "tile_id": "T_E02_S01",
-        "url": "./assets/terrain_tiles/heightmap_T_E02_S01.json",
-        "size_bytes": 84820
-      },
-      {
-        "id": "heightmap_real_T_E02_N02",
-        "filename": "heightmap_real_T_E02_N02.json",
-        "ext": ".json",
-        "tile_id": "T_E02_N02",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_E02_N02.json",
-        "size_bytes": 330209
-      },
-      {
-        "id": "heightmap_real_T_E02_S02",
-        "filename": "heightmap_real_T_E02_S02.json",
-        "ext": ".json",
-        "tile_id": "T_E02_S02",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_E02_S02.json",
-        "size_bytes": 330174
-      },
-      {
-        "id": "heightmap_real_T_W02_N02",
-        "filename": "heightmap_real_T_W02_N02.json",
-        "ext": ".json",
-        "tile_id": "T_W02_N02",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_W02_N02.json",
-        "size_bytes": 330269
-      },
-      {
-        "id": "heightmap_real_T_W02_S02",
-        "filename": "heightmap_real_T_W02_S02.json",
-        "ext": ".json",
-        "tile_id": "T_W02_S02",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_W02_S02.json",
-        "size_bytes": 165305
-      },
-      {
-        "id": "heightmap_real_T_E00_N03",
-        "filename": "heightmap_real_T_E00_N03.json",
-        "ext": ".json",
-        "tile_id": "T_E00_N03",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_E00_N03.json",
-        "size_bytes": 330190
-      },
-      {
-        "id": "heightmap_real_T_E00_S03",
-        "filename": "heightmap_real_T_E00_S03.json",
-        "ext": ".json",
-        "tile_id": "T_E00_S03",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_E00_S03.json",
-        "size_bytes": 165259
-      },
-      {
-        "id": "heightmap_T_E03_N00",
-        "filename": "heightmap_T_E03_N00.json",
-        "ext": ".json",
-        "tile_id": "T_E03_N00",
-        "url": "./assets/terrain_tiles/heightmap_T_E03_N00.json",
-        "size_bytes": 84776
-      },
-      {
-        "id": "heightmap_T_W03_N00",
-        "filename": "heightmap_T_W03_N00.json",
-        "ext": ".json",
-        "tile_id": "T_W03_N00",
-        "url": "./assets/terrain_tiles/heightmap_T_W03_N00.json",
-        "size_bytes": 84757
-      },
-      {
-        "id": "heightmap_real_T_E01_N03",
-        "filename": "heightmap_real_T_E01_N03.json",
-        "ext": ".json",
-        "tile_id": "T_E01_N03",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_E01_N03.json",
-        "size_bytes": 330162
-      },
-      {
-        "id": "heightmap_real_T_E01_S03",
-        "filename": "heightmap_real_T_E01_S03.json",
-        "ext": ".json",
-        "tile_id": "T_E01_S03",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_E01_S03.json",
-        "size_bytes": 165268
-      },
-      {
-        "id": "heightmap_real_T_E03_N01",
-        "filename": "heightmap_real_T_E03_N01.json",
-        "ext": ".json",
-        "tile_id": "T_E03_N01",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_E03_N01.json",
-        "size_bytes": 330089
-      },
-      {
-        "id": "heightmap_real_T_W01_N03",
-        "filename": "heightmap_real_T_W01_N03.json",
-        "ext": ".json",
-        "tile_id": "T_W01_N03",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_W01_N03.json",
-        "size_bytes": 330208
-      },
-      {
-        "id": "heightmap_real_T_W01_S03",
-        "filename": "heightmap_real_T_W01_S03.json",
-        "ext": ".json",
-        "tile_id": "T_W01_S03",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_W01_S03.json",
-        "size_bytes": 161479
-      },
-      {
-        "id": "heightmap_real_T_W03_N01",
-        "filename": "heightmap_real_T_W03_N01.json",
-        "ext": ".json",
-        "tile_id": "T_W03_N01",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_W03_N01.json",
-        "size_bytes": 330127
-      },
-      {
-        "id": "heightmap_real_T_W03_S01",
-        "filename": "heightmap_real_T_W03_S01.json",
-        "ext": ".json",
-        "tile_id": "T_W03_S01",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_W03_S01.json",
-        "size_bytes": 330262
-      },
-      {
-        "id": "heightmap_T_E03_S01",
-        "filename": "heightmap_T_E03_S01.json",
-        "ext": ".json",
-        "tile_id": "T_E03_S01",
-        "url": "./assets/terrain_tiles/heightmap_T_E03_S01.json",
-        "size_bytes": 84763
-      },
-      {
-        "id": "heightmap_real_T_E02_N03",
-        "filename": "heightmap_real_T_E02_N03.json",
-        "ext": ".json",
-        "tile_id": "T_E02_N03",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_E02_N03.json",
-        "size_bytes": 330165
-      },
-      {
-        "id": "heightmap_real_T_E02_S03",
-        "filename": "heightmap_real_T_E02_S03.json",
-        "ext": ".json",
-        "tile_id": "T_E02_S03",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_E02_S03.json",
-        "size_bytes": 330095
-      },
-      {
-        "id": "heightmap_real_T_E03_N02",
-        "filename": "heightmap_real_T_E03_N02.json",
-        "ext": ".json",
-        "tile_id": "T_E03_N02",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_E03_N02.json",
-        "size_bytes": 330149
-      },
-      {
-        "id": "heightmap_real_T_E03_S02",
-        "filename": "heightmap_real_T_E03_S02.json",
-        "ext": ".json",
-        "tile_id": "T_E03_S02",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_E03_S02.json",
-        "size_bytes": 330183
-      },
-      {
-        "id": "heightmap_real_T_W02_N03",
-        "filename": "heightmap_real_T_W02_N03.json",
-        "ext": ".json",
-        "tile_id": "T_W02_N03",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_W02_N03.json",
-        "size_bytes": 330173
-      },
-      {
-        "id": "heightmap_real_T_W02_S03",
-        "filename": "heightmap_real_T_W02_S03.json",
-        "ext": ".json",
-        "tile_id": "T_W02_S03",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_W02_S03.json",
-        "size_bytes": 165274
-      },
-      {
-        "id": "heightmap_real_T_W03_N02",
-        "filename": "heightmap_real_T_W03_N02.json",
-        "ext": ".json",
-        "tile_id": "T_W03_N02",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_W03_N02.json",
-        "size_bytes": 330085
-      },
-      {
-        "id": "heightmap_real_T_W03_S02",
-        "filename": "heightmap_real_T_W03_S02.json",
-        "ext": ".json",
-        "tile_id": "T_W03_S02",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_W03_S02.json",
-        "size_bytes": 330112
-      },
-      {
-        "id": "heightmap_real_T_E00_N04",
-        "filename": "heightmap_real_T_E00_N04.json",
-        "ext": ".json",
-        "tile_id": "T_E00_N04",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_E00_N04.json",
-        "size_bytes": 329988
-      },
-      {
-        "id": "heightmap_real_T_E04_N00",
-        "filename": "heightmap_real_T_E04_N00.json",
-        "ext": ".json",
-        "tile_id": "T_E04_N00",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_E04_N00.json",
-        "size_bytes": 329761
-      },
-      {
-        "id": "heightmap_T_E00_S04",
-        "filename": "heightmap_T_E00_S04.json",
-        "ext": ".json",
-        "tile_id": "T_E00_S04",
-        "url": "./assets/terrain_tiles/heightmap_T_E00_S04.json",
-        "size_bytes": 38635
-      },
-      {
-        "id": "heightmap_T_W04_N00",
-        "filename": "heightmap_T_W04_N00.json",
-        "ext": ".json",
-        "tile_id": "T_W04_N00",
-        "url": "./assets/terrain_tiles/heightmap_T_W04_N00.json",
-        "size_bytes": 38626
-      },
-      {
-        "id": "heightmap_real_T_E04_N01",
-        "filename": "heightmap_real_T_E04_N01.json",
-        "ext": ".json",
-        "tile_id": "T_E04_N01",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_E04_N01.json",
-        "size_bytes": 330069
-      },
-      {
-        "id": "heightmap_real_T_W01_N04",
-        "filename": "heightmap_real_T_W01_N04.json",
-        "ext": ".json",
-        "tile_id": "T_W01_N04",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_W01_N04.json",
-        "size_bytes": 329945
-      },
-      {
-        "id": "heightmap_T_E01_N04",
-        "filename": "heightmap_T_E01_N04.json",
-        "ext": ".json",
-        "tile_id": "T_E01_N04",
-        "url": "./assets/terrain_tiles/heightmap_T_E01_N04.json",
-        "size_bytes": 38609
-      },
-      {
-        "id": "heightmap_T_E01_S04",
-        "filename": "heightmap_T_E01_S04.json",
-        "ext": ".json",
-        "tile_id": "T_E01_S04",
-        "url": "./assets/terrain_tiles/heightmap_T_E01_S04.json",
-        "size_bytes": 38609
-      },
-      {
-        "id": "heightmap_T_E04_S01",
-        "filename": "heightmap_T_E04_S01.json",
-        "ext": ".json",
-        "tile_id": "T_E04_S01",
-        "url": "./assets/terrain_tiles/heightmap_T_E04_S01.json",
-        "size_bytes": 38601
-      },
-      {
-        "id": "heightmap_T_W01_S04",
-        "filename": "heightmap_T_W01_S04.json",
-        "ext": ".json",
-        "tile_id": "T_W01_S04",
-        "url": "./assets/terrain_tiles/heightmap_T_W01_S04.json",
-        "size_bytes": 38620
-      },
-      {
-        "id": "heightmap_T_W04_N01",
-        "filename": "heightmap_T_W04_N01.json",
-        "ext": ".json",
-        "tile_id": "T_W04_N01",
-        "url": "./assets/terrain_tiles/heightmap_T_W04_N01.json",
-        "size_bytes": 38706
-      },
-      {
-        "id": "heightmap_T_W04_S01",
-        "filename": "heightmap_T_W04_S01.json",
-        "ext": ".json",
-        "tile_id": "T_W04_S01",
-        "url": "./assets/terrain_tiles/heightmap_T_W04_S01.json",
-        "size_bytes": 38609
-      },
-      {
-        "id": "heightmap_real_T_E03_N03",
-        "filename": "heightmap_real_T_E03_N03.json",
-        "ext": ".json",
-        "tile_id": "T_E03_N03",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_E03_N03.json",
-        "size_bytes": 330195
-      },
-      {
-        "id": "heightmap_real_T_E03_S03",
-        "filename": "heightmap_real_T_E03_S03.json",
-        "ext": ".json",
-        "tile_id": "T_E03_S03",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_E03_S03.json",
-        "size_bytes": 330317
-      },
-      {
-        "id": "heightmap_real_T_W03_N03",
-        "filename": "heightmap_real_T_W03_N03.json",
-        "ext": ".json",
-        "tile_id": "T_W03_N03",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_W03_N03.json",
-        "size_bytes": 330222
-      },
-      {
-        "id": "heightmap_real_T_W03_S03",
-        "filename": "heightmap_real_T_W03_S03.json",
-        "ext": ".json",
-        "tile_id": "T_W03_S03",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_W03_S03.json",
-        "size_bytes": 330124
-      },
-      {
-        "id": "heightmap_T_E02_N04",
-        "filename": "heightmap_T_E02_N04.json",
-        "ext": ".json",
-        "tile_id": "T_E02_N04",
-        "url": "./assets/terrain_tiles/heightmap_T_E02_N04.json",
-        "size_bytes": 38633
-      },
-      {
-        "id": "heightmap_T_E02_S04",
-        "filename": "heightmap_T_E02_S04.json",
-        "ext": ".json",
-        "tile_id": "T_E02_S04",
-        "url": "./assets/terrain_tiles/heightmap_T_E02_S04.json",
-        "size_bytes": 38642
-      },
-      {
-        "id": "heightmap_T_E04_N02",
-        "filename": "heightmap_T_E04_N02.json",
-        "ext": ".json",
-        "tile_id": "T_E04_N02",
-        "url": "./assets/terrain_tiles/heightmap_T_E04_N02.json",
-        "size_bytes": 38622
-      },
-      {
-        "id": "heightmap_T_E04_S02",
-        "filename": "heightmap_T_E04_S02.json",
-        "ext": ".json",
-        "tile_id": "T_E04_S02",
-        "url": "./assets/terrain_tiles/heightmap_T_E04_S02.json",
-        "size_bytes": 38657
-      },
-      {
-        "id": "heightmap_T_W02_N04",
-        "filename": "heightmap_T_W02_N04.json",
-        "ext": ".json",
-        "tile_id": "T_W02_N04",
-        "url": "./assets/terrain_tiles/heightmap_T_W02_N04.json",
-        "size_bytes": 38610
-      },
-      {
-        "id": "heightmap_T_W02_S04",
-        "filename": "heightmap_T_W02_S04.json",
-        "ext": ".json",
-        "tile_id": "T_W02_S04",
-        "url": "./assets/terrain_tiles/heightmap_T_W02_S04.json",
-        "size_bytes": 38581
-      },
-      {
-        "id": "heightmap_T_W04_N02",
-        "filename": "heightmap_T_W04_N02.json",
-        "ext": ".json",
-        "tile_id": "T_W04_N02",
-        "url": "./assets/terrain_tiles/heightmap_T_W04_N02.json",
-        "size_bytes": 38623
-      },
-      {
-        "id": "heightmap_T_W04_S02",
-        "filename": "heightmap_T_W04_S02.json",
-        "ext": ".json",
-        "tile_id": "T_W04_S02",
-        "url": "./assets/terrain_tiles/heightmap_T_W04_S02.json",
-        "size_bytes": 38589
-      },
-      {
-        "id": "heightmap_real_T_E00_N05",
-        "filename": "heightmap_real_T_E00_N05.json",
-        "ext": ".json",
-        "tile_id": "T_E00_N05",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_E00_N05.json",
-        "size_bytes": 363279
-      },
-      {
-        "id": "heightmap_real_T_W03_N04",
-        "filename": "heightmap_real_T_W03_N04.json",
-        "ext": ".json",
-        "tile_id": "T_W03_N04",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_W03_N04.json",
-        "size_bytes": 360255
-      },
-      {
-        "id": "heightmap_real_T_W04_N03",
-        "filename": "heightmap_real_T_W04_N03.json",
-        "ext": ".json",
-        "tile_id": "T_W04_N03",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_W04_N03.json",
-        "size_bytes": 351187
-      },
-      {
-        "id": "heightmap_T_E00_S05",
-        "filename": "heightmap_T_E00_S05.json",
-        "ext": ".json",
-        "tile_id": "T_E00_S05",
-        "url": "./assets/terrain_tiles/heightmap_T_E00_S05.json",
-        "size_bytes": 38622
-      },
-      {
-        "id": "heightmap_T_E03_N04",
-        "filename": "heightmap_T_E03_N04.json",
-        "ext": ".json",
-        "tile_id": "T_E03_N04",
-        "url": "./assets/terrain_tiles/heightmap_T_E03_N04.json",
-        "size_bytes": 38633
-      },
-      {
-        "id": "heightmap_T_E03_S04",
-        "filename": "heightmap_T_E03_S04.json",
-        "ext": ".json",
-        "tile_id": "T_E03_S04",
-        "url": "./assets/terrain_tiles/heightmap_T_E03_S04.json",
-        "size_bytes": 38643
-      },
-      {
-        "id": "heightmap_T_E04_N03",
-        "filename": "heightmap_T_E04_N03.json",
-        "ext": ".json",
-        "tile_id": "T_E04_N03",
-        "url": "./assets/terrain_tiles/heightmap_T_E04_N03.json",
-        "size_bytes": 38611
-      },
-      {
-        "id": "heightmap_T_W03_S04",
-        "filename": "heightmap_T_W03_S04.json",
-        "ext": ".json",
-        "tile_id": "T_W03_S04",
-        "url": "./assets/terrain_tiles/heightmap_T_W03_S04.json",
-        "size_bytes": 38609
-      },
-      {
-        "id": "heightmap_T_W04_S03",
-        "filename": "heightmap_T_W04_S03.json",
-        "ext": ".json",
-        "tile_id": "T_W04_S03",
-        "url": "./assets/terrain_tiles/heightmap_T_W04_S03.json",
-        "size_bytes": 38641
-      },
-      {
-        "id": "heightmap_real_T_W01_N05",
-        "filename": "heightmap_real_T_W01_N05.json",
-        "ext": ".json",
-        "tile_id": "T_W01_N05",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_W01_N05.json",
-        "size_bytes": 363253
-      },
-      {
-        "id": "heightmap_T_E01_N05",
-        "filename": "heightmap_T_E01_N05.json",
-        "ext": ".json",
-        "tile_id": "T_E01_N05",
-        "url": "./assets/terrain_tiles/heightmap_T_E01_N05.json",
-        "size_bytes": 38595
-      },
-      {
-        "id": "heightmap_T_E01_S05",
-        "filename": "heightmap_T_E01_S05.json",
-        "ext": ".json",
-        "tile_id": "T_E01_S05",
-        "url": "./assets/terrain_tiles/heightmap_T_E01_S05.json",
-        "size_bytes": 38631
-      },
-      {
-        "id": "heightmap_T_E05_S01",
-        "filename": "heightmap_T_E05_S01.json",
-        "ext": ".json",
-        "tile_id": "T_E05_S01",
-        "url": "./assets/terrain_tiles/heightmap_T_E05_S01.json",
-        "size_bytes": 38594
-      },
-      {
-        "id": "heightmap_T_W01_S05",
-        "filename": "heightmap_T_W01_S05.json",
-        "ext": ".json",
-        "tile_id": "T_W01_S05",
-        "url": "./assets/terrain_tiles/heightmap_T_W01_S05.json",
-        "size_bytes": 38655
-      },
-      {
-        "id": "heightmap_T_W05_S01",
-        "filename": "heightmap_T_W05_S01.json",
-        "ext": ".json",
-        "tile_id": "T_W05_S01",
-        "url": "./assets/terrain_tiles/heightmap_T_W05_S01.json",
-        "size_bytes": 38625
-      },
-      {
-        "id": "heightmap_T_E05_S02",
-        "filename": "heightmap_T_E05_S02.json",
-        "ext": ".json",
-        "tile_id": "T_E05_S02",
-        "url": "./assets/terrain_tiles/heightmap_T_E05_S02.json",
-        "size_bytes": 38632
-      },
-      {
-        "id": "heightmap_T_W05_S02",
-        "filename": "heightmap_T_W05_S02.json",
-        "ext": ".json",
-        "tile_id": "T_W05_S02",
-        "url": "./assets/terrain_tiles/heightmap_T_W05_S02.json",
-        "size_bytes": 38631
-      },
-      {
-        "id": "heightmap_real_T_W04_N04",
-        "filename": "heightmap_real_T_W04_N04.json",
-        "ext": ".json",
-        "tile_id": "T_W04_N04",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_W04_N04.json",
-        "size_bytes": 314690
-      },
-      {
-        "id": "heightmap_T_E04_N04",
-        "filename": "heightmap_T_E04_N04.json",
-        "ext": ".json",
-        "tile_id": "T_E04_N04",
-        "url": "./assets/terrain_tiles/heightmap_T_E04_N04.json",
-        "size_bytes": 38617
-      },
-      {
-        "id": "heightmap_T_E05_S03",
-        "filename": "heightmap_T_E05_S03.json",
-        "ext": ".json",
-        "tile_id": "T_E05_S03",
-        "url": "./assets/terrain_tiles/heightmap_T_E05_S03.json",
-        "size_bytes": 38594
-      },
-      {
-        "id": "heightmap_T_W03_N05",
-        "filename": "heightmap_T_W03_N05.json",
-        "ext": ".json",
-        "tile_id": "T_W03_N05",
-        "url": "./assets/terrain_tiles/heightmap_T_W03_N05.json",
-        "size_bytes": 38615
-      },
-      {
-        "id": "heightmap_real_T_E00_N06",
-        "filename": "heightmap_real_T_E00_N06.json",
-        "ext": ".json",
-        "tile_id": "T_E00_N06",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_E00_N06.json",
-        "size_bytes": 363391
-      },
-      {
-        "id": "heightmap_real_T_E01_N06",
-        "filename": "heightmap_real_T_E01_N06.json",
-        "ext": ".json",
-        "tile_id": "T_E01_N06",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_E01_N06.json",
-        "size_bytes": 363362
-      },
-      {
-        "id": "heightmap_real_T_W01_N06",
-        "filename": "heightmap_real_T_W01_N06.json",
-        "ext": ".json",
-        "tile_id": "T_W01_N06",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_W01_N06.json",
-        "size_bytes": 363177
-      },
-      {
-        "id": "heightmap_real_T_W04_N05",
-        "filename": "heightmap_real_T_W04_N05.json",
-        "ext": ".json",
-        "tile_id": "T_W04_N05",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_W04_N05.json",
-        "size_bytes": 348422
-      },
-      {
-        "id": "heightmap_real_T_W05_N04",
-        "filename": "heightmap_real_T_W05_N04.json",
-        "ext": ".json",
-        "tile_id": "T_W05_N04",
-        "url": "./assets/satellite_dem_tiles/heightmap_real_T_W05_N04.json",
-        "size_bytes": 363217
-      },
-      {
-        "id": "heightmap_T_E06_S03",
-        "filename": "heightmap_T_E06_S03.json",
-        "ext": ".json",
-        "tile_id": "T_E06_S03",
-        "url": "./assets/terrain_tiles/heightmap_T_E06_S03.json",
-        "size_bytes": 38627
-      },
-      {
-        "id": "heightmap_T_E06_S04",
-        "filename": "heightmap_T_E06_S04.json",
-        "ext": ".json",
-        "tile_id": "T_E06_S04",
-        "url": "./assets/terrain_tiles/heightmap_T_E06_S04.json",
-        "size_bytes": 38595
-      }
-    ],
+    "heightmaps": [],
     "water": [
       {
         "id": "water_dap_da_nhim_don_duong",
@@ -1956,6 +1374,14 @@
         "size_bytes": 276216
       },
       {
+        "id": "water_ho_gia_lam_nam_ban",
+        "filename": "water_ho_gia_lam_nam_ban.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/water_bodies/water_ho_gia_lam_nam_ban.glb",
+        "size_bytes": 258132
+      },
+      {
         "id": "water_ho_ka_do_don_duong",
         "filename": "water_ho_ka_do_don_duong.glb",
         "ext": ".glb",
@@ -1996,6 +1422,14 @@
         "size_bytes": 286140
       },
       {
+        "id": "water_ho_quang_lap_don_duong",
+        "filename": "water_ho_quang_lap_don_duong.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/water_bodies/water_ho_quang_lap_don_duong.glb",
+        "size_bytes": 277148
+      },
+      {
         "id": "water_ho_rlom_don_duong",
         "filename": "water_ho_rlom_don_duong.glb",
         "ext": ".glb",
@@ -2010,6 +1444,14 @@
         "tile_id": null,
         "url": "./assets/water_bodies/water_ho_suoi_vang.glb",
         "size_bytes": 260716
+      },
+      {
+        "id": "water_ho_tan_thanh_lam_ha",
+        "filename": "water_ho_tan_thanh_lam_ha.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/water_bodies/water_ho_tan_thanh_lam_ha.glb",
+        "size_bytes": 285776
       },
       {
         "id": "water_ho_than_tho",
@@ -2148,6 +1590,14 @@
         "size_bytes": 71292
       },
       {
+        "id": "water_thac_da_chay_lac_duong",
+        "filename": "water_thac_da_chay_lac_duong.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/water_bodies/water_thac_da_chay_lac_duong.glb",
+        "size_bytes": 71316
+      },
+      {
         "id": "water_thac_da_dang_lam_ha",
         "filename": "water_thac_da_dang_lam_ha.glb",
         "ext": ".glb",
@@ -2162,6 +1612,14 @@
         "tile_id": null,
         "url": "./assets/water_bodies/water_thac_da_sar_lac_duong.glb",
         "size_bytes": 71272
+      },
+      {
+        "id": "water_thac_da_ton_lam_ha",
+        "filename": "water_thac_da_ton_lam_ha.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/water_bodies/water_thac_da_ton_lam_ha.glb",
+        "size_bytes": 71268
       },
       {
         "id": "water_thac_datanla",
@@ -2218,6 +1676,14 @@
         "tile_id": null,
         "url": "./assets/water_bodies/water_thac_lieng_chi_da_nhim.glb",
         "size_bytes": 71320
+      },
+      {
+        "id": "water_thac_phu_son_lam_ha",
+        "filename": "water_thac_phu_son_lam_ha.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/water_bodies/water_thac_phu_son_lam_ha.glb",
+        "size_bytes": 71280
       },
       {
         "id": "water_thac_pongour_duc_trong",
@@ -2357,7 +1823,7 @@
         "ext": ".json",
         "tile_id": "T_E00_N00",
         "url": "./assets/vegetation/instances_T_E00_N00.json",
-        "size_bytes": 232635
+        "size_bytes": 182610
       },
       {
         "id": "instances_T_E00_N01",
@@ -2381,7 +1847,7 @@
         "ext": ".json",
         "tile_id": "T_E01_N00",
         "url": "./assets/vegetation/instances_T_E01_N00.json",
-        "size_bytes": 312312
+        "size_bytes": 310925
       },
       {
         "id": "instances_T_W01_N00",
@@ -2405,7 +1871,7 @@
         "ext": ".json",
         "tile_id": "T_E01_S01",
         "url": "./assets/vegetation/instances_T_E01_S01.json",
-        "size_bytes": 326044
+        "size_bytes": 323908
       },
       {
         "id": "instances_T_W01_N01",
@@ -2477,7 +1943,7 @@
         "ext": ".json",
         "tile_id": "T_E02_N01",
         "url": "./assets/vegetation/instances_T_E02_N01.json",
-        "size_bytes": 315363
+        "size_bytes": 302199
       },
       {
         "id": "instances_T_E02_S01",
@@ -2493,7 +1959,7 @@
         "ext": ".json",
         "tile_id": "T_W01_N02",
         "url": "./assets/vegetation/instances_T_W01_N02.json",
-        "size_bytes": 291987
+        "size_bytes": 291449
       },
       {
         "id": "instances_T_W01_S02",
@@ -2792,20 +2258,20 @@
         "size_bytes": 326713
       },
       {
+        "id": "instances_T_W04_N01",
+        "filename": "instances_T_W04_N01.json",
+        "ext": ".json",
+        "tile_id": "T_W04_N01",
+        "url": "./assets/vegetation/instances_T_W04_N01.json",
+        "size_bytes": 579487
+      },
+      {
         "id": "instances_T_W04_S01",
         "filename": "instances_T_W04_S01.json",
         "ext": ".json",
         "tile_id": "T_W04_S01",
         "url": "./assets/vegetation/instances_T_W04_S01.json",
         "size_bytes": 407472
-      },
-      {
-        "id": "instances_T_W04_N01",
-        "filename": "instances_T_W04_N01.json",
-        "ext": ".json",
-        "tile_id": "T_W04_N01",
-        "url": "./assets/vegetation_expanded/instances_T_W04_N01.json",
-        "size_bytes": 507728
       },
       {
         "id": "instances_T_E03_N03",
@@ -2888,20 +2354,20 @@
         "size_bytes": 417446
       },
       {
+        "id": "instances_T_W04_N02",
+        "filename": "instances_T_W04_N02.json",
+        "ext": ".json",
+        "tile_id": "T_W04_N02",
+        "url": "./assets/vegetation/instances_T_W04_N02.json",
+        "size_bytes": 402589
+      },
+      {
         "id": "instances_T_W04_S02",
         "filename": "instances_T_W04_S02.json",
         "ext": ".json",
         "tile_id": "T_W04_S02",
         "url": "./assets/vegetation/instances_T_W04_S02.json",
         "size_bytes": 399454
-      },
-      {
-        "id": "instances_T_W04_N02",
-        "filename": "instances_T_W04_N02.json",
-        "ext": ".json",
-        "tile_id": "T_W04_N02",
-        "url": "./assets/vegetation_expanded/instances_T_W04_N02.json",
-        "size_bytes": 506206
       },
       {
         "id": "instances_T_E00_N05",
@@ -2941,7 +2407,7 @@
         "ext": ".json",
         "tile_id": "T_E04_N03",
         "url": "./assets/vegetation/instances_T_E04_N03.json",
-        "size_bytes": 391379
+        "size_bytes": 393948
       },
       {
         "id": "instances_T_E04_S03",
@@ -2949,7 +2415,7 @@
         "ext": ".json",
         "tile_id": "T_E04_S03",
         "url": "./assets/vegetation/instances_T_E04_S03.json",
-        "size_bytes": 604588
+        "size_bytes": 613509
       },
       {
         "id": "instances_T_E05_N00",
@@ -3133,7 +2599,7 @@
         "ext": ".json",
         "tile_id": "T_E04_N04",
         "url": "./assets/vegetation/instances_T_E04_N04.json",
-        "size_bytes": 395238
+        "size_bytes": 396094
       },
       {
         "id": "instances_T_E04_S04",
@@ -3141,7 +2607,7 @@
         "ext": ".json",
         "tile_id": "T_E04_S04",
         "url": "./assets/vegetation/instances_T_E04_S04.json",
-        "size_bytes": 623137
+        "size_bytes": 616760
       },
       {
         "id": "instances_T_W04_N04",
@@ -3157,7 +2623,7 @@
         "ext": ".json",
         "tile_id": "T_W04_S04",
         "url": "./assets/vegetation/instances_T_W04_S04.json",
-        "size_bytes": 397660
+        "size_bytes": 404171
       },
       {
         "id": "instances_T_E03_S05",
@@ -3320,6 +2786,14 @@
         "size_bytes": 530874
       },
       {
+        "id": "instances_T_E06_N02",
+        "filename": "instances_T_E06_N02.json",
+        "ext": ".json",
+        "tile_id": "T_E06_N02",
+        "url": "./assets/vegetation/instances_T_E06_N02.json",
+        "size_bytes": 580834
+      },
+      {
         "id": "instances_T_E06_S02",
         "filename": "instances_T_E06_S02.json",
         "ext": ".json",
@@ -3333,7 +2807,7 @@
         "ext": ".json",
         "tile_id": "T_W06_S02",
         "url": "./assets/vegetation/instances_T_W06_S02.json",
-        "size_bytes": 414366
+        "size_bytes": 589850
       },
       {
         "id": "instances_T_E02_N06",
@@ -3350,14 +2824,6 @@
         "tile_id": "T_E02_S06",
         "url": "./assets/vegetation_expanded/instances_T_E02_S06.json",
         "size_bytes": 520273
-      },
-      {
-        "id": "instances_T_E06_N02",
-        "filename": "instances_T_E06_N02.json",
-        "ext": ".json",
-        "tile_id": "T_E06_N02",
-        "url": "./assets/vegetation_expanded/instances_T_E06_N02.json",
-        "size_bytes": 512153
       },
       {
         "id": "instances_T_W02_N06",
@@ -3405,7 +2871,7 @@
         "ext": ".json",
         "tile_id": "T_E05_S04",
         "url": "./assets/vegetation/instances_T_E05_S04.json",
-        "size_bytes": 362810
+        "size_bytes": 423476
       },
       {
         "id": "instances_T_W04_N05",
@@ -3414,6 +2880,14 @@
         "tile_id": "T_W04_N05",
         "url": "./assets/vegetation/instances_T_W04_N05.json",
         "size_bytes": 276569
+      },
+      {
+        "id": "instances_T_W04_S05",
+        "filename": "instances_T_W04_S05.json",
+        "ext": ".json",
+        "tile_id": "T_W04_S05",
+        "url": "./assets/vegetation/instances_T_W04_S05.json",
+        "size_bytes": 610971
       },
       {
         "id": "instances_T_W05_N04",
@@ -3438,14 +2912,6 @@
         "tile_id": "T_E04_N05",
         "url": "./assets/vegetation_expanded/instances_T_E04_N05.json",
         "size_bytes": 501208
-      },
-      {
-        "id": "instances_T_W04_S05",
-        "filename": "instances_T_W04_S05.json",
-        "ext": ".json",
-        "tile_id": "T_W04_S05",
-        "url": "./assets/vegetation_expanded/instances_T_W04_S05.json",
-        "size_bytes": 530594
       },
       {
         "id": "instances_T_E06_S03",
@@ -3632,6 +3098,14 @@
         "size_bytes": 906900
       },
       {
+        "id": "instances_T_W04_S06",
+        "filename": "instances_T_W04_S06.json",
+        "ext": ".json",
+        "tile_id": "T_W04_S06",
+        "url": "./assets/vegetation/instances_T_W04_S06.json",
+        "size_bytes": 621319
+      },
+      {
         "id": "instances_T_W06_S04",
         "filename": "instances_T_W06_S04.json",
         "ext": ".json",
@@ -3662,14 +3136,6 @@
         "tile_id": "T_W04_N06",
         "url": "./assets/vegetation_expanded/instances_T_W04_N06.json",
         "size_bytes": 525745
-      },
-      {
-        "id": "instances_T_W04_S06",
-        "filename": "instances_T_W04_S06.json",
-        "ext": ".json",
-        "tile_id": "T_W04_S06",
-        "url": "./assets/vegetation_expanded/instances_T_W04_S06.json",
-        "size_bytes": 534022
       },
       {
         "id": "instances_T_W06_N04",
@@ -3704,6 +3170,14 @@
         "size_bytes": 509829
       },
       {
+        "id": "instances_T_E02_S07",
+        "filename": "instances_T_E02_S07.json",
+        "ext": ".json",
+        "tile_id": "T_E02_S07",
+        "url": "./assets/vegetation_expanded/instances_T_E02_S07.json",
+        "size_bytes": 526494
+      },
+      {
         "id": "instances_T_W02_N07",
         "filename": "instances_T_W02_N07.json",
         "ext": ".json",
@@ -3733,7 +3207,7 @@
         "ext": ".json",
         "tile_id": "T_E07_S03",
         "url": "./assets/vegetation/instances_T_E07_S03.json",
-        "size_bytes": 866154
+        "size_bytes": 725294
       },
       {
         "id": "instances_T_E03_N07",
@@ -3742,6 +3216,22 @@
         "tile_id": "T_E03_N07",
         "url": "./assets/vegetation_expanded/instances_T_E03_N07.json",
         "size_bytes": 515166
+      },
+      {
+        "id": "instances_T_E03_S07",
+        "filename": "instances_T_E03_S07.json",
+        "ext": ".json",
+        "tile_id": "T_E03_S07",
+        "url": "./assets/vegetation_expanded/instances_T_E03_S07.json",
+        "size_bytes": 513402
+      },
+      {
+        "id": "instances_T_E07_N03",
+        "filename": "instances_T_E07_N03.json",
+        "ext": ".json",
+        "tile_id": "T_E07_N03",
+        "url": "./assets/vegetation_expanded/instances_T_E07_N03.json",
+        "size_bytes": 507082
       },
       {
         "id": "instances_T_W03_N07",
@@ -3781,7 +3271,7 @@
         "ext": ".json",
         "tile_id": "T_W05_S06",
         "url": "./assets/vegetation/instances_T_W05_S06.json",
-        "size_bytes": 385279
+        "size_bytes": 218442
       },
       {
         "id": "instances_T_W06_S05",
@@ -3800,12 +3290,36 @@
         "size_bytes": 508169
       },
       {
+        "id": "instances_T_E06_N05",
+        "filename": "instances_T_E06_N05.json",
+        "ext": ".json",
+        "tile_id": "T_E06_N05",
+        "url": "./assets/vegetation_expanded/instances_T_E06_N05.json",
+        "size_bytes": 514424
+      },
+      {
+        "id": "instances_T_W05_N06",
+        "filename": "instances_T_W05_N06.json",
+        "ext": ".json",
+        "tile_id": "T_W05_N06",
+        "url": "./assets/vegetation_expanded/instances_T_W05_N06.json",
+        "size_bytes": 541171
+      },
+      {
+        "id": "instances_T_E07_N04",
+        "filename": "instances_T_E07_N04.json",
+        "ext": ".json",
+        "tile_id": "T_E07_N04",
+        "url": "./assets/vegetation/instances_T_E07_N04.json",
+        "size_bytes": 399756
+      },
+      {
         "id": "instances_T_E07_S04",
         "filename": "instances_T_E07_S04.json",
         "ext": ".json",
         "tile_id": "T_E07_S04",
         "url": "./assets/vegetation/instances_T_E07_S04.json",
-        "size_bytes": 854061
+        "size_bytes": 734767
       },
       {
         "id": "instances_T_E04_N07",
@@ -3814,6 +3328,14 @@
         "tile_id": "T_E04_N07",
         "url": "./assets/vegetation_expanded/instances_T_E04_N07.json",
         "size_bytes": 507312
+      },
+      {
+        "id": "instances_T_E04_S07",
+        "filename": "instances_T_E04_S07.json",
+        "ext": ".json",
+        "tile_id": "T_E04_S07",
+        "url": "./assets/vegetation_expanded/instances_T_E04_S07.json",
+        "size_bytes": 518259
       },
       {
         "id": "instances_T_W04_N07",
@@ -3864,6 +3386,22 @@
         "size_bytes": 413763
       },
       {
+        "id": "instances_T_E06_N06",
+        "filename": "instances_T_E06_N06.json",
+        "ext": ".json",
+        "tile_id": "T_E06_N06",
+        "url": "./assets/vegetation_expanded/instances_T_E06_N06.json",
+        "size_bytes": 522510
+      },
+      {
+        "id": "instances_T_W06_N06",
+        "filename": "instances_T_W06_N06.json",
+        "ext": ".json",
+        "tile_id": "T_W06_N06",
+        "url": "./assets/vegetation_expanded/instances_T_W06_N06.json",
+        "size_bytes": 537850
+      },
+      {
         "id": "instances_T_E03_S08",
         "filename": "instances_T_E03_S08.json",
         "ext": ".json",
@@ -3880,12 +3418,20 @@
         "size_bytes": 856887
       },
       {
+        "id": "instances_T_W08_S03",
+        "filename": "instances_T_W08_S03.json",
+        "ext": ".json",
+        "tile_id": "T_W08_S03",
+        "url": "./assets/vegetation/instances_T_W08_S03.json",
+        "size_bytes": 596617
+      },
+      {
         "id": "instances_T_E07_S05",
         "filename": "instances_T_E07_S05.json",
         "ext": ".json",
         "tile_id": "T_E07_S05",
         "url": "./assets/vegetation/instances_T_E07_S05.json",
-        "size_bytes": 800500
+        "size_bytes": 705787
       },
       {
         "id": "instances_T_E05_N07",
@@ -3894,6 +3440,38 @@
         "tile_id": "T_E05_N07",
         "url": "./assets/vegetation_expanded/instances_T_E05_N07.json",
         "size_bytes": 515192
+      },
+      {
+        "id": "instances_T_E05_S07",
+        "filename": "instances_T_E05_S07.json",
+        "ext": ".json",
+        "tile_id": "T_E05_S07",
+        "url": "./assets/vegetation_expanded/instances_T_E05_S07.json",
+        "size_bytes": 528271
+      },
+      {
+        "id": "instances_T_W05_N07",
+        "filename": "instances_T_W05_N07.json",
+        "ext": ".json",
+        "tile_id": "T_W05_N07",
+        "url": "./assets/vegetation_expanded/instances_T_W05_N07.json",
+        "size_bytes": 531938
+      },
+      {
+        "id": "instances_T_W05_S07",
+        "filename": "instances_T_W05_S07.json",
+        "ext": ".json",
+        "tile_id": "T_W05_S07",
+        "url": "./assets/vegetation_expanded/instances_T_W05_S07.json",
+        "size_bytes": 549352
+      },
+      {
+        "id": "instances_T_E08_N04",
+        "filename": "instances_T_E08_N04.json",
+        "ext": ".json",
+        "tile_id": "T_E08_N04",
+        "url": "./assets/vegetation/instances_T_E08_N04.json",
+        "size_bytes": 397624
       },
       {
         "id": "instances_T_E08_S04",
@@ -3936,6 +3514,38 @@
         "size_bytes": 432758
       },
       {
+        "id": "instances_T_W09_S02",
+        "filename": "instances_T_W09_S02.json",
+        "ext": ".json",
+        "tile_id": "T_W09_S02",
+        "url": "./assets/vegetation/instances_T_W09_S02.json",
+        "size_bytes": 407340
+      },
+      {
+        "id": "instances_T_E06_N07",
+        "filename": "instances_T_E06_N07.json",
+        "ext": ".json",
+        "tile_id": "T_E06_N07",
+        "url": "./assets/vegetation_expanded/instances_T_E06_N07.json",
+        "size_bytes": 524930
+      },
+      {
+        "id": "instances_T_E06_S07",
+        "filename": "instances_T_E06_S07.json",
+        "ext": ".json",
+        "tile_id": "T_E06_S07",
+        "url": "./assets/vegetation_expanded/instances_T_E06_S07.json",
+        "size_bytes": 528794
+      },
+      {
+        "id": "instances_T_W06_N07",
+        "filename": "instances_T_W06_N07.json",
+        "ext": ".json",
+        "tile_id": "T_W06_N07",
+        "url": "./assets/vegetation_expanded/instances_T_W06_N07.json",
+        "size_bytes": 541276
+      },
+      {
         "id": "instances_T_E08_N05",
         "filename": "instances_T_E08_N05.json",
         "ext": ".json",
@@ -3950,6 +3560,30 @@
         "tile_id": "T_E08_S05",
         "url": "./assets/vegetation/instances_T_E08_S05.json",
         "size_bytes": 329678
+      },
+      {
+        "id": "instances_T_W09_S03",
+        "filename": "instances_T_W09_S03.json",
+        "ext": ".json",
+        "tile_id": "T_W09_S03",
+        "url": "./assets/vegetation/instances_T_W09_S03.json",
+        "size_bytes": 409800
+      },
+      {
+        "id": "instances_T_E09_N04",
+        "filename": "instances_T_E09_N04.json",
+        "ext": ".json",
+        "tile_id": "T_E09_N04",
+        "url": "./assets/vegetation/instances_T_E09_N04.json",
+        "size_bytes": 404916
+      },
+      {
+        "id": "instances_T_W09_S04",
+        "filename": "instances_T_W09_S04.json",
+        "ext": ".json",
+        "tile_id": "T_W09_S04",
+        "url": "./assets/vegetation/instances_T_W09_S04.json",
+        "size_bytes": 410607
       },
       {
         "id": "instances_T_E00_S10",
@@ -3989,7 +3623,7 @@
         "ext": ".json",
         "tile_id": "T_E02_S10",
         "url": "./assets/vegetation/instances_T_E02_S10.json",
-        "size_bytes": 353304
+        "size_bytes": 295967
       },
       {
         "id": "instances_T_E05_S09",
@@ -4016,6 +3650,14 @@
         "size_bytes": 792089
       },
       {
+        "id": "instances_T_E03_S10",
+        "filename": "instances_T_E03_S10.json",
+        "ext": ".json",
+        "tile_id": "T_E03_S10",
+        "url": "./assets/vegetation/instances_T_E03_S10.json",
+        "size_bytes": 394588
+      },
+      {
         "id": "instances_T_W03_S10",
         "filename": "instances_T_W03_S10.json",
         "ext": ".json",
@@ -4024,12 +3666,36 @@
         "size_bytes": 390075
       },
       {
+        "id": "instances_T_W10_S03",
+        "filename": "instances_T_W10_S03.json",
+        "ext": ".json",
+        "tile_id": "T_W10_S03",
+        "url": "./assets/vegetation/instances_T_W10_S03.json",
+        "size_bytes": 410086
+      },
+      {
         "id": "instances_T_W08_S07",
         "filename": "instances_T_W08_S07.json",
         "ext": ".json",
         "tile_id": "T_W08_S07",
         "url": "./assets/vegetation/instances_T_W08_S07.json",
         "size_bytes": 421699
+      },
+      {
+        "id": "instances_T_E04_S10",
+        "filename": "instances_T_E04_S10.json",
+        "ext": ".json",
+        "tile_id": "T_E04_S10",
+        "url": "./assets/vegetation/instances_T_E04_S10.json",
+        "size_bytes": 386753
+      },
+      {
+        "id": "instances_T_E10_N04",
+        "filename": "instances_T_E10_N04.json",
+        "ext": ".json",
+        "tile_id": "T_E10_N04",
+        "url": "./assets/vegetation/instances_T_E10_N04.json",
+        "size_bytes": 395103
       },
       {
         "id": "instances_T_W04_S10",
@@ -4077,7 +3743,15 @@
         "ext": ".json",
         "tile_id": "T_E05_S10",
         "url": "./assets/vegetation/instances_T_E05_S10.json",
-        "size_bytes": 336715
+        "size_bytes": 212436
+      },
+      {
+        "id": "instances_T_E10_N05",
+        "filename": "instances_T_E10_N05.json",
+        "ext": ".json",
+        "tile_id": "T_E10_N05",
+        "url": "./assets/vegetation/instances_T_E10_N05.json",
+        "size_bytes": 404688
       },
       {
         "id": "instances_T_W08_S08",
@@ -4112,12 +3786,28 @@
         "size_bytes": 408361
       },
       {
+        "id": "instances_T_E06_S10",
+        "filename": "instances_T_E06_S10.json",
+        "ext": ".json",
+        "tile_id": "T_E06_S10",
+        "url": "./assets/vegetation/instances_T_E06_S10.json",
+        "size_bytes": 600210
+      },
+      {
+        "id": "instances_T_W10_S06",
+        "filename": "instances_T_W10_S06.json",
+        "ext": ".json",
+        "tile_id": "T_W10_S06",
+        "url": "./assets/vegetation/instances_T_W10_S06.json",
+        "size_bytes": 622000
+      },
+      {
         "id": "instances_T_E04_S11",
         "filename": "instances_T_E04_S11.json",
         "ext": ".json",
         "tile_id": "T_E04_S11",
         "url": "./assets/vegetation/instances_T_E04_S11.json",
-        "size_bytes": 330360
+        "size_bytes": 258734
       },
       {
         "id": "instances_T_W04_S11",
@@ -4144,12 +3834,36 @@
         "size_bytes": 336441
       },
       {
+        "id": "instances_T_E05_S11",
+        "filename": "instances_T_E05_S11.json",
+        "ext": ".json",
+        "tile_id": "T_E05_S11",
+        "url": "./assets/vegetation/instances_T_E05_S11.json",
+        "size_bytes": 556615
+      },
+      {
         "id": "instances_T_W05_S11",
         "filename": "instances_T_W05_S11.json",
         "ext": ".json",
         "tile_id": "T_W05_S11",
         "url": "./assets/vegetation/instances_T_W05_S11.json",
         "size_bytes": 404943
+      },
+      {
+        "id": "instances_T_W11_S05",
+        "filename": "instances_T_W11_S05.json",
+        "ext": ".json",
+        "tile_id": "T_W11_S05",
+        "url": "./assets/vegetation/instances_T_W11_S05.json",
+        "size_bytes": 415041
+      },
+      {
+        "id": "instances_T_W07_S10",
+        "filename": "instances_T_W07_S10.json",
+        "ext": ".json",
+        "tile_id": "T_W07_S10",
+        "url": "./assets/vegetation/instances_T_W07_S10.json",
+        "size_bytes": 631283
       },
       {
         "id": "instances_T_W10_S07",
@@ -4168,6 +3882,22 @@
         "size_bytes": 375003
       },
       {
+        "id": "instances_T_E06_S11",
+        "filename": "instances_T_E06_S11.json",
+        "ext": ".json",
+        "tile_id": "T_E06_S11",
+        "url": "./assets/vegetation/instances_T_E06_S11.json",
+        "size_bytes": 416448
+      },
+      {
+        "id": "instances_T_W11_S06",
+        "filename": "instances_T_W11_S06.json",
+        "ext": ".json",
+        "tile_id": "T_W11_S06",
+        "url": "./assets/vegetation/instances_T_W11_S06.json",
+        "size_bytes": 416687
+      },
+      {
         "id": "instances_T_E04_S12",
         "filename": "instances_T_E04_S12.json",
         "ext": ".json",
@@ -4182,6 +3912,14 @@
         "tile_id": "T_W09_S09",
         "url": "./assets/vegetation/instances_T_W09_S09.json",
         "size_bytes": 230158
+      },
+      {
+        "id": "instances_T_W08_S10",
+        "filename": "instances_T_W08_S10.json",
+        "ext": ".json",
+        "tile_id": "T_W08_S10",
+        "url": "./assets/vegetation/instances_T_W08_S10.json",
+        "size_bytes": 379913
       },
       {
         "id": "instances_T_W05_S12",
@@ -4200,6 +3938,14 @@
         "size_bytes": 792034
       },
       {
+        "id": "instances_T_W11_S07",
+        "filename": "instances_T_W11_S07.json",
+        "ext": ".json",
+        "tile_id": "T_W11_S07",
+        "url": "./assets/vegetation/instances_T_W11_S07.json",
+        "size_bytes": 417821
+      },
+      {
         "id": "instances_T_W03_S13",
         "filename": "instances_T_W03_S13.json",
         "ext": ".json",
@@ -4216,6 +3962,30 @@
         "size_bytes": 471668
       },
       {
+        "id": "instances_T_W12_S06",
+        "filename": "instances_T_W12_S06.json",
+        "ext": ".json",
+        "tile_id": "T_W12_S06",
+        "url": "./assets/vegetation/instances_T_W12_S06.json",
+        "size_bytes": 419056
+      },
+      {
+        "id": "instances_T_W09_S10",
+        "filename": "instances_T_W09_S10.json",
+        "ext": ".json",
+        "tile_id": "T_W09_S10",
+        "url": "./assets/vegetation/instances_T_W09_S10.json",
+        "size_bytes": 336968
+      },
+      {
+        "id": "instances_T_W08_S11",
+        "filename": "instances_T_W08_S11.json",
+        "ext": ".json",
+        "tile_id": "T_W08_S11",
+        "url": "./assets/vegetation/instances_T_W08_S11.json",
+        "size_bytes": 627335
+      },
+      {
         "id": "instances_T_W07_S12",
         "filename": "instances_T_W07_S12.json",
         "ext": ".json",
@@ -4230,6 +4000,14 @@
         "tile_id": "T_W05_S13",
         "url": "./assets/vegetation/instances_T_W05_S13.json",
         "size_bytes": 430443
+      },
+      {
+        "id": "instances_T_W09_S11",
+        "filename": "instances_T_W09_S11.json",
+        "ext": ".json",
+        "tile_id": "T_W09_S11",
+        "url": "./assets/vegetation/instances_T_W09_S11.json",
+        "size_bytes": 419907
       },
       {
         "id": "instances_T_W03_S14",
@@ -4828,12 +4606,28 @@
         "size_bytes": 1424340
       },
       {
+        "id": "ultra_lm_21_lang_cu_lan",
+        "filename": "ultra_lm_21_lang_cu_lan.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/hero_landmarks_ultra/ultra_lm_21_lang_cu_lan.glb",
+        "size_bytes": 1870424
+      },
+      {
         "id": "ultra_lm_22_dien_gio_cau_dat",
         "filename": "ultra_lm_22_dien_gio_cau_dat.glb",
         "ext": ".glb",
         "tile_id": null,
         "url": "./assets/hero_landmarks_ultra/ultra_lm_22_dien_gio_cau_dat.glb",
         "size_bytes": 1438420
+      },
+      {
+        "id": "ultra_lm_23_san_bay_lien_khuong",
+        "filename": "ultra_lm_23_san_bay_lien_khuong.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/hero_landmarks_ultra/ultra_lm_23_san_bay_lien_khuong.glb",
+        "size_bytes": 1454992
       },
       {
         "id": "ultra_lm_24_chua_linh_an_thac_voi",
@@ -4852,12 +4646,92 @@
         "size_bytes": 1585632
       },
       {
+        "id": "ultra_lm_26_nha_tho_cam_ly",
+        "filename": "ultra_lm_26_nha_tho_cam_ly.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/hero_landmarks_ultra/ultra_lm_26_nha_tho_cam_ly.glb",
+        "size_bytes": 1540248
+      },
+      {
         "id": "ultra_lm_27_vien_pasteur_da_lat",
         "filename": "ultra_lm_27_vien_pasteur_da_lat.glb",
         "ext": ".glb",
         "tile_id": null,
         "url": "./assets/hero_landmarks_ultra/ultra_lm_27_vien_pasteur_da_lat.glb",
         "size_bytes": 1499800
+      },
+      {
+        "id": "ultra_lm_28_chua_linh_quy_phap_an",
+        "filename": "ultra_lm_28_chua_linh_quy_phap_an.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/hero_landmarks_ultra/ultra_lm_28_chua_linh_quy_phap_an.glb",
+        "size_bytes": 1458136
+      },
+      {
+        "id": "ultra_lm_29_cuc_ban_do_dalat",
+        "filename": "ultra_lm_29_cuc_ban_do_dalat.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/hero_landmarks_ultra/ultra_lm_29_cuc_ban_do_dalat.glb",
+        "size_bytes": 1522172
+      },
+      {
+        "id": "ultra_lm_30_thien_vien_van_hanh",
+        "filename": "ultra_lm_30_thien_vien_van_hanh.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/hero_landmarks_ultra/ultra_lm_30_thien_vien_van_hanh.glb",
+        "size_bytes": 1307856
+      },
+      {
+        "id": "ultra_lm_31_nha_tho_du_sinh",
+        "filename": "ultra_lm_31_nha_tho_du_sinh.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/hero_landmarks_ultra/ultra_lm_31_nha_tho_du_sinh.glb",
+        "size_bytes": 1602456
+      },
+      {
+        "id": "ultra_lm_32_duong_ham_dieu_khac",
+        "filename": "ultra_lm_32_duong_ham_dieu_khac.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/hero_landmarks_ultra/ultra_lm_32_duong_ham_dieu_khac.glb",
+        "size_bytes": 1610500
+      },
+      {
+        "id": "ultra_lm_33_couvent_des_oiseaux",
+        "filename": "ultra_lm_33_couvent_des_oiseaux.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/hero_landmarks_ultra/ultra_lm_33_couvent_des_oiseaux.glb",
+        "size_bytes": 1654300
+      },
+      {
+        "id": "ultra_lm_34_chua_linh_son",
+        "filename": "ultra_lm_34_chua_linh_son.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/hero_landmarks_ultra/ultra_lm_34_chua_linh_son.glb",
+        "size_bytes": 1662420
+      },
+      {
+        "id": "ultra_lm_35_dinh_tinh_truong",
+        "filename": "ultra_lm_35_dinh_tinh_truong.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/hero_landmarks_ultra/ultra_lm_35_dinh_tinh_truong.glb",
+        "size_bytes": 1826496
+      },
+      {
+        "id": "ultra_lm_36_nha_may_che_cau_dat_1927",
+        "filename": "ultra_lm_36_nha_may_che_cau_dat_1927.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/hero_landmarks_ultra/ultra_lm_36_nha_may_che_cau_dat_1927.glb",
+        "size_bytes": 1666316
       },
       {
         "id": "lm_13_bao_tang_lam_dong",
@@ -5100,6 +4974,38 @@
         "size_bytes": 395308
       },
       {
+        "id": "lm_49_rap_hoa_binh_khu_hoa_binh",
+        "filename": "lm_49_rap_hoa_binh_khu_hoa_binh.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/landmarks/lm_49_rap_hoa_binh_khu_hoa_binh.glb",
+        "size_bytes": 411468
+      },
+      {
+        "id": "lm_50_chua_linh_phong_su_nu",
+        "filename": "lm_50_chua_linh_phong_su_nu.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/landmarks/lm_50_chua_linh_phong_su_nu.glb",
+        "size_bytes": 315608
+      },
+      {
+        "id": "lm_51_nha_cau_lac_bo_golf_doi_cu",
+        "filename": "lm_51_nha_cau_lac_bo_golf_doi_cu.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/landmarks/lm_51_nha_cau_lac_bo_golf_doi_cu.glb",
+        "size_bytes": 320356
+      },
+      {
+        "id": "lm_52_nha_tho_ka_don_don_duong",
+        "filename": "lm_52_nha_tho_ka_don_don_duong.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/landmarks/lm_52_nha_tho_ka_don_don_duong.glb",
+        "size_bytes": 410616
+      },
+      {
         "id": "fv_bt_05_dinh_nguyen_huu_hao_nam_phuong_palace",
         "filename": "fv_bt_05_dinh_nguyen_huu_hao_nam_phuong_palace.glb",
         "ext": ".glb",
@@ -5130,6 +5036,30 @@
         "tile_id": null,
         "url": "./assets/french_villas/fv_bt_08_bao_tang_lam_dong_ethnology_pavilion.glb",
         "size_bytes": 870056
+      },
+      {
+        "id": "fv_btx_05_bui_thi_xuan_15_lake_corridor_manor",
+        "filename": "fv_btx_05_bui_thi_xuan_15_lake_corridor_manor.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/french_villas/fv_btx_05_bui_thi_xuan_15_lake_corridor_manor.glb",
+        "size_bytes": 959808
+      },
+      {
+        "id": "fv_btx_06_bui_thi_xuan_58_normandy_turret_villa",
+        "filename": "fv_btx_06_bui_thi_xuan_58_normandy_turret_villa.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/french_villas/fv_btx_06_bui_thi_xuan_58_normandy_turret_villa.glb",
+        "size_bytes": 882868
+      },
+      {
+        "id": "fv_btx_07_bui_thi_xuan_117_le_recit_boutique_mansard",
+        "filename": "fv_btx_07_bui_thi_xuan_117_le_recit_boutique_mansard.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/french_villas/fv_btx_07_bui_thi_xuan_117_le_recit_boutique_mansard.glb",
+        "size_bytes": 899316
       },
       {
         "id": "fv_cb_04_cuc_ban_do_dalat_mansard_main_hq",
@@ -5468,6 +5398,38 @@
         "size_bytes": 797736
       },
       {
+        "id": "fv_ltk_01_ly_thuong_kiet_02_normandy_hill_manor",
+        "filename": "fv_ltk_01_ly_thuong_kiet_02_normandy_hill_manor.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/french_villas/fv_ltk_01_ly_thuong_kiet_02_normandy_hill_manor.glb",
+        "size_bytes": 959160
+      },
+      {
+        "id": "fv_ltk_02_ly_thuong_kiet_10_colombage_garden_villa",
+        "filename": "fv_ltk_02_ly_thuong_kiet_10_colombage_garden_villa.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/french_villas/fv_ltk_02_ly_thuong_kiet_10_colombage_garden_villa.glb",
+        "size_bytes": 873400
+      },
+      {
+        "id": "fv_ltk_03_ly_thuong_kiet_18_brittany_slate_villa",
+        "filename": "fv_ltk_03_ly_thuong_kiet_18_brittany_slate_villa.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/french_villas/fv_ltk_03_ly_thuong_kiet_18_brittany_slate_villa.glb",
+        "size_bytes": 870976
+      },
+      {
+        "id": "fv_ltk_04_ly_thuong_kiet_26_mansard_noble_manor",
+        "filename": "fv_ltk_04_ly_thuong_kiet_26_mansard_noble_manor.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/french_villas/fv_ltk_04_ly_thuong_kiet_26_mansard_noble_manor.glb",
+        "size_bytes": 898164
+      },
+      {
         "id": "fv_nb_08_doc_nha_bo_dao_duy_tu_lower_stair_shophouses",
         "filename": "fv_nb_08_doc_nha_bo_dao_duy_tu_lower_stair_shophouses.glb",
         "ext": ".glb",
@@ -5522,6 +5484,30 @@
         "tile_id": null,
         "url": "./assets/french_villas/fv_nd_07_nguyen_du_villa_25_provence_rose_manor.glb",
         "size_bytes": 872852
+      },
+      {
+        "id": "fv_nvt_08_nguyen_van_troi_12_colonial_avenue_villa",
+        "filename": "fv_nvt_08_nguyen_van_troi_12_colonial_avenue_villa.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/french_villas/fv_nvt_08_nguyen_van_troi_12_colonial_avenue_villa.glb",
+        "size_bytes": 873400
+      },
+      {
+        "id": "fv_nvt_09_nguyen_van_troi_48_savoy_brittany_manor",
+        "filename": "fv_nvt_09_nguyen_van_troi_48_savoy_brittany_manor.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/french_villas/fv_nvt_09_nguyen_van_troi_48_savoy_brittany_manor.glb",
+        "size_bytes": 877220
+      },
+      {
+        "id": "fv_pdp_10_phan_dinh_phung_60_grand_mansard_manor",
+        "filename": "fv_pdp_10_phan_dinh_phung_60_grand_mansard_manor.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/french_villas/fv_pdp_10_phan_dinh_phung_60_grand_mansard_manor.glb",
+        "size_bytes": 909780
       },
       {
         "id": "fv_pdtv_08_dinh_tien_hoang_09_pio_x_french_pavilion",
@@ -5908,6 +5894,14 @@
         "size_bytes": 1131844
       },
       {
+        "id": "tc_10_chua_thien_vuong_co_sat_and_van_thanh_flower_village",
+        "filename": "tc_10_chua_thien_vuong_co_sat_and_van_thanh_flower_village.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/tourism_complexes/tc_10_chua_thien_vuong_co_sat_and_van_thanh_flower_village.glb",
+        "size_bytes": 766900
+      },
+      {
         "id": "agri_w1_da_thien_valley_T_E01_N02",
         "filename": "agri_w1_da_thien_valley_T_E01_N02.glb",
         "ext": ".glb",
@@ -5970,6 +5964,54 @@
         "tile_id": null,
         "url": "./assets/ring3_districts_ultra/ring3_auto_b02_lam_ha_dinh_van_town_and_phuc_tho_coffee_macadamia_lake.glb",
         "size_bytes": 2279116
+      },
+      {
+        "id": "ring3_auto_b03_don_duong_ka_do_agri_valley_and_ka_don_churu_church",
+        "filename": "ring3_auto_b03_don_duong_ka_do_agri_valley_and_ka_don_churu_church.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/ring3_districts_ultra/ring3_auto_b03_don_duong_ka_do_agri_valley_and_ka_don_churu_church.glb",
+        "size_bytes": 1899868
+      },
+      {
+        "id": "ring3_auto_b03_duc_trong_ta_nang_phan_dung_grassland_and_3province_marker",
+        "filename": "ring3_auto_b03_duc_trong_ta_nang_phan_dung_grassland_and_3province_marker.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/ring3_districts_ultra/ring3_auto_b03_duc_trong_ta_nang_phan_dung_grassland_and_3province_marker.glb",
+        "size_bytes": 1835232
+      },
+      {
+        "id": "ring3_auto_b04_lac_duong_da_nhim_da_chais_sturgeon_farms_and_khanh_le_pass_head",
+        "filename": "ring3_auto_b04_lac_duong_da_nhim_da_chais_sturgeon_farms_and_khanh_le_pass_head.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/ring3_districts_ultra/ring3_auto_b04_lac_duong_da_nhim_da_chais_sturgeon_farms_and_khanh_le_pass_head.glb",
+        "size_bytes": 2047504
+      },
+      {
+        "id": "ring3_auto_b04_lam_ha_dong_thanh_eco_reservoir_and_gia_lam_coffee_hills",
+        "filename": "ring3_auto_b04_lam_ha_dong_thanh_eco_reservoir_and_gia_lam_coffee_hills.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/ring3_districts_ultra/ring3_auto_b04_lam_ha_dong_thanh_eco_reservoir_and_gia_lam_coffee_hills.glb",
+        "size_bytes": 1889140
+      },
+      {
+        "id": "ring3_auto_b05_don_duong_samten_hills_37m_prayer_wheel_and_da_ron_golf_lake",
+        "filename": "ring3_auto_b05_don_duong_samten_hills_37m_prayer_wheel_and_da_ron_golf_lake.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/ring3_districts_ultra/ring3_auto_b05_don_duong_samten_hills_37m_prayer_wheel_and_da_ron_golf_lake.glb",
+        "size_bytes": 1848532
+      },
+      {
+        "id": "ring3_auto_b05_duc_trong_da_loan_ninh_loan_town_and_ta_hine_ql28b_junction",
+        "filename": "ring3_auto_b05_duc_trong_da_loan_ninh_loan_town_and_ta_hine_ql28b_junction.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/ring3_districts_ultra/ring3_auto_b05_duc_trong_da_loan_ninh_loan_town_and_ta_hine_ql28b_junction.glb",
+        "size_bytes": 1818600
       },
       {
         "id": "ring3_w1_lien_khuong_airport_complex",
@@ -6126,6 +6168,22 @@
     ],
     "roads": [
       {
+        "id": "dalat_heritage_villa_driveways_courtyards_and_granite_taluy_walls_auto_b04",
+        "filename": "dalat_heritage_villa_driveways_courtyards_and_granite_taluy_walls_auto_b04.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/osm_true_roads_hydro/dalat_heritage_villa_driveways_courtyards_and_granite_taluy_walls_auto_b04.glb",
+        "size_bytes": 2274584
+      },
+      {
+        "id": "dalat_historic_cog_railway_traimat_caudat_dran_and_forest_trails_auto_b03",
+        "filename": "dalat_historic_cog_railway_traimat_caudat_dran_and_forest_trails_auto_b03.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/osm_true_roads_hydro/dalat_historic_cog_railway_traimat_caudat_dran_and_forest_trails_auto_b03.glb",
+        "size_bytes": 4503048
+      },
+      {
         "id": "dalat_park_ponds_agricultural_reservoirs_and_irrigation_canals_auto_b02",
         "filename": "dalat_park_ponds_agricultural_reservoirs_and_irrigation_canals_auto_b02.glb",
         "ext": ".glb",
@@ -6150,6 +6208,14 @@
         "size_bytes": 3211364
       },
       {
+        "id": "dalat_suoi_tia_flooded_forest_wetlands_and_railway_culvert_streams_auto_b03",
+        "filename": "dalat_suoi_tia_flooded_forest_wetlands_and_railway_culvert_streams_auto_b03.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/osm_true_roads_hydro/dalat_suoi_tia_flooded_forest_wetlands_and_railway_culvert_streams_auto_b03.glb",
+        "size_bytes": 734592
+      },
+      {
         "id": "dalat_urban_parks_campus_and_greenhouse_agro_roads_auto_b02",
         "filename": "dalat_urban_parks_campus_and_greenhouse_agro_roads_auto_b02.glb",
         "ext": ".glb",
@@ -6158,12 +6224,36 @@
         "size_bytes": 5535604
       },
       {
+        "id": "dalat_villa_ornamental_pools_cam_ly_embankment_and_stepped_drainage_auto_b04",
+        "filename": "dalat_villa_ornamental_pools_cam_ly_embankment_and_stepped_drainage_auto_b04.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/osm_true_roads_hydro/dalat_villa_ornamental_pools_cam_ly_embankment_and_stepped_drainage_auto_b04.glb",
+        "size_bytes": 822184
+      },
+      {
         "id": "ho_xuan_huong_true_shoreline_and_embankment_w1",
         "filename": "ho_xuan_huong_true_shoreline_and_embankment_w1.glb",
         "ext": ".glb",
         "tile_id": null,
         "url": "./assets/osm_true_roads_hydro/ho_xuan_huong_true_shoreline_and_embankment_w1.glb",
         "size_bytes": 1075776
+      },
+      {
+        "id": "lien_khuong_airfield_perimeter_drainage_canals_and_phu_hoi_eco_basins_auto_b05",
+        "filename": "lien_khuong_airfield_perimeter_drainage_canals_and_phu_hoi_eco_basins_auto_b05.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/osm_true_roads_hydro/lien_khuong_airfield_perimeter_drainage_canals_and_phu_hoi_eco_basins_auto_b05.glb",
+        "size_bytes": 634664
+      },
+      {
+        "id": "lien_khuong_airport_runway_09_27_taxiways_and_phu_hoi_industrial_roads_auto_b05",
+        "filename": "lien_khuong_airport_runway_09_27_taxiways_and_phu_hoi_industrial_roads_auto_b05.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/osm_true_roads_hydro/lien_khuong_airport_runway_09_27_taxiways_and_phu_hoi_industrial_roads_auto_b05.glb",
+        "size_bytes": 1828900
       },
       {
         "id": "ring0_hillside_slopes_and_connectors_w2",
@@ -6310,6 +6400,30 @@
         "size_bytes": 1106512
       },
       {
+        "id": "roads_ring2_c174",
+        "filename": "roads_ring2_c174.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/infrastructure_buildings/roads_ring2_c174.glb",
+        "size_bytes": 1399420
+      },
+      {
+        "id": "roads_ring2_c182",
+        "filename": "roads_ring2_c182.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/infrastructure_buildings/roads_ring2_c182.glb",
+        "size_bytes": 1287108
+      },
+      {
+        "id": "roads_ring2_c190",
+        "filename": "roads_ring2_c190.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/infrastructure_buildings/roads_ring2_c190.glb",
+        "size_bytes": 1321652
+      },
+      {
         "id": "roads_ring2_c500",
         "filename": "roads_ring2_c500.glb",
         "ext": ".glb",
@@ -6406,6 +6520,14 @@
         "size_bytes": 6545392
       },
       {
+        "id": "cau_treo_thac_voi_nam_ban_va_deo_linh_an_cam_ly_ha",
+        "filename": "cau_treo_thac_voi_nam_ban_va_deo_linh_an_cam_ly_ha.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/transport_infra/cau_treo_thac_voi_nam_ban_va_deo_linh_an_cam_ly_ha.glb",
+        "size_bytes": 6551360
+      },
+      {
         "id": "dap_tran_cau_day_vang_va_deo_ven_ho_tuyen_lam",
         "filename": "dap_tran_cau_day_vang_va_deo_ven_ho_tuyen_lam.glb",
         "ext": ".glb",
@@ -6428,6 +6550,14 @@
         "tile_id": null,
         "url": "./assets/transport_infra/deo_jeep_dinh_radar_langbiang_va_deo_lac_duong.glb",
         "size_bytes": 6901576
+      },
+      {
+        "id": "deo_me_linh_nam_ban_ca_phe_chon_va_cau_can_ta_nung_ha",
+        "filename": "deo_me_linh_nam_ban_ca_phe_chon_va_cau_can_ta_nung_ha.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/transport_infra/deo_me_linh_nam_ban_ca_phe_chon_va_cau_can_ta_nung_ha.glb",
+        "size_bytes": 5486116
       },
       {
         "id": "deo_mimosa_mountain_pass",
@@ -6516,6 +6646,30 @@
         "tile_id": null,
         "url": "./assets/transport_infra/vong_xoay_dai_phun_nuoc_va_cau_chu_y_hoa_binh.glb",
         "size_bytes": 1333424
+      },
+      {
+        "id": "ul_w10_01_chika_farm_xuan_tho_alpaca_pasture_and_countryside_cafe",
+        "filename": "ul_w10_01_chika_farm_xuan_tho_alpaca_pasture_and_countryside_cafe.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/urban_life_props/ul_w10_01_chika_farm_xuan_tho_alpaca_pasture_and_countryside_cafe.glb",
+        "size_bytes": 1147048
+      },
+      {
+        "id": "ul_w10_02_da_sar_pass_ql27c_cloud_cafes_and_intercity_coach_convoy",
+        "filename": "ul_w10_02_da_sar_pass_ql27c_cloud_cafes_and_intercity_coach_convoy.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/urban_life_props/ul_w10_02_da_sar_pass_ql27c_cloud_cafes_and_intercity_coach_convoy.glb",
+        "size_bytes": 1139208
+      },
+      {
+        "id": "ul_w10_03_prenn_waterfall_gateway_electric_shuttles_and_tour_buses",
+        "filename": "ul_w10_03_prenn_waterfall_gateway_electric_shuttles_and_tour_buses.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/urban_life_props/ul_w10_03_prenn_waterfall_gateway_electric_shuttles_and_tour_buses.glb",
+        "size_bytes": 1334396
       },
       {
         "id": "ul_w1_01_cho_dem_gates_and_canopy_stalls",
@@ -6872,6 +7026,14 @@
         "size_bytes": 5150004
       },
       {
+        "id": "osm_buildings_T_W01_N02",
+        "filename": "osm_buildings_T_W01_N02.glb",
+        "ext": ".glb",
+        "tile_id": "T_W01_N02",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_W01_N02.glb",
+        "size_bytes": 4936888
+      },
+      {
         "id": "osm_buildings_T_W01_S02",
         "filename": "osm_buildings_T_W01_S02.glb",
         "ext": ".glb",
@@ -6880,20 +7042,12 @@
         "size_bytes": 2312452
       },
       {
-        "id": "buildings_T_W01_N02",
-        "filename": "buildings_T_W01_N02.glb",
-        "ext": ".glb",
-        "tile_id": "T_W01_N02",
-        "url": "./assets/building_tiles/buildings_T_W01_N02.glb",
-        "size_bytes": 1312300
-      },
-      {
-        "id": "buildings_T_W02_N01",
-        "filename": "buildings_T_W02_N01.glb",
+        "id": "osm_buildings_T_W02_N01",
+        "filename": "osm_buildings_T_W02_N01.glb",
         "ext": ".glb",
         "tile_id": "T_W02_N01",
-        "url": "./assets/building_tiles/buildings_T_W02_N01.glb",
-        "size_bytes": 1388024
+        "url": "./assets/osm_true_buildings/osm_buildings_T_W02_N01.glb",
+        "size_bytes": 5072536
       },
       {
         "id": "buildings_T_W02_S01",
@@ -6904,20 +7058,28 @@
         "size_bytes": 1333688
       },
       {
+        "id": "osm_buildings_T_E02_N02",
+        "filename": "osm_buildings_T_E02_N02.glb",
+        "ext": ".glb",
+        "tile_id": "T_E02_N02",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E02_N02.glb",
+        "size_bytes": 5188880
+      },
+      {
+        "id": "osm_buildings_T_W02_N02",
+        "filename": "osm_buildings_T_W02_N02.glb",
+        "ext": ".glb",
+        "tile_id": "T_W02_N02",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_W02_N02.glb",
+        "size_bytes": 4883788
+      },
+      {
         "id": "osm_buildings_T_W02_S02",
         "filename": "osm_buildings_T_W02_S02.glb",
         "ext": ".glb",
         "tile_id": "T_W02_S02",
         "url": "./assets/osm_true_buildings/osm_buildings_T_W02_S02.glb",
         "size_bytes": 4701960
-      },
-      {
-        "id": "buildings_T_E02_N02",
-        "filename": "buildings_T_E02_N02.glb",
-        "ext": ".glb",
-        "tile_id": "T_E02_N02",
-        "url": "./assets/building_tiles/buildings_T_E02_N02.glb",
-        "size_bytes": 1291536
       },
       {
         "id": "buildings_T_E02_S02",
@@ -6928,12 +7090,12 @@
         "size_bytes": 1279248
       },
       {
-        "id": "buildings_T_W02_N02",
-        "filename": "buildings_T_W02_N02.glb",
+        "id": "osm_buildings_T_E00_N03",
+        "filename": "osm_buildings_T_E00_N03.glb",
         "ext": ".glb",
-        "tile_id": "T_W02_N02",
-        "url": "./assets/building_tiles/buildings_T_W02_N02.glb",
-        "size_bytes": 1354768
+        "tile_id": "T_E00_N03",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E00_N03.glb",
+        "size_bytes": 5107620
       },
       {
         "id": "osm_buildings_T_E00_S03",
@@ -6960,12 +7122,20 @@
         "size_bytes": 5316512
       },
       {
-        "id": "buildings_T_E00_N03",
-        "filename": "buildings_T_E00_N03.glb",
+        "id": "osm_buildings_T_E01_N03",
+        "filename": "osm_buildings_T_E01_N03.glb",
         "ext": ".glb",
-        "tile_id": "T_E00_N03",
-        "url": "./assets/building_tiles/buildings_T_E00_N03.glb",
-        "size_bytes": 1165356
+        "tile_id": "T_E01_N03",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E01_N03.glb",
+        "size_bytes": 4999088
+      },
+      {
+        "id": "osm_buildings_T_E03_N01",
+        "filename": "osm_buildings_T_E03_N01.glb",
+        "ext": ".glb",
+        "tile_id": "T_E03_N01",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E03_N01.glb",
+        "size_bytes": 5041100
       },
       {
         "id": "osm_buildings_T_E03_S01",
@@ -6976,6 +7146,14 @@
         "size_bytes": 5243696
       },
       {
+        "id": "osm_buildings_T_W01_N03",
+        "filename": "osm_buildings_T_W01_N03.glb",
+        "ext": ".glb",
+        "tile_id": "T_W01_N03",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_W01_N03.glb",
+        "size_bytes": 5124620
+      },
+      {
         "id": "osm_buildings_T_W01_S03",
         "filename": "osm_buildings_T_W01_S03.glb",
         "ext": ".glb",
@@ -6984,36 +7162,12 @@
         "size_bytes": 4623176
       },
       {
-        "id": "buildings_T_E01_N03",
-        "filename": "buildings_T_E01_N03.glb",
-        "ext": ".glb",
-        "tile_id": "T_E01_N03",
-        "url": "./assets/building_tiles/buildings_T_E01_N03.glb",
-        "size_bytes": 1151468
-      },
-      {
         "id": "buildings_T_E01_S03",
         "filename": "buildings_T_E01_S03.glb",
         "ext": ".glb",
         "tile_id": "T_E01_S03",
         "url": "./assets/building_tiles/buildings_T_E01_S03.glb",
         "size_bytes": 853864
-      },
-      {
-        "id": "buildings_T_E03_N01",
-        "filename": "buildings_T_E03_N01.glb",
-        "ext": ".glb",
-        "tile_id": "T_E03_N01",
-        "url": "./assets/building_tiles/buildings_T_E03_N01.glb",
-        "size_bytes": 1250872
-      },
-      {
-        "id": "buildings_T_W01_N03",
-        "filename": "buildings_T_W01_N03.glb",
-        "ext": ".glb",
-        "tile_id": "T_W01_N03",
-        "url": "./assets/building_tiles/buildings_T_W01_N03.glb",
-        "size_bytes": 1161652
       },
       {
         "id": "buildings_T_W03_N01",
@@ -7032,12 +7186,20 @@
         "size_bytes": 1290816
       },
       {
-        "id": "buildings_T_E02_N03",
-        "filename": "buildings_T_E02_N03.glb",
+        "id": "osm_buildings_T_E02_N03",
+        "filename": "osm_buildings_T_E02_N03.glb",
         "ext": ".glb",
         "tile_id": "T_E02_N03",
-        "url": "./assets/building_tiles/buildings_T_E02_N03.glb",
-        "size_bytes": 1101444
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E02_N03.glb",
+        "size_bytes": 5374136
+      },
+      {
+        "id": "osm_buildings_T_E03_N02",
+        "filename": "osm_buildings_T_E03_N02.glb",
+        "ext": ".glb",
+        "tile_id": "T_E03_N02",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E03_N02.glb",
+        "size_bytes": 5379580
       },
       {
         "id": "buildings_T_E02_S03",
@@ -7046,14 +7208,6 @@
         "tile_id": "T_E02_S03",
         "url": "./assets/building_tiles/buildings_T_E02_S03.glb",
         "size_bytes": 1271128
-      },
-      {
-        "id": "buildings_T_E03_N02",
-        "filename": "buildings_T_E03_N02.glb",
-        "ext": ".glb",
-        "tile_id": "T_E03_N02",
-        "url": "./assets/building_tiles/buildings_T_E03_N02.glb",
-        "size_bytes": 1100776
       },
       {
         "id": "buildings_T_E03_S02",
@@ -7096,6 +7250,14 @@
         "size_bytes": 1362416
       },
       {
+        "id": "osm_buildings_T_E04_N00",
+        "filename": "osm_buildings_T_E04_N00.glb",
+        "ext": ".glb",
+        "tile_id": "T_E04_N00",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E04_N00.glb",
+        "size_bytes": 5157548
+      },
+      {
         "id": "osm_buildings_T_W04_N00",
         "filename": "osm_buildings_T_W04_N00.glb",
         "ext": ".glb",
@@ -7120,12 +7282,12 @@
         "size_bytes": 865324
       },
       {
-        "id": "buildings_T_E04_N00",
-        "filename": "buildings_T_E04_N00.glb",
+        "id": "osm_buildings_T_E04_N01",
+        "filename": "osm_buildings_T_E04_N01.glb",
         "ext": ".glb",
-        "tile_id": "T_E04_N00",
-        "url": "./assets/building_tiles/buildings_T_E04_N00.glb",
-        "size_bytes": 1294136
+        "tile_id": "T_E04_N01",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E04_N01.glb",
+        "size_bytes": 5095992
       },
       {
         "id": "osm_buildings_T_W04_S01",
@@ -7152,14 +7314,6 @@
         "size_bytes": 1484072
       },
       {
-        "id": "buildings_T_E04_N01",
-        "filename": "buildings_T_E04_N01.glb",
-        "ext": ".glb",
-        "tile_id": "T_E04_N01",
-        "url": "./assets/building_tiles/buildings_T_E04_N01.glb",
-        "size_bytes": 1167728
-      },
-      {
         "id": "buildings_T_E04_S01",
         "filename": "buildings_T_E04_S01.glb",
         "ext": ".glb",
@@ -7182,6 +7336,14 @@
         "tile_id": "T_W01_S04",
         "url": "./assets/building_tiles/buildings_T_W01_S04.glb",
         "size_bytes": 1486120
+      },
+      {
+        "id": "buildings_T_W04_N01",
+        "filename": "buildings_T_W04_N01.glb",
+        "ext": ".glb",
+        "tile_id": "T_W04_N01",
+        "url": "./assets/building_tiles/buildings_T_W04_N01.glb",
+        "size_bytes": 1540004
       },
       {
         "id": "buildings_T_E03_N03",
@@ -7232,6 +7394,14 @@
         "size_bytes": 1174444
       },
       {
+        "id": "buildings_T_E04_N02",
+        "filename": "buildings_T_E04_N02.glb",
+        "ext": ".glb",
+        "tile_id": "T_E04_N02",
+        "url": "./assets/building_tiles/buildings_T_E04_N02.glb",
+        "size_bytes": 1416112
+      },
+      {
         "id": "buildings_T_W02_N04",
         "filename": "buildings_T_W02_N04.glb",
         "ext": ".glb",
@@ -7240,12 +7410,36 @@
         "size_bytes": 1103532
       },
       {
+        "id": "buildings_T_W04_N02",
+        "filename": "buildings_T_W04_N02.glb",
+        "ext": ".glb",
+        "tile_id": "T_W04_N02",
+        "url": "./assets/building_tiles/buildings_T_W04_N02.glb",
+        "size_bytes": 1474076
+      },
+      {
         "id": "osm_buildings_T_E00_N05",
         "filename": "osm_buildings_T_E00_N05.glb",
         "ext": ".glb",
         "tile_id": "T_E00_N05",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E00_N05.glb",
         "size_bytes": 5282288
+      },
+      {
+        "id": "osm_buildings_T_W03_N04",
+        "filename": "osm_buildings_T_W03_N04.glb",
+        "ext": ".glb",
+        "tile_id": "T_W03_N04",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_W03_N04.glb",
+        "size_bytes": 4623028
+      },
+      {
+        "id": "osm_buildings_T_W04_N03",
+        "filename": "osm_buildings_T_W04_N03.glb",
+        "ext": ".glb",
+        "tile_id": "T_W04_N03",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_W04_N03.glb",
+        "size_bytes": 3722608
       },
       {
         "id": "buildings_T_E00_S05",
@@ -7264,6 +7458,14 @@
         "size_bytes": 1149468
       },
       {
+        "id": "buildings_T_E04_N03",
+        "filename": "buildings_T_E04_N03.glb",
+        "ext": ".glb",
+        "tile_id": "T_E04_N03",
+        "url": "./assets/building_tiles/buildings_T_E04_N03.glb",
+        "size_bytes": 1513128
+      },
+      {
         "id": "buildings_T_E04_S03",
         "filename": "buildings_T_E04_S03.glb",
         "ext": ".glb",
@@ -7272,20 +7474,12 @@
         "size_bytes": 1155540
       },
       {
-        "id": "buildings_T_W03_N04",
-        "filename": "buildings_T_W03_N04.glb",
+        "id": "buildings_T_W05_N00",
+        "filename": "buildings_T_W05_N00.glb",
         "ext": ".glb",
-        "tile_id": "T_W03_N04",
-        "url": "./assets/building_tiles/buildings_T_W03_N04.glb",
-        "size_bytes": 1060384
-      },
-      {
-        "id": "buildings_T_W04_N03",
-        "filename": "buildings_T_W04_N03.glb",
-        "ext": ".glb",
-        "tile_id": "T_W04_N03",
-        "url": "./assets/building_tiles/buildings_T_W04_N03.glb",
-        "size_bytes": 967576
+        "tile_id": "T_W05_N00",
+        "url": "./assets/building_tiles/buildings_T_W05_N00.glb",
+        "size_bytes": 1512760
       },
       {
         "id": "osm_buildings_T_W01_N05",
@@ -7294,6 +7488,14 @@
         "tile_id": "T_W01_N05",
         "url": "./assets/osm_true_buildings/osm_buildings_T_W01_N05.glb",
         "size_bytes": 5059044
+      },
+      {
+        "id": "osm_buildings_T_W05_S01",
+        "filename": "osm_buildings_T_W05_S01.glb",
+        "ext": ".glb",
+        "tile_id": "T_W05_S01",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_W05_S01.glb",
+        "size_bytes": 4715452
       },
       {
         "id": "buildings_T_E01_N05",
@@ -7328,12 +7530,12 @@
         "size_bytes": 1009632
       },
       {
-        "id": "buildings_T_W05_S01",
-        "filename": "buildings_T_W05_S01.glb",
+        "id": "buildings_T_W05_N01",
+        "filename": "buildings_T_W05_N01.glb",
         "ext": ".glb",
-        "tile_id": "T_W05_S01",
-        "url": "./assets/building_tiles/buildings_T_W05_S01.glb",
-        "size_bytes": 985396
+        "tile_id": "T_W05_N01",
+        "url": "./assets/building_tiles/buildings_T_W05_N01.glb",
+        "size_bytes": 1564100
       },
       {
         "id": "osm_buildings_T_W05_S02",
@@ -7384,20 +7586,28 @@
         "size_bytes": 1029204
       },
       {
+        "id": "buildings_T_W05_N02",
+        "filename": "buildings_T_W05_N02.glb",
+        "ext": ".glb",
+        "tile_id": "T_W05_N02",
+        "url": "./assets/building_tiles/buildings_T_W05_N02.glb",
+        "size_bytes": 1439668
+      },
+      {
+        "id": "osm_buildings_T_W04_N04",
+        "filename": "osm_buildings_T_W04_N04.glb",
+        "ext": ".glb",
+        "tile_id": "T_W04_N04",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_W04_N04.glb",
+        "size_bytes": 2608772
+      },
+      {
         "id": "buildings_T_E04_N04",
         "filename": "buildings_T_E04_N04.glb",
         "ext": ".glb",
         "tile_id": "T_E04_N04",
         "url": "./assets/building_tiles/buildings_T_E04_N04.glb",
         "size_bytes": 1173592
-      },
-      {
-        "id": "buildings_T_W04_N04",
-        "filename": "buildings_T_W04_N04.glb",
-        "ext": ".glb",
-        "tile_id": "T_W04_N04",
-        "url": "./assets/building_tiles/buildings_T_W04_N04.glb",
-        "size_bytes": 1021836
       },
       {
         "id": "osm_buildings_T_E05_S03",
@@ -7424,6 +7634,14 @@
         "size_bytes": 1146772
       },
       {
+        "id": "buildings_T_W05_N03",
+        "filename": "buildings_T_W05_N03.glb",
+        "ext": ".glb",
+        "tile_id": "T_W05_N03",
+        "url": "./assets/building_tiles/buildings_T_W05_N03.glb",
+        "size_bytes": 1425616
+      },
+      {
         "id": "buildings_T_E00_N06",
         "filename": "buildings_T_E00_N06.glb",
         "ext": ".glb",
@@ -7438,6 +7656,14 @@
         "tile_id": "T_E00_S06",
         "url": "./assets/building_tiles/buildings_T_E00_S06.glb",
         "size_bytes": 1017140
+      },
+      {
+        "id": "buildings_T_W06_N00",
+        "filename": "buildings_T_W06_N00.glb",
+        "ext": ".glb",
+        "tile_id": "T_W06_N00",
+        "url": "./assets/building_tiles/buildings_T_W06_N00.glb",
+        "size_bytes": 1622084
       },
       {
         "id": "buildings_T_E01_N06",
@@ -7470,6 +7696,14 @@
         "tile_id": "T_W01_S06",
         "url": "./assets/building_tiles/buildings_T_W01_S06.glb",
         "size_bytes": 1043348
+      },
+      {
+        "id": "buildings_T_W06_N01",
+        "filename": "buildings_T_W06_N01.glb",
+        "ext": ".glb",
+        "tile_id": "T_W06_N01",
+        "url": "./assets/building_tiles/buildings_T_W06_N01.glb",
+        "size_bytes": 1605096
       },
       {
         "id": "buildings_T_E02_N06",
@@ -7512,12 +7746,36 @@
         "size_bytes": 1530084
       },
       {
+        "id": "buildings_T_W06_N02",
+        "filename": "buildings_T_W06_N02.glb",
+        "ext": ".glb",
+        "tile_id": "T_W06_N02",
+        "url": "./assets/building_tiles/buildings_T_W06_N02.glb",
+        "size_bytes": 1552580
+      },
+      {
         "id": "buildings_T_W06_S02",
         "filename": "buildings_T_W06_S02.glb",
         "ext": ".glb",
         "tile_id": "T_W06_S02",
         "url": "./assets/building_tiles/buildings_T_W06_S02.glb",
         "size_bytes": 1286808
+      },
+      {
+        "id": "osm_buildings_T_W04_N05",
+        "filename": "osm_buildings_T_W04_N05.glb",
+        "ext": ".glb",
+        "tile_id": "T_W04_N05",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_W04_N05.glb",
+        "size_bytes": 4852868
+      },
+      {
+        "id": "osm_buildings_T_W05_N04",
+        "filename": "osm_buildings_T_W05_N04.glb",
+        "ext": ".glb",
+        "tile_id": "T_W05_N04",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_W05_N04.glb",
+        "size_bytes": 4417080
       },
       {
         "id": "buildings_T_E04_N05",
@@ -7544,28 +7802,20 @@
         "size_bytes": 1187780
       },
       {
-        "id": "buildings_T_W04_N05",
-        "filename": "buildings_T_W04_N05.glb",
-        "ext": ".glb",
-        "tile_id": "T_W04_N05",
-        "url": "./assets/building_tiles/buildings_T_W04_N05.glb",
-        "size_bytes": 1196608
-      },
-      {
-        "id": "buildings_T_W05_N04",
-        "filename": "buildings_T_W05_N04.glb",
-        "ext": ".glb",
-        "tile_id": "T_W05_N04",
-        "url": "./assets/building_tiles/buildings_T_W05_N04.glb",
-        "size_bytes": 1168160
-      },
-      {
         "id": "osm_buildings_T_E06_S03",
         "filename": "osm_buildings_T_E06_S03.glb",
         "ext": ".glb",
         "tile_id": "T_E06_S03",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E06_S03.glb",
         "size_bytes": 4238268
+      },
+      {
+        "id": "buildings_T_E03_N06",
+        "filename": "buildings_T_E03_N06.glb",
+        "ext": ".glb",
+        "tile_id": "T_E03_N06",
+        "url": "./assets/building_tiles/buildings_T_E03_N06.glb",
+        "size_bytes": 1344240
       },
       {
         "id": "buildings_T_E03_S06",
@@ -7582,6 +7832,14 @@
         "tile_id": "T_W03_N06",
         "url": "./assets/building_tiles/buildings_T_W03_N06.glb",
         "size_bytes": 1111712
+      },
+      {
+        "id": "buildings_T_W06_N03",
+        "filename": "buildings_T_W06_N03.glb",
+        "ext": ".glb",
+        "tile_id": "T_W06_N03",
+        "url": "./assets/building_tiles/buildings_T_W06_N03.glb",
+        "size_bytes": 1466512
       },
       {
         "id": "buildings_T_W06_S03",
@@ -7616,6 +7874,14 @@
         "size_bytes": 1557184
       },
       {
+        "id": "buildings_T_E01_N07",
+        "filename": "buildings_T_E01_N07.glb",
+        "ext": ".glb",
+        "tile_id": "T_E01_N07",
+        "url": "./assets/building_tiles/buildings_T_E01_N07.glb",
+        "size_bytes": 1520448
+      },
+      {
         "id": "buildings_T_E01_S07",
         "filename": "buildings_T_E01_S07.glb",
         "ext": ".glb",
@@ -7632,6 +7898,14 @@
         "size_bytes": 1395576
       },
       {
+        "id": "buildings_T_W01_N07",
+        "filename": "buildings_T_W01_N07.glb",
+        "ext": ".glb",
+        "tile_id": "T_W01_N07",
+        "url": "./assets/building_tiles/buildings_T_W01_N07.glb",
+        "size_bytes": 1670416
+      },
+      {
         "id": "buildings_T_W01_S07",
         "filename": "buildings_T_W01_S07.glb",
         "ext": ".glb",
@@ -7646,6 +7920,14 @@
         "tile_id": "T_W05_N05",
         "url": "./assets/building_tiles/buildings_T_W05_N05.glb",
         "size_bytes": 1234272
+      },
+      {
+        "id": "buildings_T_W07_N01",
+        "filename": "buildings_T_W07_N01.glb",
+        "ext": ".glb",
+        "tile_id": "T_W07_N01",
+        "url": "./assets/building_tiles/buildings_T_W07_N01.glb",
+        "size_bytes": 1448428
       },
       {
         "id": "osm_buildings_T_E06_S04",
@@ -7688,12 +7970,28 @@
         "size_bytes": 1430648
       },
       {
+        "id": "buildings_T_W02_N07",
+        "filename": "buildings_T_W02_N07.glb",
+        "ext": ".glb",
+        "tile_id": "T_W02_N07",
+        "url": "./assets/building_tiles/buildings_T_W02_N07.glb",
+        "size_bytes": 1552840
+      },
+      {
         "id": "buildings_T_W02_S07",
         "filename": "buildings_T_W02_S07.glb",
         "ext": ".glb",
         "tile_id": "T_W02_S07",
         "url": "./assets/building_tiles/buildings_T_W02_S07.glb",
         "size_bytes": 1355504
+      },
+      {
+        "id": "buildings_T_W07_N02",
+        "filename": "buildings_T_W07_N02.glb",
+        "ext": ".glb",
+        "tile_id": "T_W07_N02",
+        "url": "./assets/building_tiles/buildings_T_W07_N02.glb",
+        "size_bytes": 1539960
       },
       {
         "id": "buildings_T_W07_S02",
@@ -7734,6 +8032,14 @@
         "tile_id": "T_W03_S07",
         "url": "./assets/building_tiles/buildings_T_W03_S07.glb",
         "size_bytes": 1395288
+      },
+      {
+        "id": "buildings_T_W07_N03",
+        "filename": "buildings_T_W07_N03.glb",
+        "ext": ".glb",
+        "tile_id": "T_W07_N03",
+        "url": "./assets/building_tiles/buildings_T_W07_N03.glb",
+        "size_bytes": 1459960
       },
       {
         "id": "buildings_T_W07_S03",
@@ -7840,6 +8146,14 @@
         "size_bytes": 1183696
       },
       {
+        "id": "buildings_T_W08_N02",
+        "filename": "buildings_T_W08_N02.glb",
+        "ext": ".glb",
+        "tile_id": "T_W08_N02",
+        "url": "./assets/building_tiles/buildings_T_W08_N02.glb",
+        "size_bytes": 1544024
+      },
+      {
         "id": "buildings_T_W08_S02",
         "filename": "buildings_T_W08_S02.glb",
         "ext": ".glb",
@@ -7862,6 +8176,14 @@
         "tile_id": "T_E08_S03",
         "url": "./assets/building_tiles/buildings_T_E08_S03.glb",
         "size_bytes": 1220016
+      },
+      {
+        "id": "buildings_T_W08_N03",
+        "filename": "buildings_T_W08_N03.glb",
+        "ext": ".glb",
+        "tile_id": "T_W08_N03",
+        "url": "./assets/building_tiles/buildings_T_W08_N03.glb",
+        "size_bytes": 1562824
       },
       {
         "id": "buildings_T_W08_S03",
@@ -7918,6 +8240,14 @@
         "tile_id": "T_E08_S04",
         "url": "./assets/building_tiles/buildings_T_E08_S04.glb",
         "size_bytes": 1173064
+      },
+      {
+        "id": "buildings_T_W08_N04",
+        "filename": "buildings_T_W08_N04.glb",
+        "ext": ".glb",
+        "tile_id": "T_W08_N04",
+        "url": "./assets/building_tiles/buildings_T_W08_N04.glb",
+        "size_bytes": 1493184
       },
       {
         "id": "buildings_T_W08_S04",
@@ -7982,6 +8312,14 @@
         "tile_id": "T_E08_S05",
         "url": "./assets/building_tiles/buildings_T_E08_S05.glb",
         "size_bytes": 1159916
+      },
+      {
+        "id": "buildings_T_W08_N05",
+        "filename": "buildings_T_W08_N05.glb",
+        "ext": ".glb",
+        "tile_id": "T_W08_N05",
+        "url": "./assets/building_tiles/buildings_T_W08_N05.glb",
+        "size_bytes": 1392928
       },
       {
         "id": "buildings_T_E09_S03",

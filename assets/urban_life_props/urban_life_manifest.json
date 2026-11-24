@@ -4,9 +4,9 @@
   "slot": 10,
   "display_slot_name": "ĐÀ LẠT - 09",
   "lane": "URBAN_STREETSCAPE_VEHICLES_NIGHTMARKET",
-  "latest_wave": 9,
-  "latest_task_id": "T10_AUTO_R2_R3_B04_XOM_LEO_SUNSET_STREETFOOD_MONGOLAND_ANKROET",
-  "updated_at_utc": "2026-11-24T09:44:00Z",
+  "latest_wave": 10,
+  "latest_task_id": "T10_AUTO_R2_R3_B05_CHIKA_FARM_DASAR_PASS_AND_PRENN_WATERFALL_CONVOY",
+  "updated_at_utc": "2026-11-24T11:28:47Z",
   "coordinate_system": {
     "origin": "Tam_Ho_Xuan_Huong_Da_Lat",
     "lat0": 11.940419,
@@ -22,9 +22,9 @@
     "forbid_khr_materials_transmission": true
   },
   "summary_metrics": {
-    "total_glb_files": 27,
-    "total_triangles": 1084656,
-    "total_size_bytes": 58012172,
+    "total_glb_files": 30,
+    "total_triangles": 1148712,
+    "total_size_bytes": 61632824,
     "welcome_gates": 2,
     "canopy_stalls": 122,
     "soymilk_carts": 26,
@@ -79,7 +79,10 @@
     "mongo_land_rainbow_dry_slide_lanes": 6,
     "mongo_land_mongolian_yurts": 12,
     "mongo_land_gokarts": 10,
-    "ankroet_thung_lung_vang_boats_and_piers": 13
+    "ankroet_thung_lung_vang_boats_and_piers": 13,
+    "chika_farm_alpacas_and_sheep": 40,
+    "da_sar_ql27c_intercity_coaches": 8,
+    "prenn_waterfall_electric_shuttles": 8
   },
   "items": [
     {
@@ -1564,6 +1567,129 @@
       },
       "khr_materials_transmission": false,
       "description": "Cung đường Đập Thủy Điện Ankroet – KDL Thung Lũng Vàng: Tổ hợp Quán Cafe Rừng Thông & Đài ngắm Đập Ankroet cổ, 3 cầu tàu gỗ ven hồ (prop_03) & 10 thuyền gỗ (prop_02) neo tại cao độ mặt nước chuẩn Y_gltf = -52.85m, 4 sàn gỗ săn mây (prop_10), 10 cụm hộ lan & gương cầu lồi đèo Ankroet (prop_11), đoàn 8 xe cổ Pháp/Jeep & 12 mô tô phượt, 120 đèn dây & 34 du khách"
+    },
+    {
+      "id": "ul_w10_01_chika_farm_xuan_tho_alpaca_pasture_and_countryside_cafe",
+      "wave": 10,
+      "task_id": "T10_AUTO_R2_R3_B05_CHIKA_FARM_DASAR_PASS_AND_PRENN_WATERFALL_CONVOY",
+      "ring": "RING_2",
+      "tile_id": "T_E03_S02",
+      "category": "european_alpaca_sheep_farm_and_pickup_cafe",
+      "path": "02_ASSETS_3D/urban_life_props/ul_w10_01_chika_farm_xuan_tho_alpaca_pasture_and_countryside_cafe.glb",
+      "size_bytes": 1147048,
+      "sha256": "cec6c2beaa157f675a9c706ba1589d7b77e339cf3f76efd96d387f8de1ebf06d",
+      "vertices": 38962,
+      "triangles": 20580,
+      "coordinate_space": "WORLD_THREEJS_Y_UP",
+      "world_anchor": {
+        "x_m": 6850.0,
+        "y_m": -3420.0,
+        "z_local_m": 12.4,
+        "elev_msl_m": 1490.4,
+        "lat": 11.909697,
+        "lon": 108.508154,
+        "gltf_xyz": [
+          6850.0,
+          12.4,
+          3420.0
+        ]
+      },
+      "bounds_gltf": {
+        "min": [
+          6797.0,
+          11.799,
+          3368.784
+        ],
+        "max": [
+          6903.0,
+          19.878,
+          3472.0
+        ]
+      },
+      "khr_materials_transmission": false,
+      "description": "Nông trại cừu & lạc đà Alpaca Chika Farm (Thôn Đa Quý, Xã Xuân Thọ, Đà Lạt): 2 nhà gỗ đỏ Châu Âu, 2 quầy pha chế đồ uống xe bán tải ngoài trời, đồng cỏ rào gỗ với 18 chú lạc đà Alpaca & 22 chú cừu lông xù, 5 sàn gỗ săn mây (prop_10), 6 giàn dâu tây thủy canh (prop_14), 4 vòm hoa (prop_07), 2 nhà chờ gỗ (prop_12), 8 ô tô & 16 xe máy, 120 đèn dây & 36 du khách"
+    },
+    {
+      "id": "ul_w10_02_da_sar_pass_ql27c_cloud_cafes_and_intercity_coach_convoy",
+      "wave": 10,
+      "task_id": "T10_AUTO_R2_R3_B05_CHIKA_FARM_DASAR_PASS_AND_PRENN_WATERFALL_CONVOY",
+      "ring": "RING_2_RING_3",
+      "tile_id": "T_E03_N03",
+      "category": "mountain_pass_cloud_cafes_greenhouses_and_intercity_coaches",
+      "path": "02_ASSETS_3D/urban_life_props/ul_w10_02_da_sar_pass_ql27c_cloud_cafes_and_intercity_coach_convoy.glb",
+      "size_bytes": 1139208,
+      "sha256": "21fe3f19260632ea1939f4c03afc569afa9ef3112e4c4f18874d60fe92b4a60c",
+      "vertices": 40417,
+      "triangles": 20640,
+      "coordinate_space": "WORLD_THREEJS_Y_UP",
+      "world_anchor": {
+        "x_m": 6920.0,
+        "y_m": 5840.0,
+        "z_local_m": 17.24,
+        "elev_msl_m": 1495.24,
+        "lat": 11.992881,
+        "lon": 108.508797,
+        "gltf_xyz": [
+          6920.0,
+          17.24,
+          -5840.0
+        ]
+      },
+      "bounds_gltf": {
+        "min": [
+          6848.366,
+          16.064,
+          -5895.24
+        ],
+        "max": [
+          6991.634,
+          24.788,
+          -5807.798
+        ]
+      },
+      "khr_materials_transmission": false,
+      "description": "Trạm dừng chân & Quán cafe săn mây Đèo Đa Sar – QL27C (Đông Bắc Thái Phiên): 2 quán cafe gỗ săn mây nhìn xuống 4 cụm nhà kính hoa phát sáng ấm (prop_09), 5 sàn gỗ săn mây (prop_10), 12 cụm hộ lan đèo QL27C & gương cầu lồi (prop_11), 6 sạp sữa đậu nanh nóng (prop_15), đoàn 8 xe khách liên tỉnh 45 chỗ Đà Lạt – Nha Trang & 14 mô tô phượt, 110 đèn dây & 30 du khách"
+    },
+    {
+      "id": "ul_w10_03_prenn_waterfall_gateway_electric_shuttles_and_tour_buses",
+      "wave": 10,
+      "task_id": "T10_AUTO_R2_R3_B05_CHIKA_FARM_DASAR_PASS_AND_PRENN_WATERFALL_CONVOY",
+      "ring": "RING_2_RING_3",
+      "tile_id": "T_E01_S04",
+      "category": "waterfall_gateway_electric_shuttles_boats_and_tour_buses",
+      "path": "02_ASSETS_3D/urban_life_props/ul_w10_03_prenn_waterfall_gateway_electric_shuttles_and_tour_buses.glb",
+      "size_bytes": 1334396,
+      "sha256": "0ba936126e3bc2903df2b6c56801719a989f8484f9a1f360ad816388c16ed5e1",
+      "vertices": 44798,
+      "triangles": 22836,
+      "coordinate_space": "WORLD_THREEJS_Y_UP",
+      "world_anchor": {
+        "x_m": 1420.0,
+        "y_m": -7860.0,
+        "z_local_m": 5.31,
+        "elev_msl_m": 1483.31,
+        "lat": 11.869811,
+        "lon": 108.458297,
+        "gltf_xyz": [
+          1420.0,
+          5.31,
+          7860.0
+        ]
+      },
+      "bounds_gltf": {
+        "min": [
+          1366.0,
+          3.811,
+          7821.809
+        ],
+        "max": [
+          1480.877,
+          14.386,
+          7896.08
+        ]
+      },
+      "khr_materials_transmission": false,
+      "description": "Cổng chào KDL Thác Prenn – Tea Resort Prenn (chân Đèo Prenn – QL20): Cổng chào đá – gỗ & nhà ga đón khách, 8 xe điện du lịch nội khu mái xanh lá, 2 bến thuyền gỗ (prop_03) & 8 thuyền gỗ (prop_02) trên hồ suối chân thác Prenn, 4 vòm hoa (prop_07), 10 sạp đặc sản chân đèo (prop_15), 8 cụm hộ lan (prop_11), đoàn 8 xe buýt du lịch/Limousine & 16 xe máy, 128 đèn dây & 38 du khách"
     }
   ]
 }
