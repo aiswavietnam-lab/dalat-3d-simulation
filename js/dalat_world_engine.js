@@ -176,6 +176,9 @@
       this.dragMode = null;
       this.pointerDownPos = { x: 0, y: 0 };
       this.lastPointer = { x: 0, y: 0 };
+      this.activePointers = new Map();
+      this.pinchState = null;
+      this.touchFly = { x: 0, y: 0, elev: 0 };
       this.keys = new Set();
       this.raycaster = new THREE.Raycaster();
       this.pointerNdc = new THREE.Vector2();
@@ -198,8 +201,15 @@
       this._lastHoverRaycastTime = 0;
       this._coreReady = false;
 
+      if (window.innerWidth <= 900) {
+        const panel = document.getElementById('control-panel');
+        if (panel) panel.classList.add('collapsed');
+        document.body.classList.remove('mobile-drawer-open');
+      }
+
       this._bindEvents();
       this._bindUi();
+      this._bindMobilePad();
       this.applyClimate('early_mist');
       this._syncFogUi();
       this._syncRealtimeUi();
@@ -293,6 +303,11 @@
           list.querySelectorAll('.camera-btn').forEach((b) => b.classList.remove('active'));
           btn.classList.add('active');
           this.flyToPreset(preset);
+          if (window.innerWidth <= 900) {
+            const panel = document.getElementById('control-panel');
+            if (panel) panel.classList.add('collapsed');
+            document.body.classList.remove('mobile-drawer-open');
+          }
           if (
             preset.landmark_id &&
             this.minimapHud &&
@@ -436,6 +451,7 @@
     _syncFogUi() {
       const isOn = Boolean(this.fogEnabled && this.fogDensityPct > 0);
       const effectivePct = isOn ? this.fogDensityPct : 0;
+      const isCompact = window.innerWidth <= 640;
 
       const quickBtn = document.getElementById('quick-fog-btn');
       const quickLbl = document.getElementById('quick-fog-label');
@@ -445,7 +461,13 @@
         quickBtn.setAttribute('aria-pressed', String(isOn));
       }
       if (quickLbl) {
-        quickLbl.textContent = isOn ? `Sương mù: BẬT (${effectivePct}%)` : 'Sương mù: TẮT';
+        quickLbl.textContent = isCompact
+          ? isOn
+            ? 'Sương mù'
+            : 'Tắt sương'
+          : isOn
+            ? `Sương mù: BẬT (${effectivePct}%)`
+            : 'Sương mù: TẮT';
       }
 
       const card = document.getElementById('fog-control-card');
@@ -496,6 +518,7 @@
     _syncRealtimeUi() {
       if (!this.realtime) return;
       const st = this.realtime.getStatusSummary();
+      const isCompact = window.innerWidth <= 640;
 
       document.querySelectorAll('#quality-grid .quality-btn').forEach((btn) => {
         btn.classList.toggle('active', btn.dataset.quality === st.qualityId);
@@ -505,7 +528,13 @@
       if (descEl) descEl.textContent = st.desc_vi;
 
       const quickQualLbl = document.getElementById('quick-quality-label');
-      if (quickQualLbl) quickQualLbl.textContent = `Đồ họa: ${st.label_vi}`;
+      if (quickQualLbl) {
+        quickQualLbl.textContent = isCompact
+          ? st.label_vi === 'Realtime Ultra'
+            ? 'Ultra'
+            : st.label_vi
+          : `Đồ họa: ${st.label_vi}`;
+      }
 
       const renderBadge = document.getElementById('render-badge');
       if (renderBadge) {
@@ -603,36 +632,93 @@
 
       dom.addEventListener('contextmenu', (e) => e.preventDefault());
 
+      const getPinchMetrics = () => {
+        const pts = Array.from(this.activePointers.values());
+        if (pts.length < 2) return null;
+        const a = pts[0];
+        const b = pts[1];
+        return {
+          dist: Math.hypot(b.x - a.x, b.y - a.y),
+          midX: (a.x + b.x) * 0.5,
+          midY: (a.y + b.y) * 0.5,
+        };
+      };
+
       dom.addEventListener('pointerdown', (e) => {
         if (this.minimapHud && this.minimapHud.tourActive) {
           this.minimapHud.stopTour();
         }
         this.flightAnim = null;
+        this.activePointers.set(e.pointerId, { x: e.clientX, y: e.clientY, type: e.pointerType });
+        try {
+          dom.setPointerCapture(e.pointerId);
+        } catch (_) {
+          /* ignore */
+        }
+
+        if (this.activePointers.size >= 2) {
+          this.dragMode = 'pinch';
+          this.pinchState = getPinchMetrics();
+          this.container.classList.add('is-dragging');
+          return;
+        }
+
         this.pointerDownPos = { x: e.clientX, y: e.clientY };
         this.lastPointer = { x: e.clientX, y: e.clientY };
 
         if (e.button === 2 || (e.button === 1 && e.shiftKey)) {
           this.dragMode = 'pan';
-        } else if (e.button === 0 || e.button === 1) {
+        } else if (e.button === 0 || e.button === 1 || e.pointerType === 'touch') {
           this.dragMode = 'orbit';
-          const hit = this._raycastPoint(e.clientX, e.clientY);
-          if (hit) {
-            this.target.copy(hit);
+          if (e.pointerType !== 'touch') {
+            const hit = this._raycastPoint(e.clientX, e.clientY);
+            if (hit) this.target.copy(hit);
           }
         }
         if (this.dragMode) {
           this.container.classList.add('is-dragging');
-          dom.setPointerCapture(e.pointerId);
         }
       });
 
       dom.addEventListener('pointermove', (e) => {
+        if (this.activePointers.has(e.pointerId)) {
+          this.activePointers.set(e.pointerId, { x: e.clientX, y: e.clientY, type: e.pointerType });
+        }
+
+        if (this.activePointers.size >= 2) {
+          const nextPinch = getPinchMetrics();
+          if (nextPinch && this.pinchState) {
+            const mdx = nextPinch.midX - this.pinchState.midX;
+            const mdy = nextPinch.midY - this.pinchState.midY;
+            if (Math.abs(mdx) > 0.2 || Math.abs(mdy) > 0.2) {
+              this._pan(mdx, mdy);
+            }
+            const prevDist = Math.max(12, this.pinchState.dist);
+            const distDelta = nextPinch.dist - prevDist;
+            if (Math.abs(distDelta) > 0.5) {
+              const vec = new THREE.Vector3().subVectors(this.target, this.camera.position);
+              const curDist = vec.length();
+              const zoomRatio = THREE.MathUtils.clamp(distDelta / 220, -0.25, 0.25);
+              if (!((curDist < 18 && zoomRatio > 0) || (curDist > 18000 && zoomRatio < 0))) {
+                this.camera.position.addScaledVector(vec, zoomRatio);
+                if (this.camera.position.y < 3.5) this.camera.position.y = 3.5;
+                this.camera.lookAt(this.target);
+                this._updateGpsHud(this.target);
+              }
+            }
+          }
+          this.pinchState = nextPinch;
+          return;
+        }
+
         if (!this.dragMode) {
-          const nowHover = performance.now();
-          if (nowHover - this._lastHoverRaycastTime >= 75) {
-            this._lastHoverRaycastTime = nowHover;
-            const hoverHit = this._raycastHoverTerrain(e.clientX, e.clientY);
-            if (hoverHit) this._updateGpsHud(hoverHit);
+          if (e.pointerType !== 'touch') {
+            const nowHover = performance.now();
+            if (nowHover - this._lastHoverRaycastTime >= 75) {
+              this._lastHoverRaycastTime = nowHover;
+              const hoverHit = this._raycastHoverTerrain(e.clientX, e.clientY);
+              if (hoverHit) this._updateGpsHud(hoverHit);
+            }
           }
           return;
         }
@@ -649,6 +735,23 @@
       });
 
       const endDrag = (e) => {
+        const wasPinch = this.dragMode === 'pinch';
+        this.activePointers.delete(e.pointerId);
+        try {
+          dom.releasePointerCapture(e.pointerId);
+        } catch (_) {
+          /* ignore */
+        }
+
+        if (this.activePointers.size === 1) {
+          const rem = Array.from(this.activePointers.values())[0];
+          this.lastPointer = { x: rem.x, y: rem.y };
+          this.dragMode = 'orbit';
+          this.pinchState = null;
+          return;
+        }
+
+        this.pinchState = null;
         const movedDist = Math.hypot(
           e.clientX - this.pointerDownPos.x,
           e.clientY - this.pointerDownPos.y
@@ -657,15 +760,10 @@
         if (this.dragMode) {
           this.dragMode = null;
           this.container.classList.remove('is-dragging');
-          try {
-            dom.releasePointerCapture(e.pointerId);
-          } catch (_) {
-            /* ignore */
-          }
         }
 
-        // Click đơn (< 6px) vào công trình nổi bật -> mở Popup Thông Tin Kiến Trúc
-        if (e.type === 'pointerup' && e.button === 0 && movedDist < 6.0) {
+        // Click / Tap đơn (< 8px) vào công trình nổi bật -> mở Popup Thông Tin Kiến Trúc
+        if (!wasPinch && e.type === 'pointerup' && (e.button === 0 || e.pointerType === 'touch') && movedDist < 8.0) {
           this._setRaycasterFromClient(e.clientX, e.clientY);
           const picked = this.streamer.pickLandmark(this.raycaster);
           if (picked && this.minimapHud) {
@@ -736,6 +834,8 @@
         } else {
           this.renderer.setSize(window.innerWidth, window.innerHeight);
         }
+        this._syncFogUi();
+        this._syncRealtimeUi();
       });
     }
 
@@ -773,7 +873,11 @@
     }
 
     _updateFlycam(dt) {
-      if (this.keys.size === 0) return;
+      const hasTouch =
+        Math.abs(this.touchFly.x) > 0.04 ||
+        Math.abs(this.touchFly.y) > 0.04 ||
+        this.touchFly.elev !== 0;
+      if (this.keys.size === 0 && !hasTouch) return;
       const boost = this.keys.has('ShiftLeft') || this.keys.has('ShiftRight') ? 2.8 : 1.0;
       const speed = 220.0 * boost * dt;
 
@@ -788,6 +892,12 @@
       if (this.keys.has('KeyA')) move.addScaledVector(right, -speed);
       if (this.keys.has('KeyE')) move.y += speed * 0.75;
       if (this.keys.has('KeyQ')) move.y -= speed * 0.75;
+
+      if (hasTouch) {
+        move.addScaledVector(forward, -this.touchFly.y * speed * 1.1);
+        move.addScaledVector(right, this.touchFly.x * speed * 1.1);
+        move.y += this.touchFly.elev * speed * 0.8;
+      }
 
       if (move.lengthSq() > 0) {
         if (this.minimapHud && this.minimapHud.tourActive) {
@@ -823,12 +933,98 @@
       }
     }
 
+    _bindMobilePad() {
+      const flyBtn = document.getElementById('quick-flypad-btn');
+      const pad = document.getElementById('dalat-mobile-pad');
+      const joyBase = document.getElementById('dalat-joy-base');
+      const joyKnob = document.getElementById('dalat-joy-knob');
+      const btnUp = document.getElementById('dalat-elev-up');
+      const btnDown = document.getElementById('dalat-elev-down');
+
+      if (flyBtn && pad) {
+        flyBtn.addEventListener('click', () => {
+          const show = pad.classList.toggle('hidden') === false;
+          flyBtn.classList.toggle('is-active', show);
+          flyBtn.setAttribute('aria-pressed', String(show));
+          if (show && window.innerWidth <= 900) {
+            const panel = document.getElementById('control-panel');
+            if (panel) panel.classList.add('collapsed');
+            document.body.classList.remove('mobile-drawer-open');
+          }
+        });
+      }
+
+      if (joyBase && joyKnob) {
+        let joyPtr = null;
+        const maxR = 34;
+        const updateStick = (clientX, clientY) => {
+          const rect = joyBase.getBoundingClientRect();
+          const cx = rect.left + rect.width * 0.5;
+          const cy = rect.top + rect.height * 0.5;
+          let dx = clientX - cx;
+          let dy = clientY - cy;
+          const dist = Math.hypot(dx, dy);
+          if (dist > maxR) {
+            dx = (dx / dist) * maxR;
+            dy = (dy / dist) * maxR;
+          }
+          joyKnob.style.transform = `translate(${dx.toFixed(1)}px, ${dy.toFixed(1)}px)`;
+          this.touchFly.x = dx / maxR;
+          this.touchFly.y = dy / maxR;
+        };
+        const resetStick = () => {
+          joyPtr = null;
+          joyKnob.style.transform = 'translate(0px, 0px)';
+          this.touchFly.x = 0;
+          this.touchFly.y = 0;
+        };
+        joyBase.addEventListener('pointerdown', (e) => {
+          e.stopPropagation();
+          joyPtr = e.pointerId;
+          try {
+            joyBase.setPointerCapture(e.pointerId);
+          } catch (_) {}
+          updateStick(e.clientX, e.clientY);
+        });
+        joyBase.addEventListener('pointermove', (e) => {
+          if (e.pointerId === joyPtr) updateStick(e.clientX, e.clientY);
+        });
+        joyBase.addEventListener('pointerup', (e) => {
+          if (e.pointerId === joyPtr) resetStick();
+        });
+        joyBase.addEventListener('pointercancel', (e) => {
+          if (e.pointerId === joyPtr) resetStick();
+        });
+      }
+
+      const bindHoldElev = (btn, dir) => {
+        if (!btn) return;
+        const start = (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          this.touchFly.elev = dir;
+          btn.classList.add('is-pressed');
+        };
+        const stop = () => {
+          if (this.touchFly.elev === dir) this.touchFly.elev = 0;
+          btn.classList.remove('is-pressed');
+        };
+        btn.addEventListener('pointerdown', start);
+        btn.addEventListener('pointerup', stop);
+        btn.addEventListener('pointercancel', stop);
+        btn.addEventListener('pointerleave', stop);
+      };
+      bindHoldElev(btnUp, 1);
+      bindHoldElev(btnDown, -1);
+    }
+
     _bindUi() {
       const toggleBtn = document.getElementById('toggle-panel-btn');
       const panel = document.getElementById('control-panel');
       if (toggleBtn && panel) {
         toggleBtn.addEventListener('click', () => {
-          panel.classList.toggle('collapsed');
+          const collapsed = panel.classList.toggle('collapsed');
+          document.body.classList.toggle('mobile-drawer-open', !collapsed);
         });
       }
 

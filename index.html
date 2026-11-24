@@ -2,7 +2,7 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
   <meta name="description" content="Mô phỏng 3D thời gian thực TP. Đà Lạt với hiệu ứng ánh sáng PBR, mặt nước gợn sóng GPU, hậu kỳ Bloom, tự động giữ FPS mượt và chế độ bật/tắt sương mù linh hoạt." />
   <title>Đà Lạt 3D Simulation — Trình Xem Realtime Web 3D &amp; LOD Tile Streamer</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'%3E%3Crect width='28' height='28' rx='6' fill='%2308111e'/%3E%3Cpath d='M14 4L22 18H6L14 4Z' fill='%2310b981'/%3E%3Cpath d='M6 21C9 19 19 23 22 21' stroke='%2338bdf8' stroke-width='2' fill='none'/%3E%3C/svg%3E" />
@@ -41,7 +41,7 @@
     </div>
   </div>
 
-  <!-- Cụm nút thao tác nhanh Sương mù / Chất lượng Render / Bảng điều khiển góc trên phải -->
+  <!-- Cụm nút thao tác nhanh Sương mù / Chất lượng Render / Bay cảm ứng / Bảng điều khiển -->
   <div class="top-quick-bar" role="toolbar" aria-label="Thao tác nhanh Sương mù và Đồ họa">
     <button id="quick-fog-btn" class="glass-btn quick-pill-btn is-active" type="button" title="Bật / Tắt sương mù Đà Lạt (Phím F)" aria-pressed="true">
       <span class="pill-dot"></span>
@@ -50,8 +50,11 @@
     <button id="quick-quality-btn" class="glass-btn quick-pill-btn" type="button" title="Chuyển nhanh chế độ đồ họa Realtime (Phím G)">
       <span id="quick-quality-label">✦ Đồ họa: Cân bằng</span>
     </button>
+    <button id="quick-flypad-btn" class="glass-btn quick-pill-btn mobile-only-btn" type="button" title="Bật / Tắt cần bay cảm ứng trên điện thoại" aria-pressed="false">
+      <span>🕹 Bay</span>
+    </button>
     <button id="toggle-panel-btn" class="glass-btn toggle-panel-btn" type="button" title="Ẩn/hiện bảng điều khiển">
-      ☰ Bảng điều khiển
+      ☰ Điều khiển
     </button>
   </div>
 
@@ -277,6 +280,18 @@
       <span><strong>Phím F / G:</strong> Sương mù / Đồ họa</span>
     </div>
   </footer>
+
+  <!-- Bộ điều khiển bay cảm ứng cho điện thoại -->
+  <div id="dalat-mobile-pad" class="mobile-touch-pad hidden" aria-label="Cần điều khiển bay cảm ứng">
+    <div id="dalat-joy-base" class="touch-joy-base" role="application" aria-label="Joystick di chuyển camera">
+      <div class="touch-joy-ring"></div>
+      <div id="dalat-joy-knob" class="touch-joy-knob"></div>
+    </div>
+    <div class="touch-elev-stack">
+      <button id="dalat-elev-up" class="touch-action-btn" type="button" aria-label="Bay lên cao">▲ Cao</button>
+      <button id="dalat-elev-down" class="touch-action-btn" type="button" aria-label="Hạ độ cao">▼ Thấp</button>
+    </div>
+  </div>
 
   <!-- Thông báo lỗi nếu thiếu WebGL / CDN -->
   <div id="error-overlay" class="error-overlay hidden" role="alert"></div>

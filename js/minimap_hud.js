@@ -380,6 +380,11 @@
         badge.className = isBuilt ? 'chip chip-emerald' : 'chip chip-amber';
       }
 
+      if (window.innerWidth <= 900) {
+        const panel = document.getElementById('control-panel');
+        if (panel) panel.classList.add('collapsed');
+        document.body.classList.remove('mobile-drawer-open');
+      }
       popup.classList.remove('hidden');
     }
 
@@ -425,6 +430,11 @@
       if (this.tourHoldTimer) {
         clearTimeout(this.tourHoldTimer);
         this.tourHoldTimer = null;
+      }
+      if (window.innerWidth <= 900) {
+        const panel = document.getElementById('control-panel');
+        if (panel) panel.classList.add('collapsed');
+        document.body.classList.remove('mobile-drawer-open');
       }
       this.tourActive = true;
       this.tourPaused = false;
