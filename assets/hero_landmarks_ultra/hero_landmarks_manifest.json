@@ -293,16 +293,16 @@
       "slot": 22,
       "tile_id": "T_E00_N00",
       "ring": 0,
-      "lat": 11.9455222,
-      "lon": 108.4530342,
-      "elev_msl_m": 1508.095,
-      "x_m": 846.809,
-      "y_m": 568.085,
-      "z_local_m": 30.095,
+      "lat": 11.9456196,
+      "lon": 108.4528186,
+      "elev_msl_m": 1507.98,
+      "x_m": 823.329,
+      "y_m": 578.925,
+      "z_local_m": 29.98,
       "gltf_position": [
-        846.809,
-        30.095,
-        -568.085
+        823.329,
+        29.98,
+        -578.925
       ],
       "heading_deg": 200.0,
       "rotation_y_rad": -3.490659,
@@ -361,7 +361,8 @@
           57.0,
           74.53
         ]
-      }
+      },
+      "plan_audit_fixed_by": "slot29"
     },
     {
       "id": "ultra_lm_03_nha_tho_con_ga",
@@ -531,16 +532,16 @@
       "slot": 22,
       "tile_id": "T_W01_S01",
       "ring": 0,
-      "lat": 11.93038,
-      "lon": 108.42975,
-      "elev_msl_m": 1541.386,
-      "x_m": -1689.099,
-      "y_m": -1117.536,
-      "z_local_m": 63.386,
+      "lat": 11.9301153,
+      "lon": 108.4297107,
+      "elev_msl_m": 1541.9,
+      "x_m": -1693.379,
+      "y_m": -1147.006,
+      "z_local_m": 63.905,
       "gltf_position": [
-        -1689.099,
-        63.386,
-        1117.536
+        -1693.379,
+        63.905,
+        1147.006
       ],
       "heading_deg": 65.0,
       "rotation_y_rad": -1.134464,
@@ -589,7 +590,8 @@
           18.35,
           68.0
         ]
-      }
+      },
+      "plan_audit_fixed_by": "slot29"
     },
     {
       "id": "ultra_lm_08_dinh_2_bao_dai",
@@ -601,16 +603,16 @@
       "slot": 22,
       "tile_id": "T_E00_N00",
       "ring": 0,
-      "lat": 11.9366346,
-      "lon": 108.4518621,
-      "elev_msl_m": 1524.151,
-      "x_m": 719.149,
-      "y_m": -421.277,
-      "z_local_m": 46.151,
+      "lat": 11.9356203,
+      "lon": 108.4479731,
+      "elev_msl_m": 1539.64,
+      "x_m": 295.599,
+      "y_m": -534.187,
+      "z_local_m": 61.643,
       "gltf_position": [
-        719.149,
-        46.151,
-        421.277
+        295.599,
+        61.643,
+        534.187
       ],
       "heading_deg": 310.0,
       "rotation_y_rad": -5.410521,
@@ -662,7 +664,8 @@
           18.66,
           68.0
         ]
-      }
+      },
+      "plan_audit_fixed_by": "slot29"
     },
     {
       "id": "ultra_lm_09_dinh_1_bao_dai",
@@ -743,16 +746,16 @@
       "slot": 22,
       "tile_id": "T_E00_N00",
       "ring": 0,
-      "lat": 11.9384312,
-      "lon": 108.4399843,
-      "elev_msl_m": 1495.656,
-      "x_m": -574.468,
-      "y_m": -221.277,
-      "z_local_m": 17.656,
+      "lat": 11.9375352,
+      "lon": 108.4403762,
+      "elev_msl_m": 1508.36,
+      "x_m": -531.788,
+      "y_m": -321.027,
+      "z_local_m": 30.358,
       "gltf_position": [
-        -574.468,
-        17.656,
-        221.277
+        -531.788,
+        30.358,
+        321.027
       ],
       "heading_deg": 22.0,
       "rotation_y_rad": -0.383972,
@@ -804,7 +807,8 @@
           21.51,
           64.0
         ]
-      }
+      },
+      "plan_audit_fixed_by": "slot29"
     },
     {
       "id": "ultra_lm_16_chua_linh_phuoc",
@@ -1023,18 +1027,18 @@
       "name_en": "Domaine de Marie Rose-Pink Rong-Roof Chapel & Convent Ultra-LOD0 Masterpiece",
       "wave": 5,
       "slot": 22,
-      "tile_id": "T_W01_N00",
+      "tile_id": "T_W01_N01",
       "ring": 0,
-      "lat": 11.94885,
-      "lon": 108.43078,
-      "elev_msl_m": 1496.72,
-      "x_m": -1576.921,
-      "y_m": 938.535,
-      "z_local_m": 18.72,
+      "lat": 11.9496911,
+      "lon": 108.4301461,
+      "elev_msl_m": 1513.84,
+      "x_m": -1645.961,
+      "y_m": 1032.165,
+      "z_local_m": 35.837,
       "gltf_position": [
-        -1576.921,
-        18.72,
-        -938.535
+        -1645.961,
+        35.837,
+        -1032.165
       ],
       "heading_deg": 120.0,
       "rotation_y_rad": -2.094395,
@@ -1082,7 +1086,8 @@
           24.0,
           89.39
         ]
-      }
+      },
+      "plan_audit_fixed_by": "slot29"
     },
     {
       "id": "ultra_lm_13_bao_tang_lam_dong",
@@ -2390,18 +2395,18 @@
       "name_en": "Linh Son Historic Buddhist Pagoda (1938-1940 Imperial Hue Temple Architecture) Ultra-LOD0 Masterpiece",
       "wave": 10,
       "slot": 22,
-      "tile_id": "T_E00_N00",
+      "tile_id": "T_E00_N01",
       "ring": 0,
-      "lat": 11.9482,
-      "lon": 108.4368,
-      "elev_msl_m": 1493.414,
-      "x_m": -921.277,
-      "y_m": 866.177,
-      "z_local_m": 15.414,
+      "lat": 11.9502674,
+      "lon": 108.4370046,
+      "elev_msl_m": 1503.16,
+      "x_m": -898.997,
+      "y_m": 1096.317,
+      "z_local_m": 25.158,
       "gltf_position": [
-        -921.277,
-        15.414,
-        -866.177
+        -898.997,
+        25.158,
+        -1096.317
       ],
       "heading_deg": 245.0,
       "rotation_y_rad": -4.276057,
@@ -2448,7 +2453,8 @@
           20.55,
           80.4
         ]
-      }
+      },
+      "plan_audit_fixed_by": "slot29"
     },
     {
       "id": "ultra_lm_35_dinh_tinh_truong",

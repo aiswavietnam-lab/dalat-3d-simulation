@@ -1827,7 +1827,7 @@
         "ext": ".json",
         "tile_id": "T_E00_N00",
         "url": "./assets/vegetation/instances_T_E00_N00.json",
-        "size_bytes": 148880
+        "size_bytes": 124788
       },
       {
         "id": "instances_T_E00_N01",
@@ -4130,9 +4130,9 @@
         "url": "./assets/hero_landmarks_ultra/ultra_lm_04_truong_cdsp_dalat.glb",
         "size_bytes": 1752732,
         "gltf_position": [
-          846.809,
-          30.095,
-          -568.085
+          823.329,
+          29.98,
+          -578.925
         ],
         "rotation_y_rad": -3.490659,
         "name_vi": "Trường Cao đẳng Sư phạm Đà Lạt / Grand Lycée Yersin Ultra-LOD0 (Dãy Giảng Đường Gạch Đỏ Cong & Tháp Chuông 54m)",
@@ -4181,9 +4181,9 @@
         "url": "./assets/hero_landmarks_ultra/ultra_lm_07_dinh_3_bao_dai.glb",
         "size_bytes": 1863108,
         "gltf_position": [
-          -1689.099,
-          63.386,
-          1117.536
+          -1693.379,
+          63.905,
+          1147.006
         ],
         "rotation_y_rad": -1.134464,
         "name_vi": "Dinh Bảo Đại III Ultra-LOD0 (Biệt Điện Mùa Hè Đá Rửa Vàng, Sảnh Porte-Cochère & Vườn Thượng Uyển Ái Ân)",
@@ -4198,9 +4198,9 @@
         "url": "./assets/hero_landmarks_ultra/ultra_lm_08_dinh_2_bao_dai.glb",
         "size_bytes": 1938972,
         "gltf_position": [
-          719.149,
-          46.151,
-          421.277
+          295.599,
+          61.643,
+          534.187
         ],
         "rotation_y_rad": -5.410521,
         "name_vi": "Dinh Bảo Đại II / Dinh Toàn Quyền Jean Decoux Ultra-LOD0 (Lâu Đài 25 Phòng Đá Rửa Vàng & Hiên Vòm Loggia)",
@@ -4228,13 +4228,13 @@
         "id": "ultra_lm_10_domaine_de_marie",
         "filename": "ultra_lm_10_domaine_de_marie.glb",
         "ext": ".glb",
-        "tile_id": "T_W01_N00",
+        "tile_id": "T_W01_N01",
         "url": "./assets/hero_landmarks_ultra/ultra_lm_10_domaine_de_marie.glb",
         "size_bytes": 1398056,
         "gltf_position": [
-          -1576.921,
-          18.72,
-          -938.535
+          -1645.961,
+          35.837,
+          -1032.165
         ],
         "rotation_y_rad": -2.094395,
         "name_vi": "Nhà thờ Domaine de Marie (Nhà thờ Mai Anh) Ultra-LOD0 (Mái Dốc Nhà Rông Tây Nguyên, Tường Vôi Hồng Normandie, Cửa Sổ Hoa Hồng & Tu Viện Vinh Sơn)",
@@ -4266,9 +4266,9 @@
         "url": "./assets/hero_landmarks_ultra/ultra_lm_12_dalat_palace_heritage.glb",
         "size_bytes": 2294656,
         "gltf_position": [
-          -574.468,
-          17.656,
-          221.277
+          -531.788,
+          30.358,
+          321.027
         ],
         "rotation_y_rad": -0.383972,
         "name_vi": "Khách sạn Lịch sử Dalat Palace Heritage 1922 / Langbian Palace Ultra-LOD0 (Kiến Trúc Belle Époque & Mái Mansard Đá Ardoise)",
@@ -4636,13 +4636,13 @@
         "id": "ultra_lm_34_chua_linh_son",
         "filename": "ultra_lm_34_chua_linh_son.glb",
         "ext": ".glb",
-        "tile_id": "T_E00_N00",
+        "tile_id": "T_E00_N01",
         "url": "./assets/hero_landmarks_ultra/ultra_lm_34_chua_linh_son.glb",
         "size_bytes": 1662420,
         "gltf_position": [
-          -921.277,
-          15.414,
-          -866.177
+          -898.997,
+          25.158,
+          -1096.317
         ],
         "rotation_y_rad": -4.276057,
         "name_vi": "Chùa Linh Sơn Cổ Tự (1938–1940) Ultra-LOD0 (Chánh Điện Cung Đình Huế Mái Đao Tứ Linh, Bảo Tháp Bát Giác 3 Tầng 17.5m, Đài Quán Thế Âm Hồ Sen & Cổng Tam Quan)",
