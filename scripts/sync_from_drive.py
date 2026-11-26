@@ -720,7 +720,7 @@ def main():
         for iy in (-1, 0, 1) for ix in (-1, 0, 1)
     }
     protected_paths = (
-        {f"assets/satellite_dem_tiles/terrain_real_{tid}.glb" for tid in protected_core_tids}
+        {f"assets/satellite_dem_tiles/{p.name}" for p in (ASSETS / "satellite_dem_tiles").glob("terrain_real_*.glb")}
         | {"assets/satellite_dem_tiles/terrain_backdrop_dalat_60km.glb"}
         | {"assets/water_bodies/water_ho_xuan_huong.glb", "assets/water_bodies/water_ring0_osm_lakes.glb"}
         | {f"assets/osm_true_roads_hydro/osm_real_roads_{tid}.glb" for tid in ring0_tids}

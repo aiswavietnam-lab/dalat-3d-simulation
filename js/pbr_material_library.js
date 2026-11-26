@@ -232,7 +232,7 @@
       this.texLoader = new THREE.TextureLoader();
       this.maxAnisotropy = Math.min(
         (renderer && renderer.capabilities && renderer.capabilities.getMaxAnisotropy()) || 1,
-        4
+        16
       );
       this.textureCache = new Map();
       this.materialPool = new Map();
@@ -586,11 +586,23 @@
     upgradeMaterial(mat, isWaterLayer) {
       if (!mat) return { material: mat, tileScaleM: null };
 
-      // Vật liệu đã có sẵn texture hợp lệ riêng (DEM vệ tinh, Datanla PBR, biển hiệu...) -> giữ nguyên & tăng độ nét nghiêng
+      // Vật liệu đã có sẵn texture hợp lệ riêng (DEM vệ tinh, Datanla PBR, biển hiệu...) -> giữ nguyên & tăng độ nét nghiêng 16x
       if ((mat.map && mat.map.image) || (mat.normalMap && mat.normalMap.image)) {
-        if (mat.map) mat.map.anisotropy = this.maxAnisotropy;
+        if (mat.map) {
+          mat.map.anisotropy = this.maxAnisotropy;
+          mat.map.minFilter = THREE.LinearMipmapLinearFilter;
+          mat.map.magFilter = THREE.LinearFilter;
+          mat.map.needsUpdate = true;
+        }
         if (mat.normalMap) mat.normalMap.anisotropy = this.maxAnisotropy;
-        mat.envMapIntensity = mat.envMapIntensity != null ? mat.envMapIntensity : 0.75;
+        const isSatTerrain = /terrainreal|esri_satellite|highland_backdrop|satellite/i.test(mat.name || '');
+        if (isSatTerrain) {
+          mat.roughness = 0.96;
+          mat.metalness = 0.0;
+          mat.envMapIntensity = 0.18;
+        } else {
+          mat.envMapIntensity = mat.envMapIntensity != null ? mat.envMapIntensity : 0.75;
+        }
         return { material: mat, tileScaleM: null };
       }
 

@@ -384,6 +384,7 @@
       this._completedStreamCount = 0;
       this._lastRebuildCount = 0;
       this.emissiveMaterials = [];
+      this.terrainMaterials = [];
       this.waterMaterials = [];
       this.waterMeshes = [];
       this.terrainPickMeshes = [];
@@ -391,6 +392,7 @@
       this.landmarkMeshes = [];
       this.vegShadowMeshes = [];
       this.lodScale = 1.0;
+      this.terrainEnhancer = null;
       this.waterEnhancer = null;
       this.onStreamBatchSettled = null;
       this.landmarkCatalog = Object.assign({}, DEFAULT_LANDMARK_CATALOG);
@@ -490,6 +492,15 @@
       }
     }
 
+    setTerrainEnhancer(fn) {
+      this.terrainEnhancer = typeof fn === 'function' ? fn : null;
+      if (this.terrainEnhancer) {
+        for (const mat of this.terrainMaterials) {
+          this.terrainEnhancer(mat);
+        }
+      }
+    }
+
     setQualityProfile(cfg) {
       if (!cfg) return;
       this.lodScale = Number(cfg.lodScale || 1.0);
@@ -506,7 +517,7 @@
      * Khử toàn bộ transmission > 0, nâng cấp vật liệu màu solid sang PBR dùng chung + bù UV chuẩn mét
      * và đóng băng ma trận tĩnh để tối ưu FPS
      */
-    sanitizeLoadedObject(root, isWaterLayer, landmarkMeta, allowCastShadow = true) {
+    sanitizeLoadedObject(root, isWaterLayer, landmarkMeta, allowCastShadow = true, isTerrainLayer = false) {
       root.traverse((obj) => {
         if (!obj.isMesh) return;
         const mats = Array.isArray(obj.material) ? obj.material : [obj.material];
@@ -553,6 +564,13 @@
             }
             if (this.waterEnhancer) {
               this.waterEnhancer(mat);
+            }
+          } else if (isTerrainLayer && mat.map) {
+            if (!this.terrainMaterials.includes(mat)) {
+              this.terrainMaterials.push(mat);
+            }
+            if (this.terrainEnhancer) {
+              this.terrainEnhancer(mat);
             }
           }
           if (mat.emissive && (mat.emissive.r > 0 || mat.emissive.g > 0 || mat.emissive.b > 0)) {
@@ -1057,7 +1075,7 @@
                 root.userData = root.userData || {};
                 root.userData.isBackdrop = true;
               }
-              this.sanitizeLoadedObject(root, isWater, null, allowCastShadow);
+              this.sanitizeLoadedObject(root, isWater, null, allowCastShadow, layerName === 'terrain');
               this.layers[layerName].add(root);
               if (tileId) {
                 const bucket = this._ensureTileGroupBucket(tileId);

@@ -115,7 +115,7 @@
         antialias: true,
         powerPreference: 'high-performance',
       });
-      this.renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.35));
+      this.renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.75));
       this.renderer.setSize(window.innerWidth, window.innerHeight);
       this.renderer.outputEncoding = THREE.sRGBEncoding;
       this.renderer.toneMapping = THREE.ACESFilmicToneMapping;
@@ -162,6 +162,15 @@
       this.target = new THREE.Vector3(0, 22, -40);
       this.camera.position.set(-680, 265, 895);
       this.camera.lookAt(this.target);
+
+      // Khởi tạo kính hiển vi ảnh vệ tinh thời gian thực Z18/Z19/Z20
+      this.ultraHdSatellite =
+        typeof window.DalatUltraHdSatellite === 'function'
+          ? new window.DalatUltraHdSatellite(this)
+          : null;
+      if (this.ultraHdSatellite && typeof this.streamer.setTerrainEnhancer === 'function') {
+        this.streamer.setTerrainEnhancer((mat) => this.ultraHdSatellite.enhanceTerrainMaterial(mat));
+      }
 
       // Khởi tạo bộ xử lý đồ họa Realtime & kết nối mặt nước GPU / cache bóng đổ
       this.realtime =
@@ -1157,6 +1166,7 @@
       this._updateFogTransition(dt);
       this.streamer.update(dt, elapsed);
       if (this.pbrLibrary) this.pbrLibrary.update(dt);
+      if (this.ultraHdSatellite) this.ultraHdSatellite.update(this.camera, this.target, dt);
 
       // Cập nhật LOD theo khoảng cách Camera & Minimap Radar mỗi 180ms sau khi lõi sẵn sàng
       if (now - this._lodLastTime >= 180) {

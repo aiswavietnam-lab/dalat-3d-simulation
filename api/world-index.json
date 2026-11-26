@@ -355,7 +355,7 @@
         "ext": ".glb",
         "tile_id": "T_E00_N00",
         "url": "./assets/satellite_dem_tiles/terrain_backdrop_dalat_60km.glb",
-        "size_bytes": 1820344,
+        "size_bytes": 6406868,
         "is_backdrop": true
       },
       {
@@ -364,7 +364,7 @@
         "ext": ".glb",
         "tile_id": "T_E00_N00",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E00_N00.glb",
-        "size_bytes": 4788208
+        "size_bytes": 11178728
       },
       {
         "id": "terrain_real_T_E00_N01",
@@ -372,7 +372,7 @@
         "ext": ".glb",
         "tile_id": "T_E00_N01",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E00_N01.glb",
-        "size_bytes": 1291508
+        "size_bytes": 3037252
       },
       {
         "id": "terrain_real_T_E00_S01",
@@ -380,7 +380,7 @@
         "ext": ".glb",
         "tile_id": "T_E00_S01",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E00_S01.glb",
-        "size_bytes": 1211796
+        "size_bytes": 3152992
       },
       {
         "id": "terrain_real_T_E01_N00",
@@ -388,7 +388,7 @@
         "ext": ".glb",
         "tile_id": "T_E01_N00",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E01_N00.glb",
-        "size_bytes": 1251736
+        "size_bytes": 3176972
       },
       {
         "id": "terrain_real_T_W01_N00",
@@ -396,7 +396,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_N00",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W01_N00.glb",
-        "size_bytes": 1306892
+        "size_bytes": 3272832
       },
       {
         "id": "terrain_real_T_E01_N01",
@@ -404,7 +404,7 @@
         "ext": ".glb",
         "tile_id": "T_E01_N01",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E01_N01.glb",
-        "size_bytes": 1275656
+        "size_bytes": 2990804
       },
       {
         "id": "terrain_real_T_E01_S01",
@@ -412,7 +412,7 @@
         "ext": ".glb",
         "tile_id": "T_E01_S01",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E01_S01.glb",
-        "size_bytes": 1173336
+        "size_bytes": 3063488
       },
       {
         "id": "terrain_real_T_W01_N01",
@@ -420,7 +420,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_N01",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W01_N01.glb",
-        "size_bytes": 1304964
+        "size_bytes": 3084560
       },
       {
         "id": "terrain_real_T_W01_S01",
@@ -428,7 +428,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_S01",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W01_S01.glb",
-        "size_bytes": 1234164
+        "size_bytes": 3014776
       },
       {
         "id": "terrain_real_T_E00_N02",
@@ -436,7 +436,7 @@
         "ext": ".glb",
         "tile_id": "T_E00_N02",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E00_N02.glb",
-        "size_bytes": 1157272
+        "size_bytes": 2455012
       },
       {
         "id": "terrain_real_T_E00_S02",
@@ -444,7 +444,7 @@
         "ext": ".glb",
         "tile_id": "T_E00_S02",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E00_S02.glb",
-        "size_bytes": 1088176
+        "size_bytes": 2497500
       },
       {
         "id": "terrain_real_T_E02_N00",
@@ -452,7 +452,7 @@
         "ext": ".glb",
         "tile_id": "T_E02_N00",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E02_N00.glb",
-        "size_bytes": 1149188
+        "size_bytes": 2552184
       },
       {
         "id": "terrain_real_T_W02_N00",
@@ -460,7 +460,7 @@
         "ext": ".glb",
         "tile_id": "T_W02_N00",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W02_N00.glb",
-        "size_bytes": 1147376
+        "size_bytes": 2481940
       },
       {
         "id": "terrain_real_T_E01_N02",
@@ -468,7 +468,7 @@
         "ext": ".glb",
         "tile_id": "T_E01_N02",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E01_N02.glb",
-        "size_bytes": 1108804
+        "size_bytes": 2311632
       },
       {
         "id": "terrain_real_T_E01_S02",
@@ -476,7 +476,7 @@
         "ext": ".glb",
         "tile_id": "T_E01_S02",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E01_S02.glb",
-        "size_bytes": 1105640
+        "size_bytes": 2440624
       },
       {
         "id": "terrain_real_T_E02_N01",
@@ -484,7 +484,7 @@
         "ext": ".glb",
         "tile_id": "T_E02_N01",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E02_N01.glb",
-        "size_bytes": 1168720
+        "size_bytes": 2381700
       },
       {
         "id": "terrain_real_T_E02_S01",
@@ -492,7 +492,7 @@
         "ext": ".glb",
         "tile_id": "T_E02_S01",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E02_S01.glb",
-        "size_bytes": 1091304
+        "size_bytes": 2450068
       },
       {
         "id": "terrain_real_T_W01_N02",
@@ -500,7 +500,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_N02",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W01_N02.glb",
-        "size_bytes": 1168296
+        "size_bytes": 2423908
       },
       {
         "id": "terrain_real_T_W01_S02",
@@ -508,7 +508,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_S02",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W01_S02.glb",
-        "size_bytes": 1068652
+        "size_bytes": 2217932
       },
       {
         "id": "terrain_real_T_W02_N01",
@@ -516,7 +516,7 @@
         "ext": ".glb",
         "tile_id": "T_W02_N01",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W02_N01.glb",
-        "size_bytes": 1146940
+        "size_bytes": 2311944
       },
       {
         "id": "terrain_real_T_W02_S01",
@@ -524,7 +524,7 @@
         "ext": ".glb",
         "tile_id": "T_W02_S01",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W02_S01.glb",
-        "size_bytes": 1118832
+        "size_bytes": 2498436
       },
       {
         "id": "terrain_real_T_E02_N02",
@@ -532,7 +532,7 @@
         "ext": ".glb",
         "tile_id": "T_E02_N02",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E02_N02.glb",
-        "size_bytes": 1139920
+        "size_bytes": 2457724
       },
       {
         "id": "terrain_real_T_E02_S02",
@@ -540,7 +540,7 @@
         "ext": ".glb",
         "tile_id": "T_E02_S02",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E02_S02.glb",
-        "size_bytes": 1092896
+        "size_bytes": 2517968
       },
       {
         "id": "terrain_real_T_W02_N02",
@@ -548,7 +548,7 @@
         "ext": ".glb",
         "tile_id": "T_W02_N02",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W02_N02.glb",
-        "size_bytes": 1151248
+        "size_bytes": 2422088
       },
       {
         "id": "terrain_real_T_W02_S02",
@@ -556,7 +556,7 @@
         "ext": ".glb",
         "tile_id": "T_W02_S02",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W02_S02.glb",
-        "size_bytes": 1100004
+        "size_bytes": 2530148
       },
       {
         "id": "terrain_real_T_E00_N03",
@@ -564,7 +564,7 @@
         "ext": ".glb",
         "tile_id": "T_E00_N03",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E00_N03.glb",
-        "size_bytes": 1151432
+        "size_bytes": 2464592
       },
       {
         "id": "terrain_real_T_E00_S03",
@@ -572,7 +572,7 @@
         "ext": ".glb",
         "tile_id": "T_E00_S03",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E00_S03.glb",
-        "size_bytes": 957156
+        "size_bytes": 2390848
       },
       {
         "id": "terrain_real_T_E03_N00",
@@ -580,7 +580,7 @@
         "ext": ".glb",
         "tile_id": "T_E03_N00",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E03_N00.glb",
-        "size_bytes": 1163336
+        "size_bytes": 2465052
       },
       {
         "id": "terrain_real_T_W03_N00",
@@ -588,7 +588,7 @@
         "ext": ".glb",
         "tile_id": "T_W03_N00",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W03_N00.glb",
-        "size_bytes": 996972
+        "size_bytes": 2484416
       },
       {
         "id": "terrain_real_T_E01_N03",
@@ -596,7 +596,7 @@
         "ext": ".glb",
         "tile_id": "T_E01_N03",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E01_N03.glb",
-        "size_bytes": 1004064
+        "size_bytes": 2540684
       },
       {
         "id": "terrain_real_T_E01_S03",
@@ -604,7 +604,7 @@
         "ext": ".glb",
         "tile_id": "T_E01_S03",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E01_S03.glb",
-        "size_bytes": 955436
+        "size_bytes": 2387872
       },
       {
         "id": "terrain_real_T_E03_N01",
@@ -612,7 +612,7 @@
         "ext": ".glb",
         "tile_id": "T_E03_N01",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E03_N01.glb",
-        "size_bytes": 1131356
+        "size_bytes": 2446728
       },
       {
         "id": "terrain_real_T_E03_S01",
@@ -620,7 +620,7 @@
         "ext": ".glb",
         "tile_id": "T_E03_S01",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E03_S01.glb",
-        "size_bytes": 1164376
+        "size_bytes": 2406120
       },
       {
         "id": "terrain_real_T_W01_N03",
@@ -628,7 +628,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_N03",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W01_N03.glb",
-        "size_bytes": 1143532
+        "size_bytes": 2320988
       },
       {
         "id": "terrain_real_T_W01_S03",
@@ -636,7 +636,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_S03",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W01_S03.glb",
-        "size_bytes": 945828
+        "size_bytes": 2135976
       },
       {
         "id": "terrain_real_T_W03_N01",
@@ -644,7 +644,7 @@
         "ext": ".glb",
         "tile_id": "T_W03_N01",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W03_N01.glb",
-        "size_bytes": 1144436
+        "size_bytes": 2378540
       },
       {
         "id": "terrain_real_T_W03_S01",
@@ -652,7 +652,7 @@
         "ext": ".glb",
         "tile_id": "T_W03_S01",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W03_S01.glb",
-        "size_bytes": 998812
+        "size_bytes": 2464912
       },
       {
         "id": "terrain_real_T_E02_N03",
@@ -660,7 +660,7 @@
         "ext": ".glb",
         "tile_id": "T_E02_N03",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E02_N03.glb",
-        "size_bytes": 1008972
+        "size_bytes": 2449544
       },
       {
         "id": "terrain_real_T_E02_S03",
@@ -668,7 +668,7 @@
         "ext": ".glb",
         "tile_id": "T_E02_S03",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E02_S03.glb",
-        "size_bytes": 1001448
+        "size_bytes": 2600188
       },
       {
         "id": "terrain_real_T_E03_N02",
@@ -676,7 +676,7 @@
         "ext": ".glb",
         "tile_id": "T_E03_N02",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E03_N02.glb",
-        "size_bytes": 1156948
+        "size_bytes": 2529572
       },
       {
         "id": "terrain_real_T_E03_S02",
@@ -684,7 +684,7 @@
         "ext": ".glb",
         "tile_id": "T_E03_S02",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E03_S02.glb",
-        "size_bytes": 1141572
+        "size_bytes": 2495920
       },
       {
         "id": "terrain_real_T_W02_N03",
@@ -692,7 +692,7 @@
         "ext": ".glb",
         "tile_id": "T_W02_N03",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W02_N03.glb",
-        "size_bytes": 1009792
+        "size_bytes": 2331820
       },
       {
         "id": "terrain_real_T_W02_S03",
@@ -700,7 +700,7 @@
         "ext": ".glb",
         "tile_id": "T_W02_S03",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W02_S03.glb",
-        "size_bytes": 951544
+        "size_bytes": 2275788
       },
       {
         "id": "terrain_real_T_W03_N02",
@@ -708,7 +708,7 @@
         "ext": ".glb",
         "tile_id": "T_W03_N02",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W03_N02.glb",
-        "size_bytes": 1011740
+        "size_bytes": 2388512
       },
       {
         "id": "terrain_real_T_W03_S02",
@@ -716,7 +716,7 @@
         "ext": ".glb",
         "tile_id": "T_W03_S02",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W03_S02.glb",
-        "size_bytes": 1010104
+        "size_bytes": 2568044
       },
       {
         "id": "terrain_real_T_E00_N04",
@@ -724,7 +724,7 @@
         "ext": ".glb",
         "tile_id": "T_E00_N04",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E00_N04.glb",
-        "size_bytes": 1003976
+        "size_bytes": 1269780
       },
       {
         "id": "terrain_real_T_E00_S04",
@@ -732,7 +732,7 @@
         "ext": ".glb",
         "tile_id": "T_E00_S04",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E00_S04.glb",
-        "size_bytes": 1013132
+        "size_bytes": 1310016
       },
       {
         "id": "terrain_real_T_E04_N00",
@@ -740,7 +740,7 @@
         "ext": ".glb",
         "tile_id": "T_E04_N00",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E04_N00.glb",
-        "size_bytes": 1015496
+        "size_bytes": 1296520
       },
       {
         "id": "terrain_real_T_W04_N00",
@@ -748,7 +748,7 @@
         "ext": ".glb",
         "tile_id": "T_W04_N00",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W04_N00.glb",
-        "size_bytes": 997156
+        "size_bytes": 1259380
       },
       {
         "id": "terrain_real_T_E01_N04",
@@ -756,7 +756,7 @@
         "ext": ".glb",
         "tile_id": "T_E01_N04",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E01_N04.glb",
-        "size_bytes": 1008808
+        "size_bytes": 1275832
       },
       {
         "id": "terrain_real_T_E01_S04",
@@ -764,7 +764,7 @@
         "ext": ".glb",
         "tile_id": "T_E01_S04",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E01_S04.glb",
-        "size_bytes": 1007396
+        "size_bytes": 1326808
       },
       {
         "id": "terrain_real_T_E04_N01",
@@ -772,7 +772,7 @@
         "ext": ".glb",
         "tile_id": "T_E04_N01",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E04_N01.glb",
-        "size_bytes": 998088
+        "size_bytes": 1286364
       },
       {
         "id": "terrain_real_T_E04_S01",
@@ -780,7 +780,7 @@
         "ext": ".glb",
         "tile_id": "T_E04_S01",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E04_S01.glb",
-        "size_bytes": 1153188
+        "size_bytes": 1280964
       },
       {
         "id": "terrain_real_T_W01_N04",
@@ -788,7 +788,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_N04",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W01_N04.glb",
-        "size_bytes": 1005792
+        "size_bytes": 1268612
       },
       {
         "id": "terrain_real_T_W01_S04",
@@ -796,7 +796,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_S04",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W01_S04.glb",
-        "size_bytes": 1006788
+        "size_bytes": 1298700
       },
       {
         "id": "terrain_real_T_W04_N01",
@@ -804,7 +804,7 @@
         "ext": ".glb",
         "tile_id": "T_W04_N01",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W04_N01.glb",
-        "size_bytes": 1115016
+        "size_bytes": 1264616
       },
       {
         "id": "terrain_real_T_W04_S01",
@@ -812,7 +812,7 @@
         "ext": ".glb",
         "tile_id": "T_W04_S01",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W04_S01.glb",
-        "size_bytes": 1004536
+        "size_bytes": 1260584
       },
       {
         "id": "terrain_real_T_E03_N03",
@@ -820,7 +820,7 @@
         "ext": ".glb",
         "tile_id": "T_E03_N03",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E03_N03.glb",
-        "size_bytes": 1149080
+        "size_bytes": 2512820
       },
       {
         "id": "terrain_real_T_E03_S03",
@@ -828,7 +828,7 @@
         "ext": ".glb",
         "tile_id": "T_E03_S03",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E03_S03.glb",
-        "size_bytes": 996460
+        "size_bytes": 2606556
       },
       {
         "id": "terrain_real_T_W03_N03",
@@ -836,7 +836,7 @@
         "ext": ".glb",
         "tile_id": "T_W03_N03",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W03_N03.glb",
-        "size_bytes": 1011548
+        "size_bytes": 2478420
       },
       {
         "id": "terrain_real_T_W03_S03",
@@ -844,7 +844,7 @@
         "ext": ".glb",
         "tile_id": "T_W03_S03",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W03_S03.glb",
-        "size_bytes": 1005864
+        "size_bytes": 2588472
       },
       {
         "id": "terrain_real_T_E02_N04",
@@ -852,7 +852,7 @@
         "ext": ".glb",
         "tile_id": "T_E02_N04",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E02_N04.glb",
-        "size_bytes": 1149040
+        "size_bytes": 1290364
       },
       {
         "id": "terrain_real_T_E02_S04",
@@ -860,7 +860,7 @@
         "ext": ".glb",
         "tile_id": "T_E02_S04",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E02_S04.glb",
-        "size_bytes": 994348
+        "size_bytes": 1313584
       },
       {
         "id": "terrain_real_T_E04_N02",
@@ -868,7 +868,7 @@
         "ext": ".glb",
         "tile_id": "T_E04_N02",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E04_N02.glb",
-        "size_bytes": 1144752
+        "size_bytes": 1299616
       },
       {
         "id": "terrain_real_T_E04_S02",
@@ -876,7 +876,7 @@
         "ext": ".glb",
         "tile_id": "T_E04_S02",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E04_S02.glb",
-        "size_bytes": 1011652
+        "size_bytes": 1276484
       },
       {
         "id": "terrain_real_T_W02_N04",
@@ -884,7 +884,7 @@
         "ext": ".glb",
         "tile_id": "T_W02_N04",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W02_N04.glb",
-        "size_bytes": 1007020
+        "size_bytes": 1231032
       },
       {
         "id": "terrain_real_T_W02_S04",
@@ -892,7 +892,7 @@
         "ext": ".glb",
         "tile_id": "T_W02_S04",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W02_S04.glb",
-        "size_bytes": 998340
+        "size_bytes": 1244240
       },
       {
         "id": "terrain_real_T_W04_N02",
@@ -900,7 +900,7 @@
         "ext": ".glb",
         "tile_id": "T_W04_N02",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W04_N02.glb",
-        "size_bytes": 997516
+        "size_bytes": 1278580
       },
       {
         "id": "terrain_real_T_W04_S02",
@@ -908,7 +908,7 @@
         "ext": ".glb",
         "tile_id": "T_W04_S02",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W04_S02.glb",
-        "size_bytes": 997996
+        "size_bytes": 1249992
       },
       {
         "id": "terrain_real_T_E00_N05",
@@ -916,7 +916,7 @@
         "ext": ".glb",
         "tile_id": "T_E00_N05",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E00_N05.glb",
-        "size_bytes": 1049164
+        "size_bytes": 1266664
       },
       {
         "id": "terrain_real_T_E00_S05",
@@ -924,7 +924,7 @@
         "ext": ".glb",
         "tile_id": "T_E00_S05",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E00_S05.glb",
-        "size_bytes": 1073416
+        "size_bytes": 1283568
       },
       {
         "id": "terrain_real_T_E03_N04",
@@ -932,7 +932,7 @@
         "ext": ".glb",
         "tile_id": "T_E03_N04",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E03_N04.glb",
-        "size_bytes": 1148292
+        "size_bytes": 1300708
       },
       {
         "id": "terrain_real_T_E03_S04",
@@ -940,7 +940,7 @@
         "ext": ".glb",
         "tile_id": "T_E03_S04",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E03_S04.glb",
-        "size_bytes": 997636
+        "size_bytes": 1304184
       },
       {
         "id": "terrain_real_T_E04_N03",
@@ -948,7 +948,7 @@
         "ext": ".glb",
         "tile_id": "T_E04_N03",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E04_N03.glb",
-        "size_bytes": 997480
+        "size_bytes": 1281260
       },
       {
         "id": "terrain_real_T_E04_S03",
@@ -956,7 +956,7 @@
         "ext": ".glb",
         "tile_id": "T_E04_S03",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E04_S03.glb",
-        "size_bytes": 1130716
+        "size_bytes": 1276660
       },
       {
         "id": "terrain_real_T_W03_N04",
@@ -964,7 +964,7 @@
         "ext": ".glb",
         "tile_id": "T_W03_N04",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W03_N04.glb",
-        "size_bytes": 1006504
+        "size_bytes": 1198896
       },
       {
         "id": "terrain_real_T_W03_S04",
@@ -972,7 +972,7 @@
         "ext": ".glb",
         "tile_id": "T_W03_S04",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W03_S04.glb",
-        "size_bytes": 1004020
+        "size_bytes": 1247920
       },
       {
         "id": "terrain_real_T_W04_N03",
@@ -980,7 +980,7 @@
         "ext": ".glb",
         "tile_id": "T_W04_N03",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W04_N03.glb",
-        "size_bytes": 1020720
+        "size_bytes": 1280652
       },
       {
         "id": "terrain_real_T_W04_S03",
@@ -988,7 +988,7 @@
         "ext": ".glb",
         "tile_id": "T_W04_S03",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W04_S03.glb",
-        "size_bytes": 994228
+        "size_bytes": 1252848
       },
       {
         "id": "terrain_real_T_W05_N00",
@@ -996,7 +996,7 @@
         "ext": ".glb",
         "tile_id": "T_W05_N00",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W05_N00.glb",
-        "size_bytes": 1007172
+        "size_bytes": 1248992
       },
       {
         "id": "terrain_real_T_E01_N05",
@@ -1004,7 +1004,7 @@
         "ext": ".glb",
         "tile_id": "T_E01_N05",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E01_N05.glb",
-        "size_bytes": 1054996
+        "size_bytes": 1270128
       },
       {
         "id": "terrain_real_T_E01_S05",
@@ -1012,7 +1012,7 @@
         "ext": ".glb",
         "tile_id": "T_E01_S05",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E01_S05.glb",
-        "size_bytes": 1101792
+        "size_bytes": 1309188
       },
       {
         "id": "terrain_real_T_E05_S01",
@@ -1020,7 +1020,7 @@
         "ext": ".glb",
         "tile_id": "T_E05_S01",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E05_S01.glb",
-        "size_bytes": 1128880
+        "size_bytes": 1279844
       },
       {
         "id": "terrain_real_T_W01_N05",
@@ -1028,7 +1028,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_N05",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W01_N05.glb",
-        "size_bytes": 1039908
+        "size_bytes": 1226120
       },
       {
         "id": "terrain_real_T_W01_S05",
@@ -1036,7 +1036,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_S05",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W01_S05.glb",
-        "size_bytes": 1106732
+        "size_bytes": 1289260
       },
       {
         "id": "terrain_real_T_W05_N01",
@@ -1044,7 +1044,7 @@
         "ext": ".glb",
         "tile_id": "T_W05_N01",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W05_N01.glb",
-        "size_bytes": 997828
+        "size_bytes": 1242276
       },
       {
         "id": "terrain_real_T_W05_S01",
@@ -1052,7 +1052,7 @@
         "ext": ".glb",
         "tile_id": "T_W05_S01",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W05_S01.glb",
-        "size_bytes": 1004212
+        "size_bytes": 1262100
       },
       {
         "id": "terrain_real_T_E05_S02",
@@ -1060,7 +1060,7 @@
         "ext": ".glb",
         "tile_id": "T_E05_S02",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E05_S02.glb",
-        "size_bytes": 1026408
+        "size_bytes": 1270204
       },
       {
         "id": "terrain_real_T_W02_S05",
@@ -1068,7 +1068,7 @@
         "ext": ".glb",
         "tile_id": "T_W02_S05",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W02_S05.glb",
-        "size_bytes": 1075164
+        "size_bytes": 1269344
       },
       {
         "id": "terrain_real_T_W05_N02",
@@ -1076,7 +1076,7 @@
         "ext": ".glb",
         "tile_id": "T_W05_N02",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W05_N02.glb",
-        "size_bytes": 997764
+        "size_bytes": 1274476
       },
       {
         "id": "terrain_real_T_W05_S02",
@@ -1084,7 +1084,7 @@
         "ext": ".glb",
         "tile_id": "T_W05_S02",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W05_S02.glb",
-        "size_bytes": 1015952
+        "size_bytes": 1251032
       },
       {
         "id": "terrain_T_W02_N05",
@@ -1100,7 +1100,7 @@
         "ext": ".glb",
         "tile_id": "T_E04_N04",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E04_N04.glb",
-        "size_bytes": 1128304
+        "size_bytes": 1282176
       },
       {
         "id": "terrain_real_T_E04_S04",
@@ -1108,7 +1108,7 @@
         "ext": ".glb",
         "tile_id": "T_E04_S04",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E04_S04.glb",
-        "size_bytes": 1144592
+        "size_bytes": 1279672
       },
       {
         "id": "terrain_real_T_W04_N04",
@@ -1116,7 +1116,7 @@
         "ext": ".glb",
         "tile_id": "T_W04_N04",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W04_N04.glb",
-        "size_bytes": 1024624
+        "size_bytes": 1284028
       },
       {
         "id": "terrain_real_T_W04_S04",
@@ -1124,7 +1124,7 @@
         "ext": ".glb",
         "tile_id": "T_W04_S04",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W04_S04.glb",
-        "size_bytes": 997620
+        "size_bytes": 1269876
       },
       {
         "id": "terrain_real_T_E05_S03",
@@ -1132,7 +1132,7 @@
         "ext": ".glb",
         "tile_id": "T_E05_S03",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E05_S03.glb",
-        "size_bytes": 1056156
+        "size_bytes": 1271556
       },
       {
         "id": "terrain_real_T_W03_N05",
@@ -1140,7 +1140,7 @@
         "ext": ".glb",
         "tile_id": "T_W03_N05",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W03_N05.glb",
-        "size_bytes": 998320
+        "size_bytes": 1233620
       },
       {
         "id": "terrain_real_T_W03_S05",
@@ -1148,7 +1148,7 @@
         "ext": ".glb",
         "tile_id": "T_W03_S05",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W03_S05.glb",
-        "size_bytes": 1084676
+        "size_bytes": 1271244
       },
       {
         "id": "terrain_real_T_W05_N03",
@@ -1156,7 +1156,7 @@
         "ext": ".glb",
         "tile_id": "T_W05_N03",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W05_N03.glb",
-        "size_bytes": 997328
+        "size_bytes": 1296564
       },
       {
         "id": "terrain_real_T_W05_S03",
@@ -1164,7 +1164,7 @@
         "ext": ".glb",
         "tile_id": "T_W05_S03",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W05_S03.glb",
-        "size_bytes": 1107708
+        "size_bytes": 1275736
       },
       {
         "id": "terrain_real_T_E00_N06",
@@ -1172,7 +1172,7 @@
         "ext": ".glb",
         "tile_id": "T_E00_N06",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E00_N06.glb",
-        "size_bytes": 1017520
+        "size_bytes": 1282116
       },
       {
         "id": "terrain_real_T_E01_N06",
@@ -1180,7 +1180,7 @@
         "ext": ".glb",
         "tile_id": "T_E01_N06",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E01_N06.glb",
-        "size_bytes": 999608
+        "size_bytes": 1276416
       },
       {
         "id": "terrain_real_T_W01_N06",
@@ -1188,7 +1188,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_N06",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W01_N06.glb",
-        "size_bytes": 1011240
+        "size_bytes": 1224988
       },
       {
         "id": "terrain_real_T_W06_S02",
@@ -1196,7 +1196,7 @@
         "ext": ".glb",
         "tile_id": "T_W06_S02",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W06_S02.glb",
-        "size_bytes": 1097812
+        "size_bytes": 1221892
       },
       {
         "id": "terrain_real_T_E05_S04",
@@ -1204,7 +1204,7 @@
         "ext": ".glb",
         "tile_id": "T_E05_S04",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E05_S04.glb",
-        "size_bytes": 1148916
+        "size_bytes": 1241576
       },
       {
         "id": "terrain_real_T_W04_N05",
@@ -1212,7 +1212,7 @@
         "ext": ".glb",
         "tile_id": "T_W04_N05",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W04_N05.glb",
-        "size_bytes": 1013104
+        "size_bytes": 1329228
       },
       {
         "id": "terrain_real_T_W04_S05",
@@ -1220,7 +1220,7 @@
         "ext": ".glb",
         "tile_id": "T_W04_S05",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W04_S05.glb",
-        "size_bytes": 997464
+        "size_bytes": 1283196
       },
       {
         "id": "terrain_real_T_W05_N04",
@@ -1228,7 +1228,7 @@
         "ext": ".glb",
         "tile_id": "T_W05_N04",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W05_N04.glb",
-        "size_bytes": 999604
+        "size_bytes": 1309456
       },
       {
         "id": "terrain_real_T_W05_S04",
@@ -1236,7 +1236,7 @@
         "ext": ".glb",
         "tile_id": "T_W05_S04",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_W05_S04.glb",
-        "size_bytes": 997232
+        "size_bytes": 1268196
       },
       {
         "id": "terrain_real_T_E06_S03",
@@ -1244,7 +1244,7 @@
         "ext": ".glb",
         "tile_id": "T_E06_S03",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E06_S03.glb",
-        "size_bytes": 1056616
+        "size_bytes": 1271100
       },
       {
         "id": "terrain_real_T_E05_S05",
@@ -1252,7 +1252,7 @@
         "ext": ".glb",
         "tile_id": "T_E05_S05",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E05_S05.glb",
-        "size_bytes": 1128252
+        "size_bytes": 1225540
       },
       {
         "id": "terrain_real_T_E06_S04",
@@ -1260,7 +1260,7 @@
         "ext": ".glb",
         "tile_id": "T_E06_S04",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E06_S04.glb",
-        "size_bytes": 1057952
+        "size_bytes": 1278116
       },
       {
         "id": "terrain_real_T_E07_S03",
@@ -1268,7 +1268,7 @@
         "ext": ".glb",
         "tile_id": "T_E07_S03",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E07_S03.glb",
-        "size_bytes": 1048328
+        "size_bytes": 1265932
       },
       {
         "id": "terrain_real_T_E06_S05",
@@ -1276,7 +1276,7 @@
         "ext": ".glb",
         "tile_id": "T_E06_S05",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E06_S05.glb",
-        "size_bytes": 1135656
+        "size_bytes": 1244600
       },
       {
         "id": "terrain_real_T_E07_S04",
@@ -1284,7 +1284,7 @@
         "ext": ".glb",
         "tile_id": "T_E07_S04",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E07_S04.glb",
-        "size_bytes": 1154264
+        "size_bytes": 1273272
       },
       {
         "id": "terrain_real_T_E07_S05",
@@ -1292,7 +1292,7 @@
         "ext": ".glb",
         "tile_id": "T_E07_S05",
         "url": "./assets/satellite_dem_tiles/terrain_real_T_E07_S05.glb",
-        "size_bytes": 1154140
+        "size_bytes": 1285288
       }
     ],
     "heightmaps": [],
