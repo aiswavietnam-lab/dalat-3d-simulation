@@ -338,10 +338,10 @@
    * Có khoảng trễ hysteresis (+650m) để không nạp/gỡ liên tục khi camera dừng ở ranh giới
    */
   const LOD_CONFIG = {
-    LOD0_MAX_M: 2800.0, // Chi tiết tối đa: Địa hình + Hồ + 100% Rừng thông/Mai Anh Đào + Công trình + Đường + Nhà dân
-    LOD1_MAX_M: 6200.0, // Trung bình: Địa hình + Hồ + Công trình + Đường + 50% Thông lớn
-    LOD2_MAX_M: 13500.0, // Xa (RING_2): Địa hình + Hồ lớn + Công trình chính
-    UNLOAD_HYSTERESIS_M: 650.0,
+    LOD0_MAX_M: 2800.0, // Chi tiết tối đa: Địa hình + Hồ + Rừng thông/Mai Anh Đào + Công trình + Đường OSM thật + Nhà dân
+    LOD1_MAX_M: 4800.0, // Trung bình: Địa hình + Hồ + Công trình + Đường + Nhà dân + Thông chính
+    LOD2_MAX_M: 10500.0, // Xa: Địa hình + Hồ lớn + Công trình chính (xa hơn nối liền bằng nền đại cảnh Copernicus 60km)
+    UNLOAD_HYSTERESIS_M: 600.0,
   };
 
   function createRng(seed) {
@@ -526,7 +526,10 @@
 
       root.traverse((obj) => {
         if (!obj.isMesh) return;
-        obj.castShadow = Boolean(allowCastShadow && !isWaterLayer);
+        const objName = String(obj.name || '').toLowerCase();
+        const isActualWaterMesh =
+          isWaterLayer && !/embankment|promenade|coping|bank|spillway|bridge|parapet|verge/.test(objName);
+        obj.castShadow = Boolean(allowCastShadow && !isActualWaterMesh);
         obj.receiveShadow = true;
         if (landmarkMeta) {
           obj.userData = obj.userData || {};
@@ -537,7 +540,10 @@
         const mats = Array.isArray(obj.material) ? obj.material : [obj.material];
         mats.forEach((mat) => {
           if (!mat) return;
-          if (isWaterLayer) {
+          const mName = String(mat.name || '').toLowerCase();
+          const isMatWater =
+            isActualWaterMesh && !/embankment|promenade|stone|granite|grass|verge|spillway|concrete/.test(mName);
+          if (isMatWater) {
             mat.transparent = true;
             mat.opacity = 0.9;
             mat.roughness = 0.14;
@@ -555,7 +561,7 @@
           mat.needsUpdate = true;
         });
 
-        if (!isWaterLayer && obj !== root) {
+        if (!isActualWaterMesh && obj !== root) {
           obj.updateMatrix();
           obj.matrixAutoUpdate = false;
         }
@@ -629,33 +635,41 @@
     }
 
     async _loadLandmarksManifest() {
-      try {
-        const resp = await fetch('./assets/landmarks/landmarks_manifest.json', {
-          cache: 'no-cache',
-        });
-        if (!resp.ok) return;
-        const data = await resp.json();
-        if (Array.isArray(data.landmarks)) {
-          for (const lm of data.landmarks) {
-            if (lm && lm.id) {
-              this.landmarkCatalog[lm.id] = Object.assign(
+      const manifestSpecs = [
+        { url: './assets/landmarks/landmarks_manifest.json', key: 'landmarks', isVilla: false },
+        { url: './assets/hero_landmarks_ultra/hero_landmarks_manifest.json', key: 'landmarks_ultra', isVilla: false },
+        { url: './assets/french_villas/french_villas_manifest.json', key: 'villas', isVilla: true },
+        { url: './assets/tourism_complexes/tourism_complexes_manifest.json', key: 'complexes', isVilla: false },
+      ];
+      await Promise.allSettled(
+        manifestSpecs.map(async (spec) => {
+          try {
+            const resp = await fetch(spec.url, { cache: 'no-cache' });
+            if (!resp.ok) return;
+            const data = await resp.json();
+            const list = data && Array.isArray(data[spec.key]) ? data[spec.key] : [];
+            for (const lm of list) {
+              if (!lm || !lm.id) continue;
+              const merged = Object.assign(
                 {},
                 this.landmarkCatalog[lm.id] || {},
-                lm
+                lm,
+                { is_french_villa: spec.isVilla }
               );
+              this.landmarkCatalog[lm.id] = merged;
               if (lm.tile_id) {
                 const rec = this._ensureTileRecord(lm.tile_id);
-                if (rec && lm.built) {
+                if (rec) {
                   rec.has_landmarks = true;
                   rec.has_any_real_data = true;
                 }
               }
             }
+          } catch (_) {
+            /* tiếp tục nạp các manifest khác */
           }
-        }
-      } catch (_) {
-        /* sử dụng DEFAULT_LANDMARK_CATALOG */
-      }
+        })
+      );
     }
 
     _enqueueStreamTask(url, priority, fn) {
@@ -791,11 +805,19 @@
         coreRec.has_any_real_data = true;
       }
 
-      // 1. Địa hình (Slot 1) — lõi T_E00_N00 trước, các ô còn lại stream động theo camera
+      // 1. Địa hình — nền đại cảnh Copernicus 60km (Priority 0) & lõi T_E00_N00 (Priority 1) trước
       if (layers.terrain && layers.terrain.length > 0) {
         this.usingFallback.terrain = false;
         this._clearFallbackTag(this.layers.terrain);
         for (const item of layers.terrain) {
+          if (item.is_backdrop || /backdrop/i.test(item.filename || '')) {
+            corePromises.push(
+              this._enqueueStreamTask(item.url, 0, () =>
+                this._loadGlbIntoLayer(item.url, 'terrain', false, 'T_E00_N00', { isBackdrop: true })
+              )
+            );
+            continue;
+          }
           const p = this._queueOrDeferTileTask(item.tile_id, item.url, 1, () =>
             this._loadGlbIntoLayer(item.url, 'terrain', false, item.tile_id)
           );
@@ -806,14 +828,14 @@
         this.usingFallback.terrain = true;
       }
 
-      // 2. Hồ nước (Slot 2) — nạp Hồ Xuân Hương trước, hồ/thác ngoại vi stream khi tới gần
+      // 2. Hồ nước OSM chuẩn — nạp Hồ Xuân Hương & các hồ nội đô RING_0 trước
       if (layers.water && layers.water.length > 0) {
         this.usingFallback.water = false;
         this._clearFallbackTag(this.layers.water);
         for (const item of layers.water) {
-          const tid = this._inferRegionTileId(item);
-          const isHxh = /xuan_huong/i.test(item.filename || item.url || '');
-          if (isHxh) {
+          const tid = item.tile_id || this._inferRegionTileId(item);
+          const isCoreWater = /xuan_huong|ring0_osm_lakes/i.test(item.filename || item.url || '');
+          if (isCoreWater) {
             corePromises.push(
               this._enqueueStreamTask(item.url, 2, () =>
                 this._loadGlbIntoLayer(item.url, 'water', true, 'T_E00_N00')
@@ -830,12 +852,12 @@
         this.usingFallback.water = true;
       }
 
-      // 3. Rừng thông & Mai Anh Đào (Slot 3)
+      // 3. Rừng thông & Mai Anh Đào (đã lọc va chạm mặt hồ, lòng đường & nhà dân)
       if (layers.vegetation_instances && layers.vegetation_instances.length > 0) {
         this.usingFallback.vegetation = false;
         this._clearFallbackTag(this.layers.vegetation);
         for (const item of layers.vegetation_instances) {
-          const p = this._queueOrDeferTileTask(item.tile_id, item.url, 5, () =>
+          const p = this._queueOrDeferTileTask(item.tile_id, item.url, 6, () =>
             this._loadVegetationInstancesJson(item.url, item.tile_id)
           );
           if (p) corePromises.push(p);
@@ -845,44 +867,54 @@
         this.usingFallback.vegetation = true;
       }
 
-      // 4. Công trình nổi bật (Slot 4)
+      // 4. Công trình nổi bật & Biệt thự Pháp — stream theo đúng tile_id thực tế (KHÔNG gom về giữa hồ)
       if (layers.landmarks && layers.landmarks.length > 0) {
         this.usingFallback.landmarks = false;
         this._clearFallbackTag(this.layers.landmarks);
+        const loadedIds = new Set();
         for (const item of layers.landmarks) {
-          const tid = this._inferRegionTileId(item);
-          const isCoreHero = /^(?:ultra_)?lm_0[1-9]|^(?:ultra_)?lm_1[0-4]/i.test(item.filename || item.id || '');
-          if (tid === 'T_E00_N00' || isCoreHero) {
-            const p = this._enqueueStreamTask(item.url, isCoreHero ? 3 : 7, () =>
+          loadedIds.add(item.id);
+          if (item.id && item.id.startsWith('ultra_')) {
+            loadedIds.add(item.id.replace(/^ultra_/, ''));
+          }
+          const catMeta = this.landmarkCatalog[item.id];
+          if (catMeta && catMeta.replaces_slot4_id) {
+            loadedIds.add(catMeta.replaces_slot4_id);
+          }
+          const tid = item.tile_id || (catMeta && catMeta.tile_id) || this._inferRegionTileId(item);
+          if (tid === 'T_E00_N00') {
+            const pri = item.is_french_villa ? 7 : 4;
+            const p = this._enqueueStreamTask(item.url, pri, () => this._loadLandmarkGlb(item));
+            if (!item.is_french_villa) corePromises.push(p);
+          } else {
+            this._queueOrDeferTileTask(tid, item.url, item.is_french_villa ? 16 : 12, () =>
               this._loadLandmarkGlb(item)
             );
-            if (tid === 'T_E00_N00') corePromises.push(p);
-          } else {
-            this._queueOrDeferTileTask(tid, item.url, 15, () => this._loadLandmarkGlb(item));
           }
         }
-        // Vẫn dựng thêm các công trình lõi chưa có GLB riêng để đủ 6 điểm mốc Tour bay
-        this._buildRemainingFallbackLandmarks(layers.landmarks.map((x) => x.id));
+        // Chỉ dựng fallback cho công trình lõi nếu thực sự chưa có cả bản thường lẫn bản ultra
+        if (layers.landmarks.length < 6) {
+          this._buildRemainingFallbackLandmarks(Array.from(loadedIds));
+        }
       } else if (!this.usingFallback.landmarks) {
         this._buildProceduralLandmarks();
         this.usingFallback.landmarks = true;
       }
 
-      // 5. Đường phố & Nhà dân (Slot 5) — ưu tiên roads_ring0 & cầu Ông Đạo trước, đèo/vành đai ngoài stream động
+      // 5. Đường bộ OpenStreetMap thật theo từng ô Tile — ưu tiên T_E00_N00 ngay lập tức (Priority 2)
       if (layers.roads && layers.roads.length > 0) {
         this.usingFallback.roads = false;
         this._clearFallbackTag(this.layers.roads);
         for (const item of layers.roads) {
-          const tid = this._inferRegionTileId(item);
-          const isMustCore = /roads_ring0|cau_ong_dao|vong_xoay_dai_phun_nuoc/i.test(item.filename || '');
-          if (isMustCore) {
+          const tid = item.tile_id || this._inferRegionTileId(item);
+          if (tid === 'T_E00_N00') {
             corePromises.push(
-              this._enqueueStreamTask(item.url, 6, () =>
+              this._enqueueStreamTask(item.url, 2, () =>
                 this._loadGlbIntoLayer(item.url, 'roads', false, 'T_E00_N00')
               )
             );
           } else {
-            this._queueOrDeferTileTask(tid, item.url, 18, () =>
+            this._queueOrDeferTileTask(tid, item.url, 8, () =>
               this._loadGlbIntoLayer(item.url, 'roads', false, tid)
             );
           }
@@ -892,11 +924,13 @@
         this.usingFallback.roads = true;
       }
 
+      // 6. Nhà dân OSM thật bám DEM — ưu tiên T_E00_N00 (Priority 3)
       if (layers.buildings && layers.buildings.length > 0) {
         for (const item of layers.buildings) {
-          this._queueOrDeferTileTask(item.tile_id, item.url, 12, () =>
+          const p = this._queueOrDeferTileTask(item.tile_id, item.url, 3, () =>
             this._loadGlbIntoLayer(item.url, 'buildings', false, item.tile_id)
           );
+          if (p) corePromises.push(p);
         }
       }
 
@@ -974,16 +1008,17 @@
 
       const isCore = tileId === 'T_E00_N00';
       const showTerrain = isCore || lodState !== 'CULLED';
-      const showVeg = lodState === 'LOD0' || lodState === 'LOD1';
-      const showBuildings = lodState === 'LOD0' || lodState === 'LOD1';
+      const showVeg = isCore || lodState === 'LOD0';
+      const showBuildings = isCore || lodState === 'LOD0' || lodState === 'LOD1';
       const showRoads = isCore || lodState === 'LOD0' || lodState === 'LOD1';
 
-      for (const obj of bucket.terrain) obj.visible = showTerrain;
+      for (const obj of bucket.terrain) {
+        obj.visible = Boolean((obj.userData && obj.userData.isBackdrop) || showTerrain);
+      }
       for (const obj of bucket.water) obj.visible = showTerrain;
       for (const obj of bucket.landmarks) obj.visible = showTerrain;
       for (const obj of bucket.roads) obj.visible = showRoads;
       for (const obj of bucket.vegetation) {
-        // Ở LOD1 ẩn các bụi cây thấp (da_quy_bush) để tăng FPS
         if (obj.userData && obj.userData.isLowShrub) {
           obj.visible = lodState === 'LOD0';
         } else {
@@ -1007,16 +1042,21 @@
       }
     }
 
-    _loadGlbIntoLayer(url, layerName, isWater, tileId) {
+    _loadGlbIntoLayer(url, layerName, isWater, tileId, opts) {
       if (!this.loader || this.loadedUrls.has(url)) return Promise.resolve();
       this.loadedUrls.add(url);
       const allowCastShadow = layerName === 'landmarks';
+      const isBackdrop = Boolean(opts && opts.isBackdrop);
       return new Promise((resolve) => {
         this.loader.load(
           url,
           (gltf) => {
             const root = gltf.scene || (gltf.scenes && gltf.scenes[0]);
             if (root) {
+              if (isBackdrop) {
+                root.userData = root.userData || {};
+                root.userData.isBackdrop = true;
+              }
               this.sanitizeLoadedObject(root, isWater, null, allowCastShadow);
               this.layers[layerName].add(root);
               if (tileId) {
@@ -1039,18 +1079,27 @@
     }
 
     /**
-     * Nạp mô hình công trình nổi bật từ Slot 4, tự động đặt đúng gltf_position & gắn metadata kiến trúc
+     * Nạp mô hình công trình nổi bật / biệt thự Pháp / quần thể du lịch,
+     * tự động đặt đúng gltf_position & chặn tuyệt đối mọi mô hình không có tọa độ rơi vào giữa Hồ Xuân Hương
      */
     _loadLandmarkGlb(item) {
       const url = item.url;
       if (!this.loader || this.loadedUrls.has(url)) return Promise.resolve();
       this.loadedUrls.add(url);
       const lmId = item.id;
-      const meta = this.landmarkCatalog[lmId] || {
-        id: lmId,
-        name_vi: lmId,
-        tile_id: item.tile_id || 'T_E00_N00',
-      };
+      const catMeta = this.landmarkCatalog[lmId] || {};
+      const meta = Object.assign(
+        {
+          id: lmId,
+          name_vi: item.name_vi || lmId,
+          tile_id: item.tile_id || 'T_E00_N00',
+        },
+        catMeta,
+        item.gltf_position ? { gltf_position: item.gltf_position } : {},
+        typeof item.rotation_y_rad === 'number' ? { rotation_y_rad: item.rotation_y_rad } : {},
+        item.name_vi ? { name_vi: item.name_vi } : {},
+        item.is_french_villa != null ? { is_french_villa: item.is_french_villa } : {}
+      );
 
       return new Promise((resolve) => {
         this.loader.load(
@@ -1058,19 +1107,30 @@
           (gltf) => {
             const root = gltf.scene || (gltf.scenes && gltf.scenes[0]);
             if (root) {
-              // Kiểm tra nếu asset có pivot cục bộ tại (0,0,0) thì dịch tới gltf_position của công trình
               const box = new THREE.Box3().setFromObject(root);
               const center = new THREE.Vector3();
+              const size = new THREE.Vector3();
               box.getCenter(center);
-              if (
-                Array.isArray(meta.gltf_position) &&
-                meta.gltf_position.length === 3 &&
-                Math.hypot(center.x, center.z) < 160.0 &&
-                Math.hypot(meta.gltf_position[0], meta.gltf_position[2]) > 60.0
-              ) {
-                root.position.fromArray(meta.gltf_position);
-                if (typeof meta.rotation_y_rad === 'number') {
-                  root.rotation.y = meta.rotation_y_rad;
+              box.getSize(size);
+              const isLocalOriginMesh =
+                Math.hypot(center.x, center.z) < 160.0 && Math.max(size.x, size.z) < 450.0;
+
+              if (isLocalOriginMesh) {
+                if (
+                  Array.isArray(meta.gltf_position) &&
+                  meta.gltf_position.length === 3 &&
+                  Math.hypot(meta.gltf_position[0], meta.gltf_position[2]) > 35.0
+                ) {
+                  root.position.fromArray(meta.gltf_position);
+                  if (typeof meta.rotation_y_rad === 'number') {
+                    root.rotation.y = meta.rotation_y_rad;
+                  }
+                } else {
+                  console.warn(
+                    `[TileStreamer] Bỏ qua ${lmId} vì có pivot tại (0,0,0) nhưng thiếu gltf_position hợp lệ (chống chồng giữa Hồ Xuân Hương).`
+                  );
+                  resolve();
+                  return;
                 }
               }
 
@@ -1079,13 +1139,20 @@
               root.userData.landmarkMeta = Object.assign({}, meta, { isRealGlb: true });
               this.sanitizeLoadedObject(root, false, root.userData.landmarkMeta);
 
-              // Chỉ gắn nhãn tên nổi 3D cho công trình có tên tiếng Việt chuẩn (bỏ qua mã file snake_case)
-              const cleanTitle = String(meta.name_vi || '').split('(')[0].trim();
-              if (cleanTitle && !cleanTitle.includes('_')) {
+              // Gắn nhãn tên 3D chỉ cho công trình biểu tượng đơn lẻ (không gắn lên 102 biệt thự hoặc cụm đa điểm rộng > 400m)
+              const cleanTitle = String(meta.name_vi || '')
+                .split('(')[0]
+                .replace(/\s*Ultra-LOD\d+\s*/gi, ' ')
+                .replace(/\s*LOD\d+\s*/gi, ' ')
+                .replace(/\s*\/\s*.*$/, '')
+                .replace(/\s+/g, ' ')
+                .trim();
+              const isMultiSiteSpan = Math.max(size.x, size.z) > 400;
+              if (!meta.is_french_villa && !isMultiSiteSpan && cleanTitle && !cleanTitle.includes('_')) {
                 const topY = (box.max.y || 24) + 10;
-                const lx = Math.hypot(center.x, center.z) > 160.0 ? center.x - root.position.x : 0;
-                const lz = Math.hypot(center.x, center.z) > 160.0 ? center.z - root.position.z : 0;
-                const ly = Math.max(14, topY - root.position.y);
+                const lx = isLocalOriginMesh ? 0 : center.x - root.position.x;
+                const lz = isLocalOriginMesh ? 0 : center.z - root.position.z;
+                const ly = Math.max(14, isLocalOriginMesh ? topY : topY - root.position.y);
                 const label = this._createLabelSprite(cleanTitle, lx, ly, lz);
                 root.add(label);
               }
@@ -1351,46 +1418,124 @@
       }
     }
 
+    _mergeSimpleGeos(geos) {
+      let totalVerts = 0;
+      const nonIndexed = geos.map((g) => {
+        const ng = g.index ? g.toNonIndexed() : g.clone();
+        if (!ng.attributes.normal) ng.computeVertexNormals();
+        totalVerts += ng.attributes.position.count;
+        return ng;
+      });
+      const posArr = new Float32Array(totalVerts * 3);
+      const nrmArr = new Float32Array(totalVerts * 3);
+      const uvArr = new Float32Array(totalVerts * 2);
+      let vOff = 0;
+      for (const ng of nonIndexed) {
+        const p = ng.attributes.position.array;
+        const n = ng.attributes.normal.array;
+        const u = ng.attributes.uv ? ng.attributes.uv.array : null;
+        posArr.set(p, vOff * 3);
+        nrmArr.set(n, vOff * 3);
+        if (u) uvArr.set(u, vOff * 2);
+        vOff += ng.attributes.position.count;
+        ng.dispose();
+      }
+      const out = new THREE.BufferGeometry();
+      out.setAttribute('position', new THREE.BufferAttribute(posArr, 3));
+      out.setAttribute('normal', new THREE.BufferAttribute(nrmArr, 3));
+      out.setAttribute('uv', new THREE.BufferAttribute(uvArr, 2));
+      out.computeBoundingSphere();
+      return out;
+    }
+
+    _getSharedPineGeometries() {
+      if (this._sharedPineGeos) return this._sharedPineGeos;
+      const trunkGeo = new THREE.CylinderGeometry(0.28, 0.52, 8.2, 5);
+      trunkGeo.translate(0, 4.1, 0);
+
+      // Tán Thông 3 lá Đà Lạt 3 tầng tự nhiên (thay thế hoàn toàn hình nón đơn giản)
+      const t1 = new THREE.ConeGeometry(4.1, 5.8, 6, 1, false);
+      t1.translate(0, 8.4, 0);
+      const t2 = new THREE.ConeGeometry(3.2, 5.6, 6, 1, false);
+      t2.rotateY(0.52);
+      t2.translate(0.15, 11.8, -0.1);
+      const t3 = new THREE.ConeGeometry(2.1, 5.2, 6, 1, false);
+      t3.rotateY(1.05);
+      t3.translate(-0.1, 15.0, 0.08);
+      const crownGeo = this._mergeSimpleGeos([t1, t2, t3]);
+      t1.dispose();
+      t2.dispose();
+      t3.dispose();
+
+      const scaleUv = (geo, su, sv) => {
+        const uv = geo.attributes.uv;
+        if (!uv) return;
+        for (let i = 0; i < uv.array.length; i += 2) {
+          uv.array[i] *= su;
+          uv.array[i + 1] *= sv;
+        }
+        uv.needsUpdate = true;
+        geo.userData = geo.userData || {};
+        geo.userData._pbrUvReady = true;
+      };
+      scaleUv(trunkGeo, 2.5, 5.5);
+      scaleUv(crownGeo, 5.5, 4.5);
+
+      this._sharedPineGeos = { trunkGeo, crownGeo };
+      return this._sharedPineGeos;
+    }
+
+    _getSharedBlossomGeometries() {
+      if (this._sharedBlossomGeos) return this._sharedBlossomGeos;
+      const trunkGeo = new THREE.CylinderGeometry(0.22, 0.42, 4.0, 5);
+      trunkGeo.translate(0, 2.0, 0);
+
+      // Tán Mai Anh Đào 3 cụm tự nhiên (nhẹ và mềm mại hơn khối cầu đơn)
+      const b1 = new THREE.IcosahedronGeometry(2.4, 0);
+      b1.scale(1.25, 0.72, 1.15);
+      b1.translate(-0.9, 5.2, 0.4);
+      const b2 = new THREE.IcosahedronGeometry(2.1, 0);
+      b2.scale(1.15, 0.68, 1.2);
+      b2.translate(1.1, 5.7, -0.5);
+      const b3 = new THREE.IcosahedronGeometry(1.9, 0);
+      b3.scale(1.1, 0.76, 1.1);
+      b3.translate(0.0, 6.4, 0.2);
+      const crownGeo = this._mergeSimpleGeos([b1, b2, b3]);
+      b1.dispose();
+      b2.dispose();
+      b3.dispose();
+
+      const pos = crownGeo.attributes.position;
+      const cUv = new Float32Array(pos.count * 2);
+      for (let i = 0; i < pos.count; i++) {
+        cUv[i * 2] = (pos.getX(i) + pos.getZ(i) * 0.6) * 0.55;
+        cUv[i * 2 + 1] = (pos.getY(i) - pos.getZ(i) * 0.4) * 0.55;
+      }
+      crownGeo.setAttribute('uv', new THREE.BufferAttribute(cUv, 2));
+      crownGeo.userData = { _pbrUvReady: true };
+      trunkGeo.userData = { _pbrUvReady: true };
+
+      this._sharedBlossomGeos = { trunkGeo, crownGeo };
+      return this._sharedBlossomGeos;
+    }
+
     _createPineInstancedMesh(items, isFallback, tileId) {
       const count = items.length;
-      const trunkGeo = new THREE.CylinderGeometry(0.45, 0.75, 7.5, 6);
-      trunkGeo.translate(0, 3.75, 0);
+      const { trunkGeo, crownGeo } = this._getSharedPineGeometries();
       let trunkMat = new THREE.MeshStandardMaterial({
         name: 'pine_bark',
         color: new THREE.Color(0x5c3d28).convertSRGBToLinear(),
         roughness: 0.92,
       });
-
-      const crownGeo = new THREE.ConeGeometry(4.4, 15.0, 8);
-      crownGeo.translate(0, 12.5, 0);
       let crownMat = new THREE.MeshStandardMaterial({
         name: 'pine_canopy_mid',
-        color: new THREE.Color(0x1f5430).convertSRGBToLinear(),
-        roughness: 0.8,
+        color: new THREE.Color(0x285d37).convertSRGBToLinear(),
+        roughness: 0.84,
       });
 
-      const scaleExistingUv = (geo, su, sv) => {
-        const uv = geo.attributes.uv;
-        if (!uv) return false;
-        const arr = uv.array;
-        for (let i = 0; i < arr.length; i += 2) {
-          arr[i] *= su;
-          arr[i + 1] *= sv;
-        }
-        uv.needsUpdate = true;
-        geo.userData = geo.userData || {};
-        geo.userData._pbrUvReady = true;
-        return true;
-      };
-
       if (this.pbrLibrary) {
-        const tUp = this.pbrLibrary.upgradeMaterial(trunkMat, false);
-        trunkMat = tUp.material;
-        scaleExistingUv(trunkGeo, 3.0, 6.0);
-
-        const cUp = this.pbrLibrary.upgradeMaterial(crownMat, false);
-        crownMat = cUp.material;
-        scaleExistingUv(crownGeo, 10.0, 7.0);
+        trunkMat = this.pbrLibrary.upgradeMaterial(trunkMat, false).material;
+        crownMat = this.pbrLibrary.upgradeMaterial(crownMat, false).material;
       }
 
       const trunks = new THREE.InstancedMesh(trunkGeo, trunkMat, count);
@@ -1406,6 +1551,7 @@
       this.vegShadowMeshes.push({ mesh: crowns, isCoreTile });
 
       const dummy = new THREE.Object3D();
+      const tint = new THREE.Color();
       items.forEach((it, idx) => {
         const x = Number(it.x ?? it.x_m ?? 0);
         const yNorth = Number(it.y ?? it.y_m ?? 0);
@@ -1416,16 +1562,23 @@
               ? Number(it.elev_msl_m) - DALAT_COORDS.Z0_MSL
               : DALAT_COORDS.syntheticLocalY(x, yNorth);
         const s = Number(it.scale ?? 1.0);
-        dummy.position.set(x, yElev - 0.5, -yNorth);
+        const sy = s * (0.92 + ((idx * 37) % 19) * 0.012);
+        dummy.position.set(x, yElev - 0.6, -yNorth);
         dummy.rotation.set(0, Number(it.rot ?? 0), 0);
-        dummy.scale.set(s, s, s);
+        dummy.scale.set(s * 0.92, sy, s * 0.92);
         dummy.updateMatrix();
         trunks.setMatrixAt(idx, dummy.matrix);
         crowns.setMatrixAt(idx, dummy.matrix);
+        if (typeof crowns.setColorAt === 'function') {
+          const shade = 0.78 + ((idx * 53) % 29) * 0.014;
+          tint.setRGB(shade * 0.92, shade, shade * 0.88);
+          crowns.setColorAt(idx, tint);
+        }
       });
 
       trunks.instanceMatrix.needsUpdate = true;
       crowns.instanceMatrix.needsUpdate = true;
+      if (crowns.instanceColor) crowns.instanceColor.needsUpdate = true;
 
       this.layers.vegetation.add(trunks, crowns);
       if (tileId) {
@@ -1438,47 +1591,21 @@
 
     _createBlossomInstancedMesh(items, isFallback, tileId) {
       const count = items.length;
-      const trunkGeo = new THREE.CylinderGeometry(0.28, 0.48, 4.2, 5);
-      trunkGeo.translate(0, 2.1, 0);
+      const { trunkGeo, crownGeo } = this._getSharedBlossomGeometries();
       let trunkMat = new THREE.MeshStandardMaterial({
         name: 'cherry_bark',
         color: new THREE.Color(0x4f3629).convertSRGBToLinear(),
         roughness: 0.9,
       });
-
-      const crownGeo = new THREE.DodecahedronGeometry(3.4, 0);
-      crownGeo.scale(1.15, 0.78, 1.15);
-      crownGeo.translate(0, 5.6, 0);
       let crownMat = new THREE.MeshStandardMaterial({
         name: 'cherry_blossom_foliage',
-        color: new THREE.Color(0xf282a8).convertSRGBToLinear(),
-        roughness: 0.72,
+        color: new THREE.Color(0xf498b8).convertSRGBToLinear(),
+        roughness: 0.74,
       });
 
       if (this.pbrLibrary) {
-        const tUp = this.pbrLibrary.upgradeMaterial(trunkMat, false);
-        trunkMat = tUp.material;
-        const uv = trunkGeo.attributes.uv;
-        if (uv) {
-          for (let i = 0; i < uv.array.length; i += 2) {
-            uv.array[i] *= 2.0;
-            uv.array[i + 1] *= 4.0;
-          }
-          uv.needsUpdate = true;
-          trunkGeo.userData = { _pbrUvReady: true };
-        }
-
-        crownGeo.deleteAttribute('uv');
-        const cUp = this.pbrLibrary.upgradeMaterial(crownMat, false);
-        crownMat = cUp.material;
-        const pos = crownGeo.attributes.position;
-        const cUv = new Float32Array(pos.count * 2);
-        for (let i = 0; i < pos.count; i++) {
-          cUv[i * 2] = (pos.getX(i) + pos.getZ(i) * 0.6) * 0.55;
-          cUv[i * 2 + 1] = (pos.getY(i) - pos.getZ(i) * 0.4) * 0.55;
-        }
-        crownGeo.setAttribute('uv', new THREE.BufferAttribute(cUv, 2));
-        crownGeo.userData = { _pbrUvReady: true };
+        trunkMat = this.pbrLibrary.upgradeMaterial(trunkMat, false).material;
+        crownMat = this.pbrLibrary.upgradeMaterial(crownMat, false).material;
       }
 
       const trunks = new THREE.InstancedMesh(trunkGeo, trunkMat, count);
@@ -1492,6 +1619,7 @@
       this.vegShadowMeshes.push({ mesh: crowns, isCoreTile });
 
       const dummy = new THREE.Object3D();
+      const tint = new THREE.Color();
       items.forEach((it, idx) => {
         const x = Number(it.x ?? it.x_m ?? 0);
         const yNorth = Number(it.y ?? it.y_m ?? 0);
@@ -1500,21 +1628,29 @@
             ? Number(it.z_local)
             : DALAT_COORDS.syntheticLocalY(x, yNorth);
         const s = Number(it.scale ?? 1.0);
-        dummy.position.set(x, yElev - 0.3, -yNorth);
+        dummy.position.set(x, yElev - 0.35, -yNorth);
         dummy.rotation.set(0, Number(it.rot ?? 0), 0);
         dummy.scale.set(s, s, s);
         dummy.updateMatrix();
         trunks.setMatrixAt(idx, dummy.matrix);
         crowns.setMatrixAt(idx, dummy.matrix);
+        if (typeof crowns.setColorAt === 'function') {
+          const shade = 0.86 + ((idx * 41) % 23) * 0.011;
+          tint.setRGB(Math.min(1.0, shade * 1.05), shade * 0.94, Math.min(1.0, shade * 0.98));
+          crowns.setColorAt(idx, tint);
+        }
       });
 
       trunks.instanceMatrix.needsUpdate = true;
       crowns.instanceMatrix.needsUpdate = true;
+      if (crowns.instanceColor) crowns.instanceColor.needsUpdate = true;
 
       this.layers.vegetation.add(trunks, crowns);
       if (tileId) {
         const bucket = this._ensureTileGroupBucket(tileId);
         bucket.vegetation.push(trunks, crowns);
+        const rec = this.tileRegistry.get(tileId);
+        if (rec) this._applyTileLodVisibility(tileId, rec.current_lod);
       }
     }
 
@@ -1861,7 +1997,7 @@
       const mat = new THREE.SpriteMaterial({ map: tex, transparent: true, depthTest: false });
       const sprite = new THREE.Sprite(mat);
       sprite.position.set(x, y, z);
-      sprite.scale.set(96, 18, 1);
+      sprite.scale.set(72, 13.5, 1);
       return sprite;
     }
 

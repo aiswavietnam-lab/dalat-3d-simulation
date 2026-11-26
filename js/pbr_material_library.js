@@ -215,13 +215,13 @@
       albedo: null,
       normal: 'water_ripple_normal.jpg',
       rough: null,
-      tileScaleM: 14.0,
-      roughness: 0.24,
-      metalness: 0.08,
-      normalScale: 0.65,
-      envIntensity: 0.38,
+      tileScaleM: 28.0,
+      roughness: 0.16,
+      metalness: 0.12,
+      normalScale: 0.22,
+      envIntensity: 0.65,
       minLum: 0.018,
-      colorBoost: 0.95,
+      colorBoost: 0.96,
     },
   };
 
@@ -355,12 +355,14 @@
      * Phân loại ngữ nghĩa tên vật liệu + thuộc tính màu sang đúng bề mặt vật lý Đà Lạt
      */
     classifyMaterial(mat, isWaterLayer) {
-      if (isWaterLayer) return 'water_ripple';
       const n = String((mat && mat.name) || '').toLowerCase();
+      if (isWaterLayer && !/embankment|promenade|stone|granite|grass|verge|spillway|concrete|bridge|bank/.test(n)) {
+        return 'water_ripple';
+      }
 
       // 1. Không gắn texture đè lên đèn phát sáng thuần túy, vạch kẻ đường phát sáng hoặc kính
       if (
-        /bulb|neon|streetlamp_emissive|lantern_glow|headlight|taillight|ember|stringlights|string_bulb|growlight|retrosign|road_marking|centerline|pitch_lines|icao_white|taxi_yellow/.test(
+        /bulb|neon|streetlamp_emissive|lantern_glow|headlight|taillight|ember|stringlights|string_bulb|growlight|retrosign|road_marking|centerline|pitch_lines|icao_white|taxi_yellow|thermoplastic/.test(
           n
         )
       ) {
@@ -669,8 +671,8 @@
         roughness: roughVal,
         metalness: metalVal,
         side: sideVal,
-        transparent: Boolean(isWaterLayer),
-        opacity: isWaterLayer ? 0.9 : 1.0,
+        transparent: archetypeKey === 'water_ripple',
+        opacity: archetypeKey === 'water_ripple' ? 0.9 : 1.0,
         envMapIntensity: spec.envIntensity,
       });
 

@@ -17,6 +17,7 @@ import base64
 import concurrent.futures
 import datetime
 import json
+import math
 import os
 import pathlib
 import re
@@ -362,25 +363,178 @@ def prune_shadowed_local_files(shadowed_paths: set[str]) -> int:
     return removed
 
 
+def read_glb_bbox_center(path: pathlib.Path):
+    """Fast glTF 2.0 JSON-chunk bounding-box center reader (world X, Y, Z)."""
+    try:
+        with path.open("rb") as f:
+            hdr = f.read(12)
+            if len(hdr) < 12 or hdr[:4] != b"glTF":
+                return None
+            jlen, _ = struct.unpack("<II", f.read(8))
+            j = json.loads(f.read(jlen).decode("utf-8"))
+        accs = j.get("accessors", [])
+        meshes = j.get("meshes", [])
+        nodes = j.get("nodes", [])
+        scenes = j.get("scenes", [])
+        roots = scenes[j.get("scene", 0)].get("nodes", []) if scenes else list(range(len(nodes)))
+        mins = [1e18, 1e18, 1e18]
+        maxs = [-1e18, -1e18, -1e18]
+
+        def visit(ni, ox, oy, oz):
+            n = nodes[ni]
+            if "matrix" in n:
+                m = n["matrix"]
+                nx, ny, nz = ox + m[12], oy + m[13], oz + m[14]
+            else:
+                t = n.get("translation", [0.0, 0.0, 0.0])
+                nx, ny, nz = ox + t[0], oy + t[1], oz + t[2]
+            if "mesh" in n:
+                for prim in meshes[n["mesh"]].get("primitives", []):
+                    pi = prim.get("attributes", {}).get("POSITION")
+                    if pi is not None and "min" in accs[pi] and "max" in accs[pi]:
+                        a = accs[pi]
+                        for i, o in enumerate((nx, ny, nz)):
+                            mins[i] = min(mins[i], o + a["min"][i])
+                            maxs[i] = max(maxs[i], o + a["max"][i])
+            for c in n.get("children", []):
+                visit(c, nx, ny, nz)
+
+        for r in roots:
+            visit(r, 0.0, 0.0, 0.0)
+        if mins[0] > 1e17:
+            return None
+        return (
+            0.5 * (mins[0] + maxs[0]),
+            0.5 * (mins[1] + maxs[1]),
+            0.5 * (mins[2] + maxs[2]),
+            maxs[0] - mins[0],
+            maxs[2] - mins[2],
+        )
+    except Exception:
+        return None
+
+
+def xy_to_tile_id(x_m: float, y_north_m: float) -> str:
+    ix = int(math.floor((x_m + 1000.0) / 2000.0))
+    iy = int(math.floor((y_north_m + 1000.0) / 2000.0))
+    ew = "W" if ix < 0 else "E"
+    ns = "S" if iy < 0 else "N"
+    return f"T_{ew}{abs(ix):02d}_{ns}{abs(iy):02d}"
+
+
+def load_all_placement_manifests():
+    """Load placement coordinates & metadata from ALL 4 landmark/villa/complex manifests."""
+    catalog = {}
+    replaced_slot4_ids = set()
+    specs = [
+        (ASSETS / "landmarks/landmarks_manifest.json", "landmarks"),
+        (ASSETS / "hero_landmarks_ultra/hero_landmarks_manifest.json", "landmarks_ultra"),
+        (ASSETS / "french_villas/french_villas_manifest.json", "villas"),
+        (ASSETS / "tourism_complexes/tourism_complexes_manifest.json", "complexes"),
+    ]
+    for fp, list_key in specs:
+        if not fp.exists():
+            continue
+        try:
+            doc = json.loads(fp.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        for entry in doc.get(list_key, []):
+            eid = entry.get("id")
+            if not eid:
+                continue
+            gpos = entry.get("gltf_position")
+            if not (isinstance(gpos, list) and len(gpos) == 3):
+                if entry.get("x_m") is not None and entry.get("y_m") is not None:
+                    gpos = [float(entry["x_m"]), float(entry.get("z_local_m", 0.0)), -float(entry["y_m"])]
+                elif entry.get("lat") is not None and entry.get("lon") is not None:
+                    xm = (float(entry["lon"]) - 108.445259) * 108911.0
+                    ym = (float(entry["lat"]) - 11.940419) * 111319.49
+                    zl = float(entry.get("elev_msl_m", 1478.0)) - 1478.0
+                    gpos = [round(xm, 3), round(zl, 3), round(-ym, 3)]
+            tid = entry.get("tile_id")
+            if not tid and isinstance(gpos, list) and len(gpos) == 3:
+                tid = xy_to_tile_id(float(gpos[0]), -float(gpos[2]))
+            catalog[eid] = {
+                "id": eid,
+                "name_vi": entry.get("name_vi") or eid,
+                "name_en": entry.get("name_en") or "",
+                "tile_id": tid,
+                "gltf_position": gpos,
+                "rotation_y_rad": float(entry.get("rotation_y_rad", 0.0) or 0.0),
+                "architectural_style": entry.get("architectural_style") or "",
+                "year_completed": str(entry.get("year_completed") or ""),
+                "description_vi": entry.get("description_vi") or "",
+                "replaces_slot4_id": entry.get("replaces_slot4_id"),
+                "is_french_villa": list_key == "villas",
+            }
+            rep = entry.get("replaces_slot4_id")
+            if rep:
+                replaced_slot4_ids.add(rep)
+    return catalog, replaced_slot4_ids
+
+
 def rebuild_world_index():
-    terrain_glb = sorted(dedupe_by_tile(
+    import math as _math
+    globals()["math"] = _math
+
+    # 1. Terrain tiles (+ seamless 60km Copernicus GLO-30 horizon backdrop first!)
+    raw_terrain = dedupe_by_tile(
         scan_dir("satellite_dem_tiles", {".glb", ".gltf"})
         + scan_dir("terrain_tiles", {".glb", ".gltf"})
         + scan_dir("terrain_tiles_ring1_ext", {".glb", ".gltf"})
         + scan_dir("terrain_tiles_ring2", {".glb", ".gltf"})
-    ), key=tile_dist_key)
+    )
+    backdrop_items = []
+    tiled_terrain = []
+    for it in raw_terrain:
+        if "backdrop" in it["filename"].lower():
+            it["is_backdrop"] = True
+            it["tile_id"] = "T_E00_N00"
+            backdrop_items.append(it)
+        else:
+            tiled_terrain.append(it)
+    terrain_glb = backdrop_items + sorted(tiled_terrain, key=tile_dist_key)
+
     terrain_hm = sorted(dedupe_by_tile(
         scan_dir("satellite_dem_tiles", {".json"}, lambda n: n.startswith("heightmap_"))
         + scan_dir("terrain_tiles", {".json"}, lambda n: n.startswith("heightmap_"))
         + scan_dir("terrain_tiles_ring1_ext", {".json"}, lambda n: n.startswith("heightmap_"))
         + scan_dir("terrain_tiles_ring2", {".json"}, lambda n: n.startswith("heightmap_"))
     ), key=tile_dist_key)
-    water_glb = scan_dir("water_bodies", {".glb", ".gltf"}) + scan_dir("natural_wonders_pbr", {".glb", ".gltf"})
+
+    # 2. Water bodies (with exact tile_id from GLB bbox center; drop superseded RING_0 old lake GLBs)
+    superseded_ring0_water = {
+        "water_ho_chien_thang.glb",
+        "water_ho_da_thien.glb",
+        "water_ho_van_kiep.glb",
+        "water_ho_me_linh.glb",
+        "water_ho_hoang_van_thu.glb",
+        "water_ho_dai_hoc.glb",
+        "water_ho_nha_may_nuoc.glb",
+    }
+    raw_water = scan_dir("water_bodies", {".glb", ".gltf"}) + scan_dir("natural_wonders_pbr", {".glb", ".gltf"})
+    water_glb = []
+    for it in raw_water:
+        fn = it["filename"]
+        if fn in superseded_ring0_water and (ASSETS / "water_bodies" / "water_ring0_osm_lakes.glb").exists():
+            continue
+        p = ROOT / urllib.parse.unquote(it["url"].lstrip("./"))
+        bb = read_glb_bbox_center(p)
+        if fn == "water_ho_xuan_huong.glb" or fn == "water_ring0_osm_lakes.glb":
+            it["tile_id"] = "T_E00_N00"
+        elif bb:
+            it["tile_id"] = xy_to_tile_id(bb[0], -bb[2])
+        water_glb.append(it)
+
     veg_models = scan_dir("vegetation", {".glb", ".gltf"}) + scan_dir("vegetation_expanded", {".glb", ".gltf"})
     veg_instances = sorted(dedupe_by_tile(
         scan_dir("vegetation", {".json"}, lambda n: n.startswith("instances_"))
         + scan_dir("vegetation_expanded", {".json"}, lambda n: n.startswith("instances_"))
     ), key=tile_dist_key)
+
+    # 3. Landmarks + Hero Ultra + French Villas + Tourism Complexes (ALL 4 manifests merged, deduped, ZERO origin pile-ups!)
+    manifest_catalog, replaced_slot4_ids = load_all_placement_manifests()
     raw_landmarks = (
         scan_dir("hero_landmarks_ultra", {".glb", ".gltf"})
         + scan_dir("landmarks", {".glb", ".gltf"})
@@ -389,31 +543,60 @@ def rebuild_world_index():
         + scan_dir("agri_landscapes", {".glb", ".gltf"})
         + scan_dir("ring3_districts_ultra", {".glb", ".gltf"})
     )
-    scene_idx_path = ASSETS / "scene" / "world_index.json"
-    landmarks_glb = raw_landmarks
-    if scene_idx_path.exists():
-        sidx = json.loads(scene_idx_path.read_text(encoding="utf-8"))
-        slms = sidx.get("layers", {}).get("landmarks", [])
-        if slms:
-            known = {x["id"] for x in slms}
-            extra = [x for x in raw_landmarks if x["id"] not in known]
-            mapped = []
-            for lm in slms:
-                rel = str(lm.get("path", "")).replace("02_ASSETS_3D/", "", 1)
-                parts = "/".join(urllib.parse.quote(p) for p in rel.split("/"))
-                lm_id = lm["id"]
-                mapped.append({
-                    "id": lm_id,
-                    "name_vi": lm.get("name_vi") or lm_id,
-                    "filename": pathlib.Path(lm.get("path", f"{lm_id}.glb")).name,
-                    "ext": ".glb",
-                    "tile_id": lm.get("tile_id") or "T_E00_N00",
-                    "source_tier": lm.get("source_tier") or "slot4_detailed",
-                    "url": f"./assets/{parts}",
-                    "size_bytes": lm.get("size_bytes", 0),
-                    "placement": lm.get("placement"),
-                })
-            landmarks_glb = mapped + extra
+    # Include sourced_library landmarks only if not already replaced by hero_landmarks_ultra
+    raw_landmarks += scan_dir("sourced_library/landmarks", {".glb", ".gltf"})
+
+    superseded_tourism_ids = {
+        "tc_03_chua_linh_phuoc_ve_chai_complex",       # superseded by ultra_lm_16_chua_linh_phuoc
+        "tc_04_domaine_de_marie_and_cam_ly_churches",  # superseded by ultra_lm_10_domaine_de_marie & ultra_lm_26_nha_tho_cam_ly
+        "tc_05_vuon_hoa_tp_and_thung_lung_tinh_yeu",   # superseded by ultra_lm_14_vuon_hoa_tp (fixed OSM coords) & ultra_lm_17_thung_lung_tinh_yeu
+    }
+    landmarks_glb = []
+    seen_lm_ids = set()
+    quarantined_origin = 0
+    for it in raw_landmarks:
+        lm_id = it["id"]
+        if lm_id in seen_lm_ids or lm_id in superseded_tourism_ids:
+            continue
+        # Skip old Slot-4 landmark when replaced by Ultra-LOD0 hero landmark!
+        if lm_id in replaced_slot4_ids and not it["url"].startswith("./assets/hero_landmarks_ultra/"):
+            continue
+        meta = manifest_catalog.get(lm_id)
+        p = ROOT / urllib.parse.unquote(it["url"].lstrip("./"))
+        bb = read_glb_bbox_center(p)
+        is_local_pivot = bb is not None and _math.hypot(bb[0], bb[2]) < 160.0 and max(bb[3], bb[4]) < 450.0
+
+        if meta and isinstance(meta.get("gltf_position"), list) and len(meta["gltf_position"]) == 3:
+            gp = meta["gltf_position"]
+            # World-baked multi-site complexes (tc_02, tc_06..tc_10) have gp=[0,0,0] and non-local world bbox
+            is_world_baked = (not is_local_pivot) and _math.hypot(float(gp[0]), float(gp[2])) < 1.0
+            it["gltf_position"] = [0.0, 0.0, 0.0] if is_world_baked else gp
+            it["rotation_y_rad"] = 0.0 if is_world_baked else meta.get("rotation_y_rad", 0.0)
+            it["name_vi"] = meta.get("name_vi") or lm_id
+            it["name_en"] = meta.get("name_en") or ""
+            if is_world_baked and bb:
+                it["tile_id"] = xy_to_tile_id(bb[0], -bb[2])
+            else:
+                it["tile_id"] = meta.get("tile_id") or xy_to_tile_id(float(gp[0]), -float(gp[2]))
+            it["is_french_villa"] = bool(meta.get("is_french_villa", False))
+            if meta.get("architectural_style"):
+                it["architectural_style"] = meta["architectural_style"]
+            if meta.get("description_vi"):
+                it["description_vi"] = meta["description_vi"]
+        elif is_local_pivot:
+            # HARD GUARD: never allow an unplaced local-pivot building to dump at (0,0,0) in Ho Xuan Huong!
+            quarantined_origin += 1
+            continue
+        elif bb:
+            # Already in world coordinates -> compute exact real tile_id from GLB world center!
+            it["tile_id"] = it.get("tile_id") or xy_to_tile_id(bb[0], -bb[2])
+
+        seen_lm_ids.add(lm_id)
+        landmarks_glb.append(it)
+
+    if quarantined_origin:
+        print(f"[WORLD-INDEX] Quarantined {quarantined_origin} unplaced local-origin GLBs (protected Ho Xuan Huong).", flush=True)
+
     props = []
     if (ASSETS / "sourced_library/urban_props/prop_01_hxh_pedal_duck_boat.glb").exists():
         for i, (gx, gy, gz, ry) in enumerate([
@@ -421,24 +604,36 @@ def rebuild_world_index():
             (-110.0, 0.08, 15.0, 2.4), (-65.0, 0.08, 35.0, -1.2), (180.0, 0.08, -30.0, 0.9),
         ], 1):
             props.append({"id": f"hxh_duck_boat_{i}", "url": "./assets/sourced_library/urban_props/prop_01_hxh_pedal_duck_boat.glb", "gltf_position": [gx, gy, gz], "rotation_y_rad": ry})
-    if (ASSETS / "sourced_library/urban_props/prop_03_lakeside_wooden_pier.glb").exists():
-        props.append({"id": "hxh_thuy_ta_pier", "url": "./assets/sourced_library/urban_props/prop_03_lakeside_wooden_pier.glb", "gltf_position": [-555.0, 0.05, -88.0], "rotation_y_rad": -1.8})
-    roads_glb = (
-        scan_dir("osm_true_roads_hydro", {".glb", ".gltf"})
-        + scan_dir("infrastructure_buildings", {".glb", ".gltf"})
-        + scan_dir("transport_infra", {".glb", ".gltf"})
-        + scan_dir("urban_life_props", {".glb", ".gltf"})
+
+    # 4. Real OpenStreetMap 3D Roads ONLY (purge legacy fake synthetic/spline roads & misplaced lake overlays!)
+    roads_glb = sorted(
+        scan_dir("osm_true_roads_hydro", {".glb", ".gltf"}, lambda n: n.startswith("osm_real_roads_")),
+        key=tile_dist_key,
     )
+    # Also allow localized verified non-RING_0 mountain passes (outside 3km core) with exact bbox tile_id
+    for it in scan_dir("transport_infra", {".glb", ".gltf"}):
+        fn = it["filename"]
+        if any(skip in fn for skip in ("ke_ho_lan_can_da", "taluy_da_che_xanh", "cau_ong_dao", "vong_xoay_dai_phun_nuoc")):
+            continue
+        p = ROOT / urllib.parse.unquote(it["url"].lstrip("./"))
+        bb = read_glb_bbox_center(p)
+        if bb and _math.hypot(bb[0], bb[2]) > 3400.0:
+            it["tile_id"] = xy_to_tile_id(bb[0], -bb[2])
+            roads_glb.append(it)
+
+    # 5. Buildings (deduplicated by tile, osm_true_buildings wins over legacy building_tiles)
     buildings_glb = sorted(dedupe_by_tile(
         scan_dir("osm_true_buildings", {".glb", ".gltf"})
         + scan_dir("building_tiles", {".glb", ".gltf"})
         + scan_dir("urban_wards_tiles", {".glb", ".gltf"})
     ), key=tile_dist_key)
+
     total_glb = len(terrain_glb) + len(water_glb) + len(veg_models) + len(landmarks_glb) + len(roads_glb) + len(buildings_glb)
-    discovered = sorted({it["tile_id"] for lst in [terrain_glb, terrain_hm, veg_instances, buildings_glb, landmarks_glb] for it in lst if it.get("tile_id")})
+    discovered = sorted({it["tile_id"] for lst in [terrain_glb, terrain_hm, veg_instances, buildings_glb, landmarks_glb, roads_glb] for it in lst if it.get("tile_id")})
     world_index = {
-        "schema_version": "1.1.0",
+        "schema_version": "2.0.0",
         "project": "DALAT_3D_SIMULATION",
+        "dem_source": "ESA Copernicus GLO-30 DEM + Official OSM API v0.6 + Esri World Imagery",
         "static_build": True,
         "has_real_assets": total_glb > 0 or len(veg_instances) > 0,
         "total_glb_count": total_glb,
@@ -491,7 +686,17 @@ def main():
     parser.add_argument("--push", action="store_true")
     parser.add_argument("--sync-viewer", action="store_true", help="Cho phép đồng bộ cả web_viewer HTML/CSS/JS từ Drive")
     parser.add_argument("--no-prune", action="store_true", help="Không dọn các tile cũ bị phủ bởi bản mới hơn")
+    parser.add_argument("--rebuild-index-only", action="store_true", help="Chỉ xây dựng lại api/world-index.json từ thư mục assets cục bộ")
     args = parser.parse_args()
+
+    if args.rebuild_index_only:
+        wi = rebuild_world_index()
+        print(
+            f"[DALAT SYNC] Rebuilt api/world-index.json: {wi['total_glb_count']} GLBs, "
+            f"{len(wi['discovered_tile_ids'])} discovered tiles, counts={wi['counts']}",
+            flush=True,
+        )
+        return 0
 
     try:
         client = DriveClient()
@@ -504,6 +709,24 @@ def main():
     old_state = json.loads(STATE_FILE.read_text(encoding="utf-8")) if STATE_FILE.exists() else {}
     new_state = {}
     targets = {}
+
+    # Bảo vệ các tệp lõi chuẩn ESA Copernicus GLO-30 & OSM API v0.6 khỏi bị ghi đè bởi dữ liệu lỗi từ Drive
+    protected_core_tids = {
+        f"T_{'W' if ix < 0 else 'E'}{abs(ix):02d}_{'S' if iy < 0 else 'N'}{abs(iy):02d}"
+        for iy in range(-2, 3) for ix in range(-2, 3)
+    }
+    ring0_tids = {
+        f"T_{'W' if ix < 0 else 'E'}{abs(ix):02d}_{'S' if iy < 0 else 'N'}{abs(iy):02d}"
+        for iy in (-1, 0, 1) for ix in (-1, 0, 1)
+    }
+    protected_paths = (
+        {f"assets/satellite_dem_tiles/terrain_real_{tid}.glb" for tid in protected_core_tids}
+        | {"assets/satellite_dem_tiles/terrain_backdrop_dalat_60km.glb"}
+        | {"assets/water_bodies/water_ho_xuan_huong.glb", "assets/water_bodies/water_ring0_osm_lakes.glb"}
+        | {f"assets/osm_true_roads_hydro/osm_real_roads_{tid}.glb" for tid in ring0_tids}
+        | {f"assets/osm_true_buildings/osm_buildings_{tid}.glb" for tid in ring0_tids}
+        | {f"assets/vegetation/instances_{tid}.json" for tid in ring0_tids}
+    )
 
     folder_jobs = {v[0]: (".glb", ".gltf", ".json") for v in DATA_FILES.values()}
     for _, fid in ASSET_FOLDERS:
@@ -526,7 +749,7 @@ def main():
     for subdir, fid in ASSET_FOLDERS:
         for fn, it in folder_cache[fid].items():
             rel = f"assets/{subdir}/{fn}"
-            if rel in shadowed:
+            if rel in shadowed or (rel in protected_paths and (ROOT / rel).exists()):
                 continue
             targets[rel] = it
     if args.sync_viewer:
