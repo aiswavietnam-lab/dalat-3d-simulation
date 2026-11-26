@@ -503,6 +503,7 @@
 
     setQualityProfile(cfg) {
       if (!cfg) return;
+      this.qualityId = cfg.id || 'balanced';
       this.lodScale = Number(cfg.lodScale || 1.0);
       this._maxConcurrentStreams = Number(cfg.maxConcurrentStreams || 4);
       const enableVegShadows = Boolean(cfg.shadows && cfg.id !== 'fast');
@@ -1197,9 +1198,9 @@
     }
 
     /**
-     * Nạp dữ liệu rải rừng thông & Mai Anh Đào instances_<TILE_ID>.json từ Slot 3
-     * Hỗ trợ cả định dạng mảng 6 phần tử [x_m, y_m, z_local, scale, rot_rad, species_idx]
-     * lẫn định dạng danh sách object
+     * Nạp dữ liệu rải rừng thông & thực vật Đà Lạt (instances_<TILE_ID>.json)
+     * Ưu tiên dùng bộ mô hình PBR Alpha-Cutout từ ĐÀ LẠT - 22 (assets/foliage_pbr_ultra/*.glb),
+     * giữ fallback hình học nhẹ nếu mô hình chưa tải được.
      */
     async _loadVegetationInstancesJson(url, tileId) {
       if (this.loadedUrls.has(url)) return;
@@ -1215,45 +1216,68 @@
           ? data.species_legend
           : ['pine_dalat_tall', 'pine_dalat_medium', 'pine_dalat_young', 'mai_anh_dao', 'da_quy_bush'];
 
-        const pines = [];
-        const blossoms = [];
-        const daQuyBushes = [];
+        const speciesBuckets = new Map();
+        const addToBucket = (spKey, rec) => {
+          if (!speciesBuckets.has(spKey)) speciesBuckets.set(spKey, []);
+          speciesBuckets.get(spKey).push(rec);
+        };
 
-        for (const it of rawItems) {
+        for (let idx = 0; idx < rawItems.length; idx++) {
+          const it = rawItems[idx];
           let rec;
           let speciesName = 'pine_dalat_medium';
           if (Array.isArray(it)) {
             // [x_m, y_m, z_local, scale, rot_rad, species_idx]
             const spIdx = Number(it[5] ?? 1);
             speciesName = String(legend[spIdx] || 'pine_dalat_medium').toLowerCase();
-            let scaleMult = Number(it[3] ?? 1.0);
-            if (speciesName.includes('tall')) scaleMult *= 1.22;
-            else if (speciesName.includes('young')) scaleMult *= 0.62;
+            const rawScale = Number(it[3] ?? 1.0);
             rec = {
               x: Number(it[0]),
               y: Number(it[1]),
               z_local: Number(it[2]),
-              scale: scaleMult,
+              scale: Number.isFinite(rawScale) ? rawScale : 1.0,
               rot: Number(it[4] ?? 0),
+              speciesName,
             };
           } else {
             speciesName = String(it.species || it.type || 'pine').toLowerCase();
-            rec = it;
+            rec = Object.assign({ speciesName }, it);
           }
 
+          let spKey = 'pine_dalat_medium';
           if (speciesName.includes('mai') || speciesName.includes('blossom') || speciesName.includes('cherry')) {
-            blossoms.push(rec);
-          } else if (speciesName.includes('da_quy') || speciesName.includes('bush')) {
-            daQuyBushes.push(rec);
+            spKey = 'mai_anh_dao';
+          } else if (speciesName.includes('da_quy') || speciesName.includes('tithonia')) {
+            spKey = 'da_quy_bush';
+          } else if (speciesName.includes('phuong_tim')) {
+            spKey = 'phuong_tim_dalat';
+          } else if (speciesName.includes('jacaranda')) {
+            spKey = 'jacaranda_purple';
+          } else if (speciesName.includes('hydrangea') || speciesName.includes('cam_tu_cau')) {
+            spKey = 'cam_tu_cau_bush';
+          } else if (speciesName.includes('cypress') || speciesName.includes('po_mu')) {
+            spKey = 'cypress_villa_park_dalat';
+          } else if (speciesName.includes('willow')) {
+            spKey = 'weeping_willow';
+          } else if (speciesName.includes('fern')) {
+            spKey = 'forest_fern_clump';
+          } else if (speciesName.includes('windswept')) {
+            spKey = 'pine_dalat_windswept';
+          } else if (speciesName.includes('tall')) {
+            spKey = idx % 7 === 0 ? 'pine_dalat_windswept' : 'pine_dalat_tall';
+          } else if (speciesName.includes('young')) {
+            spKey = 'pine_dalat_young';
+          } else if (speciesName.includes('bush') || speciesName.includes('tea')) {
+            spKey = 'forest_fern_clump';
           } else {
-            pines.push(rec);
+            spKey = idx % 9 === 0 ? 'pine_dalat_windswept' : 'pine_dalat_medium';
           }
+
+          addToBucket(spKey, rec);
         }
 
         const effectiveTileId = tileId || data.tile_id || 'T_E00_N00';
-        if (pines.length > 0) this._createPineInstancedMesh(pines, false, effectiveTileId);
-        if (blossoms.length > 0) this._createBlossomInstancedMesh(blossoms, false, effectiveTileId);
-        if (daQuyBushes.length > 0) this._createDaQuyInstancedMesh(daQuyBushes, false, effectiveTileId);
+        await this._createPbrFoliageForBuckets(speciesBuckets, false, effectiveTileId);
       } catch (err) {
         console.warn(`[TileStreamer] Lỗi nạp instances JSON ${url}:`, err);
         this.loadedUrls.delete(url);
@@ -1535,6 +1559,187 @@
 
       this._sharedBlossomGeos = { trunkGeo, crownGeo };
       return this._sharedBlossomGeos;
+    }
+
+    _getPbrFoliageUrl(speciesKey, tileId) {
+      const isCoreTile = tileId === 'T_E00_N00';
+      const lod1Map = {
+        pine_dalat_tall: './assets/foliage_pbr_ultra/pine_dalat_tall_lod1.glb',
+        pine_dalat_medium: './assets/foliage_pbr_ultra/pine_dalat_medium_lod1.glb',
+      };
+      const baseMap = {
+        pine_dalat_tall: './assets/foliage_pbr_ultra/pine_dalat_tall.glb',
+        pine_dalat_medium: './assets/foliage_pbr_ultra/pine_dalat_medium.glb',
+        pine_dalat_young: './assets/foliage_pbr_ultra/pine_dalat_young.glb',
+        pine_dalat_windswept: './assets/foliage_pbr_ultra/pine_dalat_windswept.glb',
+        mai_anh_dao: './assets/foliage_pbr_ultra/mai_anh_dao.glb',
+        da_quy_bush: './assets/foliage_pbr_ultra/da_quy_bush.glb',
+        phuong_tim_dalat: './assets/foliage_pbr_ultra/phuong_tim_dalat.glb',
+        cam_tu_cau_bush: './assets/foliage_pbr_ultra/cam_tu_cau_bush.glb',
+        cypress_villa_park_dalat: './assets/foliage_pbr_ultra/cypress_villa_park_dalat.glb',
+        jacaranda_purple: './assets/foliage_pbr_ultra/jacaranda_purple.glb',
+        weeping_willow: './assets/foliage_pbr_ultra/weeping_willow.glb',
+        forest_fern_clump: './assets/foliage_pbr_ultra/forest_fern_clump.glb',
+      };
+      if ((!isCoreTile || this.qualityId !== 'ultra') && lod1Map[speciesKey]) {
+        return lod1Map[speciesKey];
+      }
+      return baseMap[speciesKey] || baseMap.pine_dalat_medium;
+    }
+
+    _getPbrFoliageParts(url) {
+      if (!this.loader) return Promise.resolve(null);
+      if (!this._pbrFoliageCache) this._pbrFoliageCache = new Map();
+      if (this._pbrFoliageCache.has(url)) return this._pbrFoliageCache.get(url);
+
+      const prom = new Promise((resolve) => {
+        this.loader.load(
+          url,
+          (gltf) => {
+            const root = gltf.scene || (gltf.scenes && gltf.scenes[0]);
+            if (!root) {
+              resolve(null);
+              return;
+            }
+            root.updateMatrixWorld(true);
+            const parts = [];
+            root.traverse((obj) => {
+              if (!obj.isMesh || !obj.geometry || !obj.material) return;
+              const geo = obj.geometry.clone();
+              if (obj !== root && !obj.matrixWorld.equals(new THREE.Matrix4())) {
+                geo.applyMatrix4(obj.matrixWorld);
+              }
+              const srcMat = Array.isArray(obj.material) ? obj.material[0] : obj.material;
+              let mat = srcMat ? srcMat.clone() : new THREE.MeshStandardMaterial({ color: 0x2d5a34 });
+              const matNameL = String(mat.name || '').toLowerCase();
+              const isCanopy =
+                mat.alphaTest > 0 ||
+                /needle|blossom|foliage|alpha|leaf|leaves|flower|petal/.test(matNameL);
+              if (this.pbrLibrary) {
+                mat = this.pbrLibrary.upgradeMaterial(mat, false).material;
+              }
+              if (isCanopy) {
+                mat.alphaTest = mat.alphaTest > 0 ? mat.alphaTest : 0.45;
+                mat.transparent = false;
+                mat.depthWrite = true;
+                mat.side = THREE.DoubleSide;
+              }
+              mat.needsUpdate = true;
+              let customDepth = null;
+              if (isCanopy && mat.map) {
+                customDepth = new THREE.MeshDepthMaterial({
+                  depthPacking: THREE.RGBADepthPacking,
+                  map: mat.map,
+                  alphaTest: mat.alphaTest,
+                });
+              }
+              parts.push({ geometry: geo, material: mat, isCanopy, customDepth });
+            });
+            resolve(parts.length > 0 ? parts : null);
+          },
+          undefined,
+          () => resolve(null)
+        );
+      });
+      this._pbrFoliageCache.set(url, prom);
+      return prom;
+    }
+
+    async _createPbrFoliageForBuckets(speciesBuckets, isFallback, tileId) {
+      const fallbackPines = [];
+      const fallbackBlossoms = [];
+      const fallbackDaQuy = [];
+      const isCoreTile = tileId === 'T_E00_N00';
+
+      await Promise.all(
+        Array.from(speciesBuckets.entries()).map(async ([spKey, items]) => {
+          if (!items || items.length === 0) return;
+          const url = this._getPbrFoliageUrl(spKey, tileId);
+          const parts = await this._getPbrFoliageParts(url);
+          if (!parts) {
+            for (const rec of items) {
+              const sp = rec.speciesName || spKey;
+              let scaleMult = Number(rec.scale ?? 1.0);
+              if (sp.includes('tall')) scaleMult *= 1.22;
+              else if (sp.includes('young')) scaleMult *= 0.62;
+              const fbRec = Object.assign({}, rec, { scale: scaleMult });
+              if (spKey === 'mai_anh_dao' || spKey === 'phuong_tim_dalat' || spKey === 'jacaranda_purple') {
+                fallbackBlossoms.push(fbRec);
+              } else if (spKey === 'da_quy_bush' || spKey === 'cam_tu_cau_bush' || spKey === 'forest_fern_clump') {
+                fallbackDaQuy.push(fbRec);
+              } else {
+                fallbackPines.push(fbRec);
+              }
+            }
+            return;
+          }
+
+          const count = items.length;
+          const isLowShrub =
+            spKey === 'da_quy_bush' || spKey === 'cam_tu_cau_bush' || spKey === 'forest_fern_clump';
+          const dummy = new THREE.Object3D();
+          const tint = new THREE.Color();
+          const partMeshes = parts.map((part) => {
+            const inst = new THREE.InstancedMesh(part.geometry, part.material, count);
+            inst.castShadow = Boolean(part.isCanopy && isCoreTile);
+            inst.receiveShadow = true;
+            if (part.customDepth) inst.customDepthMaterial = part.customDepth;
+            inst.userData.isFallback = isFallback;
+            inst.userData.isLowShrub = isLowShrub;
+            inst.userData.pbrSpecies = spKey;
+            inst.matrixAutoUpdate = false;
+            if (part.isCanopy && isCoreTile) {
+              this.vegShadowMeshes.push({ mesh: inst, isCoreTile });
+            }
+            return { inst, part };
+          });
+
+          items.forEach((it, idx) => {
+            const x = Number(it.x ?? it.x_m ?? 0);
+            const yNorth = Number(it.y ?? it.y_m ?? 0);
+            const yElev =
+              it.z_local != null
+                ? Number(it.z_local)
+                : it.elev_msl_m != null
+                  ? Number(it.elev_msl_m) - DALAT_COORDS.Z0_MSL
+                  : DALAT_COORDS.syntheticLocalY(x, yNorth);
+            const s = Math.max(0.5, Math.min(1.45, Number(it.scale ?? 1.0)));
+            const sy = s * (0.94 + ((idx * 37) % 15) * 0.01);
+            dummy.position.set(x, yElev - 0.35, -yNorth);
+            dummy.rotation.set(0, Number(it.rot ?? 0), 0);
+            dummy.scale.set(s, sy, s);
+            dummy.updateMatrix();
+            for (const { inst, part } of partMeshes) {
+              inst.setMatrixAt(idx, dummy.matrix);
+              if (part.isCanopy && typeof inst.setColorAt === 'function') {
+                const shade = 0.86 + ((idx * 47) % 19) * 0.011;
+                if (spKey === 'mai_anh_dao') {
+                  tint.setRGB(Math.min(1.0, shade * 1.04), shade * 0.96, shade);
+                } else {
+                  tint.setRGB(shade * 0.96, Math.min(1.0, shade * 1.02), shade * 0.93);
+                }
+                inst.setColorAt(idx, tint);
+              }
+            }
+          });
+
+          const bucket = tileId ? this._ensureTileGroupBucket(tileId) : null;
+          for (const { inst } of partMeshes) {
+            inst.instanceMatrix.needsUpdate = true;
+            if (inst.instanceColor) inst.instanceColor.needsUpdate = true;
+            this.layers.vegetation.add(inst);
+            if (bucket) bucket.vegetation.push(inst);
+          }
+          if (tileId) {
+            const rec = this.tileRegistry.get(tileId);
+            if (rec) this._applyTileLodVisibility(tileId, rec.current_lod);
+          }
+        })
+      );
+
+      if (fallbackPines.length > 0) this._createPineInstancedMesh(fallbackPines, isFallback, tileId);
+      if (fallbackBlossoms.length > 0) this._createBlossomInstancedMesh(fallbackBlossoms, isFallback, tileId);
+      if (fallbackDaQuy.length > 0) this._createDaQuyInstancedMesh(fallbackDaQuy, isFallback, tileId);
     }
 
     _createPineInstancedMesh(items, isFallback, tileId) {

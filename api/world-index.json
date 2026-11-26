@@ -4,7 +4,7 @@
   "dem_source": "ESA Copernicus GLO-30 DEM + Official OSM API v0.6 + Esri World Imagery",
   "static_build": true,
   "has_real_assets": true,
-  "total_glb_count": 583,
+  "total_glb_count": 665,
   "discovered_tile_ids": [
     "T_E00_N00",
     "T_E00_N01",
@@ -340,12 +340,12 @@
     "terrain_tiles": 118,
     "heightmaps": 0,
     "water_bodies": 54,
-    "vegetation_models": 11,
+    "vegetation_models": 18,
     "vegetation_instances": 281,
     "landmarks": 185,
     "lakeside_props": 6,
     "roads_infrastructure": 25,
-    "building_tiles": 190
+    "building_tiles": 265
   },
   "layers": {
     "terrain": [
@@ -1732,44 +1732,116 @@
     ],
     "vegetation_models": [
       {
+        "id": "cam_tu_cau_bush",
+        "filename": "cam_tu_cau_bush.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/foliage_pbr_ultra/cam_tu_cau_bush.glb",
+        "size_bytes": 388512
+      },
+      {
+        "id": "cypress_villa_park_dalat",
+        "filename": "cypress_villa_park_dalat.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/foliage_pbr_ultra/cypress_villa_park_dalat.glb",
+        "size_bytes": 436692
+      },
+      {
         "id": "da_quy_bush",
         "filename": "da_quy_bush.glb",
         "ext": ".glb",
         "tile_id": null,
-        "url": "./assets/vegetation/da_quy_bush.glb",
-        "size_bytes": 9560
+        "url": "./assets/foliage_pbr_ultra/da_quy_bush.glb",
+        "size_bytes": 396200
+      },
+      {
+        "id": "forest_fern_clump",
+        "filename": "forest_fern_clump.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/foliage_pbr_ultra/forest_fern_clump.glb",
+        "size_bytes": 369812
+      },
+      {
+        "id": "jacaranda_purple",
+        "filename": "jacaranda_purple.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/foliage_pbr_ultra/jacaranda_purple.glb",
+        "size_bytes": 385628
       },
       {
         "id": "mai_anh_dao",
         "filename": "mai_anh_dao.glb",
         "ext": ".glb",
         "tile_id": null,
-        "url": "./assets/vegetation/mai_anh_dao.glb",
-        "size_bytes": 9688
+        "url": "./assets/foliage_pbr_ultra/mai_anh_dao.glb",
+        "size_bytes": 374472
+      },
+      {
+        "id": "phuong_tim_dalat",
+        "filename": "phuong_tim_dalat.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/foliage_pbr_ultra/phuong_tim_dalat.glb",
+        "size_bytes": 386060
       },
       {
         "id": "pine_dalat_medium",
         "filename": "pine_dalat_medium.glb",
         "ext": ".glb",
         "tile_id": null,
-        "url": "./assets/vegetation/pine_dalat_medium.glb",
-        "size_bytes": 8232
+        "url": "./assets/foliage_pbr_ultra/pine_dalat_medium.glb",
+        "size_bytes": 643244
+      },
+      {
+        "id": "pine_dalat_medium_lod1",
+        "filename": "pine_dalat_medium_lod1.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/foliage_pbr_ultra/pine_dalat_medium_lod1.glb",
+        "size_bytes": 498932
       },
       {
         "id": "pine_dalat_tall",
         "filename": "pine_dalat_tall.glb",
         "ext": ".glb",
         "tile_id": null,
-        "url": "./assets/vegetation/pine_dalat_tall.glb",
-        "size_bytes": 10092
+        "url": "./assets/foliage_pbr_ultra/pine_dalat_tall.glb",
+        "size_bytes": 731260
+      },
+      {
+        "id": "pine_dalat_tall_lod1",
+        "filename": "pine_dalat_tall_lod1.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/foliage_pbr_ultra/pine_dalat_tall_lod1.glb",
+        "size_bytes": 513948
+      },
+      {
+        "id": "pine_dalat_windswept",
+        "filename": "pine_dalat_windswept.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/foliage_pbr_ultra/pine_dalat_windswept.glb",
+        "size_bytes": 644792
       },
       {
         "id": "pine_dalat_young",
         "filename": "pine_dalat_young.glb",
         "ext": ".glb",
         "tile_id": null,
-        "url": "./assets/vegetation/pine_dalat_young.glb",
-        "size_bytes": 6168
+        "url": "./assets/foliage_pbr_ultra/pine_dalat_young.glb",
+        "size_bytes": 509028
+      },
+      {
+        "id": "weeping_willow",
+        "filename": "weeping_willow.glb",
+        "ext": ".glb",
+        "tile_id": null,
+        "url": "./assets/foliage_pbr_ultra/weeping_willow.glb",
+        "size_bytes": 466680
       },
       {
         "id": "tea_bush_row_lod",
@@ -1796,28 +1868,12 @@
         "size_bytes": 13716
       },
       {
-        "id": "jacaranda_purple",
-        "filename": "jacaranda_purple.glb",
-        "ext": ".glb",
-        "tile_id": null,
-        "url": "./assets/vegetation_expanded/jacaranda_purple.glb",
-        "size_bytes": 12936
-      },
-      {
         "id": "tree_fern",
         "filename": "tree_fern.glb",
         "ext": ".glb",
         "tile_id": null,
         "url": "./assets/vegetation_expanded/tree_fern.glb",
         "size_bytes": 18688
-      },
-      {
-        "id": "weeping_willow",
-        "filename": "weeping_willow.glb",
-        "ext": ".glb",
-        "tile_id": null,
-        "url": "./assets/vegetation_expanded/weeping_willow.glb",
-        "size_bytes": 25612
       }
     ],
     "vegetation_instances": [
@@ -1827,7 +1883,7 @@
         "ext": ".json",
         "tile_id": "T_E00_N00",
         "url": "./assets/vegetation/instances_T_E00_N00.json",
-        "size_bytes": 124788
+        "size_bytes": 118535
       },
       {
         "id": "instances_T_E00_N01",
@@ -1835,7 +1891,7 @@
         "ext": ".json",
         "tile_id": "T_E00_N01",
         "url": "./assets/vegetation/instances_T_E00_N01.json",
-        "size_bytes": 274816
+        "size_bytes": 219284
       },
       {
         "id": "instances_T_E00_S01",
@@ -1843,7 +1899,7 @@
         "ext": ".json",
         "tile_id": "T_E00_S01",
         "url": "./assets/vegetation/instances_T_E00_S01.json",
-        "size_bytes": 440441
+        "size_bytes": 349394
       },
       {
         "id": "instances_T_E01_N00",
@@ -1851,7 +1907,7 @@
         "ext": ".json",
         "tile_id": "T_E01_N00",
         "url": "./assets/vegetation/instances_T_E01_N00.json",
-        "size_bytes": 304046
+        "size_bytes": 241260
       },
       {
         "id": "instances_T_W01_N00",
@@ -1859,7 +1915,7 @@
         "ext": ".json",
         "tile_id": "T_W01_N00",
         "url": "./assets/vegetation/instances_T_W01_N00.json",
-        "size_bytes": 262863
+        "size_bytes": 208132
       },
       {
         "id": "instances_T_E01_N01",
@@ -1867,7 +1923,7 @@
         "ext": ".json",
         "tile_id": "T_E01_N01",
         "url": "./assets/vegetation/instances_T_E01_N01.json",
-        "size_bytes": 73196
+        "size_bytes": 57538
       },
       {
         "id": "instances_T_E01_S01",
@@ -1875,7 +1931,7 @@
         "ext": ".json",
         "tile_id": "T_E01_S01",
         "url": "./assets/vegetation/instances_T_E01_S01.json",
-        "size_bytes": 348329
+        "size_bytes": 278322
       },
       {
         "id": "instances_T_W01_N01",
@@ -1883,7 +1939,7 @@
         "ext": ".json",
         "tile_id": "T_W01_N01",
         "url": "./assets/vegetation/instances_T_W01_N01.json",
-        "size_bytes": 292740
+        "size_bytes": 232520
       },
       {
         "id": "instances_T_W01_S01",
@@ -1891,7 +1947,7 @@
         "ext": ".json",
         "tile_id": "T_W01_S01",
         "url": "./assets/vegetation/instances_T_W01_S01.json",
-        "size_bytes": 308208
+        "size_bytes": 245319
       },
       {
         "id": "instances_T_E00_N02",
@@ -7415,204 +7471,804 @@
     ],
     "buildings": [
       {
-        "id": "osm_buildings_T_E00_N00",
-        "filename": "osm_buildings_T_E00_N00.glb",
+        "id": "osm_buildings_T_E00_N00_Q1",
+        "filename": "osm_buildings_T_E00_N00_Q1.glb",
         "ext": ".glb",
         "tile_id": "T_E00_N00",
-        "url": "./assets/osm_true_buildings/osm_buildings_T_E00_N00.glb",
-        "size_bytes": 5472636
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E00_N00_Q1.glb",
+        "size_bytes": 2133508
       },
       {
-        "id": "osm_buildings_T_E00_N01",
-        "filename": "osm_buildings_T_E00_N01.glb",
+        "id": "osm_buildings_T_E00_N00_Q2",
+        "filename": "osm_buildings_T_E00_N00_Q2.glb",
+        "ext": ".glb",
+        "tile_id": "T_E00_N00",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E00_N00_Q2.glb",
+        "size_bytes": 2044008
+      },
+      {
+        "id": "osm_buildings_T_E00_N00_Q3",
+        "filename": "osm_buildings_T_E00_N00_Q3.glb",
+        "ext": ".glb",
+        "tile_id": "T_E00_N00",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E00_N00_Q3.glb",
+        "size_bytes": 2080472
+      },
+      {
+        "id": "osm_buildings_T_E00_N00_Q4",
+        "filename": "osm_buildings_T_E00_N00_Q4.glb",
+        "ext": ".glb",
+        "tile_id": "T_E00_N00",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E00_N00_Q4.glb",
+        "size_bytes": 2432060
+      },
+      {
+        "id": "osm_buildings_T_E00_N01_Q1",
+        "filename": "osm_buildings_T_E00_N01_Q1.glb",
         "ext": ".glb",
         "tile_id": "T_E00_N01",
-        "url": "./assets/osm_true_buildings/osm_buildings_T_E00_N01.glb",
-        "size_bytes": 3895628
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E00_N01_Q1.glb",
+        "size_bytes": 3140364
       },
       {
-        "id": "osm_buildings_T_E00_S01",
-        "filename": "osm_buildings_T_E00_S01.glb",
+        "id": "osm_buildings_T_E00_N01_Q2",
+        "filename": "osm_buildings_T_E00_N01_Q2.glb",
+        "ext": ".glb",
+        "tile_id": "T_E00_N01",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E00_N01_Q2.glb",
+        "size_bytes": 3286908
+      },
+      {
+        "id": "osm_buildings_T_E00_N01_Q3",
+        "filename": "osm_buildings_T_E00_N01_Q3.glb",
+        "ext": ".glb",
+        "tile_id": "T_E00_N01",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E00_N01_Q3.glb",
+        "size_bytes": 3215416
+      },
+      {
+        "id": "osm_buildings_T_E00_N01_Q4",
+        "filename": "osm_buildings_T_E00_N01_Q4.glb",
+        "ext": ".glb",
+        "tile_id": "T_E00_N01",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E00_N01_Q4.glb",
+        "size_bytes": 2822696
+      },
+      {
+        "id": "osm_buildings_T_E00_S01_Q1",
+        "filename": "osm_buildings_T_E00_S01_Q1.glb",
         "ext": ".glb",
         "tile_id": "T_E00_S01",
-        "url": "./assets/osm_true_buildings/osm_buildings_T_E00_S01.glb",
-        "size_bytes": 3817272
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E00_S01_Q1.glb",
+        "size_bytes": 3230220
       },
       {
-        "id": "osm_buildings_T_E01_N00",
-        "filename": "osm_buildings_T_E01_N00.glb",
+        "id": "osm_buildings_T_E00_S01_Q2",
+        "filename": "osm_buildings_T_E00_S01_Q2.glb",
+        "ext": ".glb",
+        "tile_id": "T_E00_S01",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E00_S01_Q2.glb",
+        "size_bytes": 3114156
+      },
+      {
+        "id": "osm_buildings_T_E00_S01_Q3",
+        "filename": "osm_buildings_T_E00_S01_Q3.glb",
+        "ext": ".glb",
+        "tile_id": "T_E00_S01",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E00_S01_Q3.glb",
+        "size_bytes": 3251380
+      },
+      {
+        "id": "osm_buildings_T_E00_S01_Q4",
+        "filename": "osm_buildings_T_E00_S01_Q4.glb",
+        "ext": ".glb",
+        "tile_id": "T_E00_S01",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E00_S01_Q4.glb",
+        "size_bytes": 3202060
+      },
+      {
+        "id": "osm_buildings_T_E01_N00_Q1",
+        "filename": "osm_buildings_T_E01_N00_Q1.glb",
         "ext": ".glb",
         "tile_id": "T_E01_N00",
-        "url": "./assets/osm_true_buildings/osm_buildings_T_E01_N00.glb",
-        "size_bytes": 3263776
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E01_N00_Q1.glb",
+        "size_bytes": 3110844
       },
       {
-        "id": "osm_buildings_T_W01_N00",
-        "filename": "osm_buildings_T_W01_N00.glb",
+        "id": "osm_buildings_T_E01_N00_Q2",
+        "filename": "osm_buildings_T_E01_N00_Q2.glb",
+        "ext": ".glb",
+        "tile_id": "T_E01_N00",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E01_N00_Q2.glb",
+        "size_bytes": 3193452
+      },
+      {
+        "id": "osm_buildings_T_E01_N00_Q3",
+        "filename": "osm_buildings_T_E01_N00_Q3.glb",
+        "ext": ".glb",
+        "tile_id": "T_E01_N00",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E01_N00_Q3.glb",
+        "size_bytes": 3332644
+      },
+      {
+        "id": "osm_buildings_T_E01_N00_Q4",
+        "filename": "osm_buildings_T_E01_N00_Q4.glb",
+        "ext": ".glb",
+        "tile_id": "T_E01_N00",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E01_N00_Q4.glb",
+        "size_bytes": 3295600
+      },
+      {
+        "id": "osm_buildings_T_W01_N00_Q1",
+        "filename": "osm_buildings_T_W01_N00_Q1.glb",
         "ext": ".glb",
         "tile_id": "T_W01_N00",
-        "url": "./assets/osm_true_buildings/osm_buildings_T_W01_N00.glb",
-        "size_bytes": 2902264
+        "url": "./assets/osm_true_buildings/osm_buildings_T_W01_N00_Q1.glb",
+        "size_bytes": 3072364
       },
       {
-        "id": "osm_buildings_T_E01_N01",
-        "filename": "osm_buildings_T_E01_N01.glb",
+        "id": "osm_buildings_T_W01_N00_Q2",
+        "filename": "osm_buildings_T_W01_N00_Q2.glb",
+        "ext": ".glb",
+        "tile_id": "T_W01_N00",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_W01_N00_Q2.glb",
+        "size_bytes": 3221112
+      },
+      {
+        "id": "osm_buildings_T_W01_N00_Q3",
+        "filename": "osm_buildings_T_W01_N00_Q3.glb",
+        "ext": ".glb",
+        "tile_id": "T_W01_N00",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_W01_N00_Q3.glb",
+        "size_bytes": 3216524
+      },
+      {
+        "id": "osm_buildings_T_W01_N00_Q4",
+        "filename": "osm_buildings_T_W01_N00_Q4.glb",
+        "ext": ".glb",
+        "tile_id": "T_W01_N00",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_W01_N00_Q4.glb",
+        "size_bytes": 3214012
+      },
+      {
+        "id": "osm_buildings_T_E01_N01_Q1",
+        "filename": "osm_buildings_T_E01_N01_Q1.glb",
         "ext": ".glb",
         "tile_id": "T_E01_N01",
-        "url": "./assets/osm_true_buildings/osm_buildings_T_E01_N01.glb",
-        "size_bytes": 3564520
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E01_N01_Q1.glb",
+        "size_bytes": 3238304
       },
       {
-        "id": "osm_buildings_T_E01_S01",
-        "filename": "osm_buildings_T_E01_S01.glb",
+        "id": "osm_buildings_T_E01_N01_Q2",
+        "filename": "osm_buildings_T_E01_N01_Q2.glb",
+        "ext": ".glb",
+        "tile_id": "T_E01_N01",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E01_N01_Q2.glb",
+        "size_bytes": 3259316
+      },
+      {
+        "id": "osm_buildings_T_E01_N01_Q3",
+        "filename": "osm_buildings_T_E01_N01_Q3.glb",
+        "ext": ".glb",
+        "tile_id": "T_E01_N01",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E01_N01_Q3.glb",
+        "size_bytes": 3270528
+      },
+      {
+        "id": "osm_buildings_T_E01_N01_Q4",
+        "filename": "osm_buildings_T_E01_N01_Q4.glb",
+        "ext": ".glb",
+        "tile_id": "T_E01_N01",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E01_N01_Q4.glb",
+        "size_bytes": 3258636
+      },
+      {
+        "id": "osm_buildings_T_E01_S01_Q1",
+        "filename": "osm_buildings_T_E01_S01_Q1.glb",
         "ext": ".glb",
         "tile_id": "T_E01_S01",
-        "url": "./assets/osm_true_buildings/osm_buildings_T_E01_S01.glb",
-        "size_bytes": 3380376
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E01_S01_Q1.glb",
+        "size_bytes": 3172668
       },
       {
-        "id": "osm_buildings_T_W01_N01",
-        "filename": "osm_buildings_T_W01_N01.glb",
+        "id": "osm_buildings_T_E01_S01_Q2",
+        "filename": "osm_buildings_T_E01_S01_Q2.glb",
+        "ext": ".glb",
+        "tile_id": "T_E01_S01",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E01_S01_Q2.glb",
+        "size_bytes": 3237372
+      },
+      {
+        "id": "osm_buildings_T_E01_S01_Q3",
+        "filename": "osm_buildings_T_E01_S01_Q3.glb",
+        "ext": ".glb",
+        "tile_id": "T_E01_S01",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E01_S01_Q3.glb",
+        "size_bytes": 2985948
+      },
+      {
+        "id": "osm_buildings_T_E01_S01_Q4",
+        "filename": "osm_buildings_T_E01_S01_Q4.glb",
+        "ext": ".glb",
+        "tile_id": "T_E01_S01",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E01_S01_Q4.glb",
+        "size_bytes": 3180880
+      },
+      {
+        "id": "osm_buildings_T_W01_N01_Q1",
+        "filename": "osm_buildings_T_W01_N01_Q1.glb",
         "ext": ".glb",
         "tile_id": "T_W01_N01",
-        "url": "./assets/osm_true_buildings/osm_buildings_T_W01_N01.glb",
-        "size_bytes": 3800804
+        "url": "./assets/osm_true_buildings/osm_buildings_T_W01_N01_Q1.glb",
+        "size_bytes": 3188600
       },
       {
-        "id": "osm_buildings_T_W01_S01",
-        "filename": "osm_buildings_T_W01_S01.glb",
+        "id": "osm_buildings_T_W01_N01_Q2",
+        "filename": "osm_buildings_T_W01_N01_Q2.glb",
+        "ext": ".glb",
+        "tile_id": "T_W01_N01",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_W01_N01_Q2.glb",
+        "size_bytes": 3213588
+      },
+      {
+        "id": "osm_buildings_T_W01_N01_Q3",
+        "filename": "osm_buildings_T_W01_N01_Q3.glb",
+        "ext": ".glb",
+        "tile_id": "T_W01_N01",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_W01_N01_Q3.glb",
+        "size_bytes": 3188460
+      },
+      {
+        "id": "osm_buildings_T_W01_N01_Q4",
+        "filename": "osm_buildings_T_W01_N01_Q4.glb",
+        "ext": ".glb",
+        "tile_id": "T_W01_N01",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_W01_N01_Q4.glb",
+        "size_bytes": 3235144
+      },
+      {
+        "id": "osm_buildings_T_W01_S01_Q1",
+        "filename": "osm_buildings_T_W01_S01_Q1.glb",
         "ext": ".glb",
         "tile_id": "T_W01_S01",
-        "url": "./assets/osm_true_buildings/osm_buildings_T_W01_S01.glb",
-        "size_bytes": 3243756
+        "url": "./assets/osm_true_buildings/osm_buildings_T_W01_S01_Q1.glb",
+        "size_bytes": 3257532
       },
       {
-        "id": "osm_buildings_T_E00_N02",
-        "filename": "osm_buildings_T_E00_N02.glb",
+        "id": "osm_buildings_T_W01_S01_Q2",
+        "filename": "osm_buildings_T_W01_S01_Q2.glb",
+        "ext": ".glb",
+        "tile_id": "T_W01_S01",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_W01_S01_Q2.glb",
+        "size_bytes": 3162756
+      },
+      {
+        "id": "osm_buildings_T_W01_S01_Q3",
+        "filename": "osm_buildings_T_W01_S01_Q3.glb",
+        "ext": ".glb",
+        "tile_id": "T_W01_S01",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_W01_S01_Q3.glb",
+        "size_bytes": 1326916
+      },
+      {
+        "id": "osm_buildings_T_W01_S01_Q4",
+        "filename": "osm_buildings_T_W01_S01_Q4.glb",
+        "ext": ".glb",
+        "tile_id": "T_W01_S01",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_W01_S01_Q4.glb",
+        "size_bytes": 3219600
+      },
+      {
+        "id": "osm_buildings_T_E00_N02_Q1",
+        "filename": "osm_buildings_T_E00_N02_Q1.glb",
         "ext": ".glb",
         "tile_id": "T_E00_N02",
-        "url": "./assets/osm_true_buildings/osm_buildings_T_E00_N02.glb",
-        "size_bytes": 5031944
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E00_N02_Q1.glb",
+        "size_bytes": 3171204
       },
       {
-        "id": "osm_buildings_T_E00_S02",
-        "filename": "osm_buildings_T_E00_S02.glb",
+        "id": "osm_buildings_T_E00_N02_Q2",
+        "filename": "osm_buildings_T_E00_N02_Q2.glb",
+        "ext": ".glb",
+        "tile_id": "T_E00_N02",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E00_N02_Q2.glb",
+        "size_bytes": 3327776
+      },
+      {
+        "id": "osm_buildings_T_E00_N02_Q3",
+        "filename": "osm_buildings_T_E00_N02_Q3.glb",
+        "ext": ".glb",
+        "tile_id": "T_E00_N02",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E00_N02_Q3.glb",
+        "size_bytes": 3275572
+      },
+      {
+        "id": "osm_buildings_T_E00_N02_Q4",
+        "filename": "osm_buildings_T_E00_N02_Q4.glb",
+        "ext": ".glb",
+        "tile_id": "T_E00_N02",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E00_N02_Q4.glb",
+        "size_bytes": 3196380
+      },
+      {
+        "id": "osm_buildings_T_E00_S02_Q1",
+        "filename": "osm_buildings_T_E00_S02_Q1.glb",
         "ext": ".glb",
         "tile_id": "T_E00_S02",
-        "url": "./assets/osm_true_buildings/osm_buildings_T_E00_S02.glb",
-        "size_bytes": 5588296
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E00_S02_Q1.glb",
+        "size_bytes": 3235576
       },
       {
-        "id": "osm_buildings_T_E02_N00",
-        "filename": "osm_buildings_T_E02_N00.glb",
+        "id": "osm_buildings_T_E00_S02_Q2",
+        "filename": "osm_buildings_T_E00_S02_Q2.glb",
+        "ext": ".glb",
+        "tile_id": "T_E00_S02",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E00_S02_Q2.glb",
+        "size_bytes": 3170828
+      },
+      {
+        "id": "osm_buildings_T_E00_S02_Q3",
+        "filename": "osm_buildings_T_E00_S02_Q3.glb",
+        "ext": ".glb",
+        "tile_id": "T_E00_S02",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E00_S02_Q3.glb",
+        "size_bytes": 3264716
+      },
+      {
+        "id": "osm_buildings_T_E00_S02_Q4",
+        "filename": "osm_buildings_T_E00_S02_Q4.glb",
+        "ext": ".glb",
+        "tile_id": "T_E00_S02",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E00_S02_Q4.glb",
+        "size_bytes": 3212068
+      },
+      {
+        "id": "osm_buildings_T_E02_N00_Q1",
+        "filename": "osm_buildings_T_E02_N00_Q1.glb",
         "ext": ".glb",
         "tile_id": "T_E02_N00",
-        "url": "./assets/osm_true_buildings/osm_buildings_T_E02_N00.glb",
-        "size_bytes": 4662872
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E02_N00_Q1.glb",
+        "size_bytes": 3309424
       },
       {
-        "id": "osm_buildings_T_W02_N00",
-        "filename": "osm_buildings_T_W02_N00.glb",
+        "id": "osm_buildings_T_E02_N00_Q2",
+        "filename": "osm_buildings_T_E02_N00_Q2.glb",
+        "ext": ".glb",
+        "tile_id": "T_E02_N00",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E02_N00_Q2.glb",
+        "size_bytes": 3185844
+      },
+      {
+        "id": "osm_buildings_T_E02_N00_Q3",
+        "filename": "osm_buildings_T_E02_N00_Q3.glb",
+        "ext": ".glb",
+        "tile_id": "T_E02_N00",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E02_N00_Q3.glb",
+        "size_bytes": 3172680
+      },
+      {
+        "id": "osm_buildings_T_E02_N00_Q4",
+        "filename": "osm_buildings_T_E02_N00_Q4.glb",
+        "ext": ".glb",
+        "tile_id": "T_E02_N00",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E02_N00_Q4.glb",
+        "size_bytes": 3180120
+      },
+      {
+        "id": "osm_buildings_T_W02_N00_Q1",
+        "filename": "osm_buildings_T_W02_N00_Q1.glb",
         "ext": ".glb",
         "tile_id": "T_W02_N00",
-        "url": "./assets/osm_true_buildings/osm_buildings_T_W02_N00.glb",
-        "size_bytes": 4843376
+        "url": "./assets/osm_true_buildings/osm_buildings_T_W02_N00_Q1.glb",
+        "size_bytes": 3288652
       },
       {
-        "id": "osm_buildings_T_E01_N02",
-        "filename": "osm_buildings_T_E01_N02.glb",
+        "id": "osm_buildings_T_W02_N00_Q2",
+        "filename": "osm_buildings_T_W02_N00_Q2.glb",
+        "ext": ".glb",
+        "tile_id": "T_W02_N00",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_W02_N00_Q2.glb",
+        "size_bytes": 3151264
+      },
+      {
+        "id": "osm_buildings_T_W02_N00_Q3",
+        "filename": "osm_buildings_T_W02_N00_Q3.glb",
+        "ext": ".glb",
+        "tile_id": "T_W02_N00",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_W02_N00_Q3.glb",
+        "size_bytes": 3227232
+      },
+      {
+        "id": "osm_buildings_T_W02_N00_Q4",
+        "filename": "osm_buildings_T_W02_N00_Q4.glb",
+        "ext": ".glb",
+        "tile_id": "T_W02_N00",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_W02_N00_Q4.glb",
+        "size_bytes": 3188440
+      },
+      {
+        "id": "osm_buildings_T_E01_N02_Q1",
+        "filename": "osm_buildings_T_E01_N02_Q1.glb",
         "ext": ".glb",
         "tile_id": "T_E01_N02",
-        "url": "./assets/osm_true_buildings/osm_buildings_T_E01_N02.glb",
-        "size_bytes": 4390444
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E01_N02_Q1.glb",
+        "size_bytes": 3145196
       },
       {
-        "id": "osm_buildings_T_E01_S02",
-        "filename": "osm_buildings_T_E01_S02.glb",
+        "id": "osm_buildings_T_E01_N02_Q2",
+        "filename": "osm_buildings_T_E01_N02_Q2.glb",
+        "ext": ".glb",
+        "tile_id": "T_E01_N02",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E01_N02_Q2.glb",
+        "size_bytes": 3288700
+      },
+      {
+        "id": "osm_buildings_T_E01_N02_Q3",
+        "filename": "osm_buildings_T_E01_N02_Q3.glb",
+        "ext": ".glb",
+        "tile_id": "T_E01_N02",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E01_N02_Q3.glb",
+        "size_bytes": 3508072
+      },
+      {
+        "id": "osm_buildings_T_E01_N02_Q4",
+        "filename": "osm_buildings_T_E01_N02_Q4.glb",
+        "ext": ".glb",
+        "tile_id": "T_E01_N02",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E01_N02_Q4.glb",
+        "size_bytes": 3512252
+      },
+      {
+        "id": "osm_buildings_T_E01_S02_Q1",
+        "filename": "osm_buildings_T_E01_S02_Q1.glb",
         "ext": ".glb",
         "tile_id": "T_E01_S02",
-        "url": "./assets/osm_true_buildings/osm_buildings_T_E01_S02.glb",
-        "size_bytes": 4744404
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E01_S02_Q1.glb",
+        "size_bytes": 3224268
       },
       {
-        "id": "osm_buildings_T_E02_N01",
-        "filename": "osm_buildings_T_E02_N01.glb",
+        "id": "osm_buildings_T_E01_S02_Q2",
+        "filename": "osm_buildings_T_E01_S02_Q2.glb",
+        "ext": ".glb",
+        "tile_id": "T_E01_S02",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E01_S02_Q2.glb",
+        "size_bytes": 3345440
+      },
+      {
+        "id": "osm_buildings_T_E01_S02_Q3",
+        "filename": "osm_buildings_T_E01_S02_Q3.glb",
+        "ext": ".glb",
+        "tile_id": "T_E01_S02",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E01_S02_Q3.glb",
+        "size_bytes": 3175852
+      },
+      {
+        "id": "osm_buildings_T_E01_S02_Q4",
+        "filename": "osm_buildings_T_E01_S02_Q4.glb",
+        "ext": ".glb",
+        "tile_id": "T_E01_S02",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E01_S02_Q4.glb",
+        "size_bytes": 3316760
+      },
+      {
+        "id": "osm_buildings_T_E02_N01_Q1",
+        "filename": "osm_buildings_T_E02_N01_Q1.glb",
         "ext": ".glb",
         "tile_id": "T_E02_N01",
-        "url": "./assets/osm_true_buildings/osm_buildings_T_E02_N01.glb",
-        "size_bytes": 4408616
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E02_N01_Q1.glb",
+        "size_bytes": 3156196
       },
       {
-        "id": "osm_buildings_T_E02_S01",
-        "filename": "osm_buildings_T_E02_S01.glb",
+        "id": "osm_buildings_T_E02_N01_Q2",
+        "filename": "osm_buildings_T_E02_N01_Q2.glb",
+        "ext": ".glb",
+        "tile_id": "T_E02_N01",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E02_N01_Q2.glb",
+        "size_bytes": 3250236
+      },
+      {
+        "id": "osm_buildings_T_E02_N01_Q3",
+        "filename": "osm_buildings_T_E02_N01_Q3.glb",
+        "ext": ".glb",
+        "tile_id": "T_E02_N01",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E02_N01_Q3.glb",
+        "size_bytes": 3421244
+      },
+      {
+        "id": "osm_buildings_T_E02_N01_Q4",
+        "filename": "osm_buildings_T_E02_N01_Q4.glb",
+        "ext": ".glb",
+        "tile_id": "T_E02_N01",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E02_N01_Q4.glb",
+        "size_bytes": 3465804
+      },
+      {
+        "id": "osm_buildings_T_E02_S01_Q1",
+        "filename": "osm_buildings_T_E02_S01_Q1.glb",
         "ext": ".glb",
         "tile_id": "T_E02_S01",
-        "url": "./assets/osm_true_buildings/osm_buildings_T_E02_S01.glb",
-        "size_bytes": 5150004
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E02_S01_Q1.glb",
+        "size_bytes": 3228356
       },
       {
-        "id": "osm_buildings_T_W01_N02",
-        "filename": "osm_buildings_T_W01_N02.glb",
+        "id": "osm_buildings_T_E02_S01_Q2",
+        "filename": "osm_buildings_T_E02_S01_Q2.glb",
+        "ext": ".glb",
+        "tile_id": "T_E02_S01",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E02_S01_Q2.glb",
+        "size_bytes": 2620316
+      },
+      {
+        "id": "osm_buildings_T_E02_S01_Q3",
+        "filename": "osm_buildings_T_E02_S01_Q3.glb",
+        "ext": ".glb",
+        "tile_id": "T_E02_S01",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E02_S01_Q3.glb",
+        "size_bytes": 3212260
+      },
+      {
+        "id": "osm_buildings_T_E02_S01_Q4",
+        "filename": "osm_buildings_T_E02_S01_Q4.glb",
+        "ext": ".glb",
+        "tile_id": "T_E02_S01",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E02_S01_Q4.glb",
+        "size_bytes": 3288376
+      },
+      {
+        "id": "osm_buildings_T_W01_N02_Q1",
+        "filename": "osm_buildings_T_W01_N02_Q1.glb",
         "ext": ".glb",
         "tile_id": "T_W01_N02",
-        "url": "./assets/osm_true_buildings/osm_buildings_T_W01_N02.glb",
-        "size_bytes": 4936888
+        "url": "./assets/osm_true_buildings/osm_buildings_T_W01_N02_Q1.glb",
+        "size_bytes": 3177892
       },
       {
-        "id": "osm_buildings_T_W01_S02",
-        "filename": "osm_buildings_T_W01_S02.glb",
+        "id": "osm_buildings_T_W01_N02_Q2",
+        "filename": "osm_buildings_T_W01_N02_Q2.glb",
+        "ext": ".glb",
+        "tile_id": "T_W01_N02",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_W01_N02_Q2.glb",
+        "size_bytes": 3277920
+      },
+      {
+        "id": "osm_buildings_T_W01_N02_Q3",
+        "filename": "osm_buildings_T_W01_N02_Q3.glb",
+        "ext": ".glb",
+        "tile_id": "T_W01_N02",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_W01_N02_Q3.glb",
+        "size_bytes": 3173676
+      },
+      {
+        "id": "osm_buildings_T_W01_N02_Q4",
+        "filename": "osm_buildings_T_W01_N02_Q4.glb",
+        "ext": ".glb",
+        "tile_id": "T_W01_N02",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_W01_N02_Q4.glb",
+        "size_bytes": 3203524
+      },
+      {
+        "id": "osm_buildings_T_W01_S02_Q1",
+        "filename": "osm_buildings_T_W01_S02_Q1.glb",
         "ext": ".glb",
         "tile_id": "T_W01_S02",
-        "url": "./assets/osm_true_buildings/osm_buildings_T_W01_S02.glb",
-        "size_bytes": 2312452
+        "url": "./assets/osm_true_buildings/osm_buildings_T_W01_S02_Q1.glb",
+        "size_bytes": 3072328
       },
       {
-        "id": "osm_buildings_T_W02_N01",
-        "filename": "osm_buildings_T_W02_N01.glb",
+        "id": "osm_buildings_T_W01_S02_Q2",
+        "filename": "osm_buildings_T_W01_S02_Q2.glb",
+        "ext": ".glb",
+        "tile_id": "T_W01_S02",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_W01_S02_Q2.glb",
+        "size_bytes": 1289304
+      },
+      {
+        "id": "osm_buildings_T_W01_S02_Q3",
+        "filename": "osm_buildings_T_W01_S02_Q3.glb",
+        "ext": ".glb",
+        "tile_id": "T_W01_S02",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_W01_S02_Q3.glb",
+        "size_bytes": 2478112
+      },
+      {
+        "id": "osm_buildings_T_W01_S02_Q4",
+        "filename": "osm_buildings_T_W01_S02_Q4.glb",
+        "ext": ".glb",
+        "tile_id": "T_W01_S02",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_W01_S02_Q4.glb",
+        "size_bytes": 849832
+      },
+      {
+        "id": "osm_buildings_T_W02_N01_Q1",
+        "filename": "osm_buildings_T_W02_N01_Q1.glb",
         "ext": ".glb",
         "tile_id": "T_W02_N01",
-        "url": "./assets/osm_true_buildings/osm_buildings_T_W02_N01.glb",
-        "size_bytes": 5072536
+        "url": "./assets/osm_true_buildings/osm_buildings_T_W02_N01_Q1.glb",
+        "size_bytes": 3167824
       },
       {
-        "id": "buildings_T_W02_S01",
-        "filename": "buildings_T_W02_S01.glb",
+        "id": "osm_buildings_T_W02_N01_Q2",
+        "filename": "osm_buildings_T_W02_N01_Q2.glb",
+        "ext": ".glb",
+        "tile_id": "T_W02_N01",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_W02_N01_Q2.glb",
+        "size_bytes": 3239096
+      },
+      {
+        "id": "osm_buildings_T_W02_N01_Q3",
+        "filename": "osm_buildings_T_W02_N01_Q3.glb",
+        "ext": ".glb",
+        "tile_id": "T_W02_N01",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_W02_N01_Q3.glb",
+        "size_bytes": 3129540
+      },
+      {
+        "id": "osm_buildings_T_W02_N01_Q4",
+        "filename": "osm_buildings_T_W02_N01_Q4.glb",
+        "ext": ".glb",
+        "tile_id": "T_W02_N01",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_W02_N01_Q4.glb",
+        "size_bytes": 3233292
+      },
+      {
+        "id": "osm_buildings_T_W02_S01_Q1",
+        "filename": "osm_buildings_T_W02_S01_Q1.glb",
         "ext": ".glb",
         "tile_id": "T_W02_S01",
-        "url": "./assets/building_tiles/buildings_T_W02_S01.glb",
-        "size_bytes": 1333688
+        "url": "./assets/osm_true_buildings/osm_buildings_T_W02_S01_Q1.glb",
+        "size_bytes": 3223288
       },
       {
-        "id": "osm_buildings_T_E02_N02",
-        "filename": "osm_buildings_T_E02_N02.glb",
+        "id": "osm_buildings_T_W02_S01_Q2",
+        "filename": "osm_buildings_T_W02_S01_Q2.glb",
+        "ext": ".glb",
+        "tile_id": "T_W02_S01",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_W02_S01_Q2.glb",
+        "size_bytes": 3165560
+      },
+      {
+        "id": "osm_buildings_T_W02_S01_Q3",
+        "filename": "osm_buildings_T_W02_S01_Q3.glb",
+        "ext": ".glb",
+        "tile_id": "T_W02_S01",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_W02_S01_Q3.glb",
+        "size_bytes": 3350396
+      },
+      {
+        "id": "osm_buildings_T_W02_S01_Q4",
+        "filename": "osm_buildings_T_W02_S01_Q4.glb",
+        "ext": ".glb",
+        "tile_id": "T_W02_S01",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_W02_S01_Q4.glb",
+        "size_bytes": 3231176
+      },
+      {
+        "id": "osm_buildings_T_E02_N02_Q1",
+        "filename": "osm_buildings_T_E02_N02_Q1.glb",
         "ext": ".glb",
         "tile_id": "T_E02_N02",
-        "url": "./assets/osm_true_buildings/osm_buildings_T_E02_N02.glb",
-        "size_bytes": 5188880
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E02_N02_Q1.glb",
+        "size_bytes": 2229576
       },
       {
-        "id": "osm_buildings_T_W02_N02",
-        "filename": "osm_buildings_T_W02_N02.glb",
+        "id": "osm_buildings_T_E02_N02_Q2",
+        "filename": "osm_buildings_T_E02_N02_Q2.glb",
         "ext": ".glb",
-        "tile_id": "T_W02_N02",
-        "url": "./assets/osm_true_buildings/osm_buildings_T_W02_N02.glb",
-        "size_bytes": 4883788
+        "tile_id": "T_E02_N02",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E02_N02_Q2.glb",
+        "size_bytes": 2217560
       },
       {
-        "id": "osm_buildings_T_W02_S02",
-        "filename": "osm_buildings_T_W02_S02.glb",
+        "id": "osm_buildings_T_E02_N02_Q3",
+        "filename": "osm_buildings_T_E02_N02_Q3.glb",
         "ext": ".glb",
-        "tile_id": "T_W02_S02",
-        "url": "./assets/osm_true_buildings/osm_buildings_T_W02_S02.glb",
-        "size_bytes": 4701960
+        "tile_id": "T_E02_N02",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E02_N02_Q3.glb",
+        "size_bytes": 2446312
       },
       {
-        "id": "buildings_T_E02_S02",
-        "filename": "buildings_T_E02_S02.glb",
+        "id": "osm_buildings_T_E02_N02_Q4",
+        "filename": "osm_buildings_T_E02_N02_Q4.glb",
+        "ext": ".glb",
+        "tile_id": "T_E02_N02",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E02_N02_Q4.glb",
+        "size_bytes": 2431252
+      },
+      {
+        "id": "osm_buildings_T_E02_S02_Q1",
+        "filename": "osm_buildings_T_E02_S02_Q1.glb",
         "ext": ".glb",
         "tile_id": "T_E02_S02",
-        "url": "./assets/building_tiles/buildings_T_E02_S02.glb",
-        "size_bytes": 1279248
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E02_S02_Q1.glb",
+        "size_bytes": 3170964
+      },
+      {
+        "id": "osm_buildings_T_E02_S02_Q2",
+        "filename": "osm_buildings_T_E02_S02_Q2.glb",
+        "ext": ".glb",
+        "tile_id": "T_E02_S02",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E02_S02_Q2.glb",
+        "size_bytes": 3250124
+      },
+      {
+        "id": "osm_buildings_T_E02_S02_Q3",
+        "filename": "osm_buildings_T_E02_S02_Q3.glb",
+        "ext": ".glb",
+        "tile_id": "T_E02_S02",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E02_S02_Q3.glb",
+        "size_bytes": 3329624
+      },
+      {
+        "id": "osm_buildings_T_E02_S02_Q4",
+        "filename": "osm_buildings_T_E02_S02_Q4.glb",
+        "ext": ".glb",
+        "tile_id": "T_E02_S02",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_E02_S02_Q4.glb",
+        "size_bytes": 3390904
+      },
+      {
+        "id": "osm_buildings_T_W02_N02_Q1",
+        "filename": "osm_buildings_T_W02_N02_Q1.glb",
+        "ext": ".glb",
+        "tile_id": "T_W02_N02",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_W02_N02_Q1.glb",
+        "size_bytes": 3243312
+      },
+      {
+        "id": "osm_buildings_T_W02_N02_Q2",
+        "filename": "osm_buildings_T_W02_N02_Q2.glb",
+        "ext": ".glb",
+        "tile_id": "T_W02_N02",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_W02_N02_Q2.glb",
+        "size_bytes": 3275132
+      },
+      {
+        "id": "osm_buildings_T_W02_N02_Q3",
+        "filename": "osm_buildings_T_W02_N02_Q3.glb",
+        "ext": ".glb",
+        "tile_id": "T_W02_N02",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_W02_N02_Q3.glb",
+        "size_bytes": 3177356
+      },
+      {
+        "id": "osm_buildings_T_W02_N02_Q4",
+        "filename": "osm_buildings_T_W02_N02_Q4.glb",
+        "ext": ".glb",
+        "tile_id": "T_W02_N02",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_W02_N02_Q4.glb",
+        "size_bytes": 2869176
+      },
+      {
+        "id": "osm_buildings_T_W02_S02_Q1",
+        "filename": "osm_buildings_T_W02_S02_Q1.glb",
+        "ext": ".glb",
+        "tile_id": "T_W02_S02",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_W02_S02_Q1.glb",
+        "size_bytes": 3157332
+      },
+      {
+        "id": "osm_buildings_T_W02_S02_Q2",
+        "filename": "osm_buildings_T_W02_S02_Q2.glb",
+        "ext": ".glb",
+        "tile_id": "T_W02_S02",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_W02_S02_Q2.glb",
+        "size_bytes": 3215716
+      },
+      {
+        "id": "osm_buildings_T_W02_S02_Q3",
+        "filename": "osm_buildings_T_W02_S02_Q3.glb",
+        "ext": ".glb",
+        "tile_id": "T_W02_S02",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_W02_S02_Q3.glb",
+        "size_bytes": 3159212
+      },
+      {
+        "id": "osm_buildings_T_W02_S02_Q4",
+        "filename": "osm_buildings_T_W02_S02_Q4.glb",
+        "ext": ".glb",
+        "tile_id": "T_W02_S02",
+        "url": "./assets/osm_true_buildings/osm_buildings_T_W02_S02_Q4.glb",
+        "size_bytes": 3281428
       },
       {
         "id": "osm_buildings_T_E00_N03",

@@ -1,9 +1,9 @@
-name: Daily Auto-Sync Dalat 3D from Google Drive
+name: Auto-Sync Dalat 3D from Google Drive
 
 on:
   schedule:
-    # 06:00 sáng giờ Việt Nam (GMT+7) mỗi ngày = 23:00 UTC
-    - cron: "0 23 * * *"
+    # Tự động đồng bộ mỗi 4 giờ (00:00, 04:00, 08:00, 12:00, 16:00, 20:00 UTC)
+    - cron: "0 */4 * * *"
   workflow_dispatch:
     inputs:
       no_prune:
@@ -11,6 +11,11 @@ on:
         required: false
         default: false
         type: boolean
+      pbr_buildings_scope:
+        description: "Phạm vi nhà PBR _Q1.._Q4 (core25, ring0, all, none)"
+        required: false
+        default: "core25"
+        type: string
 
 permissions:
   contents: write
@@ -33,12 +38,15 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Install NumPy for Copernicus DEM auto-clamping
+        run: python3 -m pip install --quiet numpy
+
       - name: Configure git bot author
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-      - name: Sync Dalat 3D assets and rebuild world-index from Google Drive
+      - name: Sync Dalat 3D assets, clamp PBR buildings & rebuild world-index
         env:
           GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
           GDRIVE_OAUTH_REFRESH_TOKEN: ${{ secrets.GDRIVE_OAUTH_REFRESH_TOKEN }}
@@ -51,4 +59,8 @@ jobs:
           if [ "${{ inputs.no_prune }}" = "true" ]; then
             EXTRA_ARGS="--no-prune"
           fi
-          python3 scripts/sync_from_drive.py --push $EXTRA_ARGS
+          SCOPE="${{ inputs.pbr_buildings_scope }}"
+          if [ -z "$SCOPE" ]; then
+            SCOPE="core25"
+          fi
+          python3 scripts/sync_from_drive.py --sync-mode web_curated --pbr-buildings-scope "$SCOPE" --push $EXTRA_ARGS

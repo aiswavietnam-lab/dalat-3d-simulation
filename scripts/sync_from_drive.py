@@ -33,6 +33,35 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 ASSETS = ROOT / "assets"
 STATE_FILE = ROOT / "scripts" / "drive_state.json"
 TILE_ID_REGEX = re.compile(r"(T_[EW]\d{2}_[NS]\d{2})")
+QUARTER_SUFFIX_RE = re.compile(r"_(Q[1-4])(?:\.[^.]+)?$", re.IGNORECASE)
+
+FOLIAGE_PBR_CORE_FILES = {
+    "pine_dalat_tall.glb",
+    "pine_dalat_tall_lod1.glb",
+    "pine_dalat_medium.glb",
+    "pine_dalat_medium_lod1.glb",
+    "pine_dalat_young.glb",
+    "pine_dalat_windswept.glb",
+    "mai_anh_dao.glb",
+    "da_quy_bush.glb",
+    "phuong_tim_dalat.glb",
+    "cam_tu_cau_bush.glb",
+    "cypress_villa_park_dalat.glb",
+    "jacaranda_purple.glb",
+    "weeping_willow.glb",
+    "forest_fern_clump.glb",
+}
+
+CORE25_TIDS = {
+    f"T_{'W' if ix < 0 else 'E'}{abs(ix):02d}_{'S' if iy < 0 else 'N'}{abs(iy):02d}"
+    for iy in range(-2, 3)
+    for ix in range(-2, 3)
+}
+RING0_TIDS = {
+    f"T_{'W' if ix < 0 else 'E'}{abs(ix):02d}_{'S' if iy < 0 else 'N'}{abs(iy):02d}"
+    for iy in (-1, 0, 1)
+    for ix in (-1, 0, 1)
+}
 
 DATA_FILES = {
     "data/world_ui_specs/camera_presets_dalat.json": ("1728JaLRrZa2Kbfj8NTPNlfn2-e_a269e", "camera_presets_dalat.json"),
@@ -47,6 +76,7 @@ ASSET_FOLDERS = [
     ("terrain_tiles_ring2", "1cZJQ4S_m5PLxE3MNmx1z-hvBzNnfrfrW"),
     ("water_bodies", "1p-r7PeKDLPtU8IM3yy_iWM5ODCYNAOxY"),
     ("natural_wonders_pbr", "1O9tp9DRNOYfjx8EI4aAzA4KraRMiP5Kd"),
+    ("foliage_pbr_ultra", "17Glyk070DuA7VIkk6m38jsr1BDp_NiR2"),
     ("vegetation", "1HaRb4wLyLkHKjQAnaTVHllWkysgr1kRg"),
     ("vegetation_expanded", "1RYnBkMNngZ-q17uzzLvsDswuDaTbF5fe"),
     ("hero_landmarks_ultra", "1YbzG2s6cijkl2AX-Kh-FbRZT5Ddd1z4A"),
@@ -285,15 +315,39 @@ def scan_dir(subdir, exts, name_filter=None):
     return items
 
 
-def dedupe_by_tile(items):
+def _resolve_pbr_building_tids(scope: str) -> set[str] | None:
+    if scope == "ring0":
+        return set(RING0_TIDS)
+    if scope == "core25":
+        return set(CORE25_TIDS)
+    if scope == "all":
+        return None  # None means allow all tiles that have _Q1.._Q4
+    return set()
+
+
+def dedupe_by_tile(items, allow_quadrants: bool = False):
+    quad_tids = set()
+    if allow_quadrants:
+        for it in items:
+            tid = it.get("tile_id")
+            if tid and QUARTER_SUFFIX_RE.search(it.get("filename", "")):
+                quad_tids.add(tid)
+
     seen = set()
     out = []
     for it in items:
         tid = it.get("tile_id")
         if tid:
-            if tid in seen:
+            if allow_quadrants and tid in quad_tids:
+                qm = QUARTER_SUFFIX_RE.search(it.get("filename", ""))
+                if not qm:
+                    continue
+                key = (tid, qm.group(1).upper())
+            else:
+                key = (tid, "")
+            if key in seen:
                 continue
-            seen.add(tid)
+            seen.add(key)
         out.append(it)
     return out
 
@@ -310,12 +364,27 @@ def tile_dist_key(it):
     return (0, ix * ix + iy * iy)
 
 
-def compute_shadowed_paths(folder_cache: dict) -> set[str]:
+def compute_shadowed_paths(folder_cache: dict, pbr_buildings_scope: str = "core25") -> set[str]:
     """Xác định các file bị phủ bởi tầng ưu tiên cao hơn hoặc heightmap không dùng trên web."""
     fid_by_sub = dict(ASSET_FOLDERS)
     shadowed = set()
+    allowed_pbr_tids = _resolve_pbr_building_tids(pbr_buildings_scope)
+
+    # Xác định trước các tile có bộ PBR _Q1.._Q4 được phép kích hoạt trong osm_true_buildings
+    pbr_quad_tids = set()
+    osm_fid = fid_by_sub.get("osm_true_buildings")
+    if osm_fid and osm_fid in folder_cache and allowed_pbr_tids != set():
+        for fn in folder_cache[osm_fid].keys():
+            if not fn.lower().endswith((".glb", ".gltf")):
+                continue
+            m = TILE_ID_REGEX.search(fn)
+            if m and QUARTER_SUFFIX_RE.search(fn):
+                tid = m.group(1)
+                if allowed_pbr_tids is None or tid in allowed_pbr_tids:
+                    pbr_quad_tids.add(tid)
 
     for subdirs, exts, pred in DEDUPE_PRIORITY_GROUPS:
+        is_bldg_group = subdirs[0] == "osm_true_buildings"
         seen_tids = set()
         for sub in subdirs:
             fid = fid_by_sub.get(sub)
@@ -330,10 +399,27 @@ def compute_shadowed_paths(folder_cache: dict) -> set[str]:
                 if not m:
                     continue
                 tid = m.group(1)
-                if tid in seen_tids:
-                    shadowed.add(f"assets/{sub}/{fn}")
+                if is_bldg_group:
+                    qm = QUARTER_SUFFIX_RE.search(fn)
+                    if sub == "osm_true_buildings":
+                        if tid in pbr_quad_tids:
+                            if qm:
+                                continue  # Giữ nguyên bộ 4 mảnh _Q1.._Q4 PBR
+                            shadowed.add(f"assets/{sub}/{fn}")
+                            continue
+                        elif qm:
+                            # Chặn _Q1.._Q4 ở các ô ngoài vùng scope để giữ gọn GitHub Pages
+                            shadowed.add(f"assets/{sub}/{fn}")
+                            continue
+                    if tid in pbr_quad_tids or tid in seen_tids:
+                        shadowed.add(f"assets/{sub}/{fn}")
+                    else:
+                        seen_tids.add(tid)
                 else:
-                    seen_tids.add(tid)
+                    if tid in seen_tids:
+                        shadowed.add(f"assets/{sub}/{fn}")
+                    else:
+                        seen_tids.add(tid)
 
     # heightmap_*.json chỉ dùng trong pipeline Python offline, trình xem WebGL không tải
     for sub in ("satellite_dem_tiles", "terrain_tiles", "terrain_tiles_ring1_ext", "terrain_tiles_ring2"):
@@ -353,6 +439,25 @@ def prune_shadowed_local_files(shadowed_paths: set[str]) -> int:
         if p.exists() and p.is_file():
             p.unlink()
             removed += 1
+
+    # Dọn các tệp nhà cũ không chia mảnh trên ổ đĩa nếu ô đó đã có đủ bộ _Q1.._Q4 PBR
+    osm_dir = ASSETS / "osm_true_buildings"
+    if osm_dir.exists():
+        local_quad_tids = set()
+        for p in osm_dir.glob("*_Q[1-4].glb"):
+            m = TILE_ID_REGEX.search(p.name)
+            if m:
+                local_quad_tids.add(m.group(1))
+        for tid in local_quad_tids:
+            for old_p in [
+                osm_dir / f"osm_buildings_{tid}.glb",
+                ASSETS / "building_tiles" / f"buildings_{tid}.glb",
+                ASSETS / "urban_wards_tiles" / f"urban_wards_{tid}.glb",
+            ]:
+                if old_p.exists() and old_p.is_file():
+                    old_p.unlink()
+                    removed += 1
+
     # Dọn thêm heightmap_*.json cũ tồn dư trên ổ đĩa nếu có
     for sub in ("satellite_dem_tiles", "terrain_tiles", "terrain_tiles_ring1_ext", "terrain_tiles_ring2"):
         d = ASSETS / sub
@@ -361,6 +466,357 @@ def prune_shadowed_local_files(shadowed_paths: set[str]) -> int:
                 p.unlink()
                 removed += 1
     return removed
+
+
+def _pad4_bytes(data: bytes, pad_char: bytes = b" ") -> bytes:
+    rem = len(data) % 4
+    return data if rem == 0 else data + pad_char * (4 - rem)
+
+
+def _find_terrain_glb_for_tile(tid: str) -> pathlib.Path | None:
+    for sub in ("satellite_dem_tiles", "terrain_tiles"):
+        d = ASSETS / sub
+        if not d.exists():
+            continue
+        for pat in (f"terrain_real_{tid}.glb", f"terrain_*{tid}.glb"):
+            matches = sorted(d.glob(pat))
+            if matches:
+                return matches[0]
+    return None
+
+
+def _build_terrain_sampler(terrain_glb: pathlib.Path):
+    import numpy as np
+
+    raw = terrain_glb.read_bytes()
+    if len(raw) < 28 or raw[:4] != b"glTF":
+        return None
+    jlen = struct.unpack_from("<I", raw, 12)[0]
+    g = json.loads(raw[20 : 20 + jlen].decode("utf-8"))
+    bo = 28 + jlen
+    samplers = []
+    fallback_pts = []
+    for m in g.get("meshes", []):
+        for pr in m.get("primitives", []):
+            pi = pr.get("attributes", {}).get("POSITION")
+            if pi is None:
+                continue
+            pa = g["accessors"][pi]
+            pbv = g["bufferViews"][pa["bufferView"]]
+            poff = bo + pbv.get("byteOffset", 0) + pa.get("byteOffset", 0)
+            arr = np.frombuffer(raw, dtype="<f4", count=pa["count"] * 3, offset=poff).reshape(-1, 3)
+            xu = np.unique(np.round(arr[:, 0], 3))
+            zu = np.unique(np.round(arr[:, 2], 3))
+            if len(xu) >= 2 and len(zu) >= 2 and len(xu) * len(zu) == len(arr):
+                grid = np.zeros((len(zu), len(xu)), dtype=np.float64)
+                grid[np.searchsorted(zu, np.round(arr[:, 2], 3)), np.searchsorted(xu, np.round(arr[:, 0], 3))] = arr[:, 1]
+                samplers.append((float(xu[0]), float(xu[-1]), float(zu[0]), float(zu[-1]), xu, zu, grid))
+            else:
+                fallback_pts.append(arr)
+
+    if not samplers and not fallback_pts:
+        return None
+
+    fb_all = np.vstack(fallback_pts) if fallback_pts else None
+
+    def sample(xq, zq):
+        xq = np.asarray(xq, dtype=np.float64)
+        zq = np.asarray(zq, dtype=np.float64)
+        out = np.zeros(len(xq), dtype=np.float64)
+        covered = np.zeros(len(xq), dtype=bool)
+        for x0, x1, z0, z1, xu, zu, grid in samplers:
+            mask = (xq >= x0 - 1.5) & (xq <= x1 + 1.5) & (zq >= z0 - 1.5) & (zq <= z1 + 1.5)
+            if not np.any(mask):
+                continue
+            fx = np.clip((xq[mask] - x0) / max(x1 - x0, 1e-6) * (len(xu) - 1), 0.0, len(xu) - 1.0001)
+            fz = np.clip((zq[mask] - z0) / max(z1 - z0, 1e-6) * (len(zu) - 1), 0.0, len(zu) - 1.0001)
+            ix0 = np.floor(fx).astype(int)
+            iz0 = np.floor(fz).astype(int)
+            tx = fx - ix0
+            tz = fz - iz0
+            out[mask] = (1 - tz) * ((1 - tx) * grid[iz0, ix0] + tx * grid[iz0, ix0 + 1]) + tz * (
+                (1 - tx) * grid[iz0 + 1, ix0] + tx * grid[iz0 + 1, ix0 + 1]
+            )
+            covered[mask] = True
+        if fb_all is not None and not np.all(covered):
+            rem = ~covered
+            for idx_r in np.where(rem)[0]:
+                d2 = (fb_all[:, 0] - xq[idx_r]) ** 2 + (fb_all[:, 2] - zq[idx_r]) ** 2
+                out[idx_r] = float(fb_all[int(np.argmin(d2)), 1])
+        return out
+
+    return sample
+
+
+def _load_lake_tris_xz():
+    """Extract 2D XZ lake-surface triangles from Ho Xuan Huong & RING_0 OSM lakes GLBs."""
+    try:
+        import numpy as np
+    except ImportError:
+        return None
+
+    all_tris = []
+    for name in ("water_ho_xuan_huong.glb", "water_ring0_osm_lakes.glb"):
+        wp = ASSETS / "water_bodies" / name
+        if not wp.exists():
+            continue
+        try:
+            raw = wp.read_bytes()
+            jlen = struct.unpack_from("<I", raw, 12)[0]
+            g = json.loads(raw[20 : 20 + jlen].decode("utf-8"))
+            bo = 28 + jlen
+            for m in g.get("meshes", []):
+                mn = m.get("name", "").lower()
+                if "surface" not in mn and "ho_xuan_huong" not in mn:
+                    continue
+                if "embankment" in mn or "promenade" in mn or "bank" in mn:
+                    continue
+                for pr in m.get("primitives", []):
+                    pi = pr.get("attributes", {}).get("POSITION")
+                    ii = pr.get("indices")
+                    if pi is None or ii is None:
+                        continue
+                    pa = g["accessors"][pi]
+                    pbv = g["bufferViews"][pa["bufferView"]]
+                    pos = np.frombuffer(
+                        raw, dtype="<f4", count=pa["count"] * 3, offset=bo + pbv.get("byteOffset", 0) + pa.get("byteOffset", 0)
+                    ).reshape(-1, 3)
+                    ia = g["accessors"][ii]
+                    ibv = g["bufferViews"][ia["bufferView"]]
+                    dt = "<u4" if ia["componentType"] == 5125 else "<u2"
+                    tris = np.frombuffer(
+                        raw, dtype=dt, count=ia["count"], offset=bo + ibv.get("byteOffset", 0) + ia.get("byteOffset", 0)
+                    ).reshape(-1, 3)
+                    tri_xz = pos[tris][:, :, [0, 2]].astype(np.float64)
+                    all_tris.append(tri_xz)
+        except Exception:
+            continue
+    if not all_tris:
+        return None
+    tris_arr = np.vstack(all_tris)
+    bboxes = np.column_stack([tris_arr.min(axis=1), tris_arr.max(axis=1)])  # minx, minz, maxx, maxz
+    return (tris_arr, bboxes)
+
+
+def _point_in_lake_tris(x: float, z: float, lake_data) -> bool:
+    if lake_data is None:
+        return False
+    import numpy as np
+
+    tris_arr, bboxes = lake_data
+    cand = np.where((x >= bboxes[:, 0]) & (x <= bboxes[:, 2]) & (z >= bboxes[:, 1]) & (z <= bboxes[:, 3]))[0]
+    if len(cand) == 0:
+        return False
+    t = tris_arr[cand]
+    ax, az = t[:, 0, 0], t[:, 0, 1]
+    bx, bz = t[:, 1, 0], t[:, 1, 1]
+    cx, cz = t[:, 2, 0], t[:, 2, 1]
+    d1 = (x - bx) * (az - bz) - (ax - bx) * (z - bz)
+    d2 = (x - cx) * (bz - cz) - (bx - cx) * (z - cz)
+    d3 = (x - ax) * (cz - az) - (cx - ax) * (z - az)
+    has_neg = (d1 < 0) | (d2 < 0) | (d3 < 0)
+    has_pos = (d1 > 0) | (d2 > 0) | (d3 > 0)
+    return bool(np.any(~(has_neg & has_pos)))
+
+
+def reclamp_pbr_building_glb_to_terrain(bldg_path: pathlib.Path, terrain_glb: pathlib.Path, lake_data=None) -> tuple[int, int]:
+    """
+    Tự động đưa toàn bộ cụm công trình trong _Q1.._Q4.glb bám chuẩn cao độ DEM Copernicus GLO-30
+    (0 nhà lơ lửng, 0 nhà chìm đất, kéo dài chân móng taluy trên dốc gắt & loại trừ nhà rơi xuống lòng hồ).
+    """
+    try:
+        import numpy as np
+    except ImportError:
+        return (0, 0)
+
+    sampler = _build_terrain_sampler(terrain_glb)
+    if sampler is None:
+        return (0, 0)
+
+    from collections import defaultdict
+
+    raw = bytearray(bldg_path.read_bytes())
+    if len(raw) < 28 or raw[:4] != b"glTF":
+        return (0, 0)
+    jlen = struct.unpack_from("<I", raw, 12)[0]
+    g = json.loads(raw[20 : 20 + jlen].decode("utf-8"))
+    bo = 28 + jlen
+
+    mesh_records = []
+    offsets = []
+    tot_v = 0
+    for mi, m in enumerate(g.get("meshes", [])):
+        mn = m.get("name", "")
+        for pi_idx, pr in enumerate(m.get("primitives", [])):
+            pi = pr.get("attributes", {}).get("POSITION")
+            if pi is None:
+                continue
+            pa = g["accessors"][pi]
+            pbv = g["bufferViews"][pa["bufferView"]]
+            poff = bo + pbv.get("byteOffset", 0) + pa.get("byteOffset", 0)
+            pos = np.frombuffer(raw, dtype="<f4", count=pa["count"] * 3, offset=poff).reshape(-1, 3).copy()
+
+            tris = None
+            ioff = 0
+            dt = "<u4"
+            if "indices" in pr:
+                ia = g["accessors"][pr["indices"]]
+                ibv = g["bufferViews"][ia["bufferView"]]
+                ioff = bo + ibv.get("byteOffset", 0) + ia.get("byteOffset", 0)
+                dt = "<u4" if ia["componentType"] == 5125 else "<u2"
+                tris = np.frombuffer(raw, dtype=dt, count=ia["count"], offset=ioff).reshape(-1, 3).copy()
+
+            offsets.append(tot_v)
+            tot_v += len(pos)
+            mesh_records.append((len(mesh_records), mn, pa, poff, pos, ioff, dt, tris))
+
+    if not mesh_records or tot_v == 0:
+        return (0, 0)
+
+    parent = list(range(tot_v))
+
+    def find(a: int) -> int:
+        while parent[a] != a:
+            parent[a] = parent[parent[a]]
+            a = parent[a]
+        return a
+
+    def union(a: int, b: int) -> None:
+        ra, rb = find(a), find(b)
+        if ra != rb:
+            parent[rb] = ra
+
+    xz_buckets = {}
+    for idx_r, mn, pa, poff, pos, ioff, dt, tris in mesh_records:
+        off = offsets[idx_r]
+        if tris is not None:
+            for a, b, c in tris:
+                if a == b or b == c:
+                    continue
+                union(off + int(a), off + int(b))
+                union(off + int(b), off + int(c))
+        qxz = np.round(pos[:, [0, 2]] * 50.0).astype(np.int64)
+        for i in range(len(pos)):
+            k = (int(qxz[i, 0]), int(qxz[i, 1]))
+            gi = off + i
+            if k in xz_buckets:
+                union(gi, xz_buckets[k])
+            else:
+                xz_buckets[k] = gi
+
+    comps = defaultdict(list)
+    for idx_r, mn, pa, poff, pos, ioff, dt, tris in mesh_records:
+        off = offsets[idx_r]
+        mn_l = mn.lower()
+        is_wall = ("wall_" in mn_l) or ("greenhouse" in mn_l)
+        is_found = "foundation" in mn_l
+        for i in range(len(pos)):
+            comps[find(off + i)].append((idx_r, i, is_wall, is_found))
+
+    wall_boxes = []
+    comp_dy = {}
+    comp_wall_bot = {}
+    lake_roots = set()
+
+    for root, items in comps.items():
+        pts = np.array([mesh_records[ir][4][vi] for ir, vi, _, _ in items])
+        wall_ys = [mesh_records[ir][4][vi, 1] for ir, vi, w, _ in items if w]
+        if lake_data is not None:
+            cx_m, cz_m = float(pts[:, 0].mean()), float(pts[:, 2].mean())
+            if _point_in_lake_tris(cx_m, cz_m, lake_data):
+                lake_roots.add(root)
+        if wall_ys:
+            gy = sampler(pts[:, 0], pts[:, 2])
+            new_wall_bot = float(np.max(gy) + 0.18)
+            dy = new_wall_bot - float(min(wall_ys))
+            comp_dy[root] = dy
+            comp_wall_bot[root] = new_wall_bot
+            x0, x1 = float(pts[:, 0].min()) - 1.5, float(pts[:, 0].max()) + 1.5
+            z0, z1 = float(pts[:, 2].min()) - 1.5, float(pts[:, 2].max()) + 1.5
+            y0, y1 = float(pts[:, 1].min()) - 4.0, float(pts[:, 1].max()) + 6.0
+            wall_boxes.append((x0, x1, z0, z1, y0, y1, 0.5 * (x0 + x1), 0.5 * (z0 + z1), dy, root))
+
+    for root, items in comps.items():
+        if root in comp_dy:
+            continue
+        pts = np.array([mesh_records[ir][4][vi] for ir, vi, _, _ in items])
+        has_found_only = any(f for _, _, _, f in items)
+        if not has_found_only:
+            cx, cy_m, cz = float(pts[:, 0].mean()), float(pts[:, 1].mean()), float(pts[:, 2].mean())
+            best = None
+            best_root = None
+            best_d = 1e18
+            for x0, x1, z0, z1, y0, y1, bx, bz, dy, wroot in wall_boxes:
+                if x0 <= cx <= x1 and z0 <= cz <= z1 and y0 <= cy_m <= y1:
+                    d = (cx - bx) ** 2 + (cz - bz) ** 2
+                    if d < best_d:
+                        best_d = d
+                        best = dy
+                        best_root = wroot
+            if best is not None:
+                comp_dy[root] = best
+                if best_root in lake_roots:
+                    lake_roots.add(root)
+                continue
+        gy = sampler(pts[:, 0], pts[:, 2])
+        h_span = float(pts[:, 1].max() - pts[:, 1].min())
+        if h_span > 2.0:
+            comp_dy[root] = float(np.max(gy) + 0.35 - float(pts[:, 1].max()))
+        else:
+            comp_dy[root] = float(np.max(gy) - 0.1 - float(pts[:, 1].min()))
+
+    culled_tris = 0
+    shifted_verts = 0
+    kill_vert = set()
+    for root, items in comps.items():
+        if root in lake_roots:
+            for ir, vi, _, _ in items:
+                kill_vert.add((ir, vi))
+            continue
+        dy = comp_dy[root]
+        for ir, vi, _, _ in items:
+            mesh_records[ir][4][vi, 1] += dy
+            shifted_verts += 1
+        found_items = [(ir, vi) for ir, vi, _, f in items if f]
+        if found_items:
+            wb = comp_wall_bot.get(root)
+            fpts = np.array([mesh_records[ir][4][vi] for ir, vi in found_items])
+            gy_v = sampler(fpts[:, 0], fpts[:, 2])
+            ys_v = fpts[:, 1]
+            y_mid = wb - 0.05 if wb is not None else float(ys_v.min() + 0.5 * (ys_v.max() - ys_v.min()))
+            for idx_k, (ir, vi) in enumerate(found_items):
+                if ys_v[idx_k] < y_mid:
+                    mesh_records[ir][4][vi, 1] = float(min(ys_v[idx_k], gy_v[idx_k] - 2.5))
+
+    for idx_r, mn, pa, poff, pos, ioff, dt, tris in mesh_records:
+        if lake_roots and tris is not None:
+            kill_arr = np.zeros(len(pos), dtype=bool)
+            for ir_k, vi_k in kill_vert:
+                if ir_k == idx_r:
+                    kill_arr[vi_k] = True
+            bad_t = kill_arr[tris[:, 0]] | kill_arr[tris[:, 1]] | kill_arr[tris[:, 2]]
+            if np.any(bad_t):
+                tris[bad_t, 1] = tris[bad_t, 0]
+                tris[bad_t, 2] = tris[bad_t, 0]
+                culled_tris += int(np.sum(bad_t))
+                raw[ioff : ioff + tris.size * (4 if dt == "<u4" else 2)] = tris.tobytes()
+
+        pa["min"] = [float(v) for v in pos.min(axis=0)]
+        pa["max"] = [float(v) for v in pos.max(axis=0)]
+        raw[poff : poff + pos.size * 4] = pos.tobytes()
+
+    bin_part = bytes(raw[bo:])
+    new_j = _pad4_bytes(json.dumps(g, separators=(",", ":")).encode("utf-8"), b" ")
+    total_len = 12 + 8 + len(new_j) + 8 + len(bin_part)
+    out = (
+        struct.pack("<4sII", b"glTF", 2, total_len)
+        + struct.pack("<II", len(new_j), 0x4E4F534A)
+        + new_j
+        + struct.pack("<II", len(bin_part), 0x004E4942)
+        + bin_part
+    )
+    bldg_path.write_bytes(out)
+    return (shifted_verts, culled_tris)
 
 
 def read_glb_bbox_center(path: pathlib.Path):
@@ -527,7 +983,18 @@ def rebuild_world_index():
             it["tile_id"] = xy_to_tile_id(bb[0], -bb[2])
         water_glb.append(it)
 
-    veg_models = scan_dir("vegetation", {".glb", ".gltf"}) + scan_dir("vegetation_expanded", {".glb", ".gltf"})
+    raw_veg_models = (
+        scan_dir("foliage_pbr_ultra", {".glb", ".gltf"})
+        + scan_dir("vegetation", {".glb", ".gltf"})
+        + scan_dir("vegetation_expanded", {".glb", ".gltf"})
+    )
+    veg_models = []
+    seen_veg_ids = set()
+    for it in raw_veg_models:
+        if it["id"] in seen_veg_ids:
+            continue
+        seen_veg_ids.add(it["id"])
+        veg_models.append(it)
     veg_instances = sorted(dedupe_by_tile(
         scan_dir("vegetation", {".json"}, lambda n: n.startswith("instances_"))
         + scan_dir("vegetation_expanded", {".json"}, lambda n: n.startswith("instances_"))
@@ -621,11 +1088,12 @@ def rebuild_world_index():
             it["tile_id"] = xy_to_tile_id(bb[0], -bb[2])
             roads_glb.append(it)
 
-    # 5. Buildings (deduplicated by tile, osm_true_buildings wins over legacy building_tiles)
+    # 5. Buildings (deduplicated by (tile, quadrant), osm_true_buildings wins over legacy building_tiles)
     buildings_glb = sorted(dedupe_by_tile(
         scan_dir("osm_true_buildings", {".glb", ".gltf"})
         + scan_dir("building_tiles", {".glb", ".gltf"})
-        + scan_dir("urban_wards_tiles", {".glb", ".gltf"})
+        + scan_dir("urban_wards_tiles", {".glb", ".gltf"}),
+        allow_quadrants=True,
     ), key=tile_dist_key)
 
     total_glb = len(terrain_glb) + len(water_glb) + len(veg_models) + len(landmarks_glb) + len(roads_glb) + len(buildings_glb)
@@ -687,6 +1155,24 @@ def main():
     parser.add_argument("--sync-viewer", action="store_true", help="Cho phép đồng bộ cả web_viewer HTML/CSS/JS từ Drive")
     parser.add_argument("--no-prune", action="store_true", help="Không dọn các tile cũ bị phủ bởi bản mới hơn")
     parser.add_argument("--rebuild-index-only", action="store_true", help="Chỉ xây dựng lại api/world-index.json từ thư mục assets cục bộ")
+    parser.add_argument(
+        "--pbr-buildings-scope",
+        choices=["core25", "ring0", "all", "none"],
+        default="core25",
+        help="Phạm vi đồng bộ nhà PBR 4 mảnh _Q1.._Q4 từ ĐÀ LẠT - 20 (mặc định core25 = 25 ô 10x10km)",
+    )
+    parser.add_argument(
+        "--sync-mode",
+        choices=["web_curated", "full"],
+        default="web_curated",
+        help="web_curated (mặc định): cập nhật tệp đang dùng + kéo mới cây PBR & nhà _Q1.._Q4 core25 (an toàn dung lượng GitHub Pages); full: đồng bộ mọi tệp kể cả vành đai ngoài",
+    )
+    parser.add_argument(
+        "--folders",
+        default="",
+        help="Chỉ đồng bộ danh sách thư mục chỉ định (phân cách bằng dấu phẩy), vd: foliage_pbr_ultra,osm_true_buildings",
+    )
+    parser.add_argument("--reclamp-pbr-buildings", action="store_true", help="Ép kẹp lại cao độ toàn bộ _Q1.._Q4 hiện có lên DEM Copernicus")
     args = parser.parse_args()
 
     if args.rebuild_index_only:
@@ -703,33 +1189,41 @@ def main():
     except RuntimeError as exc:
         msg = f"[DALAT SYNC] Bỏ qua: {exc}"
         print(msg, flush=True)
-        append_step_summary(["### Dalat 3D Sync — Chưa cấu hình thông tin xác thực Google Drive", f"- {exc}"])
+        append_step_summary([
+            "### Dalat 3D Sync — Chưa cấu hình thông tin xác thực Google Drive",
+            f"- {exc}",
+            "- Hướng dẫn bật tự động đồng bộ: vào **GitHub Repo -> Settings -> Secrets and variables -> Actions**, thêm `GDRIVE_API_KEY` (hoặc `GOOGLE_SERVICE_ACCOUNT_JSON`).",
+        ])
         return 1 if os.environ.get("REQUIRE_DRIVE_AUTH") == "1" else 0
 
     old_state = json.loads(STATE_FILE.read_text(encoding="utf-8")) if STATE_FILE.exists() else {}
-    new_state = {}
+    new_state = dict(old_state)
     targets = {}
+    only_folders = {s.strip() for s in args.folders.split(",") if s.strip()}
 
     # Bảo vệ các tệp lõi chuẩn ESA Copernicus GLO-30 & OSM API v0.6 khỏi bị ghi đè bởi dữ liệu lỗi từ Drive
-    protected_core_tids = {
-        f"T_{'W' if ix < 0 else 'E'}{abs(ix):02d}_{'S' if iy < 0 else 'N'}{abs(iy):02d}"
-        for iy in range(-2, 3) for ix in range(-2, 3)
-    }
-    ring0_tids = {
-        f"T_{'W' if ix < 0 else 'E'}{abs(ix):02d}_{'S' if iy < 0 else 'N'}{abs(iy):02d}"
-        for iy in (-1, 0, 1) for ix in (-1, 0, 1)
-    }
+    protected_core_tids = set(CORE25_TIDS)
+    ring0_tids = set(RING0_TIDS)
     protected_paths = (
         {f"assets/satellite_dem_tiles/{p.name}" for p in (ASSETS / "satellite_dem_tiles").glob("terrain_real_*.glb")}
+        | {f"assets/satellite_dem_tiles/terrain_{tid}.glb" for tid in protected_core_tids}
         | {"assets/satellite_dem_tiles/terrain_backdrop_dalat_60km.glb"}
         | {"assets/water_bodies/water_ho_xuan_huong.glb", "assets/water_bodies/water_ring0_osm_lakes.glb"}
         | {f"assets/osm_true_roads_hydro/osm_real_roads_{tid}.glb" for tid in ring0_tids}
         | {f"assets/osm_true_buildings/osm_buildings_{tid}.glb" for tid in ring0_tids}
         | {f"assets/vegetation/instances_{tid}.json" for tid in ring0_tids}
+        | {
+            "assets/landmarks/landmarks_manifest.json",
+            "assets/hero_landmarks_ultra/hero_landmarks_manifest.json",
+            "assets/french_villas/french_villas_manifest.json",
+            "assets/tourism_complexes/tourism_complexes_manifest.json",
+        }
     )
 
     folder_jobs = {v[0]: (".glb", ".gltf", ".json") for v in DATA_FILES.values()}
-    for _, fid in ASSET_FOLDERS:
+    for subdir, fid in ASSET_FOLDERS:
+        if only_folders and subdir not in only_folders:
+            continue
         folder_jobs[fid] = (".glb", ".gltf", ".json")
     if args.sync_viewer:
         for _, fid, exts in WEB_VIEWER_FOLDERS:
@@ -741,20 +1235,33 @@ def main():
         for fid, fut in futs.items():
             folder_cache[fid] = fut.result()
 
-    shadowed = set() if args.no_prune else compute_shadowed_paths(folder_cache)
+    shadowed = set() if args.no_prune else compute_shadowed_paths(folder_cache, args.pbr_buildings_scope)
 
-    for rel_path, (fid, drive_name) in DATA_FILES.items():
-        if drive_name in folder_cache[fid]:
-            targets[rel_path] = folder_cache[fid][drive_name]
+    if not only_folders:
+        for rel_path, (fid, drive_name) in DATA_FILES.items():
+            if drive_name in folder_cache.get(fid, {}):
+                targets[rel_path] = folder_cache[fid][drive_name]
     for subdir, fid in ASSET_FOLDERS:
-        for fn, it in folder_cache[fid].items():
+        if only_folders and subdir not in only_folders:
+            continue
+        for fn, it in folder_cache.get(fid, {}).items():
+            if subdir == "foliage_pbr_ultra" and fn not in FOLIAGE_PBR_CORE_FILES:
+                continue
             rel = f"assets/{subdir}/{fn}"
             if rel in shadowed or (rel in protected_paths and (ROOT / rel).exists()):
                 continue
+            if args.sync_mode == "web_curated" and not only_folders:
+                is_already_tracked = (rel in old_state) or (ROOT / rel).exists()
+                is_curated_new = (
+                    (subdir == "foliage_pbr_ultra" and fn in FOLIAGE_PBR_CORE_FILES)
+                    or (subdir == "osm_true_buildings" and bool(QUARTER_SUFFIX_RE.search(fn)))
+                )
+                if not (is_already_tracked or is_curated_new):
+                    continue
             targets[rel] = it
-    if args.sync_viewer:
+    if args.sync_viewer and not only_folders:
         for subdir, fid, _ in WEB_VIEWER_FOLDERS:
-            for fn, it in folder_cache[fid].items():
+            for fn, it in folder_cache.get(fid, {}).items():
                 rel = f"{subdir}/{fn}" if subdir else fn
                 targets[rel] = it
 
@@ -767,6 +1274,8 @@ def main():
             continue
         if old_state.get(rel_path) != sig or not local_file.exists():
             changed.append((rel_path, it["id"]))
+    for rel_s in shadowed:
+        new_state.pop(rel_s, None)
 
     print(
         f"[DALAT SYNC] Backend={client.mode} | Active targets={len(targets)} (shadowed/skipped={len(shadowed)}) | Changed/new={len(changed)}",
@@ -811,6 +1320,35 @@ def main():
             pruned = prune_shadowed_local_files(shadowed)
             if pruned:
                 print(f"[DALAT SYNC] Pruned {pruned} shadowed/unused local files.", flush=True)
+
+        # Tự động kẹp lại cao độ chân móng nhà PBR _Q1.._Q4 mới tải lên nền DEM Copernicus GLO-30 + loại nhà lọt hồ
+        reclamp_targets = [
+            ROOT / rp for rp in applied
+            if rp.startswith("assets/osm_true_buildings/") and QUARTER_SUFFIX_RE.search(rp)
+        ]
+        if args.reclamp_pbr_buildings and (ASSETS / "osm_true_buildings").exists():
+            reclamp_targets = sorted((ASSETS / "osm_true_buildings").glob("*_Q[1-4].glb"))
+        if reclamp_targets:
+            lake_data = _load_lake_tris_xz()
+            total_culled = 0
+            clamped_cnt = 0
+            for bp in reclamp_targets:
+                m = TILE_ID_REGEX.search(bp.name)
+                if not m:
+                    continue
+                t_glb = _find_terrain_glb_for_tile(m.group(1))
+                if t_glb is None:
+                    continue
+                sv, ct = reclamp_pbr_building_glb_to_terrain(bp, t_glb, lake_data=lake_data)
+                if sv > 0:
+                    clamped_cnt += 1
+                    total_culled += ct
+            if clamped_cnt:
+                print(
+                    f"[DALAT SYNC] Auto-clamped {clamped_cnt} PBR building quadrants to Copernicus DEM (culled {total_culled} lake tris).",
+                    flush=True,
+                )
+
         world_index = rebuild_world_index()
         STATE_FILE.write_text(json.dumps(new_state, ensure_ascii=False, indent=2), encoding="utf-8")
         print(
