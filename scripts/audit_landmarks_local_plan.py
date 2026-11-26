@@ -381,36 +381,7 @@ def match_osm_ground_truth(lm: dict, mesh_cx: float, mesh_cy: float, glb_area_es
 
 
 def _load_all_landmarks_portable():
-    wi_p = ROOT / "api" / "world-index.json"
-    if wi_p.exists():
-        return json.loads(wi_p.read_text(encoding="utf-8")).get("layers", {}).get("landmarks", [])
-    items = []
-    specs = [
-        (ASSETS / "hero_landmarks_ultra/hero_landmarks_manifest.json", "landmarks_ultra", "./assets/hero_landmarks_ultra", False),
-        (ASSETS / "landmarks/landmarks_manifest.json", "landmarks", "./assets/landmarks", False),
-        (ASSETS / "french_villas/french_villas_manifest.json", "villas", "./assets/french_villas", True),
-        (ASSETS / "tourism_complexes/tourism_complexes_manifest.json", "complexes", "./assets/tourism_complexes", False),
-    ]
-    for fp, key, url_base, is_fv in specs:
-        if not fp.exists():
-            continue
-        doc = json.loads(fp.read_text(encoding="utf-8"))
-        for e in doc.get(key, []):
-            eid = e.get("id")
-            gp = e.get("gltf_position")
-            if not (eid and isinstance(gp, list) and len(gp) == 3):
-                continue
-            fn = e.get("filename") or f"{eid}.glb"
-            items.append({
-                "id": eid,
-                "url": f"{url_base}/{fn}",
-                "tile_id": e.get("tile_id", ""),
-                "gltf_position": gp,
-                "rotation_y_rad": e.get("rotation_y_rad", 0.0),
-                "name_vi": e.get("name_vi", eid),
-                "is_french_villa": is_fv,
-            })
-    return items
+    return _urban_mod._load_landmarks_list()
 
 
 def build_all_batches():
@@ -775,11 +746,12 @@ def main():
     global ROOT, ASSETS
     ap = argparse.ArgumentParser()
     ap.add_argument("--root", default="")
-    ap.add_argument("--mode", choices=["audit", "fix"], default="audit")
+    ap.add_argument("--mode", choices=["audit", "fix", "audit_and_fix"], default="audit")
     ap.add_argument("--batch", default="B01_HERO_T_E00_N00")
     ap.add_argument("--list-batches", action="store_true")
     ap.add_argument("--out-img", default="/tmp/dalat_real_cache/qa_landmark_local_test.jpg")
     ap.add_argument("--out-ticket", default="/tmp/dalat_real_cache/landmark_plan_fix_ticket_test.json")
+    ap.add_argument("--out-fix-img", default="")
     ap.add_argument("--ticket", default="")
     ap.add_argument("--out-report", default="")
     args = ap.parse_args()
@@ -795,8 +767,16 @@ def main():
             print(f"{k}: {len(v)} items")
         return
 
-    if args.mode == "audit":
-        run_audit(args.batch, pathlib.Path(args.out_img), pathlib.Path(args.out_ticket))
+    if args.mode in ("audit", "audit_and_fix"):
+        tpath = pathlib.Path(args.out_ticket)
+        ticket = run_audit(args.batch, pathlib.Path(args.out_img), tpath)
+        if args.mode == "audit_and_fix":
+            if ticket.get("needs_fix_ids"):
+                fix_img = pathlib.Path(args.out_fix_img) if args.out_fix_img else pathlib.Path(args.out_img).with_name(f"qa_landmark_fix_{args.batch}.jpg")
+                out_report = pathlib.Path(args.out_report) if args.out_report else tpath.parent / f"applied_landmark_fix_{args.batch}.json"
+                run_fix(tpath, fix_img, out_report)
+            else:
+                print(f"[LandmarkLocalFix] {args.batch}: needs_fix_ids=[] -> skipping fix")
     else:
         tpath = pathlib.Path(args.ticket)
         ticket = json.loads(tpath.read_text(encoding="utf-8"))

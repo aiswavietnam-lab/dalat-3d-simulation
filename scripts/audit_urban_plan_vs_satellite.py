@@ -48,35 +48,61 @@ CACHE_G.mkdir(parents=True, exist_ok=True)
 
 def _load_landmarks_list():
     wi_p = ROOT / "api" / "world-index.json"
+    items_by_id = {}
     if wi_p.exists():
-        return json.loads(wi_p.read_text(encoding="utf-8")).get("layers", {}).get("landmarks", [])
-    items = []
+        for lm in json.loads(wi_p.read_text(encoding="utf-8")).get("layers", {}).get("landmarks", []):
+            if lm.get("id"):
+                items_by_id[lm["id"]] = dict(lm)
     specs = [
         (ASSETS / "hero_landmarks_ultra/hero_landmarks_manifest.json", "landmarks_ultra", "./assets/hero_landmarks_ultra", False),
         (ASSETS / "landmarks/landmarks_manifest.json", "landmarks", "./assets/landmarks", False),
         (ASSETS / "french_villas/french_villas_manifest.json", "villas", "./assets/french_villas", True),
         (ASSETS / "tourism_complexes/tourism_complexes_manifest.json", "complexes", "./assets/tourism_complexes", False),
     ]
+    replaced_slot4_ids = set()
+    superseded_tourism_ids = {
+        "tc_03_chua_linh_phuoc_ve_chai_complex",
+        "tc_04_domaine_de_marie_and_cam_ly_churches",
+        "tc_05_vuon_hoa_tp_and_thung_lung_tinh_yeu",
+    }
+    loaded_docs = []
     for fp, key, url_base, is_fv in specs:
         if not fp.exists():
             continue
         doc = json.loads(fp.read_text(encoding="utf-8"))
-        for e in doc.get(key, []):
+        entries = doc.get(key, [])
+        loaded_docs.append((url_base, is_fv, entries))
+        for e in entries:
+            if e.get("replaces_slot4_id"):
+                replaced_slot4_ids.add(e["replaces_slot4_id"])
+
+    for url_base, is_fv, entries in loaded_docs:
+        for e in entries:
             eid = e.get("id")
             gp = e.get("gltf_position")
             if not (eid and isinstance(gp, list) and len(gp) == 3):
                 continue
-            fn = e.get("filename") or f"{eid}.glb"
-            items.append({
-                "id": eid,
-                "url": f"{url_base}/{fn}",
-                "tile_id": e.get("tile_id", ""),
-                "gltf_position": gp,
-                "rotation_y_rad": e.get("rotation_y_rad", 0.0),
-                "name_vi": e.get("name_vi", eid),
-                "is_french_villa": is_fv,
-            })
-    return items
+            if eid in superseded_tourism_ids:
+                continue
+            if eid in replaced_slot4_ids and "hero_landmarks_ultra" not in url_base:
+                continue
+            if eid in items_by_id:
+                items_by_id[eid]["gltf_position"] = gp
+                items_by_id[eid]["rotation_y_rad"] = e.get("rotation_y_rad", items_by_id[eid].get("rotation_y_rad", 0.0))
+                if e.get("tile_id"):
+                    items_by_id[eid]["tile_id"] = e["tile_id"]
+            elif not wi_p.exists():
+                fn = e.get("filename") or f"{eid}.glb"
+                items_by_id[eid] = {
+                    "id": eid,
+                    "url": f"{url_base}/{fn}",
+                    "tile_id": e.get("tile_id", ""),
+                    "gltf_position": gp,
+                    "rotation_y_rad": e.get("rotation_y_rad", 0.0),
+                    "name_vi": e.get("name_vi", eid),
+                    "is_french_villa": is_fv,
+                }
+    return sorted(items_by_id.values(), key=lambda x: x["id"])
 
 LAT0 = 11.940419
 LON0 = 108.445259
@@ -991,10 +1017,11 @@ def main():
     global ROOT, ASSETS
     ap = argparse.ArgumentParser()
     ap.add_argument("--root", default="")
-    ap.add_argument("--mode", choices=["audit", "fix"], default="audit")
+    ap.add_argument("--mode", choices=["audit", "fix", "audit_and_fix"], default="audit")
     ap.add_argument("--sector", default="T_E00_N00_SW")
     ap.add_argument("--out-img", default="/tmp/dalat_real_cache/qa_urban_plan_test.jpg")
     ap.add_argument("--out-ticket", default="/tmp/dalat_real_cache/urban_plan_fix_ticket_test.json")
+    ap.add_argument("--out-fix-img", default="")
     ap.add_argument("--ticket", default="")
     ap.add_argument("--out-report", default="")
     args = ap.parse_args()
@@ -1002,8 +1029,16 @@ def main():
         ROOT = pathlib.Path(args.root).resolve()
         ASSETS = ROOT / "assets"
 
-    if args.mode == "audit":
-        run_audit(args.sector, pathlib.Path(args.out_img), pathlib.Path(args.out_ticket))
+    if args.mode in ("audit", "audit_and_fix"):
+        tpath = pathlib.Path(args.out_ticket)
+        ticket = run_audit(args.sector, pathlib.Path(args.out_img), tpath)
+        if args.mode == "audit_and_fix":
+            if ticket.get("needs_fix"):
+                fix_img = pathlib.Path(args.out_fix_img) if args.out_fix_img else pathlib.Path(args.out_img).with_name(f"qa_urban_plan_fix_{args.sector}.jpg")
+                out_report = pathlib.Path(args.out_report) if args.out_report else tpath.parent / f"applied_urban_fix_{args.sector}.json"
+                run_fix(tpath, fix_img, out_report)
+            else:
+                print(f"[UrbanPlanFix] {args.sector}: needs_fix=False -> skipping fix")
     else:
         tpath = pathlib.Path(args.ticket)
         ticket = json.loads(tpath.read_text(encoding="utf-8"))
