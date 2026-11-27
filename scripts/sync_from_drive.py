@@ -1096,8 +1096,22 @@ def rebuild_world_index():
         allow_quadrants=True,
     ), key=tile_dist_key)
 
-    total_glb = len(terrain_glb) + len(water_glb) + len(veg_models) + len(landmarks_glb) + len(roads_glb) + len(buildings_glb)
-    discovered = sorted({it["tile_id"] for lst in [terrain_glb, terrain_hm, veg_instances, buildings_glb, landmarks_glb, roads_glb] for it in lst if it.get("tile_id")})
+    # 6. Tiện ích đường phố & giao thông tĩnh đã hiệu chỉnh Copernicus DEM (đèn 5 bóng, xe buýt, chợ Đêm, vòm hoa, thuyền vịt)
+    urban_props_glb = []
+    for it in scan_dir("urban_life_props", {".glb", ".gltf"}):
+        p = ROOT / urllib.parse.unquote(it["url"].lstrip("./"))
+        bb = read_glb_bbox_center(p)
+        if bb:
+            it["tile_id"] = xy_to_tile_id(bb[0], -bb[2])
+        else:
+            it["tile_id"] = "T_E00_N00"
+        fn_l = it["filename"].lower()
+        it["layer_target"] = "roads" if any(k in fn_l for k in ("buses_", "horse_carriages", "5globe_lamps", "lighting_arches", "flower_gates")) else "landmarks"
+        urban_props_glb.append(it)
+    urban_props_glb.sort(key=tile_dist_key)
+
+    total_glb = len(terrain_glb) + len(water_glb) + len(veg_models) + len(landmarks_glb) + len(roads_glb) + len(buildings_glb) + len(urban_props_glb)
+    discovered = sorted({it["tile_id"] for lst in [terrain_glb, terrain_hm, veg_instances, buildings_glb, landmarks_glb, roads_glb, urban_props_glb] for it in lst if it.get("tile_id")})
     world_index = {
         "schema_version": "2.0.0",
         "project": "DALAT_3D_SIMULATION",
@@ -1120,6 +1134,7 @@ def rebuild_world_index():
             "vegetation_instances": len(veg_instances),
             "landmarks": len(landmarks_glb),
             "lakeside_props": len(props),
+            "urban_props": len(urban_props_glb),
             "roads_infrastructure": len(roads_glb),
             "building_tiles": len(buildings_glb),
         },
@@ -1131,6 +1146,7 @@ def rebuild_world_index():
             "vegetation_instances": veg_instances,
             "landmarks": landmarks_glb,
             "props": props,
+            "urban_props": urban_props_glb,
             "roads": roads_glb,
             "buildings": buildings_glb,
         },
@@ -1212,6 +1228,7 @@ def main():
         | {f"assets/osm_true_roads_hydro/osm_real_roads_{tid}.glb" for tid in ring0_tids}
         | {f"assets/osm_true_buildings/osm_buildings_{tid}.glb" for tid in ring0_tids}
         | {f"assets/vegetation/instances_{tid}.json" for tid in ring0_tids}
+        | {f"assets/urban_life_props/{p.name}" for p in (ASSETS / "urban_life_props").glob("*.glb")}
         | {
             "assets/landmarks/landmarks_manifest.json",
             "assets/hero_landmarks_ultra/hero_landmarks_manifest.json",

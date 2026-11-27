@@ -124,9 +124,9 @@
         mat.map.magFilter = THREE.LinearFilter;
         mat.map.needsUpdate = true;
       }
-      if (typeof mat.roughness === 'number') mat.roughness = 0.96;
+      if (typeof mat.roughness === 'number') mat.roughness = 0.88;
       if (typeof mat.metalness === 'number') mat.metalness = 0.0;
-      mat.envMapIntensity = 0.18;
+      mat.envMapIntensity = 0.26;
 
       if (!mat.map || (mat.userData && mat.userData.dalatUltraHdTerrain)) {
         mat.needsUpdate = true;
@@ -137,7 +137,7 @@
 
       const shared = this.sharedUniforms;
       mat.customProgramCacheKey = function () {
-        return 'dalat_terrain_ultrahd_v1';
+        return 'dalat_terrain_ultrahd_pbr_v2';
       };
 
       mat.onBeforeCompile = function (shader) {
@@ -147,15 +147,29 @@
         shader.uniforms.uDetailInvSpanXZ = shared.uDetailInvSpanXZ;
 
         shader.vertexShader =
-          'varying vec2 vSatWorldXZ;\n' +
-          shader.vertexShader.replace(
-            '#include <project_vertex>',
-            [
-              'vec4 dSatWp = modelMatrix * vec4(transformed, 1.0);',
-              'vSatWorldXZ = dSatWp.xz;',
+          [
+            'varying vec2 vSatWorldXZ;',
+            'varying vec3 vTerrainWorldPos;',
+            'varying vec3 vTerrainWorldNrm;',
+          ].join('\n') +
+          '\n' +
+          shader.vertexShader
+            .replace(
+              '#include <beginnormal_vertex>',
+              [
+                '#include <beginnormal_vertex>',
+                'vTerrainWorldNrm = normalize( ( modelMatrix * vec4( objectNormal, 0.0 ) ).xyz );',
+              ].join('\n')
+            )
+            .replace(
               '#include <project_vertex>',
-            ].join('\n')
-          );
+              [
+                'vec4 dSatWp = modelMatrix * vec4(transformed, 1.0);',
+                'vSatWorldXZ = dSatWp.xz;',
+                'vTerrainWorldPos = dSatWp.xyz;',
+                '#include <project_vertex>',
+              ].join('\n')
+            );
 
         shader.fragmentShader =
           [
@@ -164,28 +178,84 @@
             'uniform vec2 uDetailCenterXZ;',
             'uniform vec2 uDetailInvSpanXZ;',
             'varying vec2 vSatWorldXZ;',
+            'varying vec3 vTerrainWorldPos;',
+            'varying vec3 vTerrainWorldNrm;',
+            'float dlHash21(vec2 p) {',
+            '  p = fract(p * vec2(123.34, 456.21));',
+            '  p += dot(p, p + 45.32);',
+            '  return fract(p.x * p.y);',
+            '}',
+            'vec3 dlNoiseGrad(vec2 p) {',
+            '  vec2 i = floor(p);',
+            '  vec2 f = fract(p);',
+            '  vec2 u = f * f * (3.0 - 2.0 * f);',
+            '  vec2 du = 6.0 * f * (1.0 - f);',
+            '  float a = dlHash21(i);',
+            '  float b = dlHash21(i + vec2(1.0, 0.0));',
+            '  float c = dlHash21(i + vec2(0.0, 1.0));',
+            '  float d = dlHash21(i + vec2(1.0, 1.0));',
+            '  float val = a + (b - a) * u.x + (c - a) * u.y + (a - b - c + d) * u.x * u.y;',
+            '  float dx = du.x * ((b - a) + (a - b - c + d) * u.y);',
+            '  float dz = du.y * ((c - a) + (a - b - c + d) * u.x);',
+            '  return vec3(val, dx, dz);',
+            '}',
           ].join('\n') +
           '\n' +
-          shader.fragmentShader.replace(
-            '#include <map_fragment>',
-            [
-              '#ifdef USE_MAP',
-              '  vec4 texelColor = texture2D( map, vUv, -0.35 );',
-              '  texelColor = mapTexelToLinear( texelColor );',
-              '  if (uDetailReady > 0.001) {',
-              '    vec2 dUv = vec2(0.5) + vec2(vSatWorldXZ.x - uDetailCenterXZ.x, -(vSatWorldXZ.y - uDetailCenterXZ.y)) * uDetailInvSpanXZ;',
-              '    if (dUv.x > 0.002 && dUv.x < 0.998 && dUv.y > 0.002 && dUv.y < 0.998) {',
-              '      float dEdge = min(min(dUv.x, 1.0 - dUv.x), min(dUv.y, 1.0 - dUv.y));',
-              '      float dMask = smoothstep(0.002, 0.14, dEdge) * uDetailReady;',
-              '      vec4 dSample = texture2D( uDetailSatTex, dUv, -0.35 );',
-              '      dSample = mapTexelToLinear( dSample );',
-              '      texelColor.rgb = mix(texelColor.rgb, dSample.rgb, dMask);',
-              '    }',
-              '  }',
-              '  diffuseColor *= texelColor;',
-              '#endif',
-            ].join('\n')
-          );
+          shader.fragmentShader
+            .replace(
+              '#include <map_fragment>',
+              [
+                '#ifdef USE_MAP',
+                '  vec4 texelColor = texture2D( map, vUv, -0.4 );',
+                '  texelColor = mapTexelToLinear( texelColor );',
+                '  if (uDetailReady > 0.001) {',
+                '    vec2 dUv = vec2(0.5) + vec2(vSatWorldXZ.x - uDetailCenterXZ.x, -(vSatWorldXZ.y - uDetailCenterXZ.y)) * uDetailInvSpanXZ;',
+                '    if (dUv.x > 0.002 && dUv.x < 0.998 && dUv.y > 0.002 && dUv.y < 0.998) {',
+                '      float dEdge = min(min(dUv.x, 1.0 - dUv.x), min(dUv.y, 1.0 - dUv.y));',
+                '      vec4 dSample = texture2D( uDetailSatTex, dUv, -0.35 );',
+                '      float dMask = smoothstep(0.002, 0.14, dEdge) * uDetailReady * smoothstep(0.5, 0.95, dSample.a);',
+                '      dSample = mapTexelToLinear( dSample );',
+                '      texelColor.rgb = mix(texelColor.rgb, dSample.rgb, dMask);',
+                '    }',
+                '  }',
+                '  float dlCamDist = length(cameraPosition - vTerrainWorldPos);',
+                '  float dlNearFade = 1.0 - smoothstep(180.0, 1400.0, dlCamDist);',
+                '  float dlMidFade = 1.0 - smoothstep(650.0, 4200.0, dlCamDist);',
+                '  vec3 dlN0 = dlNoiseGrad(vSatWorldXZ * 0.055);',
+                '  vec3 dlN1 = dlNoiseGrad(vSatWorldXZ * 0.36);',
+                '  vec3 dlN2 = dlNoiseGrad(vSatWorldXZ * 1.45);',
+                '  float dlSlope = 1.0 - clamp(abs(vTerrainWorldNrm.y), 0.0, 1.0);',
+                '  float dlLum = dot(texelColor.rgb, vec3(0.299, 0.587, 0.114));',
+                '  texelColor.rgb = mix(vec3(dlLum), texelColor.rgb, 1.16);',
+                '  float dlMicro = 1.0 + (dlN0.x - 0.5) * 0.12 * dlMidFade + ((dlN1.x - 0.5) * 0.16 + (dlN2.x - 0.5) * 0.13) * dlNearFade;',
+                '  float dlVegMask = smoothstep(0.0, 0.08, texelColor.g - max(texelColor.r, texelColor.b) * 0.85);',
+                '  vec3 dlBasaltTint = vec3(0.32, 0.23, 0.18);',
+                '  vec3 dlLushTint = vec3(0.20, 0.34, 0.16);',
+                '  float dlRockBlend = smoothstep(0.22, 0.58, dlSlope) * (1.0 - dlVegMask * 0.55) * 0.24;',
+                '  texelColor.rgb = mix(texelColor.rgb, dlBasaltTint, dlRockBlend);',
+                '  texelColor.rgb = mix(texelColor.rgb, max(texelColor.rgb, dlLushTint * 0.9), dlVegMask * 0.08 * dlNearFade);',
+                '  texelColor.rgb *= clamp(dlMicro, 0.78, 1.24);',
+                '  diffuseColor *= texelColor;',
+                '#endif',
+              ].join('\n')
+            )
+            .replace(
+              '#include <normal_fragment_maps>',
+              [
+                '#include <normal_fragment_maps>',
+                'float dlBumpFade = 1.0 - smoothstep(140.0, 1100.0, length(cameraPosition - vTerrainWorldPos));',
+                'if (dlBumpFade > 0.01) {',
+                '  vec3 b0 = dlNoiseGrad(vSatWorldXZ * 0.065);',
+                '  vec3 b1 = dlNoiseGrad(vSatWorldXZ * 0.42);',
+                '  vec3 b2 = dlNoiseGrad(vSatWorldXZ * 1.55);',
+                '  float slopeBoost = 1.0 + (1.0 - clamp(abs(vTerrainWorldNrm.y), 0.0, 1.0)) * 1.4;',
+                '  vec2 dH = (b0.yz * 0.045 + b1.yz * 0.14 + b2.yz * 0.22) * dlBumpFade * slopeBoost;',
+                '  vec3 worldPerturb = vec3(-dH.x, 0.0, -dH.y);',
+                '  vec3 viewPerturb = (viewMatrix * vec4(worldPerturb, 0.0)).xyz;',
+                '  normal = normalize(normal + viewPerturb * 0.55);',
+                '}',
+              ].join('\n')
+            );
       };
       mat.needsUpdate = true;
     }
@@ -285,15 +355,18 @@
       if (seq !== this._requestSeq) return; // Đã có cửa sổ mới hơn
 
       const validCount = results.reduce((acc, r) => acc + (r.img ? 1 : 0), 0);
-      if (validCount < results.length) {
-        // Nếu offline / chặn mạng -> giữ nguyên ảnh nền GLB 4K/2K mượt mà không chắp vá
+      if (validCount < 8) {
+        // Nếu offline / chặn mạng hoàn toàn -> giữ nguyên ảnh nền GLB mượt mà
         this._pendingKey = null;
         if (!this._activeWindow) this._targetReady = 0.0;
         return;
       }
 
+      this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
       for (const r of results) {
-        this.ctx.drawImage(r.img, r.dx * TILE_PX, r.dy * TILE_PX, TILE_PX, TILE_PX);
+        if (r.img) {
+          this.ctx.drawImage(r.img, r.dx * TILE_PX, r.dy * TILE_PX, TILE_PX, TILE_PX);
+        }
       }
 
       const bounds = tileBoundsWorldXZ(win.txMin, win.tyMin, win.zoom);

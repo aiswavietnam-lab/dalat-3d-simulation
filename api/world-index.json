@@ -4,7 +4,7 @@
   "dem_source": "ESA Copernicus GLO-30 DEM + Official OSM API v0.6 + Esri World Imagery",
   "static_build": true,
   "has_real_assets": true,
-  "total_glb_count": 665,
+  "total_glb_count": 695,
   "discovered_tile_ids": [
     "T_E00_N00",
     "T_E00_N01",
@@ -344,6 +344,7 @@
     "vegetation_instances": 281,
     "landmarks": 185,
     "lakeside_props": 6,
+    "urban_props": 30,
     "roads_infrastructure": 25,
     "building_tiles": 265
   },
@@ -7267,6 +7268,278 @@
         "rotation_y_rad": 0.9
       }
     ],
+    "urban_props": [
+      {
+        "id": "ul_w1_01_cho_dem_gates_and_canopy_stalls",
+        "filename": "ul_w1_01_cho_dem_gates_and_canopy_stalls.glb",
+        "ext": ".glb",
+        "tile_id": "T_E00_N00",
+        "url": "./assets/urban_life_props/ul_w1_01_cho_dem_gates_and_canopy_stalls.glb",
+        "size_bytes": 1029220,
+        "layer_target": "landmarks"
+      },
+      {
+        "id": "ul_w1_02_am_thuc_sua_dau_nanh_streetfood",
+        "filename": "ul_w1_02_am_thuc_sua_dau_nanh_streetfood.glb",
+        "ext": ".glb",
+        "tile_id": "T_E00_N00",
+        "url": "./assets/urban_life_props/ul_w1_02_am_thuc_sua_dau_nanh_streetfood.glb",
+        "size_bytes": 810364,
+        "layer_target": "landmarks"
+      },
+      {
+        "id": "ul_w1_03_hoa_binh_retro_signs_and_crowd",
+        "filename": "ul_w1_03_hoa_binh_retro_signs_and_crowd.glb",
+        "ext": ".glb",
+        "tile_id": "T_E00_N00",
+        "url": "./assets/urban_life_props/ul_w1_03_hoa_binh_retro_signs_and_crowd.glb",
+        "size_bytes": 1200892,
+        "layer_target": "landmarks"
+      },
+      {
+        "id": "ul_w2_01_dalat_buses_vintage_cars_motorbikes",
+        "filename": "ul_w2_01_dalat_buses_vintage_cars_motorbikes.glb",
+        "ext": ".glb",
+        "tile_id": "T_E00_N00",
+        "url": "./assets/urban_life_props/ul_w2_01_dalat_buses_vintage_cars_motorbikes.glb",
+        "size_bytes": 1954008,
+        "layer_target": "roads"
+      },
+      {
+        "id": "ul_w2_02_tran_quoc_toan_horse_carriages",
+        "filename": "ul_w2_02_tran_quoc_toan_horse_carriages.glb",
+        "ext": ".glb",
+        "tile_id": "T_E00_N00",
+        "url": "./assets/urban_life_props/ul_w2_02_tran_quoc_toan_horse_carriages.glb",
+        "size_bytes": 959928,
+        "layer_target": "roads"
+      },
+      {
+        "id": "ul_w3_01_cong_vien_yersin_and_anh_sang_landscapes",
+        "filename": "ul_w3_01_cong_vien_yersin_and_anh_sang_landscapes.glb",
+        "ext": ".glb",
+        "tile_id": "T_E00_N00",
+        "url": "./assets/urban_life_props/ul_w3_01_cong_vien_yersin_and_anh_sang_landscapes.glb",
+        "size_bytes": 962560,
+        "layer_target": "landmarks"
+      },
+      {
+        "id": "ul_w3_02_hxh_hydrangea_marigold_planters_and_carts",
+        "filename": "ul_w3_02_hxh_hydrangea_marigold_planters_and_carts.glb",
+        "ext": ".glb",
+        "tile_id": "T_E00_N00",
+        "url": "./assets/urban_life_props/ul_w3_02_hxh_hydrangea_marigold_planters_and_carts.glb",
+        "size_bytes": 1958132,
+        "layer_target": "landmarks"
+      },
+      {
+        "id": "ul_w3_03_french_5globe_lamps_and_cast_iron_benches",
+        "filename": "ul_w3_03_french_5globe_lamps_and_cast_iron_benches.glb",
+        "ext": ".glb",
+        "tile_id": "T_E00_N00",
+        "url": "./assets/urban_life_props/ul_w3_03_french_5globe_lamps_and_cast_iron_benches.glb",
+        "size_bytes": 3461024,
+        "layer_target": "roads"
+      },
+      {
+        "id": "ul_w5_01_le_dai_hanh_cau_ong_dao_flower_gates_and_parade",
+        "filename": "ul_w5_01_le_dai_hanh_cau_ong_dao_flower_gates_and_parade.glb",
+        "ext": ".glb",
+        "tile_id": "T_E00_N00",
+        "url": "./assets/urban_life_props/ul_w5_01_le_dai_hanh_cau_ong_dao_flower_gates_and_parade.glb",
+        "size_bytes": 4940092,
+        "layer_target": "roads"
+      },
+      {
+        "id": "ul_w5_02_ho_xuan_huong_floating_floral_islands_and_musical_sculptures",
+        "filename": "ul_w5_02_ho_xuan_huong_floating_floral_islands_and_musical_sculptures.glb",
+        "ext": ".glb",
+        "tile_id": "T_E00_N00",
+        "url": "./assets/urban_life_props/ul_w5_02_ho_xuan_huong_floating_floral_islands_and_musical_sculptures.glb",
+        "size_bytes": 4731628,
+        "layer_target": "landmarks"
+      },
+      {
+        "id": "ul_w5_03_tran_phu_ba_thang_tu_art_lighting_arches_and_floral_signals",
+        "filename": "ul_w5_03_tran_phu_ba_thang_tu_art_lighting_arches_and_floral_signals.glb",
+        "ext": ".glb",
+        "tile_id": "T_E00_N00",
+        "url": "./assets/urban_life_props/ul_w5_03_tran_phu_ba_thang_tu_art_lighting_arches_and_floral_signals.glb",
+        "size_bytes": 5891372,
+        "layer_target": "roads"
+      },
+      {
+        "id": "ul_w2_03_hxh_swan_boats_and_tuyen_lam_wooden_fleet",
+        "filename": "ul_w2_03_hxh_swan_boats_and_tuyen_lam_wooden_fleet.glb",
+        "ext": ".glb",
+        "tile_id": "T_E00_S01",
+        "url": "./assets/urban_life_props/ul_w2_03_hxh_swan_boats_and_tuyen_lam_wooden_fleet.glb",
+        "size_bytes": 2090512,
+        "layer_target": "landmarks"
+      },
+      {
+        "id": "ul_w4_02_horizon_coffee_pine_valley_ba_thang_tu",
+        "filename": "ul_w4_02_horizon_coffee_pine_valley_ba_thang_tu.glb",
+        "ext": ".glb",
+        "tile_id": "T_E00_S01",
+        "url": "./assets/urban_life_props/ul_w4_02_horizon_coffee_pine_valley_ba_thang_tu.glb",
+        "size_bytes": 2009444,
+        "layer_target": "landmarks"
+      },
+      {
+        "id": "ul_w4_01_tui_mo_to_garden_cafe_sao_nam",
+        "filename": "ul_w4_01_tui_mo_to_garden_cafe_sao_nam.glb",
+        "ext": ".glb",
+        "tile_id": "T_E02_N00",
+        "url": "./assets/urban_life_props/ul_w4_01_tui_mo_to_garden_cafe_sao_nam.glb",
+        "size_bytes": 2624964,
+        "layer_target": "landmarks"
+      },
+      {
+        "id": "ul_w7_02_datanla_waterfall_alpine_coaster_plaza_and_tour_buses",
+        "filename": "ul_w7_02_datanla_waterfall_alpine_coaster_plaza_and_tour_buses.glb",
+        "ext": ".glb",
+        "tile_id": "T_E01_S02",
+        "url": "./assets/urban_life_props/ul_w7_02_datanla_waterfall_alpine_coaster_plaza_and_tour_buses.glb",
+        "size_bytes": 1702628,
+        "layer_target": "landmarks"
+      },
+      {
+        "id": "ul_w8_03_van_thanh_flower_village_logistics_trucks_and_greenhouse_cafes",
+        "filename": "ul_w8_03_van_thanh_flower_village_logistics_trucks_and_greenhouse_cafes.glb",
+        "ext": ".glb",
+        "tile_id": "T_W02_N01",
+        "url": "./assets/urban_life_props/ul_w8_03_van_thanh_flower_village_logistics_trucks_and_greenhouse_cafes.glb",
+        "size_bytes": 2744452,
+        "layer_target": "landmarks"
+      },
+      {
+        "id": "ul_w8_01_tuyen_lam_lavender_kayak_marina_and_pinhatt_sunset_pier",
+        "filename": "ul_w8_01_tuyen_lam_lavender_kayak_marina_and_pinhatt_sunset_pier.glb",
+        "ext": ".glb",
+        "tile_id": "T_W02_S02",
+        "url": "./assets/urban_life_props/ul_w8_01_tuyen_lam_lavender_kayak_marina_and_pinhatt_sunset_pier.glb",
+        "size_bytes": 1500096,
+        "layer_target": "landmarks"
+      },
+      {
+        "id": "ul_w8_02_mimosa_pass_cloud_cafes_and_sleeper_bus_convoy",
+        "filename": "ul_w8_02_mimosa_pass_cloud_cafes_and_sleeper_bus_convoy.glb",
+        "ext": ".glb",
+        "tile_id": "T_E02_S02",
+        "url": "./assets/urban_life_props/ul_w8_02_mimosa_pass_cloud_cafes_and_sleeper_bus_convoy.glb",
+        "size_bytes": 1927404,
+        "layer_target": "landmarks"
+      },
+      {
+        "id": "ul_w7_03_trai_mat_night_agri_market_trucks_and_station_streetlife",
+        "filename": "ul_w7_03_trai_mat_night_agri_market_trucks_and_station_streetlife.glb",
+        "ext": ".glb",
+        "tile_id": "T_E03_N00",
+        "url": "./assets/urban_life_props/ul_w7_03_trai_mat_night_agri_market_trucks_and_station_streetlife.glb",
+        "size_bytes": 2887432,
+        "layer_target": "landmarks"
+      },
+      {
+        "id": "ul_w9_01_xom_leo_trai_mat_sunset_bbq_promenade_and_streetfood_carts",
+        "filename": "ul_w9_01_xom_leo_trai_mat_sunset_bbq_promenade_and_streetfood_carts.glb",
+        "ext": ".glb",
+        "tile_id": "T_E03_N00",
+        "url": "./assets/urban_life_props/ul_w9_01_xom_leo_trai_mat_sunset_bbq_promenade_and_streetfood_carts.glb",
+        "size_bytes": 1567656,
+        "layer_target": "landmarks"
+      },
+      {
+        "id": "ul_w10_01_chika_farm_xuan_tho_alpaca_pasture_and_countryside_cafe",
+        "filename": "ul_w10_01_chika_farm_xuan_tho_alpaca_pasture_and_countryside_cafe.glb",
+        "ext": ".glb",
+        "tile_id": "T_E03_S02",
+        "url": "./assets/urban_life_props/ul_w10_01_chika_farm_xuan_tho_alpaca_pasture_and_countryside_cafe.glb",
+        "size_bytes": 1271628,
+        "layer_target": "landmarks"
+      },
+      {
+        "id": "ul_w4_03_me_linh_coffee_garden_ta_nung_terrace",
+        "filename": "ul_w4_03_me_linh_coffee_garden_ta_nung_terrace.glb",
+        "ext": ".glb",
+        "tile_id": "T_W03_S02",
+        "url": "./assets/urban_life_props/ul_w4_03_me_linh_coffee_garden_ta_nung_terrace.glb",
+        "size_bytes": 2462280,
+        "layer_target": "landmarks"
+      },
+      {
+        "id": "ul_w7_01_ta_nung_thuy_thuan_roastery_cafe_and_flower_valley",
+        "filename": "ul_w7_01_ta_nung_thuy_thuan_roastery_cafe_and_flower_valley.glb",
+        "ext": ".glb",
+        "tile_id": "T_W03_S02",
+        "url": "./assets/urban_life_props/ul_w7_01_ta_nung_thuy_thuan_roastery_cafe_and_flower_valley.glb",
+        "size_bytes": 1692828,
+        "layer_target": "landmarks"
+      },
+      {
+        "id": "ul_w9_02_mongo_land_ta_nung_rainbow_dry_slide_yurts_and_gokarts",
+        "filename": "ul_w9_02_mongo_land_ta_nung_rainbow_dry_slide_yurts_and_gokarts.glb",
+        "ext": ".glb",
+        "tile_id": "T_W03_S02",
+        "url": "./assets/urban_life_props/ul_w9_02_mongo_land_ta_nung_rainbow_dry_slide_yurts_and_gokarts.glb",
+        "size_bytes": 1288192,
+        "layer_target": "landmarks"
+      },
+      {
+        "id": "ul_w10_03_prenn_waterfall_gateway_electric_shuttles_and_tour_buses",
+        "filename": "ul_w10_03_prenn_waterfall_gateway_electric_shuttles_and_tour_buses.glb",
+        "ext": ".glb",
+        "tile_id": "T_E01_S04",
+        "url": "./assets/urban_life_props/ul_w10_03_prenn_waterfall_gateway_electric_shuttles_and_tour_buses.glb",
+        "size_bytes": 1473232,
+        "layer_target": "landmarks"
+      },
+      {
+        "id": "ul_w10_02_da_sar_pass_ql27c_cloud_cafes_and_intercity_coach_convoy",
+        "filename": "ul_w10_02_da_sar_pass_ql27c_cloud_cafes_and_intercity_coach_convoy.glb",
+        "ext": ".glb",
+        "tile_id": "T_E03_N03",
+        "url": "./assets/urban_life_props/ul_w10_02_da_sar_pass_ql27c_cloud_cafes_and_intercity_coach_convoy.glb",
+        "size_bytes": 1263528,
+        "layer_target": "landmarks"
+      },
+      {
+        "id": "ul_w6_03_suoi_vang_lonely_pine_boats_and_da_phu_glamping_cafe",
+        "filename": "ul_w6_03_suoi_vang_lonely_pine_boats_and_da_phu_glamping_cafe.glb",
+        "ext": ".glb",
+        "tile_id": "T_W03_N03",
+        "url": "./assets/urban_life_props/ul_w6_03_suoi_vang_lonely_pine_boats_and_da_phu_glamping_cafe.glb",
+        "size_bytes": 1656784,
+        "layer_target": "landmarks"
+      },
+      {
+        "id": "ul_w9_03_ankroet_thung_lung_vang_pine_cafes_and_vintage_tour_convoy",
+        "filename": "ul_w9_03_ankroet_thung_lung_vang_pine_cafes_and_vintage_tour_convoy.glb",
+        "ext": ".glb",
+        "tile_id": "T_W04_N03",
+        "url": "./assets/urban_life_props/ul_w9_03_ankroet_thung_lung_vang_pine_cafes_and_vintage_tour_convoy.glb",
+        "size_bytes": 1045488,
+        "layer_target": "landmarks"
+      },
+      {
+        "id": "ul_w6_02_langbiang_radar_jeep_convoy_and_summit_cafe",
+        "filename": "ul_w6_02_langbiang_radar_jeep_convoy_and_summit_cafe.glb",
+        "ext": ".glb",
+        "tile_id": "T_E00_N06",
+        "url": "./assets/urban_life_props/ul_w6_02_langbiang_radar_jeep_convoy_and_summit_cafe.glb",
+        "size_bytes": 2014056,
+        "layer_target": "landmarks"
+      },
+      {
+        "id": "ul_w6_01_cau_dat_container_cafe_cloud_decks_and_tour_vans",
+        "filename": "ul_w6_01_cau_dat_container_cafe_cloud_decks_and_tour_vans.glb",
+        "ext": ".glb",
+        "tile_id": "T_E07_S04",
+        "url": "./assets/urban_life_props/ul_w6_01_cau_dat_container_cafe_cloud_decks_and_tour_vans.glb",
+        "size_bytes": 1770888,
+        "layer_target": "landmarks"
+      }
+    ],
     "roads": [
       {
         "id": "osm_real_roads_T_E00_N00",
@@ -7274,7 +7547,7 @@
         "ext": ".glb",
         "tile_id": "T_E00_N00",
         "url": "./assets/osm_true_roads_hydro/osm_real_roads_T_E00_N00.glb",
-        "size_bytes": 4664952
+        "size_bytes": 7545800
       },
       {
         "id": "osm_real_roads_T_E00_N01",
@@ -7282,7 +7555,7 @@
         "ext": ".glb",
         "tile_id": "T_E00_N01",
         "url": "./assets/osm_true_roads_hydro/osm_real_roads_T_E00_N01.glb",
-        "size_bytes": 3375892
+        "size_bytes": 5855412
       },
       {
         "id": "osm_real_roads_T_E00_S01",
@@ -7290,7 +7563,7 @@
         "ext": ".glb",
         "tile_id": "T_E00_S01",
         "url": "./assets/osm_true_roads_hydro/osm_real_roads_T_E00_S01.glb",
-        "size_bytes": 2409588
+        "size_bytes": 4159176
       },
       {
         "id": "osm_real_roads_T_E01_N00",
@@ -7298,7 +7571,7 @@
         "ext": ".glb",
         "tile_id": "T_E01_N00",
         "url": "./assets/osm_true_roads_hydro/osm_real_roads_T_E01_N00.glb",
-        "size_bytes": 3648444
+        "size_bytes": 6292748
       },
       {
         "id": "osm_real_roads_T_W01_N00",
@@ -7306,7 +7579,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_N00",
         "url": "./assets/osm_true_roads_hydro/osm_real_roads_T_W01_N00.glb",
-        "size_bytes": 5961716
+        "size_bytes": 9933656
       },
       {
         "id": "osm_real_roads_T_E01_N01",
@@ -7314,7 +7587,7 @@
         "ext": ".glb",
         "tile_id": "T_E01_N01",
         "url": "./assets/osm_true_roads_hydro/osm_real_roads_T_E01_N01.glb",
-        "size_bytes": 2508660
+        "size_bytes": 4545660
       },
       {
         "id": "osm_real_roads_T_E01_S01",
@@ -7322,7 +7595,7 @@
         "ext": ".glb",
         "tile_id": "T_E01_S01",
         "url": "./assets/osm_true_roads_hydro/osm_real_roads_T_E01_S01.glb",
-        "size_bytes": 915396
+        "size_bytes": 1882220
       },
       {
         "id": "osm_real_roads_T_W01_N01",
@@ -7330,7 +7603,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_N01",
         "url": "./assets/osm_true_roads_hydro/osm_real_roads_T_W01_N01.glb",
-        "size_bytes": 3981884
+        "size_bytes": 6929228
       },
       {
         "id": "osm_real_roads_T_W01_S01",
@@ -7338,7 +7611,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_S01",
         "url": "./assets/osm_true_roads_hydro/osm_real_roads_T_W01_S01.glb",
-        "size_bytes": 2613664
+        "size_bytes": 4507072
       },
       {
         "id": "cau_can_dien_gio_cau_dat_va_deo_doi_che_tram_hanh",

@@ -21,57 +21,57 @@
     {
       id: 'early_mist',
       name_vi: 'Sương sớm (06:15)',
-      sky_hex: '#C8D9E6',
-      fog_hex: '#DCE6EE',
-      fog_density: 0.00036,
-      sun_hex: '#FFE2B0',
-      sun_intensity: 1.35,
-      sun_elevation_deg: 14,
-      sun_azimuth_deg: 82,
-      ambient_hex: '#92A9BD',
-      ambient_intensity: 0.65,
-      emissive_scale: 0.2,
+      sky_hex: '#92BCE3',
+      fog_hex: '#C4D9EC',
+      fog_density: 0.00014,
+      sun_hex: '#FFE4B5',
+      sun_intensity: 1.85,
+      sun_elevation_deg: 28,
+      sun_azimuth_deg: 95,
+      ambient_hex: '#8EB3D6',
+      ambient_intensity: 0.56,
+      emissive_scale: 0.25,
     },
     {
       id: 'highland_noon',
       name_vi: 'Trưa cao nguyên (11:30)',
-      sky_hex: '#7BB5E8',
-      fog_hex: '#BFD9EE',
-      fog_density: 0.00016,
+      sky_hex: '#5D9EE2',
+      fog_hex: '#B0D0EC',
+      fog_density: 0.00009,
       sun_hex: '#FFF9EB',
-      sun_intensity: 2.1,
+      sun_intensity: 2.25,
       sun_elevation_deg: 66,
       sun_azimuth_deg: 155,
-      ambient_hex: '#B4D0E8',
-      ambient_intensity: 0.75,
+      ambient_hex: '#A6C8E8',
+      ambient_intensity: 0.62,
       emissive_scale: 0.0,
     },
     {
       id: 'sunset_lake',
       name_vi: 'Hoàng hôn (17:30)',
       sky_hex: '#D97F62',
-      fog_hex: '#E39B7E',
-      fog_density: 0.00038,
-      sun_hex: '#FF8C42',
-      sun_intensity: 1.8,
-      sun_elevation_deg: 10,
+      fog_hex: '#DB9075',
+      fog_density: 0.00018,
+      sun_hex: '#FF9248',
+      sun_intensity: 2.0,
+      sun_elevation_deg: 16,
       sun_azimuth_deg: 265,
       ambient_hex: '#8C6378',
-      ambient_intensity: 0.55,
-      emissive_scale: 0.55,
+      ambient_intensity: 0.5,
+      emissive_scale: 0.6,
     },
     {
       id: 'mountain_night',
       name_vi: 'Đêm phố núi (20:00)',
       sky_hex: '#0B162C',
       fog_hex: '#101E38',
-      fog_density: 0.00042,
-      sun_hex: '#6E8FBF',
-      sun_intensity: 0.35,
+      fog_density: 0.00028,
+      sun_hex: '#7BA0D4',
+      sun_intensity: 0.45,
       sun_elevation_deg: 38,
       sun_azimuth_deg: 220,
-      ambient_hex: '#1B2E4F',
-      ambient_intensity: 0.35,
+      ambient_hex: '#1E3357',
+      ambient_intensity: 0.38,
       emissive_scale: 1.35,
     },
   ];
@@ -102,7 +102,7 @@
     constructor(container) {
       this.container = container;
       this.scene = new THREE.Scene();
-      this.scene.fog = new THREE.FogExp2(0xdce6ee, 0.00036);
+      this.scene.fog = new THREE.FogExp2(0xc4d9ec, 0.00014);
 
       this.camera = new THREE.PerspectiveCamera(
         48,
@@ -119,38 +119,38 @@
       this.renderer.setSize(window.innerWidth, window.innerHeight);
       this.renderer.outputEncoding = THREE.sRGBEncoding;
       this.renderer.toneMapping = THREE.ACESFilmicToneMapping;
-      this.renderer.toneMappingExposure = 1.05;
+      this.renderer.toneMappingExposure = 1.10;
       this.renderer.shadowMap.enabled = true;
       this.renderer.shadowMap.type = THREE.PCFSoftShadowMap;
       this.container.appendChild(this.renderer.domElement);
 
-      this.hemiLight = new THREE.HemisphereLight(0xb4d0e8, 0x3b4d3b, 0.65);
+      this.hemiLight = new THREE.HemisphereLight(0xa6c8e8, 0x3b4d3b, 0.56);
       this.scene.add(this.hemiLight);
 
-      this.sunLight = new THREE.DirectionalLight(0xffe2b0, 1.35);
+      this.sunLight = new THREE.DirectionalLight(0xffe4b5, 1.85);
       this.sunLight.castShadow = true;
-      this.sunLight.shadow.mapSize.width = 1024;
-      this.sunLight.shadow.mapSize.height = 1024;
+      this.sunLight.shadow.mapSize.width = 2048;
+      this.sunLight.shadow.mapSize.height = 2048;
       this.sunLight.shadow.camera.near = 50;
       this.sunLight.shadow.camera.far = 4500;
-      const d = 1400;
+      const d = 1200;
       this.sunLight.shadow.camera.left = -d;
       this.sunLight.shadow.camera.right = d;
       this.sunLight.shadow.camera.top = d;
       this.sunLight.shadow.camera.bottom = -d;
-      this.sunLight.shadow.bias = -0.0004;
+      this.sunLight.shadow.bias = -0.00035;
       this.scene.add(this.sunLight);
       this.scene.add(this.sunLight.target);
-      this.sunOffsetVec = new THREE.Vector3(1800, 520, -280);
+      this.sunOffsetVec = new THREE.Vector3(1800, 980, -280);
 
       // Trạng thái Sương mù độc lập (chuyển mượt 0ms không biên dịch lại shader)
       this.fogEnabled = true;
       this.fogDensityPct = 100;
       this._lastNonZeroFogPct = 100;
-      this._baseClimateFogDensity = 0.00036;
-      this._baseClimateFogHex = '#DCE6EE';
-      this._currentFogDensity = 0.00036;
-      this._targetFogDensity = 0.00036;
+      this._baseClimateFogDensity = 0.00014;
+      this._baseClimateFogHex = '#C4D9EC';
+      this._currentFogDensity = 0.00014;
+      this._targetFogDensity = 0.00014;
 
       this.pbrLibrary =
         typeof window.DalatPbrMaterialLibrary === 'function'
@@ -181,6 +181,11 @@
         this.streamer.setWaterEnhancer((mat) => this.realtime.enhanceWaterMaterial(mat));
         this.streamer.onStreamBatchSettled = () => this.realtime.markShadowDirty();
       }
+
+      this.trafficStreamer =
+        typeof window.DalatTrafficStreamer === 'function'
+          ? new window.DalatTrafficStreamer(this.scene)
+          : null;
 
       this.dragMode = null;
       this.pointerDownPos = { x: 0, y: 0 };
@@ -229,6 +234,9 @@
     async _bootstrap() {
       await this._loadCameraPresets();
       await this._refreshWorldIndexAndUi();
+      if (this.trafficStreamer) {
+        this.trafficStreamer.loadRoutes('./api/road-traffic-routes.json');
+      }
       this._coreReady = true;
       this.streamer.updateCameraLod(this.camera.position);
       if (this.realtime) this.realtime.markShadowDirty();
@@ -246,7 +254,10 @@
             this.cameraPresets = cfg.camera_presets;
           }
           if (Array.isArray(cfg.climate_presets) && cfg.climate_presets.length > 0) {
-            this.climatePresets = cfg.climate_presets;
+            const byId = new Map(DEFAULT_CLIMATES.map((c) => [c.id, c]));
+            this.climatePresets = cfg.climate_presets.map((c) =>
+              Object.assign({}, c, byId.get(c.id) || {})
+            );
           }
         }
       } catch (err) {
@@ -1132,6 +1143,9 @@
       document.querySelectorAll('input[data-layer]').forEach((chk) => {
         chk.addEventListener('change', () => {
           this.streamer.setLayerVisible(chk.dataset.layer, chk.checked);
+          if (chk.dataset.layer === 'roads' && this.trafficStreamer) {
+            this.trafficStreamer.setVisible(chk.checked);
+          }
         });
       });
 
@@ -1165,6 +1179,7 @@
       this._updateFlightAnimation();
       this._updateFogTransition(dt);
       this.streamer.update(dt, elapsed);
+      if (this.trafficStreamer) this.trafficStreamer.update(dt);
       if (this.pbrLibrary) this.pbrLibrary.update(dt);
       if (this.ultraHdSatellite) this.ultraHdSatellite.update(this.camera, this.target, dt);
 

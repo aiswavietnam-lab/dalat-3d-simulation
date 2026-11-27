@@ -338,9 +338,9 @@
    * Có khoảng trễ hysteresis (+650m) để không nạp/gỡ liên tục khi camera dừng ở ranh giới
    */
   const LOD_CONFIG = {
-    LOD0_MAX_M: 2800.0, // Chi tiết tối đa: Địa hình + Hồ + Rừng thông/Mai Anh Đào + Công trình + Đường OSM thật + Nhà dân
-    LOD1_MAX_M: 4800.0, // Trung bình: Địa hình + Hồ + Công trình + Đường + Nhà dân + Thông chính
-    LOD2_MAX_M: 10500.0, // Xa: Địa hình + Hồ lớn + Công trình chính (xa hơn nối liền bằng nền đại cảnh Copernicus 60km)
+    LOD0_MAX_M: 3000.0, // Chi tiết tối đa: Địa hình + Hồ + Rừng thông/Mai Anh Đào + Công trình + Đường OSM thật + Nhà dân
+    LOD1_MAX_M: 5800.0, // Trung bình: Địa hình + Hồ + Công trình + Đường + Nhà dân + Thông chính
+    LOD2_MAX_M: 12500.0, // Xa: Địa hình + Hồ lớn + Công trình chính (xa hơn nối liền bằng nền đại cảnh Copernicus 60km)
     UNLOAD_HYSTERESIS_M: 600.0,
   };
 
@@ -837,10 +837,19 @@
             );
             continue;
           }
-          const p = this._queueOrDeferTileTask(item.tile_id, item.url, 1, () =>
-            this._loadGlbIntoLayer(item.url, 'terrain', false, item.tile_id)
-          );
-          if (p) corePromises.push(p);
+          const tCoords = DALAT_COORDS.parseTileId(item.tile_id);
+          const ringDist = Math.max(Math.abs(tCoords.ix), Math.abs(tCoords.iy));
+          if (ringDist <= 2) {
+            const p = this._enqueueStreamTask(item.url, ringDist === 0 ? 1 : 2 + ringDist, () =>
+              this._loadGlbIntoLayer(item.url, 'terrain', false, item.tile_id)
+            );
+            if (ringDist === 0 && p) corePromises.push(p);
+          } else {
+            const p = this._queueOrDeferTileTask(item.tile_id, item.url, 1, () =>
+              this._loadGlbIntoLayer(item.url, 'terrain', false, item.tile_id)
+            );
+            if (p) corePromises.push(p);
+          }
         }
       } else if (!this.usingFallback.terrain) {
         this._buildProceduralTerrain();
@@ -943,7 +952,20 @@
         this.usingFallback.roads = true;
       }
 
-      // 6. Nhà dân OSM thật bám DEM — ưu tiên T_E00_N00 (Priority 3)
+      // 6. Tiện ích đường phố & giao thông tĩnh (đèn 5 bóng, xe buýt, chợ Đêm, vòm hoa)
+      if (Array.isArray(layers.urban_props) && layers.urban_props.length > 0) {
+        for (const item of layers.urban_props) {
+          const tid = item.tile_id || this._inferRegionTileId(item);
+          const layerKey = item.layer_target === 'roads' ? 'roads' : 'landmarks';
+          const isWaterFleet = /swan_boats|floating_floral/i.test(item.filename || item.url || '');
+          const p = this._queueOrDeferTileTask(tid, item.url, tid === 'T_E00_N00' ? 5 : 14, () =>
+            this._loadGlbIntoLayer(item.url, isWaterFleet ? 'water' : layerKey, isWaterFleet, tid)
+          );
+          if (p && tid === 'T_E00_N00') corePromises.push(p);
+        }
+      }
+
+      // 7. Nhà dân OSM thật bám DEM — ưu tiên T_E00_N00 (Priority 3)
       if (layers.buildings && layers.buildings.length > 0) {
         for (const item of layers.buildings) {
           const p = this._queueOrDeferTileTask(item.tile_id, item.url, 3, () =>
