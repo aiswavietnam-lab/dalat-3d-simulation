@@ -824,6 +824,82 @@ def build_traffic_routes_json(osm_data: dict, dem: RealDalatDem, road_elev_grid:
     print(f"[Traffic Routes] Exported {len(routes_out)} corridors -> {out_fp.name} ({out_fp.stat().st_size/1024:.1f} KB)", flush=True)
 
 
+def build_sidewalk_lamps_json(osm_data: dict, dem: RealDalatDem, road_elev_grid: np.ndarray):
+    """Place alternating French 5-globe streetlamps every ~42m along primary/secondary/tertiary curbs."""
+    roads = osm_data.get("roads", [])
+    allowed = {"trunk", "primary", "secondary", "tertiary"}
+    placed_grid = {}
+    lamps = []
+    rg_n = road_elev_grid.shape[0]
+    rg_res = 6000.0 / rg_n
+    cell_sz = 18.0
+
+    def too_close(lx: float, lyn: float) -> bool:
+        cx, cy = int(math.floor(lx / cell_sz)), int(math.floor(lyn / cell_sz))
+        for dx in (-1, 0, 1):
+            for dy in (-1, 0, 1):
+                for ox, oym in placed_grid.get((cx + dx, cy + dy), ()):
+                    if math.hypot(lx - ox, lyn - oym) < 18.0:
+                        return True
+        return False
+
+    for rd in roads:
+        hw = rd["highway"]
+        if hw not in allowed or rd.get("tunnel") in ("yes", "building_passage") or rd.get("area") == "yes" or rd.get("bridge"):
+            continue
+        raw_pts = [(float(p[0]), float(p[1])) for p in rd["pts"]]
+        if len(raw_pts) < 2:
+            continue
+        tier, base_w, sw_w, *_ = ROAD_CLASS_SPECS[hw]
+        lanes = rd.get("lanes") or 0
+        width_m = max(base_w, float(lanes) * 3.3) if lanes else base_w
+        hw_half = width_m * 0.5
+        curb_off = hw_half + 0.35
+
+        pts = densify_xy(raw_pts, max_step_m=8.0)
+        acc = 0.0
+        side = 1.0
+        step_m = 40.0 if tier == 1 else 52.0
+        for i in range(1, len(pts)):
+            ax, ay = pts[i - 1]
+            bx, by = pts[i]
+            seg = math.hypot(bx - ax, by - ay)
+            if seg < 0.5:
+                continue
+            acc += seg
+            if acc < step_m:
+                continue
+            acc = 0.0
+            tx, ty = (bx - ax) / seg, (by - ay) / seg
+            rx, ry = ty, -tx
+            lx = bx + rx * curb_off * side
+            lyn = by + ry * curb_off * side
+            side = -side
+            if abs(lx) > 2200.0 or abs(lyn) > 2200.0:
+                continue
+            if dem.is_in_water_scalar(lx, lyn, pad_m=2.0) or too_close(lx, lyn):
+                continue
+
+            ground_y = dem.sample_local_y_scalar(lx, lyn)
+            gc, gr = int((lx + 3000.0) / rg_res), int((3000.0 - lyn) / rg_res)
+            if 0 <= gc < rg_n and 0 <= gr < rg_n and not math.isnan(road_elev_grid[gr, gc]):
+                ground_y = max(ground_y, float(road_elev_grid[gr, gc]) - 0.06)
+
+            yaw = round(math.atan2(rx, -ry), 3)
+            lamps.append([round(lx, 2), round(ground_y, 2), round(-lyn, 2), yaw])
+            cx_k, cy_k = int(math.floor(lx / cell_sz)), int(math.floor(lyn / cell_sz))
+            placed_grid.setdefault((cx_k, cy_k), []).append((lx, lyn))
+            if len(lamps) >= 850:
+                break
+        if len(lamps) >= 850:
+            break
+
+    out_fp = API_DIR / "road-sidewalk-props.json"
+    out_fp.parent.mkdir(parents=True, exist_ok=True)
+    out_fp.write_text(json.dumps({"lamps": lamps, "count": len(lamps)}, separators=(",", ":")), encoding="utf-8")
+    print(f"[Sidewalk Lamps] Exported {len(lamps)} French 5-globe lamps -> {out_fp.name} ({out_fp.stat().st_size/1024:.1f} KB)", flush=True)
+
+
 # ============================================================================
 # 3. PER-OBJECT CLUSTER RE-CLAMPING FOR ALL 30 `assets/urban_life_props/*.glb`
 # ============================================================================
@@ -1079,6 +1155,9 @@ def main():
 
     print("\n=== 2. Generating Animated Traffic Routes (`api/road-traffic-routes.json`) ===")
     build_traffic_routes_json(osm_data, dem, road_elev_grid)
+
+    print("\n=== 2b. Generating French 5-Globe Sidewalk Streetlamps (`api/road-sidewalk-props.json`) ===")
+    build_sidewalk_lamps_json(osm_data, dem, road_elev_grid)
 
     print("\n=== 3. Re-clamping 30 Urban Life Props onto Copernicus DEM ===")
     ul_files = sorted((ASSETS / "urban_life_props").glob("*.glb"))

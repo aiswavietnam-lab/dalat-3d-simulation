@@ -95,12 +95,52 @@
       this.detailTex.magFilter = THREE.LinearFilter;
       this.detailTex.anisotropy = this.maxAnisotropy;
 
+      const mkSolidTex = (r, g, b, isSrgb) => {
+        const dt = new THREE.DataTexture(new Uint8Array([r, g, b, 255]), 1, 1, THREE.RGBAFormat);
+        dt.encoding = isSrgb ? THREE.sRGBEncoding : THREE.LinearEncoding;
+        dt.needsUpdate = true;
+        return dt;
+      };
+      this._grassAlbedo = mkSolidTex(128, 128, 128, true);
+      this._grassNormal = mkSolidTex(128, 128, 255, false);
+      this._rockAlbedo = mkSolidTex(128, 128, 128, true);
+
       this.sharedUniforms = {
         uDetailSatTex: { value: this.detailTex },
         uDetailReady: { value: 0.0 },
         uDetailCenterXZ: { value: new THREE.Vector2(0, 0) },
         uDetailInvSpanXZ: { value: new THREE.Vector2(1 / 600, 1 / 600) },
+        uPbrGrassTex: { value: this._grassAlbedo },
+        uPbrGrassNrm: { value: this._grassNormal },
+        uPbrRockTex: { value: this._rockAlbedo },
+        uPbrTexReady: { value: 0.0 },
       };
+
+      if (typeof THREE.TextureLoader === 'function') {
+        const tLoader = new THREE.TextureLoader();
+        let loadedCount = 0;
+        const prepRepeat = (tex, isSrgb) => {
+          tex.wrapS = THREE.RepeatWrapping;
+          tex.wrapT = THREE.RepeatWrapping;
+          tex.encoding = isSrgb ? THREE.sRGBEncoding : THREE.LinearEncoding;
+          tex.anisotropy = this.maxAnisotropy;
+          tex.needsUpdate = true;
+          loadedCount++;
+          if (loadedCount >= 2) this.sharedUniforms.uPbrTexReady.value = 1.0;
+        };
+        tLoader.load('./assets/pbr/lush_grass_albedo.jpg', (tex) => {
+          prepRepeat(tex, true);
+          this.sharedUniforms.uPbrGrassTex.value = tex;
+        });
+        tLoader.load('./assets/pbr/lush_grass_normal.jpg', (tex) => {
+          prepRepeat(tex, false);
+          this.sharedUniforms.uPbrGrassNrm.value = tex;
+        });
+        tLoader.load('./assets/pbr/stone_masonry_albedo.jpg', (tex) => {
+          prepRepeat(tex, true);
+          this.sharedUniforms.uPbrRockTex.value = tex;
+        });
+      }
 
       this._tileCache = new Map();
       this._maxCacheTiles = 384;
@@ -137,7 +177,7 @@
 
       const shared = this.sharedUniforms;
       mat.customProgramCacheKey = function () {
-        return 'dalat_terrain_ultrahd_pbr_v2';
+        return 'dalat_terrain_ultrahd_pbr_v3';
       };
 
       mat.onBeforeCompile = function (shader) {
@@ -145,6 +185,10 @@
         shader.uniforms.uDetailReady = shared.uDetailReady;
         shader.uniforms.uDetailCenterXZ = shared.uDetailCenterXZ;
         shader.uniforms.uDetailInvSpanXZ = shared.uDetailInvSpanXZ;
+        shader.uniforms.uPbrGrassTex = shared.uPbrGrassTex;
+        shader.uniforms.uPbrGrassNrm = shared.uPbrGrassNrm;
+        shader.uniforms.uPbrRockTex = shared.uPbrRockTex;
+        shader.uniforms.uPbrTexReady = shared.uPbrTexReady;
 
         shader.vertexShader =
           [
@@ -177,6 +221,10 @@
             'uniform float uDetailReady;',
             'uniform vec2 uDetailCenterXZ;',
             'uniform vec2 uDetailInvSpanXZ;',
+            'uniform sampler2D uPbrGrassTex;',
+            'uniform sampler2D uPbrGrassNrm;',
+            'uniform sampler2D uPbrRockTex;',
+            'uniform float uPbrTexReady;',
             'varying vec2 vSatWorldXZ;',
             'varying vec3 vTerrainWorldPos;',
             'varying vec3 vTerrainWorldNrm;',
@@ -219,22 +267,34 @@
                 '    }',
                 '  }',
                 '  float dlCamDist = length(cameraPosition - vTerrainWorldPos);',
-                '  float dlNearFade = 1.0 - smoothstep(180.0, 1400.0, dlCamDist);',
-                '  float dlMidFade = 1.0 - smoothstep(650.0, 4200.0, dlCamDist);',
-                '  vec3 dlN0 = dlNoiseGrad(vSatWorldXZ * 0.055);',
-                '  vec3 dlN1 = dlNoiseGrad(vSatWorldXZ * 0.36);',
-                '  vec3 dlN2 = dlNoiseGrad(vSatWorldXZ * 1.45);',
+                '  float dlNearFade = 1.0 - smoothstep(140.0, 1250.0, dlCamDist);',
+                '  float dlMidFade = 1.0 - smoothstep(600.0, 4200.0, dlCamDist);',
+                '  vec3 dlN0 = dlNoiseGrad(vSatWorldXZ * 0.045);',
+                '  vec3 dlN1 = dlNoiseGrad(vSatWorldXZ * 0.38);',
                 '  float dlSlope = 1.0 - clamp(abs(vTerrainWorldNrm.y), 0.0, 1.0);',
                 '  float dlLum = dot(texelColor.rgb, vec3(0.299, 0.587, 0.114));',
-                '  texelColor.rgb = mix(vec3(dlLum), texelColor.rgb, 1.16);',
-                '  float dlMicro = 1.0 + (dlN0.x - 0.5) * 0.12 * dlMidFade + ((dlN1.x - 0.5) * 0.16 + (dlN2.x - 0.5) * 0.13) * dlNearFade;',
-                '  float dlVegMask = smoothstep(0.0, 0.08, texelColor.g - max(texelColor.r, texelColor.b) * 0.85);',
-                '  vec3 dlBasaltTint = vec3(0.32, 0.23, 0.18);',
-                '  vec3 dlLushTint = vec3(0.20, 0.34, 0.16);',
-                '  float dlRockBlend = smoothstep(0.22, 0.58, dlSlope) * (1.0 - dlVegMask * 0.55) * 0.24;',
-                '  texelColor.rgb = mix(texelColor.rgb, dlBasaltTint, dlRockBlend);',
-                '  texelColor.rgb = mix(texelColor.rgb, max(texelColor.rgb, dlLushTint * 0.9), dlVegMask * 0.08 * dlNearFade);',
-                '  texelColor.rgb *= clamp(dlMicro, 0.78, 1.24);',
+                '  texelColor.rgb = mix(vec3(dlLum), texelColor.rgb, 1.18);',
+                '  float dlVegMask = smoothstep(0.01, 0.09, texelColor.g - max(texelColor.r, texelColor.b) * 0.88);',
+                '  float dlRockMask = smoothstep(0.22, 0.55, dlSlope);',
+                '  if (uPbrTexReady > 0.5 && dlNearFade > 0.01) {',
+                '    vec2 uvGrassA = vSatWorldXZ * 0.19;',
+                '    vec2 uvGrassB = vSatWorldXZ * 0.067 + vec2(0.37, 0.71);',
+                '    vec3 gA = mapTexelToLinear(texture2D(uPbrGrassTex, uvGrassA)).rgb;',
+                '    vec3 gB = mapTexelToLinear(texture2D(uPbrGrassTex, uvGrassB)).rgb;',
+                '    float gLum = dot(mix(gA, gB, 0.42), vec3(0.333));',
+                '    float rLum = dot(mapTexelToLinear(texture2D(uPbrRockTex, vSatWorldXZ * 0.14)).rgb, vec3(0.333));',
+                '    // Zero-mean centered photographic grain (average 1.0 -> zero white blowout on bright areas!)',
+                '    float grassMod = clamp(1.0 + (gLum - 0.57) * 0.85, 0.76, 1.18);',
+                '    float rockMod  = clamp(1.0 + (rLum - 0.62) * 0.90, 0.72, 1.16);',
+                '    float grain = mix(rockMod, grassMod, dlVegMask);',
+                '    texelColor.rgb *= mix(1.0, grain, dlNearFade * 0.82);',
+                '    vec3 dalatMeadow = vec3(0.075, 0.175, 0.055) * grassMod;',
+                '    vec3 dalatBasalt = vec3(0.21, 0.155, 0.12) * rockMod;',
+                '    texelColor.rgb = mix(texelColor.rgb, dalatMeadow, dlVegMask * dlNearFade * 0.24);',
+                '    texelColor.rgb = mix(texelColor.rgb, dalatBasalt, dlRockMask * dlNearFade * 0.36);',
+                '  }',
+                '  float dlMacro = 1.0 + (dlN0.x - 0.5) * 0.12 * dlMidFade + (dlN1.x - 0.5) * 0.10 * dlNearFade;',
+                '  texelColor.rgb *= clamp(dlMacro, 0.84, 1.15);',
                 '  diffuseColor *= texelColor;',
                 '#endif',
               ].join('\n')
@@ -243,16 +303,19 @@
               '#include <normal_fragment_maps>',
               [
                 '#include <normal_fragment_maps>',
-                'float dlBumpFade = 1.0 - smoothstep(140.0, 1100.0, length(cameraPosition - vTerrainWorldPos));',
+                'float dlBumpFade = 1.0 - smoothstep(120.0, 1050.0, length(cameraPosition - vTerrainWorldPos));',
                 'if (dlBumpFade > 0.01) {',
-                '  vec3 b0 = dlNoiseGrad(vSatWorldXZ * 0.065);',
-                '  vec3 b1 = dlNoiseGrad(vSatWorldXZ * 0.42);',
-                '  vec3 b2 = dlNoiseGrad(vSatWorldXZ * 1.55);',
-                '  float slopeBoost = 1.0 + (1.0 - clamp(abs(vTerrainWorldNrm.y), 0.0, 1.0)) * 1.4;',
-                '  vec2 dH = (b0.yz * 0.045 + b1.yz * 0.14 + b2.yz * 0.22) * dlBumpFade * slopeBoost;',
+                '  vec3 b0 = dlNoiseGrad(vSatWorldXZ * 0.055);',
+                '  vec3 b1 = dlNoiseGrad(vSatWorldXZ * 0.36);',
+                '  float slopeBoost = 1.0 + (1.0 - clamp(abs(vTerrainWorldNrm.y), 0.0, 1.0)) * 1.5;',
+                '  vec2 dH = (b0.yz * 0.05 + b1.yz * 0.16) * dlBumpFade * slopeBoost;',
+                '  if (uPbrTexReady > 0.5) {',
+                '    vec3 texN = texture2D(uPbrGrassNrm, vSatWorldXZ * 0.21).xyz * 2.0 - 1.0;',
+                '    dH += texN.xy * 0.62 * dlBumpFade * slopeBoost;',
+                '  }',
                 '  vec3 worldPerturb = vec3(-dH.x, 0.0, -dH.y);',
                 '  vec3 viewPerturb = (viewMatrix * vec4(worldPerturb, 0.0)).xyz;',
-                '  normal = normalize(normal + viewPerturb * 0.55);',
+                '  normal = normalize(normal + viewPerturb * 0.65);',
                 '}',
               ].join('\n')
             );
@@ -260,16 +323,7 @@
       mat.needsUpdate = true;
     }
 
-    _fetchGoogleTile(zoom, tx, ty) {
-      const key = `${zoom}_${tx}_${ty}`;
-      if (this._tileCache.has(key)) {
-        const cached = this._tileCache.get(key);
-        this._tileCache.delete(key);
-        this._tileCache.set(key, cached);
-        return Promise.resolve(cached);
-      }
-      const shard = Math.abs(tx + ty) % 4;
-      const url = `https://mt${shard}.google.com/vt/lyrs=s&x=${tx}&y=${ty}&z=${zoom}`;
+    _loadImageWithTimeout(url, timeoutMs = 5500) {
       return new Promise((resolve) => {
         const img = new Image();
         img.crossOrigin = 'anonymous';
@@ -279,16 +333,11 @@
             settled = true;
             resolve(null);
           }
-        }, 7000);
+        }, timeoutMs);
         img.onload = () => {
           if (settled) return;
           settled = true;
           clearTimeout(timer);
-          if (this._tileCache.size >= this._maxCacheTiles) {
-            const firstKey = this._tileCache.keys().next().value;
-            this._tileCache.delete(firstKey);
-          }
-          this._tileCache.set(key, img);
           resolve(img);
         };
         img.onerror = () => {
@@ -299,6 +348,31 @@
         };
         img.src = url;
       });
+    }
+
+    async _fetchGoogleTile(zoom, tx, ty) {
+      const key = `${zoom}_${tx}_${ty}`;
+      if (this._tileCache.has(key)) {
+        const cached = this._tileCache.get(key);
+        this._tileCache.delete(key);
+        this._tileCache.set(key, cached);
+        return cached;
+      }
+      const shard = Math.abs(tx + ty) % 4;
+      const gUrl = `https://mt${shard}.google.com/vt/lyrs=s&x=${tx}&y=${ty}&z=${zoom}`;
+      let img = await this._loadImageWithTimeout(gUrl, 4500);
+      if (!img && zoom <= 18) {
+        const eUrl = `https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/${zoom}/${ty}/${tx}`;
+        img = await this._loadImageWithTimeout(eUrl, 4500);
+      }
+      if (img) {
+        if (this._tileCache.size >= this._maxCacheTiles) {
+          const firstKey = this._tileCache.keys().next().value;
+          this._tileCache.delete(firstKey);
+        }
+        this._tileCache.set(key, img);
+      }
+      return img;
     }
 
     _desiredWindow(camera, target) {
