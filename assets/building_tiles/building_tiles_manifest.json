@@ -10,14 +10,14 @@
   "forbid_raw_hsv_on_basalt_soil": true,
   "forbid_khr_materials_transmission": true,
   "slope_seating_rule_m": -1.2,
-  "updated_at_utc": "2026-11-28T03:05:45Z",
-  "total_tiles_built": 1044,
+  "updated_at_utc": "2026-11-28T03:51:12Z",
+  "total_tiles_built": 1056,
   "ring0_tiles_count": 9,
   "ring1_tiles_count": 21,
-  "total_buildings_across_tiles": 1209171,
-  "total_residential_and_villas_across_tiles": 779865,
-  "total_greenhouses_across_tiles": 429306,
-  "total_triangles_across_tiles": 33315572,
+  "total_buildings_across_tiles": 1232745,
+  "total_residential_and_villas_across_tiles": 793521,
+  "total_greenhouses_across_tiles": 439224,
+  "total_triangles_across_tiles": 33980528,
   "tiles": {
     "T_E00_N00": {
       "tile_id": "T_E00_N00",
@@ -49339,19 +49339,583 @@
         }
       },
       "updated_at_utc": "2026-11-28T03:05:45Z"
+    },
+    "T_E17_S16": {
+      "tile_id": "T_E17_S16",
+      "label_vi": "[RING_2] Góc Cực Đông Nam Khối 33×32 (1.056 Ô!) – Đảo Bình Ba & Đông Bán Đảo Bình Lập (Xã Cam Bình – Cam Lập, TP. Cam Ranh, Khánh Hòa) – Cửa Vịnh Nước Sâu Cam Ranh",
+      "ix": 17,
+      "iy": -16,
+      "ring": 2,
+      "glb_path": "02_ASSETS_3D/building_tiles/buildings_T_E17_S16.glb",
+      "size_bytes": 3185496,
+      "sha256": "cf5ad7b939b7e59cdef06a98be3d61460d1cab81e82b62ff35b42fa401bc3984",
+      "nodes": 10,
+      "triangles": 54916,
+      "total_buildings": 1949,
+      "residential_and_villa_count": 1135,
+      "greenhouse_count": 814,
+      "counts_by_category": {
+        "residential": 848,
+        "heritage_villa": 287,
+        "agriculture_greenhouse": 814
+      },
+      "counts_by_roof_class": {
+        "roof_terracotta_gable": 309,
+        "roof_slate_French_villa_hip": 287,
+        "roof_pine_green_hip": 321,
+        "roof_highland_blue_gable": 218,
+        "agri_greenhouse_arch": 814
+      },
+      "slope_seating_audit": {
+        "target_foundation_drop_m": -1.2,
+        "verified_min_embed_m": -1.2,
+        "max_terrain_slope_delta_m": 0.61,
+        "floating_buildings_count": 0
+      },
+      "exclusion_clipping_audit": {
+        "in_water_count": 0,
+        "in_landmark_exclusion_count": 0,
+        "in_road_carriageway_count": 0,
+        "rejected_candidates": {
+          "water": 63,
+          "doi_cu_fairway": 0,
+          "landmark_exclusion": 0,
+          "road_carriageway": 454,
+          "parcel_overlap": 1209,
+          "steep_cliff": 0
+        }
+      },
+      "updated_at_utc": "2026-11-28T03:50:37Z"
+    },
+    "T_E17_S15": {
+      "tile_id": "T_E17_S15",
+      "label_vi": "[RING_2] Vịnh Cam Ranh & Tây Bán Đảo Cam Ranh (Phường Cam Linh – Cam Thuận, TP. Cam Ranh, Khánh Hòa) – Cảng Quốc Tế Cam Ranh",
+      "ix": 17,
+      "iy": -15,
+      "ring": 2,
+      "glb_path": "02_ASSETS_3D/building_tiles/buildings_T_E17_S15.glb",
+      "size_bytes": 3217120,
+      "sha256": "1fdcf0db5a9964b6f010b83fd5a1d03e64b8705c6ff1b2905aafda153f836b83",
+      "nodes": 10,
+      "triangles": 55474,
+      "total_buildings": 1971,
+      "residential_and_villa_count": 1154,
+      "greenhouse_count": 817,
+      "counts_by_category": {
+        "residential": 867,
+        "heritage_villa": 287,
+        "agriculture_greenhouse": 817
+      },
+      "counts_by_roof_class": {
+        "roof_terracotta_gable": 323,
+        "roof_pine_green_hip": 316,
+        "roof_slate_French_villa_hip": 287,
+        "roof_highland_blue_gable": 228,
+        "agri_greenhouse_arch": 817
+      },
+      "slope_seating_audit": {
+        "target_foundation_drop_m": -1.2,
+        "verified_min_embed_m": -1.2,
+        "max_terrain_slope_delta_m": 0.68,
+        "floating_buildings_count": 0
+      },
+      "exclusion_clipping_audit": {
+        "in_water_count": 0,
+        "in_landmark_exclusion_count": 0,
+        "in_road_carriageway_count": 0,
+        "rejected_candidates": {
+          "water": 0,
+          "doi_cu_fairway": 0,
+          "landmark_exclusion": 0,
+          "road_carriageway": 460,
+          "parcel_overlap": 1251,
+          "steep_cliff": 0
+        }
+      },
+      "updated_at_utc": "2026-11-28T03:50:40Z"
+    },
+    "T_E17_S14": {
+      "tile_id": "T_E17_S14",
+      "label_vi": "[RING_2] Trung Tâm Thành Phố Cam Ranh (Phường Cam Phú – Cam Lộc – Cam Phúc Nam, Khánh Hòa) – Hành Lang Quốc Lộ 1A – Quốc Lộ 27B",
+      "ix": 17,
+      "iy": -14,
+      "ring": 2,
+      "glb_path": "02_ASSETS_3D/building_tiles/buildings_T_E17_S14.glb",
+      "size_bytes": 3235988,
+      "sha256": "69ef148a5eaa841c5700251ca21d220542a968f9ba5de8cdb599ae2254832b28",
+      "nodes": 10,
+      "triangles": 55802,
+      "total_buildings": 1983,
+      "residential_and_villa_count": 1162,
+      "greenhouse_count": 821,
+      "counts_by_category": {
+        "heritage_villa": 333,
+        "residential": 829,
+        "agriculture_greenhouse": 821
+      },
+      "counts_by_roof_class": {
+        "roof_slate_French_villa_hip": 333,
+        "roof_terracotta_gable": 302,
+        "roof_pine_green_hip": 301,
+        "roof_highland_blue_gable": 226,
+        "agri_greenhouse_arch": 821
+      },
+      "slope_seating_audit": {
+        "target_foundation_drop_m": -1.2,
+        "verified_min_embed_m": -1.2,
+        "max_terrain_slope_delta_m": 0.602,
+        "floating_buildings_count": 0
+      },
+      "exclusion_clipping_audit": {
+        "in_water_count": 0,
+        "in_landmark_exclusion_count": 0,
+        "in_road_carriageway_count": 0,
+        "rejected_candidates": {
+          "water": 0,
+          "doi_cu_fairway": 0,
+          "landmark_exclusion": 0,
+          "road_carriageway": 425,
+          "parcel_overlap": 1262,
+          "steep_cliff": 0
+        }
+      },
+      "updated_at_utc": "2026-11-28T03:50:43Z"
+    },
+    "T_E17_S13": {
+      "tile_id": "T_E17_S13",
+      "label_vi": "[RING_2] Bắc Thành Phố Cam Ranh (Phường Cam Phúc Bắc – Cam Nghĩa) & Tây Cảng Hàng Không Quốc Tế Cam Ranh – Đầm Thủy Triều Nam",
+      "ix": 17,
+      "iy": -13,
+      "ring": 2,
+      "glb_path": "02_ASSETS_3D/building_tiles/buildings_T_E17_S13.glb",
+      "size_bytes": 3186812,
+      "sha256": "1b72cfefaa4b78cf0f88c00d4b898e04c922243ee788d8fe7bd79c24f7c5ffb4",
+      "nodes": 10,
+      "triangles": 54944,
+      "total_buildings": 1951,
+      "residential_and_villa_count": 1139,
+      "greenhouse_count": 812,
+      "counts_by_category": {
+        "heritage_villa": 345,
+        "residential": 794,
+        "agriculture_greenhouse": 812
+      },
+      "counts_by_roof_class": {
+        "roof_slate_French_villa_hip": 345,
+        "roof_terracotta_gable": 295,
+        "roof_pine_green_hip": 277,
+        "roof_highland_blue_gable": 222,
+        "agri_greenhouse_arch": 812
+      },
+      "slope_seating_audit": {
+        "target_foundation_drop_m": -1.2,
+        "verified_min_embed_m": -1.2,
+        "max_terrain_slope_delta_m": 0.532,
+        "floating_buildings_count": 0
+      },
+      "exclusion_clipping_audit": {
+        "in_water_count": 0,
+        "in_landmark_exclusion_count": 0,
+        "in_road_carriageway_count": 0,
+        "rejected_candidates": {
+          "water": 59,
+          "doi_cu_fairway": 0,
+          "landmark_exclusion": 0,
+          "road_carriageway": 493,
+          "parcel_overlap": 1209,
+          "steep_cliff": 0
+        }
+      },
+      "updated_at_utc": "2026-11-28T03:50:46Z"
+    },
+    "T_E17_S12": {
+      "tile_id": "T_E17_S12",
+      "label_vi": "[RING_2] Nam Huyện Cam Lâm (Xã Cam Thành Bắc – Cam Hiệp Nam, Khánh Hòa) – Đầm Thủy Triều Tây & Khu Nông Nghiệp Xoài Cổ Cam Lâm",
+      "ix": 17,
+      "iy": -12,
+      "ring": 2,
+      "glb_path": "02_ASSETS_3D/building_tiles/buildings_T_E17_S12.glb",
+      "size_bytes": 3232452,
+      "sha256": "52f18077a44c04318769097650d2473c23e5aca8cea9abcf077e48387919143e",
+      "nodes": 10,
+      "triangles": 55646,
+      "total_buildings": 1959,
+      "residential_and_villa_count": 1096,
+      "greenhouse_count": 863,
+      "counts_by_category": {
+        "heritage_villa": 273,
+        "residential": 823,
+        "agriculture_greenhouse": 863
+      },
+      "counts_by_roof_class": {
+        "roof_slate_French_villa_hip": 273,
+        "roof_terracotta_gable": 280,
+        "roof_pine_green_hip": 311,
+        "roof_highland_blue_gable": 232,
+        "agri_greenhouse_arch": 863
+      },
+      "slope_seating_audit": {
+        "target_foundation_drop_m": -1.2,
+        "verified_min_embed_m": -1.2,
+        "max_terrain_slope_delta_m": 0.586,
+        "floating_buildings_count": 0
+      },
+      "exclusion_clipping_audit": {
+        "in_water_count": 0,
+        "in_landmark_exclusion_count": 0,
+        "in_road_carriageway_count": 0,
+        "rejected_candidates": {
+          "water": 0,
+          "doi_cu_fairway": 0,
+          "landmark_exclusion": 0,
+          "road_carriageway": 233,
+          "parcel_overlap": 1273,
+          "steep_cliff": 0
+        }
+      },
+      "updated_at_utc": "2026-11-28T03:50:49Z"
+    },
+    "T_E17_S11": {
+      "tile_id": "T_E17_S11",
+      "label_vi": "[RING_2] Trung Tâm Huyện Cam Lâm (Thị Trấn Cam Đức – Xã Cam Hiệp Bắc – Sơn Tân, Khánh Hòa) – Hồ Cam Ranh Thượng & Chân Núi Hòn Bà Đông Nam",
+      "ix": 17,
+      "iy": -11,
+      "ring": 2,
+      "glb_path": "02_ASSETS_3D/building_tiles/buildings_T_E17_S11.glb",
+      "size_bytes": 3224400,
+      "sha256": "e964b7a80cc6f4bf59b0b49bf50d1c557078fa3133331a7fbd2ced1079537aae",
+      "nodes": 10,
+      "triangles": 55624,
+      "total_buildings": 1981,
+      "residential_and_villa_count": 1173,
+      "greenhouse_count": 808,
+      "counts_by_category": {
+        "residential": 862,
+        "heritage_villa": 311,
+        "agriculture_greenhouse": 808
+      },
+      "counts_by_roof_class": {
+        "roof_pine_green_hip": 302,
+        "roof_slate_French_villa_hip": 311,
+        "roof_terracotta_gable": 331,
+        "roof_highland_blue_gable": 229,
+        "agri_greenhouse_arch": 808
+      },
+      "slope_seating_audit": {
+        "target_foundation_drop_m": -1.2,
+        "verified_min_embed_m": -1.2,
+        "max_terrain_slope_delta_m": 0.506,
+        "floating_buildings_count": 0
+      },
+      "exclusion_clipping_audit": {
+        "in_water_count": 0,
+        "in_landmark_exclusion_count": 0,
+        "in_road_carriageway_count": 0,
+        "rejected_candidates": {
+          "water": 0,
+          "doi_cu_fairway": 0,
+          "landmark_exclusion": 0,
+          "road_carriageway": 510,
+          "parcel_overlap": 1234,
+          "steep_cliff": 0
+        }
+      },
+      "updated_at_utc": "2026-11-28T03:50:52Z"
+    },
+    "T_E17_N10": {
+      "tile_id": "T_E17_N10",
+      "label_vi": "[RING_2] Tây Bắc Xã Ninh Tây & Tây Xã Ninh Sim (Thị Xã Ninh Hòa, Khánh Hòa) – Suối Nước Nóng Trường Xuân & Thung Lũng Sông Dinh Thượng",
+      "ix": 17,
+      "iy": 10,
+      "ring": 2,
+      "glb_path": "02_ASSETS_3D/building_tiles/buildings_T_E17_N10.glb",
+      "size_bytes": 3237280,
+      "sha256": "b62e665f6c950aa4e2b17e1f3ae206c4c07b605f783b5e5e7745e3a2a2e866d3",
+      "nodes": 10,
+      "triangles": 55838,
+      "total_buildings": 1987,
+      "residential_and_villa_count": 1172,
+      "greenhouse_count": 815,
+      "counts_by_category": {
+        "residential": 889,
+        "heritage_villa": 283,
+        "agriculture_greenhouse": 815
+      },
+      "counts_by_roof_class": {
+        "roof_pine_green_hip": 323,
+        "roof_slate_French_villa_hip": 283,
+        "roof_terracotta_gable": 318,
+        "roof_highland_blue_gable": 248,
+        "agri_greenhouse_arch": 815
+      },
+      "slope_seating_audit": {
+        "target_foundation_drop_m": -1.2,
+        "verified_min_embed_m": -1.2,
+        "max_terrain_slope_delta_m": 0.555,
+        "floating_buildings_count": 0
+      },
+      "exclusion_clipping_audit": {
+        "in_water_count": 0,
+        "in_landmark_exclusion_count": 0,
+        "in_road_carriageway_count": 0,
+        "rejected_candidates": {
+          "water": 0,
+          "doi_cu_fairway": 0,
+          "landmark_exclusion": 0,
+          "road_carriageway": 460,
+          "parcel_overlap": 1260,
+          "steep_cliff": 0
+        }
+      },
+      "updated_at_utc": "2026-11-28T03:50:56Z"
+    },
+    "T_E17_N11": {
+      "tile_id": "T_E17_N11",
+      "label_vi": "[RING_2] Đông Bắc Xã Cư San & Nam Xã Ea Trang (Huyện M'Drắk, Đắk Lắk) – Giáp Ranh Tây Bắc Ninh Hòa – Rừng Phòng Hộ Đèo Phượng Hoàng Bắc",
+      "ix": 17,
+      "iy": 11,
+      "ring": 2,
+      "glb_path": "02_ASSETS_3D/building_tiles/buildings_T_E17_N11.glb",
+      "size_bytes": 3228288,
+      "sha256": "1f75ad62cc0af9c3e2a58bf3e320fde9522c6416c023e38bdc76cfbf0150ee41",
+      "nodes": 10,
+      "triangles": 55598,
+      "total_buildings": 1962,
+      "residential_and_villa_count": 1111,
+      "greenhouse_count": 851,
+      "counts_by_category": {
+        "residential": 806,
+        "heritage_villa": 305,
+        "agriculture_greenhouse": 851
+      },
+      "counts_by_roof_class": {
+        "roof_terracotta_gable": 286,
+        "roof_pine_green_hip": 275,
+        "roof_slate_French_villa_hip": 305,
+        "roof_highland_blue_gable": 245,
+        "agri_greenhouse_arch": 851
+      },
+      "slope_seating_audit": {
+        "target_foundation_drop_m": -1.2,
+        "verified_min_embed_m": -1.2,
+        "max_terrain_slope_delta_m": 0.578,
+        "floating_buildings_count": 0
+      },
+      "exclusion_clipping_audit": {
+        "in_water_count": 0,
+        "in_landmark_exclusion_count": 0,
+        "in_road_carriageway_count": 0,
+        "rejected_candidates": {
+          "water": 0,
+          "doi_cu_fairway": 0,
+          "landmark_exclusion": 0,
+          "road_carriageway": 269,
+          "parcel_overlap": 1286,
+          "steep_cliff": 0
+        }
+      },
+      "updated_at_utc": "2026-11-28T03:50:59Z"
+    },
+    "T_E17_N12": {
+      "tile_id": "T_E17_N12",
+      "label_vi": "[RING_2] Đông Xã Krông Á & Nam Xã Cư M'Ta (Huyện M'Drắk, Đắk Lắk) – Thượng Nguồn Sông Krông H'Năng & Đồi Thảo Nguyên M'Drắk Đông",
+      "ix": 17,
+      "iy": 12,
+      "ring": 2,
+      "glb_path": "02_ASSETS_3D/building_tiles/buildings_T_E17_N12.glb",
+      "size_bytes": 3272400,
+      "sha256": "85cfda2aee9f79a39b7c515db85ea11a0a0c1f62f81867162452ffb97deb300f",
+      "nodes": 10,
+      "triangles": 56308,
+      "total_buildings": 1977,
+      "residential_and_villa_count": 1091,
+      "greenhouse_count": 886,
+      "counts_by_category": {
+        "heritage_villa": 265,
+        "residential": 826,
+        "agriculture_greenhouse": 886
+      },
+      "counts_by_roof_class": {
+        "roof_slate_French_villa_hip": 265,
+        "roof_terracotta_gable": 275,
+        "roof_pine_green_hip": 306,
+        "roof_highland_blue_gable": 245,
+        "agri_greenhouse_arch": 886
+      },
+      "slope_seating_audit": {
+        "target_foundation_drop_m": -1.2,
+        "verified_min_embed_m": -1.2,
+        "max_terrain_slope_delta_m": 0.597,
+        "floating_buildings_count": 0
+      },
+      "exclusion_clipping_audit": {
+        "in_water_count": 0,
+        "in_landmark_exclusion_count": 0,
+        "in_road_carriageway_count": 0,
+        "rejected_candidates": {
+          "water": 0,
+          "doi_cu_fairway": 0,
+          "landmark_exclusion": 0,
+          "road_carriageway": 186,
+          "parcel_overlap": 1261,
+          "steep_cliff": 0
+        }
+      },
+      "updated_at_utc": "2026-11-28T03:51:02Z"
+    },
+    "T_E17_N13": {
+      "tile_id": "T_E17_N13",
+      "label_vi": "[RING_2] Đông Thị Trấn M'Drắk & Xã Krông Jing (Huyện M'Drắk, Đắk Lắk) – Hành Lang Quốc Lộ 26 Đông M'Drắk & Hồ Thủy Lợi Krông Jing",
+      "ix": 17,
+      "iy": 13,
+      "ring": 2,
+      "glb_path": "02_ASSETS_3D/building_tiles/buildings_T_E17_N13.glb",
+      "size_bytes": 3180356,
+      "sha256": "72bd29af021fa9f0293a732f54b38b3ccf0e04ac5a3ce197c07b6fda248f9c4e",
+      "nodes": 10,
+      "triangles": 54784,
+      "total_buildings": 1936,
+      "residential_and_villa_count": 1104,
+      "greenhouse_count": 832,
+      "counts_by_category": {
+        "residential": 813,
+        "heritage_villa": 291,
+        "agriculture_greenhouse": 832
+      },
+      "counts_by_roof_class": {
+        "roof_pine_green_hip": 300,
+        "roof_slate_French_villa_hip": 291,
+        "roof_terracotta_gable": 290,
+        "roof_highland_blue_gable": 223,
+        "agri_greenhouse_arch": 832
+      },
+      "slope_seating_audit": {
+        "target_foundation_drop_m": -1.2,
+        "verified_min_embed_m": -1.2,
+        "max_terrain_slope_delta_m": 0.632,
+        "floating_buildings_count": 0
+      },
+      "exclusion_clipping_audit": {
+        "in_water_count": 0,
+        "in_landmark_exclusion_count": 0,
+        "in_road_carriageway_count": 0,
+        "rejected_candidates": {
+          "water": 62,
+          "doi_cu_fairway": 0,
+          "landmark_exclusion": 0,
+          "road_carriageway": 286,
+          "parcel_overlap": 1247,
+          "steep_cliff": 0
+        }
+      },
+      "updated_at_utc": "2026-11-28T03:51:05Z"
+    },
+    "T_E17_N14": {
+      "tile_id": "T_E17_N14",
+      "label_vi": "[RING_2] Đông Xã Ea M'Doal & Bắc Xã Krông Jing (Huyện M'Drắk, Đắk Lắk) – Cửa Ngõ Đông Bắc Cao Nguyên M'Drắk & Rừng Đặc Dụng Ea M'Doal",
+      "ix": 17,
+      "iy": 14,
+      "ring": 2,
+      "glb_path": "02_ASSETS_3D/building_tiles/buildings_T_E17_N14.glb",
+      "size_bytes": 3210584,
+      "sha256": "e1af539992927f71882a43aaab6554211faff51f3ee7c37f0fb81ce0ae9a8bfb",
+      "nodes": 10,
+      "triangles": 55326,
+      "total_buildings": 1959,
+      "residential_and_villa_count": 1128,
+      "greenhouse_count": 831,
+      "counts_by_category": {
+        "heritage_villa": 289,
+        "residential": 839,
+        "agriculture_greenhouse": 831
+      },
+      "counts_by_roof_class": {
+        "roof_slate_French_villa_hip": 289,
+        "roof_terracotta_gable": 289,
+        "roof_pine_green_hip": 307,
+        "roof_highland_blue_gable": 243,
+        "agri_greenhouse_arch": 831
+      },
+      "slope_seating_audit": {
+        "target_foundation_drop_m": -1.2,
+        "verified_min_embed_m": -1.2,
+        "max_terrain_slope_delta_m": 0.604,
+        "floating_buildings_count": 0
+      },
+      "exclusion_clipping_audit": {
+        "in_water_count": 0,
+        "in_landmark_exclusion_count": 0,
+        "in_road_carriageway_count": 0,
+        "rejected_candidates": {
+          "water": 0,
+          "doi_cu_fairway": 0,
+          "landmark_exclusion": 0,
+          "road_carriageway": 408,
+          "parcel_overlap": 1263,
+          "steep_cliff": 0
+        }
+      },
+      "updated_at_utc": "2026-11-28T03:51:08Z"
+    },
+    "T_E17_N15": {
+      "tile_id": "T_E17_N15",
+      "label_vi": "[RING_2] Góc Cực Đông Bắc Khối 33×32 (Ô Thứ 1.056 / 4.224,0 KM²!) – Bắc Xã Ea M'Doal (M'Drắk, Đắk Lắk) & Tây Xã Ea Lâm (Huyện Sông Hinh, Phú Yên) – Lưu Vực Thủy Điện Sông Ba Hạ Thượng",
+      "ix": 17,
+      "iy": 15,
+      "ring": 2,
+      "glb_path": "02_ASSETS_3D/building_tiles/buildings_T_E17_N15.glb",
+      "size_bytes": 3167500,
+      "sha256": "ea00b86973d925a28676480eb42079668a29d01a78e398467736004221c99aef",
+      "nodes": 10,
+      "triangles": 54696,
+      "total_buildings": 1959,
+      "residential_and_villa_count": 1191,
+      "greenhouse_count": 768,
+      "counts_by_category": {
+        "residential": 864,
+        "heritage_villa": 327,
+        "agriculture_greenhouse": 768
+      },
+      "counts_by_roof_class": {
+        "roof_pine_green_hip": 328,
+        "roof_slate_French_villa_hip": 327,
+        "roof_terracotta_gable": 317,
+        "roof_highland_blue_gable": 219,
+        "agri_greenhouse_arch": 768
+      },
+      "slope_seating_audit": {
+        "target_foundation_drop_m": -1.2,
+        "verified_min_embed_m": -1.2,
+        "max_terrain_slope_delta_m": 0.575,
+        "floating_buildings_count": 0
+      },
+      "exclusion_clipping_audit": {
+        "in_water_count": 0,
+        "in_landmark_exclusion_count": 0,
+        "in_road_carriageway_count": 0,
+        "rejected_candidates": {
+          "water": 80,
+          "doi_cu_fairway": 0,
+          "landmark_exclusion": 0,
+          "road_carriageway": 553,
+          "parcel_overlap": 1223,
+          "steep_cliff": 0
+        }
+      },
+      "updated_at_utc": "2026-11-28T03:51:12Z"
     }
   },
-  "wave": "T5_AUTO_R2_1044TILES_4176KM2_E17_20TILES_1M20_BLDGS_780K_RES_430K_GH_33M_TRIS_640_ROADS_9805KM_12M9_ROAD_TRIS_764K_LAMPS_321_PRESETS_SUPREME_HISTORIC_MILESTONE",
-  "total_tiles": 1044,
+  "wave": "T5_AUTO_R2_1056TILES_4224KM2_33X32_1056_FULL_BLOCK_CLOSURE_E17_CORNERS_1M23_BLDGS_794K_RES_439K_GH_34M_TRIS_646_ROADS_9975KM_13M_ROAD_TRIS_778K_LAMPS_324_PRESETS_SUPREME_HISTORIC_MILESTONE",
+  "total_tiles": 1056,
   "floating_buildings_across_tiles": 0,
   "closed_7x7_basin_tiles": 49,
-  "ring2_tiles_count": 1014,
-  "outer_ring2_corridor_tiles": 995,
+  "ring2_tiles_count": 1026,
+  "outer_ring2_corridor_tiles": 1007,
   "road_network_summary": {
-    "total_corridors": 640,
-    "total_length_km": 9806.011,
-    "total_triangles": 12951928,
-    "total_streetlamps": 764770,
+    "total_corridors": 646,
+    "total_length_km": 9973.826,
+    "total_triangles": 13174336,
+    "total_streetlamps": 778198,
     "layers": [
       {
         "layer": "RING_0",
@@ -50087,6 +50651,13 @@
         "glb": "roads_ring2_c1044_4176km2_e17_20tiles_1m20bldgs_33mtris.glb",
         "corridors": 6,
         "length_km": 170.319
+      },
+      {
+        "layer": "RING_2_1056TILES_4224KM2_CORRIDORS",
+        "geojson": "major_roads_ring2_c1056_4224km2_33x32_full_block_13mroadtris.geojson",
+        "glb": "roads_ring2_c1056_4224km2_33x32_full_block_13mroadtris.glb",
+        "corridors": 6,
+        "length_km": 167.815
       }
     ]
   },
@@ -50152,5 +50723,7 @@
   "historic_1000th_tile_id": "T_W15_N02",
   "closed_32x32_regional_square_tiles": 1024,
   "historic_1024th_tile_id": "T_W15_N15",
-  "e17_far_east_col_tiles": 20
+  "e17_far_east_col_tiles": 32,
+  "closed_33x32_regional_block_tiles": 1056,
+  "historic_1056th_tile_id": "T_E17_N15"
 }

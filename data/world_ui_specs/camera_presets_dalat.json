@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "project": "DALAT_3D_SIMULATION",
-  "wave": "T5_AUTO_R2_1044TILES_4176KM2_E17_20TILES_1M20_BLDGS_780K_RES_430K_GH_33M_TRIS_640_ROADS_9805KM_12M9_ROAD_TRIS_764K_LAMPS_321_PRESETS_SUPREME_HISTORIC_MILESTONE",
+  "wave": "T5_AUTO_R2_1056TILES_4224KM2_33X32_1056_FULL_BLOCK_CLOSURE_E17_CORNERS_1M23_BLDGS_794K_RES_439K_GH_34M_TRIS_646_ROADS_9975KM_13M_ROAD_TRIS_778K_LAMPS_324_PRESETS_SUPREME_HISTORIC_MILESTONE",
   "coordinate_origin": {
     "name": "Tam_Ho_Xuan_Huong_Da_Lat",
     "lat": 11.940419,
@@ -6457,6 +6457,66 @@
       "duration_ms": 1700,
       "recommended_lighting": "clear_noon",
       "description": "Hành lang 5 ô cánh Bắc trên cột biên cực Đông E17 từ chân đèo Phượng Hoàng Đông Quốc lộ 26 tại Bắc xã Khánh Hiệp (huyện Khánh Vĩnh), vượt thung lũng mía và hồ thủy điện Ea Krông Rou tại xã Ninh Tây – lưu vực hồ Đá Bàn Thượng (thị xã Ninh Hòa, Khánh Hòa) tới vùng giáp ranh Đông xã Cư San (huyện M'Drắk, Đắk Lắk)."
+    },
+    {
+      "id": "historic_wave113_33x32_1056tiles_4224km2_full_block_closure_13m_road_tris_cam_ranh_bay",
+      "name_vi": "[RING_2] Kỷ Niệm Cột Mốc Lịch Sử Vĩ Đại Wave 113: KHÉP KÍN 100% KHỐI 33×32 (1.056/1.056 Ô = 4.224,0 KM² > 4.200 KM²), VƯỢT >13.000.000 TAM GIÁC MẶT ĐƯỜNG 3D & ÁP SÁT 10.000 KM ĐƯỜNG!",
+      "category": "eastern_corridors",
+      "tile_id": "T_E17_S16",
+      "position_gltf": [
+        33850.0,
+        445.0,
+        31850.0
+      ],
+      "target_gltf": [
+        34350.0,
+        80.0,
+        32350.0
+      ],
+      "fov": 48,
+      "duration_ms": 1700,
+      "recommended_lighting": "golden_sunset",
+      "description": "Góc nhìn lịch sử vĩ đại Wave 113 tại đảo Bình Ba – đông bán đảo Bình Lập – cửa vịnh nước sâu Cam Ranh (TP. Cam Ranh, Khánh Hòa, ô T_E17_S16), đánh dấu khép kín 100% (32/32 ô = 128,0 km²) cột biên cực Đông E17 để hoàn tất 100% Khối Chữ Nhật Toàn Vùng 33×32 (1.056/1.056 ô = 66 km × 64 km = 4.224,0 km², vượt 4.200,0 km²), đồng thời vượt 13.000.000 tam giác mặt đường 3D và nâng tổng chiều dài mạng lưới giao thông lên ~9.974 km (ngay trước ngưỡng 10.000 km)!"
+    },
+    {
+      "id": "e17_southeast_corner_binh_ba_vinh_cam_ranh_tp_cam_ranh_dam_thuy_trieu_cam_lam_panorama",
+      "name_vi": "[RING_2] Góc Cực Đông Nam Khối 33×32 – Đảo Bình Ba – Vịnh Cam Ranh – TP. Cam Ranh QL1A/QL27B – Đầm Thủy Triều – Thị Trấn Cam Đức Cam Lâm (T_E17_S16..T_E17_S11)",
+      "category": "eastern_corridors",
+      "tile_id": "T_E17_S14",
+      "position_gltf": [
+        33850.0,
+        435.0,
+        27850.0
+      ],
+      "target_gltf": [
+        34350.0,
+        75.0,
+        28350.0
+      ],
+      "fov": 48,
+      "duration_ms": 1700,
+      "recommended_lighting": "morning_mist",
+      "description": "Toàn cảnh 6 ô góc cực Đông Nam của Khối Chữ Nhật Toàn Vùng 33×32 trên cột biên E17 từ đảo Bình Ba – vịnh nước sâu Cam Ranh, qua trung tâm TP. Cam Ranh (giao lộ Quốc lộ 1A – Quốc lộ 27B lên Đà Lạt) và đầm Thủy Triều tới vùng xoài cổ Cam Lâm – thị trấn Cam Đức (tỉnh Khánh Hòa)."
+    },
+    {
+      "id": "e17_northeast_corner_ninh_sim_truong_xuan_mdrak_ql26_ea_mdoal_song_ba_ha_basin",
+      "name_vi": "[RING_2] Góc Cực Đông Bắc Khối 33×32 (Ô Thứ 1.056 T_E17_N15) – Suối Nước Nóng Trường Xuân Ninh Sim – Thảo Nguyên M'Drắk QL26 – Ea M'Doal – Sông Ba Hạ (T_E17_N10..T_E17_N15)",
+      "category": "eastern_corridors",
+      "tile_id": "T_E17_N15",
+      "position_gltf": [
+        33850.0,
+        465.0,
+        -29850.0
+      ],
+      "target_gltf": [
+        34350.0,
+        90.0,
+        -30350.0
+      ],
+      "fov": 48,
+      "duration_ms": 1700,
+      "recommended_lighting": "clear_noon",
+      "description": "Hành lang 6 ô góc cực Đông Bắc của Khối Chữ Nhật Toàn Vùng 33×32 trên cột biên E17 từ suối nước nóng Trường Xuân (xã Ninh Sim, thị xã Ninh Hòa), vượt thượng nguồn sông Krông H'Năng và thảo nguyên M'Drắk Đông – hồ Krông Jing (huyện M'Drắk, Đắk Lắk) tới Bắc xã Ea M'Doal và lưu vực thủy điện Sông Ba Hạ Thượng (huyện Sông Hinh, Phú Yên)."
     }
   ],
   "climate_presets": [
@@ -6517,7 +6577,7 @@
       "emissive_scale": 1.35
     }
   ],
-  "version": "14.0.0-wave112-1044tiles-4176km2-e17-20tiles-1209kbldgs-780kres-429kgh-33.32mtris-105roadlayers-640roads-9806km-12.95mroadtris-765klamps-321presets",
+  "version": "14.1.0-wave113-1056tiles-4224km2-33x32-full-block-1233kbldgs-794kres-439kgh-33.99mtris-106roadlayers-646roads-9974km-13.17mroadtris-778klamps-324presets",
   "flythrough_tour": [
     {
       "stop_index": 1,
@@ -6538,5 +6598,5 @@
       "duration_sec": 8.0
     }
   ],
-  "updated_at_utc": "2026-11-28T03:05:45Z"
+  "updated_at_utc": "2026-11-28T03:51:12Z"
 }

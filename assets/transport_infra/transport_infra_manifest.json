@@ -3,9 +3,9 @@
   "project": "DALAT_3D_SIMULATION",
   "slot": 9,
   "task_name": "ĐÀ LẠT - 08 (PASSES_BRIDGES_RAILWAY_INFRA)",
-  "wave_completed": 54,
-  "latest_wave": "Wave 54 (T9_AUTO_R2_R3_B49_TRAM_HANH_NORTH_XUAN_THO_EAST_VIADUCTS_AND_SUOI_VANG_WEST_CU_LAN_NORTH_PASS)",
-  "updated_at_utc": "2026-11-28T03:28:24Z",
+  "wave_completed": "T9_P2_W3_RING0_RING1_TUYEN_LAM_THAN_THO_DA_THIEN_LAKESIDE_PROMENADES_SWAN_DOCKS_AND_LINH_PHUOC_TRAI_MAT_COG_VIADUCT_0_15M_MICRO_DETAIL",
+  "latest_wave": "T9_P2_W3_RING0_RING1_TUYEN_LAM_THAN_THO_DA_THIEN_LAKESIDE_PROMENADES_SWAN_DOCKS_AND_LINH_PHUOC_TRAI_MAT_COG_VIADUCT_0_15M_MICRO_DETAIL",
+  "updated_at_utc": "2026-11-28T09:17:30Z",
   "world_crs": {
     "origin_lat": 11.940419,
     "origin_lon": 108.445259,
@@ -67,10 +67,13 @@
     "T9_AUTO_R2_R3_B46_TRAI_MAT_NORTH_DA_SAR_SOUTH_VIADUCTS_AND_CU_LAN_EAST_ANKROET_NORTH_PASS",
     "T9_AUTO_R2_R3_B47_THAI_PHIEN_EAST_XUAN_THO_NORTH_VIADUCTS_AND_TA_NUNG_WEST_NAM_BAN_NORTH_PASS",
     "T9_AUTO_R2_R3_B48_LANGBIANG_SOUTH_DA_THIEN_NORTH_VIADUCTS_AND_TUYEN_LAM_WEST_PRENN_SOUTH_PASS",
-    "T9_AUTO_R2_R3_B49_TRAM_HANH_NORTH_XUAN_THO_EAST_VIADUCTS_AND_SUOI_VANG_WEST_CU_LAN_NORTH_PASS"
+    "T9_AUTO_R2_R3_B49_TRAM_HANH_NORTH_XUAN_THO_EAST_VIADUCTS_AND_SUOI_VANG_WEST_CU_LAN_NORTH_PASS",
+    "T9_P2_W1",
+    "T9_P2_W2",
+    "T9_P2_W3"
   ],
-  "total_assets": 108,
-  "total_triangles": 13873592,
+  "total_assets": 114,
+  "total_triangles": 14270286,
   "wave54_triangles": 269132,
   "assets": [
     {
@@ -114,7 +117,16 @@
           -245.0
         ],
         "fov_deg": 45.0
-      }
+      },
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "train_dalat_steam_3coaches",
@@ -181,7 +193,16 @@
           -528.31
         ],
         "fov_deg": 42.0
-      }
+      },
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "deo_prenn_4lanes_viaducts",
@@ -228,7 +249,16 @@
           3121.1
         ],
         "fov_deg": 46.0
-      }
+      },
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "deo_mimosa_mountain_pass",
@@ -277,7 +307,16 @@
           3143.73
         ],
         "fov_deg": 46.0
-      }
+      },
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "cau_ong_dao_dap_tran_ho_xuan_huong",
@@ -292,7 +331,16 @@
       ],
       "triangles": 57194,
       "size_bytes": 1895472,
-      "sha256": "6fd8ad481e03ac8d767fe84b0c59f3eb2b50e8a3b96438efd5206ae32e84f5fe"
+      "sha256": "6fd8ad481e03ac8d767fe84b0c59f3eb2b50e8a3b96438efd5206ae32e84f5fe",
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "vong_xoay_dai_phun_nuoc_va_cau_chu_y_hoa_binh",
@@ -307,7 +355,16 @@
       ],
       "triangles": 33060,
       "size_bytes": 1333424,
-      "sha256": "5bbdcee0b7105c73d31d99f1848dc5e313ef8e8fc7489221e6af791d68d99d8f"
+      "sha256": "5bbdcee0b7105c73d31d99f1848dc5e313ef8e8fc7489221e6af791d68d99d8f",
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "deo_ta_nung_dt725_mountain_pass",
@@ -345,7 +402,16 @@
         "T_W03_N00",
         "T_W03_S01"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "deo_ql20_trai_mat_cau_dat_cloud_deck",
@@ -384,7 +450,16 @@
         "T_E03_S01",
         "T_E03_S02"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "taluy_da_che_xanh_chan_doi_noi_do",
@@ -422,7 +497,16 @@
         "T_W01_N00",
         "T_W02_N00"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "ke_ho_lan_can_da_va_loi_dao_bo_ho_xuan_huong",
@@ -455,7 +539,16 @@
       "tiles_covered": [
         "T_E00_N00"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "deo_dran_ngoan_muc_va_deo_khanh_le_lac_duong",
@@ -499,7 +592,16 @@
         "T_E04_N00",
         "T_E04_S01"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "cau_treo_suoi_vang_dap_dankia_dt722",
@@ -538,7 +640,16 @@
         "T_W03_N04",
         "T_W04_N03"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "cau_da_vom_ankroet_1942_va_deo_cam_ly_ankroet",
@@ -584,7 +695,16 @@
         "T_W04_N03",
         "T_W04_N04"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "dap_tran_cau_day_vang_va_deo_ven_ho_tuyen_lam",
@@ -630,7 +750,16 @@
         "T_W03_S02",
         "T_W03_S03"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "deo_jeep_dinh_radar_langbiang_va_deo_lac_duong",
@@ -673,7 +802,16 @@
         "T_W01_N05",
         "T_W01_N06"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "nut_giao_cau_vuot_va_cao_toc_lien_khuong_prenn",
@@ -715,7 +853,16 @@
         "T_E02_S04",
         "T_W01_S05"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "deo_trai_mat_da_sar_da_nhim_va_cau_can_rung_thong",
@@ -758,7 +905,16 @@
         "T_E03_N02",
         "T_E03_N03"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "cau_can_dien_gio_cau_dat_va_deo_doi_che_tram_hanh",
@@ -802,7 +958,16 @@
         "T_E04_N00",
         "T_E04_S01"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "deo_me_linh_nam_ban_ca_phe_chon_va_cau_can_ta_nung_ha",
@@ -845,7 +1010,16 @@
         "T_W05_S01",
         "T_W05_S02"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "cau_treo_thac_voi_nam_ban_va_deo_linh_an_cam_ly_ha",
@@ -892,7 +1066,16 @@
         "T_W04_S03",
         "T_W04_S04"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "deo_mang_lin_thung_lung_vang_va_cau_treo_lang_cu_lan",
@@ -935,7 +1118,16 @@
         "T_W04_N05",
         "T_W05_N04"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "cau_vom_da_thac_cam_ly_va_deo_van_thanh_ta_nung_bac",
@@ -977,7 +1169,16 @@
         "T_W03_N01",
         "T_W03_N02"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "deo_lang_hoa_thai_phien_ho_than_tho_va_cau_can_doi_thong_hai_mo",
@@ -1020,7 +1221,16 @@
         "T_E03_N02",
         "T_E03_N03"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "cau_can_thac_datanla_va_deo_dong_ho_tuyen_lam_nui_voi",
@@ -1066,7 +1276,16 @@
         "T_E03_S02",
         "T_E03_S03"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "deo_xuan_truong_tram_hanh_va_cau_can_duong_sat_da_loc",
@@ -1111,7 +1330,16 @@
         "T_E04_N00",
         "T_E04_S01"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "cau_treo_hem_vuc_cam_ly_trung_va_deo_ta_nung_nam_suoi_vang",
@@ -1156,7 +1384,16 @@
         "T_W03_S03",
         "T_W03_S04"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "deo_cong_troi_cu_lan_bac_va_cau_treo_suoi_vang_thuong",
@@ -1199,7 +1436,16 @@
         "T_W04_N05",
         "T_W05_N04"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "cau_vom_da_suoi_da_nhim_thuong_va_deo_lac_duong_dankia_dong",
@@ -1246,7 +1492,16 @@
         "T_W01_N06",
         "T_W02_N04"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "deo_van_hanh_da_thien_va_cau_vom_da_cua_deo_ta_nung_dong",
@@ -1291,7 +1546,16 @@
         "T_W03_N00",
         "T_W03_S01"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "cau_can_nam_deo_prenn_mimosa_va_cau_vom_da_suoi_da_tam",
@@ -1336,7 +1600,16 @@
         "T_W01_S04",
         "T_W01_S05"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "deo_song_nui_hon_bo_bac_va_cau_vom_da_suoi_da_nhim_tay",
@@ -1379,7 +1652,16 @@
         "T_E03_N02",
         "T_E03_N03"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "cau_treo_suoi_can_ha_va_deo_dap_phu_suoi_vang_tay",
@@ -1425,7 +1707,16 @@
         "T_W05_S01",
         "T_W05_S02"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "deo_yen_ngua_dong_langbiang_va_cau_vom_da_suoi_da_nhim_bac",
@@ -1469,7 +1760,16 @@
         "T_W01_N06",
         "T_W02_N04"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "cau_treo_thung_lung_ta_nung_dong_nam_va_deo_doi_che_dong_nam_ban",
@@ -1514,7 +1814,16 @@
         "T_W04_S03",
         "T_W04_S04"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "deo_xuan_tho_da_loc_dong_va_cau_vom_da_suoi_mat_thuong",
@@ -1560,7 +1869,16 @@
         "T_E04_N00",
         "T_E04_S01"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "cau_treo_hem_vuc_nam_ankroet_va_deo_mang_lin_da_phu_tay",
@@ -1607,7 +1925,16 @@
         "T_W04_N04",
         "T_W04_N05"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "deo_phu_son_cam_ly_tay_va_cau_vom_da_suoi_da_nghit_ha",
@@ -1652,7 +1979,16 @@
         "T_W05_S01",
         "T_W05_S02"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "cau_treo_hem_vuc_nam_mimosa_va_deo_lien_khuong_dong_da_tam",
@@ -1699,7 +2035,16 @@
         "T_W01_S04",
         "T_W01_S05"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "deo_bidoup_nam_da_sar_bac_va_cau_vom_da_suoi_da_sar_thuong",
@@ -1745,7 +2090,16 @@
         "T_E03_N02",
         "T_E03_N03"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "cau_treo_song_nui_bac_suoi_vang_va_deo_cu_lan_dankia_bac",
@@ -1791,7 +2145,16 @@
         "T_W04_N05",
         "T_W05_N04"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "deo_trai_mat_bac_hon_bo_dong_va_cau_vom_da_suoi_xuan_tho_bac",
@@ -1836,7 +2199,16 @@
         "T_E03_N03",
         "T_E04_N00"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "cau_treo_hem_vuc_nam_tuyen_lam_va_deo_nui_voi_dong_bac",
@@ -1882,7 +2254,16 @@
         "T_W02_S03",
         "T_W02_S04"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "deo_suon_tay_dinh_radar_va_cau_vom_da_suoi_dankia_bac",
@@ -1929,7 +2310,16 @@
         "T_W04_N04",
         "T_W04_N05"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "cau_treo_hem_vuc_ta_nung_tay_va_deo_ca_phe_me_linh_bac",
@@ -1977,7 +2367,16 @@
         "T_W04_S02",
         "T_W05_S02"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "deo_tram_hanh_nam_cau_dat_va_cau_vom_da_suoi_tram_hanh",
@@ -2025,7 +2424,16 @@
         "T_E04_N00",
         "T_E04_S01"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "cau_treo_thung_lung_suoi_vang_tay_va_deo_ankroet_thuong",
@@ -2074,7 +2482,16 @@
         "T_W04_N05",
         "T_W05_N04"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "deo_da_sar_tay_hon_bo_bac_va_cau_vom_da_suoi_da_sar_ha",
@@ -2122,7 +2539,16 @@
         "T_E03_N02",
         "T_E03_N03"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "cau_treo_hem_vuc_tay_dinh_pinhatt_va_deo_nui_voi_tay_nam",
@@ -2171,7 +2597,16 @@
         "T_W04_S03",
         "T_W04_S04"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "deo_suon_nam_langbiang_da_phu_va_cau_vom_da_suoi_da_phu_bac",
@@ -2220,7 +2655,16 @@
         "T_W02_N02",
         "T_W02_N03"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "cau_treo_hem_vuc_tay_deo_mimosa_va_deo_dong_ho_tuyen_lam",
@@ -2268,7 +2712,16 @@
         "T_W02_S01",
         "T_W02_S02"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "deo_suon_nam_hon_bo_xuan_tho_tay_va_cau_vom_da_suoi_tu_phuoc",
@@ -2317,7 +2770,16 @@
         "T_E04_N00",
         "T_E04_S01"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "cau_treo_hem_vuc_suoi_can_tay_va_deo_bac_ta_nung_cam_ly",
@@ -2366,7 +2828,16 @@
         "T_W04_S02",
         "T_W05_S01"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "deo_doi_che_cau_dat_dong_xuan_truong_nam_va_cau_vom_da_xuan_truong",
@@ -2413,7 +2884,16 @@
         "T_E04_N00",
         "T_E04_S01"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "cau_treo_nam_ho_dankia_suoi_vang_dong_va_deo_ankroet_ha",
@@ -2459,7 +2939,16 @@
         "T_W04_N04",
         "T_W05_N04"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "deo_suon_bac_langbiang_bidoup_tay_va_cau_vom_da_suoi_da_nhim_thuong",
@@ -2507,7 +2996,16 @@
         "T_W01_N04",
         "T_W01_N06"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "cau_treo_hem_vuc_nam_deo_prenn_va_deo_lien_khuong_tay_nui_voi",
@@ -2555,7 +3053,16 @@
         "T_W04_S03",
         "T_W04_S04"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "deo_suon_dong_hon_bo_da_loc_tay_va_cau_vom_da_suoi_xuan_tho_dong",
@@ -2604,7 +3111,16 @@
         "T_E04_N00",
         "T_E04_S01"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "cau_treo_hem_vuc_nam_me_linh_va_deo_ta_nung_tay_nam_ban",
@@ -2653,7 +3169,16 @@
         "T_W05_S01",
         "T_W05_S02"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "deo_dankia_bac_suon_nam_radar_va_cau_vom_da_suoi_langbiang_tay",
@@ -2702,7 +3227,16 @@
         "T_W03_N05",
         "T_W04_N05"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "cau_treo_tay_ho_tuyen_lam_va_deo_bac_dinh_pinhatt_cam_ly",
@@ -2751,7 +3285,16 @@
         "T_W03_S02",
         "T_W03_S03"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "deo_cau_dat_tay_trai_mat_dong_va_cau_vom_da_suoi_da_quy_bac",
@@ -2800,7 +3343,16 @@
         "T_W03_N05",
         "T_W04_N05"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "cau_treo_tay_ho_suoi_vang_va_deo_bac_dap_ankroet_da_phu_tay",
@@ -2849,7 +3401,16 @@
         "T_W03_S02",
         "T_W03_S03"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "deo_suon_tay_langbiang_nam_cu_lan_va_cau_vom_da_suoi_da_nghit_thuong",
@@ -2898,7 +3459,16 @@
         "T_W03_N05",
         "T_W04_N05"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "cau_treo_nam_thac_datanla_va_deo_dong_deo_prenn_khe_sanh_nam",
@@ -2947,7 +3517,16 @@
         "T_W03_S02",
         "T_W03_S03"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "deo_suon_tay_hon_bo_bac_thai_phien_va_cau_vom_da_suoi_da_thien_bac",
@@ -2996,7 +3575,16 @@
         "T_W03_N05",
         "T_W04_N05"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "cau_treo_nam_deo_ta_nung_va_deo_dong_nam_ban_me_linh_tay",
@@ -3045,7 +3633,16 @@
         "T_W03_S02",
         "T_W03_S03"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "deo_nam_xuan_tho_tay_tram_hanh_va_cau_vom_da_suoi_phat_chi_bac",
@@ -3094,7 +3691,16 @@
         "T_W03_N05",
         "T_W04_N05"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "cau_treo_dong_ho_suoi_vang_va_deo_bac_doi_da_phu_thung_lung_vang_nam",
@@ -3143,7 +3749,16 @@
         "T_W03_S02",
         "T_W03_S03"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "deo_nam_xuan_tho_tay_tram_hanh_va_cau_vom_da_suoi_phat_chi_bac",
@@ -3190,7 +3805,16 @@
         "T_W01_N05",
         "T_W01_N06"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "cau_treo_dong_ho_suoi_vang_va_deo_bac_doi_da_phu_thung_lung_vang_nam",
@@ -3238,7 +3862,16 @@
         "T_W03_S02",
         "T_W03_S03"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "deo_nam_xuan_tho_tay_tram_hanh_va_cau_vom_da_suoi_phat_chi_bac",
@@ -3285,7 +3918,16 @@
         "T_E04_N00",
         "T_E04_S01"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "cau_treo_dong_ho_suoi_vang_va_deo_bac_doi_da_phu_thung_lung_vang_nam",
@@ -3332,7 +3974,16 @@
         "T_W04_N04",
         "T_W05_N04"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "deo_nam_xuan_tho_tay_tram_hanh_va_cau_vom_da_suoi_phat_chi_bac",
@@ -3378,7 +4029,16 @@
         "T_E02_N02",
         "T_E02_N03"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "cau_treo_dong_ho_suoi_vang_va_deo_bac_doi_da_phu_thung_lung_vang_nam",
@@ -3423,7 +4083,16 @@
         "T_W02_S03",
         "T_W02_S04"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "deo_nam_xuan_tho_tay_tram_hanh_va_cau_vom_da_suoi_phat_chi_bac",
@@ -3472,7 +4141,16 @@
         "T_W01_N03",
         "T_W01_N04"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "cau_treo_dong_ho_suoi_vang_va_deo_bac_doi_da_phu_thung_lung_vang_nam",
@@ -3518,7 +4196,16 @@
         "T_W04_N01",
         "T_W04_S01"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "deo_dong_tram_hanh_nam_cau_dat_va_cau_vom_da_suoi_phat_chi_dong",
@@ -3561,7 +4248,16 @@
         "T_E03_S02",
         "T_E03_S03"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "cau_treo_bac_ho_suoi_vang_va_deo_tay_dankia_da_nghit_nam",
@@ -3606,7 +4302,16 @@
         "T_W04_N03",
         "T_W04_N04"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "deo_bac_langbiang_tay_da_sar_va_cau_vom_da_suoi_da_sar_thuong",
@@ -3649,7 +4354,16 @@
         "T_W01_N05",
         "T_W01_N06"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "cau_treo_bac_ta_nung_va_deo_dong_suoi_can_cam_ly_thuong",
@@ -3694,7 +4408,16 @@
         "T_W04_N01",
         "T_W04_N02"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "deo_nam_hon_bo_bac_trai_mat_va_cau_vom_da_suoi_tu_phuoc_dong",
@@ -3737,7 +4460,16 @@
         "T_E03_N01",
         "T_E03_N02"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "cau_treo_bac_nam_ban_va_deo_nam_ta_nung_me_linh_trung",
@@ -3782,7 +4514,16 @@
         "T_W04_S02",
         "T_W04_S03"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "deo_dong_cau_dat_bac_tram_hanh_va_cau_vom_da_suoi_da_tho_nam",
@@ -3829,7 +4570,16 @@
         "T_E04_N00",
         "T_E04_S01"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "cau_treo_tay_ho_tuyen_lam_va_deo_nam_thac_datanla_nui_voi_bac",
@@ -3874,7 +4624,16 @@
         "T_W02_S03",
         "T_W02_S04"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "deo_tay_dankia_nam_ankroet_va_cau_vom_da_suoi_vang_tay",
@@ -3920,7 +4679,16 @@
         "T_W04_N02",
         "T_W04_N03"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "cau_treo_bac_xuan_tho_va_deo_dong_hon_bo_da_sar_nam",
@@ -3966,7 +4734,16 @@
         "T_W01_N02",
         "T_W01_N03"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "deo_nam_bidoup_dong_da_nhim_va_cau_vom_da_suoi_da_nhim_thuong",
@@ -4013,7 +4790,16 @@
         "T_E03_N02",
         "T_E03_N03"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "cau_treo_tay_deo_ta_nung_va_deo_nam_me_linh_thac_voi_bac",
@@ -4059,7 +4845,16 @@
         "T_W05_S01",
         "T_W05_S02"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "deo_tay_langbiang_bac_radar_va_cau_vom_da_suoi_dankia_thuong",
@@ -4106,7 +4901,16 @@
         "T_W04_N04",
         "T_W04_N05"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "cau_treo_tay_deo_prenn_va_deo_nam_ho_tuyen_lam_dinh_an_bac",
@@ -4152,7 +4956,16 @@
         "T_W03_S03",
         "T_W03_S04"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "deo_tay_hon_bo_bac_da_sar_va_cau_vom_da_suoi_da_sar_tay",
@@ -4196,7 +5009,16 @@
         "T_E02_N02",
         "T_E02_N03"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "cau_treo_nam_deo_ta_nung_va_deo_tay_cam_ly_me_linh_bac",
@@ -4241,7 +5063,16 @@
         "T_W04_S01",
         "T_W04_S02"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "deo_tay_tram_hanh_nam_xuan_tho_va_cau_vom_da_suoi_da_tho_tay",
@@ -4284,7 +5115,16 @@
         "T_E04_N00",
         "T_E04_S01"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "cau_treo_dong_ho_suoi_vang_va_deo_nam_lang_cu_lan_ankroet_dong",
@@ -4328,7 +5168,16 @@
         "T_W03_N04",
         "T_W03_N05"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "deo_tay_bidoup_nam_langbiang_va_cau_vom_da_suoi_da_nghit_bac",
@@ -4374,7 +5223,16 @@
         "T_W01_N05",
         "T_W01_N06"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "cau_treo_dong_ho_tuyen_lam_va_deo_bac_mimosa_khe_sanh_tay",
@@ -4418,7 +5276,16 @@
         "T_W01_S02",
         "T_W01_S03"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "deo_dong_hon_bo_tay_xuan_tho_va_cau_vom_da_suoi_tu_phuoc_tay",
@@ -4463,7 +5330,16 @@
         "T_E03_N02",
         "T_E03_N03"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "cau_treo_nam_ho_suoi_vang_va_deo_bac_ta_nung_van_thanh_bac",
@@ -4508,7 +5384,16 @@
         "T_W04_N01",
         "T_W04_N02"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "deo_bac_cau_dat_tay_tram_hanh_va_cau_vom_da_suoi_da_loc_dong",
@@ -4552,7 +5437,16 @@
         "T_E04_N00",
         "T_E04_S01"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "cau_treo_dong_ho_dankia_va_deo_tay_dinh_radar_lac_duong_nam",
@@ -4597,7 +5491,16 @@
         "T_W02_N03",
         "T_W02_N04"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "deo_bac_trai_mat_nam_da_sar_va_cau_vom_da_suoi_da_sar_nam",
@@ -4641,7 +5544,16 @@
         "T_E03_N02",
         "T_E03_N03"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "cau_treo_dong_lang_cu_lan_va_deo_bac_ankroet_tay_langbiang",
@@ -4688,7 +5600,16 @@
         "T_W04_N04",
         "T_W04_N05"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "deo_dong_thai_phien_bac_xuan_tho_va_cau_vom_da_suoi_than_tho_dong",
@@ -4734,7 +5655,16 @@
         "T_E04_N00",
         "T_E04_S01"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "cau_treo_tay_deo_ta_nung_va_deo_bac_nam_ban_me_linh_tay",
@@ -4780,7 +5710,16 @@
         "T_W04_S03",
         "T_W05_S01"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "deo_nam_langbiang_bac_da_thien_va_cau_vom_da_suoi_da_thien_bac",
@@ -4827,7 +5766,16 @@
         "T_E02_N03",
         "T_W01_N06"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "cau_treo_tay_ho_tuyen_lam_va_deo_nam_prenn_datanla_tay",
@@ -4873,7 +5821,16 @@
         "T_W02_S04",
         "T_W03_S03"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "deo_bac_tram_hanh_dong_xuan_tho_va_cau_vom_da_suoi_tram_hanh_bac",
@@ -4922,7 +5879,16 @@
         "T_E04_N00",
         "T_E04_S01"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     },
     {
       "id": "cau_treo_tay_ho_suoi_vang_va_deo_bac_lang_cu_lan_ankroet_tay",
@@ -4968,7 +5934,498 @@
         "T_W04_N05",
         "T_W05_N04"
       ],
-      "khr_materials_transmission": false
+      "khr_materials_transmission": false,
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
+    },
+    {
+      "asset_id": "p2_w1_ring0_ho_xuan_huong_granite_curbs_balustrades_swan_docks_hoa_binh_shophouse_forecourts_0to15m",
+      "glb_sequence_number": 109,
+      "wave": "T9_P2_W1",
+      "phase": "PHASE_2_MICRO_DETAIL_FIX_AND_GRAPHICS",
+      "category": "pedestrian_0to15m_lakeside_curbs_balustrades_swan_docks_shophouse_forecourts",
+      "file": "p2_w1_ring0_ho_xuan_huong_granite_curbs_balustrades_swan_docks_hoa_binh_shophouse_forecourts_0to15m.glb",
+      "file_size_bytes": 3667932,
+      "vertex_count": 92112,
+      "triangle_count": 58734,
+      "bbox_min": [
+        -1309.134,
+        -23.451,
+        -551.878
+      ],
+      "bbox_max": [
+        1069.736,
+        52.347,
+        375.894
+      ],
+      "world_origin_anchor_m": [
+        -120.0,
+        0.25,
+        -60.0
+      ],
+      "tiles": [
+        "T_E00_N00",
+        "T_W01_N00",
+        "T_E01_N00",
+        "T_E00_N01"
+      ],
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false,
+      "id": "p2_w1_ring0_ho_xuan_huong_granite_curbs_balustrades_swan_docks_hoa_binh_shophouse_forecourts_0to15m",
+      "glb_path": "02_ASSETS_3D/transport_infra/p2_w1_ring0_ho_xuan_huong_granite_curbs_balustrades_swan_docks_hoa_binh_shophouse_forecourts_0to15m.glb",
+      "triangles": 58734,
+      "size_bytes": 3667932,
+      "tiles_covered": [
+        "T_E00_N00",
+        "T_W01_N00",
+        "T_E01_N00",
+        "T_E00_N01"
+      ],
+      "world_space_yup": true,
+      "gltf_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_y_rad": 0.0,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "asset_id": "p2_w1_ring0_ring1_datanla_prenn_cam_ly_waterfall_timber_bridges_stone_steps_and_trai_mat_cog_train_0to15m",
+      "glb_sequence_number": 110,
+      "milestone": "HISTORIC_110TH_GLB_MILESTONE",
+      "wave": "T9_P2_W1",
+      "phase": "PHASE_2_MICRO_DETAIL_FIX_AND_GRAPHICS",
+      "category": "pedestrian_0to15m_waterfall_timber_bridges_stone_steps_trai_mat_cog_train_and_landmark_forecourts",
+      "file": "p2_w1_ring0_ring1_datanla_prenn_cam_ly_waterfall_timber_bridges_stone_steps_and_trai_mat_cog_train_0to15m.glb",
+      "file_size_bytes": 4216676,
+      "vertex_count": 105146,
+      "triangle_count": 70016,
+      "bbox_min": [
+        -1950.087,
+        -62.119,
+        -1845.853
+      ],
+      "bbox_max": [
+        6190.548,
+        53.785,
+        6637.064
+      ],
+      "world_origin_anchor_m": [
+        1140.0,
+        6.2,
+        -210.0
+      ],
+      "tiles": [
+        "T_E00_S01",
+        "T_E00_S02",
+        "T_W01_S01",
+        "T_E01_N00",
+        "T_E02_N00",
+        "T_E03_N00"
+      ],
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false,
+      "id": "p2_w1_ring0_ring1_datanla_prenn_cam_ly_waterfall_timber_bridges_stone_steps_and_trai_mat_cog_train_0to15m",
+      "glb_path": "02_ASSETS_3D/transport_infra/p2_w1_ring0_ring1_datanla_prenn_cam_ly_waterfall_timber_bridges_stone_steps_and_trai_mat_cog_train_0to15m.glb",
+      "triangles": 70016,
+      "size_bytes": 4216676,
+      "tiles_covered": [
+        "T_E00_S01",
+        "T_E00_S02",
+        "T_W01_S01",
+        "T_E01_N00",
+        "T_E02_N00",
+        "T_E03_N00"
+      ],
+      "world_space_yup": true,
+      "gltf_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_y_rad": 0.0,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "id": "p2_w2_ring0_cau_ong_dao_yersin_bridge_balustrades_swan_piers_and_hoa_binh_villa_q1_q4_0to15m",
+      "asset_id": "p2_w2_ring0_cau_ong_dao_yersin_bridge_balustrades_swan_piers_and_hoa_binh_villa_q1_q4_0to15m",
+      "glb_sequence_number": 111,
+      "wave": "T9_P2_W2",
+      "phase": "PHASE_2_MICRO_DETAIL_FIX_AND_GRAPHICS",
+      "category": "pedestrian_0to15m_ong_dao_yersin_bridges_balustrades_swan_piers_and_villa_q1_q4_facades",
+      "file": "p2_w2_ring0_cau_ong_dao_yersin_bridge_balustrades_swan_piers_and_hoa_binh_villa_q1_q4_0to15m.glb",
+      "glb_path": "02_ASSETS_3D/transport_infra/p2_w2_ring0_cau_ong_dao_yersin_bridge_balustrades_swan_piers_and_hoa_binh_villa_q1_q4_0to15m.glb",
+      "file_size_bytes": 4340560,
+      "size_bytes": 4340560,
+      "vertex_count": 111984,
+      "triangle_count": 61716,
+      "triangles": 61716,
+      "bbox_min": [
+        -1131.877,
+        -6.245,
+        -561.403
+      ],
+      "bbox_max": [
+        741.802,
+        62.832,
+        506.67
+      ],
+      "sha256": "e89313a30a2b279a76ef757fb5c234e08fe6877ff53398424d87b45bd2ad42a9",
+      "world_space_yup": true,
+      "gltf_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_y_rad": 0.0,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_origin_anchor_m": [
+        -815.0,
+        0.45,
+        -160.0
+      ],
+      "tiles": [
+        "T_E00_N00",
+        "T_W01_N00",
+        "T_E01_N00",
+        "T_E00_N01"
+      ],
+      "tiles_covered": [
+        "T_E00_N00",
+        "T_W01_N00",
+        "T_E01_N00",
+        "T_E00_N01"
+      ],
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
+    },
+    {
+      "id": "p2_w2_ring1_deo_prenn_mimosa_ta_nung_guardrails_waterfall_footbridges_and_ga_da_lat_cog_turntable_0to15m",
+      "asset_id": "p2_w2_ring1_deo_prenn_mimosa_ta_nung_guardrails_waterfall_footbridges_and_ga_da_lat_cog_turntable_0to15m",
+      "glb_sequence_number": 112,
+      "wave": "T9_P2_W2",
+      "phase": "PHASE_2_MICRO_DETAIL_FIX_AND_GRAPHICS",
+      "category": "pedestrian_0to15m_prenn_mimosa_ta_nung_guardrails_waterfall_bridges_and_ga_da_lat_turntable",
+      "file": "p2_w2_ring1_deo_prenn_mimosa_ta_nung_guardrails_waterfall_footbridges_and_ga_da_lat_cog_turntable_0to15m.glb",
+      "glb_path": "02_ASSETS_3D/transport_infra/p2_w2_ring1_deo_prenn_mimosa_ta_nung_guardrails_waterfall_footbridges_and_ga_da_lat_cog_turntable_0to15m.glb",
+      "file_size_bytes": 4360796,
+      "size_bytes": 4360796,
+      "vertex_count": 105060,
+      "triangle_count": 82176,
+      "triangles": 82176,
+      "bbox_min": [
+        -6299.372,
+        -157.056,
+        -1751.131
+      ],
+      "bbox_max": [
+        6011.989,
+        56.789,
+        6669.868
+      ],
+      "sha256": "7265bbeee1d4637c5d46ad93e021417e4a91d0e192c69aeaf1a0a939d25a9011",
+      "world_space_yup": true,
+      "gltf_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_y_rad": 0.0,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_origin_anchor_m": [
+        1165.0,
+        6.25,
+        -215.0
+      ],
+      "tiles": [
+        "T_E00_S01",
+        "T_E00_S02",
+        "T_E00_S03",
+        "T_W01_N00",
+        "T_W02_N00",
+        "T_E01_N00",
+        "T_E03_N00"
+      ],
+      "tiles_covered": [
+        "T_E00_S01",
+        "T_E00_S02",
+        "T_E00_S03",
+        "T_W01_N00",
+        "T_W02_N00",
+        "T_E01_N00",
+        "T_E03_N00"
+      ],
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
+    },
+    {
+      "id": "p2_w3_ring0_ring1_tuyen_lam_than_tho_da_thien_promenades_swan_docks_and_french_villa_q1_q4_0to15m",
+      "asset_id": "p2_w3_ring0_ring1_tuyen_lam_than_tho_da_thien_promenades_swan_docks_and_french_villa_q1_q4_0to15m",
+      "glb_sequence_number": 113,
+      "wave": "T9_P2_W3",
+      "phase": "PHASE_2_MICRO_DETAIL_FIX_AND_GRAPHICS",
+      "category": "pedestrian_0to15m_tuyen_lam_than_tho_da_thien_promenades_swan_docks_and_french_villa_q1_q4_facades",
+      "file": "p2_w3_ring0_ring1_tuyen_lam_than_tho_da_thien_promenades_swan_docks_and_french_villa_q1_q4_0to15m.glb",
+      "glb_path": "02_ASSETS_3D/transport_infra/p2_w3_ring0_ring1_tuyen_lam_than_tho_da_thien_promenades_swan_docks_and_french_villa_q1_q4_0to15m.glb",
+      "file_size_bytes": 4136036,
+      "size_bytes": 4136036,
+      "vertex_count": 106704,
+      "triangle_count": 58752,
+      "triangles": 58752,
+      "bbox_min": [
+        -1491.225,
+        -108.0,
+        -3811.552
+      ],
+      "bbox_max": [
+        4480.189,
+        56.04,
+        5243.016
+      ],
+      "sha256": "7781a352ae0c5dfa6d468b512f275a9f0228e4e267e9b2cce628ae744ebddd7d",
+      "world_space_yup": true,
+      "gltf_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_y_rad": 0.0,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_origin_anchor_m": [
+        -1040.0,
+        0.45,
+        4920.0
+      ],
+      "tiles": [
+        "T_E00_N00",
+        "T_W01_S02",
+        "T_E02_N01",
+        "T_E00_N02",
+        "T_E01_N00"
+      ],
+      "tiles_covered": [
+        "T_E00_N00",
+        "T_W01_S02",
+        "T_E02_N01",
+        "T_E00_N02",
+        "T_E01_N00"
+      ],
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
+    },
+    {
+      "id": "p2_w3_ring1_datanla_prenn_cam_ly_canyon_timber_bridges_stone_steps_and_trai_mat_linh_phuoc_cog_viaduct_0to15m",
+      "asset_id": "p2_w3_ring1_datanla_prenn_cam_ly_canyon_timber_bridges_stone_steps_and_trai_mat_linh_phuoc_cog_viaduct_0to15m",
+      "glb_sequence_number": 114,
+      "wave": "T9_P2_W3",
+      "phase": "PHASE_2_MICRO_DETAIL_FIX_AND_GRAPHICS",
+      "category": "pedestrian_0to15m_waterfall_canyon_timber_bridges_stone_steps_and_trai_mat_linh_phuoc_cog_viaduct",
+      "file": "p2_w3_ring1_datanla_prenn_cam_ly_canyon_timber_bridges_stone_steps_and_trai_mat_linh_phuoc_cog_viaduct_0to15m.glb",
+      "glb_path": "02_ASSETS_3D/transport_infra/p2_w3_ring1_datanla_prenn_cam_ly_canyon_timber_bridges_stone_steps_and_trai_mat_linh_phuoc_cog_viaduct_0to15m.glb",
+      "file_size_bytes": 3872716,
+      "size_bytes": 3872716,
+      "vertex_count": 96136,
+      "triangle_count": 65300,
+      "triangles": 65300,
+      "bbox_min": [
+        -1993.313,
+        -62.748,
+        -501.467
+      ],
+      "bbox_max": [
+        5910.461,
+        55.626,
+        6665.411
+      ],
+      "sha256": "d4874c268e038e02b74558ee465ca974e43ce0b22d5190c1897936cc60ec7cb0",
+      "world_space_yup": true,
+      "gltf_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_y_rad": 0.0,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "world_origin_anchor_m": [
+        3480.0,
+        24.5,
+        -320.0
+      ],
+      "tiles": [
+        "T_E00_S02",
+        "T_E00_S03",
+        "T_W01_N00",
+        "T_E01_N00",
+        "T_E02_N00",
+        "T_E03_N00"
+      ],
+      "tiles_covered": [
+        "T_E00_S02",
+        "T_E00_S03",
+        "T_W01_N00",
+        "T_E01_N00",
+        "T_E02_N00",
+        "T_E03_N00"
+      ],
+      "dem_authority": "ESA_COPERNICUS_GLO30_1479_5M_DATUM",
+      "aws_terrarium_z15_usage_pct": 0.0,
+      "foundation_skirt_depth_m": -3.5,
+      "floating_segments": 0,
+      "exposed_foundations": 0,
+      "road_overlap_pct": 0.0,
+      "water_overlap_pct": 0.0,
+      "khr_materials_transmission_count": 0,
+      "trapped_at_origin_0_0_0": false
     }
-  ]
+  ],
+  "version": "11.2.0-PHASE2-W3-WAVE57-114GLBS-14.28M-TRIS-COPERNICUS-GLO30",
+  "current_phase": "PHASE_2_MICRO_DETAIL_FIX_AND_GRAPHICS",
+  "updated_at": "2026-11-28T09:17:30Z",
+  "outer_expansion_terminated": true,
+  "active_scope": "RING_0 (6x6 km, 9 tiles) + RING_1 (14x14 km, 49 tiles) within 116 existing tiles",
+  "dem_authority": {
+    "source": "ESA_COPERNICUS_GLO30_DEM",
+    "ho_xuan_huong_datum_msl_m": 1479.5,
+    "y_local_datum_m": 0.0,
+    "aws_terrarium_z15_forbidden": true,
+    "aws_terrarium_z15_usage_pct": 0.0,
+    "foundation_skirt_depth_m": -3.5,
+    "reclamped_glb_assets": 114,
+    "floating_structures": 0,
+    "exposed_foundations": 0
+  },
+  "closed_loop_qa_synchronization": {
+    "urban_plan_qa_folder_id": "1GfkADePoSSAnSCLhEbGUw7Tgns-f21dk",
+    "urban_plan_sectors_resolved": [
+      "T_E00_N00_NW",
+      "T_E00_N00_NE",
+      "T_E00_N00_SW",
+      "T_E00_N00_SE",
+      "T_W01_N00",
+      "T_E01_N00",
+      "T_E00_N01",
+      "T_E00_S01"
+    ],
+    "urban_plan_road_intrusion_tris_before_after": [
+      32089,
+      0
+    ],
+    "urban_plan_water_intrusion_tris_before_after": [
+      9,
+      0
+    ],
+    "landmark_plan_qa_folder_id": "1_Mrqhi6RbvFMlYBdl-KX3isT4z1yAPFw",
+    "landmark_tickets_resolved": [
+      "B01_HERO_T_E00_N00",
+      "B02_HERO_OUTER_01",
+      "B02_HERO_OUTER_02",
+      "B03_LANDMARKS_01",
+      "B03_LANDMARKS_02",
+      "B05_TOURISM_01"
+    ],
+    "synchronized_manifests": {
+      "landmarks_manifest.json": {
+        "file_id": "1mS-cpnFMJZqcNNc4h-yR73HrJq7hX-X7",
+        "count": 224,
+        "trapped_at_0_0_0": 0
+      },
+      "hero_landmarks_manifest.json": {
+        "file_id": "1_tE9ZsPwCd8OwVm5awQXadhIq_I1kjZT",
+        "count": 344,
+        "trapped_at_0_0_0": 0
+      },
+      "french_villas_manifest.json": {
+        "file_id": "1Q3NIRFDPlx3eZ7c_bFq7oDW_cmZx-O0I",
+        "count": 542,
+        "trapped_at_0_0_0": 0
+      },
+      "tourism_complexes_manifest.json": {
+        "file_id": "1BbsKrd-nDPG8WgSsuFyQoj73ZY9iB0r5",
+        "count": 54,
+        "trapped_at_0_0_0": 0
+      },
+      "transport_infra_manifest.json": {
+        "count": 114,
+        "trapped_at_0_0_0": 0
+      }
+    },
+    "traffic_error_qa_folder_id": "1hw-A3XtOG8tZakVXEv5o7SFFd4qPG8zD",
+    "latest_traffic_ticket_resolved": "TRAFFIC_REWORK_20261128_1608",
+    "batch70_71_sub0005m_max_seam_dy_m": 0.0036,
+    "latest_traffic_ticket_file_id": "1M57Yxrqv9BBPucVyJgkS1kKcrMR65OnZ",
+    "applied_landmark_fix_b01_b05_all_file_id": "1n4xGz6KaIvLH4CLFaSg9G8Jnc-a3GDaF",
+    "batch72_73_full49_ring0_ring1_sub0004m_mean_rmse_m": 0.0022,
+    "project_116tiles_mean_dem_rmse_m": 0.003,
+    "applied_urban_plan_fix_w59_file_id": "1ENgSUHLW0qOzc_I2dYHbtfIN91nzFb9c"
+  },
+  "total_glb_assets": 114,
+  "total_vertices": 21704951,
+  "total_file_size_bytes": 724268448
 }
