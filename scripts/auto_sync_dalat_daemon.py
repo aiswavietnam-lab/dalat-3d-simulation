@@ -34,6 +34,7 @@ LOCK_FILE = LOG_DIR / "sync.lock"
 DRIVE_SUBPATH = pathlib.Path("My Drive") / "02 JOB" / "02 WORKING" / "VIBE CODE" / "DALAT_3D_SIMULATION"
 CODE_PREFIXES = ("index.html", "css/", "js/", "scripts/", ".github/", ".gitignore")
 ASSET_PREFIXES = ("assets/", "api/", "data/")
+STATE_FILES_ALLOWED = ("scripts/drive_state.json",)
 MAX_LOG_BYTES = 2 * 1024 * 1024
 ICT_TZ = datetime.timezone(datetime.timedelta(hours=7))
 
@@ -167,7 +168,10 @@ def main() -> int:
             return 0
 
         pre_status = _git_status_paths()
-        dirty_code_files = [p for _, p in pre_status if p.startswith(CODE_PREFIXES)]
+        dirty_code_files = [
+            p for _, p in pre_status
+            if p.startswith(CODE_PREFIXES) and p not in STATE_FILES_ALLOWED
+        ]
         if dirty_code_files:
             _log(f"[WARN] Phát hiện mã nguồn web chưa commit ({dirty_code_files[:5]}), sẽ đồng bộ asset nhưng KHÔNG tự commit/push.")
 
@@ -202,7 +206,10 @@ def main() -> int:
             return sync_res.returncode
 
         post_status = _git_status_paths()
-        asset_changes = [p for _, p in post_status if p.startswith(ASSET_PREFIXES)]
+        asset_changes = [
+            p for _, p in post_status
+            if p.startswith(ASSET_PREFIXES) or p in STATE_FILES_ALLOWED
+        ]
 
         if args.dry_run:
             _log(f"[DRY_RUN] Hoàn tất đồng bộ cục bộ. Số asset thay đổi: {len(asset_changes)}")
@@ -220,8 +227,12 @@ def main() -> int:
             _write_status("NO_CHANGES", "No new or updated assets from Drive.", changed_assets=0)
             return 0
 
-        # Chỉ stage đúng 3 thư mục tài sản 3D & chỉ mục để giữ sạch nhánh main
-        add_res = _run_quiet(["git", "add", "-A", "--", "assets", "api", "data"], REPO_ROOT, timeout=120)
+        # Chỉ stage đúng thư mục tài sản 3D, chỉ mục & scripts/drive_state.json để giữ sạch nhánh main
+        add_res = _run_quiet(
+            ["git", "add", "-A", "--", "assets", "api", "data", "scripts/drive_state.json"],
+            REPO_ROOT,
+            timeout=120,
+        )
         if add_res.returncode != 0:
             raise RuntimeError(f"git add failed: {add_res.stderr.strip()}")
 
