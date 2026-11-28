@@ -4122,7 +4122,7 @@
         "ext": ".glb",
         "tile_id": "T_E00_N01",
         "url": "./assets/hero_landmarks_ultra/ultra_lm_30_thien_vien_van_hanh.glb",
-        "size_bytes": 2174972,
+        "size_bytes": 3071376,
         "gltf_position": [
           -376.723,
           30.532,
@@ -4139,7 +4139,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_S01",
         "url": "./assets/hero_landmarks_ultra/ultra_lm_31_nha_tho_du_sinh.glb",
-        "size_bytes": 2481220,
+        "size_bytes": 2355468,
         "gltf_position": [
           -2369.792,
           3.085,
@@ -4156,7 +4156,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_S03",
         "url": "./assets/hero_landmarks_ultra/ultra_lm_32_duong_ham_dieu_khac.glb",
-        "size_bytes": 2558784,
+        "size_bytes": 3677036,
         "gltf_position": [
           -2914.347,
           -40.0,
@@ -4207,7 +4207,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_N00",
         "url": "./assets/hero_landmarks_ultra/ultra_lm_35_dinh_tinh_truong.glb",
-        "size_bytes": 2742260,
+        "size_bytes": 3086792,
         "gltf_position": [
           -1313.357,
           3.075,
@@ -4336,7 +4336,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_N02",
         "url": "./assets/landmarks/lm_42_nha_tho_thanh_mau.glb",
-        "size_bytes": 364256,
+        "size_bytes": 539924,
         "gltf_position": [
           -1934.149,
           52.089,
@@ -4393,7 +4393,7 @@
         "ext": ".glb",
         "tile_id": "T_E01_N00",
         "url": "./assets/landmarks/lm_45_nha_tho_chi_lang.glb",
-        "size_bytes": 309328,
+        "size_bytes": 484968,
         "gltf_position": [
           1583.673,
           41.53,
@@ -4412,7 +4412,7 @@
         "ext": ".glb",
         "tile_id": "T_E02_N01",
         "url": "./assets/landmarks/lm_46_ho_than_tho_doi_thong_hai_mo.glb",
-        "size_bytes": 321488,
+        "size_bytes": 532628,
         "gltf_position": [
           3478.723,
           36.578,
@@ -4431,7 +4431,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_N02",
         "url": "./assets/landmarks/lm_47_san_van_dong_da_lat.glb",
-        "size_bytes": 381896,
+        "size_bytes": 466680,
         "gltf_position": [
           -1531.178,
           13.66,
@@ -5067,7 +5067,7 @@
         "ext": ".glb",
         "tile_id": "T_E00_N00",
         "url": "./assets/french_villas/fv_hb_07_tang_bat_ho_doc_song_lo_stepped_villas.glb",
-        "size_bytes": 1036800,
+        "size_bytes": 955944,
         "gltf_position": [
           -956.0,
           13.299,
@@ -5193,7 +5193,7 @@
         "ext": ".glb",
         "tile_id": "T_E01_N00",
         "url": "./assets/french_villas/fv_hv_11_hung_vuong_governor_chalet.glb",
-        "size_bytes": 869908,
+        "size_bytes": 946800,
         "gltf_position": [
           1765.0,
           -30.243,
@@ -5211,7 +5211,7 @@
         "ext": ".glb",
         "tile_id": "T_E01_N00",
         "url": "./assets/french_villas/fv_hv_12_hung_vuong_pine_ridge_manor.glb",
-        "size_bytes": 869744,
+        "size_bytes": 953572,
         "gltf_position": [
           1995.0,
           23.991,
@@ -5373,7 +5373,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_N00",
         "url": "./assets/french_villas/fv_ll_05_ana_mandara_villa_14_cochinchine_spa.glb",
-        "size_bytes": 883980,
+        "size_bytes": 946832,
         "gltf_position": [
           -2118.0,
           -1.783,
@@ -5391,7 +5391,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_N00",
         "url": "./assets/french_villas/fv_ll_06_ana_mandara_villa_17_basque.glb",
-        "size_bytes": 795924,
+        "size_bytes": 946784,
         "gltf_position": [
           -2175.0,
           -8.502,
@@ -5535,7 +5535,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_N00",
         "url": "./assets/french_villas/fv_nb_10_doc_nha_bo_upper_crest_french_manor.glb",
-        "size_bytes": 875400,
+        "size_bytes": 953496,
         "gltf_position": [
           -1396.0,
           3.737,
@@ -5823,7 +5823,7 @@
         "ext": ".glb",
         "tile_id": "T_E01_N00",
         "url": "./assets/french_villas/fv_qt_10_quang_trung_yersin_junction_mansard_15.glb",
-        "size_bytes": 898136,
+        "size_bytes": 953580,
         "gltf_position": [
           1474.0,
           25.502,
@@ -6093,7 +6093,7 @@
         "ext": ".glb",
         "tile_id": "T_E01_N00",
         "url": "./assets/french_villas/fv_thd_11_villa_26_basque_veranda.glb",
-        "size_bytes": 870596,
+        "size_bytes": 946760,
         "gltf_position": [
           1207.441,
           -14.046,
@@ -6111,7 +6111,7 @@
         "ext": ".glb",
         "tile_id": "T_E01_N00",
         "url": "./assets/french_villas/fv_thd_12_villa_28_art_deco_normandy.glb",
-        "size_bytes": 869032,
+        "size_bytes": 953460,
         "gltf_position": [
           1319.534,
           -37.876,
@@ -6129,7 +6129,7 @@
         "ext": ".glb",
         "tile_id": "T_E01_N00",
         "url": "./assets/french_villas/fv_thd_13_villa_30_east_gate.glb",
-        "size_bytes": 868144,
+        "size_bytes": 953476,
         "gltf_position": [
           1299.829,
           -25.427,
@@ -7564,7 +7564,7 @@
         "ext": ".glb",
         "tile_id": "T_E00_S02",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E00_S02_Q1.glb",
-        "size_bytes": 3246268
+        "size_bytes": 3236108
       },
       {
         "id": "osm_buildings_T_E00_S02_Q2",
@@ -7572,7 +7572,7 @@
         "ext": ".glb",
         "tile_id": "T_E00_S02",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E00_S02_Q2.glb",
-        "size_bytes": 3192304
+        "size_bytes": 3191624
       },
       {
         "id": "osm_buildings_T_E00_S02_Q3",
@@ -7580,7 +7580,7 @@
         "ext": ".glb",
         "tile_id": "T_E00_S02",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E00_S02_Q3.glb",
-        "size_bytes": 3322924
+        "size_bytes": 3322300
       },
       {
         "id": "osm_buildings_T_E00_S02_Q4",
@@ -7588,7 +7588,7 @@
         "ext": ".glb",
         "tile_id": "T_E00_S02",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E00_S02_Q4.glb",
-        "size_bytes": 3216252
+        "size_bytes": 3217864
       },
       {
         "id": "osm_buildings_T_E02_N00_Q1",
@@ -7596,7 +7596,7 @@
         "ext": ".glb",
         "tile_id": "T_E02_N00",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E02_N00_Q1.glb",
-        "size_bytes": 3274996
+        "size_bytes": 3275388
       },
       {
         "id": "osm_buildings_T_E02_N00_Q2",
@@ -7604,7 +7604,7 @@
         "ext": ".glb",
         "tile_id": "T_E02_N00",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E02_N00_Q2.glb",
-        "size_bytes": 3184964
+        "size_bytes": 3183884
       },
       {
         "id": "osm_buildings_T_E02_N00_Q3",
@@ -7612,7 +7612,7 @@
         "ext": ".glb",
         "tile_id": "T_E02_N00",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E02_N00_Q3.glb",
-        "size_bytes": 3181884
+        "size_bytes": 3193160
       },
       {
         "id": "osm_buildings_T_E02_N00_Q4",
@@ -7620,7 +7620,7 @@
         "ext": ".glb",
         "tile_id": "T_E02_N00",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E02_N00_Q4.glb",
-        "size_bytes": 3180116
+        "size_bytes": 3173916
       },
       {
         "id": "osm_buildings_T_W02_N00_Q1",
@@ -7692,7 +7692,7 @@
         "ext": ".glb",
         "tile_id": "T_E01_S02",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E01_S02_Q1.glb",
-        "size_bytes": 3252328
+        "size_bytes": 3234232
       },
       {
         "id": "osm_buildings_T_E01_S02_Q2",
@@ -7700,7 +7700,7 @@
         "ext": ".glb",
         "tile_id": "T_E01_S02",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E01_S02_Q2.glb",
-        "size_bytes": 3314996
+        "size_bytes": 3303616
       },
       {
         "id": "osm_buildings_T_E01_S02_Q3",
@@ -7708,7 +7708,7 @@
         "ext": ".glb",
         "tile_id": "T_E01_S02",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E01_S02_Q3.glb",
-        "size_bytes": 3250912
+        "size_bytes": 3256108
       },
       {
         "id": "osm_buildings_T_E01_S02_Q4",
@@ -7716,7 +7716,7 @@
         "ext": ".glb",
         "tile_id": "T_E01_S02",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E01_S02_Q4.glb",
-        "size_bytes": 3326204
+        "size_bytes": 3326944
       },
       {
         "id": "osm_buildings_T_E02_N01_Q1",
@@ -7756,7 +7756,7 @@
         "ext": ".glb",
         "tile_id": "T_E02_S01",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E02_S01_Q1.glb",
-        "size_bytes": 3303108
+        "size_bytes": 3326328
       },
       {
         "id": "osm_buildings_T_E02_S01_Q2",
@@ -7764,7 +7764,7 @@
         "ext": ".glb",
         "tile_id": "T_E02_S01",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E02_S01_Q2.glb",
-        "size_bytes": 3196288
+        "size_bytes": 3236092
       },
       {
         "id": "osm_buildings_T_E02_S01_Q3",
@@ -7772,7 +7772,7 @@
         "ext": ".glb",
         "tile_id": "T_E02_S01",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E02_S01_Q3.glb",
-        "size_bytes": 3192228
+        "size_bytes": 3193344
       },
       {
         "id": "osm_buildings_T_E02_S01_Q4",
@@ -7780,7 +7780,7 @@
         "ext": ".glb",
         "tile_id": "T_E02_S01",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E02_S01_Q4.glb",
-        "size_bytes": 3285668
+        "size_bytes": 3284280
       },
       {
         "id": "osm_buildings_T_W01_N02_Q1",
@@ -7788,7 +7788,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_N02",
         "url": "./assets/osm_true_buildings/osm_buildings_T_W01_N02_Q1.glb",
-        "size_bytes": 3263612
+        "size_bytes": 3257816
       },
       {
         "id": "osm_buildings_T_W01_N02_Q2",
@@ -7796,7 +7796,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_N02",
         "url": "./assets/osm_true_buildings/osm_buildings_T_W01_N02_Q2.glb",
-        "size_bytes": 3294872
+        "size_bytes": 3294504
       },
       {
         "id": "osm_buildings_T_W01_N02_Q3",
@@ -7804,7 +7804,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_N02",
         "url": "./assets/osm_true_buildings/osm_buildings_T_W01_N02_Q3.glb",
-        "size_bytes": 3212516
+        "size_bytes": 3217820
       },
       {
         "id": "osm_buildings_T_W01_N02_Q4",
@@ -7812,7 +7812,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_N02",
         "url": "./assets/osm_true_buildings/osm_buildings_T_W01_N02_Q4.glb",
-        "size_bytes": 3162296
+        "size_bytes": 3163596
       },
       {
         "id": "osm_buildings_T_W01_S02_Q1",
@@ -7884,7 +7884,7 @@
         "ext": ".glb",
         "tile_id": "T_W02_S01",
         "url": "./assets/osm_true_buildings/osm_buildings_T_W02_S01_Q1.glb",
-        "size_bytes": 3242920
+        "size_bytes": 3250276
       },
       {
         "id": "osm_buildings_T_W02_S01_Q2",
@@ -7892,7 +7892,7 @@
         "ext": ".glb",
         "tile_id": "T_W02_S01",
         "url": "./assets/osm_true_buildings/osm_buildings_T_W02_S01_Q2.glb",
-        "size_bytes": 3208020
+        "size_bytes": 3208576
       },
       {
         "id": "osm_buildings_T_W02_S01_Q3",
@@ -7900,7 +7900,7 @@
         "ext": ".glb",
         "tile_id": "T_W02_S01",
         "url": "./assets/osm_true_buildings/osm_buildings_T_W02_S01_Q3.glb",
-        "size_bytes": 3302924
+        "size_bytes": 3303336
       },
       {
         "id": "osm_buildings_T_W02_S01_Q4",
@@ -7908,7 +7908,7 @@
         "ext": ".glb",
         "tile_id": "T_W02_S01",
         "url": "./assets/osm_true_buildings/osm_buildings_T_W02_S01_Q4.glb",
-        "size_bytes": 3240632
+        "size_bytes": 3234992
       },
       {
         "id": "osm_buildings_T_E02_N02_Q1",
