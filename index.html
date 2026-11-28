@@ -41,8 +41,12 @@
     </div>
   </div>
 
-  <!-- Cụm nút thao tác nhanh Sương mù / Chất lượng Render / Bay cảm ứng / Bảng điều khiển -->
+  <!-- Cụm nút thao tác nhanh Sương mù / Chất lượng Render / Thao tác SketchUp / Bay cảm ứng / Bảng điều khiển -->
   <div class="top-quick-bar" role="toolbar" aria-label="Thao tác nhanh Sương mù và Đồ họa">
+    <button id="quick-nav-mode-btn" class="glass-btn quick-pill-btn" type="button" title="Chuyển đổi song song giữa thao tác Mặc định Đà Lạt và chuẩn SketchUp (Ctrl+1..6, F2..F8, K, Space...)" aria-pressed="false">
+      <span class="pill-dot"></span>
+      <span id="quick-nav-mode-label">Chế độ: Mặc định</span>
+    </button>
     <button id="quick-fog-btn" class="glass-btn quick-pill-btn is-active" type="button" title="Bật / Tắt sương mù Đà Lạt (Phím F)" aria-pressed="true">
       <span class="pill-dot"></span>
       <span id="quick-fog-label">Sương mù: BẬT</span>
@@ -65,6 +69,18 @@
       <div class="tour-controls-row">
         <button id="start-tour-btn" class="tour-btn" type="button">▶ Tour Bay Tự Động Quanh Đà Lạt</button>
         <button id="stop-tour-btn" class="tour-stop-btn hidden" type="button" title="Dừng Tour">■</button>
+      </div>
+    </section>
+
+    <section class="panel-section">
+      <h2 class="section-title">Chế Độ Thao Tác (Song Song)</h2>
+      <div class="nav-mode-grid" role="group" aria-label="Chọn chế độ thao tác">
+        <button id="mode-btn-default" class="preset-btn active" type="button" title="Chuột trái Orbit, Phải Pan, W/A/S/D+Q/E Flycam">🖱 Mặc định Đà Lạt</button>
+        <button id="mode-btn-sketchup" class="preset-btn" type="button" title="Chuột giữa Orbit, Shift+Giữa/Phải Pan và toàn bộ phím tắt SketchUp trên máy">📐 Chuẩn SketchUp</button>
+      </div>
+      <div id="su-panel-extras" class="su-panel-extras hidden">
+        <button id="open-su-shortcuts-btn" class="su-mini-action-btn" type="button">⌨ Phím tắt SketchUp (Shift+S)</button>
+        <button id="open-su-pie-btn" class="su-mini-action-btn" type="button">◔ Pie Menu View (Alt+1)</button>
       </div>
     </section>
 
@@ -285,7 +301,7 @@
         <span id="gps-tile" class="gps-val gps-tile-highlight">T_E00_N00 (RING_0)</span>
       </div>
     </div>
-    <div class="controls-hint">
+    <div id="controls-hint-bar" class="controls-hint">
       <span><strong>Click công trình:</strong> Xem kiến trúc</span>
       <span><strong>Xoay:</strong> Chuột trái / giữa</span>
       <span><strong>Pan:</strong> Shift + Giữa / Phải</span>
@@ -294,6 +310,45 @@
       <span><strong>Phím F / G:</strong> Sương mù / Đồ họa</span>
     </div>
   </footer>
+
+  <!-- Bộ HUD Dành Riêng Cho Chế Độ SketchUp (Ẩn khi ở chế độ Mặc định) -->
+  <div id="su-toolbar" class="su-toolbar glass-panel hidden" role="toolbar" aria-label="Thanh công cụ SketchUp"></div>
+  <div id="su-scene-bar" class="su-scene-bar glass-panel hidden" aria-label="Danh sách Scene SketchUp"></div>
+  <div id="su-vcb-bar" class="su-vcb-bar glass-panel hidden" aria-live="polite">
+    <span id="su-vcb-tool" class="su-vcb-tool">Select (Space)</span>
+    <span id="su-vcb-label" class="su-vcb-label">Tâm/Cao độ</span>
+    <span id="su-vcb-value" class="su-vcb-value">FOV 48°</span>
+  </div>
+  <div id="su-zoom-box" class="su-zoom-box hidden" aria-hidden="true"></div>
+  <div id="su-label-layer" class="su-label-layer" aria-hidden="true"></div>
+  <div id="su-toast" class="su-toast hidden" role="status" aria-live="polite"></div>
+  <div id="su-pie-menu" class="su-pie-overlay hidden" role="menu" aria-label="Curic Pie Menu View"></div>
+
+  <!-- Modal Tra Cứu Phím Tắt SketchUp (Shift+S) -->
+  <div id="su-shortcuts-modal" class="su-modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="su-modal-title">
+    <div class="su-modal-card glass-panel">
+      <div class="su-modal-head">
+        <div>
+          <h3 id="su-modal-title">Phím Tắt SketchUp 2023 (Đồng Bộ Từ Máy Tính Của Bạn)</h3>
+          <p class="su-modal-sub">Bao gồm chuẩn chuột SketchUp, 197 lệnh tùy chỉnh (.bak) &amp; Curic Pie Menu View</p>
+        </div>
+        <button id="su-shortcuts-close" class="popup-close-btn" type="button" title="Đóng (Esc)">✕</button>
+      </div>
+      <input id="su-shortcuts-search" class="su-search-input" type="search" placeholder="Tìm nhanh phím tắt hoặc tên lệnh (VD: Top, X-Ray, Monochrome, Measure, Look...)" />
+      <div class="su-table-wrap">
+        <table class="su-shortcuts-table">
+          <thead>
+            <tr>
+              <th>Nhóm</th>
+              <th>Phím tắt</th>
+              <th>Chức năng trong Đà Lạt 3D</th>
+            </tr>
+          </thead>
+          <tbody id="su-shortcuts-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
 
   <!-- Bộ điều khiển bay cảm ứng cho điện thoại -->
   <div id="dalat-mobile-pad" class="mobile-touch-pad hidden" aria-label="Cần điều khiển bay cảm ứng">
@@ -319,6 +374,7 @@
   <script src="./js/tile_streamer.js"></script>
   <script src="./js/traffic_streamer.js"></script>
   <script src="./js/minimap_hud.js"></script>
+  <script src="./js/sketchup_controls.js"></script>
   <script src="./js/dalat_world_engine.js"></script>
 </body>
 </html>

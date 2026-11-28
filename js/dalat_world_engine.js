@@ -179,7 +179,10 @@
           : null;
       if (this.realtime) {
         this.streamer.setWaterEnhancer((mat) => this.realtime.enhanceWaterMaterial(mat));
-        this.streamer.onStreamBatchSettled = () => this.realtime.markShadowDirty();
+        this.streamer.onStreamBatchSettled = () => {
+          this.realtime.markShadowDirty();
+          if (this.sketchup) this.sketchup.onNewGeometrySettled();
+        };
       }
 
       this.trafficStreamer =
@@ -206,6 +209,11 @@
       this.minimapHud =
         typeof window.DalatMinimapHud === 'function'
           ? new window.DalatMinimapHud(this)
+          : null;
+
+      this.sketchup =
+        typeof window.DalatSketchupController === 'function'
+          ? new window.DalatSketchupController(this)
           : null;
 
       this.clock = new THREE.Clock();
@@ -377,7 +385,11 @@
       this.hemiLight.color.set(preset.ambient_hex);
       this.hemiLight.intensity = preset.ambient_intensity;
 
-      this.streamer.applyEmissiveScale(preset.emissive_scale != null ? preset.emissive_scale : 0.2);
+      const emVal = preset.emissive_scale != null ? preset.emissive_scale : 0.2;
+      this.streamer.applyEmissiveScale(emVal);
+      if (this.trafficStreamer && typeof this.trafficStreamer.applyEmissiveScale === 'function') {
+        this.trafficStreamer.applyEmissiveScale(emVal);
+      }
 
       if (this.realtime) {
         this.realtime.syncClimate(preset, this.sunOffsetVec);
@@ -393,6 +405,11 @@
       document.querySelectorAll('#climate-grid .preset-btn').forEach((btn) => {
         btn.classList.toggle('active', btn.dataset.climate === preset.id);
       });
+
+      if (this.sketchup && this.sketchup.faceStyle === 'hidden_line') {
+        this.sketchup._savedSceneBackground = skyColor.clone();
+        this.sketchup.setFaceStyle('hidden_line');
+      }
     }
 
     /* ========================================================================
@@ -578,6 +595,14 @@
       if (shadowChk) shadowChk.checked = st.shadowsEnabled;
     }
 
+    setActiveCamera(cam) {
+      if (!cam) return;
+      this.camera = cam;
+      if (this.realtime && typeof this.realtime.setActiveCamera === 'function') {
+        this.realtime.setActiveCamera(cam);
+      }
+    }
+
     flyToPreset(preset) {
       if (!preset) return;
       const posArr = preset.position_gltf || preset.camera_pos_gltf;
@@ -590,7 +615,7 @@
         toPos: new THREE.Vector3().fromArray(posArr),
         fromTarget: this.target.clone(),
         toTarget: new THREE.Vector3().fromArray(tgtArr),
-        fromFov: this.camera.fov,
+        fromFov: this.camera.isPerspectiveCamera ? this.camera.fov : 48,
         toFov: preset.fov || preset.fov_deg || 48,
         onComplete: typeof preset.onComplete === 'function' ? preset.onComplete : null,
       };
@@ -667,6 +692,10 @@
       };
 
       dom.addEventListener('pointerdown', (e) => {
+        if (this.sketchup && this.sketchup.isSketchupMode()) {
+          this.sketchup.onPointerDown(e);
+          return;
+        }
         if (this.minimapHud && this.minimapHud.tourActive) {
           this.minimapHud.stopTour();
         }
@@ -703,6 +732,10 @@
       });
 
       dom.addEventListener('pointermove', (e) => {
+        if (this.sketchup && this.sketchup.isSketchupMode()) {
+          this.sketchup.onPointerMove(e);
+          return;
+        }
         if (this.activePointers.has(e.pointerId)) {
           this.activePointers.set(e.pointerId, { x: e.clientX, y: e.clientY, type: e.pointerType });
         }
@@ -757,6 +790,10 @@
       });
 
       const endDrag = (e) => {
+        if (this.sketchup && this.sketchup.isSketchupMode()) {
+          this.sketchup.onPointerUp(e);
+          return;
+        }
         const wasPinch = this.dragMode === 'pinch';
         this.activePointers.delete(e.pointerId);
         try {
@@ -801,6 +838,10 @@
       dom.addEventListener(
         'wheel',
         (e) => {
+          if (this.sketchup && this.sketchup.isSketchupMode()) {
+            this.sketchup.onWheel(e);
+            return;
+          }
           e.preventDefault();
           if (this.minimapHud && this.minimapHud.tourActive) {
             this.minimapHud.stopTour();
@@ -825,8 +866,11 @@
         { passive: false }
       );
 
-      // Flycam W/A/S/D + Q/E + Phím tắt F (Sương mù) / G (Đồ họa)
+      // Flycam W/A/S/D + Q/E + Phím tắt F (Sương mù) / G (Đồ họa) & Bộ phím tắt SketchUp
       window.addEventListener('keydown', (e) => {
+        if (this.sketchup && this.sketchup.isSketchupMode()) {
+          if (this.sketchup.onKeyDown(e)) return;
+        }
         if (['INPUT', 'TEXTAREA', 'SELECT'].includes(document.activeElement.tagName)) return;
         if (e.code === 'Escape' && this.minimapHud) {
           this.minimapHud.hideLandmarkPopup();
@@ -842,15 +886,26 @@
             return;
           }
         }
+        if (e.shiftKey && !e.ctrlKey && !e.altKey && !e.metaKey && e.code === 'KeyS') {
+          if (this.sketchup) {
+            e.preventDefault();
+            this.sketchup.toggleShortcutsModal();
+            return;
+          }
+        }
         this.keys.add(e.code);
       });
       window.addEventListener('keyup', (e) => {
+        if (this.sketchup) this.sketchup.onKeyUp(e);
         this.keys.delete(e.code);
       });
 
       window.addEventListener('resize', () => {
-        this.camera.aspect = window.innerWidth / window.innerHeight;
-        this.camera.updateProjectionMatrix();
+        if (this.camera.isPerspectiveCamera) {
+          this.camera.aspect = window.innerWidth / window.innerHeight;
+          this.camera.updateProjectionMatrix();
+        }
+        if (this.sketchup) this.sketchup.onResize();
         if (this.realtime) {
           this.realtime.onResize();
         } else {
@@ -943,8 +998,10 @@
 
       this.camera.position.lerpVectors(anim.fromPos, anim.toPos, t);
       this.target.lerpVectors(anim.fromTarget, anim.toTarget, t);
-      this.camera.fov = THREE.MathUtils.lerp(anim.fromFov, anim.toFov, t);
-      this.camera.updateProjectionMatrix();
+      if (this.camera.isPerspectiveCamera) {
+        this.camera.fov = THREE.MathUtils.lerp(anim.fromFov, anim.toFov, t);
+        this.camera.updateProjectionMatrix();
+      }
       this.camera.lookAt(this.target);
 
       if (rawT >= 1.0) {
@@ -1175,7 +1232,11 @@
       const elapsed = this.clock.elapsedTime;
       const now = performance.now();
 
-      this._updateFlycam(dt);
+      if (this.sketchup && this.sketchup.isSketchupMode()) {
+        this.sketchup.update(dt);
+      } else {
+        this._updateFlycam(dt);
+      }
       this._updateFlightAnimation();
       this._updateFogTransition(dt);
       this.streamer.update(dt, elapsed);

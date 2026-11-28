@@ -391,7 +391,7 @@
       if (/glazed_crimson|luu_ly/.test(n)) {
         return 'glazed_roof';
       }
-      if (/terracotta_gable|terracotta_tile|roof_tile|clay_roof/.test(n)) {
+      if (/terracotta_gable|terracotta_tile|roof_tile|clay_roof|marseille|ridge_cap/.test(n)) {
         return 'clay_roof';
       }
       if (/slate|mansard|shingle/.test(n)) {
@@ -404,7 +404,7 @@
       ) {
         return 'corrugated_metal';
       }
-      if (/brick|cdsp/.test(n)) {
+      if (/brick|cdsp|chimney_brick/.test(n)) {
         return 'clay_brick';
       }
       if (/terracotta_piste/.test(n)) {
@@ -424,11 +424,11 @@
       ) {
         return 'granite_paver';
       }
-      if (/wood|timber|truss|shutter|deck|cedar|columns_and_rafters/.test(n)) {
+      if (/wood|timber|truss|shutter|louver_wood|deck|cedar|columns_and_rafters/.test(n)) {
         return 'fine_wood';
       }
       if (
-        /iron|steel|brass|bronze|gilded|gold_accent|diagrid|tour_van|jeep_army|jeep_orange|jeep_sand/.test(
+        /iron|steel|brass|bronze|gilded|gold_accent|diagrid|tour_van|jeep_army|jeep_orange|jeep_sand|balcony_iron|wrought_iron|railing_iron/.test(
           n
         )
       ) {

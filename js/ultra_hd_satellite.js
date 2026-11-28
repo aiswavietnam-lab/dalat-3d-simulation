@@ -103,7 +103,10 @@
       };
       this._grassAlbedo = mkSolidTex(128, 128, 128, true);
       this._grassNormal = mkSolidTex(128, 128, 255, false);
+      this._grassRough = mkSolidTex(218, 218, 218, false);
       this._rockAlbedo = mkSolidTex(128, 128, 128, true);
+      this._rockNormal = mkSolidTex(128, 128, 255, false);
+      this._rockRough = mkSolidTex(192, 192, 192, false);
 
       this.sharedUniforms = {
         uDetailSatTex: { value: this.detailTex },
@@ -112,7 +115,10 @@
         uDetailInvSpanXZ: { value: new THREE.Vector2(1 / 600, 1 / 600) },
         uPbrGrassTex: { value: this._grassAlbedo },
         uPbrGrassNrm: { value: this._grassNormal },
+        uPbrGrassRgh: { value: this._grassRough },
         uPbrRockTex: { value: this._rockAlbedo },
+        uPbrRockNrm: { value: this._rockNormal },
+        uPbrRockRgh: { value: this._rockRough },
         uPbrTexReady: { value: 0.0 },
       };
 
@@ -136,9 +142,21 @@
           prepRepeat(tex, false);
           this.sharedUniforms.uPbrGrassNrm.value = tex;
         });
+        tLoader.load('./assets/pbr/lush_grass_rough.jpg', (tex) => {
+          prepRepeat(tex, false);
+          this.sharedUniforms.uPbrGrassRgh.value = tex;
+        });
         tLoader.load('./assets/pbr/stone_masonry_albedo.jpg', (tex) => {
           prepRepeat(tex, true);
           this.sharedUniforms.uPbrRockTex.value = tex;
+        });
+        tLoader.load('./assets/pbr/stone_masonry_normal.jpg', (tex) => {
+          prepRepeat(tex, false);
+          this.sharedUniforms.uPbrRockNrm.value = tex;
+        });
+        tLoader.load('./assets/pbr/stone_masonry_rough.jpg', (tex) => {
+          prepRepeat(tex, false);
+          this.sharedUniforms.uPbrRockRgh.value = tex;
         });
       }
 
@@ -177,7 +195,7 @@
 
       const shared = this.sharedUniforms;
       mat.customProgramCacheKey = function () {
-        return 'dalat_terrain_ultrahd_pbr_v3';
+        return 'dalat_terrain_ultrahd_pbr_v4';
       };
 
       mat.onBeforeCompile = function (shader) {
@@ -187,7 +205,10 @@
         shader.uniforms.uDetailInvSpanXZ = shared.uDetailInvSpanXZ;
         shader.uniforms.uPbrGrassTex = shared.uPbrGrassTex;
         shader.uniforms.uPbrGrassNrm = shared.uPbrGrassNrm;
+        shader.uniforms.uPbrGrassRgh = shared.uPbrGrassRgh;
         shader.uniforms.uPbrRockTex = shared.uPbrRockTex;
+        shader.uniforms.uPbrRockNrm = shared.uPbrRockNrm;
+        shader.uniforms.uPbrRockRgh = shared.uPbrRockRgh;
         shader.uniforms.uPbrTexReady = shared.uPbrTexReady;
 
         shader.vertexShader =
@@ -223,7 +244,10 @@
             'uniform vec2 uDetailInvSpanXZ;',
             'uniform sampler2D uPbrGrassTex;',
             'uniform sampler2D uPbrGrassNrm;',
+            'uniform sampler2D uPbrGrassRgh;',
             'uniform sampler2D uPbrRockTex;',
+            'uniform sampler2D uPbrRockNrm;',
+            'uniform sampler2D uPbrRockRgh;',
             'uniform float uPbrTexReady;',
             'varying vec2 vSatWorldXZ;',
             'varying vec3 vTerrainWorldPos;',
@@ -253,6 +277,10 @@
             .replace(
               '#include <map_fragment>',
               [
+                'float dlSplNear = 0.0;',
+                'float dlSplVeg = 0.0;',
+                'float dlSplRock = 0.0;',
+                'float dlSplBasalt = 0.0;',
                 '#ifdef USE_MAP',
                 '  vec4 texelColor = texture2D( map, vUv, -0.4 );',
                 '  texelColor = mapTexelToLinear( texelColor );',
@@ -275,28 +303,51 @@
                 '  float dlLum = dot(texelColor.rgb, vec3(0.299, 0.587, 0.114));',
                 '  texelColor.rgb = mix(vec3(dlLum), texelColor.rgb, 1.18);',
                 '  float dlVegMask = smoothstep(0.01, 0.09, texelColor.g - max(texelColor.r, texelColor.b) * 0.88);',
-                '  float dlRockMask = smoothstep(0.22, 0.55, dlSlope);',
+                '  float dlRockMask = smoothstep(0.22, 0.52, dlSlope);',
+                '  float dlBasaltMask = (1.0 - dlVegMask) * smoothstep(0.06, 0.26, dlSlope) * (1.0 - dlRockMask * 0.72);',
+                '  dlSplNear = dlNearFade;',
+                '  dlSplVeg = dlVegMask;',
+                '  dlSplRock = dlRockMask;',
+                '  dlSplBasalt = dlBasaltMask;',
                 '  if (uPbrTexReady > 0.5 && dlNearFade > 0.01) {',
                 '    vec2 uvGrassA = vSatWorldXZ * 0.19;',
-                '    vec2 uvGrassB = vSatWorldXZ * 0.067 + vec2(0.37, 0.71);',
+                '    vec2 uvGrassB = vec2(vSatWorldXZ.x * 0.052 - vSatWorldXZ.y * 0.041, vSatWorldXZ.x * 0.041 + vSatWorldXZ.y * 0.052) + vec2(0.37, 0.71);',
                 '    vec3 gA = mapTexelToLinear(texture2D(uPbrGrassTex, uvGrassA)).rgb;',
                 '    vec3 gB = mapTexelToLinear(texture2D(uPbrGrassTex, uvGrassB)).rgb;',
                 '    float gLum = dot(mix(gA, gB, 0.42), vec3(0.333));',
                 '    float rLum = dot(mapTexelToLinear(texture2D(uPbrRockTex, vSatWorldXZ * 0.14)).rgb, vec3(0.333));',
-                '    // Zero-mean centered photographic grain (average 1.0 -> zero white blowout on bright areas!)',
                 '    float grassMod = clamp(1.0 + (gLum - 0.57) * 0.85, 0.76, 1.18);',
                 '    float rockMod  = clamp(1.0 + (rLum - 0.62) * 0.90, 0.72, 1.16);',
                 '    float grain = mix(rockMod, grassMod, dlVegMask);',
                 '    texelColor.rgb *= mix(1.0, grain, dlNearFade * 0.82);',
-                '    vec3 dalatMeadow = vec3(0.075, 0.175, 0.055) * grassMod;',
-                '    vec3 dalatBasalt = vec3(0.21, 0.155, 0.12) * rockMod;',
-                '    texelColor.rgb = mix(texelColor.rgb, dalatMeadow, dlVegMask * dlNearFade * 0.24);',
-                '    texelColor.rgb = mix(texelColor.rgb, dalatBasalt, dlRockMask * dlNearFade * 0.36);',
+                '    vec3 dalatMeadow = vec3(0.075, 0.180, 0.055) * grassMod;',
+                '    vec3 dalatRedBasalt = vec3(0.245, 0.135, 0.088) * mix(grassMod, rockMod, 0.45);',
+                '    vec3 dalatGranite = vec3(0.20, 0.185, 0.165) * rockMod;',
+                '    texelColor.rgb = mix(texelColor.rgb, dalatMeadow, dlVegMask * dlNearFade * 0.25);',
+                '    texelColor.rgb = mix(texelColor.rgb, dalatRedBasalt, dlBasaltMask * dlNearFade * 0.28);',
+                '    texelColor.rgb = mix(texelColor.rgb, dalatGranite, dlRockMask * dlNearFade * 0.40);',
                 '  }',
                 '  float dlMacro = 1.0 + (dlN0.x - 0.5) * 0.12 * dlMidFade + (dlN1.x - 0.5) * 0.10 * dlNearFade;',
                 '  texelColor.rgb *= clamp(dlMacro, 0.84, 1.15);',
                 '  diffuseColor *= texelColor;',
                 '#endif',
+              ].join('\n')
+            )
+            .replace(
+              '#include <roughnessmap_fragment>',
+              [
+                '#include <roughnessmap_fragment>',
+                'if (uPbrTexReady > 0.5 && dlSplNear > 0.01) {',
+                '  float dlGRgh = texture2D(uPbrGrassRgh, vSatWorldXZ * 0.19).g;',
+                '  float dlRRgh = texture2D(uPbrRockRgh, vSatWorldXZ * 0.14).g;',
+                '  float dlBasaltRgh = mix(0.76, 0.90, dlGRgh);',
+                '  float dlGrassRgh = mix(0.74, 0.96, dlGRgh);',
+                '  float dlGraniteRgh = mix(0.56, 0.78, dlRRgh);',
+                '  float dlSplatRgh = mix(roughnessFactor, dlGrassRgh, dlSplVeg);',
+                '  dlSplatRgh = mix(dlSplatRgh, dlBasaltRgh, dlSplBasalt * 0.85);',
+                '  dlSplatRgh = mix(dlSplatRgh, dlGraniteRgh, dlSplRock);',
+                '  roughnessFactor = clamp(mix(roughnessFactor, dlSplatRgh, dlSplNear * 0.85), 0.45, 0.98);',
+                '}',
               ].join('\n')
             )
             .replace(
@@ -307,15 +358,18 @@
                 'if (dlBumpFade > 0.01) {',
                 '  vec3 b0 = dlNoiseGrad(vSatWorldXZ * 0.055);',
                 '  vec3 b1 = dlNoiseGrad(vSatWorldXZ * 0.36);',
-                '  float slopeBoost = 1.0 + (1.0 - clamp(abs(vTerrainWorldNrm.y), 0.0, 1.0)) * 1.5;',
+                '  float slopeAmt = 1.0 - clamp(abs(vTerrainWorldNrm.y), 0.0, 1.0);',
+                '  float slopeBoost = 1.0 + slopeAmt * 1.55;',
                 '  vec2 dH = (b0.yz * 0.05 + b1.yz * 0.16) * dlBumpFade * slopeBoost;',
                 '  if (uPbrTexReady > 0.5) {',
-                '    vec3 texN = texture2D(uPbrGrassNrm, vSatWorldXZ * 0.21).xyz * 2.0 - 1.0;',
-                '    dH += texN.xy * 0.62 * dlBumpFade * slopeBoost;',
+                '    vec3 texGN = texture2D(uPbrGrassNrm, vSatWorldXZ * 0.21).xyz * 2.0 - 1.0;',
+                '    vec3 texRN = texture2D(uPbrRockNrm, vSatWorldXZ * 0.15).xyz * 2.0 - 1.0;',
+                '    vec2 blendedN = mix(texGN.xy * 0.62, texRN.xy * 0.92, clamp(dlSplRock * 0.9 + dlSplBasalt * 0.35, 0.0, 1.0));',
+                '    dH += blendedN * dlBumpFade * slopeBoost;',
                 '  }',
                 '  vec3 worldPerturb = vec3(-dH.x, 0.0, -dH.y);',
                 '  vec3 viewPerturb = (viewMatrix * vec4(worldPerturb, 0.0)).xyz;',
-                '  normal = normalize(normal + viewPerturb * 0.65);',
+                '  normal = normalize(normal + viewPerturb * 0.68);',
                 '}',
               ].join('\n')
             );

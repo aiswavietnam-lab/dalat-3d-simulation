@@ -1324,3 +1324,477 @@ body {
     display: none;
   }
 }
+
+/* ============================================================================
+ * CHẾ ĐỘ THAO TÁC CHUẨN SKETCHUP (TOOLBAR, VCB, SCENES, PIE MENU, SHORTCUTS)
+ * ============================================================================ */
+
+.nav-mode-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+
+.su-panel-extras {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  margin-top: 2px;
+}
+
+.su-mini-action-btn {
+  padding: 6px 8px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #e0f2fe;
+  background: rgba(56, 189, 248, 0.14);
+  border: 1px solid rgba(56, 189, 248, 0.36);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.su-mini-action-btn:hover {
+  background: rgba(56, 189, 248, 0.28);
+  border-color: rgba(56, 189, 248, 0.72);
+}
+
+.su-help-pill {
+  padding-inline: 10px;
+}
+
+.su-toolbar {
+  position: fixed;
+  top: 152px;
+  left: 16px;
+  z-index: 23;
+  max-width: calc(100vw - 380px);
+  padding: 6px;
+  border-radius: 14px;
+}
+
+.su-toolbar-scroll {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  max-width: 470px;
+}
+
+.su-tool-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 34px;
+  height: 32px;
+  padding: 0 7px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.14s ease;
+}
+
+.su-tool-btn:hover {
+  background: rgba(56, 189, 248, 0.22);
+  border-color: rgba(56, 189, 248, 0.55);
+}
+
+.su-tool-btn.active {
+  color: #062219;
+  background: linear-gradient(135deg, #6ee7b7, #38bdf8);
+  border-color: rgba(186, 230, 253, 0.85);
+  box-shadow: 0 2px 10px rgba(56, 189, 248, 0.35);
+}
+
+.su-tool-kbd {
+  position: absolute;
+  right: 2px;
+  bottom: 1px;
+  font-family: var(--font-mono);
+  font-size: 7.5px;
+  line-height: 1;
+  opacity: 0.72;
+}
+
+.su-mini-txt {
+  font-family: var(--font-mono);
+  font-size: 11px;
+}
+
+.su-sep {
+  width: 1px;
+  height: 22px;
+  background: rgba(186, 220, 238, 0.25);
+  margin: 0 2px;
+}
+
+.su-scene-bar {
+  position: fixed;
+  top: 62px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 23;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 5px 8px;
+  border-radius: 12px;
+  max-width: min(560px, calc(100vw - 440px));
+}
+
+.su-scene-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 8px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.su-scene-chip.active {
+  background: rgba(56, 189, 248, 0.28);
+  border-color: rgba(56, 189, 248, 0.85);
+  color: #ffffff;
+}
+
+.su-scene-del {
+  background: none;
+  border: none;
+  color: #cbd5e1;
+  font-size: 13px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 2px;
+}
+
+.su-scene-del:hover {
+  color: #f87171;
+}
+
+.su-vcb-bar {
+  position: fixed;
+  right: 364px;
+  bottom: 84px;
+  z-index: 24;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 12px;
+  border-radius: 11px;
+  font-size: 11.5px;
+}
+
+.su-vcb-tool {
+  font-weight: 700;
+  color: #6ee7b7;
+}
+
+.su-vcb-label {
+  color: var(--text-secondary);
+}
+
+.su-vcb-value {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: #ffffff;
+  background: rgba(8, 15, 28, 0.65);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  padding: 2px 8px;
+  border-radius: 6px;
+}
+
+.su-zoom-box {
+  position: fixed;
+  z-index: 40;
+  border: 2px dashed #38bdf8;
+  background: rgba(56, 189, 248, 0.14);
+  pointer-events: none;
+}
+
+.su-toast {
+  position: fixed;
+  top: 66px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 45;
+  padding: 8px 16px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #f0f9ff;
+  background: rgba(8, 17, 30, 0.9);
+  border: 1px solid rgba(56, 189, 248, 0.62);
+  border-radius: 999px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.45);
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.su-label-layer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 18;
+}
+
+.su-measure-tag {
+  position: absolute;
+  transform: translate(-50%, -120%);
+  padding: 3px 8px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  border-radius: 6px;
+  white-space: nowrap;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45);
+}
+
+.su-tag-measure {
+  color: #1c1917;
+  background: rgba(250, 204, 21, 0.95);
+  border: 1px solid #fef08a;
+}
+
+.su-tag-dimension {
+  color: #062536;
+  background: rgba(56, 189, 248, 0.95);
+  border: 1px solid #bae6fd;
+}
+
+.su-tag-protractor {
+  color: #3b0764;
+  background: rgba(244, 114, 182, 0.95);
+  border: 1px solid #fbcfe8;
+}
+
+/* Curic Pie Menu */
+.su-pie-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  background: rgba(4, 10, 18, 0.25);
+}
+
+.su-pie-wheel {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.su-pie-center {
+  position: absolute;
+  width: 78px;
+  height: 78px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: rgba(12, 22, 34, 0.9);
+  border: 2px solid rgba(56, 189, 248, 0.72);
+  color: #bae6fd;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+.su-pie-item {
+  position: absolute;
+  left: -38px;
+  top: -22px;
+  width: 76px;
+  height: 44px;
+  border-radius: 10px;
+  background: rgba(12, 22, 34, 0.88);
+  border: 1px solid rgba(186, 220, 238, 0.35);
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+  transition: background 0.14s ease, border-color 0.14s ease;
+}
+
+.su-pie-item strong {
+  font-size: 10.5px;
+  line-height: 1.1;
+}
+
+.su-pie-item span {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  color: #7dd3fc;
+}
+
+.su-pie-item:hover {
+  background: rgba(14, 116, 144, 0.92);
+  border-color: #7dd3fc;
+}
+
+/* Modal Tra Cứu Phím Tắt SketchUp */
+.su-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  background: rgba(4, 10, 18, 0.65);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.su-modal-card {
+  width: min(760px, 95vw);
+  max-height: 82vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px 18px;
+}
+
+.su-modal-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.su-modal-head h3 {
+  margin: 0;
+  font-size: 15.5px;
+  color: #ffffff;
+}
+
+.su-modal-sub {
+  margin: 2px 0 0;
+  font-size: 11.5px;
+  color: var(--text-secondary);
+}
+
+.su-search-input {
+  width: 100%;
+  padding: 9px 12px;
+  font-size: 13px;
+  color: #ffffff;
+  background: rgba(8, 15, 28, 0.72);
+  border: 1px solid rgba(56, 189, 248, 0.4);
+  border-radius: 9px;
+  outline: none;
+}
+
+.su-search-input:focus {
+  border-color: #38bdf8;
+}
+
+.su-table-wrap {
+  overflow-y: auto;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.su-shortcuts-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.su-shortcuts-table th,
+.su-shortcuts-table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: left;
+  vertical-align: middle;
+}
+
+.su-shortcuts-table th {
+  position: sticky;
+  top: 0;
+  background: rgba(12, 24, 40, 0.96);
+  color: var(--text-secondary);
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.su-tbl-group {
+  font-size: 10.5px;
+  color: #7dd3fc;
+  font-weight: 600;
+}
+
+.su-tbl-kbd {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  color: #fef3c7;
+  background: rgba(251, 191, 36, 0.16);
+  border: 1px solid rgba(251, 191, 36, 0.42);
+  padding: 2px 7px;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+/* Chế độ Hide Dialogs (Ctrl+H / Ctrl+D) */
+body.su-dialogs-hidden .hud-brand,
+body.su-dialogs-hidden .control-panel,
+body.su-dialogs-hidden .minimap-panel,
+body.su-dialogs-hidden .hud-bottom,
+body.su-dialogs-hidden .top-quick-bar,
+body.su-dialogs-hidden .su-toolbar,
+body.su-dialogs-hidden .su-scene-bar,
+body.su-dialogs-hidden .su-vcb-bar {
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/* Con trỏ theo công cụ SketchUp */
+#viewport-container[data-su-tool="select"] { cursor: default; }
+#viewport-container[data-su-tool="orbit"],
+#viewport-container[data-su-tool="look_around"] { cursor: grab; }
+#viewport-container[data-su-tool="pan"] { cursor: move; }
+#viewport-container[data-su-tool="zoom"],
+#viewport-container[data-su-tool="zoom_window"] { cursor: zoom-in; }
+#viewport-container[data-su-tool="measure"],
+#viewport-container[data-su-tool="dimension"],
+#viewport-container[data-su-tool="protractor"],
+#viewport-container[data-su-tool="position_camera"],
+#viewport-container[data-su-tool="paint"] { cursor: crosshair; }
+#viewport-container[data-su-tool="eraser"] { cursor: cell; }
+
+@media (max-width: 900px) {
+  .su-toolbar {
+    top: calc(74px + env(safe-area-inset-top));
+    left: 10px;
+    right: 10px;
+    max-width: none;
+  }
+
+  .su-toolbar-scroll {
+    max-width: none;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+  }
+
+  .su-vcb-bar,
+  .su-scene-bar,
+  .su-help-pill {
+    display: none;
+  }
+}

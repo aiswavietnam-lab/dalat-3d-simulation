@@ -117,11 +117,39 @@ def _b64url(data: bytes) -> str:
     return base64.urlsafe_b64encode(data).rstrip(b"=").decode("ascii")
 
 
+DUPLICATE_SUFFIX_RE = re.compile(r"^(.*)\s+\((\d+)\)(\.[^.]+)$")
+
+
+def _read_win_drive_id(path: pathlib.Path) -> str:
+    try:
+        with open(str(path) + ":user.drive.id", "r", encoding="utf-8", errors="ignore") as f:
+            return f.read().strip()
+    except Exception:
+        return ""
+
+
+def _discover_local_drive_root(explicit_root: str = "") -> pathlib.Path | None:
+    target_id = "1qOT1FvYmbqJWgwBSKP4Q8zfVMUqnHuvw"
+    cands = []
+    if explicit_root:
+        cands.append(pathlib.Path(explicit_root))
+    for drv in ("G:", "I:", "H:", "F:", "E:", "D:"):
+        cands.append(pathlib.Path(f"{drv}/My Drive/02 JOB/02 WORKING/VIBE CODE/DALAT_3D_SIMULATION"))
+    for c in cands:
+        if c.exists() and c.is_dir():
+            did = _read_win_drive_id(c)
+            if not did or did == target_id:
+                return c
+    return None
+
+
 class DriveClient:
-    def __init__(self):
+    def __init__(self, local_drive_root: str = ""):
         self.mode = None
         self.access_token = None
         self.api_key = None
+        self.local_root = None
+        self.local_folder_map = {}
 
         if shutil.which("gdrive"):
             self.mode = "cli"
@@ -147,10 +175,37 @@ class DriveClient:
             self.mode = "api"
             return
 
+        local_root = _discover_local_drive_root(local_drive_root)
+        if local_root is not None:
+            self.local_root = local_root
+            self.local_folder_map = self._index_local_folders(local_root)
+            self.mode = "local_mount"
+            return
+
         raise RuntimeError(
-            "Không tìm thấy `gdrive` CLI hoặc Secret Google Drive "
-            "(GOOGLE_SERVICE_ACCOUNT_JSON / GDRIVE_OAUTH_REFRESH_TOKEN / GDRIVE_API_KEY)."
+            "Không tìm thấy `gdrive` CLI, Secret Google Drive, hoặc thư mục Drive mounted cục bộ."
         )
+
+    def _index_local_folders(self, root: pathlib.Path) -> dict:
+        fmap = {}
+        root_id = _read_win_drive_id(root)
+        if root_id:
+            fmap[root_id] = root
+        for base, dirs, _ in os.walk(root):
+            rel = os.path.relpath(base, root)
+            depth = 0 if rel == "." else len(rel.split(os.sep))
+            if depth >= 3:
+                dirs[:] = []
+                continue
+            for d in list(dirs):
+                if d.startswith(".") or d in ("history", "results", "locks", "contact_sheets", "prompts", "neon_boards", "neon_results"):
+                    dirs.remove(d)
+                    continue
+                dp = pathlib.Path(base) / d
+                did = _read_win_drive_id(dp)
+                if did:
+                    fmap[did] = dp
+        return fmap
 
     def _token_from_service_account(self, sa: dict) -> str:
         now = int(time.time())
@@ -217,6 +272,39 @@ class DriveClient:
         return {"Authorization": f"Bearer {self.access_token}"} if self.access_token else {}
 
     def list_folder(self, fid: str, exts=(".glb", ".gltf", ".json")) -> dict:
+        if self.mode == "local_mount":
+            folder_path = self.local_folder_map.get(fid)
+            if not folder_path or not folder_path.exists():
+                return {}
+            best = {}
+            for entry in os.scandir(folder_path):
+                if not entry.is_file():
+                    continue
+                fn_raw = entry.name
+                if fn_raw.startswith("_") or fn_raw == "dalat_master_scene.glb" or fn_raw == "desktop.ini":
+                    continue
+                m_dup = DUPLICATE_SUFFIX_RE.match(fn_raw)
+                fn_logical = f"{m_dup.group(1)}{m_dup.group(3)}" if m_dup else fn_raw
+                if not fn_logical.endswith(exts):
+                    continue
+                st = entry.stat()
+                dt_utc = datetime.datetime.fromtimestamp(st.st_mtime, tz=datetime.timezone.utc)
+                mod_iso = dt_utc.strftime("%Y-%m-%dT%H:%M:%S.") + f"{int(dt_utc.microsecond / 1000):03d}Z"
+                did = _read_win_drive_id(pathlib.Path(entry.path)) or entry.path
+                item = {
+                    "id": did,
+                    "local_path": entry.path,
+                    "name": fn_logical,
+                    "modifiedTime": mod_iso,
+                    "size": str(st.st_size),
+                    "_mtime": st.st_mtime,
+                }
+                if fn_logical not in best or st.st_mtime > best[fn_logical]["_mtime"]:
+                    best[fn_logical] = item
+            for v in best.values():
+                v.pop("_mtime", None)
+            return best
+
         if self.mode == "cli":
             out = subprocess.check_output(["gdrive", "readonly", "ls", fid, "--json"], text=True)
             data = json.loads(out)
@@ -262,7 +350,9 @@ class DriveClient:
         dest.parent.mkdir(parents=True, exist_ok=True)
         tmp = dest.with_name(dest.name + ".tmp")
         try:
-            if self.mode == "cli":
+            if self.mode == "local_mount":
+                shutil.copy2(file_id, tmp)
+            elif self.mode == "cli":
                 subprocess.check_call(
                     ["gdrive", "readonly", "download", file_id, "--out", str(tmp)],
                     stdout=subprocess.DEVNULL,
@@ -1189,6 +1279,7 @@ def main():
         help="Chỉ đồng bộ danh sách thư mục chỉ định (phân cách bằng dấu phẩy), vd: foliage_pbr_ultra,osm_true_buildings",
     )
     parser.add_argument("--reclamp-pbr-buildings", action="store_true", help="Ép kẹp lại cao độ toàn bộ _Q1.._Q4 hiện có lên DEM Copernicus")
+    parser.add_argument("--local-drive-root", default="", help="Đường dẫn thư mục DALAT_3D_SIMULATION gắn cục bộ trên Google Drive for Desktop")
     args = parser.parse_args()
 
     if args.rebuild_index_only:
@@ -1201,7 +1292,7 @@ def main():
         return 0
 
     try:
-        client = DriveClient()
+        client = DriveClient(local_drive_root=args.local_drive_root)
     except RuntimeError as exc:
         msg = f"[DALAT SYNC] Bỏ qua: {exc}"
         print(msg, flush=True)
@@ -1290,12 +1381,31 @@ def main():
     changed = []
     for rel_path, it in sorted(targets.items()):
         sig = {"id": it["id"], "modifiedTime": it.get("modifiedTime", ""), "size": str(it.get("size", ""))}
-        new_state[rel_path] = sig
+        old_sig = old_state.get(rel_path)
         local_file = ROOT / rel_path
+        is_same_local_mount = False
+        if (
+            client.mode == "local_mount"
+            and isinstance(old_sig, dict)
+            and local_file.exists()
+            and old_sig.get("id") == sig["id"]
+            and str(old_sig.get("size", "")) == sig["size"]
+        ):
+            try:
+                t_old = datetime.datetime.fromisoformat(old_sig["modifiedTime"].replace("Z", "+00:00")).timestamp()
+                t_new = datetime.datetime.fromisoformat(sig["modifiedTime"].replace("Z", "+00:00")).timestamp()
+                if abs(t_old - t_new) <= 5.0:
+                    is_same_local_mount = True
+                    sig = old_sig
+            except Exception:
+                is_same_local_mount = True
+                sig = old_sig
+        new_state[rel_path] = sig
         if args.init_baseline and local_file.exists():
             continue
-        if old_state.get(rel_path) != sig or not local_file.exists():
-            changed.append((rel_path, it["id"]))
+        if (not is_same_local_mount and old_sig != sig) or not local_file.exists():
+            dl_ref = it.get("local_path") or it["id"]
+            changed.append((rel_path, dl_ref))
     for rel_s in shadowed:
         new_state.pop(rel_s, None)
 

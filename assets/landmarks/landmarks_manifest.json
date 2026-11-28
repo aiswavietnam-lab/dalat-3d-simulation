@@ -4209,20 +4209,20 @@
       "ring": 0,
       "status": "built",
       "built": true,
-      "lat": 11.9518,
-      "lon": 108.4426,
-      "elev_msl_m": 1490.96,
-      "x_m": -289.594,
-      "y_m": 1266.927,
-      "z_local_m": 12.96,
+      "lat": 11.948926,
+      "lon": 108.4420729,
+      "elev_msl_m": 1507.28,
+      "x_m": -347.0,
+      "y_m": 947.0,
+      "z_local_m": 27.781,
       "gltf_position": [
-        -289.594,
-        12.96,
-        -1266.927
+        -347.0,
+        27.781,
+        -947.0
       ],
-      "tile_id": "T_E00_N01",
-      "heading_deg": 195.0,
-      "rotation_y_rad": -3.403392,
+      "tile_id": "T_E00_N00",
+      "heading_deg": 165.0,
+      "rotation_y_rad": -2.879793,
       "scale": [
         1.0,
         1.0,
@@ -4245,40 +4245,24 @@
       },
       "exclusion_polygon_wgs84": [
         [
-          108.4429173,
-          11.9512658
+          108.4424287,
+          11.9494146
         ],
         [
-          108.4420522,
-          11.9514926
+          108.4415152,
+          11.9491751
         ],
         [
-          108.4419955,
-          11.9515886
+          108.4417172,
+          11.9484375
         ],
         [
-          108.4421845,
-          11.9522788
+          108.4426307,
+          11.948677
         ],
         [
-          108.4422827,
-          11.9523342
-        ],
-        [
-          108.4431478,
-          11.9521074
-        ],
-        [
-          108.4432045,
-          11.9520114
-        ],
-        [
-          108.4430155,
-          11.9513212
-        ],
-        [
-          108.4429173,
-          11.9512658
+          108.4424287,
+          11.9494146
         ]
       ],
       "glb_path": "02_ASSETS_3D/landmarks/lm_38_giao_hoang_hoc_vien.glb",
@@ -4291,14 +4275,14 @@
       "no_khr_transmission": true,
       "camera_preset": {
         "eye_gltf": [
-          -276.188,
-          75.0,
-          -1157.747
+          -333.594,
+          55.781,
+          -837.82
         ],
         "target_gltf": [
-          -289.594,
-          54.8,
-          -1266.927
+          -347.0,
+          35.781,
+          -947.0
         ],
         "local_offset_gltf": [
           13.406,
@@ -4774,16 +4758,16 @@
       "ring": 0,
       "status": "built",
       "built": true,
-      "lat": 11.9542,
-      "lon": 108.4296,
-      "elev_msl_m": 1489.787,
-      "x_m": -1705.436,
-      "y_m": 1534.094,
-      "z_local_m": 11.787,
+      "lat": 11.956929,
+      "lon": 108.4284067,
+      "elev_msl_m": 1492.35,
+      "x_m": -1835.396,
+      "y_m": 1837.884,
+      "z_local_m": 14.352,
       "gltf_position": [
-        -1705.436,
-        11.787,
-        -1534.094
+        -1835.396,
+        14.352,
+        -1837.884
       ],
       "tile_id": "T_W01_N01",
       "heading_deg": 210.0,
@@ -4876,7 +4860,8 @@
       "architectural_style": "Traditional Vietnamese Imperial Sắc Tứ Pagoda & Ceramic Mosaic Dragon Architecture (1931-1938)",
       "architect": "Hòa thượng Thích Nhân Thứ khai sơn năm 1931 (Vua Bảo Đại sắc tứ năm 1938)",
       "year_completed": "1931",
-      "description_vi": "Được Hòa thượng Thích Nhân Thứ khai sơn năm 1931 tại số 133 Hai Bà Trưng và được vua Bảo Đại ban biển 'Sắc tứ Linh Quang Tự' năm 1938, Chùa Linh Quang là ngôi tổ đình Phật giáo đầu tiên đặt nền móng tại Đà Lạt với nghệ thuật khảm sành sứ tứ linh tinh xảo, bảo tháp 3 tầng và tượng Quán Thế Âm cưỡi voi trắng."
+      "description_vi": "Được Hòa thượng Thích Nhân Thứ khai sơn năm 1931 tại số 133 Hai Bà Trưng và được vua Bảo Đại ban biển 'Sắc tứ Linh Quang Tự' năm 1938, Chùa Linh Quang là ngôi tổ đình Phật giáo đầu tiên đặt nền móng tại Đà Lạt với nghệ thuật khảm sành sứ tứ linh tinh xảo, bảo tháp 3 tầng và tượng Quán Thế Âm cưỡi voi trắng.",
+      "plan_audit_fixed_by": "slot29"
     },
     {
       "id": "lm_44_hoc_vien_luc_quan_dalat",

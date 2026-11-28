@@ -93,11 +93,13 @@
       skyExposure: 1.04,
       cloudColor: '#FFF4E6',
       cloudOpacity: 0.24,
-      horizonHazeFactor: 0.42,
+      horizonHazeFactor: 0.44,
       starIntensity: 0.0,
       exposure: 1.08,
       bloomThreshold: 0.80,
       sunShaftStrength: 0.22,
+      waterNightGlow: 0.08,
+      waterReflectColor: '#FFE8C2',
     },
     highland_noon: {
       skyId: 'day',
@@ -114,6 +116,8 @@
       exposure: 1.04,
       bloomThreshold: 0.84,
       sunShaftStrength: 0.12,
+      waterNightGlow: 0.0,
+      waterReflectColor: '#FFFFFF',
     },
     sunset_lake: {
       skyId: 'sunset',
@@ -128,8 +132,10 @@
       horizonHazeFactor: 0.58,
       starIntensity: 0.14,
       exposure: 1.08,
-      bloomThreshold: 0.7,
+      bloomThreshold: 0.66,
       sunShaftStrength: 0.3,
+      waterNightGlow: 0.42,
+      waterReflectColor: '#FFB870',
     },
     mountain_night: {
       skyId: 'night',
@@ -144,8 +150,10 @@
       horizonHazeFactor: 0.68,
       starIntensity: 0.95,
       exposure: 1.12,
-      bloomThreshold: 0.54,
+      bloomThreshold: 0.46,
       sunShaftStrength: 0.08,
+      waterNightGlow: 1.0,
+      waterReflectColor: '#FFC266',
     },
   };
 
@@ -297,13 +305,14 @@
     '    }',
     '  }',
     '',
-    '  // 6. Dải sương mù chân trời tinh tế — liền mạch tuyệt đối với FogExp2 nhưng không che khuất mây trời',
+    '  // 6. Dải sương mù thung lũng cao nguyên — tán xạ ấm hướng nắng, liền mạch tuyệt đối với FogExp2',
     '  float fb = clamp(uFogBlend, 0.0, 1.0);',
-    '  float horizonMist = exp(-max(y, 0.0) * mix(30.0, 13.5, fb)) * fb * uHorizonHazeFactor;',
+    '  float horizonMist = exp(-max(y, 0.0) * mix(28.0, 12.2, fb)) * fb * uHorizonHazeFactor;',
     '  if (y < 0.0) {',
     '    horizonMist = max(horizonMist, smoothstep(0.0, -0.05, y) * 0.92);',
     '  }',
-    '  skyCol = mix(skyCol, uFogColor, clamp(horizonMist, 0.0, 0.95));',
+    '  vec3 valleyMistCol = mix(uFogColor, uSunGlowColor, pow(cosTheta, 4.0) * 0.26 * clamp(aboveHorizon, 0.0, 1.0));',
+    '  skyCol = mix(skyCol, valleyMistCol, clamp(horizonMist, 0.0, 0.95));',
     '',
     '  gl_FragColor = vec4(clamp(skyCol, 0.0, 1.0), 1.0);',
     '}',
@@ -329,11 +338,13 @@
     '  vec3 c3 = texture2D(tDiffuse, vUv + vec2( 0.5,  0.5) * uTexelSize).rgb;',
     '  vec3 col = 0.25 * (c0 + c1 + c2 + c3);',
     '  float lum = dot(col, vec3(0.2126, 0.7152, 0.0722));',
+    '  float warmth = max(0.0, (col.r * 0.7 + col.g * 0.3) - col.b * 0.95);',
+    '  float effectiveLum = lum + warmth * 0.22;',
     '  float knee = uThreshold * 0.35 + 0.001;',
-    '  float soft = clamp(lum - uThreshold + knee, 0.0, 2.0 * knee);',
+    '  float soft = clamp(effectiveLum - uThreshold + knee, 0.0, 2.0 * knee);',
     '  soft = (soft * soft) / (4.0 * knee);',
-    '  float contrib = max(soft, lum - uThreshold) / max(lum, 0.001);',
-    '  gl_FragColor = vec4(clamp(col * clamp(contrib, 0.0, 1.5), 0.0, 1.0), 1.0);',
+    '  float contrib = max(soft, effectiveLum - uThreshold) / max(effectiveLum, 0.001);',
+    '  gl_FragColor = vec4(clamp(col * clamp(contrib, 0.0, 1.65), 0.0, 1.0), 1.0);',
     '}',
   ].join('\n');
 
@@ -417,11 +428,17 @@
         uWaterSunColor: { value: new THREE.Color(0xffe2b0) },
         uWaterSkyColor: { value: new THREE.Color(0xdce6ee) },
         uWaterQuality: { value: 1.0 },
+        uWaterNightGlow: { value: 0.08 },
+        uWaterReflectColor: { value: new THREE.Color(0xffc266) },
       };
 
       this._lastShadowFocus = new THREE.Vector3(999999, 999999, 999999);
       this._shadowDirty = true;
       this._shadowFrameCounter = 0;
+      this._shadowLightForward = new THREE.Vector3();
+      this._shadowLightRight = new THREE.Vector3();
+      this._shadowLightUp = new THREE.Vector3();
+      this._shadowWorldUp = new THREE.Vector3(0, 1, 0);
 
       this._pmremGenerator = null;
       this._envCache = new Map();
@@ -696,7 +713,7 @@
 
       const shared = this.waterSharedUniforms;
       mat.customProgramCacheKey = function () {
-        return 'dalat_realtime_water_v3';
+        return 'dalat_realtime_water_v4';
       };
 
       mat.onBeforeCompile = function (shader) {
@@ -705,6 +722,8 @@
         shader.uniforms.uWaterSunColor = shared.uWaterSunColor;
         shader.uniforms.uWaterSkyColor = shared.uWaterSkyColor;
         shader.uniforms.uWaterQuality = shared.uWaterQuality;
+        shader.uniforms.uWaterNightGlow = shared.uWaterNightGlow;
+        shader.uniforms.uWaterReflectColor = shared.uWaterReflectColor;
 
         shader.vertexShader =
           [
@@ -731,6 +750,8 @@
             'uniform vec3 uWaterSunColor;',
             'uniform vec3 uWaterSkyColor;',
             'uniform float uWaterQuality;',
+            'uniform float uWaterNightGlow;',
+            'uniform vec3 uWaterReflectColor;',
             'varying vec3 vDalatWaterWorldPos;',
           ].join('\n') +
           '\n' +
@@ -744,13 +765,19 @@
               'float w3 = sin((wCoord.x - wCoord.y) * 0.41 + uWaterTime * 2.55) * clamp(uWaterQuality - 0.3, 0.0, 1.0);',
               'vec3 wNormal = normalize(vec3((w1 + w3 * 0.55) * 0.055, 1.0, (w2 - w3 * 0.55) * 0.055));',
               'float fresnelBase = clamp(1.0 - max(dot(wNormal, wViewDir), 0.0), 0.0001, 1.0);',
-              'float fresnel = fresnelBase * fresnelBase * fresnelBase;',
-              'vec3 deepWaterCol = mix(gl_FragColor.rgb * 0.72, vec3(0.035, 0.145, 0.175), 0.55);',
-              'gl_FragColor.rgb = mix(deepWaterCol, uWaterSkyColor * 0.92, clamp(0.18 + fresnel * 0.68, 0.0, 0.72));',
+              'float fresnel = 0.02 + 0.98 * pow(fresnelBase, 4.0);',
+              'vec3 deepWaterCol = mix(gl_FragColor.rgb * 0.72, vec3(0.032, 0.142, 0.172), 0.55);',
+              'gl_FragColor.rgb = mix(deepWaterCol, uWaterSkyColor * 0.92, clamp(0.16 + fresnel * 0.70, 0.0, 0.76));',
               'vec3 halfVec = normalize(normalize(uWaterSunDir) + wViewDir);',
               'float specDot = max(dot(wNormal, halfVec), 0.0001);',
               'float specGlint = pow(specDot, 128.0) * 1.45 * clamp(uWaterQuality, 0.4, 1.35);',
               'gl_FragColor.rgb += uWaterSunColor * specGlint;',
+              'if (uWaterNightGlow > 0.01) {',
+              '  float shimmerBand = 0.5 + 0.5 * sin(wCoord.x * 0.068 + wCoord.y * 0.052 + w1 * 1.45);',
+              '  float shimmerRip = pow(max(0.0, 0.5 + 0.5 * cos(wCoord.x * 0.27 - wCoord.y * 0.34 - uWaterTime * 1.65)), 3.0);',
+              '  float nightMask = uWaterNightGlow * (0.35 + 0.65 * fresnelBase) * shimmerBand;',
+              '  gl_FragColor.rgb += uWaterReflectColor * (0.09 + 0.24 * shimmerRip) * nightMask;',
+              '}',
               '#include <tonemapping_fragment>',
             ].join('\n')
           );
@@ -886,6 +913,9 @@
       this.waterSharedUniforms.uWaterSunDir.value.copy(sunDir);
       this.waterSharedUniforms.uWaterSunColor.value.set(preset.sun_hex || pal.sunGlow);
       this.waterSharedUniforms.uWaterSkyColor.value.set(pal.horizon);
+      this.waterSharedUniforms.uWaterNightGlow.value =
+        pal.waterNightGlow != null ? pal.waterNightGlow : 0.0;
+      this.waterSharedUniforms.uWaterReflectColor.value.set(pal.waterReflectColor || '#FFC266');
 
       this.renderer.toneMappingExposure = pal.exposure;
       this._prefilterMat.uniforms.uThreshold.value = pal.bloomThreshold;
@@ -988,6 +1018,8 @@
 
       if (sun) {
         sun.castShadow = enable;
+        sun.shadow.bias = -0.00028;
+        sun.shadow.normalBias = 0.035;
         const desiredSize = cfg.shadowMapSize || 1024;
         if (
           enable &&
@@ -1018,6 +1050,13 @@
       this.renderer.setSize(window.innerWidth, window.innerHeight);
       this._allocateRenderTargets();
       this.markShadowDirty();
+    }
+
+    setActiveCamera(cam) {
+      if (cam) {
+        this.camera = cam;
+        this.markShadowDirty();
+      }
     }
 
     onResize() {
@@ -1066,30 +1105,51 @@
       const cfg = QUALITY_PRESETS[this.qualityId] || QUALITY_PRESETS.balanced;
       const camPos = this.camera.position;
       const camDist = camPos.distanceTo(this.engine.target);
-      const halfSpan = THREE.MathUtils.clamp(camDist * 1.15, cfg.shadowFrustumNearM * 0.65, 1750);
+      const minSpan = this.qualityId === 'fast' ? 520 : 240;
+      const halfSpan = THREE.MathUtils.clamp(camDist * 1.05, minSpan, 1750);
 
       if (!sun.target.parent) {
         this.scene.add(sun.target);
       }
 
-      const focusX = THREE.MathUtils.lerp(camPos.x, this.engine.target.x, 0.65);
-      const focusZ = THREE.MathUtils.lerp(camPos.z, this.engine.target.z, 0.65);
+      const focusX = THREE.MathUtils.lerp(camPos.x, this.engine.target.x, 0.68);
+      const focusZ = THREE.MathUtils.lerp(camPos.z, this.engine.target.z, 0.68);
       const focusY = this.engine.target.y;
       const mapSize = sun.shadow.mapSize.width || 1024;
-      const texelStep = Math.max(4.0, ((halfSpan * 2.0) / mapSize) * 4.0);
+      const worldTexel = (halfSpan * 2.0) / mapSize;
+      const snapStep = Math.max(1.0, worldTexel * 2.0);
 
-      const snappedX = Math.round(focusX / texelStep) * texelStep;
-      const snappedZ = Math.round(focusZ / texelStep) * texelStep;
-      const snappedY = Math.round(focusY / 8.0) * 8.0;
+      // Snap tâm vùng bóng trong hệ trục trực chuẩn của hướng ánh sáng để triệt tiêu shadow shimmering
+      this._shadowLightForward.copy(sunOffsetVec).normalize();
+      this._shadowLightRight.crossVectors(this._shadowWorldUp, this._shadowLightForward);
+      if (this._shadowLightRight.lengthSq() < 1e-6) {
+        this._shadowLightRight.set(1, 0, 0);
+      } else {
+        this._shadowLightRight.normalize();
+      }
+      this._shadowLightUp.crossVectors(this._shadowLightForward, this._shadowLightRight).normalize();
+
+      const rawDotR = focusX * this._shadowLightRight.x + focusY * this._shadowLightRight.y + focusZ * this._shadowLightRight.z;
+      const rawDotU = focusX * this._shadowLightUp.x + focusY * this._shadowLightUp.y + focusZ * this._shadowLightUp.z;
+      const rawDotF = focusX * this._shadowLightForward.x + focusY * this._shadowLightForward.y + focusZ * this._shadowLightForward.z;
+
+      const sR = Math.round(rawDotR / snapStep) * snapStep;
+      const sU = Math.round(rawDotU / snapStep) * snapStep;
+      const snappedX =
+        this._shadowLightRight.x * sR + this._shadowLightUp.x * sU + this._shadowLightForward.x * rawDotF;
+      const snappedY =
+        this._shadowLightRight.y * sR + this._shadowLightUp.y * sU + this._shadowLightForward.y * rawDotF;
+      const snappedZ =
+        this._shadowLightRight.z * sR + this._shadowLightUp.z * sU + this._shadowLightForward.z * rawDotF;
 
       const movedSq =
         (snappedX - this._lastShadowFocus.x) * (snappedX - this._lastShadowFocus.x) +
         (snappedZ - this._lastShadowFocus.z) * (snappedZ - this._lastShadowFocus.z) +
         (snappedY - this._lastShadowFocus.y) * (snappedY - this._lastShadowFocus.y);
 
-      const frustumChanged = Math.abs(sun.shadow.camera.right - halfSpan) > 45.0;
+      const frustumChanged = Math.abs(sun.shadow.camera.right - halfSpan) > 28.0;
 
-      if (movedSq > 1.0 || frustumChanged || this._shadowDirty) {
+      if (movedSq > 0.25 || frustumChanged || this._shadowDirty) {
         this._lastShadowFocus.set(snappedX, snappedY, snappedZ);
         sun.target.position.set(snappedX, snappedY, snappedZ);
         sun.target.updateMatrixWorld();
@@ -1098,6 +1158,9 @@
           snappedY + sunOffsetVec.y,
           snappedZ + sunOffsetVec.z
         );
+
+        sun.shadow.normalBias = THREE.MathUtils.clamp(worldTexel * 0.045, 0.018, 0.09);
+        sun.shadow.bias = -THREE.MathUtils.clamp(0.00018 + worldTexel * 0.0002, 0.0002, 0.00055);
 
         if (frustumChanged) {
           sun.shadow.camera.left = -halfSpan;

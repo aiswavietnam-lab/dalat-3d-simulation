@@ -90,6 +90,8 @@
       this.carMeshes = null;
       this.bikeMeshes = null;
       this.lampGroup = null;
+      this.lampGlobeMat = null;
+      this._pendingEmissiveScale = 0.25;
 
       this._tmpMat = new THREE.Matrix4();
       this._pos = new THREE.Vector3();
@@ -102,6 +104,15 @@
     setVisible(vis) {
       this.enabled = Boolean(vis);
       this.group.visible = this.enabled;
+    }
+
+    applyEmissiveScale(scale) {
+      const s = Number.isFinite(scale) ? Math.max(0.0, scale) : 0.25;
+      this._pendingEmissiveScale = s;
+      if (this.lampGlobeMat) {
+        // Ban ngày sáng dịu tự nhiên; Hoàng hôn & Đêm rực ấm ăn Bloom dịu
+        this.lampGlobeMat.emissiveIntensity = 0.14 + s * 1.55;
+      }
     }
 
     async loadRoutes(url = './api/road-traffic-routes.json') {
@@ -209,11 +220,14 @@
           new THREE.MeshStandardMaterial({ color: 0xc59a45, roughness: 0.35, metalness: 0.8 }),
           n
         );
-        const mGlobes = new THREE.InstancedMesh(
-          globeGeo,
-          new THREE.MeshBasicMaterial({ color: 0xffecc2 }),
-          n
-        );
+        this.lampGlobeMat = new THREE.MeshStandardMaterial({
+          color: 0xf9efd6,
+          emissive: new THREE.Color(0xffc96b),
+          emissiveIntensity: 0.14 + this._pendingEmissiveScale * 1.55,
+          roughness: 0.34,
+          metalness: 0.05,
+        });
+        const mGlobes = new THREE.InstancedMesh(globeGeo, this.lampGlobeMat, n);
         mPost.castShadow = true;
         mPost.receiveShadow = true;
         mPost.frustumCulled = false;

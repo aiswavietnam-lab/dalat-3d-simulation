@@ -48,7 +48,6 @@
     "T_E02_N04",
     "T_E02_N05",
     "T_E02_N06",
-    "T_E02_N07",
     "T_E02_S01",
     "T_E02_S02",
     "T_E02_S03",
@@ -67,7 +66,6 @@
     "T_E03_N04",
     "T_E03_N05",
     "T_E03_N06",
-    "T_E03_N07",
     "T_E03_S01",
     "T_E03_S02",
     "T_E03_S03",
@@ -85,8 +83,6 @@
     "T_E04_N03",
     "T_E04_N04",
     "T_E04_N05",
-    "T_E04_N06",
-    "T_E04_N07",
     "T_E04_S01",
     "T_E04_S02",
     "T_E04_S03",
@@ -103,8 +99,6 @@
     "T_E05_N03",
     "T_E05_N04",
     "T_E05_N05",
-    "T_E05_N06",
-    "T_E05_N07",
     "T_E05_S01",
     "T_E05_S02",
     "T_E05_S03",
@@ -115,15 +109,10 @@
     "T_E05_S09",
     "T_E05_S10",
     "T_E05_S11",
-    "T_E06_N00",
     "T_E06_N01",
     "T_E06_N02",
-    "T_E06_N03",
     "T_E06_N04",
     "T_E06_N05",
-    "T_E06_N06",
-    "T_E06_N07",
-    "T_E06_S01",
     "T_E06_S02",
     "T_E06_S03",
     "T_E06_S04",
@@ -132,14 +121,11 @@
     "T_E06_S07",
     "T_E06_S10",
     "T_E06_S11",
-    "T_E07_N00",
     "T_E07_N01",
     "T_E07_N02",
-    "T_E07_N03",
     "T_E07_N04",
     "T_E07_N05",
     "T_E07_N10",
-    "T_E07_S01",
     "T_E07_S02",
     "T_E07_S03",
     "T_E07_S04",
@@ -218,7 +204,6 @@
     "T_W03_S03",
     "T_W03_S04",
     "T_W03_S05",
-    "T_W03_S06",
     "T_W03_S07",
     "T_W03_S10",
     "T_W03_S11",
@@ -257,7 +242,6 @@
     "T_W05_S04",
     "T_W05_S05",
     "T_W05_S06",
-    "T_W05_S07",
     "T_W05_S11",
     "T_W05_S12",
     "T_W05_S13",
@@ -269,7 +253,6 @@
     "T_W06_N05",
     "T_W06_N06",
     "T_W06_N07",
-    "T_W06_S01",
     "T_W06_S02",
     "T_W06_S03",
     "T_W06_S04",
@@ -341,7 +324,7 @@
     "heightmaps": 0,
     "water_bodies": 54,
     "vegetation_models": 18,
-    "vegetation_instances": 281,
+    "vegetation_instances": 220,
     "landmarks": 185,
     "lakeside_props": 6,
     "urban_props": 30,
@@ -1956,7 +1939,7 @@
         "ext": ".json",
         "tile_id": "T_E00_N02",
         "url": "./assets/vegetation/instances_T_E00_N02.json",
-        "size_bytes": 393408
+        "size_bytes": 362335
       },
       {
         "id": "instances_T_E00_S02",
@@ -1964,7 +1947,7 @@
         "ext": ".json",
         "tile_id": "T_E00_S02",
         "url": "./assets/vegetation/instances_T_E00_S02.json",
-        "size_bytes": 327583
+        "size_bytes": 369435
       },
       {
         "id": "instances_T_E02_N00",
@@ -1972,7 +1955,7 @@
         "ext": ".json",
         "tile_id": "T_E02_N00",
         "url": "./assets/vegetation/instances_T_E02_N00.json",
-        "size_bytes": 536228
+        "size_bytes": 472224
       },
       {
         "id": "instances_T_W02_N00",
@@ -1980,7 +1963,7 @@
         "ext": ".json",
         "tile_id": "T_W02_N00",
         "url": "./assets/vegetation/instances_T_W02_N00.json",
-        "size_bytes": 302527
+        "size_bytes": 511683
       },
       {
         "id": "instances_T_E01_N02",
@@ -1996,7 +1979,7 @@
         "ext": ".json",
         "tile_id": "T_E01_S02",
         "url": "./assets/vegetation/instances_T_E01_S02.json",
-        "size_bytes": 518183
+        "size_bytes": 467276
       },
       {
         "id": "instances_T_E02_N01",
@@ -2028,7 +2011,7 @@
         "ext": ".json",
         "tile_id": "T_W01_S02",
         "url": "./assets/vegetation/instances_T_W01_S02.json",
-        "size_bytes": 87793
+        "size_bytes": 137474
       },
       {
         "id": "instances_T_W02_N01",
@@ -2036,7 +2019,7 @@
         "ext": ".json",
         "tile_id": "T_W02_N01",
         "url": "./assets/vegetation/instances_T_W02_N01.json",
-        "size_bytes": 316364
+        "size_bytes": 504500
       },
       {
         "id": "instances_T_W02_S01",
@@ -2068,7 +2051,7 @@
         "ext": ".json",
         "tile_id": "T_W02_N02",
         "url": "./assets/vegetation/instances_T_W02_N02.json",
-        "size_bytes": 493219
+        "size_bytes": 315489
       },
       {
         "id": "instances_T_W02_S02",
@@ -2084,7 +2067,7 @@
         "ext": ".json",
         "tile_id": "T_E00_N03",
         "url": "./assets/vegetation/instances_T_E00_N03.json",
-        "size_bytes": 516648
+        "size_bytes": 305629
       },
       {
         "id": "instances_T_E00_S03",
@@ -2092,7 +2075,7 @@
         "ext": ".json",
         "tile_id": "T_E00_S03",
         "url": "./assets/vegetation/instances_T_E00_S03.json",
-        "size_bytes": 504255
+        "size_bytes": 493990
       },
       {
         "id": "instances_T_E03_N00",
@@ -2100,7 +2083,7 @@
         "ext": ".json",
         "tile_id": "T_E03_N00",
         "url": "./assets/vegetation/instances_T_E03_N00.json",
-        "size_bytes": 533867
+        "size_bytes": 512855
       },
       {
         "id": "instances_T_W03_N00",
@@ -2140,7 +2123,7 @@
         "ext": ".json",
         "tile_id": "T_E03_S01",
         "url": "./assets/vegetation/instances_T_E03_S01.json",
-        "size_bytes": 490340
+        "size_bytes": 541159
       },
       {
         "id": "instances_T_W01_N03",
@@ -2156,7 +2139,7 @@
         "ext": ".json",
         "tile_id": "T_W01_S03",
         "url": "./assets/vegetation/instances_T_W01_S03.json",
-        "size_bytes": 534399
+        "size_bytes": 436338
       },
       {
         "id": "instances_T_W03_N01",
@@ -2164,7 +2147,7 @@
         "ext": ".json",
         "tile_id": "T_W03_N01",
         "url": "./assets/vegetation/instances_T_W03_N01.json",
-        "size_bytes": 311996
+        "size_bytes": 504705
       },
       {
         "id": "instances_T_W03_S01",
@@ -2172,7 +2155,7 @@
         "ext": ".json",
         "tile_id": "T_W03_S01",
         "url": "./assets/vegetation/instances_T_W03_S01.json",
-        "size_bytes": 330367
+        "size_bytes": 319320
       },
       {
         "id": "instances_T_E02_N03",
@@ -2228,7 +2211,7 @@
         "ext": ".json",
         "tile_id": "T_W03_N02",
         "url": "./assets/vegetation/instances_T_W03_N02.json",
-        "size_bytes": 467973
+        "size_bytes": 390808
       },
       {
         "id": "instances_T_W03_S02",
@@ -2268,7 +2251,7 @@
         "ext": ".json",
         "tile_id": "T_W04_N00",
         "url": "./assets/vegetation/instances_T_W04_N00.json",
-        "size_bytes": 392681
+        "size_bytes": 507044
       },
       {
         "id": "instances_T_E01_N04",
@@ -2284,7 +2267,7 @@
         "ext": ".json",
         "tile_id": "T_E01_S04",
         "url": "./assets/vegetation/instances_T_E01_S04.json",
-        "size_bytes": 313065
+        "size_bytes": 538103
       },
       {
         "id": "instances_T_E04_N01",
@@ -2308,7 +2291,7 @@
         "ext": ".json",
         "tile_id": "T_W01_N04",
         "url": "./assets/vegetation/instances_T_W01_N04.json",
-        "size_bytes": 523836
+        "size_bytes": 322083
       },
       {
         "id": "instances_T_W01_S04",
@@ -2324,7 +2307,7 @@
         "ext": ".json",
         "tile_id": "T_W04_N01",
         "url": "./assets/vegetation/instances_T_W04_N01.json",
-        "size_bytes": 579487
+        "size_bytes": 365784
       },
       {
         "id": "instances_T_W04_S01",
@@ -2332,7 +2315,7 @@
         "ext": ".json",
         "tile_id": "T_W04_S01",
         "url": "./assets/vegetation/instances_T_W04_S01.json",
-        "size_bytes": 407472
+        "size_bytes": 409461
       },
       {
         "id": "instances_T_E03_N03",
@@ -2356,7 +2339,7 @@
         "ext": ".json",
         "tile_id": "T_W03_N03",
         "url": "./assets/vegetation/instances_T_W03_N03.json",
-        "size_bytes": 492943
+        "size_bytes": 540301
       },
       {
         "id": "instances_T_W03_S03",
@@ -2380,7 +2363,7 @@
         "ext": ".json",
         "tile_id": "T_E02_S04",
         "url": "./assets/vegetation/instances_T_E02_S04.json",
-        "size_bytes": 395728
+        "size_bytes": 546480
       },
       {
         "id": "instances_T_E04_N02",
@@ -2388,7 +2371,7 @@
         "ext": ".json",
         "tile_id": "T_E04_N02",
         "url": "./assets/vegetation/instances_T_E04_N02.json",
-        "size_bytes": 558780
+        "size_bytes": 505592
       },
       {
         "id": "instances_T_E04_S02",
@@ -2396,7 +2379,7 @@
         "ext": ".json",
         "tile_id": "T_E04_S02",
         "url": "./assets/vegetation/instances_T_E04_S02.json",
-        "size_bytes": 307639
+        "size_bytes": 506039
       },
       {
         "id": "instances_T_W02_N04",
@@ -2428,7 +2411,7 @@
         "ext": ".json",
         "tile_id": "T_W04_S02",
         "url": "./assets/vegetation/instances_T_W04_S02.json",
-        "size_bytes": 399454
+        "size_bytes": 307981
       },
       {
         "id": "instances_T_E00_N05",
@@ -2468,7 +2451,7 @@
         "ext": ".json",
         "tile_id": "T_E04_N03",
         "url": "./assets/vegetation/instances_T_E04_N03.json",
-        "size_bytes": 393948
+        "size_bytes": 332414
       },
       {
         "id": "instances_T_E04_S03",
@@ -2476,7 +2459,7 @@
         "ext": ".json",
         "tile_id": "T_E04_S03",
         "url": "./assets/vegetation/instances_T_E04_S03.json",
-        "size_bytes": 613509
+        "size_bytes": 521042
       },
       {
         "id": "instances_T_E05_N00",
@@ -2484,7 +2467,7 @@
         "ext": ".json",
         "tile_id": "T_E05_N00",
         "url": "./assets/vegetation/instances_T_E05_N00.json",
-        "size_bytes": 257772
+        "size_bytes": 442095
       },
       {
         "id": "instances_T_W03_N04",
@@ -2508,7 +2491,7 @@
         "ext": ".json",
         "tile_id": "T_W04_N03",
         "url": "./assets/vegetation/instances_T_W04_N03.json",
-        "size_bytes": 264573
+        "size_bytes": 264659
       },
       {
         "id": "instances_T_W04_S03",
@@ -2524,7 +2507,7 @@
         "ext": ".json",
         "tile_id": "T_W05_N00",
         "url": "./assets/vegetation/instances_T_W05_N00.json",
-        "size_bytes": 402531
+        "size_bytes": 588249
       },
       {
         "id": "instances_T_E01_N05",
@@ -2548,7 +2531,7 @@
         "ext": ".json",
         "tile_id": "T_E05_N01",
         "url": "./assets/vegetation/instances_T_E05_N01.json",
-        "size_bytes": 305765
+        "size_bytes": 322581
       },
       {
         "id": "instances_T_E05_S01",
@@ -2580,7 +2563,7 @@
         "ext": ".json",
         "tile_id": "T_W05_N01",
         "url": "./assets/vegetation/instances_T_W05_N01.json",
-        "size_bytes": 401937
+        "size_bytes": 582371
       },
       {
         "id": "instances_T_W05_S01",
@@ -2588,7 +2571,7 @@
         "ext": ".json",
         "tile_id": "T_W05_S01",
         "url": "./assets/vegetation/instances_T_W05_S01.json",
-        "size_bytes": 596044
+        "size_bytes": 475926
       },
       {
         "id": "instances_T_E02_S05",
@@ -2596,7 +2579,7 @@
         "ext": ".json",
         "tile_id": "T_E02_S05",
         "url": "./assets/vegetation/instances_T_E02_S05.json",
-        "size_bytes": 409146
+        "size_bytes": 411690
       },
       {
         "id": "instances_T_E05_N02",
@@ -2604,7 +2587,7 @@
         "ext": ".json",
         "tile_id": "T_E05_N02",
         "url": "./assets/vegetation/instances_T_E05_N02.json",
-        "size_bytes": 393985
+        "size_bytes": 505218
       },
       {
         "id": "instances_T_E05_S02",
@@ -2612,7 +2595,7 @@
         "ext": ".json",
         "tile_id": "T_E05_S02",
         "url": "./assets/vegetation/instances_T_E05_S02.json",
-        "size_bytes": 311225
+        "size_bytes": 533596
       },
       {
         "id": "instances_T_W02_N05",
@@ -2620,7 +2603,7 @@
         "ext": ".json",
         "tile_id": "T_W02_N05",
         "url": "./assets/vegetation/instances_T_W02_N05.json",
-        "size_bytes": 537269
+        "size_bytes": 421001
       },
       {
         "id": "instances_T_W02_S05",
@@ -2628,7 +2611,7 @@
         "ext": ".json",
         "tile_id": "T_W02_S05",
         "url": "./assets/vegetation/instances_T_W02_S05.json",
-        "size_bytes": 420533
+        "size_bytes": 419399
       },
       {
         "id": "instances_T_W05_N02",
@@ -2636,7 +2619,7 @@
         "ext": ".json",
         "tile_id": "T_W05_N02",
         "url": "./assets/vegetation/instances_T_W05_N02.json",
-        "size_bytes": 407119
+        "size_bytes": 588857
       },
       {
         "id": "instances_T_W05_S02",
@@ -2644,15 +2627,7 @@
         "ext": ".json",
         "tile_id": "T_W05_S02",
         "url": "./assets/vegetation/instances_T_W05_S02.json",
-        "size_bytes": 371380
-      },
-      {
-        "id": "instances_T_E02_N05",
-        "filename": "instances_T_E02_N05.json",
-        "ext": ".json",
-        "tile_id": "T_E02_N05",
-        "url": "./assets/vegetation_expanded/instances_T_E02_N05.json",
-        "size_bytes": 462258
+        "size_bytes": 241754
       },
       {
         "id": "instances_T_E04_N04",
@@ -2660,7 +2635,7 @@
         "ext": ".json",
         "tile_id": "T_E04_N04",
         "url": "./assets/vegetation/instances_T_E04_N04.json",
-        "size_bytes": 396094
+        "size_bytes": 498956
       },
       {
         "id": "instances_T_E04_S04",
@@ -2676,7 +2651,7 @@
         "ext": ".json",
         "tile_id": "T_W04_N04",
         "url": "./assets/vegetation/instances_T_W04_N04.json",
-        "size_bytes": 130446
+        "size_bytes": 130817
       },
       {
         "id": "instances_T_W04_S04",
@@ -2692,7 +2667,7 @@
         "ext": ".json",
         "tile_id": "T_E03_S05",
         "url": "./assets/vegetation/instances_T_E03_S05.json",
-        "size_bytes": 396852
+        "size_bytes": 409388
       },
       {
         "id": "instances_T_E05_N03",
@@ -2700,7 +2675,7 @@
         "ext": ".json",
         "tile_id": "T_E05_N03",
         "url": "./assets/vegetation/instances_T_E05_N03.json",
-        "size_bytes": 399825
+        "size_bytes": 401885
       },
       {
         "id": "instances_T_E05_S03",
@@ -2708,7 +2683,7 @@
         "ext": ".json",
         "tile_id": "T_E05_S03",
         "url": "./assets/vegetation/instances_T_E05_S03.json",
-        "size_bytes": 782174
+        "size_bytes": 564134
       },
       {
         "id": "instances_T_W03_N05",
@@ -2724,7 +2699,7 @@
         "ext": ".json",
         "tile_id": "T_W03_S05",
         "url": "./assets/vegetation/instances_T_W03_S05.json",
-        "size_bytes": 403703
+        "size_bytes": 422159
       },
       {
         "id": "instances_T_W05_N03",
@@ -2732,7 +2707,7 @@
         "ext": ".json",
         "tile_id": "T_W05_N03",
         "url": "./assets/vegetation/instances_T_W05_N03.json",
-        "size_bytes": 361531
+        "size_bytes": 386130
       },
       {
         "id": "instances_T_W05_S03",
@@ -2740,15 +2715,7 @@
         "ext": ".json",
         "tile_id": "T_W05_S03",
         "url": "./assets/vegetation/instances_T_W05_S03.json",
-        "size_bytes": 547946
-      },
-      {
-        "id": "instances_T_E03_N05",
-        "filename": "instances_T_E03_N05.json",
-        "ext": ".json",
-        "tile_id": "T_E03_N05",
-        "url": "./assets/vegetation_expanded/instances_T_E03_N05.json",
-        "size_bytes": 508794
+        "size_bytes": 325817
       },
       {
         "id": "instances_T_E00_N06",
@@ -2757,30 +2724,6 @@
         "tile_id": "T_E00_N06",
         "url": "./assets/vegetation/instances_T_E00_N06.json",
         "size_bytes": 511234
-      },
-      {
-        "id": "instances_T_E00_S06",
-        "filename": "instances_T_E00_S06.json",
-        "ext": ".json",
-        "tile_id": "T_E00_S06",
-        "url": "./assets/vegetation_expanded/instances_T_E00_S06.json",
-        "size_bytes": 515065
-      },
-      {
-        "id": "instances_T_E06_N00",
-        "filename": "instances_T_E06_N00.json",
-        "ext": ".json",
-        "tile_id": "T_E06_N00",
-        "url": "./assets/vegetation_expanded/instances_T_E06_N00.json",
-        "size_bytes": 497969
-      },
-      {
-        "id": "instances_T_W06_N00",
-        "filename": "instances_T_W06_N00.json",
-        "ext": ".json",
-        "tile_id": "T_W06_N00",
-        "url": "./assets/vegetation_expanded/instances_T_W06_N00.json",
-        "size_bytes": 518646
       },
       {
         "id": "instances_T_E01_N06",
@@ -2796,7 +2739,7 @@
         "ext": ".json",
         "tile_id": "T_E06_N01",
         "url": "./assets/vegetation/instances_T_E06_N01.json",
-        "size_bytes": 402307
+        "size_bytes": 407071
       },
       {
         "id": "instances_T_W01_N06",
@@ -2807,52 +2750,12 @@
         "size_bytes": 541586
       },
       {
-        "id": "instances_T_E01_S06",
-        "filename": "instances_T_E01_S06.json",
-        "ext": ".json",
-        "tile_id": "T_E01_S06",
-        "url": "./assets/vegetation_expanded/instances_T_E01_S06.json",
-        "size_bytes": 530454
-      },
-      {
-        "id": "instances_T_E06_S01",
-        "filename": "instances_T_E06_S01.json",
-        "ext": ".json",
-        "tile_id": "T_E06_S01",
-        "url": "./assets/vegetation_expanded/instances_T_E06_S01.json",
-        "size_bytes": 526770
-      },
-      {
-        "id": "instances_T_W01_S06",
-        "filename": "instances_T_W01_S06.json",
-        "ext": ".json",
-        "tile_id": "T_W01_S06",
-        "url": "./assets/vegetation_expanded/instances_T_W01_S06.json",
-        "size_bytes": 539418
-      },
-      {
-        "id": "instances_T_W06_N01",
-        "filename": "instances_T_W06_N01.json",
-        "ext": ".json",
-        "tile_id": "T_W06_N01",
-        "url": "./assets/vegetation_expanded/instances_T_W06_N01.json",
-        "size_bytes": 526574
-      },
-      {
-        "id": "instances_T_W06_S01",
-        "filename": "instances_T_W06_S01.json",
-        "ext": ".json",
-        "tile_id": "T_W06_S01",
-        "url": "./assets/vegetation_expanded/instances_T_W06_S01.json",
-        "size_bytes": 530874
-      },
-      {
         "id": "instances_T_E06_N02",
         "filename": "instances_T_E06_N02.json",
         "ext": ".json",
         "tile_id": "T_E06_N02",
         "url": "./assets/vegetation/instances_T_E06_N02.json",
-        "size_bytes": 580834
+        "size_bytes": 589878
       },
       {
         "id": "instances_T_E06_S02",
@@ -2860,7 +2763,7 @@
         "ext": ".json",
         "tile_id": "T_E06_S02",
         "url": "./assets/vegetation/instances_T_E06_S02.json",
-        "size_bytes": 618085
+        "size_bytes": 526516
       },
       {
         "id": "instances_T_W06_S02",
@@ -2868,47 +2771,7 @@
         "ext": ".json",
         "tile_id": "T_W06_S02",
         "url": "./assets/vegetation/instances_T_W06_S02.json",
-        "size_bytes": 589850
-      },
-      {
-        "id": "instances_T_E02_N06",
-        "filename": "instances_T_E02_N06.json",
-        "ext": ".json",
-        "tile_id": "T_E02_N06",
-        "url": "./assets/vegetation_expanded/instances_T_E02_N06.json",
-        "size_bytes": 517947
-      },
-      {
-        "id": "instances_T_E02_S06",
-        "filename": "instances_T_E02_S06.json",
-        "ext": ".json",
-        "tile_id": "T_E02_S06",
-        "url": "./assets/vegetation_expanded/instances_T_E02_S06.json",
-        "size_bytes": 520273
-      },
-      {
-        "id": "instances_T_W02_N06",
-        "filename": "instances_T_W02_N06.json",
-        "ext": ".json",
-        "tile_id": "T_W02_N06",
-        "url": "./assets/vegetation_expanded/instances_T_W02_N06.json",
-        "size_bytes": 538947
-      },
-      {
-        "id": "instances_T_W02_S06",
-        "filename": "instances_T_W02_S06.json",
-        "ext": ".json",
-        "tile_id": "T_W02_S06",
-        "url": "./assets/vegetation_expanded/instances_T_W02_S06.json",
-        "size_bytes": 537558
-      },
-      {
-        "id": "instances_T_W06_N02",
-        "filename": "instances_T_W06_N02.json",
-        "ext": ".json",
-        "tile_id": "T_W06_N02",
-        "url": "./assets/vegetation_expanded/instances_T_W06_N02.json",
-        "size_bytes": 523124
+        "size_bytes": 512785
       },
       {
         "id": "instances_T_E04_S05",
@@ -2916,7 +2779,7 @@
         "ext": ".json",
         "tile_id": "T_E04_S05",
         "url": "./assets/vegetation/instances_T_E04_S05.json",
-        "size_bytes": 396427
+        "size_bytes": 603027
       },
       {
         "id": "instances_T_E05_N04",
@@ -2924,7 +2787,7 @@
         "ext": ".json",
         "tile_id": "T_E05_N04",
         "url": "./assets/vegetation/instances_T_E05_N04.json",
-        "size_bytes": 401422
+        "size_bytes": 390243
       },
       {
         "id": "instances_T_E05_S04",
@@ -2932,7 +2795,7 @@
         "ext": ".json",
         "tile_id": "T_E05_S04",
         "url": "./assets/vegetation/instances_T_E05_S04.json",
-        "size_bytes": 423476
+        "size_bytes": 416502
       },
       {
         "id": "instances_T_W04_N05",
@@ -2948,7 +2811,7 @@
         "ext": ".json",
         "tile_id": "T_W04_S05",
         "url": "./assets/vegetation/instances_T_W04_S05.json",
-        "size_bytes": 610971
+        "size_bytes": 423982
       },
       {
         "id": "instances_T_W05_N04",
@@ -2956,7 +2819,7 @@
         "ext": ".json",
         "tile_id": "T_W05_N04",
         "url": "./assets/vegetation/instances_T_W05_N04.json",
-        "size_bytes": 313195
+        "size_bytes": 396758
       },
       {
         "id": "instances_T_W05_S04",
@@ -2964,15 +2827,7 @@
         "ext": ".json",
         "tile_id": "T_W05_S04",
         "url": "./assets/vegetation/instances_T_W05_S04.json",
-        "size_bytes": 590986
-      },
-      {
-        "id": "instances_T_E04_N05",
-        "filename": "instances_T_E04_N05.json",
-        "ext": ".json",
-        "tile_id": "T_E04_N05",
-        "url": "./assets/vegetation_expanded/instances_T_E04_N05.json",
-        "size_bytes": 501208
+        "size_bytes": 506112
       },
       {
         "id": "instances_T_E06_S03",
@@ -2988,79 +2843,7 @@
         "ext": ".json",
         "tile_id": "T_W03_N06",
         "url": "./assets/vegetation/instances_T_W03_N06.json",
-        "size_bytes": 528401
-      },
-      {
-        "id": "instances_T_E03_N06",
-        "filename": "instances_T_E03_N06.json",
-        "ext": ".json",
-        "tile_id": "T_E03_N06",
-        "url": "./assets/vegetation_expanded/instances_T_E03_N06.json",
-        "size_bytes": 511727
-      },
-      {
-        "id": "instances_T_E03_S06",
-        "filename": "instances_T_E03_S06.json",
-        "ext": ".json",
-        "tile_id": "T_E03_S06",
-        "url": "./assets/vegetation_expanded/instances_T_E03_S06.json",
-        "size_bytes": 524207
-      },
-      {
-        "id": "instances_T_E06_N03",
-        "filename": "instances_T_E06_N03.json",
-        "ext": ".json",
-        "tile_id": "T_E06_N03",
-        "url": "./assets/vegetation_expanded/instances_T_E06_N03.json",
-        "size_bytes": 501319
-      },
-      {
-        "id": "instances_T_W03_S06",
-        "filename": "instances_T_W03_S06.json",
-        "ext": ".json",
-        "tile_id": "T_W03_S06",
-        "url": "./assets/vegetation_expanded/instances_T_W03_S06.json",
-        "size_bytes": 540917
-      },
-      {
-        "id": "instances_T_W06_N03",
-        "filename": "instances_T_W06_N03.json",
-        "ext": ".json",
-        "tile_id": "T_W06_N03",
-        "url": "./assets/vegetation_expanded/instances_T_W06_N03.json",
-        "size_bytes": 525442
-      },
-      {
-        "id": "instances_T_W06_S03",
-        "filename": "instances_T_W06_S03.json",
-        "ext": ".json",
-        "tile_id": "T_W06_S03",
-        "url": "./assets/vegetation_expanded/instances_T_W06_S03.json",
-        "size_bytes": 538339
-      },
-      {
-        "id": "instances_T_E00_N07",
-        "filename": "instances_T_E00_N07.json",
-        "ext": ".json",
-        "tile_id": "T_E00_N07",
-        "url": "./assets/vegetation_expanded/instances_T_E00_N07.json",
-        "size_bytes": 520110
-      },
-      {
-        "id": "instances_T_E00_S07",
-        "filename": "instances_T_E00_S07.json",
-        "ext": ".json",
-        "tile_id": "T_E00_S07",
-        "url": "./assets/vegetation_expanded/instances_T_E00_S07.json",
-        "size_bytes": 506770
-      },
-      {
-        "id": "instances_T_E07_N00",
-        "filename": "instances_T_E07_N00.json",
-        "ext": ".json",
-        "tile_id": "T_E07_N00",
-        "url": "./assets/vegetation_expanded/instances_T_E07_N00.json",
-        "size_bytes": 504927
+        "size_bytes": 421414
       },
       {
         "id": "instances_T_E05_S05",
@@ -3068,7 +2851,7 @@
         "ext": ".json",
         "tile_id": "T_E05_S05",
         "url": "./assets/vegetation/instances_T_E05_S05.json",
-        "size_bytes": 406493
+        "size_bytes": 610564
       },
       {
         "id": "instances_T_E07_N01",
@@ -3076,7 +2859,7 @@
         "ext": ".json",
         "tile_id": "T_E07_N01",
         "url": "./assets/vegetation/instances_T_E07_N01.json",
-        "size_bytes": 397620
+        "size_bytes": 592860
       },
       {
         "id": "instances_T_W05_N05",
@@ -3084,7 +2867,7 @@
         "ext": ".json",
         "tile_id": "T_W05_N05",
         "url": "./assets/vegetation/instances_T_W05_N05.json",
-        "size_bytes": 431913
+        "size_bytes": 412759
       },
       {
         "id": "instances_T_W05_S05",
@@ -3092,55 +2875,7 @@
         "ext": ".json",
         "tile_id": "T_W05_S05",
         "url": "./assets/vegetation/instances_T_W05_S05.json",
-        "size_bytes": 330753
-      },
-      {
-        "id": "instances_T_E01_N07",
-        "filename": "instances_T_E01_N07.json",
-        "ext": ".json",
-        "tile_id": "T_E01_N07",
-        "url": "./assets/vegetation_expanded/instances_T_E01_N07.json",
-        "size_bytes": 523561
-      },
-      {
-        "id": "instances_T_E01_S07",
-        "filename": "instances_T_E01_S07.json",
-        "ext": ".json",
-        "tile_id": "T_E01_S07",
-        "url": "./assets/vegetation_expanded/instances_T_E01_S07.json",
-        "size_bytes": 531272
-      },
-      {
-        "id": "instances_T_E05_N05",
-        "filename": "instances_T_E05_N05.json",
-        "ext": ".json",
-        "tile_id": "T_E05_N05",
-        "url": "./assets/vegetation_expanded/instances_T_E05_N05.json",
-        "size_bytes": 510351
-      },
-      {
-        "id": "instances_T_E07_S01",
-        "filename": "instances_T_E07_S01.json",
-        "ext": ".json",
-        "tile_id": "T_E07_S01",
-        "url": "./assets/vegetation_expanded/instances_T_E07_S01.json",
-        "size_bytes": 523036
-      },
-      {
-        "id": "instances_T_W01_N07",
-        "filename": "instances_T_W01_N07.json",
-        "ext": ".json",
-        "tile_id": "T_W01_N07",
-        "url": "./assets/vegetation_expanded/instances_T_W01_N07.json",
-        "size_bytes": 543008
-      },
-      {
-        "id": "instances_T_W01_S07",
-        "filename": "instances_T_W01_S07.json",
-        "ext": ".json",
-        "tile_id": "T_W01_S07",
-        "url": "./assets/vegetation_expanded/instances_T_W01_S07.json",
-        "size_bytes": 537477
+        "size_bytes": 608964
       },
       {
         "id": "instances_T_E04_S06",
@@ -3148,7 +2883,7 @@
         "ext": ".json",
         "tile_id": "T_E04_S06",
         "url": "./assets/vegetation/instances_T_E04_S06.json",
-        "size_bytes": 394926
+        "size_bytes": 533191
       },
       {
         "id": "instances_T_E06_S04",
@@ -3156,7 +2891,7 @@
         "ext": ".json",
         "tile_id": "T_E06_S04",
         "url": "./assets/vegetation/instances_T_E06_S04.json",
-        "size_bytes": 906900
+        "size_bytes": 574152
       },
       {
         "id": "instances_T_W04_S06",
@@ -3164,7 +2899,7 @@
         "ext": ".json",
         "tile_id": "T_W04_S06",
         "url": "./assets/vegetation/instances_T_W04_S06.json",
-        "size_bytes": 621319
+        "size_bytes": 540312
       },
       {
         "id": "instances_T_W06_S04",
@@ -3172,39 +2907,7 @@
         "ext": ".json",
         "tile_id": "T_W06_S04",
         "url": "./assets/vegetation/instances_T_W06_S04.json",
-        "size_bytes": 539600
-      },
-      {
-        "id": "instances_T_E04_N06",
-        "filename": "instances_T_E04_N06.json",
-        "ext": ".json",
-        "tile_id": "T_E04_N06",
-        "url": "./assets/vegetation_expanded/instances_T_E04_N06.json",
-        "size_bytes": 500808
-      },
-      {
-        "id": "instances_T_E06_N04",
-        "filename": "instances_T_E06_N04.json",
-        "ext": ".json",
-        "tile_id": "T_E06_N04",
-        "url": "./assets/vegetation_expanded/instances_T_E06_N04.json",
-        "size_bytes": 504651
-      },
-      {
-        "id": "instances_T_W04_N06",
-        "filename": "instances_T_W04_N06.json",
-        "ext": ".json",
-        "tile_id": "T_W04_N06",
-        "url": "./assets/vegetation_expanded/instances_T_W04_N06.json",
-        "size_bytes": 525745
-      },
-      {
-        "id": "instances_T_W06_N04",
-        "filename": "instances_T_W06_N04.json",
-        "ext": ".json",
-        "tile_id": "T_W06_N04",
-        "url": "./assets/vegetation_expanded/instances_T_W06_N04.json",
-        "size_bytes": 526556
+        "size_bytes": 555664
       },
       {
         "id": "instances_T_E07_N02",
@@ -3212,7 +2915,7 @@
         "ext": ".json",
         "tile_id": "T_E07_N02",
         "url": "./assets/vegetation/instances_T_E07_N02.json",
-        "size_bytes": 387994
+        "size_bytes": 403513
       },
       {
         "id": "instances_T_E07_S02",
@@ -3220,47 +2923,7 @@
         "ext": ".json",
         "tile_id": "T_E07_S02",
         "url": "./assets/vegetation/instances_T_E07_S02.json",
-        "size_bytes": 629074
-      },
-      {
-        "id": "instances_T_E02_N07",
-        "filename": "instances_T_E02_N07.json",
-        "ext": ".json",
-        "tile_id": "T_E02_N07",
-        "url": "./assets/vegetation_expanded/instances_T_E02_N07.json",
-        "size_bytes": 509829
-      },
-      {
-        "id": "instances_T_E02_S07",
-        "filename": "instances_T_E02_S07.json",
-        "ext": ".json",
-        "tile_id": "T_E02_S07",
-        "url": "./assets/vegetation_expanded/instances_T_E02_S07.json",
-        "size_bytes": 526494
-      },
-      {
-        "id": "instances_T_W02_N07",
-        "filename": "instances_T_W02_N07.json",
-        "ext": ".json",
-        "tile_id": "T_W02_N07",
-        "url": "./assets/vegetation_expanded/instances_T_W02_N07.json",
-        "size_bytes": 536082
-      },
-      {
-        "id": "instances_T_W02_S07",
-        "filename": "instances_T_W02_S07.json",
-        "ext": ".json",
-        "tile_id": "T_W02_S07",
-        "url": "./assets/vegetation_expanded/instances_T_W02_S07.json",
-        "size_bytes": 534448
-      },
-      {
-        "id": "instances_T_W07_S02",
-        "filename": "instances_T_W07_S02.json",
-        "ext": ".json",
-        "tile_id": "T_W07_S02",
-        "url": "./assets/vegetation_expanded/instances_T_W07_S02.json",
-        "size_bytes": 540597
+        "size_bytes": 524817
       },
       {
         "id": "instances_T_E07_S03",
@@ -3271,52 +2934,12 @@
         "size_bytes": 725294
       },
       {
-        "id": "instances_T_E03_N07",
-        "filename": "instances_T_E03_N07.json",
-        "ext": ".json",
-        "tile_id": "T_E03_N07",
-        "url": "./assets/vegetation_expanded/instances_T_E03_N07.json",
-        "size_bytes": 515166
-      },
-      {
-        "id": "instances_T_E03_S07",
-        "filename": "instances_T_E03_S07.json",
-        "ext": ".json",
-        "tile_id": "T_E03_S07",
-        "url": "./assets/vegetation_expanded/instances_T_E03_S07.json",
-        "size_bytes": 513402
-      },
-      {
-        "id": "instances_T_E07_N03",
-        "filename": "instances_T_E07_N03.json",
-        "ext": ".json",
-        "tile_id": "T_E07_N03",
-        "url": "./assets/vegetation_expanded/instances_T_E07_N03.json",
-        "size_bytes": 507082
-      },
-      {
-        "id": "instances_T_W03_N07",
-        "filename": "instances_T_W03_N07.json",
-        "ext": ".json",
-        "tile_id": "T_W03_N07",
-        "url": "./assets/vegetation_expanded/instances_T_W03_N07.json",
-        "size_bytes": 530448
-      },
-      {
-        "id": "instances_T_W03_S07",
-        "filename": "instances_T_W03_S07.json",
-        "ext": ".json",
-        "tile_id": "T_W03_S07",
-        "url": "./assets/vegetation_expanded/instances_T_W03_S07.json",
-        "size_bytes": 531030
-      },
-      {
         "id": "instances_T_E05_S06",
         "filename": "instances_T_E05_S06.json",
         "ext": ".json",
         "tile_id": "T_E05_S06",
         "url": "./assets/vegetation/instances_T_E05_S06.json",
-        "size_bytes": 407387
+        "size_bytes": 536112
       },
       {
         "id": "instances_T_E06_S05",
@@ -3324,7 +2947,7 @@
         "ext": ".json",
         "tile_id": "T_E06_S05",
         "url": "./assets/vegetation/instances_T_E06_S05.json",
-        "size_bytes": 658156
+        "size_bytes": 625871
       },
       {
         "id": "instances_T_W05_S06",
@@ -3332,7 +2955,7 @@
         "ext": ".json",
         "tile_id": "T_W05_S06",
         "url": "./assets/vegetation/instances_T_W05_S06.json",
-        "size_bytes": 218442
+        "size_bytes": 337844
       },
       {
         "id": "instances_T_W06_S05",
@@ -3340,31 +2963,7 @@
         "ext": ".json",
         "tile_id": "T_W06_S05",
         "url": "./assets/vegetation/instances_T_W06_S05.json",
-        "size_bytes": 308377
-      },
-      {
-        "id": "instances_T_E05_N06",
-        "filename": "instances_T_E05_N06.json",
-        "ext": ".json",
-        "tile_id": "T_E05_N06",
-        "url": "./assets/vegetation_expanded/instances_T_E05_N06.json",
-        "size_bytes": 508169
-      },
-      {
-        "id": "instances_T_E06_N05",
-        "filename": "instances_T_E06_N05.json",
-        "ext": ".json",
-        "tile_id": "T_E06_N05",
-        "url": "./assets/vegetation_expanded/instances_T_E06_N05.json",
-        "size_bytes": 514424
-      },
-      {
-        "id": "instances_T_W05_N06",
-        "filename": "instances_T_W05_N06.json",
-        "ext": ".json",
-        "tile_id": "T_W05_N06",
-        "url": "./assets/vegetation_expanded/instances_T_W05_N06.json",
-        "size_bytes": 541171
+        "size_bytes": 496862
       },
       {
         "id": "instances_T_E07_N04",
@@ -3372,7 +2971,7 @@
         "ext": ".json",
         "tile_id": "T_E07_N04",
         "url": "./assets/vegetation/instances_T_E07_N04.json",
-        "size_bytes": 399756
+        "size_bytes": 405686
       },
       {
         "id": "instances_T_E07_S04",
@@ -3380,39 +2979,7 @@
         "ext": ".json",
         "tile_id": "T_E07_S04",
         "url": "./assets/vegetation/instances_T_E07_S04.json",
-        "size_bytes": 734767
-      },
-      {
-        "id": "instances_T_E04_N07",
-        "filename": "instances_T_E04_N07.json",
-        "ext": ".json",
-        "tile_id": "T_E04_N07",
-        "url": "./assets/vegetation_expanded/instances_T_E04_N07.json",
-        "size_bytes": 507312
-      },
-      {
-        "id": "instances_T_E04_S07",
-        "filename": "instances_T_E04_S07.json",
-        "ext": ".json",
-        "tile_id": "T_E04_S07",
-        "url": "./assets/vegetation_expanded/instances_T_E04_S07.json",
-        "size_bytes": 518259
-      },
-      {
-        "id": "instances_T_W04_N07",
-        "filename": "instances_T_W04_N07.json",
-        "ext": ".json",
-        "tile_id": "T_W04_N07",
-        "url": "./assets/vegetation_expanded/instances_T_W04_N07.json",
-        "size_bytes": 520817
-      },
-      {
-        "id": "instances_T_W04_S07",
-        "filename": "instances_T_W04_S07.json",
-        "ext": ".json",
-        "tile_id": "T_W04_S07",
-        "url": "./assets/vegetation_expanded/instances_T_W04_S07.json",
-        "size_bytes": 541020
+        "size_bytes": 621378
       },
       {
         "id": "instances_T_E02_S08",
@@ -3420,7 +2987,7 @@
         "ext": ".json",
         "tile_id": "T_E02_S08",
         "url": "./assets/vegetation/instances_T_E02_S08.json",
-        "size_bytes": 234634
+        "size_bytes": 272199
       },
       {
         "id": "instances_T_E08_N02",
@@ -3428,7 +2995,7 @@
         "ext": ".json",
         "tile_id": "T_E08_N02",
         "url": "./assets/vegetation/instances_T_E08_N02.json",
-        "size_bytes": 371456
+        "size_bytes": 536102
       },
       {
         "id": "instances_T_E06_S06",
@@ -3436,7 +3003,7 @@
         "ext": ".json",
         "tile_id": "T_E06_S06",
         "url": "./assets/vegetation/instances_T_E06_S06.json",
-        "size_bytes": 433127
+        "size_bytes": 344700
       },
       {
         "id": "instances_T_W06_S06",
@@ -3444,23 +3011,7 @@
         "ext": ".json",
         "tile_id": "T_W06_S06",
         "url": "./assets/vegetation/instances_T_W06_S06.json",
-        "size_bytes": 413763
-      },
-      {
-        "id": "instances_T_E06_N06",
-        "filename": "instances_T_E06_N06.json",
-        "ext": ".json",
-        "tile_id": "T_E06_N06",
-        "url": "./assets/vegetation_expanded/instances_T_E06_N06.json",
-        "size_bytes": 522510
-      },
-      {
-        "id": "instances_T_W06_N06",
-        "filename": "instances_T_W06_N06.json",
-        "ext": ".json",
-        "tile_id": "T_W06_N06",
-        "url": "./assets/vegetation_expanded/instances_T_W06_N06.json",
-        "size_bytes": 537850
+        "size_bytes": 417865
       },
       {
         "id": "instances_T_E03_S08",
@@ -3468,7 +3019,7 @@
         "ext": ".json",
         "tile_id": "T_E03_S08",
         "url": "./assets/vegetation/instances_T_E03_S08.json",
-        "size_bytes": 401471
+        "size_bytes": 555747
       },
       {
         "id": "instances_T_E08_S03",
@@ -3476,7 +3027,7 @@
         "ext": ".json",
         "tile_id": "T_E08_S03",
         "url": "./assets/vegetation/instances_T_E08_S03.json",
-        "size_bytes": 856887
+        "size_bytes": 572227
       },
       {
         "id": "instances_T_W08_S03",
@@ -3484,7 +3035,7 @@
         "ext": ".json",
         "tile_id": "T_W08_S03",
         "url": "./assets/vegetation/instances_T_W08_S03.json",
-        "size_bytes": 596617
+        "size_bytes": 566212
       },
       {
         "id": "instances_T_E07_S05",
@@ -3495,44 +3046,12 @@
         "size_bytes": 705787
       },
       {
-        "id": "instances_T_E05_N07",
-        "filename": "instances_T_E05_N07.json",
-        "ext": ".json",
-        "tile_id": "T_E05_N07",
-        "url": "./assets/vegetation_expanded/instances_T_E05_N07.json",
-        "size_bytes": 515192
-      },
-      {
-        "id": "instances_T_E05_S07",
-        "filename": "instances_T_E05_S07.json",
-        "ext": ".json",
-        "tile_id": "T_E05_S07",
-        "url": "./assets/vegetation_expanded/instances_T_E05_S07.json",
-        "size_bytes": 528271
-      },
-      {
-        "id": "instances_T_W05_N07",
-        "filename": "instances_T_W05_N07.json",
-        "ext": ".json",
-        "tile_id": "T_W05_N07",
-        "url": "./assets/vegetation_expanded/instances_T_W05_N07.json",
-        "size_bytes": 531938
-      },
-      {
-        "id": "instances_T_W05_S07",
-        "filename": "instances_T_W05_S07.json",
-        "ext": ".json",
-        "tile_id": "T_W05_S07",
-        "url": "./assets/vegetation_expanded/instances_T_W05_S07.json",
-        "size_bytes": 549352
-      },
-      {
         "id": "instances_T_E08_N04",
         "filename": "instances_T_E08_N04.json",
         "ext": ".json",
         "tile_id": "T_E08_N04",
         "url": "./assets/vegetation/instances_T_E08_N04.json",
-        "size_bytes": 397624
+        "size_bytes": 543004
       },
       {
         "id": "instances_T_E08_S04",
@@ -3540,7 +3059,7 @@
         "ext": ".json",
         "tile_id": "T_E08_S04",
         "url": "./assets/vegetation/instances_T_E08_S04.json",
-        "size_bytes": 906390
+        "size_bytes": 338078
       },
       {
         "id": "instances_T_E01_S09",
@@ -3548,7 +3067,7 @@
         "ext": ".json",
         "tile_id": "T_E01_S09",
         "url": "./assets/vegetation/instances_T_E01_S09.json",
-        "size_bytes": 372520
+        "size_bytes": 546929
       },
       {
         "id": "instances_T_E02_S09",
@@ -3556,7 +3075,7 @@
         "ext": ".json",
         "tile_id": "T_E02_S09",
         "url": "./assets/vegetation/instances_T_E02_S09.json",
-        "size_bytes": 202399
+        "size_bytes": 364457
       },
       {
         "id": "instances_T_E07_S06",
@@ -3564,7 +3083,7 @@
         "ext": ".json",
         "tile_id": "T_E07_S06",
         "url": "./assets/vegetation/instances_T_E07_S06.json",
-        "size_bytes": 234257
+        "size_bytes": 424864
       },
       {
         "id": "instances_T_W06_S07",
@@ -3572,7 +3091,7 @@
         "ext": ".json",
         "tile_id": "T_W06_S07",
         "url": "./assets/vegetation/instances_T_W06_S07.json",
-        "size_bytes": 432758
+        "size_bytes": 443623
       },
       {
         "id": "instances_T_W09_S02",
@@ -3580,31 +3099,7 @@
         "ext": ".json",
         "tile_id": "T_W09_S02",
         "url": "./assets/vegetation/instances_T_W09_S02.json",
-        "size_bytes": 407340
-      },
-      {
-        "id": "instances_T_E06_N07",
-        "filename": "instances_T_E06_N07.json",
-        "ext": ".json",
-        "tile_id": "T_E06_N07",
-        "url": "./assets/vegetation_expanded/instances_T_E06_N07.json",
-        "size_bytes": 524930
-      },
-      {
-        "id": "instances_T_E06_S07",
-        "filename": "instances_T_E06_S07.json",
-        "ext": ".json",
-        "tile_id": "T_E06_S07",
-        "url": "./assets/vegetation_expanded/instances_T_E06_S07.json",
-        "size_bytes": 528794
-      },
-      {
-        "id": "instances_T_W06_N07",
-        "filename": "instances_T_W06_N07.json",
-        "ext": ".json",
-        "tile_id": "T_W06_N07",
-        "url": "./assets/vegetation_expanded/instances_T_W06_N07.json",
-        "size_bytes": 541276
+        "size_bytes": 555644
       },
       {
         "id": "instances_T_E08_N05",
@@ -3612,7 +3107,7 @@
         "ext": ".json",
         "tile_id": "T_E08_N05",
         "url": "./assets/vegetation/instances_T_E08_N05.json",
-        "size_bytes": 404308
+        "size_bytes": 551293
       },
       {
         "id": "instances_T_E08_S05",
@@ -3620,7 +3115,7 @@
         "ext": ".json",
         "tile_id": "T_E08_S05",
         "url": "./assets/vegetation/instances_T_E08_S05.json",
-        "size_bytes": 329678
+        "size_bytes": 293673
       },
       {
         "id": "instances_T_W09_S03",
@@ -3628,7 +3123,7 @@
         "ext": ".json",
         "tile_id": "T_W09_S03",
         "url": "./assets/vegetation/instances_T_W09_S03.json",
-        "size_bytes": 409800
+        "size_bytes": 568016
       },
       {
         "id": "instances_T_E09_N04",
@@ -3636,7 +3131,7 @@
         "ext": ".json",
         "tile_id": "T_E09_N04",
         "url": "./assets/vegetation/instances_T_E09_N04.json",
-        "size_bytes": 404916
+        "size_bytes": 403762
       },
       {
         "id": "instances_T_W09_S04",
@@ -3644,7 +3139,7 @@
         "ext": ".json",
         "tile_id": "T_W09_S04",
         "url": "./assets/vegetation/instances_T_W09_S04.json",
-        "size_bytes": 410607
+        "size_bytes": 567385
       },
       {
         "id": "instances_T_E00_S10",
@@ -3652,7 +3147,7 @@
         "ext": ".json",
         "tile_id": "T_E00_S10",
         "url": "./assets/vegetation/instances_T_E00_S10.json",
-        "size_bytes": 368310
+        "size_bytes": 538642
       },
       {
         "id": "instances_T_E08_S06",
@@ -3660,7 +3155,7 @@
         "ext": ".json",
         "tile_id": "T_E08_S06",
         "url": "./assets/vegetation/instances_T_E08_S06.json",
-        "size_bytes": 91841
+        "size_bytes": 133088
       },
       {
         "id": "instances_T_E01_S10",
@@ -3668,7 +3163,7 @@
         "ext": ".json",
         "tile_id": "T_E01_S10",
         "url": "./assets/vegetation/instances_T_E01_S10.json",
-        "size_bytes": 387662
+        "size_bytes": 561882
       },
       {
         "id": "instances_T_W01_S10",
@@ -3676,7 +3171,7 @@
         "ext": ".json",
         "tile_id": "T_W01_S10",
         "url": "./assets/vegetation/instances_T_W01_S10.json",
-        "size_bytes": 380591
+        "size_bytes": 561330
       },
       {
         "id": "instances_T_E02_S10",
@@ -3684,7 +3179,7 @@
         "ext": ".json",
         "tile_id": "T_E02_S10",
         "url": "./assets/vegetation/instances_T_E02_S10.json",
-        "size_bytes": 295967
+        "size_bytes": 525510
       },
       {
         "id": "instances_T_E05_S09",
@@ -3692,7 +3187,7 @@
         "ext": ".json",
         "tile_id": "T_E05_S09",
         "url": "./assets/vegetation/instances_T_E05_S09.json",
-        "size_bytes": 280310
+        "size_bytes": 390594
       },
       {
         "id": "instances_T_E09_N05",
@@ -3700,7 +3195,7 @@
         "ext": ".json",
         "tile_id": "T_E09_N05",
         "url": "./assets/vegetation/instances_T_E09_N05.json",
-        "size_bytes": 406233
+        "size_bytes": 452886
       },
       {
         "id": "instances_T_E09_S05",
@@ -3708,7 +3203,7 @@
         "ext": ".json",
         "tile_id": "T_E09_S05",
         "url": "./assets/vegetation/instances_T_E09_S05.json",
-        "size_bytes": 792089
+        "size_bytes": 568467
       },
       {
         "id": "instances_T_E03_S10",
@@ -3716,7 +3211,7 @@
         "ext": ".json",
         "tile_id": "T_E03_S10",
         "url": "./assets/vegetation/instances_T_E03_S10.json",
-        "size_bytes": 394588
+        "size_bytes": 557168
       },
       {
         "id": "instances_T_W03_S10",
@@ -3724,7 +3219,7 @@
         "ext": ".json",
         "tile_id": "T_W03_S10",
         "url": "./assets/vegetation/instances_T_W03_S10.json",
-        "size_bytes": 390075
+        "size_bytes": 577974
       },
       {
         "id": "instances_T_W10_S03",
@@ -3732,7 +3227,7 @@
         "ext": ".json",
         "tile_id": "T_W10_S03",
         "url": "./assets/vegetation/instances_T_W10_S03.json",
-        "size_bytes": 410086
+        "size_bytes": 573586
       },
       {
         "id": "instances_T_W08_S07",
@@ -3740,7 +3235,7 @@
         "ext": ".json",
         "tile_id": "T_W08_S07",
         "url": "./assets/vegetation/instances_T_W08_S07.json",
-        "size_bytes": 421699
+        "size_bytes": 549272
       },
       {
         "id": "instances_T_E04_S10",
@@ -3748,7 +3243,7 @@
         "ext": ".json",
         "tile_id": "T_E04_S10",
         "url": "./assets/vegetation/instances_T_E04_S10.json",
-        "size_bytes": 386753
+        "size_bytes": 551162
       },
       {
         "id": "instances_T_E10_N04",
@@ -3756,7 +3251,7 @@
         "ext": ".json",
         "tile_id": "T_E10_N04",
         "url": "./assets/vegetation/instances_T_E10_N04.json",
-        "size_bytes": 395103
+        "size_bytes": 515182
       },
       {
         "id": "instances_T_W04_S10",
@@ -3764,7 +3259,7 @@
         "ext": ".json",
         "tile_id": "T_W04_S10",
         "url": "./assets/vegetation/instances_T_W04_S10.json",
-        "size_bytes": 397986
+        "size_bytes": 579589
       },
       {
         "id": "instances_T_E09_S06",
@@ -3772,7 +3267,7 @@
         "ext": ".json",
         "tile_id": "T_E09_S06",
         "url": "./assets/vegetation/instances_T_E09_S06.json",
-        "size_bytes": 380138
+        "size_bytes": 554057
       },
       {
         "id": "instances_T_E00_S11",
@@ -3780,7 +3275,7 @@
         "ext": ".json",
         "tile_id": "T_E00_S11",
         "url": "./assets/vegetation/instances_T_E00_S11.json",
-        "size_bytes": 306072
+        "size_bytes": 464345
       },
       {
         "id": "instances_T_E01_S11",
@@ -3796,7 +3291,7 @@
         "ext": ".json",
         "tile_id": "T_W01_S11",
         "url": "./assets/vegetation/instances_T_W01_S11.json",
-        "size_bytes": 282470
+        "size_bytes": 395804
       },
       {
         "id": "instances_T_E05_S10",
@@ -3804,7 +3299,7 @@
         "ext": ".json",
         "tile_id": "T_E05_S10",
         "url": "./assets/vegetation/instances_T_E05_S10.json",
-        "size_bytes": 212436
+        "size_bytes": 405739
       },
       {
         "id": "instances_T_E10_N05",
@@ -3812,7 +3307,7 @@
         "ext": ".json",
         "tile_id": "T_E10_N05",
         "url": "./assets/vegetation/instances_T_E10_N05.json",
-        "size_bytes": 404688
+        "size_bytes": 525771
       },
       {
         "id": "instances_T_W08_S08",
@@ -3820,7 +3315,7 @@
         "ext": ".json",
         "tile_id": "T_W08_S08",
         "url": "./assets/vegetation/instances_T_W08_S08.json",
-        "size_bytes": 830635
+        "size_bytes": 585470
       },
       {
         "id": "instances_T_E03_S11",
@@ -3836,7 +3331,7 @@
         "ext": ".json",
         "tile_id": "T_W03_S11",
         "url": "./assets/vegetation/instances_T_W03_S11.json",
-        "size_bytes": 397736
+        "size_bytes": 570901
       },
       {
         "id": "instances_T_W09_S07",
@@ -3844,7 +3339,7 @@
         "ext": ".json",
         "tile_id": "T_W09_S07",
         "url": "./assets/vegetation/instances_T_W09_S07.json",
-        "size_bytes": 408361
+        "size_bytes": 575460
       },
       {
         "id": "instances_T_E06_S10",
@@ -3852,7 +3347,7 @@
         "ext": ".json",
         "tile_id": "T_E06_S10",
         "url": "./assets/vegetation/instances_T_E06_S10.json",
-        "size_bytes": 600210
+        "size_bytes": 570069
       },
       {
         "id": "instances_T_W10_S06",
@@ -3860,7 +3355,7 @@
         "ext": ".json",
         "tile_id": "T_W10_S06",
         "url": "./assets/vegetation/instances_T_W10_S06.json",
-        "size_bytes": 622000
+        "size_bytes": 593844
       },
       {
         "id": "instances_T_E04_S11",
@@ -3876,7 +3371,7 @@
         "ext": ".json",
         "tile_id": "T_W04_S11",
         "url": "./assets/vegetation/instances_T_W04_S11.json",
-        "size_bytes": 386439
+        "size_bytes": 559555
       },
       {
         "id": "instances_T_W08_S09",
@@ -3884,7 +3379,7 @@
         "ext": ".json",
         "tile_id": "T_W08_S09",
         "url": "./assets/vegetation/instances_T_W08_S09.json",
-        "size_bytes": 359565
+        "size_bytes": 562522
       },
       {
         "id": "instances_T_W09_S08",
@@ -3892,7 +3387,7 @@
         "ext": ".json",
         "tile_id": "T_W09_S08",
         "url": "./assets/vegetation/instances_T_W09_S08.json",
-        "size_bytes": 336441
+        "size_bytes": 509048
       },
       {
         "id": "instances_T_E05_S11",
@@ -3908,7 +3403,7 @@
         "ext": ".json",
         "tile_id": "T_W05_S11",
         "url": "./assets/vegetation/instances_T_W05_S11.json",
-        "size_bytes": 404943
+        "size_bytes": 586651
       },
       {
         "id": "instances_T_W11_S05",
@@ -3924,7 +3419,7 @@
         "ext": ".json",
         "tile_id": "T_W07_S10",
         "url": "./assets/vegetation/instances_T_W07_S10.json",
-        "size_bytes": 631283
+        "size_bytes": 595476
       },
       {
         "id": "instances_T_W10_S07",
@@ -3932,7 +3427,7 @@
         "ext": ".json",
         "tile_id": "T_W10_S07",
         "url": "./assets/vegetation/instances_T_W10_S07.json",
-        "size_bytes": 414002
+        "size_bytes": 584234
       },
       {
         "id": "instances_T_E03_S12",
@@ -3964,7 +3459,7 @@
         "ext": ".json",
         "tile_id": "T_E04_S12",
         "url": "./assets/vegetation/instances_T_E04_S12.json",
-        "size_bytes": 321968
+        "size_bytes": 181332
       },
       {
         "id": "instances_T_W09_S09",
@@ -3972,7 +3467,7 @@
         "ext": ".json",
         "tile_id": "T_W09_S09",
         "url": "./assets/vegetation/instances_T_W09_S09.json",
-        "size_bytes": 230158
+        "size_bytes": 355910
       },
       {
         "id": "instances_T_W08_S10",
@@ -3980,7 +3475,7 @@
         "ext": ".json",
         "tile_id": "T_W08_S10",
         "url": "./assets/vegetation/instances_T_W08_S10.json",
-        "size_bytes": 379913
+        "size_bytes": 547019
       },
       {
         "id": "instances_T_W05_S12",
@@ -3996,7 +3491,7 @@
         "ext": ".json",
         "tile_id": "T_W07_S11",
         "url": "./assets/vegetation/instances_T_W07_S11.json",
-        "size_bytes": 792034
+        "size_bytes": 585277
       },
       {
         "id": "instances_T_W11_S07",
@@ -4036,7 +3531,7 @@
         "ext": ".json",
         "tile_id": "T_W09_S10",
         "url": "./assets/vegetation/instances_T_W09_S10.json",
-        "size_bytes": 336968
+        "size_bytes": 457192
       },
       {
         "id": "instances_T_W08_S11",
@@ -4044,7 +3539,7 @@
         "ext": ".json",
         "tile_id": "T_W08_S11",
         "url": "./assets/vegetation/instances_T_W08_S11.json",
-        "size_bytes": 627335
+        "size_bytes": 596312
       },
       {
         "id": "instances_T_W07_S12",
@@ -4068,7 +3563,7 @@
         "ext": ".json",
         "tile_id": "T_W09_S11",
         "url": "./assets/vegetation/instances_T_W09_S11.json",
-        "size_bytes": 419907
+        "size_bytes": 590549
       },
       {
         "id": "instances_T_W03_S14",
@@ -4116,7 +3611,7 @@
         "ext": ".json",
         "tile_id": "T_W10_S14",
         "url": "./assets/vegetation/instances_T_W10_S14.json",
-        "size_bytes": 379566
+        "size_bytes": 342608
       },
       {
         "id": "instances_T_W09_S15",
@@ -4134,7 +3629,7 @@
         "ext": ".glb",
         "tile_id": "T_E00_N00",
         "url": "./assets/hero_landmarks_ultra/ultra_lm_01_quang_truong_lam_vien.glb",
-        "size_bytes": 2120064,
+        "size_bytes": 4251744,
         "gltf_position": [
           -46.809,
           5.676,
@@ -4151,7 +3646,7 @@
         "ext": ".glb",
         "tile_id": "T_E01_N00",
         "url": "./assets/hero_landmarks_ultra/ultra_lm_02_ga_da_lat.glb",
-        "size_bytes": 1718388,
+        "size_bytes": 2924936,
         "gltf_position": [
           1060.901,
           15.536,
@@ -4168,7 +3663,7 @@
         "ext": ".glb",
         "tile_id": "T_E00_N00",
         "url": "./assets/hero_landmarks_ultra/ultra_lm_03_nha_tho_con_ga.glb",
-        "size_bytes": 1803340,
+        "size_bytes": 3145044,
         "gltf_position": [
           -829.787,
           15.413,
@@ -4185,7 +3680,7 @@
         "ext": ".glb",
         "tile_id": "T_E00_N00",
         "url": "./assets/hero_landmarks_ultra/ultra_lm_04_truong_cdsp_dalat.glb",
-        "size_bytes": 1752732,
+        "size_bytes": 3180732,
         "gltf_position": [
           823.329,
           29.98,
@@ -4202,7 +3697,7 @@
         "ext": ".glb",
         "tile_id": "T_E00_N00",
         "url": "./assets/hero_landmarks_ultra/ultra_lm_05_cho_da_lat_hoa_binh.glb",
-        "size_bytes": 1332180,
+        "size_bytes": 2602224,
         "gltf_position": [
           -868.085,
           11.301,
@@ -4219,7 +3714,7 @@
         "ext": ".glb",
         "tile_id": "T_E00_N00",
         "url": "./assets/hero_landmarks_ultra/ultra_lm_06_nha_hang_thuy_ta.glb",
-        "size_bytes": 2148284,
+        "size_bytes": 3060524,
         "gltf_position": [
           -355.319,
           0.25,
@@ -4236,7 +3731,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_S01",
         "url": "./assets/hero_landmarks_ultra/ultra_lm_07_dinh_3_bao_dai.glb",
-        "size_bytes": 1863108,
+        "size_bytes": 4355336,
         "gltf_position": [
           -1693.379,
           63.905,
@@ -4253,7 +3748,7 @@
         "ext": ".glb",
         "tile_id": "T_E00_N00",
         "url": "./assets/hero_landmarks_ultra/ultra_lm_08_dinh_2_bao_dai.glb",
-        "size_bytes": 1938972,
+        "size_bytes": 4431116,
         "gltf_position": [
           295.599,
           61.643,
@@ -4270,7 +3765,7 @@
         "ext": ".glb",
         "tile_id": "T_E01_N00",
         "url": "./assets/hero_landmarks_ultra/ultra_lm_09_dinh_1_bao_dai.glb",
-        "size_bytes": 1684848,
+        "size_bytes": 3583432,
         "gltf_position": [
           2313.376,
           -68.419,
@@ -4287,7 +3782,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_N01",
         "url": "./assets/hero_landmarks_ultra/ultra_lm_10_domaine_de_marie.glb",
-        "size_bytes": 1398056,
+        "size_bytes": 2717092,
         "gltf_position": [
           -1645.961,
           35.837,
@@ -4304,7 +3799,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_N00",
         "url": "./assets/hero_landmarks_ultra/ultra_lm_11_crazy_house.glb",
-        "size_bytes": 1828712,
+        "size_bytes": 4108304,
         "gltf_position": [
           -1592.277,
           36.24,
@@ -4321,7 +3816,7 @@
         "ext": ".glb",
         "tile_id": "T_E00_N00",
         "url": "./assets/hero_landmarks_ultra/ultra_lm_12_dalat_palace_heritage.glb",
-        "size_bytes": 2294656,
+        "size_bytes": 4230796,
         "gltf_position": [
           -531.788,
           30.358,
@@ -4338,7 +3833,7 @@
         "ext": ".glb",
         "tile_id": "T_E01_N00",
         "url": "./assets/hero_landmarks_ultra/ultra_lm_13_bao_tang_lam_dong.glb",
-        "size_bytes": 1534604,
+        "size_bytes": 2203796,
         "gltf_position": [
           1801.495,
           47.766,
@@ -4355,7 +3850,7 @@
         "ext": ".glb",
         "tile_id": "T_E00_N01",
         "url": "./assets/hero_landmarks_ultra/ultra_lm_14_vuon_hoa_tp.glb",
-        "size_bytes": 1704048,
+        "size_bytes": 3147092,
         "gltf_position": [
           478.228,
           1.422,
@@ -4372,7 +3867,7 @@
         "ext": ".glb",
         "tile_id": "T_E00_S02",
         "url": "./assets/hero_landmarks_ultra/ultra_lm_15_thien_vien_truc_lam.glb",
-        "size_bytes": 1365364,
+        "size_bytes": 2487152,
         "gltf_position": [
           -512.208,
           -59.727,
@@ -4389,11 +3884,11 @@
         "ext": ".glb",
         "tile_id": "T_E03_N00",
         "url": "./assets/hero_landmarks_ultra/ultra_lm_16_chua_linh_phuoc.glb",
-        "size_bytes": 2308860,
+        "size_bytes": 4381964,
         "gltf_position": [
-          6054.466,
-          62.0,
-          -459.861
+          5906.896,
+          64.886,
+          -429.231
         ],
         "rotation_y_rad": -3.141593,
         "name_vi": "Chùa Linh Phước (Chùa Ve Chai Trại Mát) Ultra-LOD0 (Bảo Tháp 7 Tầng 37m, Đại Hồng Chung 8.500kg, Rồng Khảm Sành 49m & Tượng Quán Thế Âm 600.000 Hoa Bất Tử)",
@@ -4406,7 +3901,7 @@
         "ext": ".glb",
         "tile_id": "T_E00_N02",
         "url": "./assets/hero_landmarks_ultra/ultra_lm_17_thung_lung_tinh_yeu.glb",
-        "size_bytes": 1467060,
+        "size_bytes": 2185020,
         "gltf_position": [
           461.891,
           29.098,
@@ -4423,7 +3918,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_N02",
         "url": "./assets/hero_landmarks_ultra/ultra_lm_18_phan_vien_sinh_hoc.glb",
-        "size_bytes": 1530276,
+        "size_bytes": 2882188,
         "gltf_position": [
           -1966.822,
           24.801,
@@ -4440,7 +3935,7 @@
         "ext": ".glb",
         "tile_id": "T_W04_N04",
         "url": "./assets/hero_landmarks_ultra/ultra_lm_19_thuy_dien_ankroet.glb",
-        "size_bytes": 1726092,
+        "size_bytes": 2825212,
         "gltf_position": [
           -7706.426,
           -60.0,
@@ -4457,7 +3952,7 @@
         "ext": ".glb",
         "tile_id": "T_E00_N06",
         "url": "./assets/hero_landmarks_ultra/ultra_lm_20_dinh_langbiang.glb",
-        "size_bytes": 1424340,
+        "size_bytes": 1924060,
         "gltf_position": [
           -757.911,
           451.0,
@@ -4474,7 +3969,7 @@
         "ext": ".glb",
         "tile_id": "T_W05_N05",
         "url": "./assets/hero_landmarks_ultra/ultra_lm_21_lang_cu_lan.glb",
-        "size_bytes": 1870424,
+        "size_bytes": 2903404,
         "gltf_position": [
           -10102.466,
           -33.0,
@@ -4491,7 +3986,7 @@
         "ext": ".glb",
         "tile_id": "T_E07_S04",
         "url": "./assets/hero_landmarks_ultra/ultra_lm_22_dien_gio_cau_dat.glb",
-        "size_bytes": 1438420,
+        "size_bytes": 1873784,
         "gltf_position": [
           13258.922,
           172.0,
@@ -4508,7 +4003,7 @@
         "ext": ".glb",
         "tile_id": "T_W04_S10",
         "url": "./assets/hero_landmarks_ultra/ultra_lm_23_san_bay_lien_khuong.glb",
-        "size_bytes": 1454992,
+        "size_bytes": 2199400,
         "gltf_position": [
           -8412.06,
           -516.0,
@@ -4525,7 +4020,7 @@
         "ext": ".glb",
         "tile_id": "T_W06_S06",
         "url": "./assets/hero_landmarks_ultra/ultra_lm_24_chua_linh_an_thac_voi.glb",
-        "size_bytes": 2104456,
+        "size_bytes": 2718884,
         "gltf_position": [
           -12117.318,
           -563.0,
@@ -4542,7 +4037,7 @@
         "ext": ".glb",
         "tile_id": "T_E00_N01",
         "url": "./assets/hero_landmarks_ultra/ultra_lm_25_dai_hoc_da_lat.glb",
-        "size_bytes": 1585632,
+        "size_bytes": 2672456,
         "gltf_position": [
           -115.337,
           37.975,
@@ -4559,7 +4054,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_N00",
         "url": "./assets/hero_landmarks_ultra/ultra_lm_26_nha_tho_cam_ly.glb",
-        "size_bytes": 1540248,
+        "size_bytes": 3109180,
         "gltf_position": [
           -2838.109,
           -23.104,
@@ -4576,7 +4071,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_N00",
         "url": "./assets/hero_landmarks_ultra/ultra_lm_27_vien_pasteur_da_lat.glb",
-        "size_bytes": 1499800,
+        "size_bytes": 2602732,
         "gltf_position": [
           -1964.426,
           51.767,
@@ -4593,7 +4088,7 @@
         "ext": ".glb",
         "tile_id": "T_W07_S11",
         "url": "./assets/hero_landmarks_ultra/ultra_lm_28_chua_linh_quy_phap_an.glb",
-        "size_bytes": 1458136,
+        "size_bytes": 3358764,
         "gltf_position": [
           -14458.902,
           -393.0,
@@ -4610,7 +4105,7 @@
         "ext": ".glb",
         "tile_id": "T_E01_N00",
         "url": "./assets/hero_landmarks_ultra/ultra_lm_29_cuc_ban_do_dalat.glb",
-        "size_bytes": 1522172,
+        "size_bytes": 2417152,
         "gltf_position": [
           1039.119,
           23.734,
@@ -4627,7 +4122,7 @@
         "ext": ".glb",
         "tile_id": "T_E00_N01",
         "url": "./assets/hero_landmarks_ultra/ultra_lm_30_thien_vien_van_hanh.glb",
-        "size_bytes": 1307856,
+        "size_bytes": 2174972,
         "gltf_position": [
           -376.723,
           30.532,
@@ -4644,7 +4139,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_S01",
         "url": "./assets/hero_landmarks_ultra/ultra_lm_31_nha_tho_du_sinh.glb",
-        "size_bytes": 1602456,
+        "size_bytes": 2481220,
         "gltf_position": [
           -2369.792,
           3.085,
@@ -4661,7 +4156,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_S03",
         "url": "./assets/hero_landmarks_ultra/ultra_lm_32_duong_ham_dieu_khac.glb",
-        "size_bytes": 1610500,
+        "size_bytes": 2558784,
         "gltf_position": [
           -2914.347,
           -40.0,
@@ -4678,7 +4173,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_S01",
         "url": "./assets/hero_landmarks_ultra/ultra_lm_33_couvent_des_oiseaux.glb",
-        "size_bytes": 1654300,
+        "size_bytes": 2635168,
         "gltf_position": [
           -2162.862,
           69.165,
@@ -4695,7 +4190,7 @@
         "ext": ".glb",
         "tile_id": "T_E00_N01",
         "url": "./assets/hero_landmarks_ultra/ultra_lm_34_chua_linh_son.glb",
-        "size_bytes": 1662420,
+        "size_bytes": 2816456,
         "gltf_position": [
           -898.997,
           25.158,
@@ -4712,7 +4207,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_N00",
         "url": "./assets/hero_landmarks_ultra/ultra_lm_35_dinh_tinh_truong.glb",
-        "size_bytes": 1826496,
+        "size_bytes": 2742260,
         "gltf_position": [
           -1313.357,
           3.075,
@@ -4729,7 +4224,7 @@
         "ext": ".glb",
         "tile_id": "T_E06_S04",
         "url": "./assets/hero_landmarks_ultra/ultra_lm_36_nha_may_che_cau_dat_1927.glb",
-        "size_bytes": 1666316,
+        "size_bytes": 2668892,
         "gltf_position": [
           12768.823,
           157.0,
@@ -4763,15 +4258,15 @@
         "id": "lm_38_giao_hoang_hoc_vien",
         "filename": "lm_38_giao_hoang_hoc_vien.glb",
         "ext": ".glb",
-        "tile_id": "T_E00_N01",
+        "tile_id": "T_E00_N00",
         "url": "./assets/landmarks/lm_38_giao_hoang_hoc_vien.glb",
         "size_bytes": 564984,
         "gltf_position": [
-          -289.594,
-          12.96,
-          -1266.927
+          -347.0,
+          27.781,
+          -947.0
         ],
-        "rotation_y_rad": -3.403392,
+        "rotation_y_rad": -2.879793,
         "name_vi": "Giáo hoàng Học viện Thánh Piô X Đà Lạt (1957–1959, Đồi Thánh Tâm)",
         "name_en": "Pontifical College of St. Pius X Da Lat (Architect To Cong Van, 1957-1959)",
         "is_french_villa": false,
@@ -4862,9 +4357,9 @@
         "url": "./assets/landmarks/lm_43_chua_linh_quang.glb",
         "size_bytes": 292868,
         "gltf_position": [
-          -1705.436,
-          11.787,
-          -1534.094
+          -1835.396,
+          14.352,
+          -1837.884
         ],
         "rotation_y_rad": -3.665191,
         "name_vi": "Tổ đình Chùa Linh Quang (1931 – Sắc tứ Linh Quang Tự, 133 Hai Bà Trưng)",
@@ -8037,7 +7532,7 @@
         "ext": ".glb",
         "tile_id": "T_E00_N02",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E00_N02_Q1.glb",
-        "size_bytes": 3171204
+        "size_bytes": 3208764
       },
       {
         "id": "osm_buildings_T_E00_N02_Q2",
@@ -8045,7 +7540,7 @@
         "ext": ".glb",
         "tile_id": "T_E00_N02",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E00_N02_Q2.glb",
-        "size_bytes": 3327776
+        "size_bytes": 3327080
       },
       {
         "id": "osm_buildings_T_E00_N02_Q3",
@@ -8053,7 +7548,7 @@
         "ext": ".glb",
         "tile_id": "T_E00_N02",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E00_N02_Q3.glb",
-        "size_bytes": 3275572
+        "size_bytes": 3276968
       },
       {
         "id": "osm_buildings_T_E00_N02_Q4",
@@ -8061,7 +7556,7 @@
         "ext": ".glb",
         "tile_id": "T_E00_N02",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E00_N02_Q4.glb",
-        "size_bytes": 3196380
+        "size_bytes": 3312776
       },
       {
         "id": "osm_buildings_T_E00_S02_Q1",
@@ -8069,7 +7564,7 @@
         "ext": ".glb",
         "tile_id": "T_E00_S02",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E00_S02_Q1.glb",
-        "size_bytes": 3235576
+        "size_bytes": 3244588
       },
       {
         "id": "osm_buildings_T_E00_S02_Q2",
@@ -8077,7 +7572,7 @@
         "ext": ".glb",
         "tile_id": "T_E00_S02",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E00_S02_Q2.glb",
-        "size_bytes": 3170828
+        "size_bytes": 3191604
       },
       {
         "id": "osm_buildings_T_E00_S02_Q3",
@@ -8085,7 +7580,7 @@
         "ext": ".glb",
         "tile_id": "T_E00_S02",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E00_S02_Q3.glb",
-        "size_bytes": 3264716
+        "size_bytes": 3322948
       },
       {
         "id": "osm_buildings_T_E00_S02_Q4",
@@ -8093,7 +7588,7 @@
         "ext": ".glb",
         "tile_id": "T_E00_S02",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E00_S02_Q4.glb",
-        "size_bytes": 3212068
+        "size_bytes": 3220000
       },
       {
         "id": "osm_buildings_T_E02_N00_Q1",
@@ -8101,7 +7596,7 @@
         "ext": ".glb",
         "tile_id": "T_E02_N00",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E02_N00_Q1.glb",
-        "size_bytes": 3309424
+        "size_bytes": 3276748
       },
       {
         "id": "osm_buildings_T_E02_N00_Q2",
@@ -8109,7 +7604,7 @@
         "ext": ".glb",
         "tile_id": "T_E02_N00",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E02_N00_Q2.glb",
-        "size_bytes": 3185844
+        "size_bytes": 3192296
       },
       {
         "id": "osm_buildings_T_E02_N00_Q3",
@@ -8117,7 +7612,7 @@
         "ext": ".glb",
         "tile_id": "T_E02_N00",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E02_N00_Q3.glb",
-        "size_bytes": 3172680
+        "size_bytes": 3185156
       },
       {
         "id": "osm_buildings_T_E02_N00_Q4",
@@ -8125,7 +7620,7 @@
         "ext": ".glb",
         "tile_id": "T_E02_N00",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E02_N00_Q4.glb",
-        "size_bytes": 3180120
+        "size_bytes": 3183464
       },
       {
         "id": "osm_buildings_T_W02_N00_Q1",
@@ -8133,7 +7628,7 @@
         "ext": ".glb",
         "tile_id": "T_W02_N00",
         "url": "./assets/osm_true_buildings/osm_buildings_T_W02_N00_Q1.glb",
-        "size_bytes": 3288652
+        "size_bytes": 3307296
       },
       {
         "id": "osm_buildings_T_W02_N00_Q2",
@@ -8141,7 +7636,7 @@
         "ext": ".glb",
         "tile_id": "T_W02_N00",
         "url": "./assets/osm_true_buildings/osm_buildings_T_W02_N00_Q2.glb",
-        "size_bytes": 3151264
+        "size_bytes": 3147428
       },
       {
         "id": "osm_buildings_T_W02_N00_Q3",
@@ -8149,7 +7644,7 @@
         "ext": ".glb",
         "tile_id": "T_W02_N00",
         "url": "./assets/osm_true_buildings/osm_buildings_T_W02_N00_Q3.glb",
-        "size_bytes": 3227232
+        "size_bytes": 3235884
       },
       {
         "id": "osm_buildings_T_W02_N00_Q4",
@@ -8157,7 +7652,7 @@
         "ext": ".glb",
         "tile_id": "T_W02_N00",
         "url": "./assets/osm_true_buildings/osm_buildings_T_W02_N00_Q4.glb",
-        "size_bytes": 3188440
+        "size_bytes": 3191028
       },
       {
         "id": "osm_buildings_T_E01_N02_Q1",
@@ -8165,7 +7660,7 @@
         "ext": ".glb",
         "tile_id": "T_E01_N02",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E01_N02_Q1.glb",
-        "size_bytes": 3145196
+        "size_bytes": 2812628
       },
       {
         "id": "osm_buildings_T_E01_N02_Q2",
@@ -8173,7 +7668,7 @@
         "ext": ".glb",
         "tile_id": "T_E01_N02",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E01_N02_Q2.glb",
-        "size_bytes": 3288700
+        "size_bytes": 3009636
       },
       {
         "id": "osm_buildings_T_E01_N02_Q3",
@@ -8181,7 +7676,7 @@
         "ext": ".glb",
         "tile_id": "T_E01_N02",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E01_N02_Q3.glb",
-        "size_bytes": 3508072
+        "size_bytes": 3247480
       },
       {
         "id": "osm_buildings_T_E01_N02_Q4",
@@ -8189,7 +7684,7 @@
         "ext": ".glb",
         "tile_id": "T_E01_N02",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E01_N02_Q4.glb",
-        "size_bytes": 3512252
+        "size_bytes": 3298100
       },
       {
         "id": "osm_buildings_T_E01_S02_Q1",
@@ -8197,7 +7692,7 @@
         "ext": ".glb",
         "tile_id": "T_E01_S02",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E01_S02_Q1.glb",
-        "size_bytes": 3224268
+        "size_bytes": 3256852
       },
       {
         "id": "osm_buildings_T_E01_S02_Q2",
@@ -8205,7 +7700,7 @@
         "ext": ".glb",
         "tile_id": "T_E01_S02",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E01_S02_Q2.glb",
-        "size_bytes": 3345440
+        "size_bytes": 3309080
       },
       {
         "id": "osm_buildings_T_E01_S02_Q3",
@@ -8213,7 +7708,7 @@
         "ext": ".glb",
         "tile_id": "T_E01_S02",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E01_S02_Q3.glb",
-        "size_bytes": 3175852
+        "size_bytes": 3260556
       },
       {
         "id": "osm_buildings_T_E01_S02_Q4",
@@ -8221,7 +7716,7 @@
         "ext": ".glb",
         "tile_id": "T_E01_S02",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E01_S02_Q4.glb",
-        "size_bytes": 3316760
+        "size_bytes": 3330780
       },
       {
         "id": "osm_buildings_T_E02_N01_Q1",
@@ -8229,7 +7724,7 @@
         "ext": ".glb",
         "tile_id": "T_E02_N01",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E02_N01_Q1.glb",
-        "size_bytes": 3156196
+        "size_bytes": 3187988
       },
       {
         "id": "osm_buildings_T_E02_N01_Q2",
@@ -8237,7 +7732,7 @@
         "ext": ".glb",
         "tile_id": "T_E02_N01",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E02_N01_Q2.glb",
-        "size_bytes": 3250236
+        "size_bytes": 3253808
       },
       {
         "id": "osm_buildings_T_E02_N01_Q3",
@@ -8245,7 +7740,7 @@
         "ext": ".glb",
         "tile_id": "T_E02_N01",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E02_N01_Q3.glb",
-        "size_bytes": 3421244
+        "size_bytes": 3219664
       },
       {
         "id": "osm_buildings_T_E02_N01_Q4",
@@ -8253,7 +7748,7 @@
         "ext": ".glb",
         "tile_id": "T_E02_N01",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E02_N01_Q4.glb",
-        "size_bytes": 3465804
+        "size_bytes": 3303840
       },
       {
         "id": "osm_buildings_T_E02_S01_Q1",
@@ -8261,7 +7756,7 @@
         "ext": ".glb",
         "tile_id": "T_E02_S01",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E02_S01_Q1.glb",
-        "size_bytes": 3228356
+        "size_bytes": 3304852
       },
       {
         "id": "osm_buildings_T_E02_S01_Q2",
@@ -8269,7 +7764,7 @@
         "ext": ".glb",
         "tile_id": "T_E02_S01",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E02_S01_Q2.glb",
-        "size_bytes": 2620316
+        "size_bytes": 3187304
       },
       {
         "id": "osm_buildings_T_E02_S01_Q3",
@@ -8277,7 +7772,7 @@
         "ext": ".glb",
         "tile_id": "T_E02_S01",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E02_S01_Q3.glb",
-        "size_bytes": 3212260
+        "size_bytes": 3194008
       },
       {
         "id": "osm_buildings_T_E02_S01_Q4",
@@ -8285,7 +7780,7 @@
         "ext": ".glb",
         "tile_id": "T_E02_S01",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E02_S01_Q4.glb",
-        "size_bytes": 3288376
+        "size_bytes": 3283736
       },
       {
         "id": "osm_buildings_T_W01_N02_Q1",
@@ -8293,7 +7788,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_N02",
         "url": "./assets/osm_true_buildings/osm_buildings_T_W01_N02_Q1.glb",
-        "size_bytes": 3177892
+        "size_bytes": 3266480
       },
       {
         "id": "osm_buildings_T_W01_N02_Q2",
@@ -8301,7 +7796,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_N02",
         "url": "./assets/osm_true_buildings/osm_buildings_T_W01_N02_Q2.glb",
-        "size_bytes": 3277920
+        "size_bytes": 3294164
       },
       {
         "id": "osm_buildings_T_W01_N02_Q3",
@@ -8309,7 +7804,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_N02",
         "url": "./assets/osm_true_buildings/osm_buildings_T_W01_N02_Q3.glb",
-        "size_bytes": 3173676
+        "size_bytes": 3215220
       },
       {
         "id": "osm_buildings_T_W01_N02_Q4",
@@ -8317,7 +7812,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_N02",
         "url": "./assets/osm_true_buildings/osm_buildings_T_W01_N02_Q4.glb",
-        "size_bytes": 3203524
+        "size_bytes": 3173152
       },
       {
         "id": "osm_buildings_T_W01_S02_Q1",
@@ -8325,7 +7820,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_S02",
         "url": "./assets/osm_true_buildings/osm_buildings_T_W01_S02_Q1.glb",
-        "size_bytes": 3072328
+        "size_bytes": 3148544
       },
       {
         "id": "osm_buildings_T_W01_S02_Q2",
@@ -8333,7 +7828,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_S02",
         "url": "./assets/osm_true_buildings/osm_buildings_T_W01_S02_Q2.glb",
-        "size_bytes": 1289304
+        "size_bytes": 1324444
       },
       {
         "id": "osm_buildings_T_W01_S02_Q3",
@@ -8341,7 +7836,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_S02",
         "url": "./assets/osm_true_buildings/osm_buildings_T_W01_S02_Q3.glb",
-        "size_bytes": 2478112
+        "size_bytes": 2411028
       },
       {
         "id": "osm_buildings_T_W01_S02_Q4",
@@ -8349,7 +7844,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_S02",
         "url": "./assets/osm_true_buildings/osm_buildings_T_W01_S02_Q4.glb",
-        "size_bytes": 849832
+        "size_bytes": 885432
       },
       {
         "id": "osm_buildings_T_W02_N01_Q1",
@@ -8357,7 +7852,7 @@
         "ext": ".glb",
         "tile_id": "T_W02_N01",
         "url": "./assets/osm_true_buildings/osm_buildings_T_W02_N01_Q1.glb",
-        "size_bytes": 3167824
+        "size_bytes": 3152452
       },
       {
         "id": "osm_buildings_T_W02_N01_Q2",
@@ -8365,7 +7860,7 @@
         "ext": ".glb",
         "tile_id": "T_W02_N01",
         "url": "./assets/osm_true_buildings/osm_buildings_T_W02_N01_Q2.glb",
-        "size_bytes": 3239096
+        "size_bytes": 3244324
       },
       {
         "id": "osm_buildings_T_W02_N01_Q3",
@@ -8373,7 +7868,7 @@
         "ext": ".glb",
         "tile_id": "T_W02_N01",
         "url": "./assets/osm_true_buildings/osm_buildings_T_W02_N01_Q3.glb",
-        "size_bytes": 3129540
+        "size_bytes": 3204608
       },
       {
         "id": "osm_buildings_T_W02_N01_Q4",
@@ -8381,7 +7876,7 @@
         "ext": ".glb",
         "tile_id": "T_W02_N01",
         "url": "./assets/osm_true_buildings/osm_buildings_T_W02_N01_Q4.glb",
-        "size_bytes": 3233292
+        "size_bytes": 3251416
       },
       {
         "id": "osm_buildings_T_W02_S01_Q1",
@@ -8389,7 +7884,7 @@
         "ext": ".glb",
         "tile_id": "T_W02_S01",
         "url": "./assets/osm_true_buildings/osm_buildings_T_W02_S01_Q1.glb",
-        "size_bytes": 3223288
+        "size_bytes": 3244592
       },
       {
         "id": "osm_buildings_T_W02_S01_Q2",
@@ -8397,7 +7892,7 @@
         "ext": ".glb",
         "tile_id": "T_W02_S01",
         "url": "./assets/osm_true_buildings/osm_buildings_T_W02_S01_Q2.glb",
-        "size_bytes": 3165560
+        "size_bytes": 3210824
       },
       {
         "id": "osm_buildings_T_W02_S01_Q3",
@@ -8405,7 +7900,7 @@
         "ext": ".glb",
         "tile_id": "T_W02_S01",
         "url": "./assets/osm_true_buildings/osm_buildings_T_W02_S01_Q3.glb",
-        "size_bytes": 3350396
+        "size_bytes": 3303604
       },
       {
         "id": "osm_buildings_T_W02_S01_Q4",
@@ -8413,7 +7908,7 @@
         "ext": ".glb",
         "tile_id": "T_W02_S01",
         "url": "./assets/osm_true_buildings/osm_buildings_T_W02_S01_Q4.glb",
-        "size_bytes": 3231176
+        "size_bytes": 3234172
       },
       {
         "id": "osm_buildings_T_E02_N02_Q1",
@@ -8421,7 +7916,7 @@
         "ext": ".glb",
         "tile_id": "T_E02_N02",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E02_N02_Q1.glb",
-        "size_bytes": 2229576
+        "size_bytes": 3183840
       },
       {
         "id": "osm_buildings_T_E02_N02_Q2",
@@ -8429,7 +7924,7 @@
         "ext": ".glb",
         "tile_id": "T_E02_N02",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E02_N02_Q2.glb",
-        "size_bytes": 2217560
+        "size_bytes": 3237824
       },
       {
         "id": "osm_buildings_T_E02_N02_Q3",
@@ -8437,7 +7932,7 @@
         "ext": ".glb",
         "tile_id": "T_E02_N02",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E02_N02_Q3.glb",
-        "size_bytes": 2446312
+        "size_bytes": 3172624
       },
       {
         "id": "osm_buildings_T_E02_N02_Q4",
@@ -8445,7 +7940,7 @@
         "ext": ".glb",
         "tile_id": "T_E02_N02",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E02_N02_Q4.glb",
-        "size_bytes": 2431252
+        "size_bytes": 3274360
       },
       {
         "id": "osm_buildings_T_E02_S02_Q1",
@@ -8453,7 +7948,7 @@
         "ext": ".glb",
         "tile_id": "T_E02_S02",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E02_S02_Q1.glb",
-        "size_bytes": 3170964
+        "size_bytes": 3172248
       },
       {
         "id": "osm_buildings_T_E02_S02_Q2",
@@ -8461,7 +7956,7 @@
         "ext": ".glb",
         "tile_id": "T_E02_S02",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E02_S02_Q2.glb",
-        "size_bytes": 3250124
+        "size_bytes": 3322372
       },
       {
         "id": "osm_buildings_T_E02_S02_Q3",
@@ -8469,7 +7964,7 @@
         "ext": ".glb",
         "tile_id": "T_E02_S02",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E02_S02_Q3.glb",
-        "size_bytes": 3329624
+        "size_bytes": 3330864
       },
       {
         "id": "osm_buildings_T_E02_S02_Q4",
@@ -8477,7 +7972,7 @@
         "ext": ".glb",
         "tile_id": "T_E02_S02",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E02_S02_Q4.glb",
-        "size_bytes": 3390904
+        "size_bytes": 3369124
       },
       {
         "id": "osm_buildings_T_W02_N02_Q1",
@@ -8485,7 +7980,7 @@
         "ext": ".glb",
         "tile_id": "T_W02_N02",
         "url": "./assets/osm_true_buildings/osm_buildings_T_W02_N02_Q1.glb",
-        "size_bytes": 3243312
+        "size_bytes": 3244008
       },
       {
         "id": "osm_buildings_T_W02_N02_Q2",
@@ -8493,7 +7988,7 @@
         "ext": ".glb",
         "tile_id": "T_W02_N02",
         "url": "./assets/osm_true_buildings/osm_buildings_T_W02_N02_Q2.glb",
-        "size_bytes": 3275132
+        "size_bytes": 3346952
       },
       {
         "id": "osm_buildings_T_W02_N02_Q3",
@@ -8501,7 +7996,7 @@
         "ext": ".glb",
         "tile_id": "T_W02_N02",
         "url": "./assets/osm_true_buildings/osm_buildings_T_W02_N02_Q3.glb",
-        "size_bytes": 3177356
+        "size_bytes": 3240624
       },
       {
         "id": "osm_buildings_T_W02_N02_Q4",
@@ -8509,7 +8004,7 @@
         "ext": ".glb",
         "tile_id": "T_W02_N02",
         "url": "./assets/osm_true_buildings/osm_buildings_T_W02_N02_Q4.glb",
-        "size_bytes": 2869176
+        "size_bytes": 3186880
       },
       {
         "id": "osm_buildings_T_W02_S02_Q1",
@@ -8517,7 +8012,7 @@
         "ext": ".glb",
         "tile_id": "T_W02_S02",
         "url": "./assets/osm_true_buildings/osm_buildings_T_W02_S02_Q1.glb",
-        "size_bytes": 3157332
+        "size_bytes": 3221128
       },
       {
         "id": "osm_buildings_T_W02_S02_Q2",
@@ -8525,7 +8020,7 @@
         "ext": ".glb",
         "tile_id": "T_W02_S02",
         "url": "./assets/osm_true_buildings/osm_buildings_T_W02_S02_Q2.glb",
-        "size_bytes": 3215716
+        "size_bytes": 3192584
       },
       {
         "id": "osm_buildings_T_W02_S02_Q3",
@@ -8533,7 +8028,7 @@
         "ext": ".glb",
         "tile_id": "T_W02_S02",
         "url": "./assets/osm_true_buildings/osm_buildings_T_W02_S02_Q3.glb",
-        "size_bytes": 3159212
+        "size_bytes": 3156464
       },
       {
         "id": "osm_buildings_T_W02_S02_Q4",
@@ -8541,7 +8036,7 @@
         "ext": ".glb",
         "tile_id": "T_W02_S02",
         "url": "./assets/osm_true_buildings/osm_buildings_T_W02_S02_Q4.glb",
-        "size_bytes": 3281428
+        "size_bytes": 3288532
       },
       {
         "id": "osm_buildings_T_E00_N03",
