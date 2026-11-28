@@ -1217,7 +1217,7 @@ def main():
     targets = {}
     only_folders = {s.strip() for s in args.folders.split(",") if s.strip()}
 
-    # Bảo vệ các tệp lõi chuẩn ESA Copernicus GLO-30 & OSM API v0.6 khỏi bị ghi đè bởi dữ liệu lỗi từ Drive
+    # Bảo vệ các tệp lõi chuẩn ESA Copernicus GLO-30, OSM API v0.6, đường PBR, urban_life_props & nhà PBR RING_0 có ban công 3D khỏi bị ghi đè bởi dữ liệu cũ từ Drive
     protected_core_tids = set(CORE25_TIDS)
     ring0_tids = set(RING0_TIDS)
     protected_paths = (
@@ -1226,10 +1226,15 @@ def main():
         | {"assets/satellite_dem_tiles/terrain_backdrop_dalat_60km.glb"}
         | {"assets/water_bodies/water_ho_xuan_huong.glb", "assets/water_bodies/water_ring0_osm_lakes.glb"}
         | {f"assets/osm_true_roads_hydro/osm_real_roads_{tid}.glb" for tid in ring0_tids}
+        | {f"assets/osm_true_roads_hydro/{p.name}" for p in (ASSETS / "osm_true_roads_hydro").glob("osm_real_roads_*.glb")}
         | {f"assets/osm_true_buildings/osm_buildings_{tid}.glb" for tid in ring0_tids}
+        | {f"assets/osm_true_buildings/osm_buildings_{tid}_Q{q}.glb" for tid in ring0_tids for q in (1, 2, 3, 4)}
         | {f"assets/vegetation/instances_{tid}.json" for tid in ring0_tids}
         | {f"assets/urban_life_props/{p.name}" for p in (ASSETS / "urban_life_props").glob("*.glb")}
+        | {f"assets/pbr/{p.name}" for p in (ASSETS / "pbr").glob("*")}
         | {
+            "api/road-sidewalk-props.json",
+            "api/road-traffic-routes.json",
             "assets/landmarks/landmarks_manifest.json",
             "assets/hero_landmarks_ultra/hero_landmarks_manifest.json",
             "assets/french_villas/french_villas_manifest.json",

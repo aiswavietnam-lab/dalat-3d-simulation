@@ -1892,7 +1892,7 @@
         "ext": ".json",
         "tile_id": "T_E00_N01",
         "url": "./assets/vegetation/instances_T_E00_N01.json",
-        "size_bytes": 219284
+        "size_bytes": 197476
       },
       {
         "id": "instances_T_E00_S01",
@@ -1900,7 +1900,7 @@
         "ext": ".json",
         "tile_id": "T_E00_S01",
         "url": "./assets/vegetation/instances_T_E00_S01.json",
-        "size_bytes": 349394
+        "size_bytes": 319067
       },
       {
         "id": "instances_T_E01_N00",
@@ -1908,7 +1908,7 @@
         "ext": ".json",
         "tile_id": "T_E01_N00",
         "url": "./assets/vegetation/instances_T_E01_N00.json",
-        "size_bytes": 241260
+        "size_bytes": 223364
       },
       {
         "id": "instances_T_W01_N00",
@@ -1916,7 +1916,7 @@
         "ext": ".json",
         "tile_id": "T_W01_N00",
         "url": "./assets/vegetation/instances_T_W01_N00.json",
-        "size_bytes": 208132
+        "size_bytes": 190762
       },
       {
         "id": "instances_T_E01_N01",
@@ -1924,7 +1924,7 @@
         "ext": ".json",
         "tile_id": "T_E01_N01",
         "url": "./assets/vegetation/instances_T_E01_N01.json",
-        "size_bytes": 57538
+        "size_bytes": 52848
       },
       {
         "id": "instances_T_E01_S01",
@@ -1932,7 +1932,7 @@
         "ext": ".json",
         "tile_id": "T_E01_S01",
         "url": "./assets/vegetation/instances_T_E01_S01.json",
-        "size_bytes": 278322
+        "size_bytes": 258379
       },
       {
         "id": "instances_T_W01_N01",
@@ -1940,7 +1940,7 @@
         "ext": ".json",
         "tile_id": "T_W01_N01",
         "url": "./assets/vegetation/instances_T_W01_N01.json",
-        "size_bytes": 232520
+        "size_bytes": 215786
       },
       {
         "id": "instances_T_W01_S01",
@@ -1948,7 +1948,7 @@
         "ext": ".json",
         "tile_id": "T_W01_S01",
         "url": "./assets/vegetation/instances_T_W01_S01.json",
-        "size_bytes": 245319
+        "size_bytes": 227244
       },
       {
         "id": "instances_T_E00_N02",
@@ -7781,7 +7781,7 @@
         "ext": ".glb",
         "tile_id": "T_E00_N01",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E00_N01_Q1.glb",
-        "size_bytes": 3140364
+        "size_bytes": 5282476
       },
       {
         "id": "osm_buildings_T_E00_N01_Q2",
@@ -7789,7 +7789,7 @@
         "ext": ".glb",
         "tile_id": "T_E00_N01",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E00_N01_Q2.glb",
-        "size_bytes": 3286908
+        "size_bytes": 5852928
       },
       {
         "id": "osm_buildings_T_E00_N01_Q3",
@@ -7797,7 +7797,7 @@
         "ext": ".glb",
         "tile_id": "T_E00_N01",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E00_N01_Q3.glb",
-        "size_bytes": 3215416
+        "size_bytes": 5627044
       },
       {
         "id": "osm_buildings_T_E00_N01_Q4",
@@ -7805,7 +7805,7 @@
         "ext": ".glb",
         "tile_id": "T_E00_N01",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E00_N01_Q4.glb",
-        "size_bytes": 2822696
+        "size_bytes": 5005772
       },
       {
         "id": "osm_buildings_T_E00_S01_Q1",
@@ -7813,7 +7813,7 @@
         "ext": ".glb",
         "tile_id": "T_E00_S01",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E00_S01_Q1.glb",
-        "size_bytes": 3230220
+        "size_bytes": 5683268
       },
       {
         "id": "osm_buildings_T_E00_S01_Q2",
@@ -7821,7 +7821,7 @@
         "ext": ".glb",
         "tile_id": "T_E00_S01",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E00_S01_Q2.glb",
-        "size_bytes": 3114156
+        "size_bytes": 5459688
       },
       {
         "id": "osm_buildings_T_E00_S01_Q3",
@@ -7829,7 +7829,7 @@
         "ext": ".glb",
         "tile_id": "T_E00_S01",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E00_S01_Q3.glb",
-        "size_bytes": 3251380
+        "size_bytes": 5701076
       },
       {
         "id": "osm_buildings_T_E00_S01_Q4",
@@ -7837,7 +7837,7 @@
         "ext": ".glb",
         "tile_id": "T_E00_S01",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E00_S01_Q4.glb",
-        "size_bytes": 3202060
+        "size_bytes": 5672008
       },
       {
         "id": "osm_buildings_T_E01_N00_Q1",
@@ -7845,7 +7845,7 @@
         "ext": ".glb",
         "tile_id": "T_E01_N00",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E01_N00_Q1.glb",
-        "size_bytes": 3110844
+        "size_bytes": 4293052
       },
       {
         "id": "osm_buildings_T_E01_N00_Q2",
@@ -7853,7 +7853,7 @@
         "ext": ".glb",
         "tile_id": "T_E01_N00",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E01_N00_Q2.glb",
-        "size_bytes": 3193452
+        "size_bytes": 4327468
       },
       {
         "id": "osm_buildings_T_E01_N00_Q3",
@@ -7861,7 +7861,7 @@
         "ext": ".glb",
         "tile_id": "T_E01_N00",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E01_N00_Q3.glb",
-        "size_bytes": 3332644
+        "size_bytes": 4846544
       },
       {
         "id": "osm_buildings_T_E01_N00_Q4",
@@ -7869,7 +7869,7 @@
         "ext": ".glb",
         "tile_id": "T_E01_N00",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E01_N00_Q4.glb",
-        "size_bytes": 3295600
+        "size_bytes": 4617684
       },
       {
         "id": "osm_buildings_T_W01_N00_Q1",
@@ -7877,7 +7877,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_N00",
         "url": "./assets/osm_true_buildings/osm_buildings_T_W01_N00_Q1.glb",
-        "size_bytes": 3072364
+        "size_bytes": 4389120
       },
       {
         "id": "osm_buildings_T_W01_N00_Q2",
@@ -7885,7 +7885,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_N00",
         "url": "./assets/osm_true_buildings/osm_buildings_T_W01_N00_Q2.glb",
-        "size_bytes": 3221112
+        "size_bytes": 4637268
       },
       {
         "id": "osm_buildings_T_W01_N00_Q3",
@@ -7893,7 +7893,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_N00",
         "url": "./assets/osm_true_buildings/osm_buildings_T_W01_N00_Q3.glb",
-        "size_bytes": 3216524
+        "size_bytes": 4455344
       },
       {
         "id": "osm_buildings_T_W01_N00_Q4",
@@ -7901,7 +7901,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_N00",
         "url": "./assets/osm_true_buildings/osm_buildings_T_W01_N00_Q4.glb",
-        "size_bytes": 3214012
+        "size_bytes": 4739660
       },
       {
         "id": "osm_buildings_T_E01_N01_Q1",
@@ -7909,7 +7909,7 @@
         "ext": ".glb",
         "tile_id": "T_E01_N01",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E01_N01_Q1.glb",
-        "size_bytes": 3238304
+        "size_bytes": 4279728
       },
       {
         "id": "osm_buildings_T_E01_N01_Q2",
@@ -7917,7 +7917,7 @@
         "ext": ".glb",
         "tile_id": "T_E01_N01",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E01_N01_Q2.glb",
-        "size_bytes": 3259316
+        "size_bytes": 4514420
       },
       {
         "id": "osm_buildings_T_E01_N01_Q3",
@@ -7925,7 +7925,7 @@
         "ext": ".glb",
         "tile_id": "T_E01_N01",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E01_N01_Q3.glb",
-        "size_bytes": 3270528
+        "size_bytes": 4565256
       },
       {
         "id": "osm_buildings_T_E01_N01_Q4",
@@ -7933,7 +7933,7 @@
         "ext": ".glb",
         "tile_id": "T_E01_N01",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E01_N01_Q4.glb",
-        "size_bytes": 3258636
+        "size_bytes": 4549700
       },
       {
         "id": "osm_buildings_T_E01_S01_Q1",
@@ -7941,7 +7941,7 @@
         "ext": ".glb",
         "tile_id": "T_E01_S01",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E01_S01_Q1.glb",
-        "size_bytes": 3172668
+        "size_bytes": 4695832
       },
       {
         "id": "osm_buildings_T_E01_S01_Q2",
@@ -7949,7 +7949,7 @@
         "ext": ".glb",
         "tile_id": "T_E01_S01",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E01_S01_Q2.glb",
-        "size_bytes": 3237372
+        "size_bytes": 4823520
       },
       {
         "id": "osm_buildings_T_E01_S01_Q3",
@@ -7957,7 +7957,7 @@
         "ext": ".glb",
         "tile_id": "T_E01_S01",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E01_S01_Q3.glb",
-        "size_bytes": 2985948
+        "size_bytes": 4072308
       },
       {
         "id": "osm_buildings_T_E01_S01_Q4",
@@ -7965,7 +7965,7 @@
         "ext": ".glb",
         "tile_id": "T_E01_S01",
         "url": "./assets/osm_true_buildings/osm_buildings_T_E01_S01_Q4.glb",
-        "size_bytes": 3180880
+        "size_bytes": 4794160
       },
       {
         "id": "osm_buildings_T_W01_N01_Q1",
@@ -7973,7 +7973,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_N01",
         "url": "./assets/osm_true_buildings/osm_buildings_T_W01_N01_Q1.glb",
-        "size_bytes": 3188600
+        "size_bytes": 4565024
       },
       {
         "id": "osm_buildings_T_W01_N01_Q2",
@@ -7981,7 +7981,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_N01",
         "url": "./assets/osm_true_buildings/osm_buildings_T_W01_N01_Q2.glb",
-        "size_bytes": 3213588
+        "size_bytes": 4410444
       },
       {
         "id": "osm_buildings_T_W01_N01_Q3",
@@ -7989,7 +7989,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_N01",
         "url": "./assets/osm_true_buildings/osm_buildings_T_W01_N01_Q3.glb",
-        "size_bytes": 3188460
+        "size_bytes": 4664428
       },
       {
         "id": "osm_buildings_T_W01_N01_Q4",
@@ -7997,7 +7997,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_N01",
         "url": "./assets/osm_true_buildings/osm_buildings_T_W01_N01_Q4.glb",
-        "size_bytes": 3235144
+        "size_bytes": 4433100
       },
       {
         "id": "osm_buildings_T_W01_S01_Q1",
@@ -8005,7 +8005,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_S01",
         "url": "./assets/osm_true_buildings/osm_buildings_T_W01_S01_Q1.glb",
-        "size_bytes": 3257532
+        "size_bytes": 4687756
       },
       {
         "id": "osm_buildings_T_W01_S01_Q2",
@@ -8013,7 +8013,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_S01",
         "url": "./assets/osm_true_buildings/osm_buildings_T_W01_S01_Q2.glb",
-        "size_bytes": 3162756
+        "size_bytes": 4352240
       },
       {
         "id": "osm_buildings_T_W01_S01_Q3",
@@ -8021,7 +8021,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_S01",
         "url": "./assets/osm_true_buildings/osm_buildings_T_W01_S01_Q3.glb",
-        "size_bytes": 1326916
+        "size_bytes": 1612888
       },
       {
         "id": "osm_buildings_T_W01_S01_Q4",
@@ -8029,7 +8029,7 @@
         "ext": ".glb",
         "tile_id": "T_W01_S01",
         "url": "./assets/osm_true_buildings/osm_buildings_T_W01_S01_Q4.glb",
-        "size_bytes": 3219600
+        "size_bytes": 4598252
       },
       {
         "id": "osm_buildings_T_E00_N02_Q1",
